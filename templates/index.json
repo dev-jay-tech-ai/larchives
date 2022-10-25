@@ -1,18 +1,55 @@
 {
   "sections": {
-    "collage-2": {
-      "type": "collage",
+    "a7c460fd-8e98-432a-9f1f-bdef147be171": {
+      "type": "image-banner",
       "blocks": {
-        "image": {
-          "type": "image",
+        "template--16018620088478__a7c460fd-8e98-432a-9f1f-bdef147be171-166671320403d6ca98-0": {
+          "type": "heading",
           "settings": {
-            "image_padding": false
+            "heading": "WARM UP FOR THE FALL",
+            "heading_size": "h1"
+          }
+        },
+        "template--16018620088478__a7c460fd-8e98-432a-9f1f-bdef147be171-166671320403d6ca98-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "VIEW JUST IN",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "bb15500c-0d7a-43d8-8c0d-1c172eaf0ac3": {
+          "type": "text",
+          "settings": {
+            "text": "WELCOME TO LARCHIVES",
+            "text_style": "subtitle"
           }
         }
       },
       "block_order": [
-        "image"
+        "template--16018620088478__a7c460fd-8e98-432a-9f1f-bdef147be171-166671320403d6ca98-0",
+        "template--16018620088478__a7c460fd-8e98-432a-9f1f-bdef147be171-166671320403d6ca98-2",
+        "bb15500c-0d7a-43d8-8c0d-1c172eaf0ac3"
       ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_9.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "collage-2": {
+      "type": "collage",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -403,6 +440,7 @@
     }
   },
   "order": [
+    "a7c460fd-8e98-432a-9f1f-bdef147be171",
     "collage-2",
     "multicolumn-2",
     "collage",
