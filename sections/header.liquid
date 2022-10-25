@@ -417,7 +417,7 @@
                               <details id="Details-HeaderSubMenu-{{ forloop.index }}">
                                 <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
                                   <span>{{ childlink.title | escape }}</span>
-                                  {% render 'icon-caret' %}
+                                  {%- comment -%} {% render 'icon-caret' %} {%- endcomment -%}
                                 </summary>
                                 <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
                                   {%- for grandchildlink in childlink.links -%}
@@ -625,10 +625,10 @@
       </a>
     </div>
     {%- endcomment -%}
-    <div>
-      <div>ABOUT US</div>
-      <div>FOR PARTNERS</div>
-      <div>DELIVERY</div>
+    <div class="header__icons">
+      <div><a href="#">ABOUT US</a></div>
+      <div><a href="#">FOR PARTNERS</a></div>
+      <div><a href="#">DELIVERY</a></div>
     </div>
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
