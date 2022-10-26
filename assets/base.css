@@ -2960,6 +2960,11 @@ details-disclosure > details {
   }
 }
 
+@font-face {
+  font-family: "'terminademi'";
+  src: url("{{ 'Fontspring-DEMO-termina-demi.woff' | asset_url }}") format("woff");
+}
+
 /* Custom CSS 
 @font-face {
   font-family: "terminablack";
@@ -2967,7 +2972,7 @@ details-disclosure > details {
 }
 
 @font-face {
-  font-family: "terminademi";
+  font-family: "terminademi2";
   src: url("Fontspring-DEMO-termina-demi.woff") format('woff'),
        url("Fontspring-DEMO-termina-demi.woff2") format('woff2');
 }
