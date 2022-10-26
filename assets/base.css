@@ -2969,7 +2969,7 @@ details-disclosure > details {
 @font-face {
   font-family: "terminademi";
   src: url("https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-demi.woff?v=1666791506") format('woff'),
-       url("Fontspring-DEMO-termina-demi.woff2") format('woff2');
+       url("https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-demi.otf?v=1666791738") format('truetype');
 }
 
 @font-face {
