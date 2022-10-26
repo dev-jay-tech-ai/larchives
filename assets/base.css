@@ -2619,7 +2619,7 @@ details[open] > .header__submenu {
 
   .header--top-center .header__inline-menu > .list-menu--inline {
     justify-content: center;
-    font-family: "FONTSPRINGDEMO-TerminaDemi-Regular";
+    font-family: "termina";
   }
 
   .header--middle-left .header__inline-menu {
@@ -2961,11 +2961,6 @@ details-disclosure > details {
 }
 
 /* Custom CSS */
-@font-face {
-  font-family: "FONTSPRINGDEMO-TerminaDemi-Regular";
-  src: url("FONTSPRINGDEMO-TerminaDemiRegular.woff2") format('woff2');
-}
-
 
 @font-face {
   font-family: "termina";
