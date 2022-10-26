@@ -2967,9 +2967,14 @@ details-disclosure > details {
 }
 
 @font-face {
+  font-family: "Font name";
+  src: url("{{ '[font-file-name]' | asset_url }}") format("[font-format]");
+}
+
+@font-face {
   font-family: "terminademi";
-  src: url("Termina W00 Demi.woff") format('woff'),
-       url("Termina W00 Demi.woff2") format('woff2');
+  src: url("{{ 'Termina W00 Demi.woff' | asset_url }}") format('woff'),
+       url("{{ 'Termina W00 Demi.woff2' | asset_url }}") format('woff2');
 }
 
 @font-face {
