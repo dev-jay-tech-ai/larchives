@@ -478,7 +478,7 @@ h3,
 
 h4,
 .h4 {
-  font-family: "Termina W00 Demi";
+  font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-size: calc(var(--font-heading-scale) * 1.5rem);
 }
@@ -1331,7 +1331,7 @@ button.shopify-payment-button__button--unbranded {
   padding: 1.8rem 4.8rem;
   cursor: pointer;
   font: inherit;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   height: 5rem;
   color: rgb(var(--color-button-text));
@@ -1417,7 +1417,7 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }
@@ -1895,7 +1895,7 @@ details[open] > .share-button__fallback {
 /* Text area */
 
 .text-area {
-  font-family: "Termina W00 Demi";;
+  font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   min-height: 10rem;
@@ -2619,6 +2619,7 @@ details[open] > .header__submenu {
 
   .header--top-center .header__inline-menu > .list-menu--inline {
     justify-content: center;
+    font-family: "Termina W00 Demi";
   }
 
   .header--middle-left .header__inline-menu {
