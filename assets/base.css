@@ -730,15 +730,12 @@ details > * {
 .underlined-link,
 .customer a {
   color: rgba(var(--color-link), var(--alpha-link));
-  text-underline-offset: 0.3rem;
-  text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness ease 100ms;
 }
 
 .underlined-link:hover,
 .customer a:hover {
   color: rgb(var(--color-link));
-  text-decoration-thickness: 0.2rem;
 }
 
 .icon-arrow {
@@ -1501,6 +1498,9 @@ button.shopify-payment-button__button--unbranded {
 
 details[open] > .share-button__fallback {
   animation: animateMenuOpen var(--duration-default) ease;
+}
+
+.share-button__button:hover {
 }
 
 .share-button__button,
@@ -2647,7 +2647,6 @@ details[open] > .header__submenu {
 }
 
 details[open] > .header__menu-item {
-  text-decoration: underline;
 }
 
 details[open]:hover > .header__menu-item {
