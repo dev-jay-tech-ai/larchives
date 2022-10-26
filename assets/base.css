@@ -2953,6 +2953,10 @@ details-disclosure > details {
   }
 }
 
+.header_text {
+  color: "#fff";
+}
+
 /* Custom CSS 
 @font-face {
   font-family: "terminablack";
@@ -2979,3 +2983,4 @@ details-disclosure > details {
   font-family: "terminaheavy";
   src: url("Fontspring-DEMO-termina-heavy.woff") format('woff');
 }
+*/
