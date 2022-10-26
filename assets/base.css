@@ -2963,7 +2963,16 @@ details-disclosure > details {
 /* Custom CSS */
 
 @font-face {
+  font-family: "termina-black";
+  src: url("Fontspring-DEMO-termina-black.woff") format('woff');
+}
+
+@font-face {
   font-family: "termina";
   src: url("Fontspring-DEMO-termina-medium.woff") format('woff');
 }
 
+@font-face {
+  font-family: "termina";
+  src: url("Fontspring-DEMO-termina-medium.woff") format('woff');
+}
