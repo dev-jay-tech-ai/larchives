@@ -2964,3 +2964,9 @@ details-disclosure > details {
   font-family: "FONTSPRINGDEMO-TerminaDemi-Regular";
   src: url("FONTSPRINGDEMO-TerminaDemiRegular.woff2") format('woff2');
 }
+
+
+@font-face {
+  font-family: "termina";
+  src: url("Fontspring-DEMO-termina-medium.woff") format('woff');
+}
