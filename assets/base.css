@@ -628,6 +628,10 @@ h6:empty {
   display: none;
 }
 
+a {
+  text-decoration : none;
+}
+
 .link,
 .customer a {
   cursor: pointer;
