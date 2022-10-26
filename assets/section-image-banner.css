@@ -192,7 +192,7 @@
   .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
     background: transparent;
     --color-foreground: 255, 255, 255;
-    --color-button: 255, 255, 255;
+    --color-button: 4, 11, 9;
     --color-button-text: 0, 0, 0;
   }
 
@@ -203,7 +203,7 @@
   }
 
   .banner:not(.banner--mobile-bottom) .button--secondary {
-    --color-button: 255, 255, 255;
+    --color-button: 4, 11, 9;
     --color-button-text: 255, 255, 255;
     --alpha-button-background: 0;
   }
