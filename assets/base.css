@@ -2963,16 +2963,21 @@ details-disclosure > details {
 /* Custom CSS */
 
 @font-face {
-  font-family: "termina-black";
+  font-family: "TerminaBlack";
   src: url("Fontspring-DEMO-termina-black.woff") format('woff');
 }
 
 @font-face {
-  font-family: "termina";
+  font-family: "TerminaDemi";
+  src: url("Fontspring-DEMO-termina-demi.woff") format('woff');
+}
+
+@font-face {
+  font-family: "TerminaMedium";
   src: url("Fontspring-DEMO-termina-medium.woff") format('woff');
 }
 
 @font-face {
-  font-family: "termina";
-  src: url("Fontspring-DEMO-termina-medium.woff") format('woff');
+  font-family: "TerminaHeavy";
+  src: url("Fontspring-DEMO-termina-heavy.woff") format('woff');
 }
