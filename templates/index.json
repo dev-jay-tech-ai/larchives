@@ -173,8 +173,8 @@
         "mobile_layout": "column",
         "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
-        "padding_top": 28,
-        "padding_bottom": 4
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "multicolumn-1": {
@@ -228,50 +228,6 @@
         "swipe_on_mobile": false,
         "padding_top": 64,
         "padding_bottom": 28
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h2"
-          }
-        },
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to share one of your key brand values.<\/p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "caption",
-        "text"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "multicolumn-3": {
@@ -336,6 +292,40 @@
         "padding_top": 64,
         "padding_bottom": 0
       }
+    },
+    "7201d5b8-5386-490b-92d3-560df8f48082": {
+      "type": "newsletter",
+      "blocks": {
+        "template--16018620088478__7201d5b8-5386-490b-92d3-560df8f48082-16667725434002d471-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEWSLETTER",
+            "heading_size": "h1"
+          }
+        },
+        "template--16018620088478__7201d5b8-5386-490b-92d3-560df8f48082-16667725434002d471-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our list and get 20% off your first purchase!<\/p>"
+          }
+        },
+        "template--16018620088478__7201d5b8-5386-490b-92d3-560df8f48082-16667725434002d471-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16018620088478__7201d5b8-5386-490b-92d3-560df8f48082-16667725434002d471-0",
+        "template--16018620088478__7201d5b8-5386-490b-92d3-560df8f48082-16667725434002d471-1",
+        "template--16018620088478__7201d5b8-5386-490b-92d3-560df8f48082-16667725434002d471-2"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -344,7 +334,7 @@
     "featured-collection",
     "collage",
     "multicolumn-1",
-    "image-with-text",
-    "multicolumn-3"
+    "multicolumn-3",
+    "7201d5b8-5386-490b-92d3-560df8f48082"
   ]
 }
