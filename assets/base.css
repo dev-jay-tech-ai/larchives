@@ -2972,8 +2972,8 @@ details-disclosure > details {
 }
 
 @font-face {
-  font-family: "terminademi2";
-  src: url("Fontspring-DEMO-termina-demi.woff") format('woff'),
+  font-family: "terminademi";
+  src: url("https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-demi.woff?v=1666791506") format('truetype'),
        url("Fontspring-DEMO-termina-demi.woff2") format('woff2');
 }
 
