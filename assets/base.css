@@ -2619,7 +2619,7 @@ details[open] > .header__submenu {
 
   .header--top-center .header__inline-menu > .list-menu--inline {
     justify-content: center;
-    font-family: "TerminaDemi";
+    font-family: "terminademi";
   }
 
   .header--middle-left .header__inline-menu {
@@ -2962,21 +2962,21 @@ details-disclosure > details {
 
 /* Custom CSS */
 @font-face {
-  font-family: "TerminaBlack";
+  font-family: "terminablack";
   src: url("Fontspring-DEMO-termina-black.woff") format('woff');
 }
 
 @font-face {
-  font-family: "TerminaDemi";
+  font-family: "terminademi";
   src: url("Fontspring-DEMO-termina-demi.woff") format('woff');
 }
 
 @font-face {
-  font-family: "TerminaMedium";
+  font-family: "terminamedium";
   src: url("Fontspring-DEMO-termina-medium.woff") format('woff');
 }
 
 @font-face {
-  font-family: "TerminaHeavy";
+  font-family: "terminaheavy";
   src: url("Fontspring-DEMO-termina-heavy.woff") format('woff');
 }
