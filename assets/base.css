@@ -2960,7 +2960,7 @@ details-disclosure > details {
   }
 }
 
-/* Custom CSS */
+/* Custom CSS 
 @font-face {
   font-family: "terminablack";
   src: url("Fontspring-DEMO-termina-black.woff") format('woff');
@@ -2980,3 +2980,4 @@ details-disclosure > details {
   font-family: "terminaheavy";
   src: url("Fontspring-DEMO-termina-heavy.woff") format('woff');
 }
+*/
