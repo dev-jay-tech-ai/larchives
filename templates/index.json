@@ -300,6 +300,59 @@
         "padding_top": 64,
         "padding_bottom": 0
       }
+    },
+    "6a24ef89-e7e3-4aff-838f-314249914bc3": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16018620088478__6a24ef89-e7e3-4aff-838f-314249914bc3-1666779886116bd0a5-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16018620088478__6a24ef89-e7e3-4aff-838f-314249914bc3-1666779886116bd0a5-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16018620088478__6a24ef89-e7e3-4aff-838f-314249914bc3-1666779886116bd0a5-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16018620088478__6a24ef89-e7e3-4aff-838f-314249914bc3-1666779886116bd0a5-0",
+        "template--16018620088478__6a24ef89-e7e3-4aff-838f-314249914bc3-1666779886116bd0a5-1",
+        "template--16018620088478__6a24ef89-e7e3-4aff-838f-314249914bc3-1666779886116bd0a5-2"
+      ],
+      "settings": {
+        "title": "LARCHIVE JOURNAL",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -309,6 +362,7 @@
     "collage",
     "558e85aa-afcf-4cfa-9ca5-8a98f5645a92",
     "7201d5b8-5386-490b-92d3-560df8f48082",
-    "multicolumn-3"
+    "multicolumn-3",
+    "6a24ef89-e7e3-4aff-838f-314249914bc3"
   ]
 }
