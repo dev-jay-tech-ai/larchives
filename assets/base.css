@@ -2958,3 +2958,9 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+/* Custom CSS */
+@font-face {
+  font-family: "FONTSPRINGDEMO-TerminaDemiRegular";
+  src: url("FONTSPRINGDEMO-TerminaDemiRegular.woff2") format('woff2');
+}
