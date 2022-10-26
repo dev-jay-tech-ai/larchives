@@ -2968,7 +2968,8 @@ details-disclosure > details {
 
 @font-face {
   font-family: "terminademi";
-  src: url("Fontspring-DEMO-termina-demi.woff") format('woff');
+  src: url("Fontspring-DEMO-termina-demi.woff") format('woff'),
+       url("Fontspring-DEMO-termina-demi.woff2") format('woff2');
 }
 
 @font-face {
