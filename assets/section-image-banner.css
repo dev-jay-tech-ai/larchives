@@ -146,6 +146,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  width: auto;
 }
 
 .banner__media-half {
