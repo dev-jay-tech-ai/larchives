@@ -245,7 +245,7 @@ if(typeof(Currency) == 'undefined' || !Currency.hasOwnProperty("rates")){
  */
 </script>
 
-{% if settings.mlvedaACS_position == "inline" %}
+{% if settings.mlvedaACS_position === "inline" %}
 <script>
 
 $acs('.mldDesk').append(mlvedasw); 
