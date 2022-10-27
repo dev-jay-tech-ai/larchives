@@ -310,8 +310,9 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script> 
+    {% include 'swymSnippet' %}
+    {% include 'mlveda-currencies-switcher' %}{% include 'mlveda-currencies' %}{% include 'mlveda-flag' %}{% include 'mlveda-currencies-style' %}
   </head>
-
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
@@ -368,8 +369,4 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   </body>
-</html>
-{% include 'swymSnippet' %}
-{% include 'mlveda-currencies-switcher' %}{% include 'mlveda-currencies' %}{% include 'mlveda-flag' %}{% include 'mlveda-currencies-style' %}
-</body>
 </html>
