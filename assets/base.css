@@ -2255,7 +2255,7 @@ input[type='checkbox'] {
   display: grid;
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
+  /** align-items: center; */
   height: 15.5rem;
   border-bottom: 1px solid rgba(255,255,255,.2);
 }
