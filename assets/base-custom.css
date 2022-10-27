@@ -1,4 +1,27 @@
+.header_custom_style {
+  font-family: 'termina';
+  font-weight: 900;
+  width: 337px;
+  height: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  margin-right: 8rem;
+}
 
+.header_custom_style > div {
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.header_text_style {
+  color: #ffffff;
+}
+
+.header_text_style > span {
+  height: 1.4rem;
+}
 
 /* Custom CSS 
 @font-face {
