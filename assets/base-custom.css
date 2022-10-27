@@ -23,6 +23,11 @@
   height: 1.4rem;
 }
 
+.header_left_nav {
+  font-family: 'termina';
+  font-weight: 900;
+}
+
 /* Custom CSS 
 @font-face {
   font-family: "terminablack";
