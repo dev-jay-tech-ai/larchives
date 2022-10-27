@@ -2976,6 +2976,8 @@ details-disclosure > details {
   flex-direction: row;
   font-size: 12px;
   line-height: 14px;
+  margin-top: 0.8rem;
+  margin-right: 8rem;
 }
 
 .header_text_style {
