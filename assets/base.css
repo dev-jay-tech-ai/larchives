@@ -2971,7 +2971,7 @@ details-disclosure > details {
   display: flex;
 }
 
-.header_custom_style div {
+.header_custom_style > div {
   flex-direction: row;
 }
 
