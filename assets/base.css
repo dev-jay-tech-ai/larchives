@@ -2959,6 +2959,7 @@ details-disclosure > details {
 
 .header_custom_style {
   font-family: 'termina';
+  font-weight: 900;
   width: 337px;
   height: 14px;
   display: flex;
