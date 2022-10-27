@@ -2257,7 +2257,7 @@ input[type='checkbox'] {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   height: 15.5rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
 @media screen and (min-width: 990px) {
