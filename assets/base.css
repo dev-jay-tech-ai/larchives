@@ -2964,14 +2964,14 @@ details-disclosure > details {
   color: #ffffff;
 }
 
-.custom_style {
+.header_custom_style {
   font-family: 'termina';
   width: 337px;
   height: 14px;
   display: flex;
 }
 
-.custom_style > div {
+.header_custom_style > div {
   flex-direction: row;
 }
 
