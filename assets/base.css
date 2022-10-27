@@ -2962,28 +2962,3 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
-
-.header_custom_style {
-  font-family: 'termina';
-  font-weight: 900;
-  width: 337px;
-  height: 14px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header_custom_style > div {
-  flex-direction: row;
-  font-size: 12px;
-  line-height: 14px;
-  margin-top: 0.8rem;
-  margin-right: 8rem;
-}
-
-.header_text_style {
-  color: #ffffff;
-}
-
-.header_text_style > span {
-  height: 1.4rem;
-}
