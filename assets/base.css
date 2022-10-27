@@ -2288,6 +2288,7 @@ input[type='checkbox'] {
   }
 
   .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
+    padding-top: 1.65rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
