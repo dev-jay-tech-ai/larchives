@@ -2364,6 +2364,7 @@ input[type='checkbox'] {
   .header--top-center .header__heading {
     justify-self: center;
     text-align: center;
+    height: 5rem /* 로고 크기 조절 */
   }
 }
 
