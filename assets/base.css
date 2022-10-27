@@ -2256,6 +2256,8 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  height: 1.55rem;
+  border-bottom: 1px solid #fff;
 }
 
 @media screen and (min-width: 990px) {
