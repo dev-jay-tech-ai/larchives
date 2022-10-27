@@ -1,18 +1,4 @@
-.header_custom_style > div {
-  flex-direction: row;
-  font-size: 12px;
-  line-height: 14px;
-  margin-top: 0.8rem;
-  margin-right: 8rem;
-}
 
-.header_text_style {
-  color: #ffffff;
-}
-
-.header_text_style > span {
-  height: 1.4rem;
-}
 
 /* Custom CSS 
 @font-face {
