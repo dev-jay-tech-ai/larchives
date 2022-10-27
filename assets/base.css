@@ -2970,6 +2970,7 @@ details-disclosure > details {
   width: 337px;
   height: 14px;
   display: flex;
+  justify-content: space-between;
 }
 
 .header_custom_style > div {
