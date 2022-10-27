@@ -1,0 +1,42 @@
+.header_custom_style > div {
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 0.8rem;
+  margin-right: 8rem;
+}
+
+.header_text_style {
+  color: #ffffff;
+}
+
+.header_text_style > span {
+  height: 1.4rem;
+}
+/* Custom CSS 
+@font-face {
+  font-family: "terminablack";
+  src: url("Fontspring-DEMO-termina-black.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Font name";
+  src: url("{{ '[font-file-name]' | asset_url }}") format("[font-format]");
+}
+
+@font-face {
+  font-family: "terminademi";
+  src: url("{{ 'Termina W00 Demi.woff' | asset_url }}") format('woff'),
+       url("{{ 'Termina W00 Demi.woff2' | asset_url }}") format('woff2');
+}
+
+@font-face {
+  font-family: "terminamedium";
+  src: url("Fontspring-DEMO-termina-medium.woff") format('woff');
+}
+
+@font-face {
+  font-family: "terminaheavy";
+  src: url("Fontspring-DEMO-termina-heavy.woff") format('woff');
+}
+*/
