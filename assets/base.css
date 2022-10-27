@@ -2957,9 +2957,15 @@ details-disclosure > details {
   }
 }
 
+
+
+
 .header_text_color {
-  font-family: 'termina';
   color: #ffffff;
+}
+
+.custom_font {
+  font-family: 'termina, sans-serif';
 }
 
 /* Custom CSS 
