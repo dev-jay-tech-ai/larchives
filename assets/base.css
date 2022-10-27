@@ -2957,14 +2957,6 @@ details-disclosure > details {
   }
 }
 
-
-
-
-.header_text_style {
-  color: #ffffff;
-  font-size: 12px;
-}
-
 .header_custom_style {
   font-family: 'termina';
   width: 337px;
@@ -2975,6 +2967,9 @@ details-disclosure > details {
 
 .header_custom_style > div {
   flex-direction: row;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 /* Custom CSS 
