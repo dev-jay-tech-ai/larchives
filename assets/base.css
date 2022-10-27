@@ -2457,7 +2457,7 @@ menu-drawer + .header__search {
 }
 
 .header--top-center > .header__search {
-  display: none;
+  /* display: none; */
 }
 
 .header--top-center * > .header__search {
