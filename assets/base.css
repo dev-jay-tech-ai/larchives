@@ -2964,8 +2964,10 @@ details-disclosure > details {
   color: #ffffff;
 }
 
-.custom_font {
+.custom_style {
   font-family: 'termina';
+  width: 337px;
+  height: 14px;
 }
 
 /* Custom CSS 
