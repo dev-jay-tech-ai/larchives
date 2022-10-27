@@ -626,11 +626,11 @@
     </div>
     {%- endcomment -%}
     <nav>
-      <ul class='list-menu list-menu--inline custom_style' role='list'>
-        <li><div><a href="#" class='link link--text focus-inset header_text_color'>ABOUT US</a></div></li>
-        <li><div><a href="#" class='link link--text focus-inset header_text_color'>FOR PARTNERS</a></div></li>
-        <li><div><a href="#" class='link link--text focus-inset header_text_color'>DELIVERY</a></div></li>
-      </ul>
+      <div class='custom_style'>
+        <div><a href="#" class='link link--text focus-inset header_text_color'>ABOUT US</a></div>
+        <div><a href="#" class='link link--text focus-inset header_text_color'>FOR PARTNERS</a></div>
+        <div><a href="#" class='link link--text focus-inset header_text_color'>DELIVERY</a></div>
+      </div>  
     </nav>
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
