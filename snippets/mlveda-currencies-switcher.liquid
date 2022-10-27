@@ -260,24 +260,19 @@ $acs(window).on('scroll',function() {
 // console.log(scroll);
    if(lastScroll - scroll > 0) {
        $acs("body").addClass("mlvedaMobileFilter");
-   console.log("add");
-     
+   console.log("add"); 
    } else {
      //console.log("remove");
      if($acs( "body" ).hasClass( "mlvedaMobileFilter" )){
-      $acs("body").removeClass("mlvedaMobileFilter");
-     
+      $acs("body").removeClass("mlvedaMobileFilter");    
      }
-     
    }
    lastScroll = scroll;
 });
 });
 
-
-
 </script>
- <style>
+<style>
 /*
    .pick_currency{
      display:none !important;
@@ -287,8 +282,9 @@ $acs(window).on('scroll',function() {
      display:block !important;
    }
 */
- </style>
+</style>
 {% endif %}
+  
 <script>
 var clr1 = $acs("select#currencies").css("color");
 var clr2 = $acs("select#currencies1").css("color");
@@ -296,7 +292,6 @@ var clr3 = $acs("select#currencies2").css("color");
 $acs("select#currencies").css("background-image","url('data:image/svg+xml,<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"8pxz\" height=\"5px\" viewBox=\"0 0 8 5\" enable-background=\"new 0 0 8 5\" xml:space=\"preserve\"> <path fill=\""+clr1+"\" d=\"M0,0c0,0,3.4,4.4,3.5,4.4C3.7,4.4,7.1,0,7.1,0H0z\"/></svg>')");
 $acs("select#currencies1").css("background-image","url('data:image/svg+xml,<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"8pxz\" height=\"5px\" viewBox=\"0 0 8 5\" enable-background=\"new 0 0 8 5\" xml:space=\"preserve\"> <path fill=\""+clr2+"\" d=\"M0,0c0,0,3.4,4.4,3.5,4.4C3.7,4.4,7.1,0,7.1,0H0z\"/></svg>')");
 $acs("select#currencies3").css("background-image","url('data:image/svg+xml,<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"8pxz\" height=\"5px\" viewBox=\"0 0 8 5\" enable-background=\"new 0 0 8 5\" xml:space=\"preserve\"> <path fill=\""+clr3+"\" d=\"M0,0c0,0,3.4,4.4,3.5,4.4C3.7,4.4,7.1,0,7.1,0H0z\"/></svg>')");
-
 </script>
 {% endif %}
 {% endif %}
