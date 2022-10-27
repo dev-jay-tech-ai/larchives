@@ -82,22 +82,22 @@ height: auto !important;
     color:#000;
 }
 .pick_currency{
-    border: 1px solid #ddd;
+/*  border: 1px solid #ddd;
     width: auto;
     display: inline-block;
     padding: 5px;
     position: fixed;
     z-index: 9999999;
-    background: #fff;
+    background: #fff; */
 }
 {% endif %}
 
 {% if settings.mlvedaACS_position == "bottom_with_left" %}
 .nice-select.open .list {
-top: unset !important;
-bottom: 30px;
-max-height: 170px;
-overflow-y: auto;
+  top: unset !important;
+  bottom: 30px;
+  max-height: 170px;
+  overflow-y: auto;
 }
 
 {% if settings.mlvedaACS_displayFlag == false %}
@@ -115,8 +115,8 @@ position: fixed !important;
 }
 
 .pick_currency {
-   top: unset !important;
-   right: unset !important;
+  top: unset !important;
+  right: unset !important;
   bottom: {{ settings.mlvedaACS_positionBottom }} !important;
   left: {{ settings.mlvedaACS_positionLeft}} !important;
  
@@ -125,21 +125,21 @@ position: fixed !important;
 
 {% if settings.mlvedaACS_position == "bottom_with_right" %}
 .nice-select.open .list {
-top: unset !important;
-bottom: 30px;
-max-height: 170px;
-overflow-y: auto;
+  top: unset !important;
+  bottom: 30px;
+  max-height: 170px;
+  overflow-y: auto;
 }
 {% if settings.mlvedaACS_displayFlag == false %}
 .pick_currency {
 	border: 1px solid #ddd !important;
-   padding-right: 7px !important;
+    padding-right: 7px !important;
 }
 {% endif %}
 
 
 .pick_currency {
-position: fixed !important;
+   position: fixed !important;
    background-color: #fff !important;
    z-index: 9999 !important;
 }
@@ -155,12 +155,12 @@ position: fixed !important;
 
 {% if settings.mlvedaACS_position == "top_with_right" %}
 .nice-select.open .list {
-max-height: 170px;
-overflow-y: auto;
+  max-height: 170px;
+  overflow-y: auto;
 }
 {% if settings.mlvedaACS_displayFlag == false %}
 .pick_currency {
-	border: 1px solid #ddd !important;
+   border: 1px solid #ddd !important;
    padding-right: 7px !important;
 }
 {% endif %}
@@ -172,7 +172,7 @@ position: fixed !important;
    z-index: 9999 !important;
 }
 .pick_currency {
-/*   top: {{settings.mlvedaACS_positionTop}} !important;
+/*top: {{settings.mlvedaACS_positionTop}} !important;
   right: {{settings.mlvedaACS_positionRight}} !important;
   bottom: unset !important;
   left: unset !important; */
