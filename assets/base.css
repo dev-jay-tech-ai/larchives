@@ -2967,9 +2967,12 @@ details-disclosure > details {
 
 .header_custom_style > div {
   flex-direction: row;
-  color: #ffffff;
   font-size: 12px;
   line-height: 14px;
+}
+
+.header_text_style {
+  color: #ffffff;
 }
 
 /* Custom CSS 
