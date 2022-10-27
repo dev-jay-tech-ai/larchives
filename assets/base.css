@@ -2220,6 +2220,8 @@ input[type='checkbox'] {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  height: 155px;
+  border_bottom: 1px solid #fff;
 }
 
 .shopify-section-header-sticky {
