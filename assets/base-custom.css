@@ -11,7 +11,8 @@
 
 .item-custom {
   display: flex;
-  flex-diretion: row;
+  width: 1.19rem;
+  heigth: 4.4rem;
 }
 
 .item-custom > div:first-child {
