@@ -10,12 +10,15 @@
 }
 .item-custom {
   display: flex;
-  width: 11.9rem;
-  heigth: 4.4rem;
 }
 
 .item-custom > div:first-child {
   padding-right: 2.41rem;
+}
+
+.item-custom > div:last-child {
+  width: 11.9rem;
+  heigth: 4.4rem;
 }
 
 .item-custom p {
