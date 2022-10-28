@@ -6,13 +6,16 @@
   display: flex;
   flex-diretion: row;
   justify-content: space-between;
-  padding: 8rem;
-  color: #040b09;
+  padding: 8rem;;
 }
 
 .item-custom {
   display: flex;
   flex-diretion: row;
+}
+
+.item-custom p {
+  color: #040b09
 }
 
 .button_custom {
