@@ -25,9 +25,6 @@
 
 .price__regular .price-item--regular {
   margin-right: 0;
-  font-family: Poppins;
-  font-size: 1.6rem;
-  color: #c20c1e; 
 }
 
 .price:not(.price--show-badge) .price-item--last:last-of-type {
