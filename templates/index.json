@@ -54,8 +54,8 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "title": "",
-            "text": "",
+            "title": "Annual Sale",
+            "text": "<p>Exclusive Items<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -63,8 +63,8 @@
         "column-2": {
           "type": "column",
           "settings": {
-            "title": "",
-            "text": "",
+            "title": "Special Discounts",
+            "text": "<p>Only for Regulars<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -72,8 +72,8 @@
         "column-3": {
           "type": "column",
           "settings": {
-            "title": "",
-            "text": "",
+            "title": "Buyers Protection",
+            "text": "<p>Secure Payment<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -81,9 +81,9 @@
         "column-4": {
           "type": "column",
           "settings": {
-            "title": "",
-            "text": "",
-            "link_label": "Example collection",
+            "title": "Affordable Prices",
+            "text": "<p>Take a Look<\/p>",
+            "link_label": "",
             "link": ""
           }
         }
