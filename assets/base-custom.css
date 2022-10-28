@@ -1,3 +1,9 @@
+.custom-price-reqular {
+  font-family: Poppins;
+  font-size: 1.6rem;
+  color: #c20c1e; 
+}
+
 .custom-vendor {
   padding-top: 1.6rem;
   color: rgba(4,11,9,.5);
