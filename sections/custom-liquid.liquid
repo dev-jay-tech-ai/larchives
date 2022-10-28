@@ -15,10 +15,26 @@
   <div class="section-{{ section.id }}-padding">
     {{ section.settings.custom_liquid }}
     <div>
-      <div>Annual Sale</div>
-      <div>Annual Sale</div>
-      <div>Annual Sale</div>
-      <div>Annual Sale</div>
+      <div>
+        {% render 'icon-sale' %}
+        <div><span>Annual Sale</span></div>
+        <div><span>Exclusive Items</span></div>
+      </div>
+      <div>
+        {% render 'icon-discount' %}
+        <div><span>Annual Sale</span></div>
+        <div><span>Exclusive Items</span></div>
+      </div>
+      <div>
+        {% render 'icon-protection' %}
+        <div><span>Annual Sale</span></div>
+        <div><span>Exclusive Items</span></div>
+      </div>
+      <div>
+        {% render 'icon-price' %}
+        <div><span>Annual Sale</span></div>
+        <div><span>Exclusive Items</span></div>
+      </div>
     </div>
   </div>
 </div>
