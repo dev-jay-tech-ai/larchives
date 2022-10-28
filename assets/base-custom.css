@@ -14,7 +14,7 @@
   flex-diretion: row;
 }
 
-.item-custom:first-child {
+.item-custom > div:first-child {
   padding-right: 2.41rem;
 }
 
