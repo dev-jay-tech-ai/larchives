@@ -23,8 +23,9 @@
 
 .item-custom span {
   font-family: Poppins;
-    font-size: 1.4rem;
+  font-size: 1.4rem;
   color: rgba(4, 11, 9, 0.5);
+  letter-spacing: normal;
 }
 
 .button_custom {
