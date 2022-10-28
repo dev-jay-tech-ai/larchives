@@ -47,6 +47,12 @@
         {{ money_price }}
       </span>
     </div>
+    <div class="price__discount">
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.discount' | t }}</span>
+      <span class="price-item price-item--regular custom-price-reqular">
+        10%
+      </span>
+    </div>
     <div class="price__sale">
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
