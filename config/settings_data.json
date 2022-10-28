@@ -375,7 +375,7 @@
       "variant_pills_shadow_horizontal_offset": 0,
       "card_shadow_horizontal_offset": 0,
       "show_vendor": true,
-      "predictive_search_show_vendor": true,
+      "predictive_search_show_vendor": false,
       "drawer_shadow_blur": 5,
       "social_twitter_link": "",
       "collection_card_shadow_horizontal_offset": 0,
