@@ -2,6 +2,11 @@
   width: 6.3rem;  
 }
 
+.item-customs {
+  display: flex;
+  flex-diretion: row;
+}
+
 .item-custom {
   display: flex;
   flex-diretion: row;
