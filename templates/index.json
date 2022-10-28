@@ -134,8 +134,8 @@
         "enable_quick_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 44
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "collage": {
@@ -200,8 +200,8 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "7201d5b8-5386-490b-92d3-560df8f48082": {
@@ -234,8 +234,8 @@
       "settings": {
         "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "multicolumn-3": {
@@ -354,8 +354,8 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
