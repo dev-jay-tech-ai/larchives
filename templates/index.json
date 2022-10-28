@@ -48,6 +48,15 @@
         "show_text_below": true
       }
     },
+    "8b2d5815-b8a2-4b45-9c17-5e207a3417a6": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "multicolumn-2": {
       "type": "multicolumn",
       "blocks": {
@@ -361,6 +370,7 @@
   },
   "order": [
     "a7c460fd-8e98-432a-9f1f-bdef147be171",
+    "8b2d5815-b8a2-4b45-9c17-5e207a3417a6",
     "multicolumn-2",
     "featured-collection",
     "collage",
