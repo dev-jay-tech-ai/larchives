@@ -2,6 +2,10 @@
   width: 6.3rem;  
 }
 
+.collection-custom {
+  margin-top: 4rem;
+}
+
 .items-custom {
   display: flex;
   justify-content: space-between;
