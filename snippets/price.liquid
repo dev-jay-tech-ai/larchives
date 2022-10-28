@@ -44,7 +44,7 @@
     {%- endcomment -%}
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-      <span class="price-item price-item--regular">
+      <span class="price-item price-item--regular custom-price-reqular">
         {{ money_price }}
       </span>
     </div>
@@ -52,7 +52,7 @@
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <div><span>
-          <s class="price-item price-item--regular">
+          <s class="price-item price-item--regular custom-price-reqular">
             {% if settings.currency_code_enabled %}
               {{ compare_at_price | money_with_currency }}
             {% else %}
