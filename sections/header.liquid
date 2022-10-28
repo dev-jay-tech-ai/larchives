@@ -456,11 +456,7 @@
                 {%- endif -%}
               </li>
             {%- endfor -%}
-          </ul>
-          <div class='header_custom_style'>
-            <div><a href="#" class='header_text_style'>{% render 'icon-cart-empty' %}</a></div>
-            <div><a href="#" class='header_text_style'>{% render 'icon-like' %}</a></div>
-          </div>         
+          </ul>        
         </nav>
       {%- else -%}
         <nav class="header__inline-menu">
@@ -506,6 +502,10 @@
               </li>
             {%- endfor -%}
           </ul>
+          <div class='header_custom_style'>
+            <div><a href="#" class='header_text_style'>{% render 'icon-cart-empty' %}</a></div>
+            <div><a href="#" class='header_text_style'>{% render 'icon-like' %}</a></div>
+          </div> 
         </nav>
       {%- endif -%}
     {%- endif -%}
