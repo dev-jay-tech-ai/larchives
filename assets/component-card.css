@@ -171,6 +171,12 @@
 
 .card__heading {
   font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 }
