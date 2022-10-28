@@ -2,6 +2,12 @@
   width: 6.3rem;  
 }
 
+.button_custom {
+  font-family: 'termina';
+  font-size: 12px;
+  padding: 18px 48px;
+}
+
 .header_custom_style {
   font-family: 'termina';
   font-weight: 900;
