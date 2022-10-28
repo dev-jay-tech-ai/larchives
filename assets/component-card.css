@@ -116,6 +116,7 @@
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
+  text-align: center;
 }
 
 .card__content--auto-margins {
