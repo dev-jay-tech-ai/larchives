@@ -45,6 +45,10 @@
   padding: 7px 12px 0px 24px;
 }
 
+.header_icon:nth-child(2) {
+  padding-top: 7px;
+}
+
 /* Custom CSS 
 @font-face {
   font-family: "terminablack";
