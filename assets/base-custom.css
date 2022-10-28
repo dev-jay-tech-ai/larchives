@@ -15,7 +15,14 @@
 }
 
 .item-custom p {
+  font-size: 1.6rem;
   color: #040b09
+}
+
+.item-custom span {
+  font-family: Poppins;
+    font-size: 1.4rem;
+  color: rgba(4, 11, 9, 0.5);
 }
 
 .button_custom {
