@@ -17,6 +17,7 @@
 .item-custom p {
   font-size: 1.6rem;
   color: #040b09
+  margin: 0;
 }
 
 .item-custom span {
