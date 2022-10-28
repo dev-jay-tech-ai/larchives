@@ -14,26 +14,34 @@
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="section-{{ section.id }}-padding">
     {{ section.settings.custom_liquid }}
-    <div class="item-custom">
-      <div>
-        {% render 'icon-sale' %}
-        <div><span>Annual Sale</span></div>
-        <div><span>Exclusive Items</span></div>
+    <div class="items-custom">
+      <div class="item-custom">
+        <div>{% render 'icon-sale' %}</div>
+        <div>
+          <p>Annual Sale</p>
+          <span>Exclusive Items</span>
+        </div>
       </div>
-      <div>
-        {% render 'icon-discounts' %}
-        <div><span>Special Discounts</span></div>
-        <div><span>Only for Regulars</span></div>
+      <div class="item-custom">
+        <div>{% render 'icon-discounts' %}</div>
+        <div>
+          <p>Special Discounts</p>
+          <span>Only for Regulars</span>
+        </div>
       </div>
-      <div>
-        {% render 'icon-protection' %}
-        <div><span>Buyers Protection</span></div>
-        <div><span>Secure Payment</span></div>
+      <div class="item-custom">
+        <div>{% render 'icon-protection' %}</div>
+        <div>
+          <p>Buyers Protection</p>
+          <span>Secure Payment</span>
+        </div>
       </div>
-      <div>
-        {% render 'icon-price' %}
-        <div><span>Affordable Prices</span></div>
-        <div><span>Take a Look</span></div>
+      <div class="item-custom">
+        <div>{% render 'icon-price' %}</div>
+        <div>
+          <p>Affordable Prices</p>
+          <span>Take a Look</span>
+        </div>
       </div>
     </div>
   </div>
