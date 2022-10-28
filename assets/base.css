@@ -528,12 +528,8 @@ blockquote {
 }
 
 .caption-with-letter-spacing {
-  text-transform: uppercase;
   font-family: Poppins;
   font-size: 1.4rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-align: left;
