@@ -2,6 +2,11 @@
   width: 6.3rem;  
 }
 
+.item-custom {
+  display: flex;
+  flex-diretion: row;
+}
+
 .button_custom {
   font-family: 'termina';
   font-size: 12px;
