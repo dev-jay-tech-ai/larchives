@@ -98,7 +98,7 @@
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %} button_custom"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
         >
-          {{ 'sections.featured_collection.view_all' | upcase  | t }}
+          {{ 'sections.featured_collection.view_all' | t | upcase  }}
         </a>
       </div>
     {%- endif -%}
