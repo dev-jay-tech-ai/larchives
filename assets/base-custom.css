@@ -5,7 +5,7 @@
 .items-custom {
   display: flex;
   justify-content: space-between;
-  padding: 0 8rem;
+  padding: 8rem;
   border-bottom: 1px solid rgba(4,11,9,.1);
 }
 
