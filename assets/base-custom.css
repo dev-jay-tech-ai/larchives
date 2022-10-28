@@ -45,7 +45,7 @@
   padding: 7px 24px 0px 24px;
 }
 
-.header_icon:nth-child(2) {
+.header_icon:nth-of-type(1)) {
   padding-top: 7px;
 }
 
