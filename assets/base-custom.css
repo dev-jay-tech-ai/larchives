@@ -5,6 +5,7 @@
 .items-custom {
   display: flex;
   flex-diretion: row;
+  padding: 8rem;
 }
 
 .item-custom {
