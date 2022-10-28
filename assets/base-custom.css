@@ -4,10 +4,9 @@
 
 .items-custom {
   display: flex;
-  flex-diretion: row;
   justify-content: space-between;
   padding: 0 8rem;
-  border-bottom: 1px soild rgba(4,11,9,.1);
+  border-bottom: 1px solid rgba(4,11,9,.1);
 }
 
 .item-custom {
