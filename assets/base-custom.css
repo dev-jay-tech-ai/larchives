@@ -5,6 +5,7 @@
 .items-custom {
   display: flex;
   flex-diretion: row;
+  justify-content: space-between;
   padding: 8rem;
 }
 
