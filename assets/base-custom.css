@@ -45,6 +45,8 @@
 }
 
 .item-custom span {
+  display: block;
+  padding-top: 0.3rem;
   font-family: Poppins;
   font-size: 1.4rem;
   color: rgba(4, 11, 9, 0.5);
