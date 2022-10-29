@@ -4,7 +4,7 @@
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
 }
 */
-.product-card-wrapper {
+.product-card-wrapper:nth-child(2) {
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
 }
 
