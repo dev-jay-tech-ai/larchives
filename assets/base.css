@@ -2777,6 +2777,8 @@ details-disclosure > details {
   color: rgb(var(--color-foreground));
   word-break: break-word;
   text-transform: uppercase;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .gradient {
