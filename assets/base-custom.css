@@ -1,8 +1,13 @@
 .footer__cate {
   display: flex;
   color: #040b09;
+}
+
+.footer__cate h4 {
   font-size: 1.4rem;
 }
+
+
 
 .footer-desc {
   font-size: 1.4rem;
