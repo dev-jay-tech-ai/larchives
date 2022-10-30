@@ -120,6 +120,7 @@
   .multicolumn-list__item,
   .grid--4-col-desktop .multicolumn-list__item {
     padding-bottom: 0;
+    border: 1px soild #333;
   }
 
   .background-none .grid--2-col-tablet .multicolumn-list__item {
