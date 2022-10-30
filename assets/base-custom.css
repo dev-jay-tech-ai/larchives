@@ -1,11 +1,5 @@
 .newsletter-field {
-  font-family: Poppins;
-  font-size: 1.6rem; 
-  font-weight: lighter;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  color: rgba(4, 11, 9, 0.5);
+  border-bottom: solid 1px rgb(4, 11, 9);
 }
 
 .policy {
