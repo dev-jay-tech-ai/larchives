@@ -1,7 +1,12 @@
 .newsletter__subheading > p {
   font-family: Poppins;
   font-size: 1.6rem; 
-  color: #040b09;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgba(4, 11, 9, 0.5);
 }
 
 .footer-font-copyright {
