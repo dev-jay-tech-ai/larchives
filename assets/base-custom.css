@@ -2,13 +2,15 @@
   display: flex;
   color: #040b09;
   justify-content: space-between;
-  list-style: none;
 }
 
 .footer__cate h4 {
   font-size: 1.4rem;
 }
 
+.footer__cate ul {
+  list-style: none;
+}
 
 
 .footer-desc {
