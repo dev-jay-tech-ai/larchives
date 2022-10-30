@@ -1,18 +1,48 @@
 <div>
   <div>
     {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
-        loading: 'lazy',
-        width: section.settings.image.width,
-        height: image_height,
-        class: image_class,
-        sizes: sizes,
-        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-        alt: section.settings.image.alt | escape
+      loading: 'lazy',
+      width: section.settings.image.width,
+      height: image_height,
+      class: image_class,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image.alt | escape
     }}
   </div>
-  <div>이미지 들어갈 부분</div>
-  <div>이미지 들어갈 부분</div>
-  <div>이미지 들어갈 부분</div>
+  <div>
+    {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
+      loading: 'lazy',
+      width: section.settings.image.width,
+      height: image_height,
+      class: image_class,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image.alt | escape
+    }}
+  </div>
+  <div>
+    {{ section.settings.image_3 | image_url: width: 1500 | image_tag:
+      loading: 'lazy',
+      width: section.settings.image.width,
+      height: image_height,
+      class: image_class,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image.alt | escape
+    }}
+  </div>
+  <div>
+    {{ section.settings.image_4 | image_url: width: 1500 | image_tag:
+      loading: 'lazy',
+      width: section.settings.image.width,
+      height: image_height,
+      class: image_class,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image.alt | escape
+    }}
+  </div>
 </div>
 
 
