@@ -1,6 +1,7 @@
 .footer__content-bottom-wrapper:last-child {
   display: flex;
   border-top: 1px solid rgb(4 11 9 / 10%);
+  height: 6.1rem;
 }
 
 .banner-container {
