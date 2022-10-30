@@ -369,13 +369,13 @@ noscript .localization-selector.link {
 }
 
 .footer__copyright {
-  text-align: center;
+  text-align: left;
   margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 750px) {
   .footer__copyright {
-    text-align: right;
+    text-align: left;
   }
 }
 
