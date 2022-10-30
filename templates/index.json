@@ -84,6 +84,15 @@
         "padding_bottom": 100
       }
     },
+    "main-image-banner": {
+      "type": "main-image-banner",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/Background1.jpg",
+        "image_2": "shopify:\/\/shop_images\/Background2.jpg",
+        "image_3": "shopify:\/\/shop_images\/Background3.jpg",
+        "image_4": "shopify:\/\/shop_images\/Background4.jpg"
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -302,14 +311,6 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100
-      }
-    },
-    "main-image-banner": {
-      "type": "main-image-banner",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/Rectangle_9.jpg",
-        "image_2": "shopify:\/\/shop_images\/Rectangle_9.jpg",
-        "image_3": "shopify:\/\/shop_images\/Rectangle_9.jpg"
       }
     }
   },
