@@ -1,3 +1,12 @@
+.blog-rectangle {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #040b09;
+  top: 37px;
+  left: 0;
+}
 .blog-caption-custom {
   text-align: left !important;
   margin-bottom: 2rem;
