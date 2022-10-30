@@ -44,7 +44,6 @@
   /* border-top: solid 0.1rem rgba(var(--color-foreground), 0.08); */
   padding-top: 8rem;
   height: 30.6rem;
-  border-bottom: 1px solid rgba(4,11,9,0.1);
 }
 
 .footer__content-bottom:only-child {
