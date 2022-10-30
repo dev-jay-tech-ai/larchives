@@ -1,4 +1,4 @@
-.footer__content-bottom:nth-child(2) .footer__content-bottom-wrapper {
+.footer__content-bottom:last-child .footer__content-bottom-wrapper {
   height: 8rem;
 }
 
