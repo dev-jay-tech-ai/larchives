@@ -102,7 +102,7 @@
           <div class="article-card__info caption-with-letter-spacing blog-caption-custom">
             <span class="blog-cate-custom">FASHION &bull; </span>
             {%- if show_date -%}
-              <span class="circle-divider" style="color: rgba(4, 11, 9, 0.5)">{{ article.published_at | date: "%b %d, %y" }}</span>
+              <span class="circle-divider" style="color: rgba(4, 11, 9, 0.5)">{{ article.published_at | date: "%b %d" }},{{ article.published_at | date: "%Y" }}</span>
             {%- endif -%}
             {%- if show_author -%}
               <span>{{ article.author }}</span>
