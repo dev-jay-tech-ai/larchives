@@ -20,7 +20,7 @@
   padding-right: 16rem;
 }
 
-.footer__cate ul:last-child {
+.footer__cate > div:last-child > ul {
   padding-right: 0;
 }
 
