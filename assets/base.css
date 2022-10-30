@@ -901,7 +901,7 @@ summary::-webkit-details-marker {
 /* component-title */
 .title,
 .title-wrapper-with-link {
-  margin: 3rem 0 2rem;
+  /* margin: 3rem 0 2rem; */
 }
 
 .title-wrapper-with-link .title {
@@ -921,7 +921,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
   flex-wrap: wrap;
 }
 
