@@ -1,3 +1,7 @@
+.footer-desc {
+  font-size: 1.4rem;
+  margin: 0 3rem;
+}
 .footer__content-bottom-wrapper:last-child {
   display: flex;
   border-top: 1px solid rgb(4 11 9 / 10%);
