@@ -20,6 +20,10 @@
   padding-right: 16rem;
 }
 
+.footer__cate ul:last-child {
+  padding-right: 0;
+}
+
 .footer__cate li {
   color: rgb(4 11 9 / 50%);
   margin: 1rem 0;
