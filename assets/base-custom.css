@@ -1,3 +1,7 @@
+.footer__content-bottom:nth-child(2) .footer__content-bottom-wrapper {
+  height: 8rem;
+}
+
 .banner-container {
   display: grid;
   grid-template-areas: 
