@@ -3,10 +3,16 @@
 }
 
 .policy {
+  height: 1.9rem;  
   margin-top: 2rem;
   text-align: right;
   font-size: 1.2rem;
-  height: 1.9rem;
+  font-family: Poppins;
+  font-weight: lighter;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: rgba(4, 11, 9, 0.5);
 }
 
 .policy > span {
