@@ -52,7 +52,7 @@
                     required
                   >
                   <label class="field__label newsletter__field__label_email" for="NewsletterForm--{{ section.id }}">
-                    <span>{% render 'icon-union' %}</span> Enter your email{%- comment -%}{{ 'newsletter.label' | t }}{%- endcomment -%}
+                    {% render 'icon-union' %} Enter your email{%- comment -%}{{ 'newsletter.label' | t }}{%- endcomment -%}
                   </label>
                   <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                     {% render 'icon-arrow' %}
