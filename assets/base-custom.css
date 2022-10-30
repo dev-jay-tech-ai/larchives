@@ -1,6 +1,6 @@
 .blog-image-custom {
-  width: 4.13rem;
-  height: 3.8rem;
+  width: 4.13rem !important;
+  height: 3.8rem !important;
 }
 
 .newsletter-field {
