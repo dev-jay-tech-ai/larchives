@@ -1,6 +1,6 @@
 .footer-desc {
   font-size: 1.4rem;
-  margin: 0 3rem;
+  margin: 3rem 0;
 }
 .footer__content-bottom-wrapper:last-child {
   display: flex;
