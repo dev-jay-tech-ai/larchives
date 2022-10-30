@@ -1,5 +1,5 @@
 .blog-title-custom {
-  text-align: right;
+  text-align: right !important;
 }
 
 .blog-image-custom {
