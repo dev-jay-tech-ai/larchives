@@ -307,9 +307,7 @@
     "main-image-banner": {
       "type": "main-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_9.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large"
+        "image_2": "shopify:\/\/shop_images\/Rectangle_9.jpg"
       }
     }
   },
