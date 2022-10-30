@@ -87,8 +87,8 @@
 
 .footer__column--info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
