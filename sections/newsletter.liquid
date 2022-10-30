@@ -58,6 +58,7 @@
                     {% render 'icon-arrow' %}
                   </button>
                 </div>
+                <div class="policy"><input type="checkbox" style="border:1px solid #00f; display:block; background:#fff;" /> I agree to the Privacy Policy.</div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                 {%- endif -%}
