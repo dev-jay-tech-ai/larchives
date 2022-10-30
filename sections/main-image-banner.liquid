@@ -1,5 +1,5 @@
 <div class='banner-container'>
-  <div>
+  <div class='main-content'>
     {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
       loading: 'lazy',
       width: section.settings.image.width,
@@ -10,7 +10,7 @@
       alt: section.settings.image.alt | escape
     }}
   </div>
-  <div>
+  <div class='sub-content'>
     {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
       loading: 'lazy',
       width: section.settings.image.width,
@@ -21,7 +21,7 @@
       alt: section.settings.image.alt | escape
     }}
   </div>
-  <div>
+  <div class='sub-content'>
     {{ section.settings.image_3 | image_url: width: 1500 | image_tag:
       loading: 'lazy',
       width: section.settings.image.width,
@@ -32,7 +32,7 @@
       alt: section.settings.image.alt | escape
     }}
   </div>
-  <div>
+  <div class='sub-content'>
     {{ section.settings.image_4 | image_url: width: 1500 | image_tag:
       loading: 'lazy',
       width: section.settings.image.width,

@@ -1,3 +1,12 @@
+.banner-container {
+  display: grid;
+  grid-template-areas: 
+    "main sub sub"
+    " . sub";
+}
+
+.main-content { grid-area: main; }
+.sub-content { grid-area: sub; }
 
 /**
 .product-card-hover {
