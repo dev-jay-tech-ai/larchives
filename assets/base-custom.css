@@ -11,6 +11,7 @@
 
 .footer__cate h4 {
   margin: 2rem 0;
+  text-transform: capitalize; 
 }
 
 .footer__cate ul {
