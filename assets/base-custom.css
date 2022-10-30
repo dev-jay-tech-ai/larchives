@@ -1,6 +1,7 @@
 .footer__cate {
   display: flex;
-
+  color: #040b09;
+  font-size: 1.4rem;
 }
 
 .footer-desc {
