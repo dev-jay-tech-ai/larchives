@@ -1,6 +1,7 @@
 .footer__cate {
   display: flex;
   color: #040b09;
+  justify-content: space-between;
 }
 
 .footer__cate h4 {
