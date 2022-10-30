@@ -53,7 +53,7 @@
 .blog-articles .article-card .card__information,
 .blog__posts .article-card .card__information {
   padding-left: 6rem;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
 }
 
 .article-card__info {
