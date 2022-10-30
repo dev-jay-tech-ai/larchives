@@ -90,8 +90,10 @@
   /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+  /*
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 2rem; */
 }
 
 @media screen and (min-width: 750px) {
