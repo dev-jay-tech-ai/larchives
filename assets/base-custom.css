@@ -1,8 +1,11 @@
-.policy > span {
+.policy {
   margin-top: 2rem;
   text-align: right;
   font-size: 1.2rem;
   height: 1.9rem;
+}
+
+.policy > span {
 
 }
 
