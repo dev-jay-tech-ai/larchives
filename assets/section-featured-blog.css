@@ -36,7 +36,7 @@
 }
 
 .blog__title {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .blog__posts.articles-wrapper {
