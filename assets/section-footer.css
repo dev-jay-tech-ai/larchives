@@ -43,6 +43,9 @@
 .footer__content-bottom {
   /* border-top: solid 0.1rem rgba(var(--color-foreground), 0.08); */
   padding-top: 3rem;
+  height: 21.4rem;
+  border-bottom: 1px solid #040B09;
+  opacity: 0.1;
 }
 
 .footer__content-bottom:only-child {
