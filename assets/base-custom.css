@@ -1,3 +1,7 @@
+.footer-font-copyright {
+  text-align: right;  
+}
+
 .footer__cate {
   display: flex;
   color: #040b09;
