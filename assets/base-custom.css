@@ -56,6 +56,10 @@
   height: 38rem !important;
 }
 
+.newsletter__wrapper > div:last-child {
+  margin-top: 4rem;
+}
+
 .newsletter-field {
   border-bottom: solid 2px rgb(4, 11, 9);
 }
