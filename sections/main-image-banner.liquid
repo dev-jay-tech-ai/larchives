@@ -74,12 +74,12 @@
   const target = document.querySelectorAll('.banner_hover');
   for(let i=0; i<banners.length; i++){
   	banners[i].addEventListener("mouseover",() => {
-      target[i].lastChild.style.display = "block";
+      target[i].style.display = "block";
   	})
   }
   for(let i=0; i<banners.length; i++){
   	banners[i].addEventListener("mouseout",() => {
-      target[i].lastChild.style.display = "none";
+      target[i].style.display = "none";
   	})
   }
 {% endjavascript %}
