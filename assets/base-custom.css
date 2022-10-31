@@ -125,7 +125,6 @@
   padding: 0;
 }
 
-.banner-container img { width: 100%; }
 .banner-1 { grid-area: bn1; }
 .banner-2 { grid-area: bn2; }
 .banner-3 { grid-area: bn3; }
