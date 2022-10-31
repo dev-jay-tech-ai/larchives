@@ -180,8 +180,10 @@
   position: relative;
 }
 
-.banner_cover:hover {
-  opacity: .5;
+.banner_hover {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #fff;
 }
 
 /**
