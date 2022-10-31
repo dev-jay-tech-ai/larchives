@@ -184,7 +184,7 @@
   position: absolute;
   bottom: 40px;
   left: 40px;
-  display: block;
+  display: none;
   width: 4.8rem;
   height: 4.8rem;
   background-color: #fff;
