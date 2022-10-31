@@ -201,7 +201,7 @@
   position: absolute;
   bottom: 40px;
   left: 40px;
-  display: none;
+  display: block;
   width: 4.8rem;
   height: 4.8rem;
   background-color: #fff;
