@@ -65,6 +65,7 @@
         {% if product.price_varies > product.compare_at_price_varies %}        {% endif %}
           <span class="price-item custom-price-discountrate">
             {{ price }}, {{ compare_at_price }}
+            {{ compare_at_price | minus: price }}
             <span>{{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | money | times: 100 | remove: '.0'}}</span>
             <span>%&nbsp;OFF</span>
           </span>   
