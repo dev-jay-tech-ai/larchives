@@ -62,7 +62,7 @@
         </span>    
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.discount' | t }}</span>
 
-        {% if product.compare_at_price_varies > product.price_varies %}
+        {% if compare_at_price > money_price %}
           <span class="price-discount">
           <span>{{ compare_at_price | minus: money_price | times: 100.0 | divided_by: compare_at_price | money | times: 100 | remove: '.0'}}</span>
           {% include 'icon-percentage' %} <span>&nbsp;OFF</span>
