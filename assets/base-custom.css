@@ -68,6 +68,10 @@
   left: 0;
 }
 
+.newsletter-form__button {
+  right: -9px;
+}
+
 .policy {
   height: 1.9rem;  
   margin-top: 2rem;
