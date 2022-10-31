@@ -76,11 +76,11 @@
   for(let i=0; i<banners.length; i++){
     const elem = window.getComputedStyle(banners[i],':after');
   	banners[i].addEventListener("mouseover",() => {
-      elem.setProperty('display','block')
+      elem.style.display = "block"
       target[i].style.display = "block";
   	})
   	banners[i].addEventListener("mouseout",() => {
-      elem.setProperty('display','none')
+      elem.style.display = "none"
       target[i].style.display = "none";
   	})
   }
