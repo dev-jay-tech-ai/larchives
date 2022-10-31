@@ -63,8 +63,8 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.discount' | t }}</span>
         {% if compare_at_price > price %}
           <span class="price-item custom-price-discountrate">
-            <span>-{{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round: 2 }}</span>
-            <span>%&nbsp;OFF</span>
+            <span>-{{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round: 2 }}%</span>
+            <span>&nbsp;OFF</span>
           </span>   
         {% endif %}
         </div>
