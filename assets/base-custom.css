@@ -206,6 +206,7 @@
   text-align: center;
   line-height: 5.5rem;
   transition: 0.5s;
+  z-index: 4;
 }
 
 /**
