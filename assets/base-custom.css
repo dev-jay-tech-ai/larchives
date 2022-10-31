@@ -218,9 +218,10 @@
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
 }
 
+/* 지워도 됨
 .grid__item:nth-child(2) .product-card-wrapper {
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
-}
+} */
 
 .custom-price-discountrate {
   font-size: 1.2rem;
