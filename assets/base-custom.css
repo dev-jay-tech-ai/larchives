@@ -148,7 +148,7 @@
 .banner-caption {
   postion: absolute;
   display: block;
-  color: #fff;
+  color: red;
   height: 6rem;
   top: 50px;
   left: 40px;
