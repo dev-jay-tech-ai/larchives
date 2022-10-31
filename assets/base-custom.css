@@ -1,3 +1,14 @@
+#insta-feed {
+  margin: 0;
+}
+
+#insta-feed::after {
+  content: '';
+  with: ;
+  height: ;
+  
+}
+
 .color-inverse {
   border: 0;
   background-color: #040b09;
