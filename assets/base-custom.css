@@ -2,9 +2,9 @@
   margin: 0 !important;
 }
 
-#insta-feed::after {
+#insta-feed:after {
   content: '';
-  with: 10rem;
+  width: 10rem;
   height: 10rem;
   background-color: #fff;
   
