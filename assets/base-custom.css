@@ -123,6 +123,7 @@
 
 .banner-sub {
   display: flex;
+  flex-direction: column;
 }
 
 .banner-sub_sub {
