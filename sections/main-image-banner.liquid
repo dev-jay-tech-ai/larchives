@@ -77,10 +77,12 @@
     const elem = window.getComputedStyle(banners[i],':after');
   	banners[i].addEventListener("mouseover",() => {
       console.log(elem.getPropertyValue('display'));
+      elem.setProperty('display','block')
       target[i].style.display = "block";
   	})
   	banners[i].addEventListener("mouseout",() => {
       console.log(elem.getPropertyValue('display'));
+      elem.setProperty('display','none')
       target[i].style.display = "none";
   	})
   }
