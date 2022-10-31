@@ -76,15 +76,17 @@
 {% javascript %}
   const banners = document.querySelectorAll('.banner_cover');
   const target = document.querySelectorAll('.banner_hover');
-  const target = document.querySelectorAll('.banner__dim');
+  const effect = document.querySelectorAll('.banner__dim');
   
   for(let i=0; i<banners.length; i++){
   	banners[i].addEventListener("mouseover",() => {
       target[i].style.display = "block";
+      effect[i].style.display = "block";
   	})
     
   	banners[i].addEventListener("mouseout",() => {
       target[i].style.display = "none";
+      effect[i].style.display = "none";
   	})
   }
 {% endjavascript %}
