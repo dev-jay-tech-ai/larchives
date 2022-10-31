@@ -184,8 +184,8 @@
   position: relative;
 }
 
-.banner_cover_dim {
-  display: black;
+.banner__dim {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
