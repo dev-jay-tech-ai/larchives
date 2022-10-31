@@ -62,7 +62,7 @@
         </span>    
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.discount' | t }}</span>
 
-        {% if product.price_varies > product.compare_at_price_varies %}        {% endif %}
+        {% if compare_at_price > price %}'EYS'{% endif %}
           <span class="price-item custom-price-discountrate">
             <span>-{{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round: 2 }}</span>
             <span>%&nbsp;OFF</span>
