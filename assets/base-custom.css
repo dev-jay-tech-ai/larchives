@@ -121,6 +121,11 @@
   display: flex;
 }
 
+.banner-sub {
+  display: flex;
+  flex-direction: column;
+}
+
 .banner-container img { width: 100%; }
 
 
