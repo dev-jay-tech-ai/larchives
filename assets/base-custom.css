@@ -121,6 +121,10 @@
   display: flex;
 }
 
+.banner-container > div {
+  width: 50%;
+}
+
 .banner-sub {
   display: flex;
   flex-direction: column;
