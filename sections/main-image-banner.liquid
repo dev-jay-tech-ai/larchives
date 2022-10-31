@@ -68,6 +68,7 @@
 
 {% javascript %}
   const banners = document.querySelectorAll('.banner_cover');
+  
   for(let i=0; i<banners.length; i++){
   	banners[i].addEventListener("mouseover",() => {
       banners[i].lastChild.style.display = "block";
