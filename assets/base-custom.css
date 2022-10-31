@@ -148,7 +148,12 @@
 .banner-caption {
   position: absolute;
   display: block;
-  color: red;
+  font-size: 2.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   height: 6rem;
   top: 50px;
   left: 40px;
