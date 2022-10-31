@@ -1,3 +1,7 @@
+.none {
+  disply: block;  
+}
+
 .blog-rectangle {
   position: absolute;
   display: block !important;
