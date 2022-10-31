@@ -122,7 +122,8 @@
                 class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
               >
                 {{- 'products.product.sold_out' | t -}}
-                {%- if products.product.sold_out == 'SOLD OUT' -%}OUT OF STOCK{%- endif -%}
+                {{ products.product.sold_out }}
+                
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
               <span
