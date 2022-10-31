@@ -223,6 +223,10 @@
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
 } */
 
+.grid--3-col-desktop .card-information {
+  height: 9.2rem;
+}
+
 .grid--4-col-desktop .card-wrapper  {
   width: 30.5rem;
 }
