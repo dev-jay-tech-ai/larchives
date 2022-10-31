@@ -64,6 +64,10 @@
   border-bottom: solid 2px rgb(4, 11, 9);
 }
 
+.newsletter-field .field__label {
+  left: 0;
+}
+
 .policy {
   height: 1.9rem;  
   margin-top: 2rem;
