@@ -181,6 +181,8 @@
 }
 
 .banner_hover {
+  position: absolute;
+  display: block;
   width: 4.8rem;
   height: 4.8rem;
   background-color: #fff;
