@@ -127,7 +127,7 @@
 
 .banner-sub_sub {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .banner-container img { width: 100%; }
