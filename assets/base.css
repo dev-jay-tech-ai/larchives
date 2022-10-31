@@ -1671,6 +1671,7 @@ details[open] > .share-button__fallback {
   -webkit-appearance: none;
   appearance: none;
   /* background-color: rgb(var(--color-background)); */
+  background-color: rgb(var(--gradient-background)); 
   color: rgb(var(--color-foreground));
   font-size: 1.6rem;
   width: 100%;
