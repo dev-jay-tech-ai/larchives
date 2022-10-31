@@ -11,28 +11,30 @@
     }}
   </div>
   <div class='banner-sub'>
-    <div class='banner-2'>
-      {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
-        loading: 'lazy',
-        width: section.settings.image.width,
-        height: image_height,
-        class: image_class,
-        sizes: sizes,
-        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-        alt: section.settings.image.alt | escape
-      }}
-    </div>
-    <div class='banner-3'>
-      {{ section.settings.image_3 | image_url: width: 1500 | image_tag:
-        loading: 'lazy',
-        width: section.settings.image.width,
-        height: image_height,
-        class: image_class,
-        sizes: sizes,
-        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-        alt: section.settings.image.alt | escape
-      }}
-    </div>
+    <div class='banner-sub_sub'>
+      <div class='banner-2'>
+        {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt | escape
+        }}
+      </div>
+      <div class='banner-3'>
+        {{ section.settings.image_3 | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt | escape
+        }}
+      </div>
+    </div>  
     <div class='banner-4'>
       {{ section.settings.image_4 | image_url: width: 1500 | image_tag:
         loading: 'lazy',
