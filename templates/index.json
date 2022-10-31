@@ -88,8 +88,8 @@
       "type": "main-image-banner",
       "settings": {
         "image_1": "shopify:\/\/shop_images\/Background1.jpg",
-        "image_2": "shopify:\/\/shop_images\/Background2.jpg",
-        "image_3": "shopify:\/\/shop_images\/Background3.jpg",
+        "image_2": "shopify:\/\/shop_images\/Background3.jpg",
+        "image_3": "shopify:\/\/shop_images\/Background2.jpg",
         "image_4": "shopify:\/\/shop_images\/Background4.jpg"
       }
     },
