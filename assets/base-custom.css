@@ -180,6 +180,18 @@
   position: relative;
 }
 
+.banner_cover:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* 빈 값으로 넣어야 가상의 요소 생성; */
+  content: '';
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .banner_hover {
   position: absolute;
   bottom: 40px;
