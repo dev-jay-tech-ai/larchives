@@ -181,7 +181,7 @@
 }
 
 .banner_cover:hover {
-  color: red;
+  opacity: .5;
 }
 
 /**
