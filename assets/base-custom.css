@@ -9,6 +9,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/instagram-feed.svg?v=1667251053');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 2;
