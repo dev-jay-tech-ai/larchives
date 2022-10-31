@@ -69,13 +69,13 @@
 {% javascript %}
   const banners = document.querySelectorAll('.banner_cover');
   const target = document.querySelectorAll('.banner_hover');
-  for(let i=0;i<button.length; i++){
+  for(let i=0; i<banners.length; i++){
   	banners[i].addEventListener("mouseover",() => {
     	target[i].style.display = "block";
   	})
   }
   
-  for(let i=0;i<button.length; i++){
+  for(let i=0;i<banners.length; i++){
   	banners[i].addEventListener("mouseout",() => {
     	target[i].style.display = "none";
   	})
