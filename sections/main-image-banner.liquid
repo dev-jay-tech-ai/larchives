@@ -74,14 +74,14 @@
   const target = document.querySelectorAll('.banner_hover');
   
   for(let i=0; i<banners.length; i++){
-    const elem = window.getComputedStyle(parent,':after');
+    const elem = window.getComputedStyle(banners[i],':after');
   	banners[i].addEventListener("mouseover",() => {
-      banners[i].getPropertyValue('display') = "block";
+      elem.getPropertyValue('display') = "block";
       target[i].style.display = "block";
   	})
 
   	banners[i].addEventListener("mouseout",() => {
-      banners[i].getPropertyValue('display') = "none";
+      elem.getPropertyValue('display') = "none";
       target[i].style.display = "none";
   	})
   }
