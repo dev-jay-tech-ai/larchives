@@ -67,7 +67,12 @@
 </div>
 
 {% javascript %}
-  console.log('배너 이미지');
+  const banner = document.querySelector('.banner_cover');
+  const target = document.querySelector('.banner_hover');
+  banner.addEventListener("mouseover",() => {
+    console.log('마우오')
+  })
+  
 {% endjavascript %}
 
 {% schema %}
