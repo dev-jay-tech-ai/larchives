@@ -157,6 +157,11 @@
   height: 6rem;
   top: 50px;
   left: 40px;
+  color: #fff;
+}
+
+.banner-caption span {
+  
 }
 
 .banner_cover {
