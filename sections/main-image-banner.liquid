@@ -74,7 +74,6 @@
   const target = document.querySelectorAll('.banner_hover');
   
   for(let i=0; i<banners.length; i++){
-    const elem = window.getComputedStyle(banners[i],':after');
   	banners[i].addEventListener("mouseover",() => {
       target[i].style.display = "block";
   	})
