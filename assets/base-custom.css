@@ -118,18 +118,11 @@
 }
 
 .banner-container {
-  display: grid;
-  grid-template-areas: 
-  "bn1 bn2 bn3"
-  "bn1 bn4 bn4";
-  padding: 0;
+  display: flex;
 }
 
 .banner-container img { width: 100%; }
-.banner-1 { grid-area: bn1; }
-.banner-2 { grid-area: bn2; }
-.banner-3 { grid-area: bn3; }
-.banner-4 { grid-area: bn4; }
+
 
 /**
 .product-card-hover {
