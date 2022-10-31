@@ -130,13 +130,13 @@
   flex-direction: column;
 }
 
-.banner-sub > div {
-  width: 50%;
-}
-
 .banner-sub_sub {
   display: flex;
   flex-direction: row;
+}
+
+.banner-sub_sub > div {
+  width: 50%;
 }
 
 .banner-container img {
