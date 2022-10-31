@@ -126,6 +126,7 @@
 }
 
 .banner-container img { height: 50%; }
+.banner-conatiner:last-child img { width: 100%; height: 100%; }
 .banner-1 { grid-area: bn1; }
 .banner-2 { grid-area: bn2; }
 .banner-3 { grid-area: bn3; }
