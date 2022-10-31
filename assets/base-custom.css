@@ -2,7 +2,7 @@
   margin: 0 !important;
 }
 
-#insta-feed:after {
+.insta-feed:after {
   content: "";
   width: 10rem;
   height: 10rem;
