@@ -130,6 +130,10 @@
   flex-direction: column;
 }
 
+.banner-sub > div {
+  width: 50%;
+}
+
 .banner-sub_sub {
   display: flex;
   flex-direction: row;
