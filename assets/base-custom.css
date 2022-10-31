@@ -131,7 +131,7 @@
   flex-direction: row;
 }
 
-.banner-container img { width: 100%; }
+.banner-container img { height: 100%; }
 
 
 /**
