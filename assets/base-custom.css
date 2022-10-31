@@ -1,3 +1,8 @@
+.color-inverse {
+  border: 0;
+  background-color: #040b09;
+}
+
 .collection-padding-custom {
   padding: 0 8rem;  
 }
