@@ -180,10 +180,6 @@
   position: relative;
 }
 
-.banner_cover:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
 .banner_hover {
   position: absolute;
   bottom: 40px;
