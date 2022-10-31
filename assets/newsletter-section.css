@@ -16,7 +16,7 @@
 }
 
 .newsletter__wrapper > * + * {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .newsletter__wrapper > * + .newsletter-form {
