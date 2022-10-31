@@ -242,6 +242,10 @@
 
 .custom-price-discountrate {
   font-size: 1.2rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
   color: #040b09;
 }
 
