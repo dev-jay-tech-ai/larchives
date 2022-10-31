@@ -160,6 +160,10 @@
   color: #fff;
 }
 
+.banner-caption div:first-child {
+  height: 2.9rem;
+}
+
 .banner-caption div:last-child {
   font-family: Poppins;
   font-size: 16px;
