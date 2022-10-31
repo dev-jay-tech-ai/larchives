@@ -3,7 +3,7 @@
 }
 
 #insta-feed:after {
-  content: '';
+  content: "";
   width: 10rem;
   height: 10rem;
   background-color: #fff;
