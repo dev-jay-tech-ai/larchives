@@ -160,8 +160,15 @@
   color: #fff;
 }
 
-.banner-caption span {
-  
+.banner-caption div:last-child {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .banner_cover {
