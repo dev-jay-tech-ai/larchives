@@ -213,11 +213,11 @@
   z-index: 4;
 }
 
-/**
-.product-card-hover {
+
+.product-card-wrapper:hover {
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
 }
-*/
+
 .grid__item:nth-child(2) .product-card-wrapper {
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
 }
