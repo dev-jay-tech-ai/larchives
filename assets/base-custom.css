@@ -2,11 +2,15 @@
   margin: 0 !important;
 }
 
-.insta-feed:after {
+#insta-feed:after {
   content: "";
   width: 10rem;
   height: 10rem;
-  background-color: #fff;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   
 }
 
