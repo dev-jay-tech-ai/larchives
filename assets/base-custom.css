@@ -1,3 +1,7 @@
+.collection-padding-custom {
+  padding: 0 8rem;  
+}
+
 .none {
   disply: none;  
 }
