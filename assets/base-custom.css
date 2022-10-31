@@ -180,6 +180,10 @@
   position: relative;
 }
 
+.banner_cover:hover {
+  color: red;
+}
+
 /**
 .product-card-hover {
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
