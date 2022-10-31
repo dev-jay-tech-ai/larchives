@@ -76,7 +76,6 @@
   for(let i=0; i<banners.length; i++){
     const elem = window.getComputedStyle(banners[i],':after');
   	banners[i].addEventListener("mouseover",() => {
-      console.log(elem)
       elem.display = "block"
       target[i].style.display = "block";
   	})
