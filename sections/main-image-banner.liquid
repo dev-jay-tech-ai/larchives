@@ -72,16 +72,20 @@
 {% javascript %}
   const banners = document.querySelectorAll('.banner_cover');
   const target = document.querySelectorAll('.banner_hover');
+  
   for(let i=0; i<banners.length; i++){
+    const elem = window.getComputedStyle(parent,':after');
   	banners[i].addEventListener("mouseover",() => {
+      banners[i].getPropertyValue('display') = "block";
       target[i].style.display = "block";
   	})
-  }
-  for(let i=0; i<banners.length; i++){
+
   	banners[i].addEventListener("mouseout",() => {
+      banners[i].getPropertyValue('display') = "none";
       target[i].style.display = "none";
   	})
   }
+  
 {% endjavascript %}
 
 {% schema %}
