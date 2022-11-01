@@ -26,13 +26,13 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
-}
-
-.caption-large.font-style {
   color: rgba(4, 11, 9, 0.5);
   text-align: right;
   width: 10rem;
+}
+
+.text-body.font-style {
+  color: rgba(4, 11, 9, 0.7);
 }
 
 .breadcrumb {
