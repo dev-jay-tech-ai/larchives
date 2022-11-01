@@ -30,6 +30,10 @@
   color: rgba(4, 11, 9, 0.5);
 }
 
+.breadcrumb span {
+  vertical-align: middle;
+}
+
 .color-inverse {
   border: 0;
   background-color: #040b09;
