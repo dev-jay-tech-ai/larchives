@@ -41,7 +41,7 @@
 .product-list-bottom {
   display: flex;
   justify-content: space-between;
-  margin-top: 75rem;
+  margin-top: 7.5rem;
 }
 
 .product-list-bottom > div {
