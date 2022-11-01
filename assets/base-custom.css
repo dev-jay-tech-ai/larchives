@@ -27,6 +27,11 @@
   flex: 1;
 }
 
+.product-list-bottom.pagination-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .facets-vertical-sort > div {
   display: flex;
   justify-content: space-between;
