@@ -18,6 +18,18 @@
   z-index: 2;
 }
 
+.breadcrumb {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(4, 11, 9, 0.5);
+}
+
 .color-inverse {
   border: 0;
   background-color: #040b09;
