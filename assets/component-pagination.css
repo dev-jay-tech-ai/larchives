@@ -45,7 +45,7 @@
   text-align: center;
   color: #040b09;
 }
-
+/*
 a.pagination__item:hover::after {
   height: 0.1rem;
 }
@@ -69,7 +69,7 @@ a.pagination__item:hover::after {
   transform: translateX(-50%);
   background-color: currentColor;
 }
-
+*/
 .pagination__item--next .icon {
   margin-left: -0.2rem;
   transform: rotate(90deg);
