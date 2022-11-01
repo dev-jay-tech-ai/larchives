@@ -31,6 +31,10 @@
   disply: none;  
 }
 
+.header__inline-menu-style {
+  border-top-color: #040b09;
+}
+
 .main-custom-style {
   margin-top: 15.5rem;
 }
