@@ -41,7 +41,7 @@
               <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">{{ 'products.facets.filter_by_label' | t }}</h2>
             {%- endif -%}
           
-            Pills are right below the title for filter type vertical
+            Pills are right below the title for filter type vertical{% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
@@ -82,7 +82,7 @@
                 {%- endfor -%}
               </div>
             {%- endif -%}
-            {% endcomment %}
+
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             {%- for filter in results.filters -%}
