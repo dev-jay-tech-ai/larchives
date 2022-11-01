@@ -21,7 +21,7 @@
       {%- if paginate.previous -%}
         <li>
           <a href="{{ paginate.previous.url }}{{ anchor }}" class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce" aria-label="{{ 'general.pagination.previous' | t }}">
-            {% render 'icon-next-page' %}
+            {% render 'icon-prev-page' %}
           </a>
         </li>
       {%- endif -%}
