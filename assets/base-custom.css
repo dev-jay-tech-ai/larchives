@@ -36,6 +36,10 @@
   vertical-align: middle;
 }
 
+.breadcrumb span svg {
+  vertical-align: middle;
+}
+
 .color-inverse {
   border: 0;
   background-color: #040b09;
