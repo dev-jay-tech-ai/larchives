@@ -20,6 +20,7 @@
 
 .product-list-bottom {
   display: flex;
+  justify-content: space-between;
 }
 
 .facets-vertical-sort > div {
