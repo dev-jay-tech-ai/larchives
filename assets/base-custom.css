@@ -21,6 +21,7 @@
 .facets-vertical-sort > div {
   display: flex;
   justify-content: space-between;
+  width: 17.3rem;
 }
 
 
