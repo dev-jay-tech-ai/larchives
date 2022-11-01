@@ -36,6 +36,10 @@
   text-align: right;
 }
 
+.select__select.caption-large.font-style {
+  width: 10rem;
+}
+
 .text-body.font-style {
   color: rgba(4, 11, 9, 0.5);
 }
