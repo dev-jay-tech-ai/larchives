@@ -417,7 +417,7 @@
 
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-        <nav class="header__inline-menu">ƒ
+        <nav class="header__inline-menu{% if request.page_type == 'index' %} header__inline-menu-style{% endif %}">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
