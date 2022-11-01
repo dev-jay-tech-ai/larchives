@@ -34,7 +34,7 @@
         <div class="facet-filters sorting caption">
           <div class="facet-filters__field">
             <h2 class="facet-filters__label caption-large text-body font-style">
-              <label for="SortBy">{{ 'products.facets.sort_by_label' | t | camelcase }}</label>
+              <label for="SortBy">{{ 'products.facets.sort_by_label' | camelcase }}</label>
             </h2>
             <div class="select">
               {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
