@@ -73,6 +73,8 @@ a.pagination__item:hover::after {
 
 .pagination__item--current {
   background-color: #000;
+  opacity: 1;
+  color: #fff;
 }
 
 .pagination__item--next .icon {
