@@ -403,7 +403,6 @@
           {%- endif -%}
           {%- endcomment -%}  
           </a>
-      {%- if request.page_type == 'index' -%}
         </h1>
         <nav>
         <div class='header_custom_style'>
@@ -413,7 +412,6 @@
         </div>  
       </nav>
       {%- endif -%}
-    {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
