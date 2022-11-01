@@ -30,7 +30,7 @@
   color: rgba(4, 11, 9, 0.5);
 }
 
-.caption-large .font-style {
+.caption-large.font-style {
   text-align: right;
   width: 7.7rem;
 }
