@@ -364,6 +364,10 @@
   color: #040b09;
 }
 
+.header_text_reverse {
+  color: #fff;
+}
+
 .header_text_style > span {
   height: 1.4rem;
 }
