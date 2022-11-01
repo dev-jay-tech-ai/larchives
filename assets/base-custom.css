@@ -365,7 +365,7 @@
 }
 
 .header_text_reverse {
-  color: #fff;
+  color: #fff !important;
 }
 
 .header_text_style > span {
