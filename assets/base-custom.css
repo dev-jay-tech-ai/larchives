@@ -32,7 +32,7 @@
 }
 
 .header__inline-menu-style {
-  border-top-color: #040b09;
+  border-top-color: #040b09 !important;
 }
 
 .main-custom-style {
