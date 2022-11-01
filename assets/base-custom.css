@@ -18,6 +18,11 @@
   z-index: 2;
 }
 
+.facets-vertical-sort > div {
+  display: flex;
+}
+
+
 .font-style {
   font-family: Poppins;
   font-size: 14px;
