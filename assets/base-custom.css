@@ -31,6 +31,7 @@
 }
 
 .caption-large.font-style {
+  color: rgba(4, 11, 9, 0.7);
   text-align: right;
   width: 10rem;
 }
