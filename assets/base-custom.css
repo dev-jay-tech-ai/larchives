@@ -18,6 +18,19 @@
   z-index: 2;
 }
 
+.font-style {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(4, 11, 9, 0.5);
+}
+
+
 .breadcrumb {
   font-family: Poppins;
   font-size: 12px;
