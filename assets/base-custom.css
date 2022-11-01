@@ -30,7 +30,7 @@
   color: rgba(4, 11, 9, 0.5);
 }
 
-.breadcrumb span {
+.breadcrumb span svg {
   vertical-align: middle;
 }
 
