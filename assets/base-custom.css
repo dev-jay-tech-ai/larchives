@@ -32,6 +32,10 @@
   margin-bottom: 3.5rem;
 }
 
+.chevron {
+  margin-bottom: 3.5rem;  
+}
+
 .chevron svg {
   vertical-align: middle;
 }
