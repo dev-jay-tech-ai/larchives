@@ -124,10 +124,14 @@
                 </li>
               {%- endfor -%}
             </ul>
-    
-            {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
-            {%- endif -%}
+            <div>
+              <div></div>
+              <div>
+              {%- if paginate.pages > 1 -%}
+                {% render 'pagination', paginate: paginate, anchor: '' %}
+              {%- endif -%}
+              </div>
+            </div>  
           </div>
         {%- endif -%}
       {%- endpaginate -%}
