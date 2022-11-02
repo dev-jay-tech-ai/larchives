@@ -26,6 +26,10 @@
   flex: 1;
 }
 
+.mega-menu__content > ul {
+  list-style-type: none;
+}
+
 .button-load-custom {
   width: 19.7rem;
   height: 5rem;
