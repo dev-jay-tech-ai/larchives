@@ -18,8 +18,8 @@
   z-index: 2;
 }
 
-.menu-contents {
-  diplay: flex;
+.menu-contents > div{
+  width: 300px;
 }
 
 .button-load-custom {
