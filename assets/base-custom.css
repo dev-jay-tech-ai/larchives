@@ -18,6 +18,10 @@
   z-index: 2;
 }
 
+.menu-contents {
+  diplay: flex;
+}
+
 .button-load-custom {
   width: 19.7rem;
   height: 5rem;
