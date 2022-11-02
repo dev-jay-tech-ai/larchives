@@ -23,7 +23,7 @@
 }
 
 .mega-menu__content > div > div {
-
+  flex: 1;
 }
 
 .mega-menu__content > div > div:last-child {
