@@ -18,21 +18,12 @@
   z-index: 2;
 }
 
-.menu-contents {
+.mega-menu__content > div {
   display: flex;
 }
 
-.menu-contents > div {
-  flex: 1;
-}
-
-.mega-menu__content > ul {
-  list-style-type: none;
-}
-
-.mega-menu__content > ul ul {
-  list-style-type: none; 
-  float: left;
+.mega-menu__content > div > div {
+  flex: 1fr 3.50rem;
 }
 
 .button-load-custom {
