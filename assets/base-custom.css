@@ -360,7 +360,7 @@
   height: 9.2rem;
 }
 
-.contains-card--product.grid--3-col-desktop {
+.product-grid-custom .card__inner {
   height: 45.7rem;
 }
 
