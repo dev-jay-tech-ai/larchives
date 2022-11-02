@@ -1238,7 +1238,7 @@ summary::-webkit-details-marker {
   top: 0;
   left: 0;
   height: 70%;
-  width: 100%; 
+  /* width: 100%; */
 }
 
 .media > img {
