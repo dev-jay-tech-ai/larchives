@@ -26,6 +26,10 @@
   flex: 1fr 3.50rem;
 }
 
+.mega-menu__content > div > div:last-child {
+  background-color: red;
+}
+
 .button-load-custom {
   width: 19.7rem;
   height: 5rem;
