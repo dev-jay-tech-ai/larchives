@@ -20,10 +20,11 @@
 
 .mega-menu__content > div {
   display: flex;
+  justify-content: space-between;
 }
 
 .mega-menu__content > div > div {
-  flex: 1;
+
 }
 
 .mega-menu__content > div > div:last-child {
