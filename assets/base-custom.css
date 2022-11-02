@@ -355,9 +355,9 @@
   height: 9.2rem;
 }
 
-.grid--3-col-desktop .card__inner {
+/* .grid--3-col-desktop .card__inner {
   height: 61.9rem;
-}
+} */
 
 .product-grid-custom .card__inner {
   height: 45.7rem;
