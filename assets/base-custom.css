@@ -30,6 +30,11 @@
   list-style-type: none;
 }
 
+.mega-menu__content > ul ul {
+  list-style-type: none; 
+  float: left;
+}
+
 .button-load-custom {
   width: 19.7rem;
   height: 5rem;
