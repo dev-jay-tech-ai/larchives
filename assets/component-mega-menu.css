@@ -73,6 +73,7 @@
   width: 16%;
   padding-right: 2.4rem;
   font-family: Mulish;
+  font-size: 1.4rem;
 }
 
 .mega-menu__link:hover,
@@ -87,7 +88,7 @@
 
 .mega-menu .mega-menu__list--condensed {
   display: block;
-  font-size: 14px;
+  font-size: 1.7rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
