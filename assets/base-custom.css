@@ -360,15 +360,10 @@
   height: 9.2rem;
 }
 
-.grid--3-col-desktop .card__media {
+.grid--3-col-filter-custom {
   height: 45.7rem;
 }
 
-/*
-.grid--4-col-desktop .card-wrapper  {
-  width: 30.5rem;
-}
-*/
 .grid--4-col-desktop .card__inner {
   height: 45.7rem;
 }
