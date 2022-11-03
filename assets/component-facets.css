@@ -789,7 +789,8 @@ details.menu-opening .mobile-facets__close svg {
 .mobile-facets__summary > div,
 .facets__summary > div {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 
 .js .mobile-facets__submenu {
