@@ -29,6 +29,7 @@
   position: relative;
   opacity: 0.2;
   background-color: #040b09;
+  margin-top: 36px;
 }
 .slider .progress{
   height: 100%;
