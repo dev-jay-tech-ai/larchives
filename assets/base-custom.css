@@ -19,25 +19,24 @@
 }
 
 /* Product list detail */ 
-.product__info-container .product__title > h2 {
-  font-size: 36px;
+
+.product__info-container {
+  font-family: Poppins;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
+}
+
+.product__info-container .product__title > h2 {
+  font-size: 36px;
   color: #040b09;
 }
 
 .product__info-container .product__text {
-  font-family: Poppins;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
   color: rgba(4, 11, 9, 0.5);
 }
 
