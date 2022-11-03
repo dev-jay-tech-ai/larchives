@@ -222,7 +222,7 @@
                           </a>
                         </facet-remove>
                       {%- endif -%}
-                    </div>{% endcomment %}
+                    </div>
                     <price-range class="facets__price">
                       <span class="field-currency">{{ cart.currency.symbol }}</span>
                       <div class="field">
@@ -260,7 +260,7 @@
                         >
                         <label class="field__label" for="Filter-{{ filter.label | escape }}-LTE">{{ 'products.facets.to' | t }}</label>
                       </div>
-                    </price-range>
+                    </price-range>{% endcomment %}
                 
                     <div class="slider">
                       <div class="progress"></div>
