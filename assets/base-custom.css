@@ -41,11 +41,17 @@
   background-repeat: no-repeat;
   background-color: rgba(4, 11, 9, 0.2);
   text-align: center;
+  
 }
 
 .mega-menu__content > div > div:last-child h3 {
   font-size: 2.4rem;
   color: #fff;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .mega-menu__content > div > div:last-child p {
