@@ -101,7 +101,7 @@
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}">
                     {%- if filter_type != 'vertical' -%}
                       <div class="facets__header">
-                        {% comment %}<span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>{% endcomment %}
+                        <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
                         <facet-remove>
                           <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
                             {{ 'products.facets.reset' | t }}
@@ -211,6 +211,7 @@
                     </div>
                   </summary>
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}">
+                    {% comment %}
                     <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
                       {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
                       <span class="facets__selected">{{ "products.facets.max_price" | t: price: max_price_amount }}</span>
@@ -221,7 +222,7 @@
                           </a>
                         </facet-remove>
                       {%- endif -%}
-                    </div>
+                    </div>{% endcomment %}
                     <price-range class="facets__price">
                       <span class="field-currency">{{ cart.currency.symbol }}</span>
                       <div class="field">
