@@ -27,6 +27,10 @@
   text-align: left;
 }
 
+.mega-menu__content > div > div ul {
+  padding-left: 0;
+}
+
 .mega-menu__content > div > div:last-child {
   width: 35rem;
   height: 35rem;
