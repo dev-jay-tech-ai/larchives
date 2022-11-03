@@ -19,6 +19,11 @@
 }
 
 /* Price Range */ 
+
+.facets__display-vertical > div {
+  height: 6.1rem;
+}
+
 .slider{
   height: 1px;
   position: relative;
