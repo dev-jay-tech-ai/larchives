@@ -507,8 +507,8 @@
   padding: 7px 24px 0px 24px;
 }
 
-.list-menu--inline li:last-child {
-  padding-top: 7px;
+.list-menu--inline li:last-child svg {
+  margin-top: 7px;
 }
 
 /* Custom CSS 
