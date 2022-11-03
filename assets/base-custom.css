@@ -56,6 +56,10 @@
   margin-bottom: 0;
 }
 
+.mega-menu__content > div > div:last-child h3 {
+  
+}
+
 .mega-menu__content > div > div:last-child p {
   font-family: Poppins;
   font-size: 1.6rem;
