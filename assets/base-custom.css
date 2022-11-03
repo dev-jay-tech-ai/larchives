@@ -40,6 +40,13 @@
   color: rgba(4, 11, 9, 0.5);
 }
 
+.price__container {
+  display: flex;
+}
+
+.price__container > div {
+  flex: 1;
+}
 
 /* Price Range */ 
 .facets__display-vertical > div {
