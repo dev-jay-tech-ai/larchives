@@ -55,7 +55,7 @@ input[type="range"]::-webkit-slider-thumb{
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  border: solid 1px #040b09;
+  border: solid 2px #040b09;
   background-color: #fff;
   pointer-events: auto;
   -webkit-appearance: none;
@@ -64,7 +64,7 @@ input[type="range"]::-moz-range-thumb{
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  border: solid 1px #040b09;
+  border: solid 2px #040b09;
   background-color: #fff;
   pointer-events: auto;
   -webkit-appearance: none;
