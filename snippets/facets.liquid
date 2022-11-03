@@ -265,7 +265,19 @@
                       <div class="progress"></div>
                     </div>
                     <div class="range-input">
-                      <input type="range" class="range-min" min="0" max="10000" value="2500" step="50">
+                      <input 
+                        type="range" 
+                        class="range-max" 
+                        min="0" 
+                        {%- if uses_comma_decimals -%}
+                          max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                          value="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                        {%- else -%}
+                          max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                          value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                        {% endif %}
+                        step="50"
+                      >
                       <input 
                         type="range" 
                         class="range-max" 
