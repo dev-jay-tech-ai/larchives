@@ -102,11 +102,6 @@
         "padding_bottom": 44
       }
     },
-    "426464b2-2aaa-4e12-afed-f088e6dc6370": {
-      "type": "instagrid",
-      "settings": {
-      }
-    },
     "99b79d9e-1818-4878-bb88-d9611781b52e": {
       "type": "instafeed",
       "settings": {
@@ -119,7 +114,6 @@
   "order": [
     "main",
     "product-recommendations",
-    "426464b2-2aaa-4e12-afed-f088e6dc6370",
     "99b79d9e-1818-4878-bb88-d9611781b52e"
   ]
 }
