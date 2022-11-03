@@ -271,7 +271,7 @@
                       {%- if uses_comma_decimals -%}max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"{% endif %} 
                       {%- if filter.min_value.value -%}
                         {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
-                      {%- endif -%} step="5">
+                      {%- endif -%} step="5"><span></span>
                       <input type="range" class="range-max" min="0"
                       {%- if uses_comma_decimals -%}
                         max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
@@ -282,7 +282,7 @@
                         {%- if uses_comma_decimals -%}value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
                         {%- else -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
                         {% endif %}
-                      {%- endif -%} step="5">
+                      {%- endif -%} step="5"><span></span>
                     </div>
                     </div>
                   </div>
