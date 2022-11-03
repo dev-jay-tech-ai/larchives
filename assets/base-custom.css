@@ -18,6 +18,11 @@
   z-index: 2;
 }
 
+.facets__summary svg {
+  width: 24px;
+  height: 24px;
+}
+
 .mega-menu__content > div {
   display: flex;
   justify-content: space-between;
