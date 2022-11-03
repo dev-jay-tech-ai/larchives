@@ -37,6 +37,7 @@
   position: absolute;
   height: 3px;
   background-color: #040b09;
+  opacity: 1;
 }
 .range-input{
   position: relative;
