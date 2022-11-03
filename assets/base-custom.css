@@ -40,7 +40,8 @@
   height: 3px;
 }
 
-.slider .progress > div {
+.range-input:after {
+  content: "";
   width: 4px;
   height: 4px;
   background-color: #040b09;
