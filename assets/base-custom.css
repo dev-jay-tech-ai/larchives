@@ -20,10 +20,10 @@
 
 /* Price Range */ 
 .slider{
-  height: 5px;
+  height: 1px;
   position: relative;
-  background: #ddd;
-  border-radius: 5px;
+  opacity: 0.2;
+  background-color: #040b09;
 }
 .slider .progress{
   height: 100%;
