@@ -40,15 +40,6 @@
   height: 3px;
 }
 
-.range-input > span {
-  display: block;
-  width: 4px;
-  height: 4px;
-  background-color: #040b09;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
 .range-input{
   position: relative;
 }
@@ -81,6 +72,14 @@ input[type="range"]::-moz-range-thumb{
   -webkit-appearance: none;
 }
 
+.range-input > span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #040b09;
+  border-radius: 50%;
+  margin: 0 auto;
+}
 
 .facets__summary svg {
   width: 24px;
