@@ -311,16 +311,14 @@
         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-        
-        <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-          {{ 'products.product.on_sale' | t }}
-        </span>
-    
-        <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
-          {{ 'products.product.sold_out' | t }}
-        </span>
-        
         {%- for block in section.blocks -%}
+          <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+            {{ 'products.product.on_sale' | t }}
+          </span>
+      
+          <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+            {{ 'products.product.sold_out' | t }}
+          </span>
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
