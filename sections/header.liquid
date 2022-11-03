@@ -484,7 +484,7 @@
                               {%- for childlink in link.links -%}
                                 <li>
                                   <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                    {{ childlink.title | escape }}
+                                    {{ childlink.title | escape | capitalize }}
                                   </a>
                                   {%- if childlink.links != blank -%}
                                     <ul class="list-unstyled" role="list">
