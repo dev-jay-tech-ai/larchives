@@ -21,11 +21,12 @@
 .mega-menu__content > div {
   display: flex;
   justify-content: space-between;
+  letter-spacing: normal;
+  text-align: left;
 }
 
 .mega-menu__content > div > div {
-  text-align: left;
-  letter-spacing: normal;
+
 }
 
 .mega-menu__content > div > div ul {
