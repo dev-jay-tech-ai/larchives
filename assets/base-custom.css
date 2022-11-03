@@ -43,6 +43,10 @@
   color: #fff;
 }
 
+.mega-menu__content > div > div:last-child p {
+  font-family: Poppins;
+}
+
 .button-load-custom {
   width: 19.7rem;
   height: 5rem;
