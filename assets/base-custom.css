@@ -40,11 +40,11 @@
   background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Nav_banner.jpg?v=1667406210');
   background-repeat: no-repeat;
   background-color: rgba(4, 11, 9, 0.2);
-  color: #fff !important;
 }
 
 .mega-menu__content > div > div:last-child h3 {
   font-size: 2.4rem;
+  color: #fff;
 }
 
 .mega-menu__content > div > div:last-child p {
