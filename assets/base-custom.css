@@ -30,6 +30,7 @@
   background-color: rgba(4,11,9,0.3);
   margin-top: 36px;
 }
+
 .slider .progress{
   top: -1px;
   left: 25%;
@@ -38,6 +39,14 @@
   background-color: rgb(4,11,9);
   height: 3px;
 }
+
+.slider .progress > div {
+  width: 4px;
+  height: 4px;
+  background-color: #040b09;
+  margin: 0 auto;
+}
+
 .range-input{
   position: relative;
 }
