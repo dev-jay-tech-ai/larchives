@@ -19,7 +19,16 @@
 }
 
 /* Product list detail */ 
-.product__info-container
+.product__info-container .product__title > h2 {
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #040b09;
+}
 
 /* Price Range */ 
 .facets__display-vertical > div {
