@@ -253,6 +253,7 @@
 
 .facets__summary div > span {
   color: #040b09;
+  pading-bottom: 1rem;
 }
 
 .facets__display {
