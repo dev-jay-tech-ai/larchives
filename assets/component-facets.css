@@ -253,7 +253,6 @@
 
 .facets__summary div > span {
   color: #040b09;
-  pading-bottom: 1rem;
 }
 
 .facets__display {
@@ -792,6 +791,7 @@ details.menu-opening .mobile-facets__close svg {
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 .js .mobile-facets__submenu {
