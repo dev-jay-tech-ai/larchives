@@ -18,8 +18,10 @@
   z-index: 2;
 }
 
-/* Price Range */ 
+/* Product list detail */ 
+.product__info-container
 
+/* Price Range */ 
 .facets__display-vertical > div {
   height: 1.3rem;
 }
