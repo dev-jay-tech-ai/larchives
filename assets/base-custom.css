@@ -60,6 +60,7 @@
   background-color: transparent;
   border-color: #fff;
   color: #fff;
+  margin: 0;
 }
 
 .mega-menu__content > div > div:last-child p {
