@@ -40,7 +40,7 @@
   height: 3px;
 }
 
-.range-input input > span {
+.range-input > span {
   display: block;
   width: 4px;
   height: 4px;
