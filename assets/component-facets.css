@@ -232,7 +232,6 @@
 
 .facets__summary span {
   transition: text-decoration var(--duration-short) ease;
-  color: #040b09;
 }
 
 .facets__summary:hover span {
@@ -250,6 +249,10 @@
 
 .facets__summary .icon-caret {
   right: 0;
+}
+
+.facets__summary div > span {
+  color: #040b09;
 }
 
 .facets__display {
