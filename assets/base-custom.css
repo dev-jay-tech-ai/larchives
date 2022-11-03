@@ -43,7 +43,7 @@
 .price__container {
   display: flex !important;
 }
-
+/* 수정필요 */
 .price__container > div {
   flex: 1;
 }
