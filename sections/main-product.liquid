@@ -322,7 +322,7 @@
               >
                 {{- block.settings.text -}}
               </p>
-            {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+            {%- render 'price', show_badges: true -%}
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
                 <h2>{{ product.title | escape }}</h2>
