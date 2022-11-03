@@ -101,7 +101,7 @@
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}">
                     {%- if filter_type != 'vertical' -%}
                       <div class="facets__header">
-                        <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
+                        {% comment %}<span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>{% endcomment %}
                         <facet-remove>
                           <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
                             {{ 'products.facets.reset' | t }}
