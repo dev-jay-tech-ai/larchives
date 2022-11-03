@@ -96,7 +96,9 @@
                       <span>{{ filter.label | escape }}{%- if filter_type == 'vertical' -%}<span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}"> ({{ filter.active_values.size }})</span>{% endif %}</span>
                       {% render 'icon-chevron-down' %}
                     </div>
-                    <div class='filter-result'>All</div>
+                    <div class='filter-result'>
+                      All<span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
+                    </div>
                   </summary>
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}">
                     {%- if filter_type != 'vertical' -%}
