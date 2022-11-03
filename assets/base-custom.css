@@ -29,7 +29,7 @@
   position: relative;
   opacity: 0.2;
   background-color: #040b09;
-  margin-top: 36px;
+  margin-top: 3.6px;
 }
 .slider .progress{
   height: 100%;
@@ -37,8 +37,7 @@
   right: 25%;
   position: absolute;
   border-radius: 5px;
-  border: solid 1px #040b09;
-  background-color: #fff;
+  background: #17A2B8;
 }
 .range-input{
   position: relative;
