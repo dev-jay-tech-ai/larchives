@@ -41,7 +41,7 @@
 }
 
 .price__container {
-  display: flex; !important;
+  display: flex !important;
 }
 
 .price__container > div {
