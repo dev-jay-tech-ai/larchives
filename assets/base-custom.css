@@ -40,8 +40,9 @@
   height: 3px;
 }
 
-.range-input:after {
+.range-input input:after {
   content: "";
+  display: block;
   width: 4px;
   height: 4px;
   background-color: #040b09;
