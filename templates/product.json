@@ -3,16 +3,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "body"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
           }
         },
         "product-rating": {
@@ -34,7 +34,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -48,16 +48,16 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "popup": {
           "type": "popup",
           "settings": {
             "text": "Size chart",
             "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
           }
         }
       },
@@ -70,8 +70,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "popup"
+        "popup",
+        "description"
       ],
       "settings": {
         "enable_sticky_info": false,
