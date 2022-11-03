@@ -272,10 +272,11 @@
                         min="0" 
                         {%- if uses_comma_decimals -%}
                           max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                          value="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
                         {%- else -%}
                           max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                          value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                         {% endif %}
-                        value="7500" 
                         step="50"
                       >
                     </div>
