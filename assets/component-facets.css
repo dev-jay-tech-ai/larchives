@@ -354,6 +354,9 @@
   color: rgba(var(--color-foreground), 0.4);
 }
 
+
+/* 가격 필터 삽입 수정 부분 */
+
 .facets__price {
   display: flex;
   padding: 2rem;
@@ -375,6 +378,10 @@
 .facets__price .field__label {
   left: 1.5rem;
 }
+
+/* 가격 필터 삽입 부분 */
+
+
 
 button.facets__button {
   min-height: 0;
