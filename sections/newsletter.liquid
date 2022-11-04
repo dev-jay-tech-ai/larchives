@@ -59,7 +59,7 @@
                   </button>
                 </div>
                 <div class="policy">
-                  <div><input type="checkbox" /><span> I agree to the <a href='#'>Privacy Policy.</a></span></div>
+                  <div><input type="checkbox" /><span> I agree to the <a href='#'><u>Privacy Policy.</u></a></span></div>
                 </div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
