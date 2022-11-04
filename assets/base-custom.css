@@ -302,10 +302,10 @@ input[type="range"]::-moz-range-thumb{
   text-align: left !important;
 }
 
-.blog-image-custom {
+/* .blog-image-custom {
   width: 41.3rem !important;
   height: 38rem !important;
-}
+} */
 
 .newsletter__wrapper > div:last-child {
   margin-top: 6rem;
