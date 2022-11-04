@@ -30,9 +30,6 @@
   text-align: left;
 }
 
-
-
-
 .product__info-container .product__title > h2 {
   font-size: 36px;
   color: #040b09;
@@ -50,6 +47,13 @@
 
 .product__info-container .price__sale {
   display: flex !important;
+}
+
+.product-form__inputl label {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
 }
 
 .price__container {
