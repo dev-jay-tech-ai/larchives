@@ -615,7 +615,7 @@ input[type="range"]::-moz-range-thumb{
   font-size: 12px;
   font-weight: 900;
   padding: 18px 48px;
-  transform-text: 'uppercase';
+  transform-text: uppercase;
 }
 
 .header_custom_style {
