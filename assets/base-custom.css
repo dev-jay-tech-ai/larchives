@@ -332,9 +332,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .policy {
-  display: flex;
-  justify-content: flex-end;
-  height: 1.9rem;  
+  height: 2rem;  
   margin-top: 2rem;
   text-align: right;
   font-size: 1.2rem;
@@ -347,7 +345,8 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .policy > div {
-  width: 50%; 
+  display: flex;
+  justify-content: flex-end;
 }
 
 .policy input {
