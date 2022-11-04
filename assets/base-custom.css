@@ -48,10 +48,6 @@
   display: flex !important;
 }
 
-.product__info-container .price__sale > div {
-  width: 50%;
-}
-
 .price__container {
   display: flex !important;
 }
