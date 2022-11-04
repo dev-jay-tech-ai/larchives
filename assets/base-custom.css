@@ -49,11 +49,12 @@
   display: flex !important;
 }
 
-.product-form__input label {
+.product-form__input label:first-child {
   border-radius: 50%;
   width: 30px;
   height: 30px;
   padding: 0;
+  border: 1px solid #000;
 }
 
 .price__container {
