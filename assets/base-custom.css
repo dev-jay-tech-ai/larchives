@@ -33,6 +33,7 @@
 .product__info-container .product__title > h2 {
   font-size: 36px;
   color: #040b09;
+  text-transform: uppercase;
 }
 
 .product__info-container .product__text {
@@ -557,12 +558,10 @@ input[type="range"]::-moz-range-thumb{
 
 .custom-price-reqular {
   font-family: Poppins;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #c20c1e; 
   letter-spacing: normal;
   margin-left: 1rem !important;
-  height: 100%;
-  line-height: 30px;
 }
 
 .custom-vendor {
@@ -613,7 +612,6 @@ input[type="range"]::-moz-range-thumb{
   font-size: 12px;
   font-weight: 900;
   padding: 18px 48px;
-  text-transform: uppercase;
 }
 
 .header_custom_style {
