@@ -43,7 +43,15 @@
 .product__info-container .badge {
   margin-left: 0;
 }
- 
+
+.product__info-container .price__sale {
+  display: flex;
+}
+
+.product__info-container .price__sale > div {
+  width: 50%;
+}
+
 .price__container {
   display: flex !important;
 }
