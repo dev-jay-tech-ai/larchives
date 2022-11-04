@@ -325,6 +325,7 @@ input[type="range"]::-moz-range-thumb{
 
 .newsletter-field .field__label > svg {
   vertical-align: middle;
+  margin-right: 1.75rem;
 }
 
 .newsletter-form__button {
