@@ -332,6 +332,8 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .policy {
+  display: flex;
+  justify-content: flex-end;
   height: 1.9rem;  
   margin-top: 2rem;
   text-align: right;
