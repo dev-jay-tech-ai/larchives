@@ -561,6 +561,8 @@ input[type="range"]::-moz-range-thumb{
   color: #c20c1e; 
   letter-spacing: normal;
   margin-left: 1rem !important;
+  height: 100%;
+  line-height: 30px;
 }
 
 .custom-vendor {
