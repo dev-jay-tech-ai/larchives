@@ -40,6 +40,10 @@
   color: rgba(4, 11, 9, 0.5);
 }
 
+.product__info-container .badge {
+  margin-top: 0;
+}
+ 
 .price__container {
   display: flex !important;
 }
