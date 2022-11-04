@@ -49,7 +49,7 @@
   display: flex !important;
 }
 
-.product-form__input label:first-child {
+.product-form__input:first-child label {
   border-radius: 50%;
   width: 30px;
   height: 30px;
