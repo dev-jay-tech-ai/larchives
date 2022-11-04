@@ -361,12 +361,41 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
-            {%- when 'description' -%}
-              {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden">
-                  {{ product.description }}
-                </div>
-              {%- endif -%}
+
+
+              <div id="Accordion_wrap">
+                   <div class="que">
+                    <span>This is first question.</span>
+                     <div class="arrow-wrap">
+                       <span class="arrow-top">↑</span>
+                      <span class="arrow-bottom">↓</span>
+                     </div>
+                    
+                   </div>
+                   <div class="anw">
+                    <span>
+                      {%- when 'description' -%}
+                        {%- if product.description != blank -%}
+                          <div class="product__description rte quick-add-hidden">
+                            {{ product.description }}
+                          </div>
+                        {%- endif -%}
+                    </span>
+                   </div>
+                    <div class="que">
+                    <span>This is second question.</span>
+                   </div>
+                   <div class="anw">
+                    <span>This is second answer.</span>
+                   </div>
+                    <div class="que">
+                    <span>This is third question.</span>
+                   </div>
+                   <div class="anw">
+                    <span>This is third answer.</span>
+                   </div>
+              </div>
+            
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
