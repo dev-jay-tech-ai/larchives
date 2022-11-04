@@ -346,11 +346,12 @@ input[type="range"]::-moz-range-thumb{
   color: rgba(4, 11, 9, 0.5);
 }
 
-.policy > span {
+.policy > div {
+  
 
 }
 
-.policy > input {
+.policy input {
   border: solid 1px rgba(4, 11, 9, 0.5);
 }
 
