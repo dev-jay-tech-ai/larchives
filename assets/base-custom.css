@@ -694,7 +694,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .header_custom_style {
-  font-family: 'termina-regular';
+  font-family: 'termina';
   font-weight: 900;
   width: 337px;
   height: 14px;
@@ -723,7 +723,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .header_left_nav {
-  font-family: 'termina';
+  font-family: 'termina-regular';
   font-weight: 900;
   font-size: 1.4rem;
   color: #040b09;
@@ -748,5 +748,5 @@ input[type="range"]::-moz-range-thumb{
 
 @font-face {
   font-family: "termina-regular";
-  src: url("termina-regular.woff") format('woff');
+  src: url("Fontspring-DEMO-termina-black.woff") format('woff');
 }
