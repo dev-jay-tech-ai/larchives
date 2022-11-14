@@ -748,5 +748,6 @@ input[type="range"]::-moz-range-thumb{
 
 @font-face {
   font-family: "termina-regular";
-  src: url("termina-regular.woff") format('font-woff');
+  src: url("termina-regular.woff") format('font-woff'), 
+    url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */;
 }
