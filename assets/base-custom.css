@@ -747,6 +747,6 @@ input[type="range"]::-moz-range-thumb{
 /* Custom CSS */
 
 @font-face {
-  font-family: "terminablack";
-  src: url("Fontspring-DEMO-termina-black.woff") format('woff');
+  font-family: "termina-regular";
+  src: url("termina-regular.woff") format('woff');
 }
