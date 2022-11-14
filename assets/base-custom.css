@@ -749,5 +749,6 @@ input[type="range"]::-moz-range-thumb{
 @font-face {
   font-family: "termina-regular";
   src: url("termina-regular.woff") format('font-woff'), 
-    url('termina-regular.ttf')  format('truetype'), /* Safari, Android, iOS */;
+    url('termina-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('termina-regular.woff2')  format('woff2');
 }
