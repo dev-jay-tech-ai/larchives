@@ -743,12 +743,3 @@ input[type="range"]::-moz-range-thumb{
 .list-menu--inline li:last-child svg {
   margin-top: 7px;
 }
-
-/* Custom CSS */
-
-@font-face {
-  font-family: "termina-regular";
-  src: url("termina-regular.woff") format('font-woff'), 
-    url('termina-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('termina-regular.woff2')  format('woff2'); /* Super Modern Browsers */
-}
