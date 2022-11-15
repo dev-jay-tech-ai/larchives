@@ -66,12 +66,12 @@
         "vendor",
         "product-rating",
         "price",
-        "share",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "popup",
-        "description"
+        "description",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": false,
