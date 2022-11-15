@@ -747,16 +747,29 @@ input[type="range"]::-moz-range-thumb{
 /* Custom CSS */
 
 @font-face {
+    font-family: 'Termina-thin';
+    src:url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-thin.woff?v=1668510049') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-thin.woff2?v=1668510049') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-thin.eot?v=1668510049'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-thin.eot?v=1668510049?#iefix') format('embedded-opentype'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-thin.otf?v=1668510049') format('truetype');
+}
+
+@font-face {
     font-family: 'Termina-regular';
     src:url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-regular.woff?v=1668508965') format('woff'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-regular.woff2?v=1668508965') format('woff2'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-regular.eot?v=1668508965'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-regular.eot?v=1668508965?#iefix') format('embedded-opentype'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Fontspring-DEMO-termina-regular.otf?v=1668508966') format('truetype');
-
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
 }
 
-@font-face {font-family: "TerminaW00-Demi"; src: url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.eot"); src: url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.woff") format("woff"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.svg#TerminaW00-Demi") format("svg"); }
+@font-face {
+    font-family: 'Termina-demi';
+    src:url('Fontspring-DEMO-termina-demi.woff') format('woff'),
+        url('Fontspring-DEMO-termina-demi.woff2') format('woff2'),
+        url('Fontspring-DEMO-termina-demi.eot'),
+        url('Fontspring-DEMO-termina-demi.eot?#iefix') format('embedded-opentype'),
+        url('Fontspring-DEMO-termina-demi.otf') format('truetype');
+}
+
