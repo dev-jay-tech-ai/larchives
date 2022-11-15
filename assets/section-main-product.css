@@ -972,7 +972,7 @@ a.product__text {
   color: rgba(4, 11, 9, 0.7); 
   font-size: 1.6rem;
   padding-left: .5rem;
-  /* height: 4.4rem; */
+  height: 4.4rem;
   text-decoration: underline;
   /* text-underline-offset: 0.3rem; 
   text-decoration-thickness: 0.1rem; */
