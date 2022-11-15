@@ -592,8 +592,8 @@ a.product__text {
   height: 4.8rem;
   width: 4.8rem;
   position: absolute;
-  left: calc(1.2rem + var(--media-border-width));
-  top: calc(1.2rem + var(--media-border-width));
+  right: calc(2rem + var(--media-border-width));
+  top: calc(2rem + var(--media-border-width));
   z-index: 1;
   transition: color var(--duration-short) ease,
     opacity var(--duration-short) ease;
