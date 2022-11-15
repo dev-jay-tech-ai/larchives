@@ -88,6 +88,7 @@
           assign media_width = 0.45
         endif
       -%}
+      <div class='slider'>
           {%- if first_3d_model -%}
           <button
             class="button button--full-width product__xr-button"
@@ -241,8 +242,8 @@
             </button>
           </slider-component>
         {%- endif -%}
-
-
+      </div>
+      <div class='slider'>
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
@@ -308,7 +309,7 @@
             </button>
           </div>
         </slider-component>
-
+      </div>
       </media-gallery>
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
