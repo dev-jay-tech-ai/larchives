@@ -18,7 +18,7 @@
   z-index: 2;
 }
 
-.product__media-wrapper > slider-component:first-child {
+.product__media-wrapper slider-component:first-child {
   width: 12rem;
 }
 
