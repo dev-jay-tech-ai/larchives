@@ -723,7 +723,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .header_left_nav {
-  font-family: 'Termina';
+  font-family: 'Termina-regular';
   font-weight: 900;
   font-size: 1.4rem;
   color: #040b09;
@@ -759,5 +759,4 @@ input[type="range"]::-moz-range-thumb{
     font-display: swap;
 }
 
-@font-face {font-family: "Termina"; src: url("//db.onlinewebfonts.com/t/af869cc43c4c9e28e2397c73138d4bba.eot"); src: url("//db.onlinewebfonts.com/t/af869cc43c4c9e28e2397c73138d4bba.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/af869cc43c4c9e28e2397c73138d4bba.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/af869cc43c4c9e28e2397c73138d4bba.woff") format("woff"), url("//db.onlinewebfonts.com/t/af869cc43c4c9e28e2397c73138d4bba.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/af869cc43c4c9e28e2397c73138d4bba.svg#Termina") format("svg"); }
 @font-face {font-family: "TerminaW00-Demi"; src: url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.eot"); src: url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.woff") format("woff"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.svg#TerminaW00-Demi") format("svg"); }
