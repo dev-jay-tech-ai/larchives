@@ -22,6 +22,10 @@
   display: flex;
 }
 
+.slider-container > div {
+  flex: 1;
+}
+
 /* accordian */
 
 .accodrian_container {
