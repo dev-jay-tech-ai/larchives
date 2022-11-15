@@ -51,7 +51,7 @@
         "popup": {
           "type": "popup",
           "settings": {
-            "text": "Size chart",
+            "text": "Size Guide",
             "page": ""
           }
         },
