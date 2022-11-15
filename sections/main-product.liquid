@@ -494,9 +494,6 @@
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}{% if option.name == 'Colour' %}:{% endif %}</legend>
                         {%- for value in option.values -%}
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value }}
-                          </label>
                           <input
                             type="radio"
                             id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -507,6 +504,9 @@
                               checked
                             {% endif %}
                           >
+                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                            {{ value }}
+                          </label>
                         {%- endfor -%}
                       </fieldset>
                     {%- endfor -%}
