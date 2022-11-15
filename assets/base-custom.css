@@ -766,10 +766,10 @@ input[type="range"]::-moz-range-thumb{
 
 @font-face {
     font-family: 'Termina-demi';
-    src:url('Fontspring-DEMO-termina-demi.woff') format('woff'),
-        url('Fontspring-DEMO-termina-demi.woff2') format('woff2'),
-        url('Fontspring-DEMO-termina-demi.eot'),
-        url('Fontspring-DEMO-termina-demi.eot?#iefix') format('embedded-opentype'),
-        url('Fontspring-DEMO-termina-demi.otf') format('truetype');
+    src:url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.woff?v=1668509944') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.woff2?v=1668509944') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.eot?v=1668509944'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.eot?v=1668509944?#iefix') format('embedded-opentype'),
+        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/termina-demi.otf?v=1668509944') format('truetype');
 }
 
