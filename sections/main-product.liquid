@@ -394,7 +394,7 @@
                 {{ block.shopify_attributes }}
               >
                 <label class="form__label" for="Quantity-{{ section.id }}">
-                  {{ 'products.product.quantity.label' | t }}
+                  {% comment %}{ 'products.product.quantity.label' | t }}{% endcomment %}
                 </label>
 
                 <quantity-input class="quantity">
