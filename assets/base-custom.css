@@ -688,14 +688,12 @@ input[type="range"]::-moz-range-thumb{
 .button_custom {
   font-family: 'Termina-regular';
   font-size: 12px;
-  font-weight: 900;
   padding: 18px 48px;
   text-transform: uppercase;
 }
 
 .header_custom_style {
   font-family: 'Termina-thin';
-  font-weight: 900;
   width: 337px;
   height: 14px;
   display: flex;
