@@ -964,6 +964,10 @@ a.product__text {
   display: inline-block;
 }
 
+.product-popup-modal__opener > svg {
+  vertical-align: top;
+}
+
 .product-popup-modal__button {
   color: rgba(4, 11, 9, 0.7); 
   font-size: 1.6rem;
