@@ -584,7 +584,7 @@ a.product__text {
 .thumbnail__badge {
   background-color: rgb(var(--color-background));
   border-radius: 50%;
-  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+  /* border: 0.1rem solid rgba(var(--color-foreground), 0.1); */
   color: rgb(var(--color-foreground));
   display: flex;
   align-items: center;
