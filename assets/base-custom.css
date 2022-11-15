@@ -752,3 +752,5 @@ input[type="range"]::-moz-range-thumb{
     url('termina-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
     url('termina-regular.woff2')  format('woff2'); /* Super Modern Browsers */
 }
+
+@font-face {font-family: "TerminaW00-Demi"; src: url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.eot"); src: url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.woff") format("woff"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/faec7b39028890b34621e55089f6e247.svg#TerminaW00-Demi") format("svg"); }
