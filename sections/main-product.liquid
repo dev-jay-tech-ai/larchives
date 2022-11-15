@@ -433,7 +433,7 @@
                   type="button"
                   aria-haspopup="dialog"
                 >
-                  {{ block.settings.text | default: block.settings.page.title }}
+                {% render 'icon-ruler-square' %}{{ block.settings.text | default: block.settings.page.title }}
                 </button>
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">
