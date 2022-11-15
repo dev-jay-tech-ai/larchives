@@ -22,6 +22,10 @@
   width: 12rem;
 }
 
+.product__media-wrapper slider-component:last-child {
+  width: 47rem;
+}
+
 /* accordian */
 
 .accodrian_container {
