@@ -993,7 +993,7 @@ summary::-webkit-details-marker {
 }
 
 .subtitle {
-  font-family: 'Termina-thin';
+  font-family: 'Termina-light';
   font-size: 1.2rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   /* letter-spacing: 0.06rem; */
