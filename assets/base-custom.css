@@ -724,7 +724,6 @@ input[type="range"]::-moz-range-thumb{
 
 .header_left_nav {
   font-family: 'Termina-regular';
-  font-weight: 900;
   font-size: 1.4rem;
   color: #040b09;
   display: flex;
