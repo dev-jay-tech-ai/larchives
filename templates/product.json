@@ -67,9 +67,9 @@
         "product-rating",
         "price",
         "variant_picker",
+        "popup",
         "quantity_selector",
         "buy_buttons",
-        "popup",
         "description",
         "share"
       ],
