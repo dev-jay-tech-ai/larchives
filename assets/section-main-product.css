@@ -965,6 +965,7 @@ a.product__text {
 
 .product-popup-modal__button {
   color: rgba(4, 11, 9, 0.7); 
+  text-decoration: underline;
   font-size: 1.6rem;
   padding-right: 1.3rem;
   padding-left: 0;
