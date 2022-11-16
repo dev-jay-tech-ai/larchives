@@ -1150,7 +1150,7 @@ a.product__text {
 }
 
 .thumbnail:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .thumbnail.global-media-settings img {
@@ -1164,7 +1164,7 @@ a.product__text {
 }
 
 .thumbnail[aria-current]:focus-visible {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5);
+  /* box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5); */
 }
 
 .thumbnail[aria-current]:focus,
