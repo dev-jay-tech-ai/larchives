@@ -502,7 +502,15 @@
                           {% if option.name == 'Colour' %}
                           {% render 'color-palette' %}
              
-                            <input id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" type="radio" name="color" value="{{ color | escape }}" data-index="option{{ index }}" {% if option.selected_value == value %} checked {% endif %}/>       
+                            <input 
+                              type="radio" 
+                              id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                              name="{{ option.name }}" 
+                              value="{{ value | escape }}"
+                              form="{{ product_form_id }}"
+                              {% if option.selected_value == value %} 
+                                checked 
+                              {% endif %}/>       
                             {% include 'color-palette' %}
                             <label for="color-{{forloop.index}}" {{ bgcolor }} class="color-switch" ></label>
                  
