@@ -38,6 +38,11 @@
   height: 2.7rem;
 }
 
+.multi-accordion summary > div svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
 .multi-accordion details > p {
   padding-left: 2rem;
   font-size: 14px;
