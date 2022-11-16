@@ -29,6 +29,11 @@
     cursor: pointer;
 }
 
+.multi-accordion summary > span {
+    text-align: right;
+    font-size: 12px;
+}
+
 /* 열림 아이템 */
 .multi-accordion details[open] summary {
     border-bottom: 1px solid #aaa;
