@@ -21,7 +21,7 @@
 
 
 .multi-accordion {
-  border-bottom: 1px solid rgba(4,11,9,0.5);
+  border-bottom: 1px solid rgba(4,11,9,0.2);
   padding: .5em .5em 0;
   overflow: hidden;
 }
