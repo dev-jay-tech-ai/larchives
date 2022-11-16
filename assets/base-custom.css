@@ -29,8 +29,12 @@
     color: #040b09;
 }
 
-.multi-accordion summary > div {
-  display: flex;
+.multi-accordion summary > span:first-child {
+  text-align: left;
+}
+
+.multi-accordion summary > span:last-child {
+  text-align: right;
 }
 
 /* 열림 아이템 */
