@@ -20,7 +20,7 @@
 {% assign bgcolor = 'https://cdn.shopify.com/s/files/1/0595/6275/4206/files/denim.png?v=1668603387' | asset_url | prepend: 'style=background-image:url("' | append: '")' %}
 
 {% elsif value == 'gold' %}
-{% assign bgcolor = 'https://cdn.shopify.com/s/files/1/0595/6275/4206/files/gold.png?v=1668603400' | asset_url | prepend: 'style=background-image:url("' | append: '")' %}
+{% assign bgcolor = 'gold.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 
 {% elsif value == 'ivory' %}
 {% assign bgcolor = '#f2e5d0' | prepend: 'style=background-color:' %}  
