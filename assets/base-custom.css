@@ -55,14 +55,15 @@
 
 /* 열림 아이템 */
 .multi-accordion details[open] summary {
-    margin-bottom: 2rem;
+  border-bottom: 0;
+  margin-bottom: 2rem;
 }
 /* 열린 아이템이 첫 번째 아이템이 아니면 디자인 요소 추가 */
 .multi-accordion details:not(:first-child)[open] summary {
 }
 /* 열림 아이템 다음 아이템의 키워드 상단에 테두리선 추가 */
 .multi-accordion details[open] + details > summary {
-    border-top: 1px solid rgba(4,11,9,0.1);
+  border-top: 1px solid rgba(4,11,9,0.1);
 }
 
 
