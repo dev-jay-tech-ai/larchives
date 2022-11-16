@@ -30,6 +30,14 @@
   padding: 0 !important;
 }
 
+.product-form__input input.color-switch+label:after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border: 1px soild #000;
+  
+}
+
 .form__label > span {
   color: #000;
 }
