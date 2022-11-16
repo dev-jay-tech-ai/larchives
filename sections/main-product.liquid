@@ -369,9 +369,6 @@
             <script src="{{ 'collapsible.js' | asset_url }}" defer="defer"></script>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden">
-                  {{ product.description }}
-                </div>
               <div class="multi-accordion">
                 <details>
                     <summary> Details </summary>
@@ -381,9 +378,6 @@
               </div>
               {%- endif -%}
 
-
-
-            
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
