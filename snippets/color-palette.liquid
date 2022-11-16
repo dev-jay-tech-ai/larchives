@@ -1,0 +1,58 @@
+{% if color == 'azure' %}
+{% assign bgcolor = '#bbeaf9' | prepend: 'style=background-color:' %}
+
+{% elsif color == 'beige' %}
+{% assign bgcolor = '#fcd2ba' | prepend: 'style=background-color:' %}        
+
+{% elsif color == 'brown' %}
+{% assign bgcolor = '#996210' | prepend: 'style=background-color:' %}       
+
+{% elsif color == 'burgundy' %}
+{% assign bgcolor = '#963421' | prepend: 'style=background-color:' %}     
+
+{% elsif color == 'charcoal' %}
+{% assign bgcolor = '#4c4643' | prepend: 'style=background-color:' %}     
+
+{% elsif color == 'camel' %}
+{% assign bgcolor = '#c6672b' | prepend: 'style=background-color:' %}     
+
+{% elsif color == 'denim' %}
+{% assign bgcolor = 'denim.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
+
+{% elsif color == 'gold' %}
+{% assign bgcolor = 'gold.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
+
+{% elsif color == 'ivory' %}
+{% assign bgcolor = '#f2e5d0' | prepend: 'style=background-color:' %}  
+
+{% elsif color == 'khaki' %}
+{% assign bgcolor = '#797901' | prepend: 'style=background-color:' %}  
+
+{% elsif color == 'lavender' %}
+{% assign bgcolor = '#c3b3f2' | prepend: 'style=background-color:' %}     
+
+{% elsif color == 'metal' %}
+{% assign bgcolor = 'metallic.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
+
+{% elsif color == 'transparency' %}
+{% assign bgcolor = 'trans.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
+
+{% elsif color == 'mint' %}
+{% assign bgcolor = '#76fcfc' | prepend: 'style=background-color:' %}       
+
+{% elsif color == 'multi' %}
+{% assign bgcolor = 'multi.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}      
+
+{% elsif color == 'silver' %}
+{% assign bgcolor = 'silver.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
+
+{% elsif color == 'turquoise' %}
+{% assign bgcolor = '#03a4ad' | prepend: 'style=background-color:' %} 
+
+{% elsif color == 'taupe' %}
+{% assign bgcolor = '#ccb69d' | prepend: 'style=background-color:' %}         
+
+{% else %}
+{% assign bgcolor = color | prepend: 'style=background-color:' %}     
+
+{% endif %}
