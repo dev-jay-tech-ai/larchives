@@ -27,7 +27,6 @@
 
 .product__media-wrapper slider-component:first-child {
   width: 12rem;
-  height: 18rem;
   float: left;
   z-index: 2;
 }
