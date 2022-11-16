@@ -20,6 +20,7 @@
 
 .varient-swatches > label {
   border: 0;
+  border-radius: 50%;
 }
 
 .form__label > span {
