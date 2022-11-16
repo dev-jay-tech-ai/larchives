@@ -18,6 +18,9 @@
   z-index: 2;
 }
 
+.form__label > span {
+  color: #000;
+}
 
 .product__media-wrapper {
   float: left;
