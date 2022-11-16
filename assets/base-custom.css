@@ -18,15 +18,11 @@
   z-index: 2;
 }
 
-.product-form__input input[type=radio]:checked+label {
+.product-form__input input.color-switch:checked+label {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground),var(--variant-pills-border-opacity));
 }
 
-.product-form__input input[type=radio]+label {
-  
-}
-
-.color-switch+label {
+.product-form__input input.color-switch+label {
   border: 0 !important;
   border-radius: 50% !important;
   width: 2rem !important;
