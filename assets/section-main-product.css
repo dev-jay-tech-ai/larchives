@@ -1146,6 +1146,7 @@ a.product__text {
   color: rgb(var(--color-base-text));
   cursor: pointer;
   background-color: transparent;
+  opacity: 0.7;
 }
 
 .thumbnail:hover {
@@ -1157,6 +1158,7 @@ a.product__text {
 }
 
 .thumbnail[aria-current] {
+  opacity: 1;
   /* box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground));
   border-color: rgb(var(--color-foreground)); */
 }
