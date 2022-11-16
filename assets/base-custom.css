@@ -18,7 +18,7 @@
   z-index: 2;
 }
 
-.varient-swatches > label {
+.color-switch {
   border: 0 !important;
   border-radius: 50% !important;
   width: 2rem !important;
