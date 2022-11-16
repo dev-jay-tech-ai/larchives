@@ -1146,7 +1146,7 @@ a.product__text {
   color: rgb(var(--color-base-text));
   cursor: pointer;
   background-color: transparent;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .thumbnail:hover {
@@ -1169,8 +1169,8 @@ a.product__text {
 
 .thumbnail[aria-current]:focus,
 .thumbnail.focused {
-  outline: 0;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5);
+  /* outline: 0;
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5); */
 }
 
 /* outline styling for Windows High Contrast Mode */
