@@ -18,7 +18,9 @@
   z-index: 2;
 }
 
-
+.main-blog .title--primary {
+  text-align: center;
+}
 
 .multi-accordion {
   padding: .5em .5em 0;
