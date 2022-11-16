@@ -21,11 +21,11 @@
 
 
 .multi-accordion {
-  border-bottom: 1px solid rgba(4,11,9,0.2);
   padding: .5em .5em 0;
   overflow: hidden;
 }
 .multi-accordion summary {
+  border-bottom: 1px solid rgba(4,11,9,0.2);
   margin: -.5em -.5em 0;
   cursor: pointer;
   font-size: 18px;
@@ -40,7 +40,6 @@
 
 /* 열림 아이템 */
 .multi-accordion details[open] summary {
-    border-bottom: 1px solid #040b09;
     margin-bottom: .5em;
 }
 /* 열린 아이템이 첫 번째 아이템이 아니면 디자인 요소 추가 */
