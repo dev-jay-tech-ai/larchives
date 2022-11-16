@@ -494,8 +494,7 @@
                   >
                     {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
-                        <legend class="form__label">{% if option.name == 'Colour' %}Colour:{% elsif option.name == 'Size' %}Select a size{% endif %}</legend>
-                        {% if option.name == 'Colour' %}{{ option.selected_value }}{% endif %}
+                        <legend class="form__label">{% if option.name == 'Colour' %}Colour:{% elsif option.name == 'Size' %}Select a size{% endif %}</legend>{% if option.name == 'Colour' %}{{ option.selected_value }}{% endif %}                       
                         {%- for value in option.values -%}
                           <input
                             type="radio"
