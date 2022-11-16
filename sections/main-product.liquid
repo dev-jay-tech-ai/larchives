@@ -371,9 +371,12 @@
               {%- if product.description != blank -%}
               <div class="multi-accordion">
                 <details>
-                    <summary><div><div>Details </div><div>{% render 'icon-chevron-down' %}</div></div></summary>
-                    <p>{{ product.description }}
-                </div></p>
+                  <summary><div><div>Details </div><div>{% render 'icon-chevron-down' %}</div></div></summary>
+                  <p>{{ product.description }}</p>
+                </details>
+                <details>
+                  <summary><div><div>Shipping/Returns </div><div>{% render 'icon-chevron-down' %}</div></div></summary>
+                  <p></p>
                 </details>
               </div>
               {%- endif -%}
