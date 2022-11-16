@@ -50,7 +50,10 @@
 {% assign bgcolor = '#03a4ad' | prepend: 'style=background-color:' %} 
 
 {% elsif color == 'taupe' %}
-{% assign bgcolor = '#ccb69d' | prepend: 'style=background-color:' %}         
+{% assign bgcolor = '#ccb69d' | prepend: 'style=background-color:' %}  
+
+{% elsif color == 'white' %}
+{% assign bgcolor = '#fff' | prepend: 'style=border:1px solid  #424b5a; background-color:' %} 
 
 {% else %}
 {% assign bgcolor = value | prepend: 'style=background-color:' %}     
