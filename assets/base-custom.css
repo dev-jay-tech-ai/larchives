@@ -39,13 +39,8 @@
 }
 
 .multi-accordion details > p {
+  padding-left: 1rem;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
   color: rgba(4, 11, 9, 0.7);
 }
 
