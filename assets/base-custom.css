@@ -20,6 +20,8 @@
 
 .product-form__input input.color-switch:checked+label {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground),var(--variant-pills-border-opacity));
+  width: 3rem;
+  height: 3rem;
 }
 
 .product-form__input input.color-switch+label {
