@@ -505,6 +505,7 @@
                             <input 
                               type="radio" 
                               id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                              class="color-switch"
                               name="{{ option.name }}" 
                               value="{{ value | escape }}"
                               form="{{ product_form_id }}"
@@ -512,7 +513,7 @@
                                 checked 
                               {% endif %}/>       
                             {% include 'color-palette' %}
-                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" {{ bgcolor }} class="color-switch" ></label>
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" {{ bgcolor }}></label>
                  
                           {% else %}
                           <input
