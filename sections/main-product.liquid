@@ -502,9 +502,9 @@
                           {% if option.name == 'Colour' %}
                           {% render 'color-palette' %}
              
-                            <input class="color-switch" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" type="radio" name="color" value="{{ color | escape }}" data-index="option{{ index }}" {% if option.selected_value == color %} checked {% endif %}/>       
+                            <input id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" type="radio" name="color" value="{{ color | escape }}" data-index="option{{ index }}" {% if option.selected_value == color %} checked {% endif %}/>       
                             {% include 'color-palette' %}
-                            <label for="color-{{forloop.index}}" {{ bgcolor }}></label>
+                            <label for="color-{{forloop.index}}" {{ bgcolor }} class="color-switch" ></label>
                  
                           {% else %}
                           <input
@@ -517,7 +517,7 @@
                               checked
                             {% endif %}
                           >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }} {% if option.name == 'Colour' %}color-picker{% endif %}">
+                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
                           </label>
                           {% endif %}
