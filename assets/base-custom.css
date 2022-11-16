@@ -18,8 +18,36 @@
   z-index: 2;
 }
 
-.product-form__input input.color-switch:checked+label {
-
+.multi-accordion {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: .5em .5em 0;
+    overflow: hidden;
+}
+.multi-accordion summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    cursor: pointer;
+}
+/* 둥근 테두리인 첫 번째 아이템 상단의 배경색이 삐져 나오는 것 처리 */
+.multi-accordion details:first-child summary{
+    border-radius: 10px 10px 0 0;
+}
+/* 열림 아이템 */
+.multi-accordion details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+    background-color: #fff0c0;
+}
+/* 열린 아이템이 첫 번째 아이템이 아니면 디자인 요소 추가 */
+.multi-accordion details:not(:first-child)[open] summary {
+    margin-top: .15em;
+    border-top: 1px solid #aaa;
+}
+/* 열림 아이템 다음 아이템의 키워드 상단에 테두리선 추가 */
+.multi-accordion details[open] + details > summary {
+    border-top: 1px solid #aaa;
 }
 
 .product-form__input input.color-switch+label {
