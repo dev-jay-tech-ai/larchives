@@ -17,7 +17,7 @@
 {% assign bgcolor = '#c6672b' | prepend: 'style=background-color:' %}     
 
 {% elsif value == 'denim' %}
-{% assign bgcolor = 'https://cdn.shopify.com/s/files/1/0595/6275/4206/files/denim.png?v=1668603387' | asset_url | prepend: 'style=background-image:url("' | append: '")' %}
+{% assign bgcolor = 'denim.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 
 {% elsif value == 'gold' %}
 {% assign bgcolor = 'gold.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
@@ -32,24 +32,24 @@
 {% assign bgcolor = '#c3b3f2' | prepend: 'style=background-color:' %}     
 
 {% elsif value == 'metal' %}
-{% assign bgcolor = 'https://cdn.shopify.com/s/files/1/0595/6275/4206/files/metalic.png?v=1668603440' | asset_url | prepend: 'style=background-image:url("' | append: '")' %}
+{% assign bgcolor = 'metallic.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 
 {% elsif value == 'transparency' %}
-{% assign bgcolor = 'trans.png' | asset_url | prepend: 'style=background-image:url("' | append: '")' %}
+{% assign bgcolor = 'trans.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 
 {% elsif value == 'mint' %}
 {% assign bgcolor = '#76fcfc' | prepend: 'style=background-color:' %}       
 
 {% elsif value == 'multi' %}
-{% assign bgcolor = 'https://cdn.shopify.com/s/files/1/0595/6275/4206/files/multi.png?v=1668603497' | asset_url | prepend: 'style=background-image:url("' | append: '")' %}     
+{% assign bgcolor = 'multi.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}      
 
 {% elsif value == 'silver' %}
-{% assign bgcolor = 'https://cdn.shopify.com/s/files/1/0595/6275/4206/files/sliver.png?v=1668603414' | asset_url | prepend: 'style=background-image:url("' | append: '")' %}
+{% assign bgcolor = 'silver.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 
-{% elsif value == 'turquoise' %}
+{% elsif color == 'turquoise' %}
 {% assign bgcolor = '#03a4ad' | prepend: 'style=background-color:' %} 
 
-{% elsif value == 'taupe' %}
+{% elsif color == 'taupe' %}
 {% assign bgcolor = '#ccb69d' | prepend: 'style=background-color:' %}         
 
 {% else %}
