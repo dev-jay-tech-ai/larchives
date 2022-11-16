@@ -19,8 +19,8 @@
 }
 
 .varient-swatches > label {
-  border: 0;
-  border-radius: 50%;
+  border: 0 !important;
+  border-radius: 50% !important;
 }
 
 .form__label > span {
