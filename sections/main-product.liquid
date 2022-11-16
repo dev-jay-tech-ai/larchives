@@ -506,7 +506,7 @@
                               checked
                             {% endif %}
                           >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }} {% if option.name == 'Colour' %}color-picker{% endif %}">
                             {{ value }}
                           </label>
                         {%- endfor -%}
