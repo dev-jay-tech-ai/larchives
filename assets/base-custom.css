@@ -18,11 +18,12 @@
   z-index: 2;
 }
 
-.form__label > span {
-  color: #000;
+.varient-swatches > label {
+  border: 0;
 }
 
-.product__media-wrapper {
+.form__label > span {
+  color: #000;
 }
 
 .product__media-wrapper slider-component:first-child {
@@ -31,10 +32,6 @@
   float: left;
   z-index: 2;
   overflow: hidden;
-}
-
-.product__media-wrapper slider-component:last-child {
-
 }
 
 /* accordian */
