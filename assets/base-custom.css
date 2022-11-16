@@ -19,15 +19,7 @@
 }
 
 .product-form__input input.color-switch:checked+label {
-  content: "";
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  border: 1px solid #000;
-  border-radius: 50%;
-  position: absolute;
-  top: -5px;
-  left: -5px;
+
 }
 
 .product-form__input input.color-switch+label {
@@ -38,12 +30,16 @@
   padding: 0 !important;
 }
 
-.product-form__input input.color-switch+label:after {
+.product-form__input input.color-switch:checked+label:after {
   content: "";
+  display: block;
   width: 3rem;
   height: 3rem;
-  border: 1px soild #000;
-  
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
 }
 
 .form__label > span {
