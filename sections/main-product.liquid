@@ -501,11 +501,11 @@
                         {%- for value in option.values -%}
                           {% if option.name == 'Colour' %}
                           {% render 'color-palette' %}
-                          <div class="varient-swatches">
+                      
                             <input class="single-option-selector-{{ section.id }}" id="color-{{forloop.index}}" type="radio" name="color" value="{{ color | escape }}" data-index="option{{ index }}" {% if option.selected_value == color %} checked {% endif %}/>       
                             {% include 'color-palette' %}
                             <label for="color-{{forloop.index}}" {{ bgcolor }}></label>
-                          </div> 
+                 
                           {% else %}
                           <input
                             type="radio"
