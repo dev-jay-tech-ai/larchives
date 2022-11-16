@@ -24,7 +24,8 @@
 }
 .multi-accordion summary {
     margin: -.5em -.5em 0;
-    padding: .5em;
+    font-size: 18px;
+    color: #040b09;
     cursor: pointer;
 }
 
