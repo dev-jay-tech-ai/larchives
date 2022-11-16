@@ -28,6 +28,7 @@
 .product__media-wrapper slider-component:first-child {
   width: 12rem;
   float: left;
+  z-index: 2;
 }
 
 .product__media-wrapper slider-component:last-child {
