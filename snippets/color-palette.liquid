@@ -46,13 +46,13 @@
 {% elsif value == 'silver' %}
 {% assign bgcolor = 'silver.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 
-{% elsif color == 'turquoise' %}
+{% elsif value == 'turquoise' %}
 {% assign bgcolor = '#03a4ad' | prepend: 'style=background-color:' %} 
 
-{% elsif color == 'taupe' %}
+{% elsif value == 'taupe' %}
 {% assign bgcolor = '#ccb69d' | prepend: 'style=background-color:' %}  
 
-{% elsif color == 'white' %}
+{% elsif value == 'white' %}
 {% assign bgcolor = '#fff' | prepend: 'style=border:1px solid  #424b5a; background-color:' %} 
 
 {% else %}
