@@ -1147,6 +1147,7 @@ a.product__text {
   cursor: pointer;
   background-color: transparent;
   opacity: 0.6;
+  text-align: left;
 }
 
 .thumbnail:hover {
