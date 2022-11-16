@@ -23,6 +23,7 @@
   border-radius: 50% !important;
   width: 2rem !important;
   height: 2rem !important;
+  padding: 0 !important;
 }
 
 .form__label > span {
