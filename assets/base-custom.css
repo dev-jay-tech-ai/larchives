@@ -43,7 +43,7 @@
   height: 2.4rem;
 }
 
-.multi-accordion details > p {
+.multi-accordion details > div {
   padding-left: 2rem;
   font-size: 14px;
   color: rgba(4, 11, 9, 0.7);
