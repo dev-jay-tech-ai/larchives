@@ -369,7 +369,7 @@
             {%- when 'description' -%}
               {%- if product.description != blank -%}
               <div class="multi-accordion">
-                <details>
+                <details open>
                   <summary><div><div>Details </div><div>{% render 'icon-chevron-down' %}</div></div></summary>
                   <div>{{ product.description }}<div>
                 </details>
