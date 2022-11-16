@@ -365,12 +365,24 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
+
+            <div class="multi-accordion">
+              <details>
+                  <summary>기본 구조</summary>
+                  <p>상세내용</p>
+              </details>
+            </div>
+            <script src="{{ 'collapsible.js' | asset_url }}" defer="defer"></script>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden">
                   {{ product.description }}
                 </div>
               {%- endif -%}
+
+
+
+            
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
