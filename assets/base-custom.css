@@ -32,12 +32,10 @@
 .multi-accordion details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
-    background-color: #fff0c0;
 }
 /* 열린 아이템이 첫 번째 아이템이 아니면 디자인 요소 추가 */
 .multi-accordion details:not(:first-child)[open] summary {
     margin-top: .15em;
-    border-top: 1px solid #aaa;
 }
 /* 열림 아이템 다음 아이템의 키워드 상단에 테두리선 추가 */
 .multi-accordion details[open] + details > summary {
