@@ -28,6 +28,7 @@
   width: 2rem !important;
   height: 2rem !important;
   padding: 0 !important;
+  margin-top: 0.8rem !important;
 }
 
 .product-form__input input.color-switch:checked+label:after {
