@@ -366,18 +366,19 @@
                 {%- endform -%}
               </div>
 
-            <div class="multi-accordion">
-              <details>
-                  <summary>기본 구조</summary>
-                  <p>상세내용</p>
-              </details>
-            </div>
             <script src="{{ 'collapsible.js' | asset_url }}" defer="defer"></script>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden">
                   {{ product.description }}
                 </div>
+              <div class="multi-accordion">
+                <details>
+                    <summary> Details </summary>
+                    <p>{{ product.description }}
+                </div></p>
+                </details>
+              </div>
               {%- endif -%}
 
 
