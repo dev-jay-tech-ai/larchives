@@ -774,13 +774,13 @@ input[type="range"]::-moz-range-thumb{
 /*{"last_published":"2022-11-14 14:35:45 UTC"}*/
 
 @font-face {
-font-family:"termina";
+font-family:"Termina-regular";
 src:url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 
 @font-face {
-font-family:"termina-demi";
+font-family:"Termina-demi";
 src:url("https://use.typekit.net/af/574117/00000000000000007735b222/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/574117/00000000000000007735b222/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/574117/00000000000000007735b222/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
 }
@@ -794,22 +794,3 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-light.eot?v=1668511307?#iefix') format('embedded-opentype'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-light.otf?v=1668511307') format('truetype');
 }
-
-@font-face {
-    font-family: 'Termina-regular';
-    src:url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-regular.woff?v=1668509968') format('woff'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-regular.woff2?v=1668509968') format('woff2'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-regular.eot?v=1668509968'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-regular.eot?v=1668509968?#iefix') format('embedded-opentype'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-regular.otf?v=1668509968') format('truetype');
-}
-
-@font-face {
-    font-family: 'Termina-demi';
-    src:url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.woff?v=1668509944') format('woff'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.woff2?v=1668509944') format('woff2'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.eot?v=1668509944'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-demi.eot?v=1668509944?#iefix') format('embedded-opentype'),
-        url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/termina-demi.otf?v=1668509944') format('truetype');
-}
-
