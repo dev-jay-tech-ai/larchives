@@ -44,9 +44,14 @@
   margin: 6rem 0;  
 }
 
-.article-card:nth-child(1) .blog-grid-custom {
+.blog-articles:nth-child(1) .blog-grid-custom {
   height: 58rem;
 }
+
+.blog-articles:nth-child(2) .blog-grid-custom {
+  height: 38rem;
+}
+
 
 .multi-accordion {
   padding: .5em .5em 0;
