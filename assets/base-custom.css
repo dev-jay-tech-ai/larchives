@@ -44,6 +44,10 @@
   margin: 6rem 0;  
 }
 
+.blog-grid-custom:nth-child(1) {
+  height: 5.8rem;
+}
+
 .multi-accordion {
   padding: .5em .5em 0;
   overflow: hidden;
