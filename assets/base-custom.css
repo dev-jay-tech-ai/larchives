@@ -44,11 +44,11 @@
   margin: 6rem 0;  
 }
 
-.blog-grid-custom:nth-of-type(1) {
+.blog-articles:nth-child(1) .blog-grid-custom {
   height: 58rem;
 }
 
-.blog-grid-custom:nth-of-type(2) {
+.blog-articles:nth-child(2) .blog-grid-custom {
   height: 38rem;
 }
 
