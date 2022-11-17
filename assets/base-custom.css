@@ -47,6 +47,7 @@
 .blog-articles-custom {
   display: flex; 
   justify-content: space-between;
+  flex-wrap: wrap;
 }  
 
 .blog-articles-custom > div {
