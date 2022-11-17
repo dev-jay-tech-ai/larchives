@@ -806,6 +806,12 @@ input[type="range"]::-moz-range-thumb{
   text-transform: uppercase;
 }
 
+.blog-loadmore .button_custom {
+  color:#000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
 .header_custom_style {
   font-family: 'Termina-light';
   width: 337px;
