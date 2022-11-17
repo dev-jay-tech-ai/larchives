@@ -13,7 +13,7 @@
     - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
 
     Usage:
-    {% render 'ac-custom' blog: blog, article: article, show_image: section.settings.show_image %}
+    {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
 
 {%- if article and article != empty -%}
@@ -23,11 +23,10 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-  <div class="ac-custom-wrapper card-wrapper underline-links-hover">
-    {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
-    <div class="card ac-custom
+  <div class="article-card-wrapper card-wrapper underline-links-hover">
+    <div class="card article-card
       card--{{ settings.blog_card_style }}
-      {% if media_height and media_height != 'adapt' %} ac-custom__image--{{ media_height }}{% endif %}
+      {% if media_height and media_height != 'adapt' %} article-card__image--{{ media_height }}{% endif %}
       {% if article.image and show_image %} card--media{% else %} card--text{% endif %}
       {% if settings.blog_card_style == 'card' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
       {% if settings.blog_card_style == 'card' and media_height == nil and article.image == empty or show_image == false %} ratio{% endif %}"
@@ -65,7 +64,7 @@
                 {{ article.title | truncate: 50 | escape }}
               </a>
             </h3>
-            <div class="ac-custom__info caption-with-letter-spacing h5">
+            <div class="article-card__info caption-with-letter-spacing h5">
               {%- if show_date -%}
                 <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
               {%- endif -%}
@@ -74,16 +73,7 @@
               {%- endif -%}
             </div>
             {%- if show_excerpt -%}
-              {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-                <p class="ac-custom__excerpt rte-width">
-                  {%- if article.excerpt.size > 0 -%}
-                    {{ article.excerpt | strip_html | truncatewords: 30 }}
-                  {%- else -%}
-                    {{ article.content | strip_html | truncatewords: 30 }}
-                  {%- endif -%}
-                </p>
-              {%- endif -%}
-              <div class="ac-custom__footer">
+              <div class="article-card__footer">
                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                   <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
                 {%- endif -%}
@@ -100,7 +90,7 @@
       <div class="card__content">
         <div class="card__information">
           <div class="blog-rectangle">&nbsp;</div>
-          <div class="ac-custom__info caption-with-letter-spacing">
+          <div class="article-card__info caption-with-letter-spacing blog-caption-custom">
             <span class="blog-cate-custom" style="letter-spacing: 1.4px">{% for tag in article.tags -%}{{ tag }}{%- endfor %} &bull; </span>
             {%- if show_date -%}
               <span class="circle-divider" style="color: rgba(4, 11, 9, 0.5)">{{ article.published_at | date: "%b %d" }}, {{ article.published_at | date: "%Y" }}</span>
