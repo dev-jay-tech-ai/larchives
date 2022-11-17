@@ -45,9 +45,8 @@
 }
 
 .blog-articles-custom {
-  display: flex; 
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid; 
+
 }  
 
 .blog-articles-custom > div {
