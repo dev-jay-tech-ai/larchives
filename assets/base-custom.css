@@ -45,11 +45,12 @@
 }
 
 .blog-articles-custom {
-  display: flex;  
-}
+  display: flex; 
+  justify-content: space-between;
+}  
 
 .blog-articles-custom > div {
-  flex: 1 1 40%;
+  width: 62rem;
 }
 
 
