@@ -44,11 +44,6 @@
   margin: 6rem 0;  
 }
 
-.blog-articles-custom {
-  display: grid; 
-
-}  
-
 .blog-articles-custom > div {
   width: 62rem;
 }
