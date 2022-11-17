@@ -35,8 +35,8 @@
     >
       <div class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.blog_card_style == 'standard' %} ratio{% endif %} blog-image-custom" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         {%- if show_image == true and article.image -%}
-          <div class="ac-custom__image-wrapper card__media">
-            <div class="ac-custom__image media media--hover-effect" {% if section.settings.media_height == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
+          <div class="article-card__image-wrapper card__media">
+            <div class="article-card__image media media--hover-effect" {% if section.settings.media_height == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
@@ -100,7 +100,7 @@
       <div class="card__content">
         <div class="card__information">
           <div class="blog-rectangle">&nbsp;</div>
-          <div class="ac-custom__info caption-with-letter-spacing blog-caption-custom">
+          <div class="ac-custom__info caption-with-letter-spacing">
             <span class="blog-cate-custom" style="letter-spacing: 1.4px">{% for tag in article.tags -%}{{ tag }}{%- endfor %} &bull; </span>
             {%- if show_date -%}
               <span class="circle-divider" style="color: rgba(4, 11, 9, 0.5)">{{ article.published_at | date: "%b %d" }}, {{ article.published_at | date: "%Y" }}</span>
@@ -115,18 +115,7 @@
             </a>
           </h3>
           {%- if show_excerpt -%}
-            {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-              {% comment %}
-              <p class="ac-custom__excerpt rte-width">
-                {%- if article.excerpt.size > 0 -%}
-                  {{ article.excerpt | strip_html | truncatewords: 30 }}
-                {%- else -%}
-                  {{ article.content | strip_html | truncatewords: 30 }}
-                {%- endif -%}
-              </p>
-              {% endcomment %}
-            {%- endif -%}
-            <div class="ac-custom__footer">
+            <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
               {%- endif -%}
