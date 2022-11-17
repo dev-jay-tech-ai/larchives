@@ -1,4 +1,4 @@
-#insta-feed {
+object-position: top; #insta-feed {
   margin: 0 !important;
 }
 
@@ -60,6 +60,9 @@
   height: 58rem;
 }
 
+.blog-articles-custom .card__media .media img {
+  object-position: top;  
+}
 
 .multi-accordion {
   padding: .5em .5em 0;
