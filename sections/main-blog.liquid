@@ -21,7 +21,7 @@
     <div>{% render 'breadcrumb' %}</div>
     
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
-    <div>All&nbsp;&nbsp;&nbsp;Culture&nbsp;&nbsp;&nbsp;Fashion&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;Gift&nbsp;&nbsp;&nbsp;idea</div>  
+    <div>All&nbsp;&nbsp;&nbsp;{%- for article in blog.articles -%}{% for tag in article.tags -%}{{ tag }}{%- endfor %}{%- endfor %}</div>  
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article">
