@@ -226,7 +226,7 @@
       "settings": {
         "heading": "LARCHIVE JOURNAL",
         "heading_size": "h2",
-        "blog": "news",
+        "blog": "all",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "background-1",
