@@ -64,6 +64,9 @@ object-position: top; #insta-feed {
   object-position: top;  
 }
 
+.grid-sizer {
+  width: 62rem;
+}
 
 .multi-accordion {
   padding: .5em .5em 0;
