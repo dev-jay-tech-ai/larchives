@@ -27,6 +27,18 @@
   font-size: 4.2rem;
 }
 
+.blog-nav {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(4, 11, 9, 0.5);
+}
+
 .multi-accordion {
   padding: .5em .5em 0;
   overflow: hidden;
