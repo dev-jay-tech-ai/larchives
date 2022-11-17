@@ -48,6 +48,11 @@
   display: flex;  
 }
 
+.blog-articles-custom > div {
+  flex: 1 1 40%;
+}
+
+
 .blog-articles-custom .blog-grid-custom {
   height: 38rem;
 }
