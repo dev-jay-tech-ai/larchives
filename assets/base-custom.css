@@ -44,11 +44,11 @@
   margin: 6rem 0;  
 }
 
-.blog-articles:nth-child(1) blog-grid-custom {
+.blog-grid-custom:nth-of-type(1) {
   height: 58rem;
 }
 
-.blog-articles:nth-child(2) blog-grid-custom {
+.blog-grid-custom:nth-of-type(2) {
   height: 38rem;
 }
 
