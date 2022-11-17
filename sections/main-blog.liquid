@@ -22,7 +22,6 @@
     
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
     <div class='blog-nav'>All{%- for article in blog.articles -%}{% for tag in article.tags -%}&nbsp;&nbsp;&nbsp;{{ tag }}{%- endfor %}{%- endfor %}</div> 
-    <div class='blog-dropdown'>{% render 'icon-chevron-down' %}</div>
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article">
