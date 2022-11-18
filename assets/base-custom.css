@@ -68,7 +68,7 @@ object-position: top; #insta-feed {
   object-position: top;  
 }
 
-.card article-card:nth-of-type(odd) {
+.blog-articles__article:nth-of-type(odd) {
   margin-right: 2rem;
 }
 
