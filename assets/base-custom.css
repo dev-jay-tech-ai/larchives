@@ -79,7 +79,9 @@ object-position: top; #insta-feed {
   color: rgba(4, 11, 9, 0.7);
 }
 
-
+.sharing-custom {
+  border-top: 1px solid rgba(4, 11, 9, 0.7);
+}
 
 .multi-accordion {
   padding: .5em .5em 0;
