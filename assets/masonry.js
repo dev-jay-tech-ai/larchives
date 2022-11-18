@@ -14,35 +14,34 @@ imagesLoaded( grid ).on( 'progress', function() {
   msnry.layout();
 });
 
-Masonry.prototype._getItemLayoutPosition = function( item ) {
-  item.getSize();
-  // how many columns does this brick span
-  var remainder = item.size.outerWidth % this.columnWidth;
-  var mathMethod = remainder && remainder < 1 ? 'round' : 'ceil';
-  // round if off by 1 pixel, otherwise use ceil
-  var colSpan = Math[ mathMethod ]( item.size.outerWidth / this.columnWidth );
-  colSpan = Math.min( colSpan, this.cols );
-
-  var colGroup = this._getColGroup( colSpan );
-  // ### HACK: sort by natural order, not by min col height
-  // get the minimum Y value from the columns
-  // var minimumY = Math.min.apply( Math, colGroup );
-  // var shortColIndex = utils.indexOf( colGroup, minimumY );
-  var shortColIndex = jQuery(item.element).index() % colGroup.length;
-  var minimumY = colGroup[shortColIndex];
-
-  // position the brick
-  var position = {
-    x: this.columnWidth * shortColIndex,
-    y: minimumY
-  };
-
-  // apply setHeight to necessary columns
-  var setHeight = minimumY + item.size.outerHeight;
-  var setSpan = this.cols + 1 - colGroup.length;
-  for ( var i = 0; i < setSpan; i++ ) {
-    this.colYs[ shortColIndex + i ] = setHeight;
-  }
-
-  return position;
-};
+$.Mason.prototype._placeBrick = function(e) {
+    var n = $(e),
+        r, i, s, o, u;
+    r = Math.ceil(n.outerWidth(!0) / this.columnWidth), r = Math.min(r, this.cols);
+    if (r === 1) s = this.colYs;
+    else {
+        i = this.cols + 1 - r, s = [];
+        for (u = 0; u < i; u++) o = this.colYs.slice(u, u + r), s[u] = Math.max.apply(Math, o)
+    }
+    var a = Math.min.apply(Math, s),
+        f = 0;
+    for (var l = 0, c = s.length; l < c; l++)
+        if (s[l] === a) {
+            f = l;
+            break
+        }
+    /* Add new calculation, what column next brick is in: */
+    f = $(e).index() % this.cols; /* Get col index f: Just divide with element's index */
+    a = s[f]; /* This is current height for f-th column */
+    /* END of customizing */
+    var h = {
+        top: a + this.offset.y
+    };
+    h[this.horizontalDirection] = this.columnWidth * f + this.offset.x, this.styleQueue.push({
+        $el: n,
+        style: h
+    });
+    var p = a + n.outerHeight(!0),
+        d = this.cols + 1 - c;
+    for (l = 0; l < d; l++) this.colYs[f + l] = p;
+}
