@@ -68,10 +68,6 @@ object-position: top; #insta-feed {
   object-position: top;  
 }
 
-.blog-articles__article:nth-of-type(odd) {
-  padding-right: 2rem;
-}
-
 .multi-accordion {
   padding: .5em .5em 0;
   overflow: hidden;
