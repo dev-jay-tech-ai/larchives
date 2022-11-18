@@ -79,6 +79,10 @@ object-position: top; #insta-feed {
   color: rgba(4, 11, 9, 0.7);
 }
 
+.share-button details {
+  margin: 0 auto;
+}
+
 .sharing-custom {
   display: flex;
   justify-content: center;
