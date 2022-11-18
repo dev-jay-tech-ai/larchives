@@ -40,6 +40,10 @@ object-position: top; #insta-feed {
   margin-bottom: 17.2rem;
 }
 
+.grid-blog-item {
+  width: 50%;  
+}
+
 .blog-dropdown {
   margin: 6rem 0;  
 }
