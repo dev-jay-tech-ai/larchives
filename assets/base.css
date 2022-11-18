@@ -638,10 +638,11 @@ a {
   display: inline-block;
   border: none;
   box-shadow: none;
-  color: rgb(var(--color-link));
+  /* color: rgb(var(--color-link)); */
   background-color: transparent;
   font-size: 1.2rem;
   font-family: inherit;
+  color: inherit;
 }
 
 .link--text {
