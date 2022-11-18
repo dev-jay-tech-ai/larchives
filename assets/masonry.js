@@ -15,7 +15,7 @@ imagesLoaded( grid ).on( 'progress', function() {
 });
 */
 function resizeGridItem(item){
-  grid = document.getElementsByClassName("grid")[0];
+  grid = document.getElementsByClassName(".blog-articles")[0];
   rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
   rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
   rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
@@ -23,7 +23,7 @@ function resizeGridItem(item){
 }
 
 function resizeAllGridItems(){
-  allItems = document.getElementsByClassName("grid-item");
+  allItems = document.getElementsByClassName("blog-articles__article");
   for(x=0;x<allItems.length;x++){
     resizeGridItem(allItems[x]);
   }
@@ -37,7 +37,7 @@ function resizeInstance(instance){
 window.onload = resizeAllGridItems();
 window.addEventListener("resize", resizeAllGridItems);
 
-allItems = document.getElementsByClassName("grid-item");
+allItems = document.getElementsByClassName("blog-articles__article");
 for(x=0;x<allItems.length;x++){
   imagesLoaded( allItems[x], resizeInstance);
 }
