@@ -7,7 +7,7 @@
 
 {%- assign b_id = blog.id  -%}
 
-  {%- assign blog_ids = "85172977822,85173371038"  -%}
+  {%- assign blog_ids = "85172977822"  -%}
 
       {%- assign blog_handle_arr = "all" | split: "," -%}
   
@@ -154,6 +154,11 @@
       {%- break -%}
       {%- endif -%}
       <div class="rb_blog-grid-two">
+                  {%- if article.image -%}
+          <a href="{{ article.url }}"><img src="{{ article.image.src | img_url: 'small' }}" alt="{{ article.title }}" /></a>
+          {%- else -%}
+          <div class="rb_no_image"></div>
+          {%- endif -%}
         
         <h5 class="rb_title">
           <a href='{{ article.url }}'>{{ article.title }}</a>
