@@ -41,7 +41,7 @@ object-position: top; #insta-feed {
 }
 
 .grid-blog-item {
-  width: 40%;  
+  width: 50%;  
 }
 
 .blog-dropdown {
@@ -69,7 +69,7 @@ object-position: top; #insta-feed {
 }
 
 .blog-articles__article:nth-of-type(odd) {
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 .multi-accordion {
