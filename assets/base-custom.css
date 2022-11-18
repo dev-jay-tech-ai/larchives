@@ -44,7 +44,7 @@ object-position: top; #insta-feed {
   margin: 6rem 0;  
 }
 
-.blog-articles {
+.blog-articles__article {
   width: 50%;
 }
 
