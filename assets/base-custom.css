@@ -83,7 +83,7 @@ object-position: top; #insta-feed {
   margin-top: 1rem;
 }
 
-.share-button details {
+.share-button button, details {
   margin: 0 auto;
 }
 
