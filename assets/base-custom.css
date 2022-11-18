@@ -87,6 +87,11 @@ object-position: top; #insta-feed {
   border-bottom: 1px solid rgba(4, 11, 9, 0.1);
 }
 
+.sharing-custom > div {
+  width: 4rem;
+  height: 4rem;
+}
+
 .multi-accordion {
   padding: .5em .5em 0;
   overflow: hidden;
