@@ -68,6 +68,20 @@ object-position: top; #insta-feed {
   object-position: top;  
 }
 
+.article-template {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(4, 11, 9, 0.7);
+}
+
+
+
 .multi-accordion {
   padding: .5em .5em 0;
   overflow: hidden;
