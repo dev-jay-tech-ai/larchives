@@ -68,12 +68,6 @@ object-position: top; #insta-feed {
   margin-right: 2rem;
 }
 
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .grid-sizer, .grid-item {
   width: 50%;
 }
