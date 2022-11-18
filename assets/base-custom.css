@@ -85,6 +85,7 @@ object-position: top; #insta-feed {
 
 .share-button button, details {
   margin: 0 auto;
+  padding: 0;
 }
 
 .sharing-custom {
