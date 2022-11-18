@@ -1,6 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+  <div>{% render 'breadcrumb' %}</div>
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
