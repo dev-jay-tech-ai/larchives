@@ -64,13 +64,17 @@ object-position: top; #insta-feed {
   object-position: top;  
 }
 
+.card article-card:nth-of-type(odd) {
+  margin-right: 2rem;
+}
+
 .grid:after {
   content: '';
   display: block;
   clear: both;
 }
 
-.grid-sizer, .grid-item {
+.grid-sizer, .grid-ite {
   width: 50%;
 }
 
