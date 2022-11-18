@@ -30,7 +30,7 @@ function resizeAllGridItems(){
 }
 
 function resizeInstance(instance){
-	item = instance.elements[0];
+  item = instance.elements[0];
   resizeGridItem(item);
 }
 
@@ -38,7 +38,7 @@ window.onload = resizeAllGridItems();
 window.addEventListener("resize", resizeAllGridItems);
 
 allItems = document.getElementsByClassName("blog-articles__article");
-for(x=0;x<allItems.length;x++){
+for(x=0; x<allItems.length; x++){
   imagesLoaded( allItems[x], resizeInstance);
 }
 
