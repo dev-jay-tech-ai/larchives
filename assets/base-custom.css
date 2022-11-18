@@ -88,7 +88,8 @@ object-position: top; #insta-feed {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #040b09;
+  color: #040b09 !important;
+  text-transform: uppercase;
 }
 
 .share-button {
