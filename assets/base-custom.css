@@ -44,10 +44,6 @@ object-position: top; #insta-feed {
   margin: 6rem 0;  
 }
 
-.blog-articles {
-  grid-auto-rows: 4rem;
-}
-
 .blog-articles-custom .blog-grid-custom {
   height: 38rem;
 }
