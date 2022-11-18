@@ -41,3 +41,5 @@ allItems = document.getElementsByClassName("blog-articles__article");
 for(x=0;x<allItems.length;x++){
   imagesLoaded( allItems[x], resizeInstance);
 }
+
+console.log('hey');
