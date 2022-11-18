@@ -1,11 +1,11 @@
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 // init Masonry
-var grid = document.querySelector('.grid');
+var grid = document.querySelector('.grid-blog');
 
 var msnry = new Masonry( grid, {
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
+  itemSelector: '.grid-blog-item',
+  columnWidth: '.grid-blog-sizer',
   percentPosition: true
 });
 
