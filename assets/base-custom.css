@@ -64,6 +64,17 @@ object-position: top; #insta-feed {
   object-position: top;  
 }
 
+.small {
+  grid-row-end: span 1;
+}
+
+.medium {
+  grid-row-end: span 2;
+}
+.large {
+  grid-row-end: span 3;
+}
+
 .card article-card:nth-of-type(odd) {
   margin-right: 2rem;
 }
