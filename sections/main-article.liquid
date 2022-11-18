@@ -36,20 +36,16 @@
         {%- when 'title'-%}
           <header class="page-width page-width--narrow center" {{ block.shopify_attributes }}>
             <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
-
-           <span class="blog-cate-custom" style="letter-spacing: 1.4px">{% for tag in article.tags -%}{{ tag }}{%- endfor %} &bull; </span>
-            {%- if show_date -%}
-              <span class="circle-divider" style="color: rgba(4, 11, 9, 0.5)">{{ article.published_at | date: "%b %d" }}, {{ article.published_at | date: "%Y" }}</span>
-            {%- endif -%}
-            {%- if show_author -%}
-              <span>{{ article.author }}</span>
-            {%- endif -%}
-
-
-
       
             {%- if block.settings.blog_show_date -%}
+
+             <span class="blog-cate-custom" style="letter-spacing: 1.4px">{% for tag in article.tags -%}{{ tag }}{%- endfor %} &bull; </span>
+              {%- if show_date -%}
+                <span class="circle-divider" style="color: rgba(4, 11, 9, 0.5)">{{ article.published_at | date: "%b %d" }}, {{ article.published_at | date: "%Y" }}</span>
+              {%- endif -%}
+              
               <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+            
             {%- endif -%}
             {%- if block.settings.blog_show_author -%}
               <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
