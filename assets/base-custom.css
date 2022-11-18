@@ -68,15 +68,6 @@ object-position: top; #insta-feed {
   margin-right: 2rem;
 }
 
-.grid-sizer, .grid-item {
-  width: 50%;
-}
-
-.grid-item {
-  float: left;
-}
-
-
 .multi-accordion {
   padding: .5em .5em 0;
   overflow: hidden;
