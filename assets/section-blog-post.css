@@ -67,6 +67,7 @@
 
 .article-template__title {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .article-template__title:not(:only-child) {
