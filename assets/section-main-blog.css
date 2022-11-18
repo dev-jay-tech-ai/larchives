@@ -13,7 +13,7 @@
   .blog-articles {
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
-    row-gap: 8rem; 
+    /* row-gap: 8rem;  */
     /* column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing); */
   }
