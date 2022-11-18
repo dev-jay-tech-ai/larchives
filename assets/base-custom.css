@@ -87,8 +87,7 @@ object-position: top; #insta-feed {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
-  color: #040b09 !important;
+  color: #040b09;
   text-transform: uppercase;
 }
 
