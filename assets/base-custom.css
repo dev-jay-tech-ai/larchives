@@ -890,7 +890,6 @@ input[type="range"]::-moz-range-thumb{
 
 .header_custom_style {
   font-family: 'Termina-light';
-  font-size: 1rem;
   width: 381px;
   height: 12px;
   display: flex;
@@ -904,6 +903,10 @@ input[type="range"]::-moz-range-thumb{
   font-size: 12px;
   line-height: 12px;
   margin-left: 3rem;
+}
+
+.header_custom_style > div > a {
+  font-size: 1rem;
 }
 
 .header_text_style {
