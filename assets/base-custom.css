@@ -916,6 +916,11 @@ input[type="range"]::-moz-range-thumb{
   color: #fff !important;
 }
 
+.header_text_reverse > svg > path {
+  stroke: #fff;
+}
+
+
 .header_text_style > span {
   height: 1rem;
 }
