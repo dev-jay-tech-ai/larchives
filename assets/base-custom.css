@@ -930,7 +930,7 @@ input[type="range"]::-moz-range-thumb{
   line-height: 2.4rem;
 }
 
-.list-menu--inline li:last-child svg {
+.list-menu--inline li svg {
   margin-top: 7px;
 }
 
