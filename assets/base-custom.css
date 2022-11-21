@@ -900,7 +900,7 @@ input[type="range"]::-moz-range-thumb{
 
 .header_custom_style > div {
   flex-direction: row;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 12px;
 }
 
@@ -917,7 +917,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .header_text_style > span {
-  height: 1.4rem;
+  height: 1rem;
 }
 
 .header_left_nav {
