@@ -519,7 +519,12 @@
               </div>
             </li>
             <li><div><a href="#">{%- if request.page_type == 'index' -%}{% render 'icon-like' %}{%- else -%}{% render 'icon-like-black' %}{%- endif -%}</a></div></li>
-            <li><div><a href="#">{%- if request.page_type == 'index' -%} {% render 'icon-cart-empty' %}{%- else -%}{% render 'icon-cart-empty-black' %}{%- endif -%}</a></div></li>
+            <li><div><a href="#">
+            {%- if settings.cart_type == "notification" -%}
+              {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
+            {%- endif -%}
+            {%- if request.page_type == 'index' -%}{% render 'icon-cart-empty' %}{%- else -%}{% render 'icon-cart-empty-black' %}{%- endif -%}
+            </a></div></li>
           </ul>
         </nav>
       {%- endif -%}
@@ -555,9 +560,7 @@
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
-{%- if settings.cart_type == "notification" -%}
-  {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
-{%- endif -%}
+
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
