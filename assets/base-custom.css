@@ -891,7 +891,7 @@ input[type="range"]::-moz-range-thumb{
 .header_custom_style {
   font-family: 'Termina-light';
   width: 381px;
-  height: 14px;
+  height: 12px;
   display: flex;
   justify-content: space-between;
   margin-top: 0.8rem;
@@ -901,7 +901,8 @@ input[type="range"]::-moz-range-thumb{
 .header_custom_style > div {
   flex-direction: row;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 12px;
+  margin-left: 3rem;
 }
 
 .header_text_style {
