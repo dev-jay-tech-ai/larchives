@@ -522,6 +522,10 @@ input[type="range"]::-moz-range-thumb{
   margin-bottom: 3.5rem;
 }
 
+.breadcrumb span:last-child {
+  color: rgba(4, 11, 9, 0.5);
+}
+
 .chevron {
   margin-top: 6rem;
   margin-bottom: 10rem;  
@@ -924,10 +928,6 @@ input[type="range"]::-moz-range-thumb{
   width: 10.8rem;
   height: 2.4rem;
   line-height: 2.4rem;
-}
-
-.header_icon {
-  padding: 7px 24px 0px 24px;
 }
 
 .list-menu--inline li:last-child svg {
