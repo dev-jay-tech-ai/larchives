@@ -2762,8 +2762,8 @@ details-disclosure > details {
 }
 
 .badge {
-  border: 1px solid transparent;
-  /* border-radius: var(--badge-corner-radius); */
+  /* border: 1px solid transparent;
+  border-radius: var(--badge-corner-radius); */
   display: inline-block;
   font-family: Poppins;
   font-size: 1.4rem;
