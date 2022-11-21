@@ -890,7 +890,7 @@ input[type="range"]::-moz-range-thumb{
 
 .header_custom_style {
   font-family: 'Termina-light';
-  width: 337px;
+  width: 381px;
   height: 14px;
   display: flex;
   justify-content: space-between;
