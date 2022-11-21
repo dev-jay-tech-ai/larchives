@@ -172,7 +172,6 @@ object-position: top; #insta-feed {
 
 
 .product-form__input input.color-switch+label {
-  border: 0 !important;
   border-radius: 50% !important;
   width: 2rem !important;
   height: 2rem !important;
