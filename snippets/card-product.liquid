@@ -32,6 +32,12 @@
     endif
   -%}
   <div class="card-wrapper product-card-wrapper">
+    <a
+      href="{{ card_product.url }}"
+      id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
+      class="full-unstyled-link"
+      aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+    >
     <div
       class="
         card
@@ -105,14 +111,7 @@
                 id="title-{{ section_id }}-{{ card_product.id }}"
               {% endif %}
             >
-              <a
-                href="{{ card_product.url }}"
-                id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
-                class="full-unstyled-link"
-                aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-              >
                 {{ card_product.title | upcase }}
-              </a>
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
@@ -361,5 +360,6 @@
         </div>
       </div>
     </div>
+    </a>
   </div>
 {%- endif -%}
