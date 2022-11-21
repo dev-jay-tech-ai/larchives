@@ -902,7 +902,6 @@ input[type="range"]::-moz-range-thumb{
   flex-direction: row;
   font-size: 12px;
   line-height: 12px;
-  margin-left: 3rem;
 }
 
 .header_custom_style > div > a {
