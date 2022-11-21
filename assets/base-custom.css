@@ -189,8 +189,8 @@ object-position: top; #insta-feed {
   border: 1px solid #424b5a;
   border-radius: 50%;
   position: absolute;
-  top: -5px;
-  left: -5px;
+  top: -6px;
+  left: -6px;
 }
 
 .form__label > span {
