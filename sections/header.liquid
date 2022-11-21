@@ -520,8 +520,7 @@
             </li>
             <li><div><a href="#">{%- if request.page_type == 'index' -%}{% render 'icon-like' %}{%- else -%}{% render 'icon-like-black' %}{%- endif -%}</a></div></li>
             <li>
-              <div id="cart-notification" class="cart-notification focus-inset{% if color_scheme %} color-{{ color_scheme }} gradient{% endif %}" aria-modal="true" aria-label="{{ 'general.cart.item_added' | t }}" role="dialog" tabindex="-1">
-                <div class="cart-notification__header">
+      <div class="cart-notification__header">
                   <h2 class="cart-notification__heading caption-large text-body">{%- render 'icon-checkmark' -%} {{ 'general.cart.item_added' | t }}</h2>
                   <button type="button" class="cart-notification__close modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
                     <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="#icon-close"></svg>
@@ -535,7 +534,6 @@
                   </form>
                   <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
                 </div>
-              </div>
               <div>
                 <a href="#">
                   {%- if request.page_type == 'index' -%} {% render 'icon-cart-empty' %}{%- else -%}{% render 'icon-cart-empty-black' %}{%- endif -%}
