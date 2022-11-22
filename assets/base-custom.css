@@ -945,6 +945,12 @@ input[type="range"]::-moz-range-thumb{
   padding-left: 2.4rem;
 }
 
+.search-modal__content > div {
+  display: flex;
+  justify-content: space-between;  
+}
+
+
 /* Custom CSS */
 
 /*
