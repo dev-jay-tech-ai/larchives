@@ -271,7 +271,7 @@ const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".facets__price input"),
 range = document.querySelector(".slider .progress");
 let priceGap = 5;
-console.log('hi');
+
 priceInput.forEach(input =>{
     input.addEventListener("input", e =>{
         let minPrice = parseInt(priceInput[0].value),
