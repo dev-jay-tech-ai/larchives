@@ -453,7 +453,6 @@
                         {%- else -%}
                           {% render 'icon-search-black' %}
                         {%- endif -%}
-                        {% render 'icon-close' %}
                       </span>
                     </summary>
                     <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
@@ -463,7 +462,7 @@
                           <div>{% render 'logo-darkgreen' %}</div>    
                           <div>
                             <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                              {% render 'icon-close' %}
+                            {% render 'icon-close' %}
                             </button>
                           </div>
                         </div>
