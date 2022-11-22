@@ -227,7 +227,7 @@
                     <price-range class="facets__price">
                       <span class="field-currency">{{ cart.currency.symbol }}</span>
                       <div class="field">
-                        <input class="field__input"
+                        <input class="field__input input-min"
                           name="{{ filter.min_value.param_name }}"
                           id="Filter-{{ filter.label | escape }}-GTE"
                           {%- if filter.min_value.value -%}
@@ -244,7 +244,7 @@
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
                       {%- endif -%}
                       <div class="field">
-                        <input class="field__input"
+                        <input class="field__input input-max"
                           name="{{ filter.max_value.param_name }}"
                           id="Filter-{{ filter.label | escape }}-LTE"
                           {%- if filter.max_value.value -%}{%- if uses_comma_decimals -%}value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
