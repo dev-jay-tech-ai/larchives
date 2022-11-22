@@ -272,8 +272,8 @@ priceInput = document.querySelectorAll(".facets__price input"),
 range = document.querySelector(".slider .progress");
 let priceGap = 5;
 
-console.log('가격 범위', priceInput)
 priceInput.forEach(input =>{
+    console.log('가격 범위', priceInput[0], priceInput[1])
     input.addEventListener("input", e =>{
         let minPrice = parseInt(priceInput[0].value),
         maxPrice = parseInt(priceInput[1].value);
