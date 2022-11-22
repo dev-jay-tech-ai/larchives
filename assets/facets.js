@@ -269,7 +269,6 @@ customElements.define('facet-remove', FacetRemove);
 /** price range slider */
 const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".facets__price input"),
-priceRange = document.querySelectorAll(".range-bar div"),
 range = document.querySelector(".slider .progress");
 let priceGap = 5;
 
@@ -307,14 +306,5 @@ rangeInput.forEach(input =>{
         }
     });
 });
-
-priceRange[0].innerText = priceInput[0].value;
-priceRange[1].innerText = priceInput[1].value;
-
-
-
-
-
-
 
 
