@@ -453,9 +453,7 @@
                         {%- else -%}
                           {% render 'icon-search-black' %}
                         {%- endif -%}
-                        <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                          <use href="#icon-close">
-                        </svg>
+                        {% render 'icon-close' %}
                       </span>
                     </summary>
                     <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
@@ -465,9 +463,7 @@
                           <div>{% render 'logo-darkgreen' %}</div>    
                           <div>
                             <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                              <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                                <use href="#icon-close">
-                              </svg>
+                              {% render 'icon-close' %}
                             </button>
                           </div>
                         </div>
