@@ -307,6 +307,8 @@ rangeInput.forEach(input =>{
     });
 });
 
+priceRange[0].innerText = priceInput[0].value;
+priceRange[1].innerText = priceInput[1].value;
 
 
 
