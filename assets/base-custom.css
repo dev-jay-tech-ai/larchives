@@ -340,7 +340,6 @@ facets__display-vertical .slider .progress{
   position: absolute;
   background-color: rgb(4,11,9);
   height: 3px;
-  width: 80%;
 }
 
 .range-input{
