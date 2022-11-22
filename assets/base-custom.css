@@ -386,14 +386,6 @@ input[type="range"]::-moz-range-thumb{
   height: 24px;
 }
 
-.range-min:before {
-  
-}
-
-.range-max:before {
-  
-}
-
 .mega-menu__content > div {
   display: flex;
   justify-content: space-between;
