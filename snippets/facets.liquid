@@ -212,7 +212,7 @@
                   </summary>
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}">
                     <div>
-                    {% comment %}
+                    {% comment %}{% endcomment %}
                     <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
                       {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
                       <span class="facets__selected">{{ "products.facets.max_price" | t: price: max_price_amount }}</span>
@@ -223,7 +223,7 @@
                           </a>
                         </facet-remove>
                       {%- endif -%}
-                    </div>{% endcomment %}
+                    </div>
                     <price-range class="facets__price">
                       <span class="field-currency">{{ cart.currency.symbol }}</span>
                       <div class="field">
@@ -273,7 +273,6 @@
                       {%- if filter.min_value.value -%}
                         {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                       {%- endif -%} step="5">
-                      {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
                       <input type="range" class="range-max" min="0"
                       {%- if uses_comma_decimals -%}
                         max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
