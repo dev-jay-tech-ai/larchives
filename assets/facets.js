@@ -294,16 +294,12 @@ rangeInput.forEach(input =>{
         let minVal = parseInt(rangeInput[0].value),
         maxVal = parseInt(rangeInput[1].value);        
         if((maxVal - minVal) < priceGap){
-            console.log(1)
             if(e.target.className === "range-min"){
-                console.log(2)
                 rangeInput[0].value = maxVal - priceGap
             }else{
-                console.log(3)
                 rangeInput[1].value = minVal + priceGap;
             }
         }else{
-            console.log(4)
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
             range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
