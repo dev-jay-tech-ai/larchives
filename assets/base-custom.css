@@ -950,6 +950,10 @@ input[type="range"]::-moz-range-thumb{
   justify-content: space-between;  
 }
 
+.search-modal__content svg {
+  width: 12.8rem;
+}
+
 
 /* Custom CSS */
 
