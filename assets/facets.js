@@ -278,7 +278,7 @@ priceInput.forEach(input =>{
         maxPrice = parseInt(priceInput[1].value);    
         console.log('최대값과 최소값',minPrice, maxPrice)
         if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
-            if(e.target.className === "input-min"){
+            if(e.target.className === "range-min"){
                 rangeInput[0].value = minPrice;
                 range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
             }else{
