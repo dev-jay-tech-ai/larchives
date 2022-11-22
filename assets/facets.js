@@ -269,6 +269,7 @@ customElements.define('facet-remove', FacetRemove);
 /** price range slider */
 const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".facets__price input"),
+priceRange = document.querySelectorAll(".range-bar div"),
 range = document.querySelector(".slider .progress");
 let priceGap = 5;
 
