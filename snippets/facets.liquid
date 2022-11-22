@@ -268,7 +268,7 @@
                 
                       <div class="range-bar">
                         <div>1</div>
-                        <div>10</div>
+                        <div>{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}</div>
                       </div>
                 
                       <div class="progress">&nbsp;</div>
