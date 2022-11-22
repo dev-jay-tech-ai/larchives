@@ -268,12 +268,14 @@
                       <div class="progress">&nbsp;</div>
                     </div>
                     <div class="range-input">
-                      <input type="range" class="range-min" min="0" 
+                      <label for='range-min'>{{ filter.range_min | money_without_currency | replace: '.', '' | replace: ',', '.' }}</label>
+                      <input type="range" id="range-min" class="range-min" min="0" 
                       {%- if uses_comma_decimals -%}max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"{% endif %} 
                       {%- if filter.min_value.value -%}
                         {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                       {%- endif -%} step="5">
-                      <input type="range" class="range-max" min="0"
+                      <label for='range-max'>{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}</label>
+                      <input type="range" id="range-max" class="range-max" min="0"
                       {%- if uses_comma_decimals -%}
                         max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
                       {%- else -%}
