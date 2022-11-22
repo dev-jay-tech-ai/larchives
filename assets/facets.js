@@ -266,7 +266,7 @@ class FacetRemove extends HTMLElement {
 
 customElements.define('facet-remove', FacetRemove);
 
-/** price range slider 
+/** price range slider */
 const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".facets__price input"),
 range = document.querySelector(".slider .progress");
@@ -308,7 +308,7 @@ rangeInput.forEach(input =>{
     });
 });
 
-*/
+
 
 
 
