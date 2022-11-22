@@ -333,7 +333,7 @@ object-position: top; #insta-feed {
   margin-top: 36px;
 }
 
-facets__display-vertical .slider .progress{
+.facets__display-vertical .slider .progress{
   top: -1px;
   left: 25%;
   right: 25%;
