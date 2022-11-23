@@ -80,7 +80,7 @@ object-position: top; #insta-feed {
 }
 
 .article-control {
-  font-family: Termina-regular;
+  font-family: Termina-light;
   font-size: 12px;
   font-weight: 500;
   font-stretch: normal;
@@ -465,7 +465,7 @@ input[type="range"]::-moz-range-thumb {
   gap: 10px;
   padding: 18px 48px;
   border: solid 1px #040b09;
-  font-family: 'Termina-regular';
+  font-family: 'Termina-light';
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -886,7 +886,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .button_custom {
-  font-family: 'Termina-regular';
+  font-family: 'Termina-light';
   font-size: 12px;
   padding: 18px 48px;
   text-transform: uppercase;
@@ -936,7 +936,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .header_left_nav {
-  font-family: 'Termina-regular';
+  font-family: 'Termina-light';
   font-size: 1.4rem;
   color: #040b09;
   display: flex;
@@ -982,7 +982,7 @@ input[type="range"]::-moz-range-thumb {
 /*{"last_published":"2022-11-14 14:35:45 UTC"}*/
 
 @font-face {
-font-family:"Termina-regular";
+font-family:"Termina-light";
 src:url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
@@ -994,11 +994,11 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 
 
-@font-face {
+/* @font-face {
     font-family: 'Termina-light';
     src:url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-light.woff?v=1668511308') format('woff'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-light.woff2?v=1668511307') format('woff2'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-light.eot?v=1668511307'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-light.eot?v=1668511307?#iefix') format('embedded-opentype'),
         url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Termina-light.otf?v=1668511307') format('truetype');
-}
+} */
