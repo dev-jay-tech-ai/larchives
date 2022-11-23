@@ -290,7 +290,7 @@ priceInput.forEach(input =>{
         }
     });
 });
-
+/* 손으로 밀었을 때 만 작동  */ 
 rangeInput.forEach(input =>{
     input.addEventListener("input", e =>{
         let minVal = parseInt(rangeInput[0].value),
