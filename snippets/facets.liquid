@@ -267,8 +267,8 @@
                     <div class="slider">
                 
                       <div class="range-bar">
-                        <div>{{ filter.min_value.value | money_with_currency }}</div>
-                        <div>{{ filter.max_value.value | money_with_currency }}</div>
+                        <div>{{ filter.min_value.value | money_with_currency | replace: 'GBP', '' }}</div>
+                        <div>{{ filter.max_value.value | money_with_currency | replace: 'GBP', '' }}</div>
                       </div>
                 
                       <div class="progress">&nbsp;</div>
