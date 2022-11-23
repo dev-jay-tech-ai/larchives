@@ -736,7 +736,7 @@ details > * {
 
 .underlined-link,
 .customer a {
-  color: rgba(var(--color-link), var(--alpha-link));
+  /* color: rgba(var(--color-link), var(--alpha-link)); */
   transition: text-decoration-thickness ease 100ms;
 }
 
