@@ -328,7 +328,8 @@ rangeInput.forEach(input => {
     range.style.right = 0 + "%";
     rangeNum.style.left = 0 + "%";
     rangeNum.style.right = 0 + "%";
-    
+    rangeInput[0].style.left = 47 + "%";
+    rangeInput[1].style.right = 47 + "%";
     return;
   }
   console.log('확인2',minVal,  maxVal)
