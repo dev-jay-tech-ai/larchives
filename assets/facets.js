@@ -328,6 +328,7 @@ rangeInput.forEach(input => {
     range.style.right = 0 + "%";
     rangeNum.style.left = 0 + "%";
     rangeNum.style.right = 0 + "%";
+    
     rangeNumInfo[0].innerText = "£" + minVal;
     rangeNumInfo[1].innerText = "£" + maxVal;
     return;
