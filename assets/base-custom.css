@@ -341,7 +341,7 @@ object-position: top; #insta-feed {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  color: rgba(4,11,9.0.5);
+  color: rgba(4,11,9.0.2);
   font-size: 10px;
 }
 
