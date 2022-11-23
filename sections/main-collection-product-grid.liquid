@@ -138,9 +138,8 @@
                 {%- endunless -%}        
               </div>
               <div>
-                {% assign page = paginate.next.url | split: "=" | last | plus: 0 %}
-                {{ page }}
-                {%- if page < 3 -%}
+                {% assign page = paginate.next.url | split: "=" | last %}
+                {%- if page == '2' -%}
                   {% render 'pagination', paginate: paginate, anchor: '' %}
                 {%- endif -%}
               </div>
