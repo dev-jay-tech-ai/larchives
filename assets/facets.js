@@ -304,12 +304,14 @@ rangeInput.forEach(input =>{
         }else{
             // 인풋에 값을 변경 새로 고침 전에는 반응 없음. 
             console.log(priceInput[0].value, priceInput[1].value)
+            console.log(minVal, maxVal)
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
             range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
             rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
             rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+   
         }
     });
 });
