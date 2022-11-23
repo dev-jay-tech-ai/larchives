@@ -893,7 +893,6 @@ input[type="range"]::-moz-range-thumb {
   font-family: 'Termina-regular';
   font-size: 12px;
   padding: 18px 48px;
-  text-transform: uppercase;
 }
 
 .button.reverse {
