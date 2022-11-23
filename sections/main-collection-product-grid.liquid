@@ -132,14 +132,12 @@
                   <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
                   <input type="hidden" value="{{ paginate.current_page }}" data-this-page>
                   <input type="hidden" value="{{ collection.url }}" data-coll-url>
-                  <div class="load-more_wrap">
                   <button class="button button--secondary button-load-custom">
                    <span load-more-text>LOAD MORE</span>
                    <span class="hide" loader>
                      <img src="{{ 'loader.gif' | asset_url }}"/>
                    </span>
                   </button>
-                  </div> 
                 {%- endunless -%}        
               </div>
               <div class="">{% render 'pagination', paginate: paginate, anchor: '' %}</div>
