@@ -126,7 +126,7 @@
             </ul>
             <div class="product-list-bottom">
               {%- if paginate.pages > 1 -%}
-              <div class=""><button class="button button--secondary button-load-custom">LOAD MORE</button></div>
+              <div class="">{%- unless paginate.previous -%}<button class="button button--secondary button-load-custom">LOAD MORE</button>{%- endunless -%}</div>
               <div class="">{% render 'pagination', paginate: paginate, anchor: '' %}</div>
               {%- endif -%}
             </div>  
