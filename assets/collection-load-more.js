@@ -1,10 +1,10 @@
 const products_on_page = $('.products-on-page');
 let next_url = products_on_page.data('next-url');
 const load_more = $('.load-more');
-const load_more = $('.load-more');
 
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
+  console.log(e)
   $.ajax({
     url: next_url,
     type: 'GET',
@@ -15,4 +15,5 @@ load_more[0].addEventListener("click",(e) => {
     next_url = new_url;
     products_on_page.append(new_products.html());
   })
+  
 });
