@@ -334,7 +334,7 @@ object-position: top; #insta-feed {
 }
 
 .facets__display-vertical .slider .range-bar {
-  top: -25px;
+  top: -27px;
   height: 0;
   position: absolute;
   display: flex;
