@@ -132,7 +132,7 @@
                   <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
                   <input type="hidden" value="{{ paginate.current_page }}" data-this-page>
                   <input type="hidden" value="{{ collection.url }}" data-coll-url>
-                  <button class="button button--secondary button-load-custom">
+                  <button class="button button--secondary button-load-custom js-load-more">
                    <span load-more-text>LOAD MORE</span>
                    <span class="hide" loader>
                      <img src="{{ 'loader.gif' | asset_url }}"/>
@@ -151,7 +151,7 @@
 </div>
 
 {% javascript %}
-  $('.button-load-custom').on('click', function(){
+  $('.js-load-more').on('click', function(){
      var $this =$(this),
      totalPages = parseInt($('[data-all-pages]').val()),
      currentPage = parseInt($('[data-this-page]').val()),
