@@ -211,7 +211,6 @@
                     </div>
                   </summary>
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}">
-                    <div>
                     {% comment %}
                     <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
                       {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
@@ -294,7 +293,6 @@
 
                 
                     </price-range>
-                  </div>
                 </details>
               {% endcase %}
             {%- endfor -%}
