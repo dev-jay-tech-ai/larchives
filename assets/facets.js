@@ -270,7 +270,8 @@ customElements.define('facet-remove', FacetRemove);
 const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".facets__price input"),
 range = document.querySelector(".slider .progress"),
-rangeNum = document.querySelector(".slider .range-bar");
+rangeNum = document.querySelector(".slider .range-bar"),
+rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
 let priceGap = 5;
 
 priceInput.forEach(input =>{
@@ -311,6 +312,7 @@ rangeInput.forEach(input =>{
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
             rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
             rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+
    
         }
     });
