@@ -4,7 +4,7 @@ const load_more = $('.load-more');
 
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
-  console.log(e)
+  load_more[0].style.margin = '0 auto';
   $.ajax({
     url: next_url,
     type: 'GET',
