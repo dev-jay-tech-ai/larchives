@@ -324,6 +324,7 @@ rangeInput.forEach(input => {
   maxVal = parseInt(rangeInput[1].value);  
   if(priceInput[0].value === '' || priceInput[1].value === '') {
     console.log('ha...')
+    return;
   }
   console.log('확인2',minVal,  maxVal)
   if((maxVal - minVal) < priceGap){
