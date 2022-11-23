@@ -151,9 +151,6 @@
 </div>
 
 {% javascript %}
-  $( document ).ready(function() {
- // Wrap up your code here  
-
   $('.js-load-more').on('click', function(){
      var $this =$(this),
      totalPages = parseInt($('[data-all-pages]').val()),
@@ -184,7 +181,6 @@
            } 
        }
      })
-  });
   });
 {% endjavascript %}
 
