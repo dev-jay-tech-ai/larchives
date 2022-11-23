@@ -3,7 +3,6 @@ let next_url = products_on_page.data('next-url');
 const load_more = $('.load-more');
 const pagination = $('.product-list-bottom div');
 
-
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
   load_more[0].style.margin = '0 auto';
@@ -17,6 +16,5 @@ load_more[0].addEventListener("click",(e) => {
     const new_url = new_products.data('next-url');
     next_url = new_url;
     products_on_page.append(new_products.html());
-  })
-  
+  })  
 });
