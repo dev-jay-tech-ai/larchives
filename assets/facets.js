@@ -324,6 +324,10 @@ rangeInput.forEach(input => {
   maxVal = parseInt(rangeInput[1].value);  
   if(priceInput[0].value === '' || priceInput[1].value === '') {
     console.log('ha...')
+    rangeNum.style.left = 0 + "%";
+    rangeNum.style.right = 0 + "%";
+    rangeNumInfo[0].innerText = "£" + minVal;
+    rangeNumInfo[1].innerText = "£" + maxVal;
     return;
   }
   console.log('확인2',minVal,  maxVal)
