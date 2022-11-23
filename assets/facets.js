@@ -269,7 +269,8 @@ customElements.define('facet-remove', FacetRemove);
 /** price range slider */
 const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".facets__price input"),
-range = document.querySelector(".slider .progress");
+range = document.querySelector(".slider .progress"),
+rangeNum = document.querySelector(".slider .range-bar");
 let priceGap = 5;
 
 priceInput.forEach(input =>{
@@ -280,9 +281,11 @@ priceInput.forEach(input =>{
             if(e.target.className === "range-min"){
                 rangeInput[0].value = minPrice;
                 range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                rangeNum.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
             }else{
                 rangeInput[1].value = maxPrice;
                 range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                rangeNum.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
             }
         }
     });
@@ -303,6 +306,8 @@ rangeInput.forEach(input =>{
             priceInput[1].value = maxVal;
             range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+            rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+            rangeNum.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
         }
     });
 });
