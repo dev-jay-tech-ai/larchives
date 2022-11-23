@@ -330,8 +330,8 @@ rangeInput.forEach(input => {
     range.style.right = 0 + "%";
     rangeNum.style.left = 0 + "%";
     rangeNum.style.right = 0 + "%";
-    rangeInput[0].style.left = 47 + "%";
-    rangeInput[1].style.right = 47 + "%";
+    rangeInput[0].style.left = 48 + "%";
+    rangeInput[1].style.right = 48 + "%";
     return;
   }
 
