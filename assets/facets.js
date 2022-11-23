@@ -302,7 +302,7 @@ rangeInput.forEach(input =>{
                 rangeInput[1].value = minVal + priceGap;
             }
         }else{
-            // 인풋에 값을 변경 (=슬라이더 값을 조정)하면 일단 작동은 함
+            // 인풋에 값을 변경 새로 고침 전에는 반응 없음. 
             console.log(priceInput[0].value, priceInput[1].value)
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
