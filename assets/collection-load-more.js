@@ -1,8 +1,8 @@
 const products_on_page = $('.products-on-page');
 let next_url = products_on_page.data('next-url');
 const load_more = $('.load-more');
-console.log(load_more)
-load_more.addEventListener("click",(e) => {
+
+load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
   $.ajax({
     url: next_url,
