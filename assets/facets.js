@@ -331,5 +331,6 @@ rangeInput.forEach(input =>{
       rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
       rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
   }
+  // 인풋에 값을 변경 (=슬라이더 값을 조정)하면 일단 작동은 함
 });
 
