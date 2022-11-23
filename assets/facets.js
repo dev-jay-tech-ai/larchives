@@ -314,6 +314,7 @@ rangeInput.forEach(input =>{
     });
 });
 
+/* 새로고침 후 일처리 */
 rangeInput.forEach(input =>{
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value);        
