@@ -268,10 +268,10 @@
                 
                       <div class="range-bar">
                         <div>
-                        {%- if filter.min_value.value == blank -%} {{ '0' | money_with_currency }} 
+                        {%- if filter.min_value.value == blank -%} {{ '0' | money_with_currency | replace: 'GBP', '' }} 
                         {%- else -%} {{ filter.min_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }} {%- endif -%}
                         </div>
-                        <div> {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
+                        <div> {{ filter.range_max | money_currency | replace: '.', '' | replace: ',', '.' }}
                         {{ filter.max_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}</div>
                       </div>
                 
