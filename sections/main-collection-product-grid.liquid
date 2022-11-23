@@ -125,12 +125,10 @@
               {%- endfor -%}
             </ul>
             <div class="product-list-bottom">
-              <div class=""><button class="button button--secondary button-load-custom">LOAD MORE</button></div>
-              <div class="">
               {%- if paginate.pages > 1 -%}
-                {% render 'pagination', paginate: paginate, anchor: '' %}
+              <div class=""><button class="button button--secondary button-load-custom">LOAD MORE</button></div>
+              <div class="">{% render 'pagination', paginate: paginate, anchor: '' %}</div>
               {%- endif -%}
-              </div>
             </div>  
           </div>
         {%- endif -%}
