@@ -358,7 +358,7 @@
 /* 가격 필터 삽입 수정 부분 */
 
 .facets__price {
-  /* display: none; */
+  display: none; 
   padding: 2rem;
 }
 
