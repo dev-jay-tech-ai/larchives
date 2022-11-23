@@ -267,7 +267,10 @@
                     <div class="slider">
                 
                       <div class="range-bar">
-                        <div>{{ filter.min_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}</div>
+                        <div>
+                        {%- if filter.min_value.value == '' -%} 0 {%- else -%} 1 {%- endif -%}
+                        {{ filter.min_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}
+                        </div>
                         <div>{{ filter.max_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}</div>
                       </div>
                 
