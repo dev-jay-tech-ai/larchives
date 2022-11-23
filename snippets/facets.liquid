@@ -268,11 +268,13 @@
                 
                       <div class="range-bar">
                         <div>
-                        {%- if filter.min_value.value == blank -%} {{ '0' | money_with_currency | replace: 'GBP', '' }} 
-                        {%- else -%} {{ filter.min_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }} {%- endif -%}
+                        {%- if filter.min_value.value == blank -%}{{ '0' | money_with_currency | replace: 'GBP', '' }} 
+                        {%- else -%}{{ filter.min_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}{%- endif -%}
                         </div>
-                        <div> {{ filter.range_max | money_with_currency | replace: '.', '' | replace: ',', '.' }}
-                        {{ filter.max_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}</div>
+                        <div> 
+                        {%- if filter.min_value.value == blank -%}{{ filter.range_max | money_with_currency | replace: '.00', '' | replace: 'GBP', ''  }}
+                        {%- else -%}{{ filter.max_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}{%- endif -%}
+                        </div>
                       </div>
                 
                       <div class="progress">&nbsp;</div>
