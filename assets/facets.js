@@ -302,6 +302,7 @@ rangeInput.forEach(input =>{
                 rangeInput[1].value = minVal + priceGap;
             }
         }else{
+            // 인풋에 값을 변경 (=슬라이더 값을 조정)하면 일단 작동은 함
             console.log(priceInput[0].value, priceInput[1].value)
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
@@ -309,6 +310,8 @@ rangeInput.forEach(input =>{
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
             rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
             rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+            rangeInput[0].value = minVal
+            rangeInput[1].value = maxVal
         }
     });
 });
@@ -331,6 +334,6 @@ rangeInput.forEach(input =>{
       rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
       rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
   }
-  // 인풋에 값을 변경 (=슬라이더 값을 조정)하면 일단 작동은 함
+
 });
 
