@@ -312,6 +312,8 @@ rangeInput.forEach(input =>{
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
             rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) -5 + "%";
             rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+            rangeInput[0].style.left = 0;
+            rangeInput[1].style.right = 0;
             rangeNumInfo[0].innerText = "£" + minVal;
             rangeNumInfo[1].innerText = "£" + maxVal;
         }
@@ -332,7 +334,7 @@ rangeInput.forEach(input => {
     rangeInput[1].style.right = 47 + "%";
     return;
   }
-  console.log('확인2',minVal,  maxVal)
+
   if((maxVal - minVal) < priceGap){
       if(input.className === "range-min"){
           rangeInput[0].value = maxVal - priceGap
@@ -343,6 +345,8 @@ rangeInput.forEach(input => {
       console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
       priceInput[0].value = minVal;
       priceInput[1].value = maxVal;
+      rangeInput[0].style.left = 0;
+      rangeInput[1].style.right = 0;
       range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
       range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
       rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) -5 + "%";
