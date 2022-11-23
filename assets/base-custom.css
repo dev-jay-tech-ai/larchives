@@ -335,8 +335,6 @@ object-position: top; #insta-feed {
 
 .facets__display-vertical .slider .range-bar {
   top: -25px;
-  left: 0%;
-  right: 0%;
   height: 0;
   position: absolute;
   display: flex;
@@ -347,8 +345,6 @@ object-position: top; #insta-feed {
 
 .facets__display-vertical .slider .progress{
   top: -1px;
-  left: 0%;
-  right: 0%;
   position: absolute;
   background-color: rgb(4,11,9);
   height: 3px;
