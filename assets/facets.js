@@ -322,6 +322,8 @@ rangeInput.forEach(input =>{
 rangeInput.forEach(input => {
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value);   
+  console.log('확인',priceInput[0].value, priceInput[1].value)
+  console.log('확인2',minVal,  maxVal)
   if((maxVal - minVal) < priceGap){
       if(input.className === "range-min"){
           rangeInput[0].value = maxVal - priceGap
