@@ -890,7 +890,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .button_custom {
-  font-family: 'Termina-light';
+  font-family: 'Termina-regular';
   font-size: 12px;
   padding: 18px 48px;
   text-transform: uppercase;
@@ -903,7 +903,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .header_custom_style {
-  font-family: 'Termina-light';
+  font-family: 'Termina-regular';
   width: 381px;
   height: 12px;
   display: flex;
