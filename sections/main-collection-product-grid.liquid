@@ -138,7 +138,7 @@
                 {%- endunless -%}        
               </div>
               <div>
-                {{ paginate.next.url }}
+                {{ paginate.next.url | split: "=" | last }}
                 {% render 'pagination', paginate: paginate, anchor: '' %}
               </div>
               {%- endif -%}
