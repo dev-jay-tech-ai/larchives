@@ -139,7 +139,7 @@
               </div>
               <div>
                 {% assign page = paginate.next.url | split: "=" | last %}
-                {%- if page == '2' -%}
+                {%- if page == 2 -%}
                   {% render 'pagination', paginate: paginate, anchor: '' %}
                 {%- endif -%}
               </div>
