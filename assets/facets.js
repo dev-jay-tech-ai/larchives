@@ -310,7 +310,7 @@ rangeInput.forEach(input =>{
             priceInput[1].value = maxVal;
             range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-            rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+            rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) -5 + "%";
             rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
             rangeNumInfo[0].innerText = "£" + minVal;
             rangeNumInfo[1].innerText = "£" + maxVal;
@@ -344,7 +344,7 @@ rangeInput.forEach(input => {
       priceInput[1].value = maxVal;
       range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
       range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-      rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) -5 + "%";
       rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
   }
 });
