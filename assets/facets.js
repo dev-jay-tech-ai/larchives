@@ -304,8 +304,6 @@ rangeInput.forEach(input =>{
             }
         }else{
             // 인풋에 값을 변경 새로 고침 전에는 반응 없음. 
-            console.log(priceInput[0].value, priceInput[1].value)
-            console.log(minVal, maxVal)
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
             range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
@@ -325,7 +323,6 @@ rangeInput.forEach(input => {
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value);  
   if(priceInput[0].value === '' || priceInput[1].value === '') {
-    console.log('ha...')
     range.style.left = 0 + "%";
     range.style.right = 0 + "%";
     rangeNum.style.left = 0 + "%";
