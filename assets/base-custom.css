@@ -465,7 +465,7 @@ input[type="range"]::-moz-range-thumb {
   gap: 10px;
   padding: 18px 48px;
   border: solid 1px #040b09;
-  font-family: 'Termina-light';
+  font-family: 'Termina-regular';
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
