@@ -742,7 +742,7 @@ details > * {
 
 .underlined-link:hover,
 .customer a:hover {
-  color: rgb(var(--color-link));
+  /* color: rgb(var(--color-link)); */
 }
 
 .icon-arrow {
