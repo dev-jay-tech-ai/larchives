@@ -127,7 +127,7 @@
             </ul>
             <div class="product-list-bottom">
               {%- if paginate.pages > 1 -%}
-              <div class="">
+              <div>
                 {%- unless paginate.previous -%}
                   <button class="button button--secondary button-load-custom load-more">
                    <span load-more-text>LOAD MORE</span>
@@ -137,7 +137,10 @@
                   </button>
                 {%- endunless -%}        
               </div>
-              <div class="">{% render 'pagination', paginate: paginate, anchor: '' %}</div>
+              <div>
+                {{ paginate.next.url }}
+                {% render 'pagination', paginate: paginate, anchor: '' %}
+              </div>
               {%- endif -%}
             </div>  
           </div>
