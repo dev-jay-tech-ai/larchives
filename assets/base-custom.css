@@ -879,6 +879,14 @@ input[type="range"]::-moz-range-thumb {
   padding: 2rem 0 2rem 7.6rem;
 }
 
+.item-custom > div:first-child {
+  padding-right: 2.41rem;
+}
+
+.item-custom > div:last-child {
+  text-align: center;
+}
+
 @media screen and (min-width: 750px) {
   .items-custom {
     flex-direction: row;
@@ -889,15 +897,13 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     padding: 0;
   }
+
+  .item-custom > div:last-child {
+    text-align: left;
+  }
 }
 
-.item-custom > div:first-child {
-  padding-right: 2.41rem;
-}
 
-.item-custom > div:last-child {
-  text-align: center;
-}
 
 .item-custom p {
   margin: 0;
