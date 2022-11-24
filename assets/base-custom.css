@@ -895,7 +895,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .header_custom_style {
-  font-family: 'Termina-medium';
+  font-family: 'Termina-regular';
   width: 381px;
   height: 12px;
   display: flex;
