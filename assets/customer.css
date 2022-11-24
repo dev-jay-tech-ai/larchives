@@ -76,7 +76,7 @@
     border: none;
     box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.08);
   }
-}
+} 
 
 @media screen and (forced-colors: active) {
   .customer table {
@@ -337,12 +337,12 @@
 }
 
 .login a[href='#recover'] {
-  margin-left: 0;
+  /* margin-left: 0; */
   margin-right: 0;
 }
 
 .login .field + a {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .login p {
