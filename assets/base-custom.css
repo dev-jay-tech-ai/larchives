@@ -868,10 +868,18 @@ input[type="range"]::-moz-range-thumb {
 
 .items-custom {
   display: flex;
+  flex-direction: colummn;
   justify-content: space-between;
-  padding: 8rem;
   border-bottom: 1px solid rgba(4,11,9,.1);
 }
+
+@media screen and (min-width: 750px) {
+  .items-custom {
+    flex-direction: row;
+    padding: 8rem;
+  }
+}
+
 .item-custom {
   display: flex;
 }
