@@ -4,20 +4,11 @@
       "type": "main-login",
       "settings": {
         "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "fa0e9914-2e9a-4808-ad2d-0b83093de544": {
-      "type": "instafeed",
-      "settings": {
-        "heading_size": 20,
-        "feed_width": 100,
-        "html_area": ""
+        "padding_bottom": 100
       }
     }
   },
   "order": [
-    "main",
-    "fa0e9914-2e9a-4808-ad2d-0b83093de544"
+    "main"
   ]
 }
