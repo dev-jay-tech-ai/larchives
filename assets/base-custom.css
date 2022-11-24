@@ -2,6 +2,10 @@
   display: none;
 }
 
+.account-list {
+  border: 1px solid #d0cdd8;
+}
+
 object-position: top; #insta-feed {
   margin: 0 !important;
 }
