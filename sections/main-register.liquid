@@ -58,7 +58,7 @@
         autocomplete="given-name"
         placeholder="{{ 'customer.register.first_name' | t }}"
       >
-      <label for="RegisterForm-FirstName">{% render 'icon-user-name' %}
+      <label for="RegisterForm-FirstName" class='field__label'>{% render 'icon-user-name' %}
         {{ 'customer.register.first_name' | t }}
       </label>
     </div>
@@ -71,7 +71,7 @@
         autocomplete="family-name"
         placeholder="{{ 'customer.register.last_name' | t }}"
       >
-      <label for="RegisterForm-LastName">{% render 'icon-user-name' %}
+      <label for="RegisterForm-LastName" class='field__label'>{% render 'icon-user-name' %}
         {{ 'customer.register.last_name' | t }}
       </label>
     </div>
@@ -91,7 +91,7 @@
         {% endif %}
         placeholder="{{ 'customer.register.email' | t }}"
       >
-      <label for="RegisterForm-email">{% render 'icon-union' %}
+      <label for="RegisterForm-email" class='field__label'>{% render 'icon-union' %}
         {{ 'customer.register.email' | t }}
       </label>
     </div>
@@ -115,7 +115,7 @@
         {% endif %}
         placeholder="{{ 'customer.register.password' | t }}"
       >
-      <label for="RegisterForm-password">{% render 'icon-key' %}
+      <label for="RegisterForm-password" class='field__label'>{% render 'icon-key' %}
         {{ 'customer.register.password' | t }}
       </label>
     </div>
