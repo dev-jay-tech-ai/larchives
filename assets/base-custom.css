@@ -871,6 +871,7 @@ input[type="range"]::-moz-range-thumb {
   flex-direction: column;
   justify-content: space-between;
   border-bottom: 1px solid rgba(4,11,9,.1);
+  padding: 6rem 0;
 }
 
 @media screen and (min-width: 750px) {
