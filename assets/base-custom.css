@@ -631,6 +631,11 @@ input[type="range"]::-moz-range-thumb {
   color: rgba(4, 11, 9, 0.5);
 }
 
+.rte > a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
 .policy {
   height: 2rem;  
   margin-top: 2rem;
