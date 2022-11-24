@@ -868,7 +868,7 @@ input[type="range"]::-moz-range-thumb {
 
 .items-custom {
   display: flex;
-  flex-direction: colummn;
+  flex-direction: column;
   justify-content: space-between;
   border-bottom: 1px solid rgba(4,11,9,.1);
 }
