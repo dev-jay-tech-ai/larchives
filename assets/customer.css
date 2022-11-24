@@ -15,6 +15,7 @@
 .customer > h1,
 .customer__title {
   margin-top: 0;
+  margin-bottom: 12.7rem;
 }
 
 .customer form {
