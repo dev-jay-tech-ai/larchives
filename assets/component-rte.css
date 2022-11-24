@@ -53,7 +53,8 @@
 }
 
 .rte a:hover {
-  color: rgb(var(--color-link));
+  /* color: rgb(var(--color-link)); */
+  color: inherit;
   text-decoration-thickness: 0.2rem;
 }
 
