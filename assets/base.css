@@ -1839,6 +1839,11 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), 0.5);
   letter-spacing: 0.1rem;
   line-height: 1.5;
+  font-family: Poppins;
+  font-weight: lighter;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
 
 .field__input:focus ~ .field__label,
