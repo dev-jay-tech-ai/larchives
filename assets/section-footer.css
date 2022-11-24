@@ -87,7 +87,7 @@
 
 .footer__column--info {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 15.5rem;
@@ -98,6 +98,7 @@
 
 @media screen and (min-width: 750px) {
   .footer__column--info {
+    flex-direction: row;
     padding: 0;
     /* padding-left: 0;
     padding-right: 0; */
