@@ -64,11 +64,12 @@
 .customer table {
   table-layout: auto;
   border-collapse: collapse;
-  border-bottom: 0.01rem solid rgba(var(--color-foreground), 0.08);
+  /* border-bottom: 0.01rem solid rgba(var(--color-foreground), 0.08); */
   box-shadow: none;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   position: relative;
+  color: rgba(4, 11, 9, 0.5);
 }
 
 @media screen and (min-width: 750px) {
