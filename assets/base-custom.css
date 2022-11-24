@@ -620,7 +620,7 @@ input[type="range"]::-moz-range-thumb {
   right: -12px !important;
 }
 
-.newsletter__subheading > p {
+.rte > p {
   font-family: Poppins;
   font-size: 1.6rem; 
   font-weight: lighter;
