@@ -632,8 +632,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .rte > a {
+  font-famiy: 'Termina-demi';
   text-transform: uppercase;
   font-size: 1.4rem;
+  color: rgba(4,11,9,0.5);
 }
 
 .policy {
