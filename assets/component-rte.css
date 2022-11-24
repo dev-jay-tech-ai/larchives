@@ -46,7 +46,7 @@
 
 .rte a {
   /* color: rgba(var(--color-link), var(--alpha-link)); */
-  color: inherit;
+  color: #040b09;
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness var(--duration-short) ease;
