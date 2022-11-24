@@ -338,6 +338,7 @@
       </nav>
       {%- endif -%}
 
+    <div>
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu{% if request.page_type != 'index' %} header__inline-menu-style{% endif %}">
@@ -537,7 +538,8 @@
         </li>
       </ul>
     </div>
-
+</div>
+    
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
