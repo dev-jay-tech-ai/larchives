@@ -401,10 +401,10 @@
 }
 
 @media screen and (min-width: 750px) {
-.banner__heading {
-  font-size: 5.8rem;
-  margin-bottom: 0;
-}
+  .banner__heading {
+    font-size: 5.8rem;
+    margin-bottom: 0;
+  }
 }
 
 .banner__box .banner__heading + * {
