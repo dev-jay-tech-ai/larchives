@@ -610,10 +610,6 @@ input[type="range"]::-moz-range-thumb {
   border-bottom: solid 2px rgb(4, 11, 9);
 }
 
-.newsletter-field .field__label {
-  left: 0;
-}
-
 .field__label > svg {
   vertical-align: middle;
   margin-right: 1.75rem;
