@@ -923,8 +923,6 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-
-
 .header_custom_style > div {
   flex-direction: row;
   font-size: 10px;
