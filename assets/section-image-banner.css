@@ -130,11 +130,11 @@
   .banner:not(.banner--stacked) {
     flex-direction: row;
     flex-wrap: wrap;
+    height: 66.7rem;
   }
 
   .banner--stacked {
-    /* height: auto; */
-    height: 66.7rem;
+    height: auto;
   }
 
   .banner--stacked .banner__media {
