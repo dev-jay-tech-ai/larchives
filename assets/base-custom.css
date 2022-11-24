@@ -614,7 +614,7 @@ input[type="range"]::-moz-range-thumb {
   left: 0;
 }
 
-.newsletter-field .field__label > svg {
+.field__label > svg {
   vertical-align: middle;
   margin-right: 1.75rem;
 }
