@@ -87,7 +87,7 @@
 }
 
 .customer tbody {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
 .customer th,
