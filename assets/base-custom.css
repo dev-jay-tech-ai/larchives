@@ -854,6 +854,12 @@ input[type="range"]::-moz-range-thumb {
   width: 6.3rem;  
 }
 
+@media screen and (min-width: 750px) {
+  .mldDesk {
+    display: none; 
+  }
+}
+
 .collection-custom {
   margin-top: 4rem;
 }
