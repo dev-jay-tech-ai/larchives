@@ -972,8 +972,6 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
 }
 
-
-
 .list-menu--inline li svg {
   margin-top: 7px;
 }
