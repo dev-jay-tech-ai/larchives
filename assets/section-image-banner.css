@@ -133,7 +133,8 @@
   }
 
   .banner--stacked {
-    height: auto;
+    /* height: auto; */
+    height: 66.7rem;
   }
 
   .banner--stacked .banner__media {
