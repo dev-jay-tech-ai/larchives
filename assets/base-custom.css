@@ -899,8 +899,8 @@ input[type="range"]::-moz-range-thumb {
 .button_custom {
   font-family: 'Termina-medium';
   font-size: 12px;
-  padding: 18px 48px;
 }
+
 
 .button.reverse {
   color:#000;
