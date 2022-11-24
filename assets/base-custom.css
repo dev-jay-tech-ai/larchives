@@ -857,7 +857,6 @@ input[type="range"]::-moz-range-thumb {
 @media screen and (min-width: 750px) {
   .mldDesk {
     display: block;
-    width: 6.3rem;  
   }
 }
 
