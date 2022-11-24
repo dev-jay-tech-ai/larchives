@@ -15,17 +15,17 @@
 {%- endstyle -%}
 
 <div class="customer account section-{{ section.id }}-padding">
-  <div class="rte">
+  <div>
     <h1 class="customer__title center">{{ 'customer.account.title' | t }}</h1>
     <a href="{{ routes.account_logout_url }}">
       {{ 'customer.log_out' | t }}
     </a>
-    <p>My account</p>
+    <div class='account-list'>My account</div>
   </div>
 
   <div>
     <div>
-      <p>{{ 'customer.orders.title' | t }}</p>
+      <div class='account-list'>{{ 'customer.orders.title' | t }}</div>
 
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
