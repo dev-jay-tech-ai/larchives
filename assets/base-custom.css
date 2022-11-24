@@ -987,6 +987,10 @@ nav {
   display: flex;
 }
 
+.nav-icon > div svg {
+  vertical-align: middle;
+}
+
 .list-menu--inline li svg {
   margin-top: 7px;
 }
