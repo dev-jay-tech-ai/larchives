@@ -890,6 +890,7 @@ input[type="range"]::-moz-range-thumb {
 
 .item-custom p {
   margin: 0;
+  font-family: "Termina-demi";
   font-size: 1.6rem;
   color: #040b09;
   letter-spacing: normal;
