@@ -113,6 +113,14 @@
 }
 
 .customer thead th {
+  font-family: Termina-Demi;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #040b09;
   font-size: 1rem;
   letter-spacing: 0.07rem;
   text-transform: uppercase;
