@@ -334,6 +334,13 @@
   display: block;
   margin: 0 auto;
   width: fit-content;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #040b09;
 }
 
 .login a[href='#recover'] {
