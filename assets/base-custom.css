@@ -968,6 +968,16 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+.header__heading svg {
+  width: 115px;
+}
+
+@media screen and (min-width: 750px) {
+  .header__heading svg {
+    width: 100%;
+  }
+}
+
 .nav-icon {
   display: flex;
 }
