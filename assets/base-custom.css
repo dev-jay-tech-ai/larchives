@@ -908,12 +908,12 @@ input[type="range"]::-moz-range-thumb {
   border: 1px solid #000;
 }
 
-.nav {
+nav {
   display: none;
 }
 
 @media screen and (min-width: 750px) {
-  .nav {
+  nav {
     display: block;
   }
 }
