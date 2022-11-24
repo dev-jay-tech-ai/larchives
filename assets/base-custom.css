@@ -950,21 +950,29 @@ input[type="range"]::-moz-range-thumb {
   height: 1rem;
 }
 
-.header_left_nav {
-  font-family: 'Termina-medium';
-  font-size: 1.4rem;
-  color: #040b09;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 8rem;
-  width: 10.8rem;
-  height: 2.4rem;
-  line-height: 2.4rem;
+ .header_left_nav {
+   display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .header_left_nav {
+    font-family: 'Termina-medium';
+    font-size: 1.4rem;
+    color: #040b09;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8rem;
+    width: 10.8rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+  }
 }
 
 .nav-icon {
   display: flex;
 }
+
+
 
 .list-menu--inline li svg {
   margin-top: 7px;
