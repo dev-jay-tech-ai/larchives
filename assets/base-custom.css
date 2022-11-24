@@ -612,7 +612,7 @@ input[type="range"]::-moz-range-thumb {
 
 .field__label > svg {
   vertical-align: middle;
-  margin-right: 1.75rem;
+  margin-right: 1rem;
   margin-top: 0.15rem;
 }
 
