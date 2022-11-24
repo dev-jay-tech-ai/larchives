@@ -1035,14 +1035,6 @@ nav {
   width: 12.8rem;
 }
 
-/* .footer-logo {
-  text-align: center;
-} */
-
-.footer-logo svg {
-  width: 12.83rem;
-}
-
 @media screen and (min-width: 750px) {
 /*   .footer-logo {
     text-align: left;
