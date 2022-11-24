@@ -6,9 +6,18 @@
         "padding_top": 60,
         "padding_bottom": 160
       }
+    },
+    "63cba1cc-979b-46a1-96ed-64cc34977a1c": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "63cba1cc-979b-46a1-96ed-64cc34977a1c"
   ]
 }
