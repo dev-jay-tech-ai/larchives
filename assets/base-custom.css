@@ -1035,6 +1035,18 @@ nav {
   width: 12.8rem;
 }
 
+.footer-logo {
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-logo {
+    text-align: left;
+  }
+}
+
+
+
 
 /* Custom CSS */
 
