@@ -874,15 +874,21 @@ input[type="range"]::-moz-range-thumb {
   padding: 2rem 0;
 }
 
+.item-custom {
+  display: flex;
+  padding: 4rem 0;
+}
+
 @media screen and (min-width: 750px) {
   .items-custom {
     flex-direction: row;
     padding: 8rem;
   }
-}
 
-.item-custom {
-  display: flex;
+  .item-custom {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .item-custom > div:first-child {
