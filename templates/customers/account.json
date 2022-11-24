@@ -1,1 +1,23 @@
-{"sections":{"main":{"type":"main-account","settings":{"padding_top":36,"padding_bottom":36}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "be45f73f-3ffe-4c4d-9127-58913db759b5": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "be45f73f-3ffe-4c4d-9127-58913db759b5"
+  ]
+}
