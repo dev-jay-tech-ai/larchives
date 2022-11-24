@@ -12,7 +12,7 @@
   <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 {%- if settings.cart_type == "drawer" -%}
-  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}fheader__search
   {{ 'component-cart.css' | asset_url | stylesheet_tag }}
   {{ 'component-totals.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -333,7 +333,7 @@
           <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>ABOUTUS</a></div>
           <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>FOR PARTNERS</a></div>
           <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>DELIVERY</a></div>
-          <div style='margin-top: -4px'><a href="/account/login" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}</a></div>
+          <div style='margin-top: -3px'><a href="/account/login" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}</a></div>
         </div>  
       </nav>
       {%- endif -%}
@@ -444,7 +444,7 @@
             {%- endfor -%}
             <li>
               <div>
-                <details-modal class="header__search" style='padding-top: 3px;'>
+                <details-modal class="header__search">
                   <details>
                     <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
                       <span>
