@@ -1830,6 +1830,7 @@ details[open] > .share-button__fallback {
 .customer .field label {
   font-size: 1.6rem;
   left: 0;
+  top: 0;
   /* left: calc(var(--inputs-border-width) + 2rem);
   top: calc(1rem + var(--inputs-border-width)); */
   margin-bottom: 0;
