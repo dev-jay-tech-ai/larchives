@@ -1039,7 +1039,7 @@ nav {
   text-align: center;
 }
 
-.footer-logo > svg {
+.footer-logo svg {
   width: 12.83rem;
 }
 
@@ -1048,7 +1048,7 @@ nav {
     text-align: left;
   }
 
-  .footer-logo > svg {
+  .footer-logo svg {
     width: 100%;
   }
 }
