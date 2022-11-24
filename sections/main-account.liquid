@@ -20,7 +20,7 @@
     <a href="{{ routes.account_logout_url }}">
       {{ 'customer.log_out' | t }}
     </a>
-    <div class='account-list'>My account</div>
+    <div>My account</div>
   </div>
 
   <div>
@@ -117,8 +117,8 @@
     </div>
 
     <div>
-      <p>{{ 'customer.account.details' | t }}</p>
-
+      <div class='account-list'>{{ 'customer.account.details' | t }}</div>
+ 
       {{ customer.default_address | format_address }}
 
       <a href="{{ routes.account_addresses_url }}">

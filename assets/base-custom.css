@@ -4,7 +4,7 @@
 
 .account-list {
   color: rgba(4, 11, 9, 0.5);
-  border: 1px solid #d0cdd8;
+  border-bottom: 1px solid #d0cdd8;
 }
 
 object-position: top; #insta-feed {
