@@ -972,7 +972,11 @@ input[type="range"]::-moz-range-thumb {
   width: 115px;
 }
 
-
+@media screen and (min-width: 750px) {
+  .header__heading svg {
+    width: 100%;
+  }
+}
 
 .nav-icon {
   display: flex;
