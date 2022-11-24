@@ -906,7 +906,6 @@ input[type="range"]::-moz-range-thumb {
 
 @media screen and (min-width: 750px) {
   .header_custom_style {
-
     font-family: 'Termina-regular';
     width: 381px;
     height: 12px;
