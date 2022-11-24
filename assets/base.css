@@ -645,6 +645,11 @@ a {
   font-size: 1.2rem;
   font-family: inherit;
   color: inherit;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
 }
 
 .link--text {
