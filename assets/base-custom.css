@@ -1047,6 +1047,10 @@ nav {
   .footer-logo {
     text-align: left;
   }
+
+  .footer-logo > svg {
+    width: 100%;
+  }
 }
 
 
