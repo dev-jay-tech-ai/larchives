@@ -54,6 +54,10 @@
   padding-bottom: 5.9rem;
 }
 
+.footer__localization:empty + .footer__column--info {
+  align-items: center;
+}
+
 @media screen and (max-width: 749px) {
   .footer__content-bottom {
     flex-wrap: wrap;
@@ -69,17 +73,12 @@
     height: 94.3rem;
     text-align: center;
   }
-}
-
-.footer__localization:empty + .footer__column--info {
-  align-items: center;
-}
-
-@media screen and (max-width: 749px) {
+  
   .footer__localization:empty + .footer__column {
-    padding-top: 1.5rem;
+    padding-top: 6rem;
   }
 }
+
 .footer__column {
   width: 100%;
   align-items: flex-end;
