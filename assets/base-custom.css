@@ -748,7 +748,7 @@ input[type="range"]::-moz-range-thumb {
   position: absolute;
   display: block;
   font-family: Termina-demi;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -770,7 +770,7 @@ input[type="range"]::-moz-range-thumb {
   }
   
   .banner-caption {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     top: 50px;
     left: 40px;
   }
