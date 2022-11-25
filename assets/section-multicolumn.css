@@ -165,8 +165,8 @@
   .multicolumn-list:not(.slider)
   .center
   .multicolumn-card__info {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 @media screen and (max-width: 749px) {
