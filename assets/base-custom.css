@@ -749,6 +749,10 @@ input[type="range"]::-moz-range-thumb {
   padding: 2rem 0;
 }
 
+.footer__list-social.list-unstyled.list-social {
+  display: none;
+}
+
 @media screen and (min-width: 750px) {
   .footer__cate ul {
     padding-right: 16rem;
@@ -767,6 +771,10 @@ input[type="range"]::-moz-range-thumb {
     height: 6.1rem;
     padding: 20px 80px;
     justify-content: flex-start;
+  }
+  
+  .footer__list-social.list-unstyled.list-social {
+    display: flex;
   }
 }
 
