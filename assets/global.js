@@ -945,14 +945,3 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
-
-const feeds = document.querySelectorAll('.instafeed-container');
-feeds.forEach((feed) => {
-    feed.style.width = '33.3%';
-    feed.style.paddingTop = '33.3%';
-});
-
-setTimeout(() => {
-  console.log('feeds',feeds)
-},5000)
-
