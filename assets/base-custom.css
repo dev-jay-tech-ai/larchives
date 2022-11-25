@@ -770,7 +770,7 @@ input[type="range"]::-moz-range-thumb {
   line-height: 1.2;
   letter-spacing: normal;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 1.2rem;
+  margin-top: 0.4rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -792,6 +792,7 @@ input[type="range"]::-moz-range-thumb {
     font-size: 1.6rem;
     line-height: 1.2;
     letter-spacing: normal;
+    margin-top: 1.2rem;
   }
 }
 
