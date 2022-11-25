@@ -2788,11 +2788,11 @@ details-disclosure > details {
     color: rgb(var(--color-foreground));
     word-break: break-word;
     text-transform: uppercase;
-
     font-size: 0.8rem;
     padding: 0.2rem 1rem;
     line-height: 1.2;
     letter-spacing: 0.04rem;
+    margin-top: 0rem;
 }
 
 @media screen and (min-width: 750px) {
