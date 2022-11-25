@@ -617,6 +617,11 @@ input[type="range"]::-moz-range-thumb {
   border-bottom: solid 2px rgb(4, 11, 9);
 }
 
+.newsletter-field svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .field__label > svg {
   vertical-align: middle;
   margin-right: 1.5rem;
@@ -774,6 +779,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (min-width: 750px) {
+  .newsletter-field svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  
   .rte > p {
     font-size: 1.6rem;
   }
