@@ -33,7 +33,7 @@ object-position: top; #insta-feed {
   #insta-feed:after {
     width: 10rem;
     height: 10rem;
-    background-size: 100%;
+    background-size: 3.2rem;
   }
 }
 
