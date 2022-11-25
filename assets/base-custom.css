@@ -881,7 +881,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .item-custom > div:first-child {
-  padding-right: 2.41rem;
+  padding: 0 1.2rem;
 }
 
 .item-custom > div:last-child {
@@ -921,6 +921,10 @@ input[type="range"]::-moz-range-thumb {
     padding: 0;
   }
 
+  .item-custom > div:first-child {
+    padding-right: 2.41rem;
+  }
+  
   .item-custom > div:last-child {
     text-align: left;
   }
