@@ -350,11 +350,3 @@ rangeInput.forEach(input => {
       rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
   }
 });
-
-const feeds = document.querySelectorAll('.instafeed-container');
-console.log('hello world')
-feeds.forEach((feed) => {
-    feed.style.width = '33.3%';
-    feed.style.paddingTop = '33.3%';
-});
-
