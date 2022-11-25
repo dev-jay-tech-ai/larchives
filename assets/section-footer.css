@@ -52,7 +52,6 @@
 .footer__content-bottom-wrapper {
   display: flex;
   padding-bottom: 5.9rem;
-  max-height: 9.43rem;
 }
 
 @media screen and (max-width: 749px) {
