@@ -768,7 +768,9 @@ input[type="range"]::-moz-range-thumb {
   .banner-container > div {
     width: 50%;
   }
+  
   .banner-caption {
+    font-size: 1.8rem;
     top: 50px;
     left: 40px;
   }
