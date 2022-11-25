@@ -760,6 +760,18 @@ input[type="range"]::-moz-range-thumb {
   color: #fff;
 }
 
+.banner-caption div:first-child {
+  height: 2.9rem;
+}
+
+.banner-caption div:last-child {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 1.2rem;
+}
+
 @media screen and (min-width: 750px) {
   .banner-container {
     flex-direction: row;
@@ -774,22 +786,12 @@ input[type="range"]::-moz-range-thumb {
     top: 50px;
     left: 40px;
   }
-}
 
-.banner-caption div:first-child {
-  height: 2.9rem;
-}
-
-.banner-caption div:last-child {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 1.2rem;
+  .banner-caption div:last-child {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: normal;
+  }
 }
 
 .banner_cover {
