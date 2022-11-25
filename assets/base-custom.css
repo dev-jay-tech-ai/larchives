@@ -736,15 +736,23 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .footer-desc {
-  font-size: 1.4rem;
-  margin: 3rem 0;
+  font-size: 1.2rem;
+  margin: 2rem 0;
 }
+
 .footer__content-bottom-wrapper:last-child {
   display: flex;
   border-top: 1px solid rgb(4 11 9 / 10%);
   height: 6.1rem;
   padding: 20px 80px;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-desc {
+    font-size: 1.4rem;
+    margin: 3rem 0;
+  }
 }
 
 .banner-container {
