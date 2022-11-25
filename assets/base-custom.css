@@ -926,9 +926,14 @@ input[type="range"]::-moz-range-thumb {
 
 .button_custom {
   font-family: 'Termina-medium';
-  font-size: 12px;
+  font-size: 10px;
 }
 
+@media screen and (min-width: 750px) {
+  .button_custom {
+    font-size: 12px;
+  }
+}
 
 .button.reverse {
   color:#000;
