@@ -951,3 +951,4 @@ feeds.forEach((feed) => {
     feed.style.width = '33.3%';
     feed.style.paddingTop = '33.3%';
 });
+console.log('feeds',feeds)
