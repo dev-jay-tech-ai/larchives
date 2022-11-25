@@ -717,10 +717,21 @@ input[type="range"]::-moz-range-thumb {
 
 .banner-container {
   display: flex;
+  flex-direction: column;
 }
 
 .banner-container > div {
-  width: 50%;
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .banner-container {
+    flex-direction: row;
+  }
+
+  .banner-container > div {
+    width: 50%;
+  }
 }
 
 .banner-sub {
