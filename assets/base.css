@@ -2788,6 +2788,18 @@ details-disclosure > details {
 }
 
 .badge {
+    /* border: 1px solid transparent;
+    border-radius: var(--badge-corner-radius); */
+    display: inline-block;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    background-color: #c20c1e;
+    /* border-color: rgba(var(--color-badge-border), var(--alpha-badge-border)); */ 
+    color: rgb(var(--color-foreground));
+    word-break: break-word;
+    text-transform: uppercase;
     margin-top: 1rem;
     margin-left: 1rem;
     font-size: 0.8rem;
@@ -2804,22 +2816,12 @@ details-disclosure > details {
 
 @media screen and (forced-colors: active) {
   .badge {
-    /* border: 1px solid transparent;
-    border-radius: var(--badge-corner-radius); */
-    display: inline-block;
     font-size: 1.4rem;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 0.07rem;
-    line-height: 1.68rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
     padding: 0.4rem 1.6rem;
-    text-align: center;
-    background-color: #c20c1e;
-    /* border-color: rgba(var(--color-badge-border), var(--alpha-badge-border)); */ 
-    color: rgb(var(--color-foreground));
-    word-break: break-word;
-    text-transform: uppercase;
+    line-height: 1.68rem;
+    letter-spacing: 0.07rem;
   }
   
   .icon {
