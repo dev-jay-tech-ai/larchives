@@ -38,6 +38,7 @@
 
   .footer__list-social.list-unstyled.list-social.tablet {
     display: flex;
+    margin: 6rem;
   }
 }
 
