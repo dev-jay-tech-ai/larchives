@@ -765,6 +765,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .banner-caption div:last-child {
+  font-family: 'Poppins';
   font-size: 1.2rem;
   line-height: 1.2;
   letter-spacing: normal;
