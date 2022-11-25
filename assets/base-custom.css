@@ -20,6 +20,7 @@ object-position: top; #insta-feed {
   top: 50%;
   left: 50%;
   background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/instagram-feed.svg?v=1667251053');
+  background-size: 100%;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center center;
@@ -32,6 +33,7 @@ object-position: top; #insta-feed {
   #insta-feed:after {
     width: 10rem;
     height: 10rem;
+    background-size: 1.92rem;
   }
 }
 
