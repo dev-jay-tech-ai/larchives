@@ -814,7 +814,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .grid--3-col-desktop .card__inner {
-  height: 2.4rem;
+  height: 24rem;
 }
 
 .product-grid-custom .card__inner {
