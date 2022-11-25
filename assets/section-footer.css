@@ -201,6 +201,7 @@
 
 @media screen and (max-width: 749px) {
   .footer__list-social.list-social {
+    display: none;
     justify-content: center;
   }
 }
