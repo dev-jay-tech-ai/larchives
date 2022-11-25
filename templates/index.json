@@ -243,7 +243,7 @@
       "settings": {
         "heading_size": 20,
         "feed_width": 100,
-        "html_area": ""
+        "html_area": "<script>\n  const feeds = document.querySelectorAll('.instafeed-container');\n  console.log('hello world')\n  feeds.forEach((feed) => {\n      feed.style.width = '33.3%';\n      feed.style.paddingTop = '33.3%';\n  });\n<\/script>"
       }
     }
   },
