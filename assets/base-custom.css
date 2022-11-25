@@ -724,16 +724,6 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
 }
 
-@media screen and (min-width: 750px) {
-  .banner-container {
-    flex-direction: row;
-  }
-
-  .banner-container > div {
-    width: 50%;
-  }
-}
-
 .banner-sub {
   display: flex;
   flex-direction: column;
@@ -765,9 +755,23 @@ input[type="range"]::-moz-range-thumb {
   line-height: normal;
   letter-spacing: normal;
   height: 6rem;
-  top: 50px;
-  left: 40px;
+  top: 20px;
+  left: 20px;
   color: #fff;
+}
+
+@media screen and (min-width: 750px) {
+  .banner-container {
+    flex-direction: row;
+  }
+
+  .banner-container > div {
+    width: 50%;
+  }
+  .banner-caption {
+    top: 50px;
+    left: 40px;
+  }
 }
 
 .banner-caption div:first-child {
