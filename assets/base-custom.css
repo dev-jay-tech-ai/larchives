@@ -745,7 +745,8 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
   border-top: 1px solid rgb(4 11 9 / 10%);
   height: 9.2rem;
-  padding: 0 auto;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
 @media screen and (min-width: 750px) {
@@ -765,6 +766,7 @@ input[type="range"]::-moz-range-thumb {
   .footer__content-bottom-wrapper:last-child {
     height: 6.1rem;
     padding: 20px 80px;
+    justify-content: flex-start;
   }
 }
 
