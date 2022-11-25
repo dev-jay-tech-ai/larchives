@@ -1341,7 +1341,7 @@ button.shopify-payment-button__button--unbranded {
   justify-content: center;
   align-items: center;
   border: 0;
-  padding: 1.8rem 10.15rem;
+  padding: 1.6rem 4.8rem;
   cursor: pointer;
   font-family: 'Termina-regular';
   /** font: inherit;
@@ -1353,6 +1353,10 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+
+@media screen and (width: 750px) {
+  padding: 1.8rem 10.15rem;
 }
 
 .button:before,
