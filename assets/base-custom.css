@@ -900,7 +900,6 @@ input[type="range"]::-moz-range-thumb {
 
 .item-custom span {
   display: block;
-  font-family: Poppins;
   font-size: 1.4rem;
   color: rgba(4, 11, 9, 0.5);
   letter-spacing: normal;
@@ -928,6 +927,10 @@ input[type="range"]::-moz-range-thumb {
   
   .item-custom p {
     font-size: 1.6rem;
+  }
+  
+  .item-custom span {
+    font-size: 1.2rem;
   }
   
   .item-custom svg {
