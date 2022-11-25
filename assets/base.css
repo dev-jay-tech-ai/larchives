@@ -932,7 +932,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   flex-wrap: wrap;
 }
 
@@ -950,6 +950,10 @@ summary::-webkit-details-marker {
   .title-wrapper--self-padded-mobile {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .title-wrapper-with-link {
+    margin-bottom: 8rem;
   }
 }
 
