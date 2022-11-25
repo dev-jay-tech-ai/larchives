@@ -1,10 +1,3 @@
-const feeds = document.querySelectorAll('.instafeed-container');
-
-feeds.forEach((feed) => {
-    feed.style.width = '33.3%';
-    feed.style.paddingTop = '33.3%';
-});
-
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 // init Masonry
