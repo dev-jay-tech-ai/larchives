@@ -80,6 +80,7 @@
     row-gap: 1.5rem;
     height: 71.1rem;
     text-align: center;
+    padding-bottom: 0;
   }
   
   .footer__localization:empty + .footer__column {
