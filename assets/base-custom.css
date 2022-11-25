@@ -843,7 +843,7 @@ input[type="range"]::-moz-range-thumb {
 } 
 
 .grid--4-col-desktop .card__inner {
-  height: 45.7rem;
+  height: 24rem;
 }
 
 .custom-price-discountrate {
@@ -881,6 +881,10 @@ input[type="range"]::-moz-range-thumb {
 @media screen and (min-width: 750px) {
   .grid--3-col-desktop .card__inner {
     height: 61.9rem;
+  }
+
+  .grid--4-col-desktop .card__inner {
+    height: 45.7rem;
   }
   
   .mldDesk {
