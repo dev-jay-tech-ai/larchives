@@ -850,6 +850,7 @@ input[type="range"]::-moz-range-thumb {
 .custom-vendor {
   padding-top: 1rem;
   color: rgba(4,11,9,.5);
+  font-size: 1.2rem;
 }
 
 .mldDesk {
@@ -867,6 +868,7 @@ input[type="range"]::-moz-range-thumb {
   }
   .custom-vendor {
     padding-top: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
