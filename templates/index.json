@@ -243,7 +243,7 @@
       "settings": {
         "heading_size": 20,
         "feed_width": 100,
-        "html_area": "<script>\n\n<\/script>"
+        "html_area": ""
       }
     }
   },
