@@ -745,7 +745,9 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
   border-top: 1px solid rgb(4 11 9 / 10%);
   height: 9.2rem;
-  padding: 20px 0;
+  padding: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 750px) {
