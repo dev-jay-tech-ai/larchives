@@ -640,7 +640,7 @@ input[type="range"]::-moz-range-thumb {
 .rte > a {
   font-family:"Termina-demi";
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.5rem;
 }
 
@@ -774,6 +774,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (min-width: 750px) {
+  .rte > a {
+    font-size: 1.6rem;
+  }
+  
   .banner-container {
     flex-direction: row;
   }
