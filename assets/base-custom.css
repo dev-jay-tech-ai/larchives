@@ -929,12 +929,6 @@ input[type="range"]::-moz-range-thumb {
   font-size: 10px;
 }
 
-@media screen and (min-width: 750px) {
-  .button_custom {
-    font-size: 12px;
-  }
-}
-
 .button.reverse {
   color:#000;
   background-color: #fff;
@@ -946,6 +940,10 @@ nav {
 }
 
 @media screen and (min-width: 750px) {
+  .button_custom {
+    font-size: 12px;
+  }
+  
   nav {
     display: block;
   }
