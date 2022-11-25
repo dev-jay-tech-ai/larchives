@@ -107,6 +107,7 @@
   .multicolumn-list:not(.slider) {
     padding-left: 0rem;
     padding-right: 0rem;
+    border-bottom: 1px solid rgba(4, 11, 9, 0.2);
   }
 }
 
