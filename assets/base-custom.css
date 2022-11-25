@@ -848,7 +848,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .custom-vendor {
-  padding-top: 1.6rem;
+  padding-top: 1rem;
   color: rgba(4,11,9,.5);
 }
 
@@ -864,6 +864,9 @@ input[type="range"]::-moz-range-thumb {
   .mldDesk {
     display: block;
     width: 6.3rem;  
+  }
+  .custom-vendor {
+    padding-top: 1.6rem;
   }
 }
 
