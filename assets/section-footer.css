@@ -200,10 +200,6 @@
 }
 
 @media screen and (min-width: 750px) {
-  .footer__list-social.list-social {
-    display: none;
-  }
-  
   .footer-block__newsletter + .footer__list-social {
     margin-top: 0;
   }
