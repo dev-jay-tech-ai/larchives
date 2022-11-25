@@ -753,6 +753,16 @@ input[type="range"]::-moz-range-thumb {
   display: none;
 }
 
+.footer__list-social.list-unstyled.list-social.tablet {
+  display: none;
+}
+
+@media screen and (max-width: 749px) {
+  .footer__list-social.list-unstyled.list-social.tablet {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .footer__cate ul {
     padding-right: 16rem;
