@@ -889,24 +889,6 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
 }
 
-@media screen and (min-width: 750px) {
-  .items-custom {
-    flex-direction: row;
-    padding: 8rem;
-  }
-
-  .item-custom {
-    display: flex;
-    padding: 0;
-  }
-
-  .item-custom > div:last-child {
-    text-align: left;
-  }
-}
-
-
-
 .item-custom p {
   margin: 0;
   font-family: "Termina-demi";
@@ -923,6 +905,31 @@ input[type="range"]::-moz-range-thumb {
   color: rgba(4, 11, 9, 0.5);
   letter-spacing: normal;
 }
+
+.item-custom svg {
+  width: 75%;  
+}
+
+@media screen and (min-width: 750px) {
+  .items-custom {
+    flex-direction: row;
+    padding: 8rem;
+  }
+
+  .item-custom {
+    display: flex;
+    padding: 0;
+  }
+
+  .item-custom > div:last-child {
+    text-align: left;
+  }
+
+  .item-custom svg {
+    width: 100%;
+  }
+}
+
 
 .button_custom {
   font-family: 'Termina-medium';
