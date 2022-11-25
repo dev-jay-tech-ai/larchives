@@ -1837,7 +1837,7 @@ details[open] > .share-button__fallback {
 
 .field__label,
 .customer .field label {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   left: 0;
   top: 0;
   /* left: calc(var(--inputs-border-width) + 2rem);
@@ -1855,6 +1855,10 @@ details[open] > .share-button__fallback {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
+}
+
+@media screen and (min-width: 750px) {
+  font-size: 1.6rem;
 }
 
 .field__input:focus ~ .field__label,
