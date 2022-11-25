@@ -7,12 +7,10 @@
 </div>
 
 {% javascript %}
-  const feeds = document.querySelectorAll('.instafeed-container');
+  const feed = document.querySelector('#instafeed-container');
+  feed.style.width = '33.3%';
+  feed.style.paddingTop = '33.3%';
 
-  feeds.forEach((feed) => {
-      feed.style.width = '33.3%';
-      feed.style.paddingTop = '33.3%';
-  });
 {% endjavascript %}
 <script async src="https://instagrid.instasell.co.in/_/pd/index.js"></script>
 <link rel="stylesheet" href="https://instagrid.instasell.co.in/_/pd/index.css" />
