@@ -1858,6 +1858,7 @@ details[open] > .share-button__fallback {
 }
 
 @media screen and (min-width: 750px) {
+  .field__label,
   .customer .field label {
     font-size: 1.6rem;
   } 
