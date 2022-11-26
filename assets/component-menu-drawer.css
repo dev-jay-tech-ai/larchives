@@ -141,10 +141,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding-left: 9rem;
 }
 
-.menu-drawer summary.menu-drawer__menu-item {
-  padding-right: 2.1rem;
-}
-
 .menu-drawer summary.menu-drawer__menu-item svg {
   width: 2.4rem;
   height: 2.4rem;
