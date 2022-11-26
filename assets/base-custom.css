@@ -10,12 +10,14 @@
 
 .menu-drawer_top {
   display: flex;
+  border-bottom: 1px solid #d0cdd8;
 }
 
 .menu-drawer_login {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
+  border-bottom: 1px solid #d0cdd8;
 }
 
 object-position: top; #insta-feed {
