@@ -137,16 +137,15 @@
           <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
-                {% comment %}
                 <div class='menu-drawer_top'>
                   <div>{% render 'icon-close' %}</div>
                   <div>
                   {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
-                  <div class="mldDesk"></div>
+                  {% comment %} <div class="mldDesk"></div>{% endcomment %}
                   {%- endif -%} 
                   </div>
                 </div>
-                {% endcomment %}
+                
                 <div class='menu-drawer_login'>
                   {%- if shop.customer_accounts_enabled -%}
                     <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
