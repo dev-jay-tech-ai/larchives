@@ -200,6 +200,16 @@
                     {%- endfor -%}
                   </ul>
                 </nav>
+
+                <nav>
+                  <div class='header_custom_style'>
+                    <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>ABOUTUS</a></div>
+                    <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>FOR PARTNERS</a></div>
+                    <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>DELIVERY</a></div>
+                    <div style='margin-top: -3px'><a href="/account/login" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}</a></div>
+                  </div>  
+                </nav>
+      
                 <div class="menu-drawer__utility-links">
                   {%- if shop.customer_accounts_enabled -%}
                     <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
@@ -328,14 +338,15 @@
           {%- endcomment -%}  
           </a>
         </h1>
+        
         <nav>
-        <div class='header_custom_style'>
-          <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>ABOUTUS</a></div>
-          <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>FOR PARTNERS</a></div>
-          <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>DELIVERY</a></div>
-          <div style='margin-top: -3px'><a href="/account/login" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}</a></div>
-        </div>  
-      </nav>
+          <div class='header_custom_style'>
+            <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>ABOUTUS</a></div>
+            <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>FOR PARTNERS</a></div>
+            <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>DELIVERY</a></div>
+            <div style='margin-top: -3px'><a href="/account/login" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}</a></div>
+          </div>  
+        </nav>
       {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
