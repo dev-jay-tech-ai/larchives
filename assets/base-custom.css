@@ -1051,7 +1051,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: #fff;
   border: 1px solid #000;
 }
-
+/** 
 nav {
   display: none;
 }
@@ -1065,7 +1065,7 @@ nav {
     display: block;
   }
 }
-
+*/
 .header_custom_style {
   font-family: 'Termina-regular';
   width: 381px;
