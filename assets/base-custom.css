@@ -14,6 +14,8 @@
 
 .menu-drawer_login {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 object-position: top; #insta-feed {
