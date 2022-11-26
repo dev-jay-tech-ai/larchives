@@ -254,7 +254,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 1.3rem 1.25rem;
 }
 
-@media screen and (max-width: 749px) {
+@media only screen and (max-width: 749px)
   .menu-drawer .list-social {
     margin-top: 0rem;
   }
