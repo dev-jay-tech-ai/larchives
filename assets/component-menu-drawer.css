@@ -216,7 +216,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__utility-links {
   padding: 2rem;
-  background-color: rgba(var(--color-foreground), 0.03);
+  /* background-color: rgba(var(--color-foreground), 0.03); (/
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.03);
 }
 
 .menu-drawer__account {
