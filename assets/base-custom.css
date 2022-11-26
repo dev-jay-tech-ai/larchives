@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.menu-drawer_login {
+  text-align: center;
+}
+
 object-position: top; #insta-feed {
   margin: 0 !important;
 }
