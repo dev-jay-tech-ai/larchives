@@ -20,6 +20,10 @@
   border-bottom: 1px solid #d0cdd8;
 }
 
+.menu-drawer__navigation {
+  border-bottom: 1px solid #d0cdd8;
+}
+
 object-position: top; #insta-feed {
   margin: 0 !important;
 }
