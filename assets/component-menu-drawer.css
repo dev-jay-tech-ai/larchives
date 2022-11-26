@@ -90,9 +90,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation-container {
-/*   display: grid;
-  grid-template-rows: 1fr auto;
-  align-content: space-between; */
+  display: grid;
+  grid-template-rows: 6rem 6rem auto;
+  align-content: flex-start;
   overflow-y: auto;
   height: 100%;
 }
