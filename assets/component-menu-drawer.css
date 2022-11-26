@@ -253,3 +253,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer .list-social__link {
   padding: 1.3rem 1.25rem;
 }
+
+@media and (max-width: 745px) {
+  .menu-drawer .list-social {
+    margin-top: 0rem;
+  }
+}
