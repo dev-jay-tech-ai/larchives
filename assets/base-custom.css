@@ -8,6 +8,10 @@
   border-bottom: 1px solid #d0cdd8;
 }
 
+.menu-drawer_top {
+  display: flex;
+}
+
 object-position: top; #insta-feed {
   margin: 0 !important;
 }
