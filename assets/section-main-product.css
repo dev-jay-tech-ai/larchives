@@ -57,6 +57,10 @@
 }
 
 @media screen and (min-width: 990px) {
+  .product.grid {
+    padding: 0 2rem;
+  } 
+  
   .product--large:not(.product--no-media) .product__media-wrapper {
     max-width: 65%;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
