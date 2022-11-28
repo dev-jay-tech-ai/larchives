@@ -4,6 +4,7 @@
 
 .product.grid {
   gap: 0;
+  padding: 0 2rem;
 }
 
 .product--no-media {
@@ -18,7 +19,7 @@
 
 @media screen and (min-width: 750px) {
   .product.grid {
-    padding: 0 2rem;
+    padding: 0;
   }
   
   .product--thumbnail .product__media-gallery,
