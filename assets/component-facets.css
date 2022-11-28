@@ -29,8 +29,8 @@
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid rgba(4,11,9,0.2);
     border-bottom: 1px solid rgba(4,11,9,0.2);
-    padding-bottom: 1.9rem;
     font-size: 1.2rem;
+    padding-top: 0;
   }
 }
 
@@ -870,7 +870,7 @@ input.mobile-facets__checkbox {
 
 .mobile-facets__label .icon-checkmark {
   position: absolute;
-  top: 1.9rem;
+  top: ;
   left: 2.8rem;
   visibility: hidden;
 }
