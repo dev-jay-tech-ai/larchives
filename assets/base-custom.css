@@ -569,6 +569,7 @@ input[type="range"]::-moz-range-thumb {
 
   .product-list-bottom button {
     width: 100%;
+    font-size: 1rem;
   }
 }
 
