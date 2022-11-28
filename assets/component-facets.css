@@ -663,6 +663,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 
 .mobile-facets__open-wrapper {
   display: inline-block;
+  margin-left: 2rem;
 }
 
 .mobile-facets__open {
