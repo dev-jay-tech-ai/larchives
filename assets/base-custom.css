@@ -72,7 +72,7 @@ object-position: top; #insta-feed {
   letter-spacing: normal;
   text-align: center;
   color: rgba(4, 11, 9, 0.5);
-  margin-bottom: 17.2rem;
+  margin-bottom: 6rem;
 }
 
 .grid-blog-item {
@@ -136,6 +136,10 @@ object-position: top; #insta-feed {
 }
 
 @media screen and (min-width: 750px) {
+  .blog-nav {
+    margin-bottom: 17.2rem;
+  }
+  
   .share-button button, details {
     margin: 0 auto;
     padding-left: 2rem;
