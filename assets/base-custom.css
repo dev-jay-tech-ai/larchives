@@ -1127,6 +1127,7 @@ input[type="range"]::-moz-range-thumb {
 .shopify-payment-button__button span {
   font-family: 'Termina-medium';
   font-size: 1.2rem; 
+  letter-spacing: normal;
 }
 
 /** 
