@@ -1113,7 +1113,6 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-
 .button_custom {
   font-family: 'Termina-medium';
   font-size: 1.2rem;
@@ -1124,6 +1123,12 @@ input[type="range"]::-moz-range-thumb {
   background-color: #fff;
   border: 1px solid #000;
 }
+
+.shopify-payment-button {
+  font-family: 'Termina-medium';
+  font-size: 1.2rem;
+}
+
 /** 
 nav {
   display: none;
