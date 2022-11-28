@@ -320,8 +320,6 @@ object-position: top; #insta-feed {
 /* Product list detail */ 
 
 .product__info-container {
-  display: flex;
-  justify-content: flex-end;
   font-family: Poppins;
   font-weight: normal;
   font-stretch: normal;
