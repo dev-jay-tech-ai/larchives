@@ -943,8 +943,8 @@ input.mobile-facets__checkbox {
   filter: none;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .product-count {
