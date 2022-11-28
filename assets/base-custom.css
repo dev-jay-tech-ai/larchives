@@ -319,6 +319,11 @@ object-position: top; #insta-feed {
 
 /* Product list detail */ 
 
+.product__id {
+  float: right;
+  font-size: 1.4rem;
+}
+
 .product__info-container {
   font-family: Poppins;
   font-weight: normal;
