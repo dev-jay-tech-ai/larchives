@@ -606,6 +606,13 @@ input[type="range"]::-moz-range-thumb {
   margin-bottom: 10rem;  
 }
 
+@media screen and (max-width: 989px) {
+  .chevron {
+    margin-top: 2rem;
+    margin-bottom: 6rem;  
+  }
+}
+
 .chevron svg {
   vertical-align: middle;
 }
