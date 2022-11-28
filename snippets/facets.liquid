@@ -709,9 +709,7 @@
   <form class="facets-vertical-form" id="FacetSortForm">
     <div class="facet-filters sorting caption">
       <div class="facet-filters__field">
-        <h2 class="facet-filters__label caption-large text-body font-style">
-          <label for="SortBy">Sort By:</label>
-        </h2>
+        <h2 class="facet-filters__label caption-large text-body font-style"><label for="SortBy">Sort By:</label></h2>
         <div class="select"> --- </div>
       </div>
       <noscript>
@@ -721,7 +719,7 @@
   </form>
 </div>
   {% endcomment %}                                  
-  
+  <form class="facets-vertical-form" id="FacetSortForm">
   <div class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}" role="status">
   {%- if enable_sorting -%}
     <div class="mobile-facets__details js-filter{% if filter_type == 'drawer' %} medium-hide large-up-hide{% endif %}" data-index="mobile-{{ forloop.index }}">
@@ -736,9 +734,13 @@
             </select>
             {% render 'icon-chevron-down' %}
           </div>
+          <noscript>
+            <button type="submit" class="facets__button-no-js button button--secondary">Sort</button>
+          </noscript>
         </div>
       </div>
     </div>
+    </form> 
   {%- endif -%}
   
     {% comment %}
