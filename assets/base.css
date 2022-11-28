@@ -1819,7 +1819,7 @@ details[open] > .share-button__fallback {
   width: 100%;
   display: flex;
   transition: box-shadow var(--duration-short) ease;
-  border-bottom: 1px solid #040b09;
+  border-bottom: 2px solid #040b09;
 }
 
 .customer .field {
