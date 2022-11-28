@@ -366,6 +366,12 @@ object-position: top; #insta-feed {
 }
 
 /* Price Range */ 
+
+.mobile-facets__summary {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .facets__display-vertical > div {
   height: 1.3rem;
 }
