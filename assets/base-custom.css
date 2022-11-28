@@ -1141,6 +1141,7 @@ input[type="range"]::-moz-range-thumb {
 @media screen and (max-width: 989px) {
   .button_custom {
     font-size: 1rem;
+    padding: 1.6rem 8rem;
   }
 }
 
