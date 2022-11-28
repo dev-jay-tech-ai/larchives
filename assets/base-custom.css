@@ -1155,12 +1155,12 @@ nav {
   }
 }
 
-nav {
+.header nav:first-child {
   display: none;
 }
 
 @media screen and (min-width: 750px) {
-  nav {
+  .header nav:first-child {
     display: block;
   }
 }
