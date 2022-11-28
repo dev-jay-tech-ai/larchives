@@ -935,6 +935,10 @@ input[type="range"]::-moz-range-thumb {
   height: 24rem;
 }
 
+.product-grid-container {
+  padding: 0 2rem;
+}
+
 .custom-price-discountrate {
   font-size: 1.2rem;
   font-stretch: normal;
@@ -968,6 +972,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (min-width: 750px) {
+  .product-grid-container {
+    padding: 0;
+  }
+    
   .product-grid-custom .card__inner {
     height: 45.7rem;
   } 
