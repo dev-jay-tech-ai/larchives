@@ -3,8 +3,6 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   padding-top: 1.9rem;
-  border-top: 1px solid rgba(4,11,9,0.2);
-  border-bottom: 1px solid rgba(4,11,9,0.2);
 }
 
 .active-facets-mobile {
@@ -30,6 +28,8 @@
   .facets-container {
     grid-template-columns: auto minmax(0, max-content);
     column-gap: 2rem;
+    border-top: 1px solid rgba(4,11,9,0.2);
+    border-bottom: 1px solid rgba(4,11,9,0.2);
   }
 }
 
