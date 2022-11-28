@@ -323,7 +323,7 @@
         <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
           {{ 'products.product.sold_out' | t }}
         </span>
-        <div style='float: right;'> Product ID: {{ product.id }} </div>
+        <div style='float: right;'> Product ID: {{ product.variants[0].barcode }} </div>
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
