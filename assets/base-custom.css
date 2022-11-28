@@ -325,6 +325,11 @@ object-position: top; #insta-feed {
   color: rgba(4,11,9,0.5);
 }
 
+.product__id > span {
+  color: #424B5A;
+}
+
+
 .product__info-container {
   font-family: Poppins;
   font-weight: normal;
