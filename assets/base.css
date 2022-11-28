@@ -2458,6 +2458,10 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 989px) {
+  .header__icon,
+  .header__icon--cart .icon {
+    padding-top: 2rem;
+  }
   menu-drawer ~ .header__icons .header__icon--account {
     display: none;
   }
