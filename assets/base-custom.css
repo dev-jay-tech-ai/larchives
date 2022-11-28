@@ -139,6 +139,7 @@ object-position: top; #insta-feed {
 @media screen and (min-width: 750px) {
   .share-button button, details {
     padding-left: 2rem;
+    margi-left: 2rem;
   }
 }
 
