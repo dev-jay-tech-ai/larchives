@@ -18,7 +18,7 @@
   margin-right: 1rem;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (max-width: 749px) {
   .pagination__list {
     margin-top: 4rem;
     margin-bottom: 0rem;
