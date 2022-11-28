@@ -30,8 +30,7 @@
     border-top: 1px solid rgba(4,11,9,0.2);
     border-bottom: 1px solid rgba(4,11,9,0.2);
     font-size: 1.2rem;
-    padding-top: 0;
-    height: 5.7rem;
+    padding-top: 1.9rem;
   }
 }
 
@@ -86,7 +85,7 @@
 
 .facet-filters__field .select:after,
 .facet-filters__field .select:before,
-.-facets__sort .select:after,
+.mobile-facets__sort .select:after,
 .mobile-facets__sort .select:before {
   content: none;
 }
@@ -592,7 +591,6 @@ a.active-facets__button.focused .active-facets__button-inner,
   display: flex;
   font-family: Termina-demi;
   text-transform: uppercase;
-  border-right: 1px solid rgba(4,11,9,0.2);
 }
 
 .mobile-facets__wrapper .disclosure-has-popup[open] > summary::before {
