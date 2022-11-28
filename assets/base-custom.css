@@ -372,6 +372,11 @@ object-position: top; #insta-feed {
   padding-right: 2rem;
 }
 
+.mobile-facets__sort .select svg {
+  line-height: 45;
+  height: 45px;
+}
+
 .facets__display-vertical > div {
   height: 1.3rem;
 }
