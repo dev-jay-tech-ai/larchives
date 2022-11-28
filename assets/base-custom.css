@@ -541,6 +541,10 @@ input[type="range"]::-moz-range-thumb {
   .product-list-bottom {
     flex-direction: row;
   }
+
+  .product-list-bottom button {
+    width: 100%;
+  }
 }
 
 
