@@ -3,6 +3,8 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   padding-top: 1.9rem;
+  border-top: 1px solid rgba(4,11,9,0.2);
+  border-bottom: 1px solid rgba(4,11,9,0.2);
 }
 
 .active-facets-mobile {
@@ -586,8 +588,6 @@ a.active-facets__button.focused .active-facets__button-inner,
 .mobile-facets__wrapper {
   margin-left: 0;
   display: flex;
-  border-top: 1px solid rgba(4,11,9,0.2);
-  border-bottom: 1px solid rgba(4,11,9,0.2);
 }
 
 .mobile-facets__wrapper .disclosure-has-popup[open] > summary::before {
