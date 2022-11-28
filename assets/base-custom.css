@@ -537,6 +537,13 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 7.5rem;
 }
 
+@media screen and (max-width: 989px) {
+  .product-list-bottom {
+    flex-direction: row;
+  }
+}
+
+
 .product-list-bottom > div {
   flex: 1;
 }
