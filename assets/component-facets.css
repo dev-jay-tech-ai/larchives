@@ -801,6 +801,7 @@ details.menu-opening .mobile-facets__close svg {
   /* align-items: center;
   padding-bottom: 1rem; */
   justify-content: space-between;
+  item-align: center;
   
 }
 
