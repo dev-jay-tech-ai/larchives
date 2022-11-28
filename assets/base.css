@@ -280,7 +280,6 @@ html.no-js .no-js-hidden {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
   }
 }
 
