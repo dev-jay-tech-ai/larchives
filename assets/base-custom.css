@@ -1124,6 +1124,11 @@ input[type="range"]::-moz-range-thumb {
   border: 1px solid #000;
 }
 
+.shopify-payment-button__button span {
+  font-family: 'Termina-medium';
+  font-size: 1.2rem; 
+}
+
 /** 
 nav {
   display: none;
