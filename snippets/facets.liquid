@@ -438,7 +438,7 @@
           {% render 'icon-filter' %}
           <span class="mobile-facets__open-label button-label medium-hide large-up-hide">
             {%- if enable_filtering and enable_sorting -%}
-              {{ 'products.facets.filter_by_label' | t }}
+              {{ 'products.facets.filter_by_label' | t | replace: ":", "" }}
             {%- elsif enable_filtering -%}
               {{ 'products.facets.filter_button' | t }}
             {%- elsif enable_sorting -%}
