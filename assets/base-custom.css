@@ -131,19 +131,18 @@ object-position: top; #insta-feed {
 }
 
 .share-button button, details {
-  margin: 0 auto;
+  margin-left: 2rem;
   padding-left: 0rem;
   padding-top: 0.5rem;
 }
 
 @media screen and (min-width: 750px) {
   .share-button button, details {
+    margin: 0 auto;
     padding-left: 2rem;
-    margin-left: 2rem;
+
   }
 }
-
-
 
 .sharing-custom {
   display: flex;
