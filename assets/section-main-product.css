@@ -316,6 +316,10 @@ fieldset.product-form__input .form__label {
   margin: 1.5rem 0;
 }
 
+.product__info-container > *:first-child {
+  margin-top: 1.5rem;
+}
+
 .product__info-container iframe {
   max-width: 100%;
 }
@@ -333,10 +337,6 @@ fieldset.product-form__input .form__label {
   letter-spacing: normal;
   text-align: left;
   color: rgba(4, 11, 9, 0.7);
-}
-
-.product__info-container > *:first-child {
-  margin-top: 1.5rem;
 }
 
 .product__text {
