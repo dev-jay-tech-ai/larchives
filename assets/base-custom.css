@@ -925,10 +925,6 @@ input[type="range"]::-moz-range-thumb {
   height: 24rem;
 }
 
-/* .product-grid-custom .card__inner {
-  height: 24rem;
-}  */
-
 .grid--4-col-desktop .card__inner {
   height: 24rem;
 }
