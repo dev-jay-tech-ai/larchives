@@ -1145,12 +1145,12 @@ nav {
   }
 }
 
-.header__heading svg {
+.header__heading-link svg {
   width: 115px;
 }
 
 @media screen and (min-width: 750px) {
-  .header__heading svg {
+  .header__heading-link svg {
     width: 100%;
   }
 }
