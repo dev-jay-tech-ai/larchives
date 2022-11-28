@@ -702,31 +702,31 @@
       </form>
     </facet-filters-form>
   {%- endif -%}
-
-    <facet-filters-form class="facets facets-vertical-sort page-width no-js-hidden">
-      <form class="facets-vertical-form" id="FacetSortForm">
-      {%- if enable_sorting -%}
-        <div class="mobile-facets__details js-filter{% if filter_type == 'drawer' %} medium-hide large-up-hide{% endif %}" data-index="mobile-{{ forloop.index }}">
-          <div class="mobile-facets__summary">
-            <div class="mobile-facets__sort">
-              <label for="SortBy-mobile">{{ 'products.facets.sort_by_label' | t }}</label>
-              <div class="select">
-                <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message">
-                  {%- for option in results.sort_options -%}
-                    <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
-                  {%- endfor -%}
-                </select>
-                {% render 'icon-chevron-down' %}
+    <div>
+      <facet-filters-form class="facets facets-vertical-sort page-width no-js-hidden">
+        <form class="facets-vertical-form" id="FacetSortForm">
+        {%- if enable_sorting -%}
+          <div class="mobile-facets__details js-filter{% if filter_type == 'drawer' %} medium-hide large-up-hide{% endif %}" data-index="mobile-{{ forloop.index }}">
+            <div class="mobile-facets__summary">
+              <div class="mobile-facets__sort">
+                <label for="SortBy-mobile">{{ 'products.facets.sort_by_label' | t }}</label>
+                <div class="select">
+                  <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message">
+                    {%- for option in results.sort_options -%}
+                      <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
+                    {%- endfor -%}
+                  </select>
+                  {% render 'icon-chevron-down' %}
+                </div>
+                <noscript>
+                  <button type="submit" class="facets__button-no-js button button--secondary">{{ 'products.facets.sort_button' | t }}</button>
+                </noscript>
               </div>
-              <noscript>
-                <button type="submit" class="facets__button-no-js button button--secondary">{{ 'products.facets.sort_button' | t }}</button>
-              </noscript>
             </div>
-          </div>
-        </form> 
-      {%- endif -%}
-    </facet-filters-form>
-  
+          </form> 
+        {%- endif -%}
+      </facet-filters-form>
+    </div>
   </div>
   {%- if filter_type == 'drawer' -%}
     <facet-filters-form class="facets facets-pill small-hide">
