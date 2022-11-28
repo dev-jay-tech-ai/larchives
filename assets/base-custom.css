@@ -610,7 +610,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .main-custom-style {
-  margin-top: 15.5rem;
+  margin-top: 6rem;
+}
+
+@media screen and (min-width: 750px) {
+  .main-custom-style {
+    margin-top: 15.5rem;
+  }
 }
 
 .blog-rectangle {
