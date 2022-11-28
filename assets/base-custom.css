@@ -1176,6 +1176,10 @@ nav {
   justify-content: flex-end;
 }
 
+.nav-icon > div {
+  padding-left: 2rem;
+}
+
 .nav-icon > div svg {
   vertical-align: middle;
 }
