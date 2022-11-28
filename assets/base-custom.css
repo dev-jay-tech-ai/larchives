@@ -947,7 +947,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .product-grid-container {
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .custom-price-discountrate {
