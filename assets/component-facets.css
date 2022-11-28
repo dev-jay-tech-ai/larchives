@@ -85,7 +85,7 @@
 
 .facet-filters__field .select:after,
 .facet-filters__field .select:before,
-.mobile-facets__sort .select:after,
+.-facets__sort .select:after,
 .mobile-facets__sort .select:before {
   content: none;
 }
@@ -591,6 +591,7 @@ a.active-facets__button.focused .active-facets__button-inner,
   display: flex;
   font-family: Termina-demi;
   text-transform: uppercase;
+  border-right: 1px solid rgba(4,11,9,0.2);
 }
 
 .mobile-facets__wrapper .disclosure-has-popup[open] > summary::before {
