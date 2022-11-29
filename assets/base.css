@@ -1891,6 +1891,7 @@ details[open] > .share-button__fallback {
   /* padding: 0.8rem 1.5rem 0.8rem 2rem;
   margin: var(--inputs-border-width); */
   padding-bottom: 1rem;
+  padding-left: 2.4rem;
 }
 
 .field__input::-webkit-search-cancel-button,
