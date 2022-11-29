@@ -134,17 +134,22 @@
   {%- endform -%}
 </div>
 
+<div class="field">     
+  <input type="text" name="customer[password]" id="RegisterForm-password" aria-required="true" placeholder="Password" class="active">
+  <label for="RegisterForm-password" class="field__label"><svg></svg>
+    Password
+  </label>
+  <span class="eye-off"><svg></svg></span>
+</div>
+                        
 {% javascript %}
   $(document).ready(function(){
     $('.field .eye-off').on('click',function(){
-        console.log('마우스 클릭!')
         $('input#RegisterForm-password').toggleClass('active');
         if($('input#RegisterForm-password').hasClass('active')){
-            $(this).attr('class',"eye-off")
-            .prev('input#RegisterForm-password').attr('type',"text");
+            $(this).attr('class',"eye-off").prev('input').attr('type',"text")
         }else{
-            $(this).attr('class',"eye-off")
-            .prev('input#RegisterForm-password').attr('type','password');
+            $(this).attr('class',"eye-off").prev('input').attr('type',"password");
         }
     });
   });
