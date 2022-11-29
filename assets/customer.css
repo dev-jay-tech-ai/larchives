@@ -6,16 +6,21 @@
   text-align: center;
 }
 
+.customer > h1,
+.customer__title {
+  margin-top: 0;
+  margin-bottom: 6rem;
+}
+
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
     max-width: 63rem;
   }
-}
 
-.customer > h1,
-.customer__title {
-  margin-top: 0;
-  margin-bottom: 17.2rem;
+  .customer > h1,
+  .customer__title {
+    margin-bottom: 17.2rem;
+  }
 }
 
 .customer form {
