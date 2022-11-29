@@ -371,7 +371,13 @@
               {%- if shop.customer_accounts_enabled -%}
                 <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" 
                   class="header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}">
-      {%- if customer -%}{{ customer.first_name }}{%- else -%}{{ customer.log_in | t }}{%- endif -%}
+                  {%- liquid
+                    if customer
+                      echo 'customer.first_name' | t
+                    else
+                      echo 'customer.log_in' | t
+                    endif
+                  -%}{%- if customer -%}{{ customer.first_name }}{%- else -%}{{ customer.log_in }}{%- endif -%}
                 {% render 'icon-user' %}
                 </a>
               {%- endif -%}
