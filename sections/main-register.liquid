@@ -137,7 +137,7 @@
 {% javascript %}
   $(document).ready(function(){
     $('.field .eye-off').on('click',function(){
-        console.log('hello world')
+        console.log('마우스 클릭!')
         $('input#RegisterForm-password').toggleClass('active');
         if($('input#RegisterForm-password').hasClass('active')){
             $(this).attr('class',"eye-off")
