@@ -1339,6 +1339,10 @@ nav {
   width: 12.8rem;
 }
 
+.submenu ul li {
+  padding: 3.4rem;
+}
+
 @media screen and (min-width: 750px) {
 /*   .footer-logo {
     text-align: left;
