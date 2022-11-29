@@ -49,7 +49,7 @@
   text-decoration: underline;
 }
 
-.customer div div p {
+.customer div > div > p {
   border-bottom: 1px solid rgba(4,11,9,01);
 }
 
