@@ -74,6 +74,7 @@
             <use href="#icon-error" />
           </svg>
           {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}
+          {% render 'icon-eyeoff' %}
         </small>
       {%- endif -%}
     </div>
