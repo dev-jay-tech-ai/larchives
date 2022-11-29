@@ -14,6 +14,8 @@
   }
 {%- endstyle -%}
 
+<script src="{{ 'password-eyeoff.js' | asset_url }}" defer="defer"></script>
+
 <div class="customer login section-{{ section.id }}-padding">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
@@ -128,6 +130,7 @@
           >
           <label for="CustomerPassword" class="field__label">{% render 'icon-key' %}
             {{ 'customer.login_page.password' | t }}
+            <span class='eye-off'>{% render 'icon-eyeoff' %}</span>
           </label>
         </div>
 
@@ -139,12 +142,11 @@
         {{ 'customer.login_page.sign_in' | t }}
       </button>
               
-      <div class='rte'>
-        <p>Don’t have an account?</p>
-        <a href="{{ routes.account_register_url }}">
-          {{ 'customer.login_page.create_account' | t }}
-        </a>
-      </div>  
+      <div class='rte'><p>Don’t have an account?</p></div>  
+      <a href="{{ routes.account_register_url }}">
+        {{ 'customer.login_page.create_account' | t }}
+      </a>
+      
     {%- endform -%}
   </div>
   
