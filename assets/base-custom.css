@@ -45,8 +45,8 @@
 }
 
 .customer_subject a {
-  color: rgba(4,11,9,0.5);
   font-size: 1.4rem;
+  color: rgba(4,11,9,0.5);
   text-decoration: underline;
 }
 
