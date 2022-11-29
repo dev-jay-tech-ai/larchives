@@ -28,7 +28,7 @@
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .customer .field {
     height: 4.7rem;
   }
