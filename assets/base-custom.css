@@ -8,6 +8,10 @@
   border-bottom: 1px solid #d0cdd8;
 }
 
+.login a > span {
+  font-family: 'Termina-demi';
+}
+
 .menu-drawer_top {
   display: flex;
   border-bottom: 1px solid rgba(var(--color-foreground),.1);
