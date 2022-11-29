@@ -28,11 +28,6 @@
   font-size: 1.6rem;
 }
 
-
-form .customer button {
-  width: 26rem;
-}
-
 @media screen and (max-width: 989px) {
   .field__input, .customer .field input {
     padding-bottom: 1.5rem;
