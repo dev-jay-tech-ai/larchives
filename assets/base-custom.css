@@ -1351,6 +1351,7 @@ nav {
 .submenu ul li svg {
   width: 1.2rem;
   height: 1.2rem;
+  vertical-align: sub;
 }
 
 @media screen and (min-width: 750px) {
