@@ -28,7 +28,7 @@
 }
 
 .customer button {
-  margin: 6rem 0 4rem;
+  margin: 4rem 0 0;
 }
 
 .customer ul {
@@ -52,6 +52,10 @@
 }
 
 @media only screen and (min-width: 750px) {
+  .customer button {
+    margin: 6rem 0 4rem;
+  }
+  
   .customer h2.form__message {
     font-size: calc(var(--font-heading-scale) * 2.2rem);
   }
