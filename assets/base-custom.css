@@ -1036,8 +1036,10 @@ input[type="range"]::-moz-range-thumb {
   height: 9.2rem;
 }
 
-.grid--3-col-desktop .card__inner {
-  height: 24rem;
+@media screen and (max-width: 749px) {
+  .grid--3-col-desktop .card__inner {
+    height: 24rem;
+  }
 }
 
 .grid--4-col-desktop .card__inner {
@@ -1086,11 +1088,7 @@ input[type="range"]::-moz-range-thumb {
   .product-grid-custom .card__inner {
     height: 45.7rem;
   } 
-  /**
-  .grid--3-col-desktop .card__inner {
-    height: 61.9rem;
-  }
-  */
+
   .grid--4-col-desktop .card__inner {
     height: 45.7rem;
   }
