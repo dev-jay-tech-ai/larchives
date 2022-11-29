@@ -49,6 +49,10 @@
   text-decoration: underline;
 }
 
+.customer div div p {
+  border-bottom: 1px solid rgba(4,11,9,01);
+}
+
 @media screen and (max-width: 989px) {
   .field__input, .customer .field input {
     padding-bottom: 1.5rem;
