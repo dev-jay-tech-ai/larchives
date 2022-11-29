@@ -1340,7 +1340,7 @@ nav {
 }
 
 .submenu ul li {
-  padding: 3.4rem;
+  padding: 1.7rem 0;
 }
 
 @media screen and (min-width: 750px) {
