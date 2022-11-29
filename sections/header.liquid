@@ -368,7 +368,7 @@
             <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>FOR PARTNERS</a></div>
             <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>DELIVERY</a></div>
             <div style='margin-top: -3px'>
-{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}
+
                 {%- if shop.customer_accounts_enabled -%}
                   <a 
                     href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" 
