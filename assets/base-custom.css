@@ -1070,9 +1070,7 @@ input[type="range"]::-moz-range-thumb {
   font-size: 1.2rem;
 }
 
-.mldDesk {
-  display: none; 
-}
+
 
 @media screen and (min-width: 750px) {
   .product-grid-container {
