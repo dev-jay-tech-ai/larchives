@@ -32,6 +32,10 @@
   .customer .field {
     height: 4.7rem;
   }
+
+  .field__input, .customer .field input {
+    padding: 0 0 1.5rem;
+  }
 }
 
 object-position: top; #insta-feed {
