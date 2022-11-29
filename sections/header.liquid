@@ -373,8 +373,7 @@
                   <a 
                     href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" 
                     class="menu-drawer__account link focus-inset h5
-                    {% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}
-                    ">
+                    {% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>LOG IN {% render 'icon-user' %}">
                     {% render 'icon-account' %}
                     {%- liquid
                       if customer
