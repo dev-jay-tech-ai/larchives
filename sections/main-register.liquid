@@ -118,7 +118,7 @@
       <label for="RegisterForm-password" class='field__label'>{% render 'icon-key' %}
         {{ 'customer.register.password' | t }}
       </label>
-      {% render 'icon-eyeoff' %}
+      <span class='eye-off'>{% render 'icon-eyeoff' %}</span>
     </div>
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
@@ -134,6 +134,20 @@
   {%- endform -%}
 </div>
 
+{% javascript %}
+  $(document).ready(function(){
+    $('.field .eye-off').on('click',function(){
+        $('input#RegisterForm-password').toggleClass('active');
+        if($('input#RegisterForm-password').hasClass('active')){
+            $(this).attr('class',"eye-off")
+            .prev('input#RegisterForm-password').attr('type',"text");
+        }else{
+            $(this).attr('class',"eye-off")
+            .prev('input#RegisterForm-password').attr('type','password');
+        }
+    });
+  });
+{% endjavascript %}
 
 {% schema %}
 {
