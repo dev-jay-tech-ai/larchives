@@ -54,7 +54,6 @@
 .customer div > div > p {
   color: rgba(4,11,9,0.5);
   border-bottom: 1px solid #d0cdd8;
-  padding-top: 2rem;
   padding-bottom: 1.9rem;
 }
 
@@ -64,6 +63,7 @@
   }
 
   .customer div > div > p {
+    padding-top: 2rem;
     font-size: 1.4rem;
   }
   
