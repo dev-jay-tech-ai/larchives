@@ -147,7 +147,7 @@
     $('.field .eye-off').on('click',function(){
         $('input#RegisterForm-password').toggleClass('active');
         if($('input#RegisterForm-password').hasClass('active')){
-            console.log(this)
+            console.log($(this).attr('class',"eye-off").prev('input'))
             $(this).attr('class',"eye-off").prev('input').attr('type',"text");
         }else{
             $(this).attr('class',"eye-off").prev('input').attr('type',"password");
