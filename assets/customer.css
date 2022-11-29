@@ -264,13 +264,14 @@
   }
 
   .customer td::before {
-    color: rgba(var(--color-foreground), 0.75);
     content: attr(data-label);
     font-family: 'Termina-demi';
     padding-right: 2rem;
     text-transform: uppercase;
     flex-grow: 1;
+    letter-spacing: normal;
     text-align: left;
+    color: #040b09;
   }
 
   .customer td:first-of-type {
