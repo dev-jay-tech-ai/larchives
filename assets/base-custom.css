@@ -34,7 +34,7 @@
   }
 
   .field__input, .customer .field input {
-    padding: 0 0 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
