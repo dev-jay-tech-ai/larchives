@@ -148,13 +148,13 @@
     $('.field .eye-off').on('click',function(){
         $('input#RegisterForm-password').toggleClass('active');
         if($('input#RegisterForm-password').hasClass('active')){
-            $(this).attr('class',"eye-off").siblings('input').attr('type',"text");
             $(this).attr('class',"eye-off").prevAll('input').attr('type',"text");
         }else{
             $(this).attr('class',"eye-off").prevAll('input').attr('type',"password");
         }
     });
   });
+  
 {% endjavascript %}
 
 {% schema %}
