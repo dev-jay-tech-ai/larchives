@@ -373,7 +373,7 @@
                   class="header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}">
                   {%- liquid
                     if customer
-                      echo 'customer.name' | t
+                      echo 'customer.first_name' | t
                     else
                       echo 'customer.log_in' | t
                     endif
