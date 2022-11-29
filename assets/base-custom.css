@@ -1340,7 +1340,8 @@ nav {
 }
 
 .submenu ul {
-  padding: 2.3rem 0;
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
 }
 
 .submenu ul li {
