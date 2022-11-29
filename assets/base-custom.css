@@ -10,6 +10,7 @@
 
 .login a > span {
   font-family: 'Termina-demi';
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 
