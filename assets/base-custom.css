@@ -24,6 +24,10 @@
   border-bottom: 1px solid rgba(var(--color-foreground),.1);
 }
 
+.customer .field .field__label {
+  font-size: 1.6rem;
+}
+
 object-position: top; #insta-feed {
   margin: 0 !important;
 }
