@@ -116,7 +116,7 @@
         placeholder="{{ 'customer.register.password' | t }}"
       >
       <label for="RegisterForm-password" class='field__label'>{% render 'icon-key' %}
-        {{ 'customer.register.password' | t }}
+        {{ 'customer.register.password' | t }}{% render 'icon-eyeoff' %}
       </label>
     </div>
     {%- if form.errors contains 'password' -%}
