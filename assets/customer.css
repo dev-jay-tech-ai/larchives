@@ -469,7 +469,7 @@
 }
 
 :is(.account, .order) h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
 }
 
 :is(.account, .order) h2 {
