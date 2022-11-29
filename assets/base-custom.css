@@ -44,7 +44,9 @@
 }
 
 .customer_subject a {
-  font-size: 1.2rem;
+  color: rgba(4,11,9,0.5);
+  font-size: 1.4rem;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 989px) {
