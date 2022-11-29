@@ -1225,6 +1225,7 @@ nav {
 */
 .header_custom_style {
   font-family: 'Termina-regular';
+  text-transform: uppercase;
   width: 381px;
   height: 12px;
   display: flex;
@@ -1241,7 +1242,6 @@ nav {
 
 .header_custom_style > div:last-of-type {
   margin-top: -1px; 
-  text-transform: uppercase;
 }
 
 .header_custom_style > div:last-of-type svg {
