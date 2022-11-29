@@ -1240,7 +1240,7 @@ nav {
 }
 
 .header_custom_style > div:last-of-type {
-  margin-top: -3px; 
+  margin-top: -1px; 
   text-transform: uppercase;
 }
 
