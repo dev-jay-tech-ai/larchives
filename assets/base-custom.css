@@ -17,6 +17,7 @@
 .menu-drawer_top {
   display: flex;
   border-bottom: 1px solid rgba(var(--color-foreground),.1);
+  padding: 2rem;
 }
 
 .menu-drawer_login {
