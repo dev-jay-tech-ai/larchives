@@ -50,7 +50,8 @@
 }
 
 .customer div > div > p {
-  border-bottom: 1px solid rgba(4,11,9,01);
+  border-bottom: 1px solid rgba(4,11,9,0.1);
+  padding-bottom: 1.9rem;
 }
 
 @media screen and (max-width: 989px) {
