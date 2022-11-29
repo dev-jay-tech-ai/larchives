@@ -377,7 +377,8 @@
                     else
                       echo 'customer.log_in' | t
                     endif
-                  -%}{{ customer.first_name }}  {% render 'icon-user' %}
+                  -%}{%- if customer -%}{{ customer.first_name | t }}{%- else -%}{{ customer.log_in | t }}{%- endif -%}
+                {% render 'icon-user' %}
                 </a>
               {%- endif -%}
             </div>
