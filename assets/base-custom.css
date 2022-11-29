@@ -1245,9 +1245,7 @@ nav {
 }
 
 .header_custom_style > div:last-of-type svg {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  vertical-align: sub;
 }
 
 .header_custom_style > div > a {
