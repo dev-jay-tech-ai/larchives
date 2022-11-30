@@ -677,6 +677,17 @@
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 {%- endif -%}
 
+<script>
+
+  const menu_drawer = document.querySelector('#Details-menu-drawer-container');
+  menu_drawer.addEventListener('click',(e) => {
+    e.preventDefault();
+    console.log('clicked!!!')
+    
+  })
+  
+</script>
+                      
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
@@ -768,18 +779,6 @@
 
   customElements.define('sticky-header', StickyHeader);  
 {% endjavascript %}
-
-<script>
-
-  const menu_drawer = document.querySelector('#Details-menu-drawer-container');
-  menu_drawer.addEventListener('click',(e) => {
-    e.preventDefault();
-    console.log('clicked!!!')
-    
-  })
-
-  
-</script>
 
 <script type="application/ld+json">
   {
