@@ -772,10 +772,10 @@
 <script>
   /* 화면 사이즈 별  */
 
-  const target_banner = document.querySelector('.banner-container > div');    
+  const target_banner = document.querySelectorAll('.banner-container > div');    
   if(screen.width <= 749) {
     console.log(target_banner);
-    target_banner.style.height = screen.width;
+    target_banner.style.height = String(screen.width)+'px';
   } 
 
 </script>
