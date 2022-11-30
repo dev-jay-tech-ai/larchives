@@ -1,5 +1,5 @@
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
-
+console.log('Masonry 구동 중')
 // init Masonry
 var grid = document.querySelector('.grid-blog');
 
