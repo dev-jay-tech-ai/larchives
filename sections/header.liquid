@@ -776,7 +776,7 @@
   const target_banner = document.querySelectorAll('.banner-container > div');    
   if(screen.width <= 749) {
     console.log(target_banner);
-    target_banner.style.height = String(screen.width) +'px';
+    target_banner.forEach((tb) => tb..style.height = String(screen.width) +'px'; );
   } 
 
 </script>
