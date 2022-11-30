@@ -772,14 +772,15 @@
       
 <script>
   /* 화면 사이즈 별  */
-
-  const target_banner = document.querySelectorAll('.banner-container > div');    
-  if(screen.width <= 749) {
-    console.log(target_banner);
-    target_banner.forEach((tb) => {
-      tb.style.height = String(screen.width) +'px'; 
-    });
-  } 
+  setTimeout(() => {
+    const target_banner = document.querySelectorAll('.banner-container > div');    
+    if(screen.width <= 749) {
+      console.log(target_banner);
+      target_banner.forEach((tb) => {
+        tb.style.height = String(screen.width) +'px'; 
+      });
+    } 
+  }, 2000);
 
 </script>
       
