@@ -122,6 +122,15 @@
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+<script>
+
+  const menu-drawer = document.querySelector('#Details-menu-drawer-container');
+  if(menu-drawer.classList.contains('menu-opening')) {
+    console.log('메뉴오픈!')
+  }
+  
+</script>
+
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} {% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
@@ -766,13 +775,7 @@
     }
   }
 
-  customElements.define('sticky-header', StickyHeader);
-
-  const menu-drawer = document.querySelector('#Details-menu-drawer-container');
-  if(menu-drawer.classList.contains('menu-opening')) {
-    console.log('메뉴오픈!')
-  }
-  
+  customElements.define('sticky-header', StickyHeader);  
 {% endjavascript %}
 
 <script type="application/ld+json">
