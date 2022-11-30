@@ -199,11 +199,12 @@ if(onetimecallflag) {
   $acs('.single-option-radio').change(function() {
     mlvedaload();
   });
-$acs('input[name^=id]:checked, select[name^=id], input[name=id], hidden[name^=id] , form[action*="/cart/add"]').on("change",function() {
-     setTimeout(function(){ 
-             mlvedaload();
-             }, 300);
-  });
+  
+  $acs('input[name^=id]:checked, select[name^=id], input[name=id], hidden[name^=id] , form[action*="/cart/add"]').on("change",function() {
+       setTimeout(function(){ 
+               mlvedaload();
+               }, 300);
+    });
   /*if( typeof $ !== "undefined" ) {
 $acs(document).ajaxComplete(function(event, xhr, settings) {
           if(settings.url.indexOf("cart.js")!=-1 || settings.url.indexOf("add.js")!=-1 || settings.url.indexOf("change.js")!=-1) {
@@ -252,7 +253,7 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
 })();
   $acs("#currencies").niceSelect();
   $acs("#currencies1").niceSelect();
-$acs("#currencies2").niceSelect();  
+  $acs("#currencies2").niceSelect();  
   onetimecallflag = false;
   }
 }
