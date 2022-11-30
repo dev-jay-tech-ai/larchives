@@ -107,6 +107,17 @@ object-position: top; #insta-feed {
   }
 }
 
+.pick_currency > select {
+    color: inherit !important;
+    background-color: inherit !important;
+    font-family: 'Termina-Demi';
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    height: 2.4rem;
+    line-height: 2.4rem;
+}
+
 .main-blog {
   text-align: center;
 }
