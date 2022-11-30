@@ -123,8 +123,8 @@
 {%- endif -%}
 
 <script>
-  const menu_drawer = document.querySelector('#Details-menu-drawer-container');
-  if(menu_drawer.classList.contains('menu-opening')) {
+  const menu_drawer = $('#Details-menu-drawer-container');
+  if(menu_drawer.hasClass('menu-opening')) {
     console.log('메뉴오픈!')
   }
   
