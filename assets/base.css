@@ -2332,7 +2332,7 @@ input[type='checkbox'] {
 
   .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
     width: 100%;
-    padding-top: 1.3rem;
+    padding-top: 1.8rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
   }
