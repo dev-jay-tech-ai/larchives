@@ -770,11 +770,10 @@
 {% endjavascript %}
 
 <script>
-  const menu_burger = document.querySelector('header-drawer');
+
   const menu_drawer = document.querySelector('#Details-menu-drawer-container');
-  console.log(menu_burger);
-  
-  menu_burger.addEventListener('click',(e) => {
+
+  menu_drawer.addEventListener('click',(e) => {
     e.preventDefault();
     console.log('clicked!!!')
     
