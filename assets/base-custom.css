@@ -108,7 +108,7 @@ object-position: top; #insta-feed {
 }
 
 .pick_currency > select {
-    padding-right: 2.5rem;
+    padding-right: 2.5rem !important;
     color: inherit !important;
     background-color: inherit !important;
     font-family: 'Termina-Demi';
