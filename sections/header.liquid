@@ -123,7 +123,14 @@
 {%- endif -%}
 
 <script>
+  const menu_burger = document.querySelector('.header__icon.header__icon--menu');
   const menu_drawer = document.querySelector('#Details-menu-drawer-container');
+
+  menu_burger.click((e) => {
+    e.preventDefault();
+    console.log('clicked!!!')
+    
+  })
   console.log(menu_drawer)
   if(menu_drawer.classList.contains('menu-opening')) {
     console.log('메뉴오픈!')
