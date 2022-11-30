@@ -2663,6 +2663,7 @@ details[open] > .header__submenu {
 .header--top-center .header__inline-menu,
 .header--top-center .header__heading-link {
   margin-left: 0;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 990px) {
@@ -2681,11 +2682,6 @@ details[open] > .header__submenu {
 
   .header--middle-left .header__inline-menu {
     margin-left: 0;
-  }
-
-  .header--top-center .header__inline-menu,
-  .header--top-center .header__heading-link {
-    padding-bottom: 2rem;
   }
 }
 
