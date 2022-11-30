@@ -1328,11 +1328,11 @@ nav {
 }
 
 .nav-icon > div svg {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .list-menu--inline li svg {
-
+  vertical-align: bottom;
 }
 
 .list-menu > li > div {
