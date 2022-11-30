@@ -116,6 +116,8 @@ object-position: top; #insta-feed {
     justify-content: space-between;
     height: 2.4rem;
     line-height: 2.4rem;
+    letter-spacing: normal;
+    
 }
 
 .main-blog {
