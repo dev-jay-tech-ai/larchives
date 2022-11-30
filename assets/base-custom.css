@@ -1328,7 +1328,7 @@ nav {
 }
 
 .nav-icon > div svg {
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 .list-menu--inline li svg {
