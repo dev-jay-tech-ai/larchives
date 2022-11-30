@@ -769,16 +769,18 @@
 
   customElements.define('sticky-header', StickyHeader);  
 {% endjavascript %}
+      
 <script>
   /* 화면 사이즈 별  */
 
   const target_banner = document.querySelectorAll('.banner-container > div');    
   if(screen.width <= 749) {
     console.log(target_banner);
-    target_banner.style.height = screen.width+'px';
+    target_banner.style.height = screen.width +'px';
   } 
 
 </script>
+      
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
