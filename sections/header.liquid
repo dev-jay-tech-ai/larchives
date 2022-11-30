@@ -767,6 +767,11 @@
   }
 
   customElements.define('sticky-header', StickyHeader);
+
+  const menu-drawer = $('#Details-menu-drawer-container');
+  if(menu-drawer.hasClass('menu-opening')) {
+    console.log('메뉴오픈!')
+  }
 {% endjavascript %}
 
 <script type="application/ld+json">
