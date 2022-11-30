@@ -768,8 +768,8 @@
 
   customElements.define('sticky-header', StickyHeader);
 
-  const menu-drawer = $('#Details-menu-drawer-container');
-  if(menu-drawer.hasClass('menu-opening')) {
+  const menu-drawer = document.querySelector('#Details-menu-drawer-container');
+  if(menu-drawer.classList.contains('menu-opening')) {
     console.log('메뉴오픈!')
   }
 {% endjavascript %}
