@@ -90,12 +90,8 @@
 
 {%- style -%}
   .header {
-    {% comment %}
-    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
-    {% endcomment %}
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: {{ section.settings.padding_top | times: 1 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 1 | round: 0 }}px;
     padding-left: 2rem;
     padding-right: 2rem;
   }
