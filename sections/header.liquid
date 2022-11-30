@@ -122,23 +122,6 @@
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<script>
-  const menu_burger = document.querySelector('header-drawer');
-  const menu_drawer = document.querySelector('#Details-menu-drawer-container');
-  console.log(menu_burger);
-  
-  menu_burger.addEventListener('click',(e) => {
-    e.preventDefault();
-    console.log('clicked!!!')
-    
-  })
-  console.log(menu_drawer)
-  if(menu_drawer.classList.contains('menu-opening')) {
-    console.log('메뉴오픈!')
-  }
-  
-</script>
-
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} {% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
@@ -785,6 +768,23 @@
 
   customElements.define('sticky-header', StickyHeader);  
 {% endjavascript %}
+
+<script>
+  const menu_burger = document.querySelector('header-drawer');
+  const menu_drawer = document.querySelector('#Details-menu-drawer-container');
+  console.log(menu_burger);
+  
+  menu_burger.addEventListener('click',(e) => {
+    e.preventDefault();
+    console.log('clicked!!!')
+    
+  })
+  console.log(menu_drawer)
+  if(menu_drawer.classList.contains('menu-opening')) {
+    console.log('메뉴오픈!')
+  }
+  
+</script>
 
 <script type="application/ld+json">
   {
