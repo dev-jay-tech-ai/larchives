@@ -676,15 +676,6 @@
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 {%- endif -%}
-
-<script>
-const menu_drawer = document.querySelector('#Details-menu-drawer-container');
-const target = document.querySelector('.menu-drawer_top div:last-child');
-  
-menu_drawer.addEventListener('click',(e) => {
-  target.classList.add("mldDesk");
-})
-</script>
                       
 {% javascript %}
   class StickyHeader extends HTMLElement {
