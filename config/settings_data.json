@@ -140,7 +140,7 @@
     "mlvedaACS_roundDecimalValue": 1,
     "mlvedaACS_backgroundColor": "inherit",
     "mlvedaACS_position": "top_with_right",
-    "mlvedaACS_textHoverColor": "inherit",
+    "mlvedaACS_textHoverColor": "rgba(4,11,9,0.5)",
     "mlvedaACS_enable": true,
     "mlvedaACS_supportedCurrencies": "GBP USD EUR",
     "mlvedaACS_hideDecimal": false,
