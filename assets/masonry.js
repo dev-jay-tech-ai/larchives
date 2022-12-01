@@ -9,7 +9,7 @@ const blog = document.querySelectorAll('.grid_blog_item');
 
 blog.style.position = 'relative';
 blogs.forEach((bl) => {
-  bl.style.postion: absolute;
+  bl.style.postion = absolute;
 })
 
 blogs[0].sytle.left = 0%;
