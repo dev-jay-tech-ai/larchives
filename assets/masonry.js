@@ -1,8 +1,11 @@
 console.log('Masonry 구동 중')
 
-  const height_total = document.querySelector('.grid_blog').clientHeight;
+const height_total = document.querySelector('.grid_blog').clientHeight;
 
-  console.log(height_total);
+console.log(height_total);
+
+const container_blog = document.querySelector('.grid_blog');
+container_blog.style.position = 'relative';
 
 setTimeout(() => {
 
