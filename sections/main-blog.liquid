@@ -47,11 +47,11 @@
         LOAD MORE
       </a>
     </div>
-    {%- comment -%}
+    {%- comment -%}{%- endcomment -%}
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
-    {%- endcomment -%}
+
   </div>
 {%- endpaginate -%}
 
