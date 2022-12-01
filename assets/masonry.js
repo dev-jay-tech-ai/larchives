@@ -14,22 +14,22 @@ blogs.forEach((bl) => {
 });
 
 blogs[0].style.left = '0';
-blogs[0].style.marginRight = '20px';
+blogs[0].style.paddingRight = '20px';
   
 blogs[1].style.right = '0';
-blogs[1].style.marginLeft = '20px';
+blogs[1].style.paddingLeft = '20px';
   
 blogs[2].style.left = '0';
-blogs[2].style.marginRight = '20px';
+blogs[2].style.paddingRight = '20px';
   
 blogs[3].style.right = '0';
-blogs[3].style.marginLeft = '20px';
+blogs[3].style.paddingLeft = '20px';
   
 blogs[4].style.left = '0';
-blogs[4].style.marginRight = '20px';
+blogs[4].style.paddingRight = '20px';
   
 blogs[5].style.right = '0';
-blogs[5].style.marginLeft = '20px';
+blogs[5].style.paddingLeft = '20px';
   
 blogs[0].style.top = '0';
 blogs[1].style.top = '0';
