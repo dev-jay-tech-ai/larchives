@@ -26,8 +26,10 @@
     
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
     <div class='blog-nav'>All{%- for article in blog.articles -%}{% for tag in article.tags -%}&nbsp;&nbsp;&nbsp;{{ tag }}{%- endfor %}{%- endfor %}</div> 
-    <div class="js-masonry grid_blog blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom">
-       <div class="grid_blog_sizer"></div>
+    <div class="grid_blog blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom"
+      style="position: relative; height: 4070.35px;"
+      >
+       <div class="grid_blog_sizer" style="position: absolute; left: 0px; top: 0px;"></div>
       {%- for article in blog.articles -%}
         <div class="grid_blog_item blog-articles__article article">
           {%- render 'article-card-custom',
@@ -52,11 +54,12 @@
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
+  <script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
+
     {%- endcomment -%}
   </div>
 {%- endpaginate -%}
 
-<script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
