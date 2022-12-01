@@ -27,7 +27,6 @@
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
     <div class='blog-nav'>All{%- for article in blog.articles -%}{% for tag in article.tags -%}&nbsp;&nbsp;&nbsp;{{ tag }}{%- endfor %}{%- endfor %}</div> 
     <div class="grid-blog blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom">
-       <div class="grid-blog-sizer"></div>
       {%- for article in blog.articles -%}
         <div class="grid-blog-item blog-articles__article article">
           {%- render 'article-card-custom',
