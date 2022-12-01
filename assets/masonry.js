@@ -29,13 +29,12 @@ console.log(blogs[0].clientHeight);
 setTimeout(() => {
   
 blog_container.style.height = height_total;  
-
 blogs[2].style.top = blogs[0].clientHeight;
 blogs[3].style.top = blogs[1].clientHeight;
 blogs[4].style.top = blogs[2].clientHeight;
 blogs[5].style.top = blogs[3].clientHeight;
   
-},1000)
+}, 2000)
 
 
 // position: relative; height: 2195.17px;
