@@ -1,13 +1,17 @@
-@media screen and (max-width: 749px) {
-  .articles-wrapper .article {
-    width: 100%;
-  }
-}
-
 .article {
   width: 50%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 749px) {
+  .article {
+    width: 100%;
+  }  
+  
+  .articles-wrapper .article {
+    width: 100%;
+  }
 }
 
 .article.grid__item {
