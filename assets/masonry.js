@@ -12,11 +12,11 @@ blogs.forEach((bl) => {
   bl.style.postion = absolute;
 })
 
-blogs[0].sytle.left = 0%;
+blogs[0].sytle.left = 0;
 blogs[1].sytle.left = 50%;
-blogs[2].sytle.left = 0%;
+blogs[2].sytle.left = 0;
 blogs[3].sytle.left = 50%;
-blogs[4].sytle.left = 0%;
+blogs[4].sytle.left = 0;
 blogs[5].sytle.left = 50%;
 
 
