@@ -4,7 +4,6 @@ console.log('Masonry 구동 중')
 const products_on_page = $('.article-on-page');
 let next_url = products_on_page.data('next-url');
 const load_more = $('.load-more');
-const pagination = $('.main-blog .center');
 
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
