@@ -1,6 +1,8 @@
 console.log('Masonry 구동 중')
 
+const height_total = document.querySelector('.grid_blog').clientHeight;
 
+console.log(height);
 
 // position: relative; height: 2195.17px;
 // position: absolute; left: 50%; top: 558.391px;
