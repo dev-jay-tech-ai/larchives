@@ -34,7 +34,7 @@ blogs[3].style.top = blogs[1].clientHeight;
 blogs[4].style.top = blogs[2].clientHeight;
 blogs[5].style.top = blogs[3].clientHeight;
   
-}, 2000)
+}, 100)
 
 
 // position: relative; height: 2195.17px;
