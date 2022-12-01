@@ -5,10 +5,13 @@ const grid = document.querySelector('.grid_blog');
 
 const msnry = new Masonry(grid, {
   itemSelector: '.grid_blog_item',
-  columnWidth: '.grid_blog-sizer'
+  columnWidth: '.grid_blog-sizer',
+  percentPosition: true
 });
 
-imagesLoaded( grid ).on('progress', function() {
+console.log(msnry)
+
+imagesLoaded(grid).on('progress', function() {
   // layout Masonry after each image loads
   msnry.layout();
 });
