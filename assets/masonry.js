@@ -1,6 +1,26 @@
 console.log('Masonry 구동 중')
 
 
+const products_on_page = $('.article-on-page');
+let next_url = products_on_page.data('next-url');
+const load_more = $('.load-more');
+const pagination = $('.main-blog .center');
+
+load_more[0].addEventListener("click",(e) => {
+  e.preventDefault(); 
+  $.ajax({
+    url: next_url,
+    type: 'GET',
+    dataType: 'html',
+  }).done((next_page) => {
+    const new_products = $(next_page).find('.article-on-page');
+    const new_url = new_products.data('next-url');
+    next_url = new_url;
+    products_on_page.append(new_products.html());
+  })  
+});
+
+
 if(screen.width > 750) {
 
 const blog_container = document.querySelector('.blog-articles');
