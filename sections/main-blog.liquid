@@ -26,9 +26,9 @@
    
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
     <div class='blog-nav'>All{%- for article in blog.articles -%}{% for tag in article.tags -%}&nbsp;&nbsp;&nbsp;{{ tag }}{%- endfor %}{%- endfor %}</div> 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom articles-on-page">
+    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom articles-on-page" data-next-url={{ paginate.next.url }}>
       {%- for article in blog.articles -%}
-        <div data-next-url={{ paginate.next.url }} class="blog-articles__article article">
+        <div class="blog-articles__article article">
           {%- render 'article-card-custom',
             article: article,
             media_height: section.settings.image_height,
