@@ -1,17 +1,9 @@
-// external js: masonry.pkgd.js, imagesloaded.pkgd.js
 console.log('Masonry 구동 중')
 
-// init Masonry
-const grid = document.querySelector('.grid_blog');
-const msnry = new Masonry(grid, {
-  itemSelector: '.grid_blog_item',
-  columnWidth: '.grid_blog_sizer',
-  percentPosition: true
-});
 
-console.log(msnry)
 
-imagesLoaded(grid).on('progress', function() {
-  // layout Masonry after each image loads
-  msnry.layout();
-});
+// position: relative; height: 2195.17px;
+// position: absolute; left: 50%; top: 558.391px;
+// position: absolute; left: 0%; top: 758.391px;
+// position: absolute; left: 50%; top: 1116.78px;
+// position: absolute; left: 0%; top: 1636.78px;
