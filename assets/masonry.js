@@ -8,6 +8,8 @@ const blog_container = document.querySelector('.grid_blog');
 const blogs = document.querySelectorAll('.grid_blog_item');
 
 blog_container.style.position = 'relative';
+blog_container.style.height = String(height_total);
+
 blogs.forEach((bl) => {
   bl.style.position = 'absolute';
 });
@@ -19,6 +21,8 @@ blogs[3].style.left = '50%';
 blogs[4].style.left = '0';
 blogs[5].style.left = '50%';
 
+blogs[0].style.top = '0';
+blogs[1].style.top = '0';
 
 setTimeout(() => {
 
