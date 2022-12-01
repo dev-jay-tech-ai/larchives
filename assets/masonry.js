@@ -1,7 +1,7 @@
 console.log('Masonry 구동 중')
 
-const blog_container = document.querySelector('.blog-nav');
-const blogs = document.querySelectorAll('.blog-articles');
+const blog_container = document.querySelector('.blog-articles');
+const blogs = document.querySelectorAll('.blog-articles__article');
 
 blog_container.style.position = 'relative';
 blog_container.style.height = '240rem';
