@@ -9,7 +9,7 @@ const blogs = document.querySelectorAll('.grid_blog_item');
 
 blog_container.style.position = 'relative';
 blogs.forEach((bl) => {
-  bl.style.postion = 'absolute';
+  bl.style.position = 'absolute';
 });
 
 blogs[0].style.left = '0';
