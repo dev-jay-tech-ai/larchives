@@ -21,8 +21,8 @@ blogs[0].style.top = '0';
 blogs[1].style.top = '0';
 blogs[2].style.top = String(558)+'px';
 blogs[3].style.top = String(758)+'px';
-blogs[4].style.top = String(758+558)+'px';
-blogs[5].style.top = String(558+878)+'px';
+blogs[4].style.top = String(558+558)+'px';
+blogs[5].style.top = String(758+878)+'px';
 
 // position: relative; height: 2195.17px;
 // position: absolute; left: 50%; top: 558.391px;
