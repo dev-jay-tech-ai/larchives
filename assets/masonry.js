@@ -7,7 +7,7 @@ const blog_container = document.querySelector('.blog-articles');
 const blogs = document.querySelectorAll('.blog-articles__article');
 
 blog_container.style.position = 'relative';
-blog_container.style.height = '240rem';
+blog_container.style.height = '208rem';
 
 blogs.forEach((bl) => {
   bl.style.position = 'absolute';
