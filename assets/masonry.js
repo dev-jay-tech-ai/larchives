@@ -1,12 +1,11 @@
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 console.log('Masonry 구동 중')
 // init Masonry
-var grid = document.querySelector('.grid-blog');
+const grid = document.querySelector('.grid-blog');
 
-var msnry = new Masonry( grid, {
+const msnry = new Masonry(grid, {
   itemSelector: '.grid-blog-item',
-  columnWidth: '.grid-blog-sizer',
-  percentPosition: true
+  columnWidth: 620
 });
 
 imagesLoaded( grid ).on( 'progress', function() {
