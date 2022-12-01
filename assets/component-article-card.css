@@ -8,10 +8,6 @@
   .article {
     width: 100%;
   }  
-  
-  .articles-wrapper .article {
-    width: 100%;
-  }
 }
 
 .article.grid__item {
