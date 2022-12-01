@@ -51,13 +51,11 @@
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
-  
-<script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
     {%- endcomment -%}
   </div>
 {%- endpaginate -%}
 
-
+<script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
 {% schema %}
 {
   "name": "t:sections.main-blog.name",
