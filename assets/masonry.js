@@ -5,7 +5,7 @@ const grid = document.querySelector('.grid_blog');
 
 const msnry = new Masonry(grid, {
   itemSelector: '.grid_blog_item',
-  columnWidth: '.grid_blog-sizer',
+  columnWidth: '.grid_blog_sizer',
   percentPosition: true
 });
 
