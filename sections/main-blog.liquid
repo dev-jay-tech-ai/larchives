@@ -20,8 +20,6 @@
   }
 {%- endstyle -%}
 
-<script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
-
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <div>{% render 'breadcrumb' %}</div>
@@ -57,6 +55,8 @@
     {%- endcomment -%}
   </div>
 {%- endpaginate -%}
+
+<script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
