@@ -26,9 +26,10 @@ const blog_container = document.querySelector('.blog-articles');
 const blogs = document.querySelectorAll('.blog-articles__article');
 
 blog_container.style.position = 'relative';
-/* blog_container.style.height = '208rem'; */
-  
 
+  
+let sumOdd = 0;
+let sumEven = 0;
   
 blogs.forEach((blg,idx) => {
   blg.style.position = 'absolute';
@@ -36,9 +37,11 @@ blogs.forEach((blg,idx) => {
   if(idx% 2 == 0) {
     blg.style.left = '0';
     blg.style.paddingRight = '20px';
+    sumEven += blg.clientHeight;
   } else {
     blg.style.right = '0';
     blg.style.paddingLeft = '20px';
+    sumOdd += blg.clientHeight;
   }
   console.log(blg.clientHeight);
   console.log(blg.offsetHeight);
@@ -49,4 +52,7 @@ blogs[2].style.top = String(758)+'px';
 blogs[3].style.top = String(558)+'px';
 blogs[4].style.top = String(758+558)+'px';
 blogs[5].style.top = String(558+858)+'px';
+
+blog_container.style.height = '208rem';
+  
 }
