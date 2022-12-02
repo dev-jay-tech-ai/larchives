@@ -1,4 +1,3 @@
-
 //apply
  var macyInstance = Macy({
     container: '.blog-articles',
