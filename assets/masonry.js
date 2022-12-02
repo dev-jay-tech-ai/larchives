@@ -58,3 +58,4 @@ blogs.forEach((blg,idx) => {
   },100);
   
 });
+}  
