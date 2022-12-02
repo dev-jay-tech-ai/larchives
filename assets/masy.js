@@ -21,10 +21,10 @@ if (document.readyState == "complete" || document.readyState == "loaded") {
 	document.addEventListener("DOMContentLoaded", MyEnvironment.init);
 }
 
-var masonryEl = document.querySelector(".masonryComponent");
+var masonryEl = document.querySelector(".blog-articles");
 window.onload = function(){
 	Macy.init({ 
-		container: ".masonryComponent",
+		container: ".blog-articles",
 		trueOrder: true,
 		margin: 20,
 		columns: 3
