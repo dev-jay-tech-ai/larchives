@@ -51,8 +51,8 @@
     {%- comment -%} {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
       <script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
-      <script src="{{ 'masy.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}{%- endcomment -%}
+    <script src="{{ 'masy.js' | asset_url }}" defer="defer"></script>
     
   </div>
 {%- endpaginate -%}
