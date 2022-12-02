@@ -30,7 +30,6 @@ blog_container.style.position = 'relative';
   
 let sumOdd = 0;
 let sumEven = 0;
-getHeight();
   
 const getHeight = () => {
   blogs.forEach((blg,idx) => {
@@ -58,10 +57,8 @@ const getHeight = () => {
 
   return blog_container.style.height = Math.max(sumOdd,sumEven);
 } 
-  
 
-
-
+getHeight();  
 
 
 
