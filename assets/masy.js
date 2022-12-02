@@ -25,7 +25,7 @@ window.onload = function(){
 	Macy.init({ 
 		container: ".blog-articles",
 		trueOrder: true,
-		margin: 20,
+		margin: 40,
 		columns: 2
 	});
 	var masonryItemEl = masonryEl.querySelectorAll(".blog-articles__article");
