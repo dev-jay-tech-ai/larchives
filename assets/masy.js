@@ -14,5 +14,5 @@
         400: 1
     }
 });
-
-console.log(macyInstance)*/
+*/
+console.log(Macy())
