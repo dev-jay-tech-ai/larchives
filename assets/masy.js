@@ -15,4 +15,3 @@
 });
 
 console.log(macyInstance);
-macyInstance.remove();
