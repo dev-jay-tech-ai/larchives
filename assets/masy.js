@@ -1,6 +1,6 @@
 //apply
  var macyInstance = Macy({
-    container: '.blog-articles',
+    container: '#macy-container',
     trueOrder: true,
     waitForImages: false,
     margin: { x: 20, y: 0 },
