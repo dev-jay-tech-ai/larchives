@@ -101,4 +101,6 @@ load_more[0].addEventListener("click",(e) => {
     next_url = new_url;
     articles_on_page.append(new_articles.html());
   }) 
+  
+  MyEnvironment.init();
 });
