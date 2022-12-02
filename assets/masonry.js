@@ -30,6 +30,7 @@ blog_container.style.height = '208rem';
 
 blogs.forEach((blg,idx) => {
   blg.style.position = 'absolute';
+  if(idx === 0 || idx === 1) blg.style.top = '0';
   if(idx% 2 == 0) {
     blg.style.left = '0';
     blg.style.paddingRight = '20px';
@@ -39,9 +40,6 @@ blogs.forEach((blg,idx) => {
   }
 });
 
-  
-blogs[0].style.top = '0';
-blogs[1].style.top = '0';
 blogs[2].style.top = String(758)+'px';
 blogs[3].style.top = String(558)+'px';
 blogs[4].style.top = String(758+558)+'px';
