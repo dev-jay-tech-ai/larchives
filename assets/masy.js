@@ -14,7 +14,6 @@ MyEnvironment = (function(){
   };
 })();
 
-
 if (document.readyState == "complete" || document.readyState == "loaded") {
   MyEnvironment.init();
 } else {
@@ -27,7 +26,7 @@ window.onload = function(){
 		container: ".blog-articles",
 		trueOrder: true,
 		margin: 20,
-		columns: 3
+		columns: 2
 	});
 	var masonryItemEl = masonryEl.querySelectorAll(".blog-articles__article");
 	[].forEach.call(masonryItemEl, function(masonryItemEl) {
