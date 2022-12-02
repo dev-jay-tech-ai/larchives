@@ -109,5 +109,5 @@ load_more[0].addEventListener("click",(e) => {
     articles_on_page.append(new_articles.html());
   }) 
   
-  macy();
+
 });
