@@ -35,36 +35,22 @@ const blogs = document.querySelectorAll('.blog-articles__article');
 
 blog_container.style.position = 'relative';
 
-  
-let sumOdd = 0;
-let sumEven = 0;
-  
-
 blogs.forEach((blg,idx) => {
-  
   blg.style.position = 'absolute';
   if(idx === 0 || idx === 1) blg.style.top = '0';
   if(idx% 2 == 0) {
     blg.style.left = '0';
     blg.style.paddingRight = '20px';
-    sumEven += blg.clientHeight;
   } else {
     blg.style.left = 'unset';
     blg.style.right = '0';
     blg.style.paddingLeft = '20px';
-    sumOdd += blg.clientHeight;
   }
-  console.log(sumOdd);
-  console.log(sumEven);
-
+  
   blogs[2].style.top = String(758)+'px';
   blogs[3].style.top = String(558)+'px';
   blogs[4].style.top = String(758+558)+'px';
   blogs[5].style.top = String(558+858)+'px';
 
-  setTimeout(() => {
-    blog_container.style.height = Math.max(sumOdd,sumEven);
-  },100);
-  
 });
 }  
