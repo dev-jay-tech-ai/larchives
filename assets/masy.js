@@ -88,7 +88,9 @@ const macy = () => {
   
 };
 
-macy();
+if(screen.width > 750) {
+  macy();
+}
 
 const articles_on_page = $('.articles-on-page');
 let next_url = articles_on_page.data('next-url');
