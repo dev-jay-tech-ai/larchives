@@ -4,6 +4,8 @@ const msnry = new Masonry( grid, {
   itemSelector: '.blog-articles__article',
 });
 
+const blog_container = document.querySelector('.blog-articles');
+const blogs = document.querySelectorAll('.blog-articles__article');
 const articles_on_page = $('.articles-on-page');
 let next_url = articles_on_page.data('next-url');
 const load_more = $('.load-more');
@@ -19,17 +21,13 @@ load_more[0].addEventListener("click",(e) => {
     const new_url = new_articles.data('next-url');
     next_url = new_url;
     articles_on_page.append(new_articles.html());
-  })  
+  }) 
+  if(screen.width > 750) blog_container.style.height = blog_container.style.height * 2;
 });
 
-
 if(screen.width > 750) {
-
-const blog_container = document.querySelector('.blog-articles');
-const blogs = document.querySelectorAll('.blog-articles__article');
-
 blog_container.style.position = 'relative';
-
+  
 blogs.forEach((blg,idx) => {
   blg.style.position = 'absolute';
   if(idx === 0 || idx === 1) blg.style.top = '0';
