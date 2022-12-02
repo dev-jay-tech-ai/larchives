@@ -26,8 +26,10 @@ const blog_container = document.querySelector('.blog-articles');
 const blogs = document.querySelectorAll('.blog-articles__article');
 
 blog_container.style.position = 'relative';
-blog_container.style.height = '208rem';
+/* blog_container.style.height = '208rem'; */
+  
 
+  
 blogs.forEach((blg,idx) => {
   blg.style.position = 'absolute';
   if(idx === 0 || idx === 1) blg.style.top = '0';
@@ -38,7 +40,10 @@ blogs.forEach((blg,idx) => {
     blg.style.right = '0';
     blg.style.paddingLeft = '20px';
   }
+  console.log(blg.clientHeight);
+  console.log(blg.offsetHeight);
 });
+
 
 blogs[2].style.top = String(758)+'px';
 blogs[3].style.top = String(558)+'px';
