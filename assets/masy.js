@@ -1,8 +1,8 @@
 var macy = Macy({
     container: '#macy-container',
-    trueOrder: false,
+    trueOrder: true,
     waitForImages: false,
-    margin: { x: 2, y: 0 },
+    margin: { x: 20, y: 0 },
     columns: 2,
     breakAt: {
         1200: 2,
