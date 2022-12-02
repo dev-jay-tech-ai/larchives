@@ -1,5 +1,5 @@
 // -------------------------- masonryDefinition -------------------------- //
-
+console.log('hey')
   // create an Outlayer layout class
   var Masonry = Outlayer.create('masonry');
   // isFitWidth -> fitWidth
