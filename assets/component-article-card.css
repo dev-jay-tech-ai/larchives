@@ -1,6 +1,6 @@
 .article {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 @media screen and (max-width: 749px) {
