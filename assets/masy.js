@@ -32,11 +32,11 @@ const macy = () => {
   	var masonryItemEl = masonryEl.querySelectorAll(".blog-articles__article");
   	[].forEach.call(masonryItemEl, function(masonryItemEl) {
   	masonryItemEl.addEventListener("dragstart", handleDragStart, false);
-      masonryItemEl.addEventListener("dragenter", handleDragEnter, false);
-      masonryItemEl.addEventListener("dragover", handleDragOver, false);
-      masonryItemEl.addEventListener("dragleave", handleDragLeave, false);	
-      masonryItemEl.addEventListener("drop", handleDrop, false);
-      masonryItemEl.addEventListener("dragend", handleDragEnd, false);
+    masonryItemEl.addEventListener("dragenter", handleDragEnter, false);
+    masonryItemEl.addEventListener("dragover", handleDragOver, false);
+    masonryItemEl.addEventListener("dragleave", handleDragLeave, false);	
+    masonryItemEl.addEventListener("drop", handleDrop, false);
+    masonryItemEl.addEventListener("dragend", handleDragEnd, false);
   });
   	masonryEl.className += " is-active";
   }
