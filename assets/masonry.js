@@ -43,8 +43,10 @@ blogs.forEach((blg,idx) => {
     blg.style.paddingLeft = '20px';
     sumOdd += blg.clientHeight;
   }
-  console.log(blg.clientHeight);
-  console.log(blg.offsetHeight);
+  console.log(sumOdd);
+  console.log(sumEven);
+
+  blog_container.style.height = Math.max(sumOdd,sumEven);
 });
 
 
@@ -53,6 +55,6 @@ blogs[3].style.top = String(558)+'px';
 blogs[4].style.top = String(758+558)+'px';
 blogs[5].style.top = String(558+858)+'px';
 
-blog_container.style.height = '208rem';
+
   
 }
