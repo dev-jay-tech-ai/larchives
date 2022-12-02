@@ -47,8 +47,6 @@ blogs.forEach((blg,idx) => {
   }
   console.log(sumOdd);
   console.log(sumEven);
-});
-
 
 blogs[2].style.top = String(758)+'px';
 blogs[3].style.top = String(558)+'px';
