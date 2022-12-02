@@ -57,4 +57,4 @@ blogs.forEach((blg,idx) => {
     blog_container.style.height = Math.max(sumOdd,sumEven);
   },100)
   
-}
+});
