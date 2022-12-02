@@ -49,6 +49,7 @@ blogs.forEach((blg,idx) => {
     blg.style.paddingRight = '20px';
     sumEven += blg.clientHeight;
   } else {
+    blg.style.left = 'unset';
     blg.style.right = '0';
     blg.style.paddingLeft = '20px';
     sumOdd += blg.clientHeight;
