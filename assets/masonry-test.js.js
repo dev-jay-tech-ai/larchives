@@ -1,31 +1,3 @@
-( function( window, factory ) {
-  // universal module definition
-  /* jshint strict: false */ /*globals define, module, require */
-  if ( typeof define == 'function' && define.amd ) {
-    // AMD
-    define( [
-        'outlayer/outlayer',
-        'get-size/get-size'
-      ],
-      factory );
-  } else if ( typeof module == 'object' && module.exports ) {
-    // CommonJS
-    module.exports = factory(
-      require('outlayer'),
-      require('get-size')
-    );
-  } else {
-    // browser global
-    window.Masonry = factory(
-      window.Outlayer,
-      window.getSize
-    );
-  }
-
-}( window, function factory( Outlayer, getSize ) {
-
-'use strict';
-
 // -------------------------- masonryDefinition -------------------------- //
 
   // create an Outlayer layout class
@@ -225,7 +197,3 @@
     this.getContainerWidth();
     return previousWidth != this.containerWidth;
   };
-
-  return Masonry;
-
-}));
