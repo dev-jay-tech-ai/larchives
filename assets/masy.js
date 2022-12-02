@@ -14,76 +14,81 @@ MyEnvironment = (function(){
   };
 })();
 
-if (document.readyState == "complete" || document.readyState == "loaded") {
-  MyEnvironment.init();
-} else {
-	document.addEventListener("DOMContentLoaded", MyEnvironment.init);
-}
-
-var masonryEl = document.querySelector(".blog-articles");
-window.onload = function(){
-	Macy.init({ 
-		container: ".blog-articles",
-		trueOrder: true,
-		margin: 40,
-		columns: 2
-	});
-	var masonryItemEl = masonryEl.querySelectorAll(".blog-articles__article");
-	[].forEach.call(masonryItemEl, function(masonryItemEl) {
-	masonryItemEl.addEventListener("dragstart", handleDragStart, false);
-    masonryItemEl.addEventListener("dragenter", handleDragEnter, false);
-    masonryItemEl.addEventListener("dragover", handleDragOver, false);
-    masonryItemEl.addEventListener("dragleave", handleDragLeave, false);	
-    masonryItemEl.addEventListener("drop", handleDrop, false);
-    masonryItemEl.addEventListener("dragend", handleDragEnd, false);
-});
-	masonryEl.className += " is-active";
-}
-
-var dragSrcEl = null;
-function handleDragStart(e) { // Target (this) element is the source node
-  dragSrcEl = this;
-  e.dataTransfer.effectAllowed = "move";
-  e.dataTransfer.setData("text", this.innerHTML);
-	console.log("test");
-}
-
-function handleDragOver(e) {
-  if (e.preventDefault) { // Allows us to drop.
-    e.preventDefault();
+const macy = () => {
+  if (document.readyState == "complete" || document.readyState == "loaded") {
+    MyEnvironment.init();
+  } else {
+  	document.addEventListener("DOMContentLoaded", MyEnvironment.init);
   }
-  e.dataTransfer.dropEffect = "move";
-  return false;
-}
-
-function handleDragEnter(e) { // this e.target is the current hover target
-  this.classList.add("over");
-}
-
-function handleDragLeave(e) { // this e.target is previous target element
-  this.classList.remove("over");
-}
-
-function handleDrop(e) { // this/e.target is current target element
-  if (e.stopPropagation) { // Stops some browsers from redirecting
-    e.stopPropagation();
-  }
-  // Don't do anything if dropping the same item we're dragging
-  if (dragSrcEl != this) { // Set the source item's HTML to the HTML of the item we dropped upon
-    dragSrcEl.innerHTML = this.innerHTML;
-    this.innerHTML = e.dataTransfer.getData("text");
-		e.dataTransfer.clearData();
-		this.classList.remove("over");
-		Macy.recalculate();
-  }
-  return false;
-}
-
-function handleDragEnd(e) { // this e.target is the source node
-  [].forEach.call(dragItem, function (dragItem) {
-    dragItem.classList.remove("over");
+  
+  var masonryEl = document.querySelector(".blog-articles");
+  window.onload = function(){
+  	Macy.init({ 
+  		container: ".blog-articles",
+  		trueOrder: true,
+  		margin: 40,
+  		columns: 2
+  	});
+  	var masonryItemEl = masonryEl.querySelectorAll(".blog-articles__article");
+  	[].forEach.call(masonryItemEl, function(masonryItemEl) {
+  	masonryItemEl.addEventListener("dragstart", handleDragStart, false);
+      masonryItemEl.addEventListener("dragenter", handleDragEnter, false);
+      masonryItemEl.addEventListener("dragover", handleDragOver, false);
+      masonryItemEl.addEventListener("dragleave", handleDragLeave, false);	
+      masonryItemEl.addEventListener("drop", handleDrop, false);
+      masonryItemEl.addEventListener("dragend", handleDragEnd, false);
   });
-}
+  	masonryEl.className += " is-active";
+  }
+  
+  var dragSrcEl = null;
+  function handleDragStart(e) { // Target (this) element is the source node
+    dragSrcEl = this;
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text", this.innerHTML);
+  	console.log("test");
+  }
+  
+  function handleDragOver(e) {
+    if (e.preventDefault) { // Allows us to drop.
+      e.preventDefault();
+    }
+    e.dataTransfer.dropEffect = "move";
+    return false;
+  }
+  
+  function handleDragEnter(e) { // this e.target is the current hover target
+    this.classList.add("over");
+  }
+  
+  function handleDragLeave(e) { // this e.target is previous target element
+    this.classList.remove("over");
+  }
+  
+  function handleDrop(e) { // this/e.target is current target element
+    if (e.stopPropagation) { // Stops some browsers from redirecting
+      e.stopPropagation();
+    }
+    // Don't do anything if dropping the same item we're dragging
+    if (dragSrcEl != this) { // Set the source item's HTML to the HTML of the item we dropped upon
+      dragSrcEl.innerHTML = this.innerHTML;
+      this.innerHTML = e.dataTransfer.getData("text");
+  		e.dataTransfer.clearData();
+  		this.classList.remove("over");
+  		Macy.recalculate();
+    }
+    return false;
+  }
+  
+  function handleDragEnd(e) { // this e.target is the source node
+    [].forEach.call(dragItem, function (dragItem) {
+      dragItem.classList.remove("over");
+    });
+  }
+  
+};
+
+macy();
 
 const articles_on_page = $('.articles-on-page');
 let next_url = articles_on_page.data('next-url');
