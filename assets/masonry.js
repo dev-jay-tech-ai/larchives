@@ -55,6 +55,6 @@ blogs.forEach((blg,idx) => {
 
   setTimeout(() => {
     blog_container.style.height = Math.max(sumOdd,sumEven);
-  },100)
+  },100);
   
 });
