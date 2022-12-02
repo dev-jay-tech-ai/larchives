@@ -12,8 +12,4 @@ var macy = Macy({
     }
 });
 
-macy.runOnImageLoad(function () {
-  macy.recalculate(true);
-}, true);
-
 console.log(macy)
