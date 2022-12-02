@@ -50,12 +50,11 @@
 
     {%- comment -%} {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
+      <script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}{%- endcomment -%}
 
   </div>
 {%- endpaginate -%}
-
-<script src="{{ 'masonry.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
