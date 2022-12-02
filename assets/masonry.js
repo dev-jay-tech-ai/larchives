@@ -55,7 +55,7 @@ const getHeight = () => {
   blogs[4].style.top = String(758+558)+'px';
   blogs[5].style.top = String(558+858)+'px';
 
-  return blog_container.style.height = Math.max(sumOdd,sumEven);
+  blog_container.style.height = Math.max(sumOdd,sumEven);
 } 
 
 setTimeout(() => {
