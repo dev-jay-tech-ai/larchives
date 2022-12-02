@@ -58,7 +58,7 @@ const getHeight = () => {
   return blog_container.style.height = Math.max(sumOdd,sumEven);
 } 
 
-SetTimeout(() => {
+setTimeout(() => {
   getHeight();
 },1000)
   
