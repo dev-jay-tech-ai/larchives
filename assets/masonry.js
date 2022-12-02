@@ -1,5 +1,13 @@
 console.log('Masonry 구동 중')
 
+// vanilla JS
+// init with element
+var grid = document.querySelector('.blog-articles');
+var msnry = new Masonry( grid, {
+  // options...
+  itemSelector: '.blog-articles__article',
+});
+
 
 const articles_on_page = $('.articles-on-page');
 let next_url = articles_on_page.data('next-url');
