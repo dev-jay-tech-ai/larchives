@@ -62,7 +62,4 @@ SetTimeout(() => {
   getHeight();
 },1000)
   
-
-
-  
 }
