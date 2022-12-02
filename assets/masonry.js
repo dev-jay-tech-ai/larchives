@@ -28,27 +28,17 @@ const blogs = document.querySelectorAll('.blog-articles__article');
 blog_container.style.position = 'relative';
 blog_container.style.height = '208rem';
 
-blogs.forEach((bl) => {
-  bl.style.position = 'absolute';
+blogs.forEach((blg,idx) => {
+  blg.style.position = 'absolute';
+  if(idx% 2 == 0) {
+    blg.style.left = '0';
+    blg.style.paddingRight = '20px';
+  } else {
+    blg.style.right = '0';
+    blg.style.paddingLeft = '20px';
+  }
 });
 
-blogs[0].style.left = '0';
-blogs[0].style.paddingRight = '20px';
-  
-blogs[1].style.right = '0';
-blogs[1].style.paddingLeft = '20px';
-  
-blogs[2].style.left = '0';
-blogs[2].style.paddingRight = '20px';
-  
-blogs[3].style.right = '0';
-blogs[3].style.paddingLeft = '20px';
-  
-blogs[4].style.left = '0';
-blogs[4].style.paddingRight = '20px';
-  
-blogs[5].style.right = '0';
-blogs[5].style.paddingLeft = '20px';
   
 blogs[0].style.top = '0';
 blogs[1].style.top = '0';
