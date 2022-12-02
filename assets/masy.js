@@ -11,3 +11,5 @@ var macy = Macy({
         400: 1
     }
 });
+
+console.log(macy)
