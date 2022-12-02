@@ -48,13 +48,13 @@ blogs.forEach((blg,idx) => {
   console.log(sumOdd);
   console.log(sumEven);
 
-blogs[2].style.top = String(758)+'px';
-blogs[3].style.top = String(558)+'px';
-blogs[4].style.top = String(758+558)+'px';
-blogs[5].style.top = String(558+858)+'px';
+  blogs[2].style.top = String(758)+'px';
+  blogs[3].style.top = String(558)+'px';
+  blogs[4].style.top = String(758+558)+'px';
+  blogs[5].style.top = String(558+858)+'px';
 
-setTimeout(() => {
-  blog_container.style.height = Math.max(sumOdd,sumEven);
-},1000)
+  setTimeout(() => {
+    blog_container.style.height = Math.max(sumOdd,sumEven);
+  },100)
   
 }
