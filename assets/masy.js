@@ -111,9 +111,10 @@ const loadPage = () => {
 
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
+
+  loadPage(); // 비동기 함수
   if(screen.width > 750) {
     console.log('이건 동기함수')
     macy();
   }
-  loadPage(); // 비동기 함수
 });
