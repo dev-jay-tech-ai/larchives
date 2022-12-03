@@ -112,6 +112,7 @@ load_more[0].addEventListener("click",(e) => {
     }), 0);
   
   if(screen.width > 750) {
+    console.log('running')
     setTimeout(macy(), 1000);
   } 
 
