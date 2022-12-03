@@ -107,7 +107,7 @@ load_more[0].addEventListener("click",(e) => {
     const new_articles = $(next_page).find('.articles-on-page');
     const new_url = new_articles.data('next-url');
     next_url = new_url;
-    setTimeout(macy(), 0);
+    setTimeout(macy(), 1000);
     articles_on_page.append(new_articles.html())
   })
   
