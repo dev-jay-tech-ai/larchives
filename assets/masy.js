@@ -110,6 +110,8 @@ load_more[0].addEventListener("click",(e) => {
   }) 
   
   if(screen.width > 750) {
+
+    console.log('this is working!')
     macy();
   }
 
