@@ -107,13 +107,12 @@ load_more[0].addEventListener("click",(e) => {
   }).done((next_page) => {
     const new_articles = $(next_page).find('.articles-on-page');
     const new_url = new_articles.data('next-url');
-    next_url = new_url;
-    
+    next_url = new_url;   
     articles_on_page.append(new_articles.html())
   }), 0);
   
   if(screen.width > 750) {
-    setTimeout(macy(), 100);
+    setTimeout(macy(), 1000);
   } 
 
 });
