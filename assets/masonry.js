@@ -105,9 +105,11 @@ const loadPage = () => {
       const new_articles = $(next_page).find('.articles-on-page');
       const new_url = new_articles.data('next-url');
       if(new_url === '') load_more.hide();
-      else next_url = new_url;   
-      articles_on_page.append(new_articles.html());
-      if(screen.width > 750) macy();
+      else {
+        next_url = new_url;   
+        articles_on_page.append(new_articles.html());
+        if(screen.width > 750) macy();
+      }  
     })
 }
 
