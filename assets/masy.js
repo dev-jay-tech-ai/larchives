@@ -106,7 +106,6 @@ const loadPage = () => {
       const new_url = new_articles.data('next-url');
       next_url = new_url;   
       articles_on_page.append(new_articles.html());
-      macy();
     })
 }
 
@@ -115,6 +114,6 @@ load_more[0].addEventListener("click",(e) => {
   loadPage();
   
   if(screen.width > 750) {
-
+    macy();
   }
 });
