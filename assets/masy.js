@@ -115,6 +115,6 @@ load_more[0].addEventListener("click",(e) => {
       console.log('running!')
       macy(); 
     } 
-  },1000)
+  },1200)
 
 });
