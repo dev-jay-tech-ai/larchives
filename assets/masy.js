@@ -112,7 +112,7 @@ load_more[0].addEventListener("click",(e) => {
       setTimeout(() => { 
         console.log('running!')
         macy(); 
-      }, 1000);
+      }, 2000);
     }
   }) 
 
