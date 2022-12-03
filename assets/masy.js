@@ -91,7 +91,7 @@ const macy = () => {
 };
 
 if(screen.width > 750) {
-  // macy();
+  macy();
 }
 
 const articles_on_page = $('.articles-on-page');
@@ -115,12 +115,6 @@ load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
   loadPage()
   if(screen.width > 750) {
-
+    macy();
   }
 });
-
-const org = $('.org');
-org[0].addEventListener("click",(e) => {
-  console.log('clicked!')
-  macy();
-})
