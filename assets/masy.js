@@ -108,11 +108,15 @@ load_more[0].addEventListener("click",(e) => {
     next_url = new_url;
     articles_on_page.append(new_articles.html());
   }).then(() => {
-    if(screen.width > 750) {
-        console.log('running!')
-        macy(); 
-    }  
+ 
 
   }) 
+  
+  setTimeout(() => {
+    if(screen.width > 750) {
+      console.log('running!')
+      macy(); 
+    } 
+  },1000)
 
 });
