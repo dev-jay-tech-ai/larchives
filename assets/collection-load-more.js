@@ -14,8 +14,9 @@ load_more[0].addEventListener("click",(e) => {
   }).done((next_page) => {
     const new_products = $(next_page).find('.products-on-page');
     const new_url = new_products.data('next-url');
-    next_url = new_url;
     console.log(next_url, new_url)
+    next_url = new_url;
+
     products_on_page.append(new_products.html());
   })  
 });
