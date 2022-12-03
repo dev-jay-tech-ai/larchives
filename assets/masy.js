@@ -23,7 +23,7 @@ const macy = () => {
   
   var masonryEl = document.querySelector(".blog-articles");
   
-  function launch() {
+  function () {
   	Macy.init({ 
   		container: ".blog-articles",
   		trueOrder: true,
@@ -40,8 +40,7 @@ const macy = () => {
     masonryItemEl.addEventListener("dragend", handleDragEnd, false);
   });
   	masonryEl.className += " is-active";
-  }
-  launch();
+  }();
   
   var dragSrcEl = null;
   function handleDragStart(e) { // Target (this) element is the source node
