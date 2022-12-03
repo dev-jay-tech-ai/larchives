@@ -90,7 +90,7 @@ const macy = () => {
 
 if(screen.width > 750) {
   console.log('starting')
-  macy();
+  // macy();
 }
 
 const articles_on_page = $('.articles-on-page');
@@ -109,12 +109,16 @@ const loadPage = () => {
     })
 }
 
+
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
-  setTimeout(loadPage(),1000);
-  setTimeout(macy(),2000);
-  
+  loadPage()
   if(screen.width > 750) {
 
   }
 });
+
+const org = $('.org');
+org[0].addEventListener("click",(e) => {
+  macy();
+})
