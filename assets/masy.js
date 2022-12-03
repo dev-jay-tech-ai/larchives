@@ -105,16 +105,16 @@ const loadPage = () => {
       const new_articles = $(next_page).find('.articles-on-page');
       const new_url = new_articles.data('next-url');
       next_url = new_url;   
-      articles_on_page.append(new_articles.html())
+      articles_on_page.append(new_articles.html());
+      macy();
     })
 }
 
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
-
-  loadPage(); // 비동기 함수는 언제나 동기 함수 뒤에 
+  loadPage();
+  
   if(screen.width > 750) {
-    console.log('이건 동기함수')
-    macy();
+
   }
 });
