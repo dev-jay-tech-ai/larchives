@@ -105,7 +105,7 @@ const loadPage = () => {
       const new_articles = $(next_page).find('.articles-on-page');
       const new_url = new_articles.data('next-url');
       console.log(next_url, new_url);
-      if(new_url === '') load_more.hide();
+      if(new_url === undefined) load_more.hide();
       else {
         next_url = new_url;   
         articles_on_page.append(new_articles.html());
