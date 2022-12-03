@@ -107,13 +107,10 @@ load_more[0].addEventListener("click",(e) => {
     const new_url = new_articles.data('next-url');
     next_url = new_url;
     articles_on_page.append(new_articles.html());
-  }) 
-  
-  if(screen.width > 750) {
-    setTimeout(() => {                
-      console.log('this is working!')
+    
+    if(screen.width > 750) {
       macy();
-    }, 1000);
-  }
+    }
+  }) 
 
 });
