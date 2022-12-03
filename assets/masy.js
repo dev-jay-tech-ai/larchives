@@ -109,7 +109,7 @@ load_more[0].addEventListener("click",(e) => {
     articles_on_page.append(new_articles.html());
     
     if(screen.width > 750) {
-      macy();
+      setTimeout(() => { macy(); }, 1000);
     }
   }) 
 
