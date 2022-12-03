@@ -96,10 +96,7 @@ if(screen.width > 750) {
 const articles_on_page = $('.articles-on-page');
 let next_url = articles_on_page.data('next-url');
 const load_more = $('.load-more');
-
-load_more[0].addEventListener("click",(e) => {
-  e.preventDefault(); 
-  setTimeout(
+const loadPage = () => {
     $.ajax({
       url: next_url,
       type: 'GET',
@@ -109,11 +106,10 @@ load_more[0].addEventListener("click",(e) => {
       const new_url = new_articles.data('next-url');
       next_url = new_url;   
       articles_on_page.append(new_articles.html())
-    }), 0);
-  
-  if(screen.width > 750) {
-    console.log('running')
-    setTimeout(macy(), 1000);
-  } 
+    })
+}
 
+load_more[0].addEventListener("click",(e) => {
+  e.preventDefault(); 
+  loadPage();
 });
