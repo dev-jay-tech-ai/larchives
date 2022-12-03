@@ -120,5 +120,6 @@ load_more[0].addEventListener("click",(e) => {
 
 const org = $('.org');
 org[0].addEventListener("click",(e) => {
+  console.log('clicked!')
   macy();
 })
