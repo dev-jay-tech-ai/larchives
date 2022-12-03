@@ -22,7 +22,8 @@ const macy = () => {
   }
   
   var masonryEl = document.querySelector(".blog-articles");
-  window.onload = function(){
+  
+  function launch() {
   	Macy.init({ 
   		container: ".blog-articles",
   		trueOrder: true,
@@ -40,6 +41,7 @@ const macy = () => {
   });
   	masonryEl.className += " is-active";
   }
+  launch();
   
   var dragSrcEl = null;
   function handleDragStart(e) { // Target (this) element is the source node
