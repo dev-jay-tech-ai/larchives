@@ -89,7 +89,6 @@ const macy = () => {
 };
 
 if(screen.width > 750) {
-  console.log('starting')
   // macy();
 }
 
