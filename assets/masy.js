@@ -111,9 +111,10 @@ const loadPage = () => {
 
 load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
-  loadPage();
+  setTimeout(loadPage(),1000);
+  setTimeout(macy(),2000);
   
   if(screen.width > 750) {
-    macy();
+
   }
 });
