@@ -21,6 +21,10 @@
     flex: 30%;
   }
 }
+.search-header {
+  display: flex;
+  justify-content: space-between;
+}
 
 .article_get div.card__badge {
   display: none;
