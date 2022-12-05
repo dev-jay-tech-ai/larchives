@@ -249,9 +249,22 @@
                   </li>
                 {%- endfor -%}
               </ul>
-              {%- if paginate.pages > 1 -%}
-                {% render 'pagination', paginate: paginate %}
-              {%- endif -%}
+              <div class="product-list-bottom">
+                {%- if paginate.pages > 1 -%}
+                <div>
+                  {%- unless paginate.previous -%}
+                    <button class="button button--secondary button-load-custom load-more">
+                     <span load-more-text>LOAD MORE</span>
+                     <span class="hide" loader>
+                       <img src="{{ 'loader.gif' | asset_url }}"/>
+                     </span>
+                    </button>
+                  {%- endunless -%}        
+                </div>
+                <div>{% render 'pagination', paginate: paginate, anchor: '' %}</div>
+                {%- endif -%}
+              </div>  
+            </div>
             </div>
           {% endpaginate %}
         {%- endif -%}
