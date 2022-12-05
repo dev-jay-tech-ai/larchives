@@ -26,6 +26,10 @@
   display: none;
 }
 
+.article_get .blog-caption-custom {
+  text-align: right;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
@@ -770,7 +774,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .blog-caption-custom {
-  text-align: left !important;
+  text-align: left;
   margin-bottom: 2rem;
 }
 
