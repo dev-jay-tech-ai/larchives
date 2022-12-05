@@ -10,6 +10,7 @@
 
 @media screen and (min-width: 750px) {
   .search_custom {
+    display: flex;
     column-gap: 4rem;
   }
 
@@ -20,10 +21,6 @@
   .search_custom > div:last-of-type {
     flex: 30%;
   }
-}
-.search-header {
-  display: flex;
-  justify-content: space-between;
 }
 
 .article_get div.card__badge {
