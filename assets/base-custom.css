@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 750px) {
   .search_custom {
-    colum-gap: 4rem;
+    column-gap: 4rem;
   }
 }
 
