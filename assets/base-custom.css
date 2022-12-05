@@ -22,7 +22,7 @@
   }
 }
 
-.article_get > div.card__badge {
+.article_get div.card__badge {
   display: none;
 }
 
