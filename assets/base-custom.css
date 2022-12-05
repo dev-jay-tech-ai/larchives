@@ -30,6 +30,10 @@
   text-align: right;
 }
 
+.article_get .blog-rectangle {
+  width: 2rem;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
