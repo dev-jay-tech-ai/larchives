@@ -135,6 +135,8 @@
       {%- endif -%}
     {%- endif -%}{%- endcomment -%}
   </div>
+  <div>
+  <div>
   {%- if search.performed -%}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' and search.filters != empty -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
@@ -178,8 +180,10 @@
             </div>
           </div>  
         </form>
-        <div>Pages & Blog</div>
       </facet-filters-form>
+      </div>
+      <div>Pages & Blog</div>
+      </div>
     {%- endif -%}
     <div{% if section.settings.filter_type == 'vertical' %} class="facets-vertical page-width search_custom"{% endif %}>
       {%- if search.filters != empty -%}{%- comment -%}
