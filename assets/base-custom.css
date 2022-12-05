@@ -71,7 +71,7 @@
   position: relative;
 }
 
-.wishlist > svg {
+.wishlist svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
