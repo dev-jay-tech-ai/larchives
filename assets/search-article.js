@@ -6,9 +6,9 @@ $.ajax({
     dataType: 'html',
   }).done((info) => {
     const content = $(info).find('.article-card > .card__content');
-    console.log(typeof Object.values(content)[0])
+    console.log(Object.values(content)[0])
     console.log(Object.values(content)[1])  
   
-    $('.article_get').append(content.html()); 
+    $('.article_get').append(Object.values(content)[1]); 
 
   });
