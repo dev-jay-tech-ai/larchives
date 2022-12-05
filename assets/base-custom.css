@@ -38,6 +38,10 @@
   font-size: 1.2rem;
 }
 
+.article_get .blog-title-custom {
+  font-size: 1.4rem !important;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
