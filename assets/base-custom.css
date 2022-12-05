@@ -42,6 +42,10 @@
   font-size: 1.4rem !important;
 }
 
+.article_get .card__information {
+  padding: 0;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
