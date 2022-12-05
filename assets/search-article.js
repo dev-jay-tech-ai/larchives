@@ -1,6 +1,6 @@
 const targetUrl = products_on_page.data('next-url').split('q=');
 const keyword = targetUrl[targetUrl.length-1];
-console.log(keyword)
+console.log(keyword);
 
 $.ajax({
     url: '/search?type=article&q='+ keyword,
