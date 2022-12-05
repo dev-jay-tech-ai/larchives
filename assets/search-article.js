@@ -8,9 +8,9 @@ $.ajax({
     const content = $(info).find('.article-card > .card__content');
     console.log(Object.values(content)[0])
     console.log(Object.values(content)[1])  
-    for(let key in content) {
-      console.log(key)
+
+    for (const [key, value] of Object.entries(content)) {
+      console.log(key, value)
       $('.article_get').append(content[key].html()); 
     }
-
   });
