@@ -9,6 +9,7 @@ $.ajax({
     console.log(Object.values(content)[0])
     console.log(Object.values(content)[1])  
     for(let key in content) {
+      console.log(key)
       $('.article_get').append(content[key].html()); 
     }
 
