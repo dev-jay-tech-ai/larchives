@@ -1,4 +1,3 @@
-data-next-url="/search?options%5Bprefix%5D=last&page=2&q=Dress"
 const products_on_page = $('.products-on-page');
 const url = products_on_page.data('next-url').split('q=');
 const keyword = url[url.length-1];
