@@ -1,9 +1,9 @@
 const targetUrl = products_on_page.data('next-url').split('q=');
-const keyword = targetUrl[targetUrl.length-1];
-console.log(keyword);
+const keyword = targetUrl[targetUrl.length-1].split('&');
+console.log(keyword[0]);
 
 $.ajax({
-    url: '/search?type=article&q='+ keyword,
+    url: '/search?type=article&q='+ keyword[0],
     type: 'GET',
     dataType: 'html',
   }).done((info) => {
