@@ -14,6 +14,10 @@
     column-gap: 4rem;
   }
 
+  .search_custom > div {
+    border-bottom: 1px solid rgba(4,11,9,0.1);  
+  }
+
   .search_custom > div:first-of-type {
     flex: auto;
   }
@@ -21,10 +25,6 @@
   .search_custom > div:last-of-type {
     flex: 30%;
   }
-}
-
-.search-header {
-  border-bottom: 1px solid rgba(4,11,9,0.5);  
 }
 
 .article_get div.card__badge {
