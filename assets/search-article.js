@@ -1,13 +1,13 @@
 const targetUrl = products_on_page.data('next-url').split('q=');
 const keyword = targetUrl[targetUrl.length-1];
 console.log(keyword)
-const content = $(info).find('.article-card > .card__content');
+
 $.ajax({
     url: '/search?type=article&q='+ keyword,
     type: 'GET',
     dataType: 'html',
   }).done((info) => {
-
+    const content = $(info).find('.article-card > .card__content');
     /* console.log(Object.values(content)[0]);
     console.log(Object.values(content)[1]); */
 
