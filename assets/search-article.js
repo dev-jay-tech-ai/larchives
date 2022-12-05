@@ -6,7 +6,10 @@ $.ajax({
     dataType: 'html',
   }).done((info) => {
     const content = $(info).find('.article-card > .card__content');
-    console.log(typeof content);
+
+    $.Each(content,(index, el) => {
+      console.log('element', el);
+    });
     
     $('.article_get').append(content.html()); 
   });
