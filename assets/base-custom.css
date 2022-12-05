@@ -46,6 +46,10 @@
   padding: 0 0 2rem 0;
 }
 
+.article_get .blog-caption-custom {
+  margin-bottom: 1rem;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
