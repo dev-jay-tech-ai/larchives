@@ -518,7 +518,8 @@
                                 {%- endif -%}
                               >
                               <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
-                              <input type="hidden" name="options[prefix]" value="product">
+                              
+                              <input type="hidden" name="type" value="product">
                               <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                                 {% render 'icon-search-search' %}
                               </button>
