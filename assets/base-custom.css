@@ -12,6 +12,14 @@
   .search_custom {
     column-gap: 4rem;
   }
+
+  .search_custom > div:first-of-type {
+    flex: auto;
+  }
+
+  .search_custom > div:last-of-type {
+    flex: 33.3%;
+  }
 }
 
 .login a > span {
