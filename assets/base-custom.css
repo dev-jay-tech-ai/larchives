@@ -34,6 +34,10 @@
   width: 2rem;
 }
 
+.article_get .caption-with-letter-spacing {
+  font-size: 1.2rem;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
