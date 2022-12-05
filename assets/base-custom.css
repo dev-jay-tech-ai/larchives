@@ -25,6 +25,7 @@
 
   .search_custom > div:last-of-type {
     flex: 30%;
+    text-align: left;
   }
 }
 
