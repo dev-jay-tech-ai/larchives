@@ -1,6 +1,5 @@
-const products_on_page = $('.products-on-page');
-const url = products_on_page.data('next-url').split('q=');
-const keyword = url[url.length-1];
+const targetUrl = products_on_page.data('next-url').split('q=');
+const keyword = targetUrl[targetUrl.length-1];
 console.log(keyword)
 const content = $(info).find('.article-card > .card__content');
 $.ajax({
