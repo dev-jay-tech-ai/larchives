@@ -464,7 +464,8 @@
                   </button>
                 </quantity-input>
               </div>
-              <div class='wishlist'>{% render 'icon-like-black' %}</div>
+              <div class='wishlist'>
+                <a href='/pages/wishlist'>{% render 'icon-like-black' %}</a></div>
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
