@@ -65,7 +65,7 @@
 <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
   <div class="template-search__header page-width center">
     {%- if search.performed -%}
-      <h1 class="h2">{{ 'templates.search.title' | t }}: {{ search.terms | escape }}</h1>
+      <h1 class="h2" sytle='margin-top: 6rem; margin-bottom: 17.2rem;'>{{ 'templates.search.title' | t }}: {{ search.terms | escape }}</h1>
     {%- else -%}
       <h1 class="h2">{{ 'general.search.search' | t }}</h1>
     {%- endif -%}
