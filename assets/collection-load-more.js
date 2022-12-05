@@ -17,5 +17,5 @@ load_more[0].addEventListener("click",(e) => {
   //   if(new_url === '') load_more.hide();
   //   else next_url = new_url;
   //   products_on_page.append(new_products.html());
-  // })  
+  })  
 });
