@@ -15,6 +15,7 @@
   }
 
   .search_custom > div {
+    width: 100%;
     border-bottom: 1px solid rgba(4,11,9,.1);  
   }
 
@@ -25,6 +26,10 @@
   .search_custom > div:last-of-type {
     flex: 30%;
   }
+}
+
+.search-header {
+  justify-content: space-between;
 }
 
 .article_get div.card__badge {
