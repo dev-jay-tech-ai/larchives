@@ -162,11 +162,11 @@
             <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if search.results_count -%}
-                  {{ 'templates.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+                  Showing 1–6 of {{ 'templates.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
                 {%- elsif search.products_count == search.all_products_count -%}
-                  {{ 'products.facets.product_count_simple' | t: count: search.products_count }}
+                  Showing 1–6 of {{ 'products.facets.product_count_simple' | t: count: search.products_count }}
                 {%- else -%}
-                  {{ 'products.facets.product_count' | t: product_count: search.products_count, count: search.all_products_count }}
+                  Showing 1–6 of {{ 'products.facets.product_count' | t: product_count: search.products_count, count: search.all_products_count }}
                 {%- endif -%}
               </span>
             </h2>
