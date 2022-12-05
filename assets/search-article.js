@@ -1,5 +1,5 @@
-const targetUrl = products_on_page.data('next-url').split('q=');
-const keyword = targetUrl[targetUrl.length-1].split('&');
+const targetUrl = products_on_page.data('next-url').match(/q=.*&/);
+const keyword = targetUrl.replace('q=','').replace('&','');
 console.log(keyword[0]);
 
 $.ajax({
