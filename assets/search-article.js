@@ -9,8 +9,8 @@ $.ajax({
     console.log(Object.values(content)[0])
     console.log(Object.values(content)[1])  
 
-    for (const [key, value] of Object.entries(content)) {
-      console.log(key, value)
-      $('.article_get').append(content[key].html()); 
+    for (const value of Object.values(content)) {
+      console.log(value);
+      $('.article_get').append(value.html()); 
     }
   });
