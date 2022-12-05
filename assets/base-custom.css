@@ -8,6 +8,12 @@
   border-bottom: 1px solid #d0cdd8;
 }
 
+@media screen and (min-width: 750px) {
+  .search_custom {
+    colum-gap: 4rem;
+  }
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
