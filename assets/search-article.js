@@ -1,9 +1,7 @@
-const targetUrl = products_on_page.data('next-url').match(/q=.*&/);
-const keyword = targetUrl.replace('q=','').replace('&','');
-console.log(keyword[0]);
+;const keyword = products_on_page.data('value');
 
 $.ajax({
-    url: '/search?type=article&q='+ keyword[0],
+    url: '/search?type=article&q='+ keyword,
     type: 'GET',
     dataType: 'html',
   }).done((info) => {
