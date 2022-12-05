@@ -12,10 +12,10 @@ load_more[0].addEventListener("click",(e) => {
     type: 'GET',
     dataType: 'html',
   }).done((next_page) => {
-    const new_products = $(next_page).find('.products-on-page');
-    const new_url = new_products.data('next-url');
-    if(new_url === '') load_more.hide();
-    else next_url = new_url;
-    products_on_page.append(new_products.html());
-  })  
+  //   const new_products = $(next_page).find('.products-on-page');
+  //   const new_url = new_products.data('next-url');
+  //   if(new_url === '') load_more.hide();
+  //   else next_url = new_url;
+  //   products_on_page.append(new_products.html());
+  // })  
 });
