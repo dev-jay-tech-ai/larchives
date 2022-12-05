@@ -275,6 +275,18 @@
 
         <div class=''>
           <div><p>Pages & Blog</p></div>
+          <form action="/search" method="get" role="search">
+            <input type="hidden" name="type" value="article" />
+            <div class="input-group--underline">
+              <input class="input-group__field" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
+              <div class="input-group__btn">
+                <button type="submit" class="btn btn--clear btn--square">
+                  {% include 'icon-search' %}
+                  <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+                </button>
+              </div>
+            </div>
+          </form>
           <div>
             <div>article 1</div>
             <div>article 2</div>
