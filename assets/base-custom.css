@@ -63,6 +63,12 @@
   margin-bottom: 1rem;
 }
 
+.wishlist {
+  border: 1px solid black;
+  border-radius: 50%;
+  
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
