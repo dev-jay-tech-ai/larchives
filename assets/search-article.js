@@ -11,6 +11,6 @@ $.ajax({
 
     for (const value of Object.values(content)) {
       console.log(value);
-      $('.article_get').append(value.html()); 
+      $('.article_get').append(Object.values(content)[1].html()); 
     }
   });
