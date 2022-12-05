@@ -276,7 +276,7 @@
         <div class=''>
           <div><p>Pages & Blog</p></div>
           
-          <form action="/search" method="post" role="search">
+          <form action="/search" method="get" role="search">
             <input type="hidden" name="type" value="article" />
             <div class="input-group--underline">
               <input class="input-group__field" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
