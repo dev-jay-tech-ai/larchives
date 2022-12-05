@@ -134,8 +134,8 @@
       {%- endif -%}
     {%- endif -%}{%- endcomment -%}
   </div>
-  {%- if search.performed -%}{%- comment -%}{%- endcomment -%}
-    {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' and search.filters != empty -%}
+  {%- if search.performed -%}
+    {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' and search.filters != empty -%}{%- comment -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
         <form class="facets-vertical-form" id="FacetSortForm">
           <div class="facet-filters sorting caption">
@@ -177,15 +177,15 @@
             </div>
           </div>  
         </form>
-      </facet-filters-form>
+      </facet-filters-form>{%- endcomment -%}
     {%- endif -%}
     <div{% if section.settings.filter_type == 'vertical' %} class="facets-vertical page-width"{% endif %}>
-      {%- if search.filters != empty -%}{%- comment -%}
+      {%- if search.filters != empty -%}
         {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
           <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="main-search-filters" data-id="{{ section.id }}">
             {% render 'facets', results: search, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
           </aside>
-        {%- endif -%}{%- endcomment -%}
+        {%- endif -%}
       {%- endif -%}
       <div class="product-grid-container" id="ProductGridContainer">
         {%- if search.results.size == 0 and search.filters != empty -%}
