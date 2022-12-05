@@ -60,6 +60,7 @@
     }
   }
 {%- endstyle -%}
+{% render 'breadcrumb' %}
 
 <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
   <div class="template-search__header page-width center">
