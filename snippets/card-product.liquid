@@ -32,10 +32,10 @@
     endif
   -%}
   <a
-    href="{{ card_product.url }}"
-    id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
-    class="full-unstyled-link"
-    aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+  href="{{ card_product.url }}"
+  id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
+  class="full-unstyled-link"
+  aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
   >
   <div class="card-wrapper product-card-wrapper">
     <div
@@ -120,7 +120,7 @@
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
               >
-              OUT OF STOCK{% comment %}{{- 'products.product.sold_out' | t -}}{% endcomment %} 
+              OUR OF STOCK{% comment %}{{- 'products.product.sold_out' | t -}}{% endcomment %} 
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
               <span
@@ -131,12 +131,7 @@
               </span>
             {%- endif -%}
           </div>
-          <div class='card_widget'>
-            <div><button data-swaction="addToWishlist" data-product-id="{{product.id | json}}" class='wishlist'>{% render 'icon-heart' %}</button></div>
-            <div><button type="submit" name="add" class="wishlist">{% render 'icon-cart-light' %}</button></div>
-            <div><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></div>
-          </div>
-        </div>  
+        </div>
       </div>
       <div class="card__content">
         <div class="card__information">
@@ -315,12 +310,6 @@
   </div>
 </a>  
 {%- else -%}
-  <a
-    href="{{ card_product.url }}"
-    id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
-    class="full-unstyled-link"
-    aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-  >
   <div class="product-card-wrapper card-wrapper">
     <div
       class="
@@ -364,7 +353,6 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
-</a>
 {%- endif -%}
