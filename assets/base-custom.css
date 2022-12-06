@@ -96,6 +96,9 @@
   margin: 0 .7rem;
 }
 
+.card_widget .wishlist {
+  border: 0;  
+}
 
 .login a > span {
   font-family: 'Termina-demi';
