@@ -132,13 +132,6 @@
             {%- endif -%}
           </div>
         </div>
-  
-        <ul class='card_widget'>
-          <li><button data-swaction="addToWishlist" data-product-id="{{product.id | json}}" class='wishlist'>{% render 'icon-heart' %}</button></li>
-          <li><a href='/cart'>{% render 'icon-cart-light' %}</a></li>
-          <li><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></li>
-        </ul>
-
       </div>
       <div class="card__content">
         <div class="card__information">
@@ -367,6 +360,14 @@
         </div>
       </div>
     </div>
+
+      
+    <div class='card_widget'>
+      <li><button data-swaction="addToWishlist" data-product-id="{{product.id | json}}" class='wishlist'>{% render 'icon-heart' %}</button></div>
+      <li><a href='/cart'>{% render 'icon-cart-light' %}</a></div>
+      <li><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></div>
+    </div>
+    
   </div>
 </a>
 {%- endif -%}
