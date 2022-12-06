@@ -76,6 +76,10 @@
   vertical-align: middle;
 }
 
+.wishlist span.swym-tooltip {
+  display: none;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
