@@ -138,8 +138,8 @@
             <div><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></div>
           </div>
           <script>
-              const widget = document.querySelector('.card_widget >  button.wishlist');
-              widget.outerHTML = widget.innerHTML;
+              const targetWidget = document.querySelector('.card_widget > div:first-of-type');
+              targetWidget.outerHTML = targetWidget.innerHTML;
           </script>
         </div>
       </div>
