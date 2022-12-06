@@ -80,12 +80,9 @@
   display: none;
 }
 
-/** swym */
-
-.swym-heading-1 {
-  font-family: 'Termina-demi';
+.widget {
+  display: flex;
 }
-
 
 
 .login a > span {
