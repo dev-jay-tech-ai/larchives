@@ -466,12 +466,12 @@
                 </quantity-input>
               </div>
               <div class='wishlist'>
-                <a href='/pages/wishlist'>{% render 'icon-heart' %}</a>
+                <button data-swaction="addToWishlist" data-product-id="{{product.id | json}}">{% render 'icon-heart' %}</button>
               </div>
-              <button data-swaction="addToWishlist" data-product-id="{{product.id | json}}"></button>
+              
             </div>
 
-            
+            w
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
