@@ -42,8 +42,10 @@ if (!customElements.get('product-form')) {
             const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
             if (!soldOutMessage) return;
             this.submitButton.setAttribute('aria-disabled', true);
-            this.submitButton.querySelector('span').classList.add('hidden');
-            soldOutMessage.classList.remove('hidden');
+            if(this.submitButton.querySelector('span')) {
+              this.submitButton.querySelector('span').classList.add('hidden');
+              soldOutMessage.classList.remove('hidden');
+            }
             this.error = true;
             return;
           } else if (!this.cart) {
