@@ -80,7 +80,7 @@
   display: none;
 }
 
-.widget {
+.card_widget {
   display: flex;
   position: absolute;
   top: 50%;
@@ -88,7 +88,7 @@
   transform: translate(-50%,-50%);
 }
 
-.widget > div {
+.card_widget > div {
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
@@ -96,9 +96,6 @@
   margin: 0 .7rem;
 }
 
-.widget a {
-  display: inline-block;
-}
 
 .login a > span {
   font-family: 'Termina-demi';
