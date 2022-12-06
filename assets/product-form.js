@@ -38,7 +38,7 @@ if (!customElements.get('product-form')) {
         .then((response) => {
           if (response.status) {
             this.handleErrorMessage(response.description);
-
+            console.log(response)
             const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
             if (!soldOutMessage) return;
             this.submitButton.setAttribute('aria-disabled', true);
