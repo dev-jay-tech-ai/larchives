@@ -136,39 +136,6 @@
           <div class='card_widget'>
             <div>
               <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button>
-  
-              <product-form class="product-form">
-              <div class="product-form__error-message-wrapper" role="alert" hidden>
-                <span class="product-form__error-message"></span>
-              </div>
-              {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                <input
-                  type="hidden"
-                  name="id"
-                  value="{{ card_product.selected_or_first_available_variant.id }}"
-                  disabled
-                >
-                <div class="product-form__buttons">
-                  <button
-                    type="submit"
-                    name="add"
-                    class="product-form__submit button button--full-width button_custom"
-                    {% if product.selected_or_first_available_variant.available == false %}
-                      disabled
-                    {% endif %}
-                  >
-                    <span>
-                    {%- if card_product.selected_or_first_available_variant.available -%}
-                      {{ 'products.product.add_to_cart' | t }}
-                    {%- else -%}
-                      {{ 'products.product.sold_out' | t }}
-                    {%- endif -%}
-                    </span>
-                    </div>
-                  </button>
-                </div>
-              {%- endform -%}
-            </product-form>
             </div>
             <div>
               <div class="quick-add no-js-hidden">
