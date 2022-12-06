@@ -96,6 +96,11 @@
   margin: 0 .7rem;
 }
 
+.widget a {
+  width: 100%;
+  height: 100%;
+}
+
 .login a > span {
   font-family: 'Termina-demi';
   font-size: 1.4rem;
