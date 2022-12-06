@@ -72,7 +72,7 @@
   cursor: pointer;
 }
 
-.wishlist,.card_widget svg {
+.wishlist svg,.card_widget svg {
   vertical-align: middle;
 }
 
