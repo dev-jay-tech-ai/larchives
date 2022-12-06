@@ -154,17 +154,12 @@
                         name="add"
                         class="quick-add__submit wishlist"
 
-                      >{% render 'icon-cart-light' %}
-                      <span>
+                      >
                       {%- if card_product.selected_or_first_available_variant.available -%}
-                        {{ 'products.product.add_to_cart' | t }}
+                        {% render 'icon-cart-light' %}
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}
-                      </span>
-                      <span class="sold-out-message hidden">
-                        {{ 'products.product.sold_out' | t }}
-                      </span>
                       </button>
                     {%- endform -%}
                   </product-form>
