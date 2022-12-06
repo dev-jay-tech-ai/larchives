@@ -947,7 +947,6 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 
-<script>
-    const target_widget = document.querySelector('.card_widget > div:first-of-type');
-    target_widget.outerHTML = target_widget.innerHTML;
-</script>
+
+const target_widget = document.querySelector('.card_widget > div:first-of-type');
+target_widget.outerHTML = target_widget.innerHTML;
