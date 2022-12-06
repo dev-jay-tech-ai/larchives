@@ -136,28 +136,36 @@
           <div class='card_widget'>
             <div><button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button></div>
             <div>
-            {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-              <input
-                type="hidden"
-                name="id"
-                value="{{ product.selected_or_first_available_variant.id }}"
-                disabled
-              >
-              <div class="product-form__buttons">
+            {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
+            {%- if card_product.variants.size == 1 -%}
+              <product-form>
+              {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                <input
+                  type="hidden"
+                  name="id"
+                  value="{{ card_product.selected_or_first_available_variant.id }}"
+                  disabled
+                >
                 <button
+                  id="{{ product_form_id }}-submit"
                   type="submit"
                   name="add"
-                  class="product-form__submit wishlist"
-                  {% if product.selected_or_first_available_variant.available == false %}
+                  class="quick-add__submit wishlist"
+                  aria-haspopup="dialog"
+                  aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                  aria-live="polite"
+                  data-sold-out-message="true"
+                  {% if card_product.selected_or_first_available_variant.available == false %}
                     disabled
                   {% endif %}
-                >
+                  >
                   {% render 'icon-cart-light' %}</button>
-              </div>
-            {%- endform -%}
+                  {%- endform -%}
+                  </product-form>
+                {%- endif -%}}  
+                </div>
+              <div><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></div>
             </div>
-            <div><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></div>
-          </div>
   
         </div>
       </div>
