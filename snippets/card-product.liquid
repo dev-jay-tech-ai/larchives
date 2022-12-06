@@ -136,7 +136,6 @@
           <div class='card_widget'>
             <div><button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button></div>
             <div>
-
           <div class="quick-add no-js-hidden">
             {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
             {%- if card_product.variants.size == 1 -%}
@@ -166,9 +165,9 @@
               </product-form>
               {%- endif -%} 
                 </div>
+              </div>
               <div><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></div>
             </div>
-  
         </div>
       </div>
       <div class="card__content">
