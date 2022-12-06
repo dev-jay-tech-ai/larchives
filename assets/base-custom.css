@@ -88,6 +88,12 @@
   transform: translate(-50%,-50%);
 }
 
+.widget > div {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
 
 .login a > span {
   font-family: 'Termina-demi';
