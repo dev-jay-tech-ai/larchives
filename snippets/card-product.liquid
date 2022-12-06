@@ -307,10 +307,10 @@
         </div>
       </div>
     </div>
-    <div class='widget'>
-      <div>{% render 'icon-heat' %}</div>
-      <div>{% render 'icon-cart' %}</div>
-      <div>{% render 'icon-chevron-right' %}</div>
+    <div class='card_widget'>
+      <div><button data-swaction="addToWishlist" data-product-id="{{product.id | json}}" class='wishlist'>{% render 'icon-heart' %}</button></div>
+      <div><a href='/cart'>{% render 'icon-cart-light' %}</a></div>
+      <div><a href='{{ card_product.url }}'>{% render 'icon-chevron-right' %}</a></div>
     </div>
   </div>
 </a>  
