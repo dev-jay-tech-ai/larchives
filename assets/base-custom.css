@@ -97,8 +97,7 @@
 }
 
 .widget a {
-  width: 4.8rem;
-  height: 4.8rem;
+  display: inline-block;
 }
 
 .login a > span {
