@@ -19,6 +19,8 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
