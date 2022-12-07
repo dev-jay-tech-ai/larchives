@@ -1142,6 +1142,10 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 0 10px 20px 0 rgb(4 11 9 / 10%);
 }
 
+.product-card-wrapper:hover .card_widget {
+  display: flex;
+}
+
 .grid--3-col-desktop .card-information {
   height: 9.2rem;
 }
