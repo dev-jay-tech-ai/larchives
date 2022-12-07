@@ -700,7 +700,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .button-load-custom {
-  width: 19.7rem;
   height: 5rem;
   display: flex;
   flex-direction: row;
