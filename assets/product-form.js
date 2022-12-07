@@ -38,8 +38,10 @@ if (!customElements.get('product-form')) {
           if (response.status) {
             this.handleErrorMessage(response.description);
             console.log(response)
-            const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
-            if (!soldOutMessage) return;
+            if(this.submitButton.querySelector('.sold-out-message')) {
+              const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
+              if (!soldOutMessage) return;
+            }
             this.submitButton.setAttribute('aria-disabled', true);
             if(this.submitButton.querySelector('span')) {
               this.submitButton.querySelector('span').classList.add('hidden');
