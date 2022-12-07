@@ -136,16 +136,6 @@
           </div>
   
           <div class='card_widget'>
-            <script>
-              const currentProductId = {{ card_product.id | json }};
-              const productArray = JSON.parse(localStorage.getItem('swym-products'));
-  
-              console.log(currentProductId, productArray);
-              if(productArray.includes(currentProductId)){
-                // Code to create or display the SVG in question
-              
-              }
-            </script>
             <div>
              <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button>
             </div>
@@ -451,4 +441,13 @@
     SwymViewProducts[{{ card_product.handle | json }}] = SwymViewProducts[{{ card_product.id | json }}] = product_data;
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
+
+  const currentProductId = {{ card_product.id | json }};
+  const productArray = JSON.parse(localStorage.getItem('swym-products'));
+
+  console.log(currentProductId, productArray);
+  if(productArray.includes(currentProductId)){
+    // Code to create or display the SVG in question
+  
+  }
 </script>
