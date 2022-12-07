@@ -443,7 +443,9 @@
     SwymViewProducts[{{ card_product.handle | json }}] = SwymViewProducts[{{ card_product.id | json }}] = product_data;
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o; 
   })(); 
-
+  
+  let productId = {{ card_product.id | json }};
+  const productObj = JSON.parse(localStorage.getItem('swym-products'));
   const productArr = productObj.all;
   for(let i=0; i< productArr.length; i++) {
     if(productArr[i].empi === productId) {
