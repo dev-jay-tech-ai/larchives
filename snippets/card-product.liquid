@@ -143,18 +143,18 @@
                 if(!window[k]) window[k] = {};
               });
               (function(et){
-                  var collections = {{product.type | json}};
-                  var o={}, empi={{ product.id | json }},
-                  piu = {{ product.featured_image | img_url: '620x620' | json }};
-                  {% assign currentVariant = product.variants[0] %}
-                  {% for variant in product.variants %}
+                  var collections = {{ card_product.type | json }};
+                  var o={}, empi={{ card_product.id | json }},
+                  piu = {{ card_product.featured_image | img_url: '620x620' | json }};
+                  {% assign currentVariant = card_product.variants[0] %}
+                  {% for variant in card_product.variants %}
                   {% if variant.selected %}
                   {% assign currentVariant = variant %}
                   {% endif %}
-                  SwymProductVariants[{{variant.id|json}}] = {
-                    empi:empi,epi:{{variant.id|json}},
-                    du:"{{ shop.url }}{{ product.url }}",
-                    dt:{{ product.title | json }},
+                  SwymProductVariants[{{ variant.id|json }}] = {
+                    empi:empi,epi:{{ variant.id|json }},
+                    du:"{{ shop.url }}{{ card_product.url }}",
+                    dt:{{ card_product.title | json }},
                     ct: collections,
                     iu: {% if variant.image %} {{ variant | img_url: '620x620' | json }} {% else %} piu {% endif %},
                     stk: {{variant.inventory_quantity}},
@@ -166,13 +166,13 @@
                   {% endfor %}
                   var product_data = {
                     empi:empi, epi:{{ currentVariant.id }},
-                    dt	:{{ product.title | json }},du:"{{ shop.url }}{{ product.url }}",
+                    dt	:{{ card_product.title | json }},du:"{{ shop.url }}{{ card_product.url }}",
                     ct 	:collections,pr:{{ currentVariant.price }}/100,stk:{{ currentVariant.inventory_quantity }},
                     iu	:{% if currentVariant.image %} {{ currentVariant | img_url: '620x620' | json }} {% else %} piu {% endif %},variants:[{ {{currentVariant.title | json}} : {{currentVariant.id | json}} }]
                     {% if currentVariant.compare_at_price %} ,op:{{currentVariant.compare_at_price}}/100 {% endif %}
                   };
-                  SwymViewProducts[{{product.handle | json}}] = SwymViewProducts[{{product.id | json}}] = product_data;
-                  SwymWatchProducts[{{product.handle | json}}] = SwymWatchProducts[{{product.id | json}}] = o;
+                  SwymViewProducts[{{ card_product.handle | json }}] = SwymViewProducts[{{ card_product.id | json }}] = product_data;
+                  SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
                 })();
               
               </script>
