@@ -443,7 +443,7 @@
   })(); 
 
   let _pc = document.querySelectorAll('.card_widget > button');
-  _pc.forEach((p) => {
+  Array.from(_pc).forEach((p) => {
     console.log(p.classList);
   })
   
