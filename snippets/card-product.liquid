@@ -140,34 +140,34 @@
               <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button>
             </div>
             <div>
-              <div class="quick-add no-js-hidden">
-                {%- if card_product.variants.size == 1 -%}
-                  <product-form>
-                    {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                      <input
-                        type="hidden"
-                        name="id"
-                        value="{{ card_product.selected_or_first_available_variant.id }}"
-                      >
-                      <button
-                        type="submit"
-                        name="add"
-                        class="product-form__submit quick-add__submit wishlist"
+ 
+            {%- if card_product.variants.size == 1 -%}
+              <product-form>
+                {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ card_product.selected_or_first_available_variant.id }}"
+                  >
+                  <button
+                    type="submit"
+                    name="add"
+                    class="product-form__submit quick-add__submit wishlist"
 
-                      >
-                      {%- if card_product.selected_or_first_available_variant.available -%}
-                        {% render 'icon-cart-light' %}
-                      {%- else -%}
-                        {{ 'products.product.sold_out' | t }}
-                      {%- endif -%}
-                      </button>
-                    {%- endform -%}
-                  </product-form>
-                  {%- endif -%} 
-                </div>
-              </div>
-              <div><a href='{{ card_product.url }}'>{% render 'icon-arrow-right' %}</a></div>
+                  >
+                  {%- if card_product.selected_or_first_available_variant.available -%}
+                    {% render 'icon-cart-light' %}
+                  {%- else -%}
+                    {{ 'products.product.sold_out' | t }}
+                  {%- endif -%}
+                  </button>
+                {%- endform -%}
+              </product-form>
+              {%- endif -%} 
             </div>
+          </div>
+          <div><a href='{{ card_product.url }}'>{% render 'icon-arrow-right' %}</a></div>
+
         </div>
       </div>
       <div class="card__content">
