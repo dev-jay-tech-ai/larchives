@@ -442,7 +442,7 @@
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
 
-  const productId = {{ card_product.id | json }};
+  let productId = {{ card_product.id | json }};
   const productObj = JSON.parse(localStorage.getItem('swym-products'));
   let buttonSvg = $('.card_widget > buttton.wishlist > svg');
   
