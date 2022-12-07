@@ -451,7 +451,7 @@
     if(productArr[i].empi === productId) {
       let buttons = document.querySelectorAll('.swym-added');
       console.log(buttons[0].getAttribute('data-product-id'))
-      buttons.forEach((button) => {
+      Array.from(buttons).forEach((button) => {
         console.log(button.getAttribute('data-product-id'))
 
         if (button.getAttribute('data-product-id') === productId) {
