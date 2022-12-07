@@ -443,4 +443,10 @@
     SwymViewProducts[{{ card_product.handle | json }}] = SwymViewProducts[{{ card_product.id | json }}] = product_data;
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
+
+  window._swat.fetch( function(r) {
+    console.log(r);
+    document.getElementById('demo').innerHTML = r;
+  });
+      
 </script>
