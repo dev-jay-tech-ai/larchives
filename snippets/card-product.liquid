@@ -453,7 +453,7 @@
       buttons.forEach((button) => {
         if (button.getAttribute('data-product-id') === String(productId)) {
           console.log(button.childNodes);
-          button.replaceChildren('*');
+          button.replaceChildren('{render 'icon-close}');
         }
       })
     }
