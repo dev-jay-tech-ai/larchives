@@ -666,14 +666,14 @@
       </a>
     </facet-remove>
   </div>
-  {% comment %} Sort, product count and filter pills at the end when filter is type of Drawer for the correct tabbing order {% endcomment %}
+  {% comment %} Sort, product count and filter pills at the end when filter is type of Drawer for the correct tabbing order 
   {%- if enable_sorting and filter_type == 'drawer' -%}
     <facet-filters-form class="facets small-hide">
       <form id="FacetSortDrawerForm" class="facets__form">
         <div class="facet-filters sorting caption small-hide">
           <div class="facet-filters__field">
             <h2 class="facet-filters__label text-body">
-              <label for="SortBy">{{ 'products.facets.sort_by_label' | t }} 이게 뭐?</label>
+              <label for="SortBy">{{ 'products.facets.sort_by_label' | t }} </label>
             </h2>
             <div class="select">
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
@@ -701,7 +701,8 @@
         {%- endif -%}
       </form>
     </facet-filters-form>
-  {%- endif -%}
+  {%- endif -%}{% endcomment %}
+  
     <div>
       <facet-filters-form class="facets facets-vertical-sort page-width no-js-hidden">
         <form class="facets-vertical-form" id="FacetSortForm">
