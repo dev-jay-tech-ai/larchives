@@ -1146,6 +1146,10 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
 }
 
+.product-card-wrapper:hover .card__media {
+  opacity: .5;
+}
+
 .grid--3-col-desktop .card-information {
   height: 9.2rem;
 }
