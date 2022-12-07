@@ -451,7 +451,7 @@
     if(productArr[i].empi === productId) {
       let buttons = document.querySelectorAll('.wishlist');
       buttons.forEach((button) => {
-        console.log(button.getAttribute('data-product-id'), productId)
+        console.log(typeof button.getAttribute('data-product-id'), typeof productId)
         if (button.getAttribute('data-product-id') === productId) {
           console.log('y')
         }
