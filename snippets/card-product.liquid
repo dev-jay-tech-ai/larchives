@@ -444,11 +444,13 @@
 
   const productId = {{ card_product.id | json }};
   const productObj = JSON.parse(localStorage.getItem('swym-products'));
+  let addButton = $('.card_widget > buttton > svg');
   
-  console.log(productId, productObj.all)
   const productArr = productObj.all;
   for(let i=0; i< productArr.length; i++) {
-    console.log(productArr[i].empi)
+    if(productArr[i].empi === productId) {
+      addButton
+    }
   }
 
 </script>
