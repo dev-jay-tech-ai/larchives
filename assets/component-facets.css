@@ -594,8 +594,6 @@ a.active-facets__button.focused .active-facets__button-inner,
 .mobile-facets__wrapper {
   margin-left: 0;
   display: flex;
-  font-family: Termina-demi;
-  text-transform: uppercase;
   height: 4rem;
   line-height: 3;
 }
@@ -695,6 +693,8 @@ a.active-facets__button.focused .active-facets__button-inner,
 }
 
 .mobile-facets__open:hover .mobile-facets__open-label {
+  font-family: Termina-demi;
+  text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
