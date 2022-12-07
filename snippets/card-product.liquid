@@ -406,8 +406,9 @@
 
 <script>
  ['SwymViewProducts', 'SwymWatchProducts', 'SwymProductVariants'].forEach(function(k){
-  if(!window[k]) window[k] = {};
-});
+    if(!window[k]) window[k] = {};
+  });
+  
 (function(et){
     var collections = {{ card_product.type | json }};
     var o={}, empi={{ card_product.id | json }},
@@ -430,6 +431,7 @@
     };
     SwymWatchProducts[{{variant.id | json}}] = o[{{variant.id | json}}] = {"id": {{variant.id | json}}, "available": {{variant.available | json}},"inventory_management": {{variant.inventory_management | json}},"inventory_quantity": {{variant.inventory_quantity | json}},"title": {{variant.title | json}}, "inventory_policy": {{variant.inventory_policy | json}}};
     {% endfor %}
+    
     var product_data = {
       empi:empi, epi:{{ currentVariant.id }},
       dt	:{{ card_product.title | json }},du:"{{ shop.url }}{{ card_product.url }}",
