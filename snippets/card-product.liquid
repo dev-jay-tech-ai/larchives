@@ -444,12 +444,12 @@
 
   const productId = {{ card_product.id | json }};
   const productObj = JSON.parse(localStorage.getItem('swym-products'));
-  let addButton = $('.card_widget > buttton > svg');
+  let buttonSvg = $('.card_widget > buttton > svg');
   
   const productArr = productObj.all;
   for(let i=0; i< productArr.length; i++) {
     if(productArr[i].empi === productId) {
-      addButton
+      buttonSvg = {% render 'icon-close' %};
     }
   }
 
