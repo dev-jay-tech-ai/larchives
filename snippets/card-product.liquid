@@ -446,8 +446,9 @@
   const productObj = JSON.parse(localStorage.getItem('swym-products'));
   
   console.log(productId, productObj.all)
-  for(let i=0; i< productObj.all; i++) {
-    console.log(productObj.all[0])
+  const productArr = productObj.all;
+  for(let i=0; i< productArr.length; i++) {
+    console.log(productArr[0])
   }
 
 </script>
