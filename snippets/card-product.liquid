@@ -442,12 +442,10 @@
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
 
-  const currentProductId = {{ card_product.id | json }};
-  const productArray = JSON.parse(localStorage.getItem('swym-products'));
-
-  console.log(currentProductId, productArray);
-  if(productArray.includes(currentProductId)){
-    // Code to create or display the SVG in question
-  
+  const productId = {{ card_product.id | json }};
+  const productObj = JSON.parse(localStorage.getItem('swym-products'));
+  for(const key in productObj) {
+    console.log(productObj.key(0));
   }
+
 </script>
