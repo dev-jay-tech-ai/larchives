@@ -450,8 +450,7 @@
   for(let i=0; i< productArr.length; i++) {
     if(productArr[i].empi === productId) {
       let buttons = document.querySelectorAll('.wishlist');
-      console.log(buttons)
-      Array.from(buttons).forEach((button) => {
+      buttons.forEach((button) => {
         console.log(button.getAttribute('data-product-id'))
 
         if (button.getAttribute('data-product-id') === productId) {
