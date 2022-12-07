@@ -442,8 +442,8 @@
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
 
-  let card_widget = $('.card_widget > button');
-  if(card_widget.hasClass('swym-added')) {
+
+  if($('.card_widget > button').hasClass('swym-added')) {
     console.log('y')
   }
 
