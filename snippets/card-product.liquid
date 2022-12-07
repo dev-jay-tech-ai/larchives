@@ -137,7 +137,7 @@
   
           <div class='card_widget'>
             <div>
-              {%- if product -%}
+
               <script class="swym-product-view-snippet">
               ['SwymViewProducts', 'SwymWatchProducts', 'SwymProductVariants'].forEach(function(k){
                 if(!window[k]) window[k] = {};
@@ -176,7 +176,7 @@
                 })();
               
               </script>
-              {%- endif -%}
+  
               <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button>
 
             </div>
