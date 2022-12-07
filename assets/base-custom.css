@@ -81,6 +81,10 @@
   display: none;
 }
 
+.wishlist.swym-added > svg {
+  fill: #000;
+}
+
 .card_widget {
   display: flex;
   position: absolute;
