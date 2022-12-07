@@ -452,7 +452,7 @@
       let buttons = document.querySelectorAll('.wishlist');
       buttons.forEach((button) => {
         console.log(typeof button.getAttribute('data-product-id'), typeof productId)
-        if (button.getAttribute('data-product-id') === productId) {
+        if (button.getAttribute('data-product-id') === String(productId)) {
           console.log('y')
         }
       })
