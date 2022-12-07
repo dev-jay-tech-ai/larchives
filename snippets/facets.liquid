@@ -390,11 +390,9 @@
               </svg>
             </div>
           </div>
-        {%- endif -%}
-      
-        <button class='button button--secondary button-load-custom load-more' style='margin: 0 auto;'> CLEAR ALL FILTERS </button>
-                                  
+        {%- endif -%}                            
       </form>
+      <button class='button button--secondary button-load-custom load-more' style='margin: 0 auto;'> CLEAR ALL FILTERS </button>
     </facet-filters-form>
     {% comment %} Sorting for vertical filter are grouped with filter when no JS{% endcomment %}
     {%- if enable_sorting and filter_type == 'vertical' -%}
