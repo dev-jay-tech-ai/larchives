@@ -444,7 +444,7 @@
 
   const productId = {{ card_product.id | json }};
   const productObj = JSON.parse(localStorage.getItem('swym-products'));
-  let buttonSvg = $('.card_widget > buttton > svg');
+  let buttonSvg = $('.card_widget > buttton.wishlist > svg');
   
   const productArr = productObj.all;
   for(let i=0; i< productArr.length; i++) {
