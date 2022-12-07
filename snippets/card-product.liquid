@@ -442,10 +442,10 @@
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
 
-  const productId = {{ card_product.id | json }};
-  const productObj = JSON.parse(localStorage.getItem('swym-products'));
-  for(const key in Object.keys(productObj)) {
-    console.log(productObj.getItem(key));
+  let card_widget = $('.card_widget > button');
+  
+  if(card_widget.hasClass('swym-added')) {
+    console.log('y')
   }
 
 </script>
