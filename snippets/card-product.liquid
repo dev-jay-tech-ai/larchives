@@ -442,7 +442,7 @@
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
 
-  let _pc = documentQuerySelectorAll('.card_widget > button');
+  let _pc = document.querySelectorAll('.card_widget > button');
   _pc.forEach((p) => {
     console.log(p.classList);
   })
