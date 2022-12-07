@@ -449,12 +449,14 @@
   const productArr = productObj.all;
   for(let i=0; i< productArr.length; i++) {
     if(productArr[i].empi === productId) {
-      console.log('y')
-      let button = document.querySeletorAll('.wishlist');
+      let buttons = document.querySelectorAll('.wishlist');
       console.log(button.data('product-id'));
-      if (button.data('product-id') === productId) {
-
-      }
+      buttons.forEach((b) => {
+        if (button.data('product-id') === productId) {
+          console.log('y')
+        }
+      })
     }
   } 
+  
 </script>
