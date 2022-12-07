@@ -3,8 +3,8 @@ let next_url = products_on_page.data('next-url');
 const load_more = $('.load-more');
 const pagination = $('.product-list-bottom div');
 
-if(load_more) {
-  load_more[0].addEventListener("click",(e) => {
+
+load_more[0].addEventListener("click",(e) => {
   e.preventDefault(); 
   load_more[0].style.margin = '0 auto';
   pagination[1].style.display = 'none';
@@ -20,4 +20,3 @@ if(load_more) {
     products_on_page.append(new_products.html());
   })  
 });
-}  
