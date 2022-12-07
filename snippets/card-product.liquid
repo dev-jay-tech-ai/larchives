@@ -442,16 +442,11 @@
     SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
   })(); 
 
-  let productId = {{ card_product.id | json }};
-  const productObj = JSON.parse(localStorage.getItem('swym-products'));
-  let buttonSvg = $('.card_widget > buttton.wishlist > svg');
+  let _pc = documentQuerySelectorAll('.card_widget > button');
+  _pc.forEach((p) => {
+    console.log(p.classList);
+  })
   
-  const productArr = productObj.all;
-  for(let i=0; i< productArr.length; i++) {
-    if(productArr[i].empi === productId) {
-      console.log('y')
-      buttonSvg.replaceWith('*');
-    }
-  }
+
 
 </script>
