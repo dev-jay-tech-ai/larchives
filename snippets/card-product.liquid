@@ -450,7 +450,7 @@
   for(let i=0; i< productArr.length; i++) {
     if(productArr[i].empi === productId) {
       console.log('y')
-      let button = $('.card_widget > buttton.wishlist');
+      let button = document.querySeletorAll('.wishlist');
       console.log(button.data('product-id'));
       if (button.data('product-id') === productId) {
 
