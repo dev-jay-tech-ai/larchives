@@ -37,7 +37,7 @@ if (!customElements.get('product-form')) {
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
-            this.handleErrorMessage(response.description);
+            if(this.querySelector('.product-form__error-message-wrapper')) this.handleErrorMessage(response.description);
             console.log(response)
             const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
             if (!soldOutMessage) return;
