@@ -32,16 +32,15 @@ if (!customElements.get('product-form')) {
         this.cart.setActiveElement(document.activeElement);
       }
       config.body = formData;
+
       fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
             this.handleErrorMessage(response.description);
             console.log(response)
-            if(this.submitButton.querySelector('.sold-out-message')) {
-              const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
-              if (!soldOutMessage) return;
-            }
+            const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
+            if (!soldOutMessage) return;
             this.submitButton.setAttribute('aria-disabled', true);
             if(this.submitButton.querySelector('span')) {
               this.submitButton.querySelector('span').classList.add('hidden');
