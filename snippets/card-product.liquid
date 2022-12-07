@@ -441,9 +441,18 @@
       {% if currentVariant.compare_at_price %} ,op:{{currentVariant.compare_at_price}}/100 {% endif %}
     };
     SwymViewProducts[{{ card_product.handle | json }}] = SwymViewProducts[{{ card_product.id | json }}] = product_data;
-    SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o;
+    SwymWatchProducts[{{ card_product.handle | json }}] = SwymWatchProducts[{{ card_product.id | json }}] = o; 
+  })(); 
 
-    console.log(o);
+  const productArr = productObj.all;
+  for(let i=0; i< productArr.length; i++) {
+    if(productArr[i].empi === productId) {
+      console.log('y')
+      let button = $('.card_widget > buttton.wishlist');
+      console.log(button.data('product-id'));
+      if (button.data('product-id') === productId) {
+
+    }
+  }
   
-  })();       
 </script>
