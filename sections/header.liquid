@@ -781,7 +781,11 @@
     } 
   }, 200);
 
-  const drawer_menu_close = $('');
+  const drawer_menu_close = $('.meun-drawer_close');
+  drawer_menu_close.addEventListener('click',() => {
+    console.log('clicked!')
+  });
+                          
 </script>
       
 <script type="application/ld+json">
