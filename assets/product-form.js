@@ -38,9 +38,11 @@ if (!customElements.get('product-form')) {
         .then((response) => {
           if (response.status) {
             if(this.querySelector('.product-form__error-message-wrapper')) this.handleErrorMessage(response.description);
- 
-            const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
-            if (!soldOutMessage) return;
+            if(this.submitButton.querySelector('.sold-out-message')) {
+              const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
+              if (!soldOutMessage) return;
+            }
+
             this.submitButton.setAttribute('aria-disabled', true);
             if(this.submitButton.querySelector('span')) {
               this.submitButton.querySelector('span').classList.add('hidden');
