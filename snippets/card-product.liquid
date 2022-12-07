@@ -136,8 +136,16 @@
           </div>
   
           <div class='card_widget'>
+            <script>
+              const currentProductId = {{ card_product.id | json }};
+              const productArray = JSON.parse(localStorage.getItem('swym-products'));
+              console.log(productArray);
+              if(productArray.includes(currentProductId)){
+                // Code to create or display the SVG in question
+              
+              }
+            </script>
             <div>
-  
              <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button>
             </div>
             {% if section_id contains 'collection' %}
