@@ -139,7 +139,7 @@
             <div>
               <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button>
             </div>
-  
+            {% if section_id contains 'collection' %}
             <div>
             {%- if card_product.variants.size == 1 -%}
               <product-form>
@@ -168,7 +168,8 @@
               </product-form>
               {%- endif -%} 
             </div>
-            <div><a href='{{ card_product.url }}'>{% render 'icon-arrow-right' %}</a>{{ section_id }}</div>
+            {%- endif -%} 
+            <div><a href='{{ card_product.url }}'>{% render 'icon-arrow-right' %}</a></div>
         </div>
       </div>
       </div>
