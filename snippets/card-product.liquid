@@ -139,7 +139,8 @@
             <script>
               const currentProductId = {{ card_product.id | json }};
               const productArray = JSON.parse(localStorage.getItem('swym-products'));
-              console.log(productArray);
+  
+              console.log(currentProductId, productArray);
               if(productArray.includes(currentProductId)){
                 // Code to create or display the SVG in question
               
