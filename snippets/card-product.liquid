@@ -137,12 +137,9 @@
   
           <div class='card_widget'>
             <div>
+              {% include 'swym-product-view', product: card_product %}
               <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>{% render 'icon-heart' %}</button>
 
-
-
-
-  
             </div>
             {% if section_id contains 'collection' %}
               <div>
