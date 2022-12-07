@@ -445,7 +445,7 @@
   const productId = {{ card_product.id | json }};
   const productObj = JSON.parse(localStorage.getItem('swym-products'));
   for(const key in productObj) {
-    console.log(productObj.key(0));
+    console.log(key);
   }
 
 </script>
