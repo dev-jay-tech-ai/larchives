@@ -701,7 +701,6 @@
         {%- endif -%}
       </form>
     </facet-filters-form>
-  {%- endif -%}
   
     <div>
       <facet-filters-form class="facets facets-vertical-sort page-width no-js-hidden">
@@ -727,9 +726,8 @@
           </form> 
         {%- endif -%}
       </facet-filters-form>
-    </div>
-          
-  </div>
+    </div>  
+  </div> {%- endif -%}
   {%- if filter_type == 'drawer' -%}
     <facet-filters-form class="facets facets-pill small-hide">
       <form id="FacetFiltersPillsForm" class="facets__form">
