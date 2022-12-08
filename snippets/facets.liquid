@@ -284,7 +284,7 @@
                       {% endif %} 
                       {%- if filter.min_value.value -%}
                         {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-                          {%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                        {%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                         {% endif %}
                       {%- else -%}value='0'
                       {%- endif -%} step="5">
