@@ -268,7 +268,8 @@ if(typeof(Currency) == 'undefined' || !Currency.hasOwnProperty("rates")){
   </script>
 {% else %}
   <script>
-  setTimeout(() => $acs('.mldDesk').append('GBP >'),200);
+  const content = '<div>GBP</div>';
+  $acs('.mldDesk').append(content.html());
   $acs('.mldDesk').append(mlvedasw); 
   </script>
 {% endif %}
