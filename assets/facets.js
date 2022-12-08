@@ -326,8 +326,8 @@ rangeInput.forEach(input => {
   if(priceInput[0].value === '' || priceInput[1].value === '') {
     range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
     range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-          rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-          rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+    rangeNum.style.left = 0 + "%";
+    rangeNum.style.right = 0 + "%";
     return;
   }
 
