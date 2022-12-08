@@ -796,7 +796,12 @@
       submenu.classList.remove('submenu-open');
     });
     document.body.classList.remove(`overflow-hidden-${header.dataset.breakpoint}`);
-    removeTrapFocus(elementToFocus = false);                  
+    removeTrapFocus(elementToFocus = false); 
+
+    const summaryElement = header.querySelector('summary');
+    openDetailsElement.removeAttribute('open');
+    summaryElement.setAttribute('aria-expanded', false);
+    summaryElement.focus();
   });
                           
 </script>
