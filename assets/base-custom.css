@@ -596,7 +596,6 @@ object-position: top; #insta-feed {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  left:0;
   height: 16px;
   width: 16px;
   border-radius: 50%;
