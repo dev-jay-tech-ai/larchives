@@ -304,7 +304,7 @@ rangeInput.forEach(input =>{
                 rangeInput[1].value = minVal + priceGap;
             }
         }else{
-            // 인풋에 값을 변경 새로 고침 전에는 반응 없음. 
+            console.log('인풋에 값을 변경 but 새로 고침 전에는 반응 없음.'); 
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
             range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
