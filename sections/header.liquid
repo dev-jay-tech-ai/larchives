@@ -792,7 +792,11 @@
       details.removeAttribute('open');
       details.classList.remove('menu-opening');
     });
-                          
+    header.querySelectorAll('.submenu-open').forEach(submenu => {
+      submenu.classList.remove('submenu-open');
+    });
+    document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
+                      
   });
                           
 </script>
