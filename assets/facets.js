@@ -329,7 +329,12 @@ rangeInput.forEach(input => {
     return;
   }
 
-
+  if((maxVal - minVal) < priceGap){
+      if(input.className === "range-min"){
+          rangeInput[0].value = maxVal - priceGap
+      }else{
+          rangeInput[1].value = minVal + priceGap;
+      }
   }else{
       console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
       priceInput[0].value = minVal;
