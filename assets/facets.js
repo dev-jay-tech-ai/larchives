@@ -292,6 +292,34 @@ priceInput.forEach(input =>{
     });
 });
 
+/* 손으로 밀었을 때 만 작동  */ 
+rangeInput.forEach(input =>{
+    input.addEventListener("input", e => {
+        let minVal = parseInt(rangeInput[0].value),
+        maxVal = parseInt(rangeInput[1].value);        
+        if((maxVal - minVal) < priceGap){
+            if(e.target.className === "range-min"){
+                rangeInput[0].value = maxVal - priceGap
+            }else{
+                rangeInput[1].value = minVal + priceGap;
+            }
+        }else{
+            // 인풋에 값을 변경 새로 고침 전에는 반응 없음. 
+            priceInput[0].value = minVal;
+            priceInput[1].value = maxVal;
+            range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+            range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+            rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) +5 + "%";
+            rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+            rangeInput[0].style.left = 0;
+            rangeInput[1].style.right = 0;
+            rangeNumInfo[0].innerText = "£" + minVal;
+            rangeNumInfo[1].innerText = "£" + maxVal;
+        }
+    });
+});
+
+/* 새로고침 후 일처리 */
 rangeInput.forEach(input => {
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value);  
