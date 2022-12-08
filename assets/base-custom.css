@@ -606,7 +606,8 @@ input[type="range"]::-webkit-slider-thumb {
   background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/ellipse_small.svg?v=1667487015');
   background-repeat: no-repeat;
 }
-input[type="range"]::-webkit-slider-thumb {
+
+input[type="range"]::-moz-range-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
