@@ -301,8 +301,8 @@ rangeInput.forEach(input => {
   if(priceInput[0].value === '' || priceInput[1].value === '') {
     console.log(minVal,maxVal)
     console.log(rangeInput[0].max, rangeInput[1].max);
-    range.style.left = (0 * 100) + "%";
-    range.style.right = (100 - 100) * 100 + "%";
+    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
     rangeNum.style.left = 0;
     rangeNum.style.right = 0;
     return;
