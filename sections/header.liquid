@@ -784,10 +784,8 @@
   const drawer_menu_close = document.querySelector('.meun-drawer_close');
   drawer_menu_close.addEventListener('click',(e) => {
     e.preventDefault();
-    constructor() {
-      super();
-    } 
-    console.log(this);
+    this.header.classList.remove('menu-open');
+
                           
   });
                           
