@@ -318,7 +318,6 @@ rangeInput.forEach(input => {
   } else {
     console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
     console.log(minVal,maxVal)
-    console.log(rangeInput[0].max, rangeInput[1].max);
     priceInput[0].value = minVal;
     priceInput[1].value = maxVal;
     console.log(minVal,maxVal)
