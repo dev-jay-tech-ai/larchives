@@ -293,7 +293,7 @@ priceInput.forEach(input =>{
     });
 });
 
-/* 새로고침 후 일처리 */
+
 rangeInput.forEach(input => {
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value); 
@@ -306,7 +306,7 @@ rangeInput.forEach(input => {
     rangeNum.style.right = 0;
     return;
   }
-
+  /* 값을 입력 후 새로고침, 일처리 */
   if((maxVal - minVal) < priceGap){
     if(input.className === "range-min"){
         rangeInput[0].value = maxVal - priceGap
@@ -324,7 +324,7 @@ rangeInput.forEach(input => {
   }
 });
 
-/* 손으로 밀었을 때 만 작동  */ 
+/* 새로고침은 안하고 손으로 밀었을 때 */ 
 rangeInput.forEach(input =>{
   input.addEventListener("input", e => {
       let minVal = parseInt(rangeInput[0].value),
