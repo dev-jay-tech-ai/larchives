@@ -291,4 +291,3 @@ priceInput.forEach(input =>{
         }
     });
 });
-
