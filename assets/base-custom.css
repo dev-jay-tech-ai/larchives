@@ -204,19 +204,6 @@ object-position: top; #insta-feed {
   }
 }
 
-.loading_mld {
-    padding-right: 2.5rem !important;
-    color: inherit !important;
-    background-color: inherit !important;
-    font-family: 'Termina-Demi';
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: space-between;
-    height: 2.4rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.06rem;
-}
-
 .main-blog {
   text-align: center;
 }
