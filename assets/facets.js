@@ -308,19 +308,19 @@ rangeInput.forEach(input => {
   }
 
   if((maxVal - minVal) < priceGap){
-      if(input.className === "range-min"){
-          rangeInput[0].value = maxVal - priceGap
-      }else{
-          rangeInput[1].value = minVal + priceGap;
-      }
+    if(input.className === "range-min"){
+        rangeInput[0].value = maxVal - priceGap
+    }else{
+        rangeInput[1].value = minVal + priceGap;
+    }
   } else{
-      console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
-      priceInput[0].value = minVal;
-      priceInput[1].value = maxVal;
-      range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-      rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-      rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+    console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
+    priceInput[0].value = minVal;
+    priceInput[1].value = maxVal;
+    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
   }
 });
 
