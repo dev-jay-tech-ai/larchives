@@ -292,20 +292,17 @@ priceInput.forEach(input =>{
     });
 });
 
-
 rangeInput.forEach(input => {
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value); 
   /* 값을 입력 후 새로고침, 일처리 */
   if((maxVal - minVal) < priceGap){
-    console.log('hey')
     if(input.className === "range-min"){
         rangeInput[0].value = maxVal - priceGap
     }else{
         rangeInput[1].value = minVal + priceGap;
     }
   } else {
-    console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
     console.log(minVal,maxVal)
     priceInput[0].value = minVal;
     priceInput[1].value = maxVal;
@@ -321,25 +318,23 @@ rangeInput.forEach(input => {
 /* 새로고침은 안하고 손으로 밀었을 때 */ 
 rangeInput.forEach(input =>{
   input.addEventListener("input", e => {
-      let minVal = parseInt(rangeInput[0].value),
-      maxVal = parseInt(rangeInput[1].value);  
-      if((maxVal - minVal) < priceGap){
-        console.log('2')
-        if(e.target.className === "range-min"){
-            rangeInput[0].value = maxVal - priceGap
-        }else{
-            rangeInput[1].value = minVal + priceGap;
-        }
+    let minVal = parseInt(rangeInput[0].value),
+    maxVal = parseInt(rangeInput[1].value);  
+    if((maxVal - minVal) < priceGap){
+      if(e.target.className === "range-min"){
+          rangeInput[0].value = maxVal - priceGap
       }else{
-        console.log('인풋에 값을 변경 but 새로 고침 전에는 반응 없음.'); 
-        priceInput[0].value = minVal;
-        priceInput[1].value = maxVal;
-        range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-        range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-        rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-        rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
-        rangeNumInfo[0].innerText = "£" + minVal;
-        rangeNumInfo[1].innerText = "£" + maxVal;
+          rangeInput[1].value = minVal + priceGap;
       }
+    }else{
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+      rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+      rangeNumInfo[0].innerText = "£" + minVal;
+      rangeNumInfo[1].innerText = "£" + maxVal;
+    }
   });
 });
