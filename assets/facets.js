@@ -328,8 +328,8 @@ rangeInput.forEach(input => {
     range.style.right = 0 + "%";
     rangeNum.style.left = 0 + "%";
     rangeNum.style.right = 0 + "%";
-    rangeInput[0].style.left = '-133px';
-    rangeInput[1].style.right = '-133px';
+    rangeInput[0].style.left = '-134px';
+    rangeInput[1].style.right = '-134px';
     return;
   }
 
