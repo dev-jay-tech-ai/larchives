@@ -265,7 +265,6 @@
                     </price-range>
                 
                     <div class="slider">
-                
                       <div class="range-bar">
                         <div>
                         {%- if filter.min_value.value == blank -%}{{ '0' | money_with_currency | replace: 'GBP', '' }} 
@@ -276,7 +275,6 @@
                         {%- else -%}{{ filter.max_value.value | money_with_currency | replace: '.00', '' | replace: 'GBP', '' }}{%- endif -%}
                         </div>
                       </div>
-                
                       <div class="progress">&nbsp;</div>
                     </div>
                     <div class="range-input">
