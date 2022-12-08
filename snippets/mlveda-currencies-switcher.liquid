@@ -269,6 +269,7 @@ if(typeof(Currency) == 'undefined' || !Currency.hasOwnProperty("rates")){
 {% else %}
   <script>
     $acs('.mldDesk').append(mlvedasw);
+    setTimout(() => $('.pick_currency:first-of-type').remove(), 3000);
   </script>
 {% endif %}
   
