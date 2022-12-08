@@ -606,7 +606,6 @@ input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb
   background-position: center center;
   background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/ellipse_small.svg?v=1667487015');
   background-repeat: no-repeat;
-  
 }
 
 .facets__summary svg {
