@@ -782,9 +782,10 @@
   },200);
 
   const drawer_menu_close = document.querySelector('.meun-drawer_close');
+  const header = document.querySelector('.section-header');                       
   drawer_menu_close.addEventListener('click',(e) => {
     e.preventDefault();
-    this.header.classList.remove('menu-open');
+    header.classList.remove('menu-open');
 
                           
   });
