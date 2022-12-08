@@ -304,6 +304,7 @@ rangeInput.forEach(input => {
     range.style.right = 0;
     rangeNum.style.left = 0;
     rangeNum.style.right = 0;
+    break;
   }
   
   /* 값을 입력 후 새로고침, 일처리 */
