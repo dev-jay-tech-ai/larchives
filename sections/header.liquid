@@ -783,11 +783,11 @@
 
   const drawer_menu_close = document.querySelector('.meun-drawer_close');
   const header = document.querySelector('.section-header');
-  const container = header.querySelector('.menu-drawer-container');                        
+                      
   drawer_menu_close.addEventListener('click',(e) => {
     e.preventDefault();
     header.classList.remove('menu-open');
-    container.classList.remove('menu-opening');
+    header.querySelector('.menu-drawer-container').classList.remove('menu-opening');
     header.querySelectorAll('details').forEach(details => {
       details.removeAttribute('open');
       details.classList.remove('menu-opening');
