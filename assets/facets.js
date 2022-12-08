@@ -296,15 +296,7 @@ priceInput.forEach(input =>{
 rangeInput.forEach(input => {
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value); 
-
-  if(priceInput[0].value === '' || priceInput[1].value === '') {
-    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-    rangeNum.style.left = 0;
-    rangeNum.style.right = 0;
-    return;
-  }
-  
+ 
   /* 값을 입력 후 새로고침, 일처리 */
   if((maxVal - minVal) < priceGap){
     if(input.className === "range-min"){
@@ -313,6 +305,14 @@ rangeInput.forEach(input => {
         rangeInput[1].value = minVal + priceGap;
     }
   } else{
+
+    if(priceInput[0].value === '' || priceInput[1].value === '') {
+      range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+      rangeNum.style.left = 0;
+      rangeNum.style.right = 0;
+      return;
+    }
     console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
     priceInput[0].value = minVal;
     priceInput[1].value = maxVal;
