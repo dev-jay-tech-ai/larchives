@@ -204,7 +204,7 @@ object-position: top; #insta-feed {
   }
 }
 
-.pick_currency > select {
+.loading_mld {
     padding-right: 2.5rem !important;
     color: inherit !important;
     background-color: inherit !important;
