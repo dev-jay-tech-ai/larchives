@@ -299,6 +299,7 @@ rangeInput.forEach(input => {
  
   /* 값을 입력 후 새로고침, 일처리 */
   if((maxVal - minVal) < priceGap){
+    console.log('hey')
     if(input.className === "range-min"){
         rangeInput[0].value = maxVal - priceGap
     }else{
