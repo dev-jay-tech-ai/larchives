@@ -268,8 +268,8 @@ if(typeof(Currency) == 'undefined' || !Currency.hasOwnProperty("rates")){
   </script>
 {% else %}
   <script>
-  const content = "<div class='loading_mld'>GBP</div>";
-  $acs('.mldDesk').append(content);
+  const loading = "<div class='loading_mld'>GBP</div>";
+  $acs('.mldDesk').append(loading);
   $acs('.mldDesk').append(mlvedasw); 
   </script>
 {% endif %}
