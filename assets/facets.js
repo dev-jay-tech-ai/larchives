@@ -317,8 +317,12 @@ rangeInput.forEach(input => {
     }
   } else {
     console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
+    console.log(minVal,maxVal)
+    console.log(rangeInput[0].max, rangeInput[1].max);
     priceInput[0].value = minVal;
     priceInput[1].value = maxVal;
+    console.log(minVal,maxVal)
+    console.log(rangeInput[0].max, rangeInput[1].max);
     range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
     range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
     rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
