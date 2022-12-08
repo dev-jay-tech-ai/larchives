@@ -299,6 +299,8 @@ rangeInput.forEach(input => {
   /* 값을 입력 후 새로고침, 일처리 */
 
   if(priceInput[0].value === '' || priceInput[1].value === '') {
+    console.log(minVal,maxVal)
+    console.log(rangeInput[0].max, rangeInput[1].max);
     range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
     range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
     rangeNum.style.left = 0;
