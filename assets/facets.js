@@ -304,8 +304,8 @@ rangeInput.forEach(input => {
     range.style.right = 0;
     rangeNum.style.left = 0;
     rangeNum.style.right = 0;
-    return;
   }
+  
   /* 값을 입력 후 새로고침, 일처리 */
   if((maxVal - minVal) < priceGap){
     if(input.className === "range-min"){
