@@ -324,8 +324,8 @@ rangeInput.forEach(input => {
   let minVal = parseInt(rangeInput[0].value),
   maxVal = parseInt(rangeInput[1].value);  
   if(priceInput[0].value === '' || priceInput[1].value === '') {
-    range.style.left = 0 + "%";
-    range.style.right = 0 + "%";
+    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
     rangeNum.style.left = 0 + "%";
     rangeNum.style.right = 0 + "%";
     return;
