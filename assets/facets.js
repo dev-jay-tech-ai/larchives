@@ -291,6 +291,7 @@ priceInput.forEach(input =>{
         }
     });
 });
+
 /* 손으로 밀었을 때 만 작동  */ 
 rangeInput.forEach(input =>{
     input.addEventListener("input", e => {
