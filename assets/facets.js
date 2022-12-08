@@ -313,6 +313,7 @@ rangeInput.forEach(input => {
     rangeNum.style.right = 0;
     return;
   }
+  
   console.log('요기서 출력 중..',priceInput[0].value, priceInput[1].value)
   priceInput[0].value = minVal;
   priceInput[1].value = maxVal;
