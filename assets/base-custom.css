@@ -216,6 +216,7 @@ object-position: top; #insta-feed {
     line-height: 2.4rem;
     letter-spacing: 0.06rem;
     background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/chevron-down.svg?v=1669820473') !important;
+    background-repeat: no-repeat;
 }
 
 .main-blog {
