@@ -299,8 +299,8 @@ rangeInput.forEach(input => {
   maxVal = parseInt(rangeInput[1].value); 
 
   if(priceInput[0].value === '' || priceInput[1].value === '') {
-    console.log(minVal, maxVal)
-    console.log(rangeInput[0].max, rangeInput[1].max);
+    priceInput[0].value = 0;
+    priceInput[1].value = rangeInput[1].max;
     range.style.left = 0;
     range.style.right = 0;
     rangeNum.style.left = 0;
