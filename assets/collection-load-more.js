@@ -1,6 +1,6 @@
 const products_on_page = $('.products-on-page');
 let next_url = products_on_page.data('next-url');
-const load_more = $('.load-more');
+const load_more = $('.product-list-bottom .load-more');
 const pagination = $('.product-list-bottom div');
 
 if(load_more.length>0) {
