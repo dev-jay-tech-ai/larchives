@@ -149,13 +149,13 @@ slideshow-component:not(.page-width) .slider-buttons {
   align-items: center;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1023px) {
   slideshow-component.page-width .slideshow__autoplay {
     right: 1.5rem;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .slideshow__autoplay.slider-button {
     position: inherit;
     margin-left: 0.6rem;
