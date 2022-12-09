@@ -783,6 +783,7 @@
 
   const drawer_menu_close = document.querySelector('.meun-drawer_close');
   const header = document.querySelector('.section-header');
+  const device = header.getElementsByTagName('header-drawer')[0].getAttribute('data-breakpoint')
                       
   drawer_menu_close.addEventListener('click',(e) => {
     e.preventDefault();
@@ -795,7 +796,7 @@
     header.querySelectorAll('.submenu-open').forEach(submenu => {
       submenu.classList.remove('submenu-open');
     });
-    document.body.classList.remove(`overflow-hidden-${header.dataset.breakpoint}`);
+    document.body.classList.remove(`overflow-hidden-${device}`);
     removeTrapFocus(false); 
 
     const summaryElement = header.querySelector('summary');
