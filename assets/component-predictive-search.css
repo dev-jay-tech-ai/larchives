@@ -26,15 +26,15 @@
   }
 }
 
-@media screen and (max-width: 989px) {
+/* @media screen and (max-width: 989px) {
   .predictive-search {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 
   }
-}
+} */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .predictive-search {
     border-top: none;
     width: calc(100% + 0.2rem);
