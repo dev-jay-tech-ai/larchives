@@ -516,12 +516,10 @@
        <button class='button button--secondary button-load-custom load-more' style='margin-top: 4rem;'> CLEAR ALL FILTERS </button>
       </form>
 
-      <div class="mobile-facets__footer">
-        <facet-remove class="mobile-facets__clear-wrapper">
-          <a href="{{ results_url }}" class="mobile-facets__clear underlined-link">{{ 'products.facets.clear_all' | t }}</a>
+      <div class="">
+        <facet-remove class="">
+          <a href="{{ results_url }}" class="">{{ 'products.facets.clear_all' | t }}</a>
         </facet-remove>
-        <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'products.facets.apply' | t }}</button>
-        <noscript><button class="button button--primary">{{ 'products.facets.apply' | t }}</button></noscript>
       </div>
     </div>
 
