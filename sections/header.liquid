@@ -52,7 +52,7 @@
     margin: 0;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 1024px) {
     .list-menu {
       padding: 0;
     }
@@ -80,7 +80,7 @@
     line-height: calc(1 + 0.8 / var(--font-body-scale));
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 1024px) {
     .list-menu__item--link {
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
@@ -774,7 +774,7 @@
 <script>
   setTimeout(() => {
     const target_banner = document.querySelectorAll('.banner-container > div');    
-    if(screen.width <= 749) {
+    if(screen.width <= 1023) {
       target_banner.forEach((tb) => {
         tb.style.height = String(screen.width) +'px'; 
       });
@@ -804,7 +804,7 @@
   });
                           
   const lng = document.querySelectorAll('.mldDesk');                         
-  if(screen.width > 749) lng[0].remove();       
+  if(screen.width > 1023) lng[0].remove();       
 </script>
       
 <script type="application/ld+json">
