@@ -13,7 +13,7 @@
   overflow-y: auto;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .facets-container > * + * {
     margin-top: 0;
   }
@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1023px) {
   .facets-container {
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid rgba(4,11,9,0.2);
@@ -43,7 +43,7 @@
   padding-left: 2.5rem;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .facet-filters {
     padding-left: 3rem;
   }
@@ -178,7 +178,7 @@
   letter-spacing: normal;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .facets {
     grid-column-start: span 2;
   }
@@ -369,7 +369,7 @@
   padding: 2rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .facets__price {
      display: none;
   }
@@ -452,7 +452,7 @@ span.active-facets__button-inner:after {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .active-facets__button {
     margin-right: 1.5rem;
   }
@@ -463,7 +463,7 @@ span.active-facets__button-inner:after {
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1023px) {
   .active-facets {
     margin: 0 -1.2rem -1.2rem;
   }
@@ -538,7 +538,7 @@ a.active-facets__button.focused .active-facets__button-inner,
   width: 1.2rem;
 }
 
-@media all and (min-width: 990px) {
+@media all and (min-width: 1024px) {
   .active-facets__button svg {
     margin-right: -0.4rem;
     margin-top: 0.1rem;
@@ -1136,7 +1136,7 @@ input.mobile-facets__checkbox {
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 989px) {
+@media screen and (min-width: 750px) and (max-width: 1023px) {
   .facets-vertical .active-facets__button {
     padding: 1rem;
     margin-bottom: 0;
