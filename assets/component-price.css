@@ -83,7 +83,7 @@
   color: rgba(var(--color-foreground), 0.7);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .price {
     margin-bottom: 0;
   }
