@@ -796,14 +796,7 @@
       submenu.classList.remove('submenu-open');
     });
     document.body.classList.remove(`overflow-hidden-${header.dataset.breakpoint}`);
-    function removeTrapFocus(elementToFocus = null) {
-      document.removeEventListener('focusin', trapFocusHandlers.focusin);
-      document.removeEventListener('focusout', trapFocusHandlers.focusout);
-      document.removeEventListener('keydown', trapFocusHandlers.keydown);
-    
-      if (elementToFocus) elementToFocus.focus();
-    }
-    removeTrapFocus(elementToFocus); 
+    removeTrapFocus(false); 
 
     const summaryElement = header.querySelector('summary');
     summaryElement.setAttribute('aria-expanded', false);
