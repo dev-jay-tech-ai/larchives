@@ -205,7 +205,7 @@ cart-remove-button .icon-remove {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1023px) {
   .cart-items,
   .cart-items thead,
   .cart-items tbody {
