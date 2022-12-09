@@ -156,7 +156,7 @@ predictive-search[loading] .predictive-search__results-list:first-child {
   line-height: calc(1 + 0.4 / var(--font-body-scale));
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .predictive-search__item--term {
     padding-top: 1rem;
     padding-bottom: 1rem;
