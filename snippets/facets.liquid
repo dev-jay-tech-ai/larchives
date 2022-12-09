@@ -512,12 +512,8 @@
           
         {%- endif -%}                            
       </form>
-      <form>
-       <button class='button button--secondary button-load-custom load-more' style='margin-top: 4rem;'> CLEAR ALL FILTERS </button>
-      </form>
-
       <div class="">
-        <facet-remove class="">
+        <facet-remove class="load-more">
           <a href="{{ results_url }}" class="">{{ 'products.facets.clear_all' | t }}</a>
         </facet-remove>
       </div>
