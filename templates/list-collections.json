@@ -10,43 +10,17 @@
         "columns_mobile": "2"
       }
     },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Stay in the know",
-            "heading_size": "h2"
-          }
-        },
-        "email-form": {
-          "type": "email_form",
-          "settings": {
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Follow us on social media<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "email-form",
-        "paragraph"
-      ],
+    "85700ac7-d4de-4b98-9915-86a2c106f7fc": {
+      "type": "instafeed",
       "settings": {
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 44,
-        "padding_bottom": 8
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
       }
     }
   },
   "order": [
     "main",
-    "newsletter"
+    "85700ac7-d4de-4b98-9915-86a2c106f7fc"
   ]
 }
