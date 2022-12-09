@@ -358,8 +358,6 @@ class MenuDrawer extends HTMLElement {
       submenu.classList.remove('submenu-open');
     });
     document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
-    console.log(this.dataset.breakpoint);
-    console.log(this)
     removeTrapFocus(elementToFocus);
     this.closeAnimation(this.mainDetailsToggle);
   }
