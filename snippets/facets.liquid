@@ -453,6 +453,7 @@
                   {%- endif -%}
                 {% endif %}
               {%- endfor -%}
+            
               <facet-remove class="active-facets__button-wrapper">
                 <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
                   <span>{{ 'products.facets.clear_all' | t }}</span>
@@ -513,8 +514,8 @@
         {%- endif -%}                            
       </form>
       <div class="">
-        <facet-remove class="load-more">
-          <a href="{{ results_url }}" class="">{{ 'products.facets.clear_all' | t }}</a>
+        <facet-remove class="">
+          <a href="{{ results_url }}" class="button button_custom">{{ 'products.facets.clear_all' | t }}</a>
         </facet-remove>
       </div>
 
