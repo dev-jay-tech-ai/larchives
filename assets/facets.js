@@ -303,6 +303,7 @@ rangeInput.forEach(input => {
       rangeInput[1].value = minVal + priceGap;
     }
   } else {
+    console.log('**** 1 *****')
     priceInput[0].value = minVal;
     priceInput[1].value = maxVal;
     range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
@@ -324,6 +325,7 @@ rangeInput.forEach(input =>{
           rangeInput[1].value = minVal + priceGap;
       }
     }else{
+      console.log('**** 2 *****')
       priceInput[0].value = minVal;
       priceInput[1].value = maxVal;
       range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
