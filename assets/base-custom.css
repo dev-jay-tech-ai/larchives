@@ -160,7 +160,7 @@
   padding-bottom: 1.9rem;
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1023px) {
   .customer_subject {
     text-align: center;
   }
@@ -500,7 +500,7 @@ object-position: top; #insta-feed {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1023px) {
   .product__id {
     font-size: 1rem;
   }
@@ -713,7 +713,7 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 7.5rem;
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1023px) {
   .product-list-bottom {
     flex-direction: column;
   }
@@ -783,7 +783,7 @@ input[type="range"]::-moz-range-thumb {
   margin-bottom: 10rem;  
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1023px) {
   .chevron {
     margin-top: 2rem;
     margin-bottom: 6rem;  
