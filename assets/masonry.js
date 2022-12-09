@@ -89,7 +89,7 @@ const macy = () => {
   
 };
 
-if(screen.width > 750) {
+if(screen.width > 1024) {
   macy();
 }
 
@@ -107,7 +107,7 @@ const loadPage = () => {
       if(new_url === undefined) load_more.hide();
       else next_url = new_url;   
       articles_on_page.append(new_articles.html());
-      if(screen.width > 750) macy();
+      if(screen.width > 1024) macy();
     })
 }
 
