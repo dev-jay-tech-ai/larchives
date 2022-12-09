@@ -911,7 +911,7 @@ input.mobile-facets__checkbox {
   position: sticky;
   display: flex;
   z-index: 2;
-  margin-top: auto;
+  /** margin-top: auto; */
   background-color:rgb(var(--color-background));
   background: var(--gradient-background);
 }
