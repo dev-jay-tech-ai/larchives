@@ -264,26 +264,19 @@ class FacetRemove extends HTMLElement {
     rangeInput.forEach(input => {
     let minVal = parseInt(rangeInput[0].value),
     maxVal = parseInt(rangeInput[1].value); 
-    /* 값을 입력 후 새로고침, 일처리 */
-    if((maxVal - minVal) < priceGap){
-      if(input.className === "range-min"){
-        rangeInput[0].value = maxVal - priceGap
-      }else{
-        rangeInput[1].value = minVal + priceGap;
-      }
-    } else {
-      console.log('**** 1 *****')
-      console.log(minVal, maxVal)
+    console.log('**** 1 *****')
+    console.log(minVal, maxVal)
 
-      priceInput[0].value = minVal;
-      priceInput[1].value = maxVal;
-      range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-      rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-      rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
-      console.log(range)
-    }
-  });
+    priceInput[0].value = minVal;
+    priceInput[1].value = maxVal;
+    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+    console.log(range)
+
+    });
+    
   }
 }
 
