@@ -293,11 +293,11 @@ class PriceRange extends HTMLElement {
     super();
     console.log('이거 되는 거임',this.querySelectorAll('input'))
     this.querySelectorAll('input')
-      .forEach(element => element.addEventListener('change', {
+      .forEach(element => element.addEventListener('change', 
         console.log(element);
         this.onRangeChange.bind(this);
           
-      }));
+      ));
     // this.setMinAndMaxValues();
   }
 
