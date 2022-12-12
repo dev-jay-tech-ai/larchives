@@ -439,6 +439,7 @@
                     </a>
                   </facet-remove>
                 {%- endfor -%}
+                
                 {% if filter.type == "price_range" %}
                   {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
                     <facet-remove>
