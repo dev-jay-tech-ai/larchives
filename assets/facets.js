@@ -343,5 +343,3 @@ rangeInput.forEach(input =>{
     }
   });
 });
-
-console.log('running');
