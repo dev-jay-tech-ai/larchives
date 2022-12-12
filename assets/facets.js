@@ -266,17 +266,14 @@ class FacetRemove extends HTMLElement {
     let minPrice = parseInt(priceInput[0].value),
     maxPrice = parseInt(priceInput[1].value);    
     console.log('**** 3 ****')
-    if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
-        if(e.target.className === "range-min"){
-            rangeInput[0].value = minPrice;
-            range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
-            rangeNum.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
-        }else{
-            rangeInput[1].value = maxPrice;
-            range.style.right = (100 - (maxPrice / rangeInput[1].max) * 100) - 5 + "%";
-            rangeNum.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-        }
-    }
+    priceInput[0].value = minVal;
+    priceInput[1].value = maxVal;
+    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+    
+    console.log(range)
 
     });
   }
