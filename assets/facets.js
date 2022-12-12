@@ -262,7 +262,8 @@ class FacetRemove extends HTMLElement {
     form.onActiveFilterClick(event);
 
     priceInput.forEach(input =>{
-
+    let minVal = parseInt(rangeInput[0].value),
+    maxVal = parseInt(rangeInput[1].value); 
     let minPrice = parseInt(priceInput[0].value),
     maxPrice = parseInt(priceInput[1].value);    
     console.log('**** 3 ****')
