@@ -372,8 +372,6 @@
 @media screen and (min-width: 1024px) {
   .facets__price {
      /* display: none; */
-    disply: flex;
-    height: 200px;
   }
 }
 
