@@ -219,80 +219,6 @@ const rangeInput = document.querySelectorAll(".range-input input"),
   rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
 let priceGap = 5;
 
-class PriceRange extends HTMLElement {
-  constructor() {
-    super();
-    this.querySelectorAll('input')
-      .forEach(element => element.addEventListener('change', this.onRangeChange.bind(this)));
-    this.setMinAndMaxValues();
-  }
-
-  onRangeChange(event) {
-    this.adjustToValidValues(event.currentTarget);
-    this.setMinAndMaxValues();
-  }
-
-  setMinAndMaxValues() {
-    const inputs = this.querySelectorAll('input');
-    const minInput = inputs[0];
-    const maxInput = inputs[1];
-    if (maxInput.value) minInput.setAttribute('max', maxInput.value);
-    if (minInput.value) maxInput.setAttribute('min', minInput.value);
-    if (minInput.value === '') maxInput.setAttribute('min', 0);
-    if (maxInput.value === '') minInput.setAttribute('max', maxInput.getAttribute('max'));
-  }
-
-  adjustToValidValues(input) {
-    const value = Number(input.value);
-    const min = Number(input.getAttribute('min'));
-    const max = Number(input.getAttribute('max'));
-    if (value < min) input.value = min;
-    if (value > max) input.value = max;
-  }
-
-  
-}
-
-customElements.define('price-range', PriceRange);
-
-class FacetRemove extends HTMLElement {
-  constructor() {
-    super();
-    const facetLink = this.querySelector('a');
-    facetLink.setAttribute('role', 'button');
-    facetLink.addEventListener('click', this.closeFilter.bind(this));
-    facetLink.addEventListener('keyup', (event) => {
-      event.preventDefault();
-      if (event.code.toUpperCase() === 'SPACE') this.closeFilter(event);
-    });
-  }
-
-  closeFilter(event) {
-    event.preventDefault();
-    const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
-    form.onActiveFilterClick(event);
-
-    priceInput.forEach(input =>{
-    let minVal = parseInt(rangeInput[0].value),
-    maxVal = parseInt(rangeInput[1].value); 
-    let minPrice = parseInt(priceInput[0].value),
-    maxPrice = parseInt(priceInput[1].value);    
-    console.log('**** 3 ****')
-    priceInput[0].value = minVal;
-    priceInput[1].value = maxVal;
-    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
-    
-    console.log(range)
-
-    });
-  }
-}
-
-customElements.define('facet-remove', FacetRemove);
-
 const priceSlider = () => {
   priceInput.forEach(input =>{
       input.addEventListener("input", e =>{
@@ -363,5 +289,81 @@ const priceSlider = () => {
     });
   });
 };
+
+class PriceRange extends HTMLElement {
+  constructor() {
+    super();
+    this.querySelectorAll('input')
+      .forEach(element => element.addEventListener('change', this.onRangeChange.bind(this)));
+    this.setMinAndMaxValues();
+  }
+
+  onRangeChange(event) {
+    this.adjustToValidValues(event.currentTarget);
+    this.setMinAndMaxValues();
+  }
+
+  setMinAndMaxValues() {
+    const inputs = this.querySelectorAll('input');
+    const minInput = inputs[0];
+    const maxInput = inputs[1];
+    if (maxInput.value) minInput.setAttribute('max', maxInput.value);
+    if (minInput.value) maxInput.setAttribute('min', minInput.value);
+    if (minInput.value === '') maxInput.setAttribute('min', 0);
+    if (maxInput.value === '') minInput.setAttribute('max', maxInput.getAttribute('max'));
+  }
+
+  adjustToValidValues(input) {
+    const value = Number(input.value);
+    const min = Number(input.getAttribute('min'));
+    const max = Number(input.getAttribute('max'));
+    if (value < min) input.value = min;
+    if (value > max) input.value = max;
+  }
+
+  priceSlider();
+}
+
+customElements.define('price-range', PriceRange);
+
+class FacetRemove extends HTMLElement {
+  constructor() {
+    super();
+    const facetLink = this.querySelector('a');
+    facetLink.setAttribute('role', 'button');
+    facetLink.addEventListener('click', this.closeFilter.bind(this));
+    facetLink.addEventListener('keyup', (event) => {
+      event.preventDefault();
+      if (event.code.toUpperCase() === 'SPACE') this.closeFilter(event);
+    });
+  }
+
+  closeFilter(event) {
+    event.preventDefault();
+    const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
+    form.onActiveFilterClick(event);
+
+    priceInput.forEach(input =>{
+    let minVal = parseInt(rangeInput[0].value),
+    maxVal = parseInt(rangeInput[1].value); 
+    let minPrice = parseInt(priceInput[0].value),
+    maxPrice = parseInt(priceInput[1].value);    
+    console.log('**** 3 ****')
+    priceInput[0].value = minVal;
+    priceInput[1].value = maxVal;
+    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+    
+    console.log(range)
+
+    });
+  }
+}
+
+customElements.define('facet-remove', FacetRemove);
+
+
 
 priceSlider();
