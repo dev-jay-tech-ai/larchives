@@ -244,6 +244,14 @@ class PriceRange extends HTMLElement {
 
 customElements.define('price-range', PriceRange);
 
+/** price range slider */
+const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".facets__price input"),
+  range = document.querySelector(".slider .progress"),
+  rangeNum = document.querySelector(".slider .range-bar"),
+  rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
+let priceGap = 5;
+
 class FacetRemove extends HTMLElement {
   constructor() {
     super();
@@ -281,14 +289,6 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
-
-/** price range slider */
-const rangeInput = document.querySelectorAll(".range-input input"),
-  priceInput = document.querySelectorAll(".facets__price input"),
-  range = document.querySelector(".slider .progress"),
-  rangeNum = document.querySelector(".slider .range-bar"),
-  rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
-let priceGap = 5;
 
 priceInput.forEach(input =>{
     input.addEventListener("input", e =>{
