@@ -308,7 +308,7 @@ class PriceRange extends HTMLElement {
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
             
-            console.log(priceInput);
+            console.log(priceInput[0].value);
           }
         });
         element.addEventListener('change', console.log(element, 'what'))
