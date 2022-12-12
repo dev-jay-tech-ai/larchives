@@ -342,23 +342,6 @@ class FacetRemove extends HTMLElement {
     event.preventDefault();
     const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
     form.onActiveFilterClick(event);
-
-    priceInput.forEach(input =>{
-    let minVal = parseInt(rangeInput[0].value),
-    maxVal = parseInt(rangeInput[1].value); 
-    let minPrice = parseInt(priceInput[0].value),
-    maxPrice = parseInt(priceInput[1].value);    
-    console.log('**** 3 ****')
-    priceInput[0].value = minVal;
-    priceInput[1].value = maxVal;
-    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
-    
-    console.log(range)
-
-    });
   }
 }
 
