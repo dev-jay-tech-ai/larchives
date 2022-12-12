@@ -291,6 +291,7 @@ const priceSlider = () => {
 class PriceRange extends HTMLElement {
   constructor() {
     super();
+    priceSlider();
     this.querySelectorAll('input')
       .forEach((element) => { 
         console.log('변화 감지',element)
