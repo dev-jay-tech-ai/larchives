@@ -293,7 +293,7 @@ const priceSlider = () => {
 class PriceRange extends HTMLElement {
   constructor() {
     super();
-    console.log(this.querySelectorAll('input'))
+    console.log('이거 되는 거임',this.querySelectorAll('input'))
     this.querySelectorAll('input')
       .forEach(element => element.addEventListener('change', this.onRangeChange.bind(this)));
     // this.setMinAndMaxValues();
