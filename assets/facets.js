@@ -320,8 +320,6 @@ class PriceRange extends HTMLElement {
     if (value < min) input.value = min;
     if (value > max) input.value = max;
   }
-
-  priceSlider()
 }
 
 customElements.define('price-range', PriceRange);
