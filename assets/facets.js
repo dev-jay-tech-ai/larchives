@@ -294,7 +294,7 @@ class PriceRange extends HTMLElement {
     this.querySelectorAll('input')
       .forEach((element) => { 
         console.log('변화 감지',element)
-        element.addEventListener('change', console.log('what'))
+        element.addEventListener('change', console.log(element, 'what'))
       });
     // this.setMinAndMaxValues();
   }
