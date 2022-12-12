@@ -274,7 +274,7 @@ class FacetRemove extends HTMLElement {
     } else {
       console.log('**** 1 *****')
       console.log(minVal, maxVal)
-      console.log(priceInput[0].value, priceInput[1].value)
+      console.log(rangeInput[0].max, rangeInput[1].max)
       priceInput[0].value = minVal;
       priceInput[1].value = maxVal;
       range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
