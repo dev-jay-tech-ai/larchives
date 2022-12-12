@@ -250,6 +250,7 @@ const priceSlider = () => {
       }
     } else {
       console.log('**** 1 ***** 7')
+      console.log(minVal, maxVal)
       priceInput[0].value = minVal;
       priceInput[1].value = maxVal;
       range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
