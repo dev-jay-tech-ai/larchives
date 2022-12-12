@@ -299,8 +299,9 @@ class PriceRange extends HTMLElement {
   }
 
   onRangeChange(event) {
+    console.log('why I not working')
     this.adjustToValidValues(event.currentTarget);
-    this.setMinAndMaxValues();
+    this.setMinAndMaxValues()
   }
 
   setMinAndMaxValues() {
