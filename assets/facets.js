@@ -271,7 +271,7 @@ const rangeInput = document.querySelectorAll(".range-input input"),
   range = document.querySelector(".slider .progress"),
   rangeNum = document.querySelector(".slider .range-bar"),
   rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
-let priceGap = 5;
+let priceGap = 10;
 
 priceInput.forEach(input =>{
     input.addEventListener("input", e =>{
