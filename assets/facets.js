@@ -301,9 +301,11 @@ class PriceRange extends HTMLElement {
   onRangeChange(event) {
     this.adjustToValidValues(event.currentTarget);
     this.setMinAndMaxValues();
+    console.log('이벤트 발생중')
   }
 
   setMinAndMaxValues() {
+    console.log('이벤트 발생중2')
     const inputs = this.querySelectorAll('input');
     console.log(inputs[0],inputs[1])
     const minInput = inputs[0];
@@ -315,6 +317,7 @@ class PriceRange extends HTMLElement {
   }
 
   adjustToValidValues(input) {
+    console.log('이벤트 발생중1')
     const value = Number(input.value);
     const min = Number(input.getAttribute('min'));
     const max = Number(input.getAttribute('max'));
