@@ -292,34 +292,34 @@ class PriceRange extends HTMLElement {
     super();
     this.querySelectorAll('input')
       .forEach((element) => { 
-        console.log('변화 감지',element)
-        
-        rangeInput.forEach(input =>{
-          input.addEventListener("change", e => {
-            let minVal = parseInt(rangeInput[0].value),
-            maxVal = parseInt(rangeInput[1].value);  
-            if((maxVal - minVal) < priceGap){
-              if(e.target.className === "range-min"){
-                  rangeInput[0].value = maxVal - priceGap
-              } else {
-                  rangeInput[1].value = minVal + priceGap;
-              }
-            } 
-            console.log('**** 2 *****')
-            priceInput[0].value = minVal;
-            priceInput[1].value = maxVal;
-            range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-            range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-            console.log(maxVal, rangeInput[1].max)
-            rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-            rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
-            rangeNumInfo[0].innerText = "£" + minVal;
-            rangeNumInfo[1].innerText = "£" + maxVal;
-            console.log(priceGap);
-          });
+        console.log('변화 감지',element) // range input 변화감지
+      
+ 
+        element.addEventListener("change", e => {
+          let minVal = parseInt(rangeInput[0].value),
+          maxVal = parseInt(rangeInput[1].value);  
+          if((maxVal - minVal) < priceGap){
+            if(e.target.className === "range-min"){
+                rangeInput[0].value = maxVal - priceGap
+            } else {
+                rangeInput[1].value = minVal + priceGap;
+            }
+          } 
+          console.log('**** 2 *****')
+          priceInput[0].value = minVal;
+          priceInput[1].value = maxVal;
+          range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+          range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+          console.log(maxVal, rangeInput[1].max)
+          rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+          rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+          rangeNumInfo[0].innerText = "£" + minVal;
+          rangeNumInfo[1].innerText = "£" + maxVal;
+          console.log(priceGap);
         });
+   
         
-        element.addEventListener('change', console.log(element, 'what'))
+        // element.addEventListener('change', console.log(element, 'what'))
       });
     // this.setMinAndMaxValues();
   }
