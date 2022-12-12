@@ -244,14 +244,6 @@ class PriceRange extends HTMLElement {
 
 customElements.define('price-range', PriceRange);
 
-/** price range slider */
-const rangeInput = document.querySelectorAll(".range-input input"),
-  priceInput = document.querySelectorAll(".facets__price input"),
-  range = document.querySelector(".slider .progress"),
-  rangeNum = document.querySelector(".slider .range-bar"),
-  rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
-let priceGap = 5;
-
 class FacetRemove extends HTMLElement {
   constructor() {
     super();
@@ -272,23 +264,38 @@ class FacetRemove extends HTMLElement {
     rangeInput.forEach(input => {
     let minVal = parseInt(rangeInput[0].value),
     maxVal = parseInt(rangeInput[1].value); 
-    console.log('**** 1 *****')
-    console.log(minVal, maxVal)
+    /* 값을 입력 후 새로고침, 일처리 */
+    if((maxVal - minVal) < priceGap){
+      if(input.className === "range-min"){
+        rangeInput[0].value = maxVal - priceGap
+      }else{
+        rangeInput[1].value = minVal + priceGap;
+      }
+    } else {
+      console.log('**** 1 *****')
+      console.log(minVal, maxVal)
 
-    priceInput[0].value = minVal;
-    priceInput[1].value = maxVal;
-    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
-    console.log(range)
-
-    });
-    
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+      rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) -5 + "%";
+      console.log(range)
+    }
+  });
   }
 }
 
 customElements.define('facet-remove', FacetRemove);
+
+/** price range slider */
+const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".facets__price input"),
+  range = document.querySelector(".slider .progress"),
+  rangeNum = document.querySelector(".slider .range-bar"),
+  rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
+let priceGap = 5;
 
 priceInput.forEach(input =>{
     input.addEventListener("input", e =>{
