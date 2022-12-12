@@ -292,17 +292,20 @@ class PriceRange extends HTMLElement {
     super();
     this.querySelectorAll('input')
       .forEach((element) => { 
-        element.addEventListener("change", e => {
-          console.log('변화 감지', minVal, maxVal) // range input 변화감지
-          let minVal = parseInt(rangeInput[0].value),
-          maxVal = parseInt(rangeInput[1].value);  
-          if((maxVal - minVal) < priceGap){
-            if(e.target.className === "range-min"){
-                rangeInput[0].value = maxVal - priceGap
-            } else {
-                rangeInput[1].value = minVal + priceGap;
-            }
-          } 
+        // element.addEventListener('change', console.log(element, 'what'))
+      });
+    // this.setMinAndMaxValues();
+    rangeInput.forEach(input =>{
+      input.addEventListener("input", e => {
+        let minVal = parseInt(rangeInput[0].value),
+        maxVal = parseInt(rangeInput[1].value);  
+        if((maxVal - minVal) < priceGap){
+          if(e.target.className === "range-min"){
+              rangeInput[0].value = maxVal - priceGap
+          } else {
+              rangeInput[1].value = minVal + priceGap;
+          }
+        } else {
           console.log('**** 2 *****')
           priceInput[0].value = minVal;
           priceInput[1].value = maxVal;
@@ -314,12 +317,10 @@ class PriceRange extends HTMLElement {
           rangeNumInfo[0].innerText = "£" + minVal;
           rangeNumInfo[1].innerText = "£" + maxVal;
           console.log(priceGap);
-        });
-   
-        
-        // element.addEventListener('change', console.log(element, 'what'))
+        }
       });
-    // this.setMinAndMaxValues();
+    });
+
   }
 
   onRangeChange(event) {
