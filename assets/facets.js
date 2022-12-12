@@ -41,7 +41,7 @@ class FacetFiltersForm extends HTMLElement {
     if (countContainerDesktop){
       countContainerDesktop.classList.add('loading');
     }
-
+    console.log('페이지 렌더링')
     sections.forEach((section) => {
       const url = `${window.location.pathname}?section_id=${section.section}&${searchParams}`;
       const filterDataUrl = element => element.url === url;
