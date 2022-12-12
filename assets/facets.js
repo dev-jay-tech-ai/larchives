@@ -293,7 +293,6 @@ class FacetRemove extends HTMLElement {
 
 customElements.define('facet-remove', FacetRemove);
 
-
 const priceSlider = () => {
   priceInput.forEach(input =>{
       input.addEventListener("input", e =>{
@@ -364,3 +363,5 @@ const priceSlider = () => {
     });
   });
 };
+
+priceSlider();
