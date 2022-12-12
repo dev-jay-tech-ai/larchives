@@ -775,6 +775,7 @@
   setTimeout(() => {
     const target_banner = document.querySelectorAll('.banner-container > div');    
     if(screen.width < 1024) {
+      console.log('it working')
       target_banner.forEach((tb) => {
         tb.style.height = String(screen.width) +'px'; 
       });
