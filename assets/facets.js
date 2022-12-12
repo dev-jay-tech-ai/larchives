@@ -293,7 +293,7 @@ class PriceRange extends HTMLElement {
     this.querySelectorAll('input')
       .forEach((element) => { 
         element.addEventListener("change", e => {
-          console.log('변화 감지',element) // range input 변화감지
+          console.log('변화 감지', minVal, maxVal) // range input 변화감지
           let minVal = parseInt(rangeInput[0].value),
           maxVal = parseInt(rangeInput[1].value);  
           if((maxVal - minVal) < priceGap){
