@@ -209,7 +209,7 @@
                     {%- if filter_type != 'vertical' -%}
                       <div class="facets__header">
                         <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
-                        <facet-remove>
+                        <facet-remove> 
                           <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
                             {{ 'products.facets.reset' | t }}
                           </a>
@@ -401,7 +401,7 @@
                         {%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                         {% endif %}
                       {%- else -%}value='0'
-                      {%- endif -%} step="5">
+                      {%- endif -%} step="1">
                       <input type="range" class="range-max" min="0"
                       {%- if uses_comma_decimals -%}
                         max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
@@ -413,7 +413,7 @@
                         {%- else -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
                         {% endif %}
                       {%- else -%}value='{{ filter.range_max | money_without_currency | replace: ',', '' }}'  
-                      {%- endif -%} step="5">
+                      {%- endif -%} step="1">
                     </div>
                     </div>
                   </div>
