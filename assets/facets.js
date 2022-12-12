@@ -213,17 +213,10 @@ FacetFiltersForm.setListeners();
 class PriceRange extends HTMLElement {
   constructor() {
     super();
-    let rangeInput = document.querySelectorAll(".range-input input");
-    console.log(rangeInput);
     this.querySelectorAll('input')
       .forEach((element) => { 
         // element.addEventListener('change', console.log(element, 'what'))
-        rangeInput.forEach(input => {
-          input.addEventListener("input", e => {
-          console.log('값 불러오기')
-        })
       })
-    });
     // this.setMinAndMaxValues();
   }
 
