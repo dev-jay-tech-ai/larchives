@@ -274,7 +274,7 @@ class FacetRemove extends HTMLElement {
     } else {
       console.log('**** 1 *****')
       console.log(minVal, maxVal)
-      console.log(rangeInput[0].max, rangeInput[1].max)
+      console.log(range)
       priceInput[0].value = minVal;
       priceInput[1].value = maxVal;
       document.querySelector(".slider .progress").left = ((minVal / rangeInput[0].max) * 100) + "%";
