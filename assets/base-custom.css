@@ -1422,7 +1422,7 @@ nav {
 }
 
 .nav-icon > div svg {
-  vertical-align: middle;
+  vertical-align: sub;
 }
 
 .list-menu--inline li svg {
