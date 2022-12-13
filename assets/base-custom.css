@@ -19,10 +19,11 @@
 .size-product-info {
   border-bottom: 1px solid rgba(4,11,9,0.1);
   padding: 3rem 4rem;
+  display: flex;
 }
 
 .size-product-info > div {
-  display: flex;
+
   
 }
 
