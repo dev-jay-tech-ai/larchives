@@ -2297,7 +2297,7 @@ input[type='checkbox'] {
   height: 6rem;
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (max-width: 1699px) {
   .header {
     grid-template-columns: 1fr 1fr 1fr;
   }
