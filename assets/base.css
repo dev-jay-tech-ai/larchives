@@ -271,7 +271,7 @@ html.no-js .no-js-hidden {
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
   .page-width--narrow {
     max-width: 84.6rem;
     padding: 0;
