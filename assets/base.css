@@ -954,9 +954,7 @@ summary::-webkit-details-marker {
   .title-wrapper-with-link {
     margin-bottom: 8rem;
   }
-}
-
-@media screen and (min-width: 990px) {
+  
   .title,
   .title-wrapper-with-link {
     /* margin: 5rem 0 3rem; */
