@@ -1020,7 +1020,7 @@ a.product__text {
   justify-content: center;
   cursor: pointer;
   position: sticky;
-  padding: 1.2rem;
+  /** padding: 1.2rem; */
   z-index: 2;
   top: 1.5rem;
   width: 4rem;
