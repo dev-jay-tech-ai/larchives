@@ -1325,7 +1325,7 @@ nav {
 .header_custom_style {
   font-family: 'Termina-regular';
   text-transform: uppercase;
-  width: 381px;
+  /* width: 381px; */
   height: 12px;
   display: flex;
   justify-content: space-between;
