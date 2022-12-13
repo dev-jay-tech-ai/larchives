@@ -3,7 +3,7 @@
 }
 
 .account-list {
-  color: rgba(4, 11, 9, 0.5);
+  color: rgba(4,11,9,.5);
   padding-bottom: 1.9rem;
   border-bottom: 1px solid #d0cdd8;
 }
@@ -13,12 +13,12 @@
   justify-content: space-between;
   padding: 2.2rem 4rem;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(4,11,9,0.1);
+  border-bottom: 1px solid rgba(4,11,9,.1);
 }
 
 .size-product-info {
   display: flex;
-  border-bottom: 1px solid rgba(4,11,9,0.1);
+  border-bottom: 1px solid rgba(4,11,9,.1);
   padding: 3rem 4rem;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .product-popup-modal__content-info table th {
-  background-color: rgba(28,62,53,.5);
+  background-color: rgba(28,62,53,.1);
 }
 
 @media screen and (min-width: 1025px) {
