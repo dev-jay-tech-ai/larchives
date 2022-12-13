@@ -2672,7 +2672,7 @@ details[open] > .header__submenu {
   padding-bottom: 2rem;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .header__inline-menu {
     display: block;
   }
