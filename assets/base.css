@@ -1285,7 +1285,7 @@ summary::-webkit-details-marker {
   opacity: 0;
 } 
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
   .media--cropped {
     padding-bottom: 63%;
   }
