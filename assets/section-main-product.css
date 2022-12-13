@@ -893,7 +893,7 @@ a.product__text {
   left: 0;
   overflow: auto;
   width: 100%;
-  background: rgba(var(--color-foreground), 0.2);
+  background: rgba(var(--color-foreground), 0.8);
   height: 100%;
 }
 
