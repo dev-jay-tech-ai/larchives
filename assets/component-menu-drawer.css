@@ -74,11 +74,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   visibility: hidden; /* hide menus from screen readers when hidden by submenu */
 }
 
-@media screen and (min-width: 1024px) {
-  .menu-drawer {
-    width: 40rem;
-  }
-
+@media screen and (min-width: 1025px) {
   .no-js .menu-drawer {
     height: auto;
   }
