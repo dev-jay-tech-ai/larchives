@@ -2567,7 +2567,7 @@ details[open] .modal-overlay::after {
   /* line-height: calc(1 + 0.8 / var(--font-body-scale)); */
   position: relative;
   background: rgb(var(--color-background));
-  padding: 2rem;  
+  padding: 7rem 2rem;  
 }
 
 .search-modal__content-bottom {
