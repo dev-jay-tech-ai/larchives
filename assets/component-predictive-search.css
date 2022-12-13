@@ -34,7 +34,7 @@
   }
 } */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .predictive-search {
     border-top: none;
     width: calc(100% + 0.2rem);
