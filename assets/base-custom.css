@@ -22,7 +22,7 @@
   padding: 3rem 4rem;
 }
 
-.size-product-info > div:nth-last-of-type {
+.size-product-info > div:last-of-type {
   padding-left: 2rem;
   
 }
