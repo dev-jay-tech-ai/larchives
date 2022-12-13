@@ -11,7 +11,7 @@
 .size-header {
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 2.2rem 4rem;
   font-size: 2.4rem;
   text-transform: uppercase;
 }
