@@ -287,12 +287,6 @@ object-position: top; #insta-feed {
 }
 
 @media screen and (min-width: 1700px) {
-  .share-button button, details {
-    padding-left: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1699px) {
   .blog-nav {
     margin-bottom: 17.2rem;
   }
@@ -300,6 +294,12 @@ object-position: top; #insta-feed {
   .share-button button, details {
     margin: 0 auto;
     padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1699px) {
+  .share-button button, details {
+    padding-left: 0;
   }
 }
 
