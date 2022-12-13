@@ -34,6 +34,11 @@
   }
 } */
 
+.header predictive-search {
+  position: relative;
+  margin-top: 2.4rem;
+}
+
 @media screen and (min-width: 1025px) {
   .predictive-search {
     border-top: none;
@@ -41,7 +46,6 @@
   }
 
   .header predictive-search {
-    position: relative;
     margin-top: 6.6rem;
   }
 }
