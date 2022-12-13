@@ -8,14 +8,6 @@
   border-bottom: 1px solid #d0cdd8;
 }
 
-@media screen and (max-width: 1024px) {
-  .search-modal__content {
-    margin-top: 28.9rem;
-    height: 35rem;
-    padding: 2rem;
-  }
-}
-
 @media screen and (min-width: 1025px) {
   .search_custom {
     display: flex;
