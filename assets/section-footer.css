@@ -15,7 +15,7 @@
   display: none;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1024px) {
   .footer .grid {
     display: block;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .footer__content-top .grid {
     row-gap: 6rem;
     margin-bottom: 0;
@@ -67,7 +67,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1024px) {
   .footer__content-bottom {
     flex-wrap: wrap;
     padding-top: 0;
@@ -105,7 +105,7 @@
   padding-right: 2rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .footer__column--info {
     flex-direction: row;
     padding: 0;
@@ -121,7 +121,7 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .footer-block {
     display: block;
     margin-top: 0;
@@ -148,13 +148,13 @@
   flex: 1 1 100%;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1024px) {
   .footer-block.footer-block--menu:only-child {
     text-align: left;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .footer-block--newsletter {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -190,7 +190,7 @@
   max-width: 63rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer-block__newsletter:not(:only-child) {
     text-align: left;
   }
@@ -209,7 +209,7 @@
   margin-top: 3rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer-block__newsletter + .footer__list-social {
     margin-top: 0;
   }
@@ -254,7 +254,7 @@
   color: rgba(var(--color-foreground), 0.75);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer__localization {
     padding: 0.4rem 0;
     justify-content: flex-start;
@@ -284,7 +284,7 @@
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1024px) {
   noscript .localization-form:only-child,
   .footer__localization noscript {
     width: 100%;
@@ -299,7 +299,7 @@
   display: inline-block;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1024px) {
   .localization-form .button {
     word-break: break-all;
   }
@@ -324,7 +324,7 @@ noscript .localization-form__select {
   padding-left: 0rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   noscript .localization-form__select {
     min-width: 20rem;
   }
@@ -369,7 +369,7 @@ noscript .localization-selector.link {
 }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer__payment {
     margin-top: 1.5rem;
   }
@@ -380,7 +380,7 @@ noscript .localization-selector.link {
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer__copyright {
     text-align: left;
   }
@@ -401,7 +401,7 @@ noscript .localization-selector.link {
   margin-bottom: 4rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer-block__details-content {
     margin-bottom: 0;
   }
@@ -430,7 +430,7 @@ noscript .localization-selector.link {
   color: rgb(var(--color-foreground));
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
     color: rgb(var(--color-foreground));
@@ -443,14 +443,14 @@ noscript .localization-selector.link {
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1024px) {
   .footer-block__details-content .list-menu__item--link {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1050px) {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 1.4rem;
@@ -461,7 +461,7 @@ noscript .localization-selector.link {
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1024px) {
   .footer-block-image {
     text-align: center;
   }
@@ -513,7 +513,7 @@ noscript .localization-selector.link {
     }
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 1050px) {
     .footer__content-top .grid {
       margin-left: -3rem;
     }
