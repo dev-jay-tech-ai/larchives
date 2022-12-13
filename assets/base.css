@@ -2568,7 +2568,7 @@ details[open] .modal-overlay::after {
   position: relative;
   background: rgb(var(--color-background));
   margin-top: 8rem;
-  padding: 7rem 2rem;  
+  padding: 7rem 2rem 2rem 2rem;  
 }
 
 .search-modal__content-bottom {
