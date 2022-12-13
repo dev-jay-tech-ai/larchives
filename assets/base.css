@@ -2593,8 +2593,9 @@ details[open] .modal-overlay::after {
   }
 
   .search-modal__content {
-    /* padding: 0 6rem; */
-    padding: 11rem 8rem 6rem;
+    margin-top: 28.9rem;
+    height: 35rem;
+    padding: 2rem;
   }
 
   .search-modal__form {
