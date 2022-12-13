@@ -4,12 +4,6 @@
   /* justify-content: flex-end; */
 }
 
-@media only screen and (max-width: 1024px) {
-  .list-social {
-    justify-content: center;
-  }
-}
-
 .list-social__item .icon {
   height: 2rem;
   width: 2rem;
@@ -24,4 +18,15 @@
 
 .list-social__link:hover .icon {
   transform: scale(1.07);
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .list-social {
+    justify-content: center;
+  }
+
+  .list-social__link {
+    padding: 0 1.2rem;
+  }
 }
