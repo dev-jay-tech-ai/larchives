@@ -16,6 +16,10 @@
   border-bottom: 1px solid rgba(4,11,9,0.1);
 }
 
+.size-product-info {
+  border-bottom: 1px solid rgba(4,11,9,0.1);
+}
+
 @media screen and (min-width: 1025px) {
   .search_custom {
     display: flex;
