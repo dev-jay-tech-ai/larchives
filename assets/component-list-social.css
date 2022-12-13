@@ -4,7 +4,7 @@
   /* justify-content: flex-end; */
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   .list-social {
     justify-content: center;
   }
