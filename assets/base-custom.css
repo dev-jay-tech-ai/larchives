@@ -31,6 +31,10 @@
   
 }
 
+.product-popup-modal__content-info table th {
+  background-color: #1c3e35;
+}
+
 @media screen and (min-width: 1025px) {
   .search_custom {
     display: flex;
