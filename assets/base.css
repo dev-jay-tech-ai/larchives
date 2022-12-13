@@ -1149,9 +1149,7 @@ summary::-webkit-details-marker {
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
-}
-
-@media screen and (min-width: 990px) {
+  
   .grid--1-col-desktop {
     flex: 0 0 100%;
     max-width: 100%;
