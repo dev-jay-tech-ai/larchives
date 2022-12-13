@@ -2836,7 +2836,7 @@ details-disclosure > details {
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
   .overflow-hidden-tablet {
     overflow: auto;
   }
