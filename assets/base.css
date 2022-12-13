@@ -2297,6 +2297,12 @@ input[type='checkbox'] {
   height: 6rem;
 }
 
+@media screen and (min-width: 1700px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .header {
     height: 15.5rem;
