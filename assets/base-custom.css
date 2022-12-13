@@ -21,6 +21,11 @@
   padding: 3rem 4rem;
 }
 
+.size-product-info > div {
+  display: flex;
+  
+}
+
 @media screen and (min-width: 1025px) {
   .search_custom {
     display: flex;
