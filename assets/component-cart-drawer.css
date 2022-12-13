@@ -196,7 +196,7 @@ cart-drawer-items {
   flex: 1;
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 1024px) {
   cart-drawer-items {
     overflow: visible;
   }
