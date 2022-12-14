@@ -52,13 +52,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .product-popup-modal__content {
+    font-size: 1rem;
+  }
+  
   .size-header {
     padding: 1rem 2rem;
   }
-  
+  /*
   .size-header > h3 {
     font-size: 1rem;
-  }
+  }*/
 
   .size-product-info {
     padding: 3rem 2rem;
