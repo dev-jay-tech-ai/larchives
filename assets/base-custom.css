@@ -23,13 +23,13 @@
   font-size: 1.2rem;
 }
 
-.size-product-info > div:first-of-type {
-
-}
-
 .size-product-info > div:last-of-type {
   padding-left: 2rem;
   
+}
+
+.size-product-info > div:first-child {
+  color: rgba(4,11,9,.5);
 }
 
 .product-popup-modal__content-info table th {
