@@ -1173,6 +1173,7 @@
           {% render 'size-belt-w' %}
     
           {% assign categories = collectionList | remove: brand | split: ' '  | join: '-' %}
+           {{ categories }} 
           {% if categories contains "(m)" %}
             {% if categories contains "shoes" %}
             {% render "size-shoes-m" %}
