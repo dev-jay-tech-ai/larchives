@@ -289,7 +289,7 @@ priceInput.forEach(input =>{
                 rangeNum.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
             }else{
                 rangeInput[1].value = maxPrice;
-                range.style.right = (100 - (maxPrice / rangeInput[1].max) * 100) + 5 + "%";
+                range.style.right = (100 - (maxPrice / rangeInput[1].max) * 100) + "%";
                 rangeNum.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
             }
         }
@@ -313,7 +313,7 @@ rangeInput.forEach(input => {
     range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
     range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
     rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) +5 + "%";
+    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) + "%";
   }
 });
 
@@ -336,7 +336,7 @@ rangeInput.forEach(input =>{
       range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
       console.log(maxVal, rangeInput[1].max)
       rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
-      rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) +5 + "%";
+      rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) + "%";
       rangeNumInfo[0].innerText = "£" + minVal;
       rangeNumInfo[1].innerText = "£" + maxVal;
       console.log(priceGap);
