@@ -72,6 +72,9 @@
     padding-right: 2rem;
     padding-left: 2rem;
   }
+  .product-popup-modal__content-info {
+    padding-right: 2.2rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
