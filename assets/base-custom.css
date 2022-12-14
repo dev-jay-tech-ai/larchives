@@ -1214,11 +1214,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (max-width: 1024px) {
-/*   .grid--3-col-desktop .card__inner {
+  .grid--3-col-desktop.grid--2-col-tablet-down .grid__item:last-of-type {
+    display: none;
+  }
+  /* .grid--3-col-desktop .card__inner {
     height: 24rem;
   } */
 
-/*   .grid--4-col-desktop .card__inner {
+  /* .grid--4-col-desktop .card__inner {
     height: 24rem;
   } */
 }
@@ -1254,8 +1257,6 @@ input[type="range"]::-moz-range-thumb {
   color: rgba(4,11,9,.5);
   font-size: 1.2rem;
 }
-
-
 
 @media screen and (min-width: 1025px) {
   .product-grid-container {
