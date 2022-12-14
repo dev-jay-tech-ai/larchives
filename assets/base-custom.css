@@ -28,7 +28,11 @@
   
 }
 
-.size-product-info > div:last-of-type > div:last-of-type {
+.size-product-info .size-product-title {
+  font-family: 'Termina-demi';
+}
+
+.size-product-info .size-product-vendor {
   color: rgba(4,11,9,.5);
 }
 
