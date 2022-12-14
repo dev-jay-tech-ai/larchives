@@ -1217,13 +1217,6 @@ input[type="range"]::-moz-range-thumb {
   ul.grid--3-col-desktop > li.grid__item {
     display: none;
   }
-  /* .grid--3-col-desktop .card__inner {
-    height: 24rem;
-  } */
-
-  /* .grid--4-col-desktop .card__inner {
-    height: 24rem;
-  } */
 }
 
 .product-grid-container {
