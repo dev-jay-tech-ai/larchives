@@ -1190,7 +1190,7 @@ summary::-webkit-details-marker {
     width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
   }
 
-  .grid--2-col-tablet-down .grid__item:last-of-type {
+  .grid--3-col-desktop .grid__item:last-of-type {
     display: none;
   }
 
