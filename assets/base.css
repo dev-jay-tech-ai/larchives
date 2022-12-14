@@ -3025,9 +3025,3 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
-
-@media screen and (max-width: 1024px) {
-  .grid--3-col-desktop > .grid__item {
-    display: none;
-  }
-}
