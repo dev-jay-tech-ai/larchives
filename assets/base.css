@@ -3027,7 +3027,7 @@ details-disclosure > details {
 }
 
 @media screen and (max-width: 1024px) {
-  ul.grid--3-col-desktop > li.grid__item {
+  .grid--3-col-desktop > .grid__item {
     display: none;
   }
 }
