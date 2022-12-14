@@ -931,6 +931,10 @@ input[type="range"]::-moz-range-thumb {
   .blog .page-width-desktop {
     padding: 14rem 8rem;
   }
+
+  .blog-rectangle {
+    top: 37px;
+  }
 }
 
 .newsletter__wrapper > div:last-child {
