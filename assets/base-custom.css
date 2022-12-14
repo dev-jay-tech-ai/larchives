@@ -59,13 +59,18 @@
   .size-header {
     padding: 1rem 2rem;
   }
-  /*
+
   .size-header > h3 {
     font-size: 1rem;
-  }*/
+  }
 
   .size-product-info {
     padding: 3rem 2rem;
+  }
+
+  .size-product-detail {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
