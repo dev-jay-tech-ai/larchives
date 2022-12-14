@@ -59,6 +59,10 @@
   .size-header > h3 {
     font-size: 1rem;
   }
+
+  .size-product-info {
+    padding: 3rem 2rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
