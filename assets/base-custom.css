@@ -44,7 +44,11 @@
   padding: 4rem;
 }
 
-.product-popup-modal__content-info table th {
+.size-chart {
+  padding-top: 2rem;
+}
+
+.size-chart table th {
   background-color: rgba(28,62,53,.1);
 }
 
