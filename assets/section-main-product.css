@@ -905,6 +905,7 @@ a.product__text {
 
 .product-popup-modal__content {
   /** border-radius: var(--popup-corner-radius); */
+  letter-spacing: normal;
   background-color: rgb(var(--color-background));
   overflow: auto;
   height: 80%;
