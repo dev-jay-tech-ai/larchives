@@ -36,6 +36,10 @@
   color: rgba(4,11,9,.5);
 }
 
+.size-product-detail {
+  padding: 4rem;
+}
+
 .product-popup-modal__content-info table th {
   background-color: rgba(28,62,53,.1);
 }
