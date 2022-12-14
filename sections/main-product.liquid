@@ -1150,12 +1150,10 @@
         </div>
         <div class='size-product-info'>
           <div>
-            {%- if product.selected_or_first_available_variant.featured_media != null -%}
-              {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false, media_width: 0.5 %}
-              </div>
-            {%- endif -%}
+            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false, media_width: 0.5 %}
+            </div>
           </div>
           <div>
             <div>
