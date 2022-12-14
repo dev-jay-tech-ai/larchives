@@ -1214,9 +1214,9 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (max-width: 1024px) {
-  .grid--3-col-desktop .card__inner {
+/*   .grid--3-col-desktop .card__inner {
     height: 24rem;
-  }
+  } */
 
 /*   .grid--4-col-desktop .card__inner {
     height: 24rem;
