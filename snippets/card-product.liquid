@@ -189,13 +189,13 @@
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
-              {{ card_product.title | upcase }}
+              {{ card_product.vendor | upcase }}
             </a>
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
-              <div class="caption-with-letter-spacing custom-vendor">{{ card_product.vendor }}</div>
+              <div class="caption-with-letter-spacing custom-vendor">{{ card_product.title }}</div>
             {%- endif -%}
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
