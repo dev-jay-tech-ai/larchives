@@ -1175,37 +1175,37 @@
           {% assign categories = collectionList | remove: brand | split: ' '  | join: '-' %}
           {% if categories contains "(m)" %}
             {% if categories contains "shoes" %}
-            {% include "size-shoes-m" %}
+            {% render "size-shoes-m" %}
             {% elsif categories contains "clothes" %}
             {% if categories contains "top" %}
-            {% include "size-top-m" %}
+            {% render "size-top-m" %}
             {% elsif categories contains "pants" %}
-            {% include "size-pants-m" %}
+            {% render "size-pants-m" %}
             {% else %}
-            {% include "size-clothes-m" %}
+            {% render "size-clothes-m" %}
             {% endif %}
             {% elsif categories contains "accessories" %}
-            {% include "size-acc-m" %}
+            {% render "size-acc-m" %}
             {% endif %}
           {% else %}
             {% if categories contains "shoes" %}
-              {% include "size-shoes-w" %}
+              {% render "size-shoes-w" %}
             {% elsif categories contains "clothes" %}
               {% if categories contains "pants" %}
-              {% include "size-pants-w" %}
+              {% render "size-pants-w" %}
               {% else %}
-              {% include "size-clothes-w" %}
+              {% render "size-clothes-w" %}
               {% endif %}
             {% elsif categories contains "belt" %}
-            {% include "size-belt" %}
+            {% render "size-belt" %}
             {% elsif categories contains "gloves" %}
-                {% include "size-gloves" %}
+                {% render "size-gloves" %}
             {% elsif categories contains "hat" %}
-                {% include "size-hat" %}
+                {% render "size-hat" %}
             {% elsif categories contains "ring" %}
-                {% include "size-ring" %}            
+                {% render "size-ring" %}            
             {% elsif categories contains "bracelet" %}
-                {% include "size-bracelet" %}
+                {% render "size-bracelet" %}
             {% endif %}
           {% endif %}
             
