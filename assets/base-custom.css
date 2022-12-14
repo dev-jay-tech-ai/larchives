@@ -1214,7 +1214,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (max-width: 1024px) {
-  ul.grid--3-col-desktop.grid--2-col-tablet-down > li.grid__item:last-of-type {
+  ul.grid--3-col-desktop.grid--2-col-tablet-down > li.grid__item:last-child {
     display: none;
   }
   /* .grid--3-col-desktop .card__inner {
