@@ -1149,7 +1149,27 @@
           </button>
         </div>
         <div class='size-product-info'>
-          <div>Image</div>
+          <div>
+            <img
+              id="Thumbnail-{{ section.id }}-0-right"
+              srcset="
+                {% if featured_media.preview_image.width >= 54 %}{{ featured_media.preview_image | image_url: width: 54 }} 54w,{% endif %}
+                {% if featured_media.preview_image.width >= 74 %}{{ featured_media.preview_image | image_url: width: 74 }} 74w,{% endif %}
+                {% if featured_media.preview_image.width >= 104 %}{{ featured_media.preview_image | image_url: width: 104 }} 104w,{% endif %}
+                {% if featured_media.preview_image.width >= 162 %}{{ featured_media.preview_image | image_url: width: 162 }} 162w,{% endif %}
+                {% if featured_media.preview_image.width >= 208 %}{{ featured_media.preview_image | image_url: width: 208 }} 208w,{% endif %}
+                {% if featured_media.preview_image.width >= 324 %}{{ featured_media.preview_image | image_url: width: 324 }} 324w,{% endif %}
+                {% if featured_media.preview_image.width >= 416 %}{{ featured_media.preview_image | image_url: width: 416 }} 416w,{% endif %},
+                {{ featured_media.preview_image | image_url }} {{ media.preview_image.width }}w
+              "
+              src="{{ featured_media | image_url: width: 416 }}"
+              sizes="(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4), (min-width: 990px) calc(({{ media_width | times: 100 }}vw - 4rem) / 4), (min-width: 750px) calc((100vw - 15rem) / 8), calc((100vw - 14rem) / 3)"
+              alt="{{ featured_media.alt | escape }}"
+              width="77"
+              height="{{ 77 | divided_by: item.image.aspect_ratio | ceil }}"
+              loading="lazy"
+            >
+          </div>
           <div>
             <div>
               <p>{{ product.title | escape }}</p>
