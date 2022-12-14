@@ -950,16 +950,16 @@ a.product__text {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  .product-popup-modal__content table {
-    display: block;
-    max-width: fit-content;
-    overflow-x: auto;
-    white-space: nowrap;
-    margin: 0;
-  }
+.product-popup-modal__content table {
+  display: block;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0;
+}
 
-  .product-popup-modal__content-info {
+@media screen and (max-width: 1024px) {
+ .product-popup-modal__content-info {
     padding-right: 2.2rem !important;
   }
   
