@@ -28,7 +28,7 @@
   
 }
 
-.size-product-info > div:last-of-type > div:first-child {
+.size-product-info > div:last-of-type > div:last-of-type {
   color: rgba(4,11,9,.5);
 }
 
