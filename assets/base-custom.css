@@ -1217,12 +1217,6 @@ input[type="range"]::-moz-range-thumb {
   padding: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
-  .grid--2-col-tablet-down .grid__item:last-child {
-    display: none;
-  }
-}
-
 .custom-price-discountrate {
   font-size: 1.2rem;
   font-stretch: normal;
