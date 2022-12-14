@@ -1175,26 +1175,26 @@
           {% assign categories = collectionList | remove: brand | split: ' '  | join: '-' %}
           {% if categories contains "(m)" %}
             {% if categories contains "shoes" %}
-            {% include "size-shoes-men" %}
+            {% include "size-shoes-m" %}
             {% elsif categories contains "clothes" %}
             {% if categories contains "top" %}
-            {% include "size-top-men" %}
+            {% include "size-top-m" %}
             {% elsif categories contains "pants" %}
-            {% include "size-pants-men" %}
+            {% include "size-pants-m" %}
             {% else %}
-            {% include "size-clothes-men" %}
+            {% include "size-clothes-m" %}
             {% endif %}
             {% elsif categories contains "accessories" %}
-            {% include "size-acc-men" %}
+            {% include "size-acc-m" %}
             {% endif %}
           {% else %}
             {% if categories contains "shoes" %}
-              {% include "size-shoes" %}
+              {% include "size-shoes-w" %}
             {% elsif categories contains "clothes" %}
               {% if categories contains "pants" %}
-              {% include "size-pants" %}
+              {% include "size-pants-w" %}
               {% else %}
-              {% include "size-clothes" %}
+              {% include "size-clothes-w" %}
               {% endif %}
             {% elsif categories contains "belt" %}
             {% include "size-belt" %}
