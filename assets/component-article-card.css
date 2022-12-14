@@ -113,7 +113,8 @@
   .article-card__image--large .ratio::before {
     padding-bottom: 27.5rem;
   }
-}/** 
+}
+/** 
 @media screen and (min-width: 990px) {
   .article-card__image--small .ratio::before {
     padding-bottom: 17.7rem;
