@@ -960,7 +960,7 @@ a.product__text {
   }
 
   .product-popup-modal__content-info {
-    padding-right: 2.2rem;
+    padding-right: 2.2rem !important;
   }
   
   .product-media-modal__dialog .global-media-settings,
