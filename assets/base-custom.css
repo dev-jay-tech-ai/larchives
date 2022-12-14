@@ -1262,9 +1262,9 @@ input[type="range"]::-moz-range-thumb {
     padding: 0;
   }
     
-  .product-grid-custom .card__inner {
+/*   .product-grid-custom .card__inner {
     height: 45.7rem;
-  } 
+  }  */
 
 /*   .grid--4-col-desktop .card__inner {
     height: 45.7rem;
