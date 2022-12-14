@@ -948,3 +948,7 @@ customElements.define('product-recommendations', ProductRecommendations);
 
 const target_widget = document.querySelector('.card_widget > div:first-of-type');
 target_widget.outerHTML = target_widget.innerHTML;
+
+const last_li = document.querySelectorAll('grid--3-col-desktop.grid--2-col-tablet-down > li');
+consol.log(last_li:last-of-type);
+
