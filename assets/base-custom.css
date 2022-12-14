@@ -8,6 +8,10 @@
   border-bottom: 1px solid #d0cdd8;
 }
 
+.product-popup-modal__content {
+  font-size: 1.2rem;
+}
+
 .size-header {
   display: flex;
   justify-content: space-between;
@@ -20,7 +24,7 @@
   display: flex;
   border-bottom: 1px solid rgba(4,11,9,.1);
   padding: 3rem 4rem;
-  font-size: 1.2rem;
+  letter-spacing: normal;
 }
 
 .size-product-info > div:last-of-type {
@@ -30,7 +34,6 @@
 .size-product-title {
   font-family: 'Termina-demi';
   text-transform: uppercase;
-  letter-spacing: normal;
 }
 
 .size-product-info .size-product-vendor {
