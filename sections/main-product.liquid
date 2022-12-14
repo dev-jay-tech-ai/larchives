@@ -1166,7 +1166,8 @@
         <div class="product-popup-modal__content-info">
           <h3>{{ block.settings.page.title }}SIZE INFORMATION</h3>
           {{ block.settings.page.content }}
-          {% render 'size-belt-m' %}
+          {% assign size-option = 'size-belt-m' %}
+          {% render size-option %}
         </div>
       </div>
     </modal-dialog>
