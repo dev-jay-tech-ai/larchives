@@ -937,7 +937,6 @@ a.product__text {
 
 @media screen and (min-width: 1025px) {
   .product-popup-modal__content {
-    padding-right: 1.5rem;
     margin-top: 10rem;
     width: 70%;
     padding: 0;
