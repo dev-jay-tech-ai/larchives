@@ -934,7 +934,7 @@ a.product__text {
   var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {    
   .product-popup-modal__content {
     margin-top: 10rem;
     width: 70%;
@@ -959,6 +959,10 @@ a.product__text {
     margin: 0;
   }
 
+  .product-popup-modal__content-info {
+    padding-right: 2.2rem;
+  }
+  
   .product-media-modal__dialog .global-media-settings,
   .product-media-modal__dialog .global-media-settings video,
   .product-media-modal__dialog .global-media-settings model-viewer,
