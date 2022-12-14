@@ -30,6 +30,7 @@
 .size-product-title {
   font-family: 'Termina-demi';
   text-transform: uppercase;
+  letter-spacing: normal;
 }
 
 .size-product-info .size-product-vendor {
