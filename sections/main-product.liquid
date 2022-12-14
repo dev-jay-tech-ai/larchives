@@ -1155,7 +1155,7 @@
           <div>
             <div>
               <div class='size-product-title'>{{ product.title | escape }}</div>
-              <div class='size-product-vendor'>{{ product.vendor | escape }}</div>
+              <div class='size-product-sub'>{{ product.vendor | escape }}</div>
             </div>
             <div>
               <ul style='padding-left: 20px;'>
@@ -1167,7 +1167,7 @@
         </div>  
         <div class="product-popup-modal__content-info size-product-detail">
           <div class='size-product-title'>{{ block.settings.page.title }}Size information</div>
-          <div>Unsure what your size is? Check here.</div>
+          <div class='size-product-sub'>Unsure what your size is? Check here.</div>
           {{ block.settings.page.content }}
           {% render 'size-belt-m' %}
         </div>
