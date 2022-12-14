@@ -1170,46 +1170,45 @@
           <div class='size-product-sub'>Unsure what your size is? <a href='#'>Check here.</a></div>
           <div class='size-chart'>
           {{ block.settings.page.content }}
-
-         {% for collection in product.collections %} {{ collection.title }} {% endfor %}
-          {% assign categories = collectionList | remove: brand | split: ' '  | join: '-' %}
-           {{ categories }} 
-          {% if categories contains "(m)" %}
-            {% if categories contains "shoes" %}
-            {% render "size-shoes-m" %}
-            {% elsif categories contains "clothes" %}
-            {% if categories contains "top" %}
-            {% render "size-top-m" %}
-            {% elsif categories contains "pants" %}
-            {% render "size-pants-m" %}
-            {% else %}
-            {% render "size-clothes-m" %}
-            {% endif %}
-            {% elsif categories contains "accessories" %}
-            {% render "size-acc-m" %}
-            {% endif %}
-          {% else %}
-            {% if categories contains "shoes" %}
-              {% render "size-shoes-w" %}
-            {% elsif categories contains "clothes" %}
-              {% if categories contains "pants" %}
-              {% render "size-pants-w" %}
+           {% for collection in product.collections %} {{  }} 
+            {% assign categories = collection.title | downcase %}
+             {{ categories }} 
+            {% if categories contains "(m)" %}
+              {% if categories contains "shoes" %}
+              {% render "size-shoes-m" %}
+              {% elsif categories contains "clothes" %}
+              {% if categories contains "top" %}
+              {% render "size-top-m" %}
+              {% elsif categories contains "pants" %}
+              {% render "size-pants-m" %}
               {% else %}
-              {% render "size-clothes-w" %}
+              {% render "size-clothes-m" %}
               {% endif %}
-            {% elsif categories contains "belt" %}
-            {% render "size-belt" %}
-            {% elsif categories contains "gloves" %}
-                {% render "size-gloves" %}
-            {% elsif categories contains "hat" %}
-                {% render "size-hat" %}
-            {% elsif categories contains "ring" %}
-                {% render "size-ring" %}            
-            {% elsif categories contains "bracelet" %}
-                {% render "size-bracelet" %}
+              {% elsif categories contains "accessories" %}
+              {% render "size-acc-m" %}
+              {% endif %}
+            {% else %}
+              {% if categories contains "shoes" %}
+                {% render "size-shoes-w" %}
+              {% elsif categories contains "clothes" %}
+                {% if categories contains "pants" %}
+                {% render "size-pants-w" %}
+                {% else %}
+                {% render "size-clothes-w" %}
+                {% endif %}
+              {% elsif categories contains "belt" %}
+              {% render "size-belt" %}
+              {% elsif categories contains "gloves" %}
+                  {% render "size-gloves" %}
+              {% elsif categories contains "hat" %}
+                  {% render "size-hat" %}
+              {% elsif categories contains "ring" %}
+                  {% render "size-ring" %}            
+              {% elsif categories contains "bracelet" %}
+                  {% render "size-bracelet" %}
+              {% endif %}
             {% endif %}
-          {% endif %}
-            
+          {% endfor %} 
           </div>
         </div>
       </div>
