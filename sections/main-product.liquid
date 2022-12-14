@@ -1171,6 +1171,44 @@
           <div class='size-chart'>
           {{ block.settings.page.content }}
           {% render 'size-belt-w' %}
+    
+          {% assign categories = collectionList | remove: brand | split: ' '  | join: '-' %}
+            {% if categories contains "(m)" %}
+              {% if categories contains "shoes" %}
+              {% include "size-shoes-men" %}
+              {% elsif categories contains "clothes" %}
+              {% if categories contains "top" %}
+              {% include "size-top-men" %}
+              {% elsif categories contains "pants" %}
+              {% include "size-pants-men" %}
+              {% else %}
+              {% include "size-clothes-men" %}
+              {% endif %}
+              {% elsif categories contains "accessories" %}
+              {% include "size-acc-men" %}
+              {% endif %}
+            {% else %}
+              {% if categories contains "shoes" %}
+                {% include "size-shoes" %}
+              {% elsif categories contains "clothes" %}
+                {% if categories contains "pants" %}
+                {% include "size-pants" %}
+                {% else %}
+                {% include "size-clothes" %}
+                {% endif %}
+              {% elsif categories contains "belt" %}
+              {% include "size-belt" %}
+              {% elsif categories contains "gloves" %}
+                  {% include "size-gloves" %}
+              {% elsif categories contains "hat" %}
+                  {% include "size-hat" %}
+              {% elsif categories contains "ring" %}
+                  {% include "size-ring" %}            
+              {% elsif categories contains "bracelet" %}
+                  {% include "size-bracelet" %}
+              {% endif %}
+            {% endif %}
+            
           </div>
         </div>
       </div>
