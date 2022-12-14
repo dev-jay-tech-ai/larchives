@@ -51,6 +51,12 @@
   background-color: rgba(28,62,53,.1);
 }
 
+@media screen and (max-width: 1024px) {
+  .size-header {
+    padding: 2.2rem 2rem;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .search_custom {
     display: flex;
