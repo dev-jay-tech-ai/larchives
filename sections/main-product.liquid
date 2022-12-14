@@ -62,7 +62,7 @@
         {% endif %}
         aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
         data-desktop-layout="{{ section.settings.gallery_layout }}"
-      >
+      >size
       {%- liquid
         assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
         if section.settings.hide_variants and variant_images.size == product.media.size
@@ -1164,7 +1164,7 @@
           </div>
         </div>  
         <div class="product-popup-modal__content-info">
-          <h1 class="h2">{{ block.settings.page.title }}SIZE INFORMATION</h1>
+          <h3>{{ block.settings.page.title }}SIZE INFORMATION</h3>
           {{ block.settings.page.content }}
           {% render 'size-belt-m' %}
         </div>
