@@ -1213,6 +1213,16 @@ input[type="range"]::-moz-range-thumb {
   height: 9.2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .grid--3-col-desktop .card__inner {
+    height: 24rem;
+  }
+
+/*   .grid--4-col-desktop .card__inner {
+    height: 24rem;
+  } */
+}
+
 .product-grid-container {
   padding: 2rem;
 }
