@@ -1171,7 +1171,7 @@
           <div class='size-chart'>
           {{ block.settings.page.content }}
 
-         {% for collection in product.collections %} {{ collection }} {% endfor %}
+         {% for collection in product.collections %} {{ collection.title }} {% endfor %}
           {% assign categories = collectionList | remove: brand | split: ' '  | join: '-' %}
            {{ categories }} 
           {% if categories contains "(m)" %}
