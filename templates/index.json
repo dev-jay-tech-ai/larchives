@@ -154,71 +154,13 @@
         "padding_bottom": 100
       }
     },
-    "multicolumn-3": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/atoms-logo-press-5_3x_3ac7a437-8fa5-4684-96fb-abe609d07f95.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/atoms-logo-press-6_3x_32168dcb-92fa-4737-a465-955169ac43b7.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/atoms-logo-press-3_3x_232cafe4-67ff-40e8-9a62-1d9f5b5480b3.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/atoms-logo-press-8_3x_e2a8560b-94f6-4138-b454-4655c19c52db.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-1",
-        "column-2",
-        "column-3",
-        "column-4"
-      ],
+    "main-brand-banner": {
+      "type": "main-brand-banner",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image_1": "",
+        "image_2": "",
+        "image_3": "",
+        "image_4": ""
       }
     },
     "f2f2d48d-df14-410a-8d59-8a0553b7ca24": {
@@ -254,7 +196,7 @@
     "main-image-banner",
     "558e85aa-afcf-4cfa-9ca5-8a98f5645a92",
     "7201d5b8-5386-490b-92d3-560df8f48082",
-    "multicolumn-3",
+    "main-brand-banner",
     "f2f2d48d-df14-410a-8d59-8a0553b7ca24",
     "b439d48c-9276-4a6c-88eb-f4f310404910"
   ]
