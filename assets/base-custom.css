@@ -10,6 +10,7 @@
 .brand-banner-container > div {
   border: 1px solid rgba(4,11,9,.1);
   width: 50%;
+  text-align: center;
 }
 
 .brand-banner-container > div > img  {
