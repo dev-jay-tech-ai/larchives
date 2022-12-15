@@ -1389,7 +1389,6 @@ input[type="range"]::-moz-range-thumb {
   .item-custom {
     display: flex;
     padding: 8rem 0;
-    width: 25%;
   }
 
   .item-custom > div:first-child {
