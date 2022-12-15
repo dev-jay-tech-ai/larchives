@@ -5,11 +5,12 @@
 .brand-banner-container {
   display: flex;
   flex-wrap: wrap;
-  border-collapse: collapse;
+  border-top: 1px solid rgba(4,11,9,.1);
+
 }
 
 .brand-banner-container > div {
-  border: 1px solid rgba(4,11,9,.1);
+  border-bottom: 1px solid rgba(4,11,9,.1);
   width: 50%;
   text-align: center;
   padding: 1.85rem 4.25rem;
