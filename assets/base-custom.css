@@ -9,7 +9,7 @@
 
 .brand-banner-container > div {
   border: 1px solid rgba(4,11,9,.1);
-  width: 25%;
+  width: 50%;
 }
 
 .brand-banner-container > div > img  {
@@ -22,7 +22,7 @@
     flex-wrap: nowrap;
   }
   .brand-banner-container > div {
-    width: 50%;
+    width: 25%;
   }
   .brand-banner-container > div > img  {
     width: 100%;
