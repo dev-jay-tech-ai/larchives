@@ -21,6 +21,10 @@
   transform: translate(-50%, -50%);
 }
 
+.newbanner-conent div {
+  color: #fff;
+}
+
 .account-list {
   color: rgba(4,11,9,.5);
   padding-bottom: 1.9rem;
