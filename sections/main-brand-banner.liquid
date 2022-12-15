@@ -1,12 +1,109 @@
+<div class='banner-container'>
+  <div class='banner-main banner_cover'>
+    <div class='banner__dim'></div>
+    <div class='banner-caption'>
+      <div>COATS</div>
+      <div>Trussardi</div>
+    </div>
+    <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
+    {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
+      loading: 'lazy',
+      width: section.settings.image.width,
+      height: image_height,
+      class: image_class,
+      sizes: sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image.alt | escape
+    }}
+  </div>
+  <div class='banner-sub'>
+    <div class='banner-sub_sub'>
+      <div class='banner_cover'>
+        <div class='banner__dim'></div>
+        <div class='banner-caption'>
+          <div>BAGS</div>
+          <div>Givenchy</div>
+        </div>
+        <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
+        {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt | escape
+        }}
+      </div>
+      <div class='banner_cover'>
+        <div class='banner__dim'></div>
+        <div class='banner-caption'>
+          <div>SNEAKERS</div>
+          <div>Off-White</div>
+        </div>
+        <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
+        {{ section.settings.image_3 | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt | escape
+        }}
+      </div>
+    </div>  
+    <div class='banner_cover'>
+      <div class='banner__dim'>&nbsp;</div>
+      <div class='banner-caption'>
+        <div>BOOTS</div>
+        <div>Jimmy Choo</div>
+      </div>
+      <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
+      {{ section.settings.image_4 | image_url: width: 1500 | image_tag:
+        loading: 'lazy',
+        width: section.settings.image.width,
+        height: image_height,
+        class: image_class,
+        sizes: sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.image.alt | escape
+      }}
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "t:sections.main-brand-banner.name",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "t:sections.main-brand-banner.settings.image_1.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "t:sections.main-brand-banner.settings.image_2.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_3",
+        "label": "t:sections.main-brand-banner.settings.image_3.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_4",
+        "label": "t:sections.main-brand-banner.settings.image_4.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.main-brand-banner.presets.name"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
