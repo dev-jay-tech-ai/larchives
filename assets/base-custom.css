@@ -2,6 +2,10 @@
   display: none;
 }
 
+.brand-banner-container {
+  display: flex;
+}
+
 .newbanner {
   width: 100%;  
   height: 100%;
