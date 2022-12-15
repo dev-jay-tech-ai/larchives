@@ -1351,6 +1351,11 @@ input[type="range"]::-moz-range-thumb {
   padding: 4rem 0;
 }
 
+.item-custom {
+  display: flex;
+  padding: 2rem 6rem;
+}
+
 .item-custom > div:last-child {
   text-align: center;
   width: 100%;
