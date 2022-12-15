@@ -1348,7 +1348,6 @@ input[type="range"]::-moz-range-thumb {
   flex-direction: column;
   justify-content: space-between;
   border-bottom: 1px solid rgba(4,11,9,.1);
-  padding: 4rem 0;
 }
 
 .item-custom {
