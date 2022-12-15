@@ -1160,7 +1160,7 @@
       }
     },
     "main-image-banner": {
-      "name": "Image banner",
+      "name": "Image brand banner",
       "settings": {
         "image": {
           "label": "First image"
@@ -1314,7 +1314,7 @@
         }
       },
       "presets": {
-        "name": "Image banner"
+        "name": "Image brand banner"
       }
     },
     "image-with-text": {
