@@ -21,6 +21,10 @@
   transform: translate(-50%, -30%);
 }
 
+.newbanner-conent h2 {
+  margin-top: 1rem;  
+}
+
 .newbanner-conent div,
 .newbanner-conent h2 {
   color: #fff;
