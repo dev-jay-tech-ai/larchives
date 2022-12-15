@@ -21,7 +21,8 @@
   transform: translate(-50%, -50%);
 }
 
-.newbanner-conent div {
+.newbanner-conent div,
+.newbanner-conent h2 {
   color: #fff;
 }
 
