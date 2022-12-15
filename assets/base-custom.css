@@ -12,9 +12,17 @@
 }
 
 .brand-banner-container > div > img  {
-  width: 100%;
   object-fit: cover;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 1025px) {
+  .brand-banner-container > div {
+    width: 50%;
+  }
+  .brand-banner-container > div > img  {
+    width: 100%;
+  }
 }
 
 .newbanner {
