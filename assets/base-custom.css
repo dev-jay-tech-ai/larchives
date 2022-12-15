@@ -1392,8 +1392,7 @@ input[type="range"]::-moz-range-thumb {
 
   .item-custom {
     display: flex;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding: 8rem 0;
     width: 25%;
   }
 
