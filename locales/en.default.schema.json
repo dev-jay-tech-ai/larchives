@@ -1168,6 +1168,12 @@
         "image_2": {
           "label": "Second image"
         },
+        "image_3": {
+          "label": "Third image"
+        },
+        "image_4": {
+          "label": "Forth image"
+        },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
         },
