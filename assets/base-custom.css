@@ -13,6 +13,10 @@
   object-fit: cover;
 }
 
+.newbanner-conent {
+  position: absolute;
+}
+
 .account-list {
   color: rgba(4,11,9,.5);
   padding-bottom: 1.9rem;
