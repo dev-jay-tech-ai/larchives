@@ -2,6 +2,10 @@
   display: none;
 }
 
+.newbanner {
+  width: 100%;  
+}
+
 .newbanner > img {
     width: 100%;
     height: 100%;
