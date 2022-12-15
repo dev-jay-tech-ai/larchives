@@ -2666,7 +2666,7 @@ details[open] > .header__submenu {
 .header--top-center .header__inline-menu,
 .header--top-center .header__heading-link {
   margin-left: 0;
-  /** padding-bottom: 2rem;  */
+  padding-bottom: 1.2rem;
 }
 
 @media screen and (min-width: 1025px) {
