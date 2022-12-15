@@ -10,7 +10,7 @@
 .brand-banner-container > div {
   display : table-cell;
   border: 1px solid rgba(4,11,9,.1);
-  border-collapse:collapse;
+  border-collapse: collapse;
   width: 50%;
   text-align: center;
   padding: 1.85rem 4.25rem;
