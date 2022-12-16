@@ -1113,6 +1113,8 @@ input[type="range"]::-moz-range-thumb {
 
 .footer__cate ul {
   list-style: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer__cate > div:last-child > ul {
