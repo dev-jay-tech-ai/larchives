@@ -1385,7 +1385,7 @@ input[type="range"]::-moz-range-thumb {
 @media screen and (min-width: 1025px) {
   .items-custom {
     flex-direction: row;
-    padding: 0 8rem;
+    padding: 0 2.35rem;
   }
 
   .item-custom {
