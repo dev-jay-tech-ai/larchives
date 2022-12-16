@@ -1136,8 +1136,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .footer__content-bottom-wrapper:last-child {
-  display: flex;
-  border-top: 1px solid rgb(4 11 9 / 10%);
+  flex-direction: column;
+  flex-wrap: nowrap;
   height: 9.2rem;
   justify-content: center;
   padding: 2rem 0;
