@@ -2,20 +2,20 @@
   display: none;
 }
 
-.mobile-image{
-  display: block;
+.hidden_desktop{
+  display:block;
 }
 
-.desktop-image{
+.hidden_mobile {
   display: none;
 }
 
 @media screen and (min-width:1025px){
-  .mobile-image{
-    display: none;
+  .hidden_desktop{
+    display:none;
   }
   
-  .desktop-image{
+  .hidden_mobile {
     display: block;
   }
 }
