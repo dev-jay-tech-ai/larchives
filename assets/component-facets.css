@@ -992,6 +992,18 @@ input.mobile-facets__checkbox {
   display: block;
 }
 
+@media screen and (min-width: 1250px) {
+    .facets-vertical .facets__summary {
+      padding-top: 2rem;
+    }
+}
+
+@media screen and and (min-width: 1025px) and (max-width: 1249) {
+    .facets-vertical .facets__summary {
+      padding-top: 1.5rem;
+    }
+}
+
 @media screen and (min-width: 1025px) {
   .facets-vertical {
     display: flex;
@@ -1014,11 +1026,7 @@ input.mobile-facets__checkbox {
     border-top: 0.1rem solid rgba(var(--color-foreground), 0.1);
     margin-right: 0;
   }
-  
-  .facets-vertical .facets__summary {
-    padding-top: 2rem;
-  }
-  
+    
   .facets__heading--vertical {
     margin: 0 0 1.5rem 0;
     font-size: 1.5rem;
