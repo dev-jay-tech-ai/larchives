@@ -35,7 +35,7 @@
 
         {% if enable_filtering %}
           {% comment %} Heading is the first tabbable element on filter type horizontal{% endcomment %}
-          <div id="FacetsWrapperDesktop"{% if filter_type == 'horizontal' %} class="facets__wrapper"{% endif %}>
+          <div id="FacetsWrapperDesktop"{% if filter_type == 'horizontal' %} class="facets__wrapper"{% endif %} style='width: 100%'>
           
             {%- if filter_type == 'horizontal' and results.filters != empty -%}
               <h2 class="facets__heading text-body" id="verticalTitle" tabindex="-1">{{ 'products.facets.filter_by_label' | t }}</h2>
@@ -516,7 +516,7 @@
       </form>
       <div>
         <facet-remove class="">
-          <a href="{{ results_url }}" class="button button_custom reverse" style='margin-top: 4rem; width: 100%'>{{ 'products.facets.clear_all' | t | append: ' filters' }}</a>
+          <a href="{{ results_url }}" class="button button_custom reverse" style='width: 100%; margin-top: 4rem;'>{{ 'products.facets.clear_all' | t | append: ' filters' }}</a>
         </facet-remove>
       </div>
 
