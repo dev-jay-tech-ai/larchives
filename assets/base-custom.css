@@ -1135,7 +1135,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: rgb(4 11 9 / 10%);
 }
 
-.footer__content-bottom:last-child {
+.footer__content-bottom-wrapper:last-child {
   display: flex;
   height: 9.2rem;
   justify-content: center;
