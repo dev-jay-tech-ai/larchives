@@ -1476,6 +1476,12 @@ nav {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 1209px) {
+  .header_custom_style > div > a {
+    font-size: .8rem;
+  } 
+}
+
 .header_text_style {
   color: #040b09;
 }
