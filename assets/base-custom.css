@@ -1159,6 +1159,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .footer__content-bottom-wrapper:last-child {
+    flex-direction: row;
     height: 6.1rem;
     padding: 20px 80px;
     justify-content: space-between;
