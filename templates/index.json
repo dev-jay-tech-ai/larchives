@@ -36,6 +36,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_9.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/main_image_mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
