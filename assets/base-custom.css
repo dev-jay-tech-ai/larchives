@@ -1161,7 +1161,7 @@ input[type="range"]::-moz-range-thumb {
   .footer__content-bottom-wrapper:last-child {
     height: 6.1rem;
     padding: 20px 80px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   
   .footer__list-social.list-unstyled.list-social {
