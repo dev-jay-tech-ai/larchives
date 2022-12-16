@@ -1147,6 +1147,10 @@ input[type="range"]::-moz-range-thumb {
     flex-direction: row;
   }
   
+  .footer__cate > div {
+    flex: 1;
+  }
+  
   .footer-desc {
     font-size: 1.4rem;
     margin: 3rem 0;
