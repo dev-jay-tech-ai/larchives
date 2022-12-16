@@ -1553,6 +1553,7 @@ nav {
 .nav-icon {
   display: flex;
   justify-content: flex-end;
+  column-gap: 2;
 }
 
 .nav-icon > div svg {
