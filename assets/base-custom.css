@@ -1197,6 +1197,10 @@ input[type="range"]::-moz-range-thumb {
   object-fit: cover;
 }
 
+.banner-container img:first-child {
+  vertical-align: bottom;
+}
+
 .banner-caption {
   position: absolute;
   display: block;
