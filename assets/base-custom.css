@@ -1098,7 +1098,6 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
   flex-direction: column;
   color: #040b09;
-  justify-content: space-between;
   font-size: 1.4rem;
   font-weight: normal;
   font-stretch: normal;
