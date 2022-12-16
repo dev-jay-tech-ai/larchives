@@ -998,7 +998,7 @@ input.mobile-facets__checkbox {
     }
 }
 
-@media screen and and (min-width: 1025px) and (max-width: 1249) {
+@media screen and (min-width: 1025px) and (max-width: 1249) {
     .facets-vertical .facets__summary {
       padding-top: 1.5rem;
     }
