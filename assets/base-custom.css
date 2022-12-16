@@ -1596,11 +1596,10 @@ nav {
   vertical-align: sub;
 }
 
-.footer__column--info > div {
-  width: 50%;
-}
-
 @media screen and (min-width: 1025px) {
+  .footer__column--info > div {
+    width: 50%;
+  }
 /*   .footer-logo {
     text-align: left;
   } 
