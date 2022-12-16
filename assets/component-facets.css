@@ -998,22 +998,22 @@ input.mobile-facets__checkbox {
 }
 
 @media screen and (min-width: 1250px) {
-    .facets-vertical .facets__summary {
-      padding-top: 2rem;
-    }
-    .facets_btn {
-        margin-top: 4rem;'
-    }
+   .facets-vertical .facets__summary {
+    padding-top: 2rem;
+   }
+   .facets_btn {
+      margin-top: 4rem;'
+   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1249px) {
-    .facets-vertical .facets__summary {
-      padding-top: 1.5rem;
-    }
+   .facets-vertical .facets__summary {
+    padding-top: 1.5rem;
+   }
 
-    .facets__summary {
-      font-size: 1.4rem;
-    }
+   .facets__summary {
+    font-size: 1.4rem;
+   }
 }
 
 @media screen and (min-width: 1025px) {
