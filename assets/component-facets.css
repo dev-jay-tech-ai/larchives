@@ -999,7 +999,7 @@ input.mobile-facets__checkbox {
 
 @media screen and (min-width: 1250px) {
    .facets-vertical .facets__summary {
-    padding-top: 2rem;
+      padding-top: 2rem;
    }
    .facets_btn {
       margin-top: 4rem;'
