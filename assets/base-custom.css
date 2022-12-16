@@ -1113,8 +1113,6 @@ input[type="range"]::-moz-range-thumb {
 
 .footer__cate ul {
   list-style: none;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .footer__cate > div:last-child > ul {
@@ -1144,10 +1142,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (min-width: 1025px) {
-  .footer__cate ul {
-    padding-right: 16rem;
-  }
-  
   .footer__cate {
     flex-direction: row;
   }
