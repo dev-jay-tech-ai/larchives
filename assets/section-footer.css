@@ -254,7 +254,7 @@
   color: rgba(var(--color-foreground), 0.75);
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1025px) {
   .footer__localization {
     padding: 0.4rem 0;
     justify-content: flex-start;
