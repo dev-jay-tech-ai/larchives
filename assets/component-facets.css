@@ -1014,6 +1014,11 @@ input.mobile-facets__checkbox {
    .facets__summary {
       font-size: 1.4rem;
    }
+
+  .facets__summary svg {
+      width: 2rem;
+      height: 2rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
