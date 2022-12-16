@@ -776,16 +776,6 @@
 {% endjavascript %}
       
 <script>
-  setTimeout(() => {
-    const target_banner = document.querySelectorAll('.banner-container > div');    
-    if(screen.width < 1025) {
-      console.log('it working')
-      target_banner.forEach((tb) => {
-        tb.style.height = String(screen.width) +'px'; 
-      });
-    } 
-  },200);
-
   const drawer_menu_close = document.querySelector('.meun-drawer_close');
   const header = document.querySelector('.section-header');
   const device = header.getElementsByTagName('header-drawer')[0].getAttribute('data-breakpoint')
