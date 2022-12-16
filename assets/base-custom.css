@@ -2,6 +2,24 @@
   display: none;
 }
 
+.mobile-image{
+  display: block;
+}
+
+.desktop-image{
+  display: none;
+}
+
+@media screen and (min-width:1025px){
+  .mobile-image{
+    display: none;
+  }
+  
+  .desktop-image{
+    display: block;
+  }
+}
+
 .brand-banner-container {
   display: flex;
   flex-wrap: wrap;
