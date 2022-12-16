@@ -326,9 +326,7 @@
     {%- endif -%}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
-      {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
-      {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if request.page_type == 'index' -%} 
             {% render 'logo-white' %}
