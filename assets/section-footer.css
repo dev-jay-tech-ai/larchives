@@ -190,7 +190,7 @@
   max-width: 63rem;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1025px) {
   .footer-block__newsletter:not(:only-child) {
     text-align: left;
   }
@@ -209,7 +209,7 @@
   margin-top: 3rem;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1025px) {
   .footer-block__newsletter + .footer__list-social {
     margin-top: 0;
   }
