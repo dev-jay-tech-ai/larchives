@@ -982,11 +982,6 @@ input[type="range"]::-moz-range-thumb {
   text-align: left !important;
 }
 
-.blog-image-custom {
-  /* width: 41.3rem !important; */
-  height: 38rem !important;
-} 
-
 .blog .page-width-desktop {
   padding: 10rem 2rem;
   text-align: center;
