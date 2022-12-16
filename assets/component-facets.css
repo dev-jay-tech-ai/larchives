@@ -992,7 +992,7 @@ input.mobile-facets__checkbox {
   display: block;
 }
 
-.facets_btn {
+.facets-btn {
   width: 100%; 
   margin-top: 1rem;'
 }
@@ -1001,18 +1001,18 @@ input.mobile-facets__checkbox {
    .facets-vertical .facets__summary {
       padding-top: 2rem;
    }
-   .facets_btn {
+   .facets-btn {
       margin-top: 4rem;'
    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1249px) {
    .facets-vertical .facets__summary {
-    padding-top: 1.5rem;
+      padding-top: 1.5rem;
    }
 
    .facets__summary {
-    font-size: 1.4rem;
+      font-size: 1.4rem;
    }
 }
 
