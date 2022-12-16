@@ -1130,9 +1130,13 @@ input[type="range"]::-moz-range-thumb {
   margin: 2rem 0;
 }
 
+.footer_division_line {
+  height: .1rem;
+  background-color: rgb(4 11 9 / 10%);
+}
+
 .footer__content-bottom-wrapper:last-child {
   display: flex;
-  border-top: 1px solid rgb(4 11 9 / 10%);
   height: 9.2rem;
   justify-content: center;
   padding: 2rem 0;
