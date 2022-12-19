@@ -1891,8 +1891,9 @@ details[open] > .share-button__fallback {
 .customer .field input:not(:placeholder-shown),
 .customer .field input:-webkit-autofill {
   /* padding: 0.8rem 1.5rem 0.8rem 2rem;
-  margin: var(--inputs-border-width); */
-  padding-bottom: 1rem;
+  margin: var(--inputs-border-width); 
+  padding-bottom: 1rem; */
+  padding-top: 1rem;
   padding-left: 2.4rem;
 }
 
@@ -1926,7 +1927,7 @@ details[open] > .share-button__fallback {
 .field__input:-webkit-autofill ~ .field__button,
 .field__input:-webkit-autofill ~ .field__label,
 .customer .field input:-webkit-autofill ~ label {
-  color: rgba(4,11,9,.1)
+  color: rgba(4,11,9,.1);
   font-size: 1.05rem;
 }
 
