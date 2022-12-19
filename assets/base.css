@@ -1926,7 +1926,8 @@ details[open] > .share-button__fallback {
 .field__input:-webkit-autofill ~ .field__button,
 .field__input:-webkit-autofill ~ .field__label,
 .customer .field input:-webkit-autofill ~ label {
-  color: rgb(0, 0, 0);
+  color: rgba(4,11,9,.1)
+  font-size: 1.05rem;
 }
 
 /* Text area */
