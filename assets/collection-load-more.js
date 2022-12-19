@@ -4,9 +4,9 @@ const load_more = $('.product-list-bottom .load-more');
 const pagination = $('.product-list-bottom div');
 
 document.addEventListener('DOMContentLoaded',() => {
-  $.ajax({
+  const endlessScroll =  $.ajax({
     container: products_on_page,
-    pagination
+    pagination: pagination
   })
 })
 
