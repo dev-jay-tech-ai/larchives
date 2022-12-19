@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width:1025px){
-  .hidden_desktop{
+  .hidden_desktop {
     display:none;
   }
   
