@@ -12,7 +12,7 @@
 {%- endif -%}
 <script src="{{ 'collection-load-more.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'ajaxinate.min.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'infinite-scroll.js' | asset_url }}" defer="defer"></script>
+{{ 'infinite-scroll.js' | asset_url | script_tag }}
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
