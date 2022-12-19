@@ -1870,6 +1870,9 @@ details[open] > .share-button__fallback {
   } 
 }
 
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0 30px #fff inset ; -webkit-text-fill-color: #000; }
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { transition: background-color 5000s ease-in-out 0s; }
+
 /****** form에 마우스 오버 되었을 때 */
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
