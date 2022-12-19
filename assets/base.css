@@ -1836,7 +1836,7 @@ details[open] > .share-button__fallback {
 .customer .field input {
   flex-grow: 1;
   text-align: left;
-  padding: 0 0 1.6rem;
+  padding: 0 0 1.6rem .01rem;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
 }
