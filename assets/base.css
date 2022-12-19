@@ -1897,7 +1897,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin: var(--inputs-border-width); 
   padding-bottom: 1rem; */
   padding-top: 1rem;
-  padding-left: 2.4rem;
 }
 
 .field__input::-webkit-search-cancel-button,
