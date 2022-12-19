@@ -1033,6 +1033,10 @@ input[type="range"]::-moz-range-thumb {
   margin-right: 1.5rem;
 }
 
+.field__label:target > svg {
+  display: none;
+}
+
 .newsletter-form__button {
   right: -12px !important;
 }
