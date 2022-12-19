@@ -1033,8 +1033,12 @@ input[type="range"]::-moz-range-thumb {
   margin-right: 1.5rem;
 }
 
-.field__label:target > svg,
-.field__label:focus > svg {
+.field__label > svg, 
+.field__label > svg, 
+.field__label > svg, 
+.customer .field input:focus ~ label > svg, 
+.customer .field input:not(:placeholder-shown) ~ label > svg, 
+.customer .field input:-webkit-autofill ~ label > svg {
   display: none;
 }
 
