@@ -1871,7 +1871,6 @@ details[open] > .share-button__fallback {
 }
 
 /****** form에 마우스 오버 되었을 때 */
-
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
 .field__input:-webkit-autofill ~ .field__label,
