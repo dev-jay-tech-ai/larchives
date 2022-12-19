@@ -7,11 +7,11 @@
 
 {%- if section.settings.enable_quick_add -%}
   <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
-  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  {{ 'quick-add.js' | asset_url | script_tag }}
+  {{ 'product-form.js' | asset_url | script_tag }}
 {%- endif -%}
-<script src="{{ 'collection-load-more.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'ajaxinate.min.js' | asset_url }}" defer="defer"></script>
+{{ 'collection-load-more.js' | asset_url | script_tag }}
+{{ 'ajaxinate.min.js' | asset_url | script_tag }}
 {{ 'infinite-scroll.js' | asset_url | script_tag }}
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
