@@ -1033,7 +1033,8 @@ input[type="range"]::-moz-range-thumb {
   margin-right: 1.5rem;
 }
 
-.field__label:target > svg {
+.field__label:target > svg,
+.field__label:focus > svg {
   display: none;
 }
 
