@@ -317,7 +317,7 @@
                     assign uses_comma_decimals = true
                   endif
                 %}
-                <details id="Details-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter" data-index="{{ forloop.index }}"{% if filter_type == 'vertical' and  forloop.index == 1 %} open{% endif %} open  style='height: 150px;>
+                <details id="Details-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter" data-index="{{ forloop.index }}"{% if filter_type == 'vertical' and  forloop.index == 1 %} open{% endif %}   style='height: 150px;' open>
                   <summary class="facets__summary focus-offset">
                     <div>
                       <span>{{ filter.label | escape }}</span>
