@@ -1064,6 +1064,10 @@ input[type="range"]::-moz-range-thumb {
   line-height: 2.5rem;
 }
 
+.newsletter-field svg > path {
+  stroke: rgba(4,11,9,.1);
+}
+
 @media screen and (min-width: 1025px) {
   .newsletter-field svg {
     width: 2.4rem;
