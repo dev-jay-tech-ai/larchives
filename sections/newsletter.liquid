@@ -81,7 +81,7 @@ const subscribe_checkbox = document.querySelector('.policy input');
 
 subscribe_checkbox.addEventListener('change',(e) => {
   if(subscribe_button.getAttribute('type') === 'button') {
-    console.log('y')
+    subscribe_button.querySelector('svg > path').style.stroke = 'pink';
     subscribe_button.setAttribute('type', 'submit');
   } else {
     subscribe_button.setAttribute('type', 'button');
