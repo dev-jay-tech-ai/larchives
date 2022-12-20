@@ -48,7 +48,7 @@
       </span>
     </div>{%- endcomment -%}
     <div class="price__sale">
-      {% if compare_at_price > price %}
+
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <div>
@@ -69,7 +69,7 @@
         {% endif %}
         </div>
       {%- endunless -%}
-      {% endif %}
+
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       <span class="price-item price-item--sale price-item--last custom-price-reqular">
         {{ money_price }}
