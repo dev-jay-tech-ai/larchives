@@ -44,7 +44,7 @@
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular custom-price-reqular">
-        {{ money_price }}
+        {%- comment -%}{{ money_price }}{%- endcomment -%}
       </span>
     </div>
     <div class="price__sale">
