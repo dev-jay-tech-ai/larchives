@@ -338,7 +338,7 @@
                         </facet-remove>
                       {%- endif -%}
                     </div>{% endcomment %}
-                    <price-range class="facets__price">
+                    <price-range class="facets__price" style='display: flex;'>
                       <span class="field-currency">{{ cart.currency.symbol }}</span>
                       <div class="field">
                         <input class="field__input"
@@ -682,7 +682,7 @@
                         {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
                         <p class="mobile-facets__info">{{ "products.facets.max_price" | t: price: max_price_amount }}</p>
 
-                        <price-range class="facets__price" style='dispay: flex;'>
+                        <price-range class="facets__price">
                           <span class="field-currency">{{ cart.currency.symbol }}</span>
                           <div class="field">
                             <input class="field__input"
