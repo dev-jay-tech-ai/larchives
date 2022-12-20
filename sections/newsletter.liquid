@@ -81,15 +81,16 @@ const subscribe_button = document.querySelector('.newsletter-form__button');
 const subscribe_checkbox = document.querySelector('.policy input');
 
 
-if(subscribe_checkbox.checked = true) {
-  console.log('y')
-  subscribe_button.setAttribute('type', 'submit');
-} else {
-   console.log('n')
-}
- 
+subscribe_checkbox.addEventListener('click',(e) => {
+  if(subscribe_checkbox.checked = true) {
+    console.log('y')
+    subscribe_button.setAttribute('type', 'submit');
+  } else {
+     console.log('n')
+  }
+   
+})  
 
-  
 </script>
 
 {% schema %}
