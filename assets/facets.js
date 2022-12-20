@@ -265,6 +265,8 @@ class FacetRemove extends HTMLElement {
     const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
     form.onActiveFilterClick(event);
   }
+
+  console.log('working')
 }
 
 customElements.define('facet-remove', FacetRemove);
