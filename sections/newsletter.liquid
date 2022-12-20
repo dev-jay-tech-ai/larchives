@@ -81,9 +81,12 @@ const subscribe_checkbox = document.querySelector('.policy input');
 
 subscribe_checkbox.addEventListener('change',(e) => {
   if(subscribe_button.getAttribute('type') === 'button') {
-    subscribe_button.querySelector('svg > path').style.stroke = 'pink';
+    subscribe_button.querySelectorAll('svg > path')[0].style.stroke = 'rgba(4,11,9,.2)';
+    subscribe_button.querySelectorAll('svg > path')[1].style.stroke = 'rgba(4,11,9,.2)';
     subscribe_button.setAttribute('type', 'submit');
   } else {
+    subscribe_button.querySelectorAll('svg > path')[0].style.stroke = '#040B09';
+    subscribe_button.querySelectorAll('svg > path')[1].style.stroke = '#040B09';
     subscribe_button.setAttribute('type', 'button');
   }  
 }) 
