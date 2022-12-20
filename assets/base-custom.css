@@ -1333,6 +1333,7 @@ input[type="range"]::-moz-range-thumb {
   font-size: 1.6rem;
   color: #c20c1e; 
   letter-spacing: normal;
+  line-height: 3.1rem;
 }
 
 .custom-vendor {
