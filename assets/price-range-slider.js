@@ -6,7 +6,7 @@ const rangeInput = document.querySelectorAll(".range-input input"),
   rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
 let priceGap = 10;
 
-priceInput.forEach(input =>{
+priceInput.forEach(input => {
   input.addEventListener("input", e =>{
       let minPrice = parseInt(priceInput[0].value),
       maxPrice = parseInt(priceInput[1].value);    
