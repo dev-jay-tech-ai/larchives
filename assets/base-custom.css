@@ -695,6 +695,72 @@ object-position: top; #insta-feed {
   flex: 1;
 }
 
+/** price range filter */
+
+.price-range-block {
+    margin:60px;
+}
+
+.sliderText{
+    width:40%;
+    margin-bottom:30px;
+    border-bottom: 2px solid red;
+    padding: 10px 0 10px 0px;
+    font-weight:bold;
+}
+
+.ui-slider-horizontal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 1px;
+    border: 0;
+}
+
+/** 동그랗게 조절 단추 사이에 범위를 나타내는 부분 */
+.ui-widget-header {
+    background: #040b09;
+}
+/** 막대기 부분 */
+.ui-widget.ui-widget-content { 
+    background: #040b09; 
+}
+
+/** 동그랗게 조절하는 부분 */
+.ui-slider-handle.ui-corner-all.ui-state-default {
+    width: 12px;
+    height: 12px;
+    top: -6px;
+    background: #fff;
+    border: 2px solid #202020;
+    border-radius: 50%;
+}
+
+.price-range-search {
+    color: #202020;
+    border: 1px solid #202020;
+    display: inline-block;
+    height: 20px;
+    border-radius: 5px;
+    margin:20px 0;
+    font-size:16px;
+}
+.field__input{
+    width: 100px;
+    height: 26px;
+    background-color:#fff; 
+    font-size: 15px;
+    border-radius: 5px; 
+    padding:5px;
+}
+.search-results-block{
+    position: relative;
+    display: block;
+    clear: both;
+    margin-top: 20px;
+}
+
+/** 여기까지 price range filter */
 
 .mega-menu__content > div {
   display: flex;
