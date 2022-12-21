@@ -351,6 +351,7 @@
                           min="0"
                           {%- if uses_comma_decimals -%}max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"{% endif %}
                           placeholder="0"
+                          value="0"
                         >
                         <label class="field__label" for="Filter-{{ filter.label | escape }}-GTE">{{ 'products.facets.from' | t }}</label>
                       </div>
@@ -373,6 +374,7 @@
                             max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                             placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                           {% endif %}
+                          value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                         >
                         <label class="field__label" for="Filter-{{ filter.label | escape }}-LTE">{{ 'products.facets.to' | t }}</label>
                       </div>
