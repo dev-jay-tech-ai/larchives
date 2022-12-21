@@ -710,9 +710,8 @@ object-position: top; #insta-feed {
 }
 
 .ui-slider-horizontal {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 500px;
+    margin-top: 20px;
+    width: 100%;
     height: 1px;
     border: 0;
 }
