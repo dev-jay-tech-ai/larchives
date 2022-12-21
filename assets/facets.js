@@ -7,7 +7,7 @@ class FacetFiltersForm extends HTMLElement {
       console.log('이부분')
       this.onSubmitHandler(event);
       console.log('여기는')
-    }, 1000);
+    }, 500);
 
     const facetForm = this.querySelector('form');
     facetForm.addEventListener('input', this.debouncedOnSubmit.bind(this));
