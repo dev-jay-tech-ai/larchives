@@ -8,6 +8,6 @@ const nextButton = document.querySelector('button[name="next"]');
 
 prevButton.addEventListener('click', () => {
   console.log('클릭됨')
-}
+});
 
   
