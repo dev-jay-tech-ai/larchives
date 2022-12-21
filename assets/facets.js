@@ -51,7 +51,6 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
-    console.log('필터링하고 화면에 렌더끗')
   }
 
   static renderSectionFromFetch(url, event) {
