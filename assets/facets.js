@@ -53,6 +53,7 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
+    console.log('페이지 렌더됨')
   }
 
   static renderSectionFromFetch(url, event) {
