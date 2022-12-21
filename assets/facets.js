@@ -1,10 +1,3 @@
-/** price range slider */
-const rangeInput = document.querySelectorAll(".range-input input"),
-  priceInput = document.querySelectorAll(".facets__price input"),
-  range = document.querySelector(".slider .progress"),
-  rangeNum = document.querySelector(".slider .range-bar"),
-  rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
-let priceGap = 10;
 
 priceInput.forEach(input => {
   input.addEventListener("input", e =>{
