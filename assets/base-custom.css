@@ -745,14 +745,7 @@ object-position: top; #insta-feed {
     margin:20px 0;
     font-size:16px;
 }
-.field__input{
-    width: 100px;
-    height: 26px;
-    background-color:#fff; 
-    font-size: 15px;
-    border-radius: 5px; 
-    padding:5px;
-}
+
 .search-results-block{
     position: relative;
     display: block;
