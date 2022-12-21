@@ -707,6 +707,10 @@ object-position: top; #insta-feed {
   height: 45px;
 }
 
+.field-container {
+  display: flex;
+}
+
 .facets__display-vertical > div {
   height: 1.3rem;
 }
