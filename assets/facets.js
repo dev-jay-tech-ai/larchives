@@ -1,19 +1,4 @@
-$(document).ready(function(){
-priceInput.forEach(input => {
-  input.addEventListener("input", e =>{
-    console.log('작동중1')
-  });
-});
-
-rangeInput.forEach(input => {
-  console.log('작동중2')
-});
-
-console.log('나', priceInput)
-console.log('나', rangeInput)
-}
-                  
-class FacetFiltersForm extends HTMLElement {
+              class FacetFiltersForm extends HTMLElement {
   constructor() {
     super();
     this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
@@ -282,7 +267,7 @@ class FacetRemove extends HTMLElement {
   closeFilter(event) {
     event.preventDefault();
     const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
-    form.onActiveFilterClick(event);
+    // form.onActiveFilterClick(event);
     console.log('필터 리셋')
   }
 }
