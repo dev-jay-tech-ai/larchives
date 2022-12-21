@@ -13,7 +13,7 @@
 {{ 'collection-load-more.js' | asset_url | script_tag }}
 {{ 'ajaxinate.min.js' | asset_url | script_tag }}
 {{ 'infinite-scroll.js' | asset_url | script_tag }}
-{{ 'price-range-slider.js' | asset_url | script_tag }}
+
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
@@ -82,7 +82,8 @@
 
   <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+    {{ 'facets.js' | asset_url | script_tag }}
+    {{ 'price-range-slider.js' | asset_url | script_tag }}
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="main-collection-filters" data-id="{{ section.id }}">
         {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
