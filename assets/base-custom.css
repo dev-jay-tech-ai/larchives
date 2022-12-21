@@ -20,6 +20,10 @@
   }
 }
 
+.slider-button--prev > svg {
+  transform: rotate(180deg);
+}
+
 .brand-banner-container {
   display: flex;
   flex-wrap: wrap;
