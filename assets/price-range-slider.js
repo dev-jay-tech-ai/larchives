@@ -50,7 +50,10 @@ rangeInput.forEach(input => {
 rangeInput.forEach(input =>{
   input.addEventListener("input", e => {
     let minVal = parseInt(rangeInput[0].value),
-    maxVal = parseInt(rangeInput[1].value);  
+    maxVal = parseInt(rangeInput[1].value);
+
+    console.log('손으로 밀었을 떄')
+    
     if((maxVal - minVal) < priceGap){
       if(e.target.className === "range-min"){
           rangeInput[0].value = maxVal - priceGap
