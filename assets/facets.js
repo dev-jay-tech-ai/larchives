@@ -1,4 +1,4 @@
-              class FacetFiltersForm extends HTMLElement {
+class FacetFiltersForm extends HTMLElement {
   constructor() {
     super();
     this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
@@ -27,6 +27,7 @@
 
   static toggleActiveFacets(disable = true) {
     document.querySelectorAll('.js-facet-remove').forEach((element) => {
+      console.log('토글', element)
       element.classList.toggle('disabled', disable);
     });
   }
