@@ -48,7 +48,8 @@ class FacetFiltersForm extends HTMLElement {
       const url = `${window.location.pathname}?section_id=${section.section}&${searchParams}`;
       const filterDataUrl = element => element.url === url;
       FacetFiltersForm.filterData.some(filterDataUrl) ?
-        FacetFiltersForm.renderSectionFromCache(filterDataUrl, event)
+        FacetFiltersForm.renderSectionFromCache(filterDataUrl, event) :
+        FacetFiltersForm.renderSectionFromFetch(url, event);
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
@@ -59,6 +60,7 @@ class FacetFiltersForm extends HTMLElement {
     fetch(url)
       .then(response => response.text())
       .then((responseText) => {
+        console.log(responseText)
         const html = responseText;
         FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
         FacetFiltersForm.renderFilters(html, event);
