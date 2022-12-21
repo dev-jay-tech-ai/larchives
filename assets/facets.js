@@ -227,7 +227,6 @@ class PriceRange extends HTMLElement {
   onRangeChange(event) {
     this.adjustToValidValues(event.currentTarget);
     this.setMinAndMaxValues()
-    console.log('바뀜여?')
   }
 
   setMinAndMaxValues() {
