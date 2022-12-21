@@ -269,70 +269,77 @@ class FacetRemove extends HTMLElement {
 
 customElements.define('facet-remove', FacetRemove);
 
-$('#price-range-submit').hide();
+/** price range slider */
+const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".facets__price input"),
+  range = document.querySelector(".slider .progress"),
+  rangeNum = document.querySelector(".slider .range-bar"),
+  rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
+let priceGap = 10;
 
-$("#min_price,#max_price").on('change', function () {
-
-  $('#price-range-submit').show();
-
-  var min_price_range = parseInt($("#min_price").val());
-
-  var max_price_range = parseInt($("#max_price").val());
-
-  if (min_price_range > max_price_range) {
-    $('#max_price').val(min_price_range);
-  }
-
-  $("#slider-range").slider({
-    values: [min_price_range, max_price_range]
-  });
-  
+priceInput.forEach(input =>{
+    input.addEventListener("input", e =>{
+        let minPrice = parseInt(priceInput[0].value),
+        maxPrice = parseInt(priceInput[1].value);    
+        console.log('**** 3 ****')
+        if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
+            if(e.target.className === "range-min"){
+                rangeInput[0].value = minPrice;
+                range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                rangeNum.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+            }else{
+                rangeInput[1].value = maxPrice;
+                range.style.right = (100 - (maxPrice / rangeInput[1].max) * 100) + "%";
+                rangeNum.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+            }
+        }
+    });
 });
 
-
-$("#min_price,#max_price").on("paste keyup", function () {                                        
-
-  $('#price-range-submit').show();
-
-  var min_price_range = parseInt($("#min_price").val());
-
-  var max_price_range = parseInt($("#max_price").val());
-  
-  if(min_price_range == max_price_range){
-
-        max_price_range = min_price_range + 100;
-        
-        $("#min_price").val(min_price_range);		
-        $("#max_price").val(max_price_range);
+rangeInput.forEach(input => {
+  let minVal = parseInt(rangeInput[0].value),
+  maxVal = parseInt(rangeInput[1].value); 
+  /* 값을 입력 후 새로고침, 일처리 */
+  if((maxVal - minVal) < priceGap){
+    if(input.className === "range-min"){
+      rangeInput[0].value = maxVal - priceGap
+    }else{
+      rangeInput[1].value = minVal + priceGap;
+    }
+  } else {
+    console.log('**** 1 ***** 7')
+    priceInput[0].value = minVal;
+    priceInput[1].value = maxVal;
+    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+    rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) + "%";
   }
-
-  $("#slider-range").slider({
-    values: [min_price_range, max_price_range]
-  });
-
 });
 
-
-$(function () {
-  $("#slider-range").slider({
-    range: true,
-    orientation: "horizontal",
-    min: 0,
-    max: 10000,
-    values: [1000, 8000],
-    step: 1,
-
-    slide: function (event, ui) {
-      if (ui.values[0] == ui.values[1]) {
-          return false;
+/* 새로고침은 안하고 손으로 밀었을 때 */ 
+rangeInput.forEach(input =>{
+  input.addEventListener("input", e => {
+    let minVal = parseInt(rangeInput[0].value),
+    maxVal = parseInt(rangeInput[1].value);  
+    if((maxVal - minVal) < priceGap){
+      if(e.target.className === "range-min"){
+          rangeInput[0].value = maxVal - priceGap
+      } else {
+          rangeInput[1].value = minVal + priceGap;
       }
-      
-      $("#min_price").val(ui.values[0]);
-      $("#max_price").val(ui.values[1]);
+    } else {
+      console.log('**** 2 *****')
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+      console.log(maxVal, rangeInput[1].max)
+      rangeNum.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+      rangeNum.style.right = (100 - (maxVal / rangeInput[1].max) * 100) + "%";
+      rangeNumInfo[0].innerText = "£" + minVal;
+      rangeNumInfo[1].innerText = "£" + maxVal;
+      console.log(priceGap);
     }
   });
-
-  $("#min_price").val($("#slider-range").slider("values", 0));
-  $("#max_price").val($("#slider-range").slider("values", 1));
-
-});
+})
