@@ -525,12 +525,12 @@ class SliderComponent extends HTMLElement {
   constructor() {
     super();
     this.slider = this.querySelector('.slider-mobile-gutter [id^="Slider-"]');
-    this.sliderItems = this.slider.querySelectorAll('[id^="Slide-"]');
+    this.sliderItems = this.querySelectorAll('.slider-mobile-gutter [id^="Slide-"]');
     this.enableSliderLooping = false;
-    this.currentPageElement = this.slider.querySelector('.slider-counter--current');
-    this.pageTotalElement = this.slider.querySelector('.slider-counter--total');
-    this.prevButton = this.slider.querySelector('button[name="previous"]');
-    this.nextButton = this.slider.querySelector('button[name="next"]');
+    this.currentPageElement = this.querySelector('.slider-mobile-gutter .slider-counter--current');
+    this.pageTotalElement = this.querySelector('.slider-mobile-gutter .slider-counter--total');
+    this.prevButton = this.querySelector('.slider-mobile-gutter button[name="previous"]');
+    this.nextButton = this.querySelector('.slider-mobile-gutter button[name="next"]');
 
     if (!this.slider || !this.nextButton) return;
 
