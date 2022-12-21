@@ -1,4 +1,3 @@
-
 /** price range slider */
 const rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".facets__price input"),
