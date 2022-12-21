@@ -216,6 +216,7 @@ FacetFiltersForm.setListeners();
 class PriceRange extends HTMLElement {
   constructor() {
     super();
+    console.log('this');
     // this.querySelectorAll('input')
     this.querySelectorAll('.range-input > input')
       .forEach((element) => { 
