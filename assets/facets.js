@@ -216,13 +216,14 @@ FacetFiltersForm.setListeners();
 class PriceRange extends HTMLElement {
   constructor() {
     super();
-
-    // this.querySelectorAll('input')
+    console.log('working')
+    /** 
     this.querySelectorAll('.range-input > input')
       .forEach((element) => { 
         element.addEventListener('change', console.log(element, 'what'))
       })
     this.setMinAndMaxValues();
+    */
   }
 
   onRangeChange(event) {
