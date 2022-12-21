@@ -214,6 +214,12 @@ FacetFiltersForm.setListeners();
 class PriceRange extends HTMLElement {
   constructor() {
     super();
+    const rangeInput = document.querySelectorAll(".range-input input"),
+      priceInput = document.querySelectorAll(".facets__price input"),
+      range = document.querySelector(".slider .progress"),
+      rangeNum = document.querySelector(".slider .range-bar"),
+      rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
+    let priceGap = 10;
     console.log('working')
     /** 
     this.querySelectorAll('.range-input > input')
