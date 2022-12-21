@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 priceInput.forEach(input => {
   input.addEventListener("input", e =>{
     console.log('작동중1')
@@ -11,7 +11,8 @@ rangeInput.forEach(input => {
 
 console.log('나', priceInput)
 console.log('나', rangeInput)
-
+}
+                  
 class FacetFiltersForm extends HTMLElement {
   constructor() {
     super();
