@@ -53,7 +53,7 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
-    console.log('페이지 렌더됨')
+    console.log('페이지는 렌더됨, 단지 막대기 값이 input에 전달 안됨 왜? 자바스크립트가 안먹기 때문')
   }
 
   static renderSectionFromFetch(url, event) {
