@@ -527,8 +527,8 @@ class SliderComponent extends HTMLElement {
     this.slider = this.querySelector('[id^="Slider-"]');
     this.sliderItems = this.querySelectorAll('[id^="Slide-"]');
     this.enableSliderLooping = false;
-    this.currentPageElement = slider.querySelector('.slider-counter--current');
-    this.pageTotalElement = slider.querySelector('.slider-counter--total');
+    this.currentPageElement = this.querySelector('.slider-counter--current');
+    this.pageTotalElement = this.querySelector('.slider-counter--total');
     this.prevButton = slider.querySelector('button[name="previous"]');
     this.nextButton = slider.querySelector('button[name="next"]');
 
