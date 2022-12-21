@@ -6,8 +6,8 @@
 const prevButton = document.querySelector('button[name="previous"]');
 const nextButton = document.querySelector('button[name="next"]');
 
-prevButton.addEventLister('click', () => {
+prevButton.addEventListener('click', () => {
   console.log('클릭됨')
-})
+}
 
   
