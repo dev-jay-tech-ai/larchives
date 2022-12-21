@@ -714,7 +714,6 @@ object-position: top; #insta-feed {
 .facets__price {
   display: flex;
   flex-direction: column;
-  height: 3rem;
 }
 
 .facets__display-vertical > div {
