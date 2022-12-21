@@ -74,4 +74,4 @@ rangeInput.forEach(input =>{
       console.log(priceGap);
     }
   });
-})
+}) 
