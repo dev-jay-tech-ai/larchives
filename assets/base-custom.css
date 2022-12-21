@@ -708,15 +708,12 @@ object-position: top; #insta-feed {
 }
 
 .field-container {
-  display: flex;
-  width: 100%;
+  display: none;
 }
 
 .facets__price {
   display: flex;
   flex-direction: column;
-  height: 3rem;
-  
 }
 
 .facets__display-vertical > div {
