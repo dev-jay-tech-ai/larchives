@@ -524,13 +524,13 @@ customElements.define('deferred-media', DeferredMedia);
 class SliderComponent extends HTMLElement {
   constructor() {
     super();
-    this.slider = this.querySelector('[id^="Slider-"]');
-    this.sliderItems = this.querySelectorAll('[id^="Slide-"]');
+    this.slider = this.querySelector('.slider-mobile-gutter [id^="Slider-"]');
+    this.sliderItems = this.slider.querySelectorAll('[id^="Slide-"]');
     this.enableSliderLooping = false;
-    this.currentPageElement = this.querySelector('.slider-counter--current');
-    this.pageTotalElement = this.querySelector('.slider-counter--total');
-    this.prevButton = this.querySelector('button[name="previous"]');
-    this.nextButton = this.querySelector('button[name="next"]');
+    this.currentPageElement = this.slider.querySelector('.slider-counter--current');
+    this.pageTotalElement = this.slider.querySelector('.slider-counter--total');
+    this.prevButton = this.slider.querySelector('button[name="previous"]');
+    this.nextButton = this.slider.querySelector('button[name="next"]');
 
     if (!this.slider || !this.nextButton) return;
 
