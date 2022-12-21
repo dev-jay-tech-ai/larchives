@@ -402,7 +402,7 @@
                         {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
                         {%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                         {% endif %}
-                      {%- else -%}
+                      {%- else -%}value='0'
                       {%- endif -%} step="1">
                       <input type="range" class="range-max" min="0"
                       {%- if uses_comma_decimals -%}
@@ -412,7 +412,7 @@
                       {% endif %}
                       {%- if filter.max_value.value -%}
                         {%- if uses_comma_decimals -%}value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-                        {%- else -%}
+                        {%- else -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
                         {% endif %}
                       {%- else -%}value='{{ filter.range_max | money_without_currency | replace: ',', '' }}'  
                       {%- endif -%} step="1">
