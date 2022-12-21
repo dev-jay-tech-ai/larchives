@@ -745,7 +745,9 @@ object-position: top; #insta-feed {
     margin:20px 0;
     font-size:16px;
 }
-
+.field__input{
+ /** display: none; */
+}
 .search-results-block{
     position: relative;
     display: block;
