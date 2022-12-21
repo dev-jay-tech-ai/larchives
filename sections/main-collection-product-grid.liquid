@@ -82,7 +82,6 @@
 
   <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
-    {{ 'price-range-slider.js' | asset_url | script_tag }}
     {{ 'facets.js' | asset_url | script_tag }}
  
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
