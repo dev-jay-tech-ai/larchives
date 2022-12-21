@@ -215,7 +215,7 @@ class PriceRange extends HTMLElement {
     super();
       /** price range slider */
       const rangeInput = document.querySelectorAll(".range-input input"),
-        priceInput = document.querySelectorAll(".facets__price input"),
+        priceInput = document.querySelectorAll(".field-container input"),
         range = document.querySelector(".slider .progress"),
         rangeNum = document.querySelector(".slider .range-bar"),
         rangeNumInfo = document.querySelectorAll(".slider .range-bar div");
