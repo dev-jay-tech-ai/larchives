@@ -60,12 +60,11 @@ class FacetFiltersForm extends HTMLElement {
     fetch(url)
       .then(response => response.text())
       .then((responseText) => {
-        console.log(responseText)
         const html = responseText;
-        FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
-        FacetFiltersForm.renderFilters(html, event);
-        FacetFiltersForm.renderProductGridContainer(html);
-        FacetFiltersForm.renderProductCount(html);
+        // FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
+        // FacetFiltersForm.renderFilters(html, event);
+        // FacetFiltersForm.renderProductGridContainer(html);
+        // FacetFiltersForm.renderProductCount(html);
       });
   }
 
