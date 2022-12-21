@@ -1,3 +1,6 @@
+console.log('나3', priceInput)
+console.log('나4', rangeInput)
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
