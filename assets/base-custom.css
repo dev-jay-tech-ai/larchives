@@ -712,6 +712,13 @@ object-position: top; #insta-feed {
   width: 100%;
 }
 
+.facets__price {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  
+}
+
 .facets__display-vertical > div {
   height: 1.3rem;
 }
