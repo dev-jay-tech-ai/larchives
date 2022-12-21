@@ -4,6 +4,7 @@ class FacetFiltersForm extends HTMLElement {
     this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
 
     this.debouncedOnSubmit = debounce((event) => {
+      console.log('이부분')
       this.onSubmitHandler(event);
     }, 500);
 
