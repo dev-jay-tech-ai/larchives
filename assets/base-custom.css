@@ -709,6 +709,7 @@ object-position: top; #insta-feed {
 
 .field-container {
   display: flex;
+  width: 100%;
 }
 
 .facets__display-vertical > div {
