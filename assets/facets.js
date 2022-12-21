@@ -9,8 +9,8 @@ rangeInput.forEach(input => {
   console.log('작동중2')
 });
 
-console.log(priceInput)
-console.log(rangeInput)
+console.log('나', priceInput)
+console.log('나', rangeInput)
 
 class FacetFiltersForm extends HTMLElement {
   constructor() {
