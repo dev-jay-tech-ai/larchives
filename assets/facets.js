@@ -221,7 +221,7 @@ class PriceRange extends HTMLElement {
     this.querySelectorAll('.range-input > input')
       .forEach((element) => { 
         console.log(element)
-        // element.addEventListener('change', console.log(element, 'what'))
+        element.addEventListener('change', console.log(element, 'what'))
       })
     // this.setMinAndMaxValues();
   }
