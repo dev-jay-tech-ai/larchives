@@ -4,6 +4,8 @@ class VSliderComponent extends HTMLElement {
     this.slider = this.querySelector('[id^="Slider-"]');
     this.sliderItems = this.querySelectorAll('[id^="Slide-"]');
     this.enableSliderLooping = false;
+    // this.currentPageElement = this.querySelector('.slider-counter--current');
+    // this.pageTotalElement = this.querySelector('.slider-counter--total');
     this.prevButton = this.querySelector('button[name="previous"]');
     this.nextButton = this.querySelector('button[name="next"]');
 
@@ -35,18 +37,6 @@ class VSliderComponent extends HTMLElement {
   update() {
     const previousPage = this.currentPage;
     this.currentPage = Math.round(this.slider.scrollLeft / this.sliderItemOffset) + 1;
-
-    if (this.currentPageElement && this.pageTotalElement) {
-      this.currentPageElement.textContent = this.currentPage;
-      this.pageTotalElement.textContent = this.totalPages;
-    }
-
-    if (this.currentPage != previousPage) {
-      this.dispatchEvent(new CustomEvent('slideChanged', { detail: {
-        currentPage: this.currentPage,
-        currentElement: this.sliderItemsToShow[this.currentPage - 1]
-      }}));
-    }
 
     if (this.enableSliderLooping) return;
 
