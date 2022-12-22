@@ -37,13 +37,12 @@ class VSliderComponent extends HTMLElement {
 
   update() {
     if (this.enableSliderLooping) return;
-    console.log(this.isSlideVisible(this.sliderItemsToShow[0]), this.slider.scrollTop);
     if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollTop === 0) {
       this.prevButton.setAttribute('disabled', 'disabled');
     } else {
       this.prevButton.removeAttribute('disabled');
     }
-
+    console.log(this.sliderItemsToShow[this.sliderItemsToShow.length - 1]);
     if (this.isSlideVisible(this.sliderItemsToShow[this.sliderItemsToShow.length - 1])) {
       this.nextButton.setAttribute('disabled', 'disabled');
     } else {
