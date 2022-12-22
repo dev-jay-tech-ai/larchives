@@ -572,8 +572,9 @@ object-position: top; #insta-feed {
   border: 1px solid #424b5a;
   border-radius: 50%;
   position: absolute;
-  top: -6px;
-  left: -6px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .form__label > span {
