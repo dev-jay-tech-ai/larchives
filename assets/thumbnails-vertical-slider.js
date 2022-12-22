@@ -83,5 +83,4 @@ class VSliderComponent extends HTMLElement {
   }
 }
 
-customElements.define('vertical-slider', VSliderComponent);
-  
+customElements.define('vertical-slider', VSliderComponent)
