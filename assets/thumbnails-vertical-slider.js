@@ -40,7 +40,7 @@ class VSliderComponent extends HTMLElement {
     } else {
       this.prevButton.removeAttribute('disabled');
     }
-    console.log(this.sliderItemsToShow[this.sliderItemsToShow.length - 1]);
+    console.log( this.isSlideVisible(this.sliderItemsToShow[this.sliderItemsToShow.length - 1]) );
     if (this.isSlideVisible(this.sliderItemsToShow[this.sliderItemsToShow.length - 1])) {
       this.nextButton.setAttribute('disabled', 'disabled');
     } else {
