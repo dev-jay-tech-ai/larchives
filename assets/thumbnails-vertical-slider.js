@@ -11,7 +11,7 @@ class VSliderComponent extends HTMLElement {
 
     this.initPages();
     const resizeObserver = new ResizeObserver(entries => this.initPages());
-    console.log(resizeObserver)
+    console.log(resizeObserver.observe(this.slider))
     resizeObserver.observe(this.slider);
 
     this.slider.addEventListener('scroll', this.update.bind(this));
