@@ -32,8 +32,12 @@ vertical-slider {
   transform: rotate(180deg);
 }
 
-vertical-slider .slider-button {
+vertical-slider .slider-button[name='previous'] {
   margin-bottom: 1rem;
+}
+
+vertical-slider .slider-button[name='next'] {
+  margin-top: 1rem;
 }
 
 .brand-banner-container {
