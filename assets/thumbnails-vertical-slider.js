@@ -7,7 +7,6 @@ const v_slider = document.querySelector('[id^="GalleryThumbnails-"]');
 const prevButton = v_slider.querySelector('button[name="previous"]');
 const nextButton = v_slider.querySelector('button[name="next"]');
 
-console.log(prevButton)
 prevButton.addEventListener('click', () => {
   console.log('클릭됨')
 });
