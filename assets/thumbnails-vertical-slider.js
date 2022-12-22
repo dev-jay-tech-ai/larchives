@@ -36,9 +36,6 @@ class VSliderComponent extends HTMLElement {
   }
 
   update() {
-    const previousPage = this.currentPage;
-    this.currentPage = Math.round(this.slider.scrollLeft / this.sliderItemOffset) + 1;
-
     if (this.enableSliderLooping) return;
 
     if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollTop === 0) {
