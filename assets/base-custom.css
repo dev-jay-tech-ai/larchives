@@ -26,6 +26,11 @@ vertical-slider {
   display: block;
 }
 
+.thumbnail-list {
+  height: 52rem;
+  overflow: hidden;  
+}
+
 .slider-button--prev > svg {
   transform: rotate(180deg);
 }
