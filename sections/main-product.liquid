@@ -247,7 +247,7 @@
         {%- endif -%}
 
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
-        <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
+        <vertical-slider id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
@@ -310,7 +310,7 @@
               {% render 'icon-caret' %}
             </button>
           </div>
-        </slider-component>     
+        </vertical-slider>     
       </media-gallery>
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
@@ -1213,7 +1213,7 @@
           </div>
         </div>
       </div>
-    </modal-dialog>
+    </modal-dialog>f
   {%- endfor -%}
 
   {%- if product.media.size > 0 -%}
