@@ -27,7 +27,7 @@ class VSliderComponent extends HTMLElement {
     this.slidesPerPage = Math.floor((this.slider.clientHeight - this.sliderItemsToShow[0].offsetTop) / this.sliderItemOffset);
     this.totalPages = this.sliderItemsToShow.length - this.slidesPerPage + 1;
     console.log(this.slidesPerPage, this.totalPages);
-    // this.update();
+    this.update();
   }
 
   resetPages() {
@@ -37,7 +37,7 @@ class VSliderComponent extends HTMLElement {
 
   update() {
     if (this.enableSliderLooping) return;
-
+    console.log(this.isSlideVisible(this.sliderItemsToShow[0]), this.slider.scrollTop);
     if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollTop === 0) {
       this.prevButton.setAttribute('disabled', 'disabled');
     } else {
