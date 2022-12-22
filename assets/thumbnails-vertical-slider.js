@@ -1,28 +1,4 @@
-// this.slider = this.querySelector('[id^="Slider-"]');
-// this.sliderItems = this.querySelectorAll('[id^="Slide-"]');
-// this.enableSliderLooping = false;
-// this.currentPageElement = this.querySelector('.slider-counter--current');
-// this.pageTotalElement = this.querySelector('.slider-counter--total');
-const v_slider = document.querySelector('[id^="GalleryThumbnails-"]');
-const prevButton = v_slider.querySelector('button[name="previous"]');
-const nextButton = v_slider.querySelector('button[name="next"]');
 
-prevButton.addEventListener('click', () => {
-  console.log('클릭됨')
-});
-
-
-if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollLeft === 0) {
-  this.prevButton.setAttribute('disabled', 'disabled');
-} else {
-  this.prevButton.removeAttribute('disabled');
-}
-
-if (this.isSlideVisible(this.sliderItemsToShow[this.sliderItemsToShow.length - 1])) {
-  this.nextButton.setAttribute('disabled', 'disabled');
-} else {
-  this.nextButton.removeAttribute('disabled');
-}
 
 class VSliderComponent extends HTMLElement {
   constructor() {
@@ -98,6 +74,7 @@ class VSliderComponent extends HTMLElement {
 
   onButtonClick(event) {
     event.preventDefault();
+    console.log('클')
     const step = event.currentTarget.dataset.step || 1;
     this.slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollLeft + (step * this.sliderItemOffset) : this.slider.scrollLeft - (step * this.sliderItemOffset);
     this.slider.scrollTo({
