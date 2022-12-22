@@ -559,7 +559,7 @@ object-position: top; #insta-feed {
 }
 
 @media screen and (min-width: 1025px) {
-  .product__media-wrapper slider-component:first-child {
+  .product__media-wrapper vertical-slider:first-child {
     width: 12rem;
     float: left;
     z-index: 2;
