@@ -397,12 +397,14 @@
 .banner__heading {
   font-size: 3.6rem;
   margin-top: 1rem;
+  font-family: 'termina-regular';
 }
 
 @media screen and (min-width: 1025px) {
   .banner__heading {
     font-size: 5.8rem;
     margin-bottom: 0;
+    font-family: inherit;
   }
 }
 
