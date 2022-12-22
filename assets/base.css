@@ -419,6 +419,22 @@ h5,
   word-break: break-word;
 }
 
+
+@media only screen and (min-width: 1025px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h0,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    font-family: 'termina-regular';
+  }
+}
 .hxl {
   font-size: calc(var(--font-heading-scale) * 5rem);
 }
