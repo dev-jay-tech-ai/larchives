@@ -47,10 +47,8 @@ class VSliderComponent extends HTMLElement {
 
   isSlideVisible(element, offset = 0) {
     const lastVisibleSlide = this.slider.clientHeight + this.slider.scrollTop - offset;
-    console.log(this.slider.clientHeight, this.slider.scrollTop)
-    console.log(element.offsetTop, element.clientHeight, lastVisibleSlide)
-    console.log(element.offsetTop, this.slider.scrollTop)
-    return (element.offsetTop + element.clientHeight - 54) <= lastVisibleSlide && element.offsetTop >= this.slider.scrollTop;
+    const btn = this.querySelector('button');
+    return element.offsetTop + element.clientHeight - (btn.clientHeight + getComputedStyle(btn).marginBottom) <= lastVisibleSlide && element.offsetTop >= this.slider.scrollTop;
   }
 
   onButtonClick(event) {
