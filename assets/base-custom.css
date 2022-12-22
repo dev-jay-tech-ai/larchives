@@ -44,6 +44,14 @@ vertical-slider .slider-button[name='next'] {
   margin-top: 1rem;
 }
 
+vertical-slider .slider-button[disabled='disabled'] {
+  border-color: #D0CDD8;
+}
+
+vertical-slider .slider-button[disabled='disabled'] > svg {
+  stroke: #D0CDD8;
+}
+
 .brand-banner-container {
   display: flex;
   flex-wrap: wrap;
