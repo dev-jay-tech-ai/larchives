@@ -474,7 +474,7 @@ object-position: top; #insta-feed {
   
   .share-button button, details {
     margin: 0 auto;
-    padding-left: 2rem;
+    /** padding-left: 2rem; */
   }
 }
 
