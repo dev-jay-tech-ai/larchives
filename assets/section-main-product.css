@@ -241,6 +241,7 @@ fieldset.product-form__input .form__label {
 
 .product-form__input input[type='radio']:checked + label {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  background-position: center;
   /* background-color: rgb(var(--color-foreground));
   color: rgb(var(--color-background)); */
 }
