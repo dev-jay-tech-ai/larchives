@@ -246,7 +246,7 @@ fieldset.product-form__input .form__label {
 }
 
 @media screen and (forced-colors: active) {
-  .product-form__input input[type=radio]:checked + label {
+  .product-form__input input[type='radio']:checked + label {
     text-decoration: underline;
   }
 }
