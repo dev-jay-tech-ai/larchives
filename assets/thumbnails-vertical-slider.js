@@ -50,7 +50,7 @@ class VSliderComponent extends HTMLElement {
     console.log(this.slider.clientHeight, this.slider.scrollTop)
     console.log(element.offsetTop, element.clientHeight, lastVisibleSlide)
     console.log(element.offsetTop, this.slider.scrollTop)
-    return (element.offsetTop + element.clientHeight) <= lastVisibleSlide && element.offsetTop >= this.slider.scrollTop;
+    return (element.offsetTop + element.clientHeight - 54) <= lastVisibleSlide && element.offsetTop >= this.slider.scrollTop;
   }
 
   onButtonClick(event) {
