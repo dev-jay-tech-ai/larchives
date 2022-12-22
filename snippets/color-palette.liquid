@@ -1,57 +1,39 @@
 {% if value == 'azure' %}
 {% assign bgcolor = '#bbeaf9' | prepend: 'style=border: 0; background-color:' %}
-
 {% elsif value == 'beige' %}
 {% assign bgcolor = '#fcd2ba' | prepend: 'style=border: 0; background-color:' %}    
-
 {% elsif value == 'brown' %}
 {% assign bgcolor = '#996210' | prepend: 'style=border: 0; background-color:' %}    
-
 {% elsif value == 'burgundy' %}
 {% assign bgcolor = '#963421' | prepend: 'style=border: 0; background-color:' %}   
-
 {% elsif value == 'charcoal' %}
 {% assign bgcolor = '#4c4643' | prepend: 'style=border: 0; background-color:' %}     
-
 {% elsif value == 'camel' %}
 {% assign bgcolor = '#c6672b' | prepend: 'style=border: 0; background-color:' %}   
-
-{% elsif value == 'denim' %}
+{% elsif value == 'denim' %} 
 {% assign bgcolor = 'denim.png' | asset_url | prepend: 'style=border:0;background-image:url(' | append: ')' %}
-
 {% elsif value == 'gold' %}
 {% assign bgcolor = 'gold.png' | asset_url | prepend: 'style=border:0;background-image:url(' | append: ')' %}
-
 {% elsif value == 'ivory' %}
 {% assign bgcolor = '#f2e5d0' | prepend: 'style=border:0;background-color:' %}
-
 {% elsif value == 'khaki' %}
 {% assign bgcolor = '#797901' | prepend: 'style=border:0;background-color:' %}
-
 {% elsif value == 'lavender' %}
 {% assign bgcolor = '#c3b3f2' | prepend: 'style=border:0;background-color:' %}  
-
 {% elsif value == 'metal' %}
 {% assign bgcolor = 'metallic.png' | asset_url | prepend: 'style=border:0;background-image:url(' | append: ')' %}
-
 {% elsif value == 'transparency' %}
 {% assign bgcolor = 'trans.png' | asset_url | prepend: 'style=border:0;background-image:url(' | append: ')' %}
-
 {% elsif value == 'mint' %}
 {% assign bgcolor = '#76fcfc' | prepend: 'style=border:0;background-color:' %}
-
 {% elsif value == 'multi' %}
 {% assign bgcolor = 'multi.png' | asset_url | prepend: 'style=border:0;background-image:url(' | append: ')' %}
 {% elsif value == 'silver' %}
 {% assign bgcolor = 'silver.png' | asset_url | prepend: 'style=border:0;background-image:url(' | append: ')' %}
-
 {% elsif value == 'turquoise' %}
 {% assign bgcolor = '#03a4ad' | prepend: 'style=border:0;background-color:' %}
-
 {% elsif value == 'taupe' %}
 {% assign bgcolor = '#ccb69d' | prepend: 'style=border:0;background-color:' %}
-
 {% else %}
 {% assign bgcolor = value | prepend: 'style=border:0;background-color:' %}
-
 {% endif %}
