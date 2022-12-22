@@ -48,7 +48,7 @@ vertical-slider .slider-button[disabled='disabled'] {
   border-color: #D0CDD8;
 }
 
-vertical-slider .slider-button[disabled='disabled'] > svg {
+vertical-slider .slider-button[disabled='disabled'] > path {
   stroke: #D0CDD8;
 }
 
