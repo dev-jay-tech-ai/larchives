@@ -1,42 +1,42 @@
-{%- assign colorStyle = colorStyle -%}
+{%- assign colorStyle = 'style=background-color:' -%}
 {%- assign bgStyle = 'style=background-image:url(' -%}
 
 {% if value == 'azure' %}
-{% assign bgcolor = '#bbeaf9' | prepend: colorStyle %}
+{% assign bgcolor = '#bbeaf9' | prepend: 'style=background-color:' %}
 {% elsif value == 'beige' %}
-{% assign bgcolor = '#fcd2ba' | prepend: colorStyle %}  
+{% assign bgcolor = '#fcd2ba' | prepend: 'style=background-color:' %}  
 {% elsif value == 'brown' %}
 {% assign bgcolor = '#996210' | prepend: colorStyle %}   
 {% elsif value == 'burgundy' %}
-{% assign bgcolor = '#963421' | prepend: colorStyle %}
+{% assign bgcolor = '#963421' | prepend: 'style=background-color:' %}
 {% elsif value == 'charcoal' %}
-{% assign bgcolor = '#4c4643' | prepend: colorStyle %}    
+{% assign bgcolor = '#4c4643' | prepend: 'style=background-color:' %}    
 {% elsif value == 'camel' %}
-{% assign bgcolor = '#c6672b' | prepend: colorStyle %}  
+{% assign bgcolor = '#c6672b' | prepend: 'style=background-color:' %}  
 {% elsif value == 'denim' %} 
 {% assign bgcolor = 'denim.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 {% elsif value == 'gold' %}
 {% assign bgcolor = 'gold.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 {% elsif value == 'ivory' %}
-{% assign bgcolor = '#f2e5d0' | prepend: colorStyle %}
+{% assign bgcolor = '#f2e5d0' | prepend: 'style=background-color:' %}
 {% elsif value == 'khaki' %}
-{% assign bgcolor = '#797901' | prepend: colorStyle %}
+{% assign bgcolor = '#797901' | prepend: 'style=background-color:' %}
 {% elsif value == 'lavender' %}
-{% assign bgcolor = '#c3b3f2' | prepend: colorStyle %}  
+{% assign bgcolor = '#c3b3f2' | prepend: 'style=background-color:' %}  
 {% elsif value == 'metal' %}
 {% assign bgcolor = 'metallic.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 {% elsif value == 'transparency' %}
 {% assign bgcolor = 'trans.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 {% elsif value == 'mint' %}
-{% assign bgcolor = '#76fcfc' | prepend: colorStyle %}
+{% assign bgcolor = '#76fcfc' | prepend: 'style=background-color:' %}
 {% elsif value == 'multi' %}
 {% assign bgcolor = 'multi.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 {% elsif value == 'silver' %}
 {% assign bgcolor = 'silver.png' | asset_url | prepend: 'style=background-image:url(' | append: ')' %}
 {% elsif value == 'turquoise' %}
-{% assign bgcolor = '#03a4ad' | prepend: colorStyle %}
+{% assign bgcolor = '#03a4ad' | prepend: 'style=background-color:' %}
 {% elsif value == 'taupe' %}
-{% assign bgcolor = '#ccb69d' | prepend: colorStyle %}
+{% assign bgcolor = '#ccb69d' | prepend: 'style=background-color:' %}
 {% elsif value == 'white' %}
 {% assign bgcolor = '#fff' | prepend: 'style=border-color:rgba(4,11,9,0.1);border-style:solid;border-width:1px;background-color:' %}
 {% else %}
