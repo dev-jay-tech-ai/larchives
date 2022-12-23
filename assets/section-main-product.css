@@ -204,7 +204,7 @@ fieldset.product-form__input .form__label {
   width: 1px;
 }
 
-.product-form__input input[type='radio'] + label {
+.product-form__input input[name='Size'] + label {
   font-family: 'Termina';
   font-size: 1.2rem;
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), 0.1);
