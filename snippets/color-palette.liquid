@@ -35,7 +35,7 @@
 {% elsif value == 'taupe' %}
 {% assign bgcolor = '#ccb69d' | prepend: 'style=background-color:' %}
 {% elsif value == 'white' %}
-{% assign bgcolor = '#fff' | prepend: 'style=border:solid&nbsp;1px&nbsp;rgba(4,11,9,0.1);background-color:' %}
+{% assign bgcolor = '#fff' | prepend: 'style=border-color:rgba(4,11,9,0.1);border-style:solid;border-width:1px;background-color:' %}
 {% else %}
 {% assign bgcolor = value | prepend: 'style=background-color:' %}
 {% endif %}
