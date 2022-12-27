@@ -56,7 +56,8 @@
 
       {%- when 'content'-%}
         <div class="article-template__content page-width page-width--narrow rte aboutus_content" itemprop="articleBody" {{ block.shopify_attributes }}>
-            {{ block.settings.content }}
+          <div>{{ block.settings.content | slice: 0 }}</div>
+          {{ block.settings.content }}
         </div>
 
       {%- when 'share' -%}
