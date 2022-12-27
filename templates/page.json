@@ -10,16 +10,17 @@
     "16f59081-6e02-4cd7-b5e8-25d1ad4a9b35": {
       "type": "main-aboutus",
       "blocks": {
-        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-0": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        },
         "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-1": {
           "type": "title",
           "settings": {
             "text": "OUR STORY"
+          }
+        },
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-0": {
+          "type": "featured_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_27.jpg",
+            "image_height": "adapt"
           }
         },
         "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-2": {
@@ -36,8 +37,8 @@
         }
       },
       "block_order": [
-        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-0",
         "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-1",
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-0",
         "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-2",
         "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-3"
       ],
