@@ -27,7 +27,7 @@
     {%- when 'featured_image'-%}
       {%- if block.settings.image -%}
         <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-          <div class="article-template__hero-{{ block.settings.image_height }} media"
+          <div class="article-template__hero-{{ block.settings.image_height }}"
             itemprop="image"
             {% if block.settings.image_height == 'adapt' and block.settings.image %} style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
           >
