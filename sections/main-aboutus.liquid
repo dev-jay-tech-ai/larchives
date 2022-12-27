@@ -71,7 +71,7 @@
 
         {%- when 'title'-%}
           <header class="page-width page-width--narrow center" {{ block.shopify_attributes }}>
-            <h1 class="article-template__title" itemprop="headline">{{ block.title | escape }}</h1>
+            <h1 class="article-template__title" itemprop="headline">{{ block.settings.heading.title | escape }}</h1>
           </header>
 
         {%- when 'content'-%}
