@@ -6,7 +6,8 @@
         "35d4f045-f69d-403c-b1f8-d6f28efc69a2": {
           "type": "featured_image",
           "settings": {
-            "image_height": "adapt"
+            "image": "shopify:\/\/shop_images\/Rectangle_27.jpg",
+            "image_height": "large"
           }
         },
         "1349175e-64d8-40a8-889a-dd9ba939cbc8": {
