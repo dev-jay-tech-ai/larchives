@@ -17,6 +17,27 @@
     }
   }
 {%- endstyle -%}
+
+  <div class="page-width page-width--narrow section-{{ section.id }}-padding">
+    <h2 class="page-title {{ section.settings.heading_size }}">
+      {%- if section.settings.page.title != blank -%}
+        {{ section.settings.page.title | escape }}
+      {%- else -%}
+        {{ 'sections.page.title' | t }}
+      {%- endif -%}
+    </h2>
+    <div><img src='' style='width: 100%; height: 50rem; background-color: #333;'/></div>
+    <div class="rte">
+      {%- if section.settings.page.content != blank -%}
+        {{ section.settings.page.content }}
+      {%- else -%}
+        <div class='page-placeholder-wrapper placeholder'>
+          {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+  
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -50,12 +71,12 @@
 
         {%- when 'title'-%}
           <header class="page-width page-width--narrow center" {{ block.shopify_attributes }}>
-            <h1 class="article-template__title" itemprop="headline">{{ page.title | escape }}</h1>
+            <h1 class="article-template__title" itemprop="headline">{{ block.title | escape }}</h1>
           </header>
 
         {%- when 'content'-%}
           <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
-              {{ page.content }}
+              {{ block.content }}
           </div>
 
         {%- when 'share' -%}
