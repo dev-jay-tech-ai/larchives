@@ -50,9 +50,7 @@
       {%- endif -%}
 
       {%- when 'title'-%}
-        <header class="page-width page-width--narrow center" {{ block.shopify_attributes }}
-          style="border-top: 0"
-        >
+        <header class="page-width page-width--narrow center" {{ block.shopify_attributes }}>
           <h1 class="article-template__title" itemprop="headline">{{ block.settings.title | escape }}</h1>
         </header>
 
@@ -62,7 +60,9 @@
         </div>
 
       {%- when 'share' -%}
-        <div class="article-template__social-sharing page-width page-width--narrow sharing-custom" {{ block.shopify_attributes }}>
+        <div class="article-template__social-sharing page-width page-width--narrow sharing-custom" {{ block.shopify_attributes }}
+          style="border-top: 0"
+        >
           <div>
             <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
