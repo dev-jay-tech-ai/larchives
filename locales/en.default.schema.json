@@ -1321,6 +1321,9 @@
         "name": "Image with text"
       }
     },
+    "main-aboutus": {
+      "name": "About us"
+    },
     "main-account": {
       "name": "Account"
     },
