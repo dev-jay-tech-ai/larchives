@@ -4,9 +4,18 @@
       "type": "main-aboutus",
       "settings": {
       }
+    },
+    "922f0fb5-4e24-422d-9440-a63fe4c6e070": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "922f0fb5-4e24-422d-9440-a63fe4c6e070"
   ]
 }
