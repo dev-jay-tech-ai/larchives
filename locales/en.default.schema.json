@@ -1351,6 +1351,9 @@
         "title": {
           "name": "Title",
           "settings": {
+            "text": {
+              "label": "Title"
+            }
           }
         },
         "content": {
