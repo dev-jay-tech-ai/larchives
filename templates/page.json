@@ -7,6 +7,43 @@
         "padding_bottom": 28
       }
     },
+    "16f59081-6e02-4cd7-b5e8-25d1ad4a9b35": {
+      "type": "main-aboutus",
+      "blocks": {
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-0": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-1": {
+          "type": "title",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-2": {
+          "type": "content",
+          "settings": {
+            "textarea": ""
+          }
+        },
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-3": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-0",
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-1",
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-2",
+        "template--16018619891870__16f59081-6e02-4cd7-b5e8-25d1ad4a9b35-1672162845dbe10657-3"
+      ],
+      "settings": {
+      }
+    },
     "77177e4d-15d1-436c-9d31-ced7cd7b11b1": {
       "type": "instafeed",
       "settings": {
@@ -18,6 +55,7 @@
   },
   "order": [
     "main",
+    "16f59081-6e02-4cd7-b5e8-25d1ad4a9b35",
     "77177e4d-15d1-436c-9d31-ced7cd7b11b1"
   ]
 }
