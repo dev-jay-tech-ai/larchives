@@ -17,145 +17,125 @@
     }
   }
 {%- endstyle -%}
-
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h1">
-    {{ page.title | escape }}
-  </h1>
-  <div class='image'>
-    {{ section.settings.image | image_url: width: 1500 | image_tag:
-      loading: 'lazy',
-      width: section.settings.image.width,
-      height: image_height,
-      class: image_class,
-      sizes: sizes,
-      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-      alt: section.settings.image.alt | escape
-    }}
-  </div>
-  <div class="rte">
-    {{ page.content }}
-  </div>
-</div>
   
-  {%- for block in section.blocks -%}
-    {%- case block.type -%}
-      {%- when '@app' -%}
-        <div class="page-width page-width--narrow center">
-          {% render block %}
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when '@app' -%}
+      <div class="page-width page-width--narrow center">
+        {% render block %}
+      </div>
+    {%- when 'featured_image'-%}
+      {%- if article.image -%}
+        <div class="article-template__hero-container" {{ block.shopify_attributes }}>
+          <div class="article-template__hero-{{ block.settings.image_height }} media"
+            itemprop="image"
+            {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
+          >
+            <img
+              srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                {{ article.image | image_url }} {{ article.image.width }}w"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+              src="{{ page.image | image_url: width: 1100 }}"
+              loading="eager"
+              width="{{ article.image.width }}"
+              height="{{ article.image.height }}"
+              alt="{{ article.image.alt | escape }}">
+          </div>
         </div>
-      {%- when 'featured_image'-%}
-        {%- if article.image -%}
-          <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
-              itemprop="image"
-              {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
-              <img
-                srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
-                  {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
-                  {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
-                  {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
-                  {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
-                  {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
-                  {{ article.image | image_url }} {{ article.image.width }}w"
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ page.image | image_url: width: 1100 }}"
-                loading="eager"
-                width="{{ article.image.width }}"
-                height="{{ article.image.height }}"
-                alt="{{ article.image.alt | escape }}">
-            </div>
-          </div>
-        {%- endif -%}
+      {%- endif -%}
 
-        {%- when 'title'-%}
-          <header class="page-width page-width--narrow center" {{ block.shopify_attributes }}>
-            <h1 class="article-template__title" itemprop="headline">{{ block.settings.heading.title | escape }}</h1>
-          </header>
+      {%- when 'title'-%}
+        <header class="page-width page-width--narrow center" {{ block.shopify_attributes }}>
+          <h1 class="article-template__title" itemprop="headline">{{ block.settings.heading.title | escape }}</h1>
+        </header>
 
-        {%- when 'content'-%}
-          <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
-              {{ block.content }}
-          </div>
+      {%- when 'content'-%}
+        <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+            {{ block.content }}
+        </div>
 
-        {%- when 'share' -%}
-          <div class="article-template__social-sharing page-width page-width--narrow sharing-custom" {{ block.shopify_attributes }}>
-            <div>
-              <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
+      {%- when 'share' -%}
+        <div class="article-template__social-sharing page-width page-width--narrow sharing-custom" {{ block.shopify_attributes }}>
+          <div>
+            <share-button class="share-button" {{ block.shopify_attributes }}>
+              <button class="share-button__button hidden">
+                {% render 'icon-twitter' %}
+              </button>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary class="share-button__button">
                   {% render 'icon-twitter' %}
-                </button>
-                <details id="Details-{{ block.id }}-{{ section.id }}">
-                  <summary class="share-button__button">
-                    {% render 'icon-twitter' %}
-                  </summary>
-                </details>
-              </share-button>
-            </div>
-            <div>
-              <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
-                   {% render 'icon-facebook' %}
-                </button>
-                <details id="Details-{{ block.id }}-{{ section.id }}">
-                  <summary class="share-button__button">
-                    {% render 'icon-facebook' %}
-                  </summary>
-                </details>
-              </share-button>
-            </div>
-            <div>
-              <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
-                   {% render 'icon-email' %}
-                </button>
-                <details id="Details-{{ block.id }}-{{ section.id }}">
-                  <summary class="share-button__button">
-                    {% render 'icon-email' %}
-                  </summary>
-                </details>
-              </share-button>
-            </div>
-            <div>           
-              <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
-                  {% render 'icon-link' %}
-                </button>
-                <details id="Details-{{ block.id }}-{{ section.id }}">
-                  <summary class="share-button__button">
-                   {% render 'icon-link' %}
-                  </summary>
-                  <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                    <div class="field">
-                      <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                      </span>
-                      <input type="text"
-                            class="field__input"
-                            id="url"
-                            value="{{ request.origin | append: article.url }}"
-                            placeholder="{{ 'general.share.share_url' | t }}"
-                            onclick="this.select();"
-                            readonly
-                      >
-                      <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                    </div>
-                    <button class="share-button__close hidden no-js-hidden">
-                      {% render 'icon-close' %}
-                      <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                    </button>
-                    <button class="share-button__copy no-js-hidden">
-                      {% render 'icon-clipboard' %}
-                      <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                    </button>
-                  </div>
-                </details>
-              </share-button>
-            </div>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+                </summary>
+              </details>
+            </share-button>
           </div>
-    {%- endcase -%}
-  {%- endfor -%}
+          <div>
+            <share-button class="share-button" {{ block.shopify_attributes }}>
+              <button class="share-button__button hidden">
+                 {% render 'icon-facebook' %}
+              </button>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary class="share-button__button">
+                  {% render 'icon-facebook' %}
+                </summary>
+              </details>
+            </share-button>
+          </div>
+          <div>
+            <share-button class="share-button" {{ block.shopify_attributes }}>
+              <button class="share-button__button hidden">
+                 {% render 'icon-email' %}
+              </button>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary class="share-button__button">
+                  {% render 'icon-email' %}
+                </summary>
+              </details>
+            </share-button>
+          </div>
+          <div>           
+            <share-button class="share-button" {{ block.shopify_attributes }}>
+              <button class="share-button__button hidden">
+                {% render 'icon-link' %}
+              </button>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary class="share-button__button">
+                 {% render 'icon-link' %}
+                </summary>
+                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                  <div class="field">
+                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
+                    </span>
+                    <input type="text"
+                          class="field__input"
+                          id="url"
+                          value="{{ request.origin | append: article.url }}"
+                          placeholder="{{ 'general.share.share_url' | t }}"
+                          onclick="this.select();"
+                          readonly
+                    >
+                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                  </div>
+                  <button class="share-button__close hidden no-js-hidden">
+                    {% render 'icon-close' %}
+                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                  </button>
+                  <button class="share-button__copy no-js-hidden">
+                    {% render 'icon-clipboard' %}
+                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                  </button>
+                </div>
+              </details>
+            </share-button>
+          </div>
+          <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+        </div>
+  {%- endcase -%}
+{%- endfor -%}
 </div>
 
 
