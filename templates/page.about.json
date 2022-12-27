@@ -3,17 +3,17 @@
     "main": {
       "type": "main-aboutus",
       "blocks": {
+        "1349175e-64d8-40a8-889a-dd9ba939cbc8": {
+          "type": "title",
+          "settings": {
+            "text": "OUT STORY"
+          }
+        },
         "35d4f045-f69d-403c-b1f8-d6f28efc69a2": {
           "type": "featured_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_27.jpg",
             "image_height": "large"
-          }
-        },
-        "1349175e-64d8-40a8-889a-dd9ba939cbc8": {
-          "type": "title",
-          "settings": {
-            "text": "OUT STORY"
           }
         },
         "1db853b7-1267-4646-b4b7-4d5ed373ca59": {
@@ -30,8 +30,8 @@
         }
       },
       "block_order": [
-        "35d4f045-f69d-403c-b1f8-d6f28efc69a2",
         "1349175e-64d8-40a8-889a-dd9ba939cbc8",
+        "35d4f045-f69d-403c-b1f8-d6f28efc69a2",
         "1db853b7-1267-4646-b4b7-4d5ed373ca59",
         "cc2333d3-04f4-485c-b7e6-83069cfa7159"
       ],
