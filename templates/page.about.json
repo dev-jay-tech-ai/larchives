@@ -16,6 +16,12 @@
             "text": "OUT STORY"
           }
         },
+        "1db853b7-1267-4646-b4b7-4d5ed373ca59": {
+          "type": "content",
+          "settings": {
+            "textarea": "Established in 2016, Larchives is a UK-based online store which specialises in luxury discount shopping.\n\nFor those who love the thrill of the find, Larchives offers more than 50 of the world’s most prestigious luxury designer fashion brands at exceptional prices of up to 90%off, including Chanel, Hermès, Dior, Louis Vuitton, Gucci, Prada, ChristianLouboutin, and much more. With a dedicated buying team in the UK purchasing stock directly from these leading brands, Larchives helps customers diving into the luxury online shopping experience.\n\nStrong relationships with the brands enables Larchives to build on its key philosophy: keeping the low prices and a sense of responsibility for every purchase, and every experience.With a focus on exceptional customer service, Larchives offers a seamless shoppingexperience across all devices, with worldwide shipping handled with the best of care."
+          }
+        },
         "cc2333d3-04f4-485c-b7e6-83069cfa7159": {
           "type": "share",
           "settings": {
@@ -26,6 +32,7 @@
       "block_order": [
         "35d4f045-f69d-403c-b1f8-d6f28efc69a2",
         "1349175e-64d8-40a8-889a-dd9ba939cbc8",
+        "1db853b7-1267-4646-b4b7-4d5ed373ca59",
         "cc2333d3-04f4-485c-b7e6-83069cfa7159"
       ],
       "settings": {
