@@ -1,61 +1,12 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "main-aboutus",
       "settings": {
-        "padding_top": 52,
-        "padding_bottom": 32
-      }
-    },
-    "slideshow": {
-      "type": "slideshow",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": false,
-        "accessibility_info": ""
-      }
-    },
-    "collage-1": {
-      "type": "collage",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "image_padding": false
-          }
-        }
-      },
-      "block_order": [
-        "image"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 8,
-        "padding_bottom": 12
-      }
-    },
-    "9b487d40-5b13-4558-8842-13e5b817c689": {
-      "type": "instafeed",
-      "settings": {
-        "heading_size": 20,
-        "feed_width": 100,
-        "html_area": ""
       }
     }
   },
   "order": [
-    "main",
-    "slideshow",
-    "collage-1",
-    "9b487d40-5b13-4558-8842-13e5b817c689"
+    "main"
   ]
 }
