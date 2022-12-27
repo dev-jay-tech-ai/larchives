@@ -26,8 +26,6 @@ vertical-slider {
   display: block;
 }
 
-
-
 .slider-button--prev > svg {
   transform: rotate(180deg);
 }
