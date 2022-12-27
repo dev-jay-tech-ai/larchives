@@ -1327,6 +1327,9 @@
         "featured_image": {
           "name": "Featured image",
           "settings": {
+            "image_picker": {
+              "label": "Image"
+            },
             "image_height": {
               "label": "Featured image height",
               "options__1": {
