@@ -1348,12 +1348,6 @@
         "title": {
           "name": "Title",
           "settings": {
-            "blog_show_date": {
-              "label": "Show date"
-            },
-            "blog_show_author": {
-              "label": "Show author"
-            }
           }
         },
         "content": {
