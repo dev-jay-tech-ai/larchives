@@ -119,12 +119,10 @@
               <share-button class="share-button" {{ block.shopify_attributes }}>
                 <button class="share-button__button hidden">
                   {% render 'icon-link' %}
-                  {% comment %}{{ block.settings.share_label | escape }}{% endcomment %}
                 </button>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary class="share-button__button">
                    {% render 'icon-link' %}
-                   {% comment %}{{ block.settings.share_label | escape }}{% endcomment %}
                   </summary>
                   <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
                     <div class="field">
