@@ -34,8 +34,8 @@
   }
   
   .collection-list-bottom {
-    margin-top: 4rem;
-    margin-bottom: 6rem !important;
+    margin-top: 4rem !important;
+    margin-bottom: 6rem;
   }
   
   .collection-list-bottom button {
