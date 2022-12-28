@@ -58,7 +58,7 @@
 }
 
 .article-card__info {
-  padding-top: 3rem;
+  padding-top: .3rem;
 }
 
 .article-card__footer {
@@ -84,6 +84,9 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .article-card__info {
+    padding-top: 3rem;
+  }
   .article-card__link:not(:only-child) {
     margin-right: 4rem;
   }
