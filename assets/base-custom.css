@@ -28,10 +28,6 @@
   margin-top: 0;
 }
 
-.collection-list-bottom button {
-  
-}
-
 @media screen and (max-width: 1024px) {
   .collection-list__item .product-list-bottom {
     margin-top: 6rem;
@@ -39,6 +35,10 @@
   
   .collection-list-bottom {
     margin-bottom: 6rem;
+  }
+  
+  .collection-list-bottom button {
+    margin: 0 auto;
   }
 }
 
