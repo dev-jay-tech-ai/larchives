@@ -1096,7 +1096,7 @@ input[type="range"]::-moz-range-thumb {
   width: 2rem;
   height: .2rem;
   background-color: #040b09;
-  top: 3.6rem;
+  top: 2.6rem;
   left: 0;
 }
 
@@ -1122,7 +1122,7 @@ input[type="range"]::-moz-range-thumb {
 
   .blog-rectangle {
     width: 4rem;
-    top: 2.6rem;
+    top: 3.6rem;
   }
 }
 
