@@ -127,7 +127,7 @@
 .card__information {
   position: relative;
   grid-row-start: 2;
-  padding: 1.3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .card:not(.ratio) > .card__content {
