@@ -20,6 +20,10 @@
   }
 }
 
+.collection-list__item .card__content {
+  margin-bottom: 3rem;
+}
+
 .aboutus-template__title {
   margin-top: 6rem;
   margin-bottom: 6rem;
