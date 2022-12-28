@@ -20,6 +20,11 @@
   }
 }
 
+.aboutus-template__title {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 .aboutus_content {
   position: relative;
   padding-top: 10.3rem;
