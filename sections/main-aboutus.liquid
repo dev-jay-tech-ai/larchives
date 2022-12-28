@@ -57,14 +57,14 @@
         </header>
 
       {%- when 'content'-%}
-        <div class="article-template__content page-width page-width--narrow rte aboutus_content" itemprop="articleBody" {{ block.shopify_attributes }}>
+        <div class="aboutus-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
           {%-  assign first_letter = block.settings.content | slice: 0 -%}
           <div>{{ first_letter }}</div>
           {{ block.settings.content | remove_first: first_letter }}
         </div>
 
       {%- when 'share' -%}
-        <div class="article-template__social-sharing page-width page-width--narrow sharing-custom" {{ block.shopify_attributes }}>
+        <div class="aboutus-template__social-sharing page-width page-width--narrow sharing-custom" {{ block.shopify_attributes }}>
           <div>
             <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
