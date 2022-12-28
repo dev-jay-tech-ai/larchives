@@ -21,6 +21,7 @@
 }
 
 .aboutus_content {
+  position: relative;
   padding-top: 10.3rem;
   padding-bottom: 6rem;
   max-width: 80rem;
