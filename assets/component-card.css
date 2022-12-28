@@ -118,6 +118,7 @@
   width: 100%;
   flex-grow: 1;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .card__content--auto-margins {
