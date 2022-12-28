@@ -34,7 +34,7 @@
   }
   
   .collection-list-bottom {
-    margin-bottom: 6rem;
+    margin-bottom: 6rem !important;
   }
   
   .collection-list-bottom button {
