@@ -28,9 +28,11 @@
   margin-top: 0;
 }
 
+.collection-list-bottom {
+  margin-bottom: 0rem;
+}
 
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .collection-list-bottom {
     margin-bottom: 6rem;
   }
