@@ -33,12 +33,10 @@
 }
 
 .aboutus-template__content > div {
-  position: relative;
+
 }
 
 .aboutus-template__content .first_letter {
-  position: absolute;
-  left: -10.8rem;
   font-family: Termina;
   font-size: 9.6rem;
   line-height: 9.6rem;
