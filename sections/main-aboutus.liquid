@@ -57,7 +57,7 @@
         </header>
 
       {%- when 'content'-%}
-        <div class="aboutus-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+        <div class="aboutus-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
           <div>
             {%-  assign first_letter = block.settings.content | slice: 0 -%}
             <div class='first_letter'>{{ first_letter }}</div>
