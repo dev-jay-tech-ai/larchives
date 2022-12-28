@@ -28,8 +28,12 @@
   margin-top: 0;
 }
 
-.collection-list-bottom {
-  margin-bottom: 6rem;
+
+
+@media screen and (max-width: 1024px) {
+  .collection-list-bottom {
+    margin-bottom: 6rem;
+  }
 }
 
 .collection-list-bottom div:last-child {
