@@ -52,7 +52,7 @@
 
 .blog-articles .article-card .card__information,
 .blog__posts .article-card .card__information {
-  padding-left: 6rem !important;
+  padding-left: 3rem !important;
   padding-bottom: 8rem !important;
   /* padding-right: 2rem; */
 }
@@ -84,6 +84,11 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .blog-articles .article-card .card__information,
+  .blog__posts .article-card .card__information {
+    padding-left: 6rem !important;
+  }
+    
   .article-card__info {
     padding-top: 3rem;
   }
