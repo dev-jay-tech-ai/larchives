@@ -32,7 +32,22 @@
         </li>
       {%- endfor -%}
     </ul>
-    {% render 'pagination', paginate: paginate %}
+  
+    <div class="product-list-bottom">
+      {%- if paginate.pages > 1 -%}
+      <div>
+        {%- unless paginate.previous -%}
+        <button class="button button--secondary button-load-custom load-more">
+            <span load-more-text>LOAD MORE</span>
+            <span class="hide" loader>
+            </span>
+          </button>
+        {%- endunless -%}   
+      </div>
+      <div>{% render 'pagination', paginate: paginate %}</div>
+      {%- endif -%}
+      </div> 
+    </div>  
   {%- endpaginate -%}
 </div>
 {% schema %}
