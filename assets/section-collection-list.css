@@ -1,5 +1,5 @@
 .collection-list {
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 6rem;
   padding: 0;
   list-style: none;
@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 749px) {
+  .collection-list {
+    margin-top: 6rem;
+  }
   .collection-list:not(.slider) {
     padding-left: 0;
     padding-right: 0;
