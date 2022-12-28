@@ -26,6 +26,18 @@
   max-width: 80rem;
 }
 
+.aboutus_content > div {
+  position: absolute;
+  left: -10.8rem;
+  font-family: Termina;
+  font-size: 96px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #040b09;
+}
+
 .aboutus_img > img {
   width: 100%;
   object-fit: cover;
