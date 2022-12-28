@@ -34,6 +34,7 @@
 
 .aboutus-template__content > div {
   display: flex;
+  gap: 1.4rem;
 }
 
 .aboutus-template__content > div > div {
