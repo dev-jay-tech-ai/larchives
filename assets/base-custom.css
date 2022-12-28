@@ -33,6 +33,10 @@
 }
 
 .aboutus-template__content > div {
+  position: relative;
+}
+
+.aboutus-template__content .first_letter {
   position: absolute;
   left: -10.8rem;
   font-family: Termina;
