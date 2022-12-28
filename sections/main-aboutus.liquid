@@ -61,7 +61,7 @@
           <div>
             {%-  assign first_letter = block.settings.content | slice: 0 -%}
             <div class='first_letter'>{{ first_letter }}</div>
-            <div>{{ block.settings.content | remove_first: first_letter | newline_to_br }}</div>
+            <div><span>{{ first_letter }}</span>{{ block.settings.content | remove_first: first_letter | newline_to_br }}</div>
           </div>
         </div>
 
