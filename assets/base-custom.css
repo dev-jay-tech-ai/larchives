@@ -28,6 +28,10 @@
   margin-top: 0;
 }
 
+.collection-list-bottom {
+  margin-bottom: 4rem;
+}
+
 .collection-list-bottom div:last-child {
   display: none;
 }
