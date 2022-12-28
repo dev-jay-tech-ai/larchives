@@ -21,7 +21,11 @@
 }
 
 .collection-list__item .card__content {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
+}
+
+.collection-list__item .card__heading {
+  margin-top: 0;
 }
 
 .aboutus-template__title {
