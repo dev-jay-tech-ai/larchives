@@ -37,7 +37,9 @@
 }
 
 .aboutus-template__content > div > div {
-  flex: 8;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  text-align: center;
 }
 
 .aboutus-template__content > div > div > span {
@@ -50,9 +52,10 @@
 
 @media screen and (min-width: 1025px) {
   .aboutus-template__content > div > div {
-    padding-right: 4rem;
-    padding-left: 4rem;
-    text-align: center;
+    flex: 8;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    text-align: left;
   }
   
   .aboutus-template__content > div > div > span {
