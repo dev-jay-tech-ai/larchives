@@ -3,7 +3,7 @@
 
 <div class="page-width">
   <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
-    <a href="/{{ sections.settings.title | downcase }}"><span>{{ sections.title }}</span></a>
+    <a href="/{{ sections.settings.title | downcase }}"><span>{{ sections.title | escape }}</span></a>
   </nav>
   <h1 class="title title--primary center medium-hide large-up-hide">{{ section.settings.title | escape }}</h1>
   {%- liquid
