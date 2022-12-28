@@ -41,15 +41,21 @@
 }
 
 .aboutus-template__content .first_letter {
-  flex: 1;
-  font-family: Termina;
-  font-size: 9.6rem;
-  line-height: 9.6rem;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #040b09;
+  display: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .aboutus-template__content .first_letter {
+    flex: 1;
+    font-family: Termina;
+    font-size: 9.6rem;
+    line-height: 9.6rem;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #040b09;
+  }
 }
 
 .aboutus_img > img {
