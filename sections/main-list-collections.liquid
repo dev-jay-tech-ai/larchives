@@ -5,7 +5,7 @@
   <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
     <a href="/{{ section.settings.title | downcase }}"><span>{{ section.settings.title | escape }}</span></a>
   </nav>
-  <h1 class="title title--primary center medium-hide large-up-hide">{{ section.settings.title | escape }}</h1>
+  <h1 class="title title--primary center large-up-hide">{{ section.settings.title | escape }}</h1>
   {%- liquid
     case section.settings.sort
       when 'products_high' or 'products_low'
