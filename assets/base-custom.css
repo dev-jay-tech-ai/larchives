@@ -41,7 +41,7 @@
 }
 
 .aboutus-template__content > div > div > span {
-  display: block;
+  display: inline;
 }
 
 .aboutus-template__content .first_letter {
