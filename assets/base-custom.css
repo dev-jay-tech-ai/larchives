@@ -27,8 +27,7 @@
 
 .aboutus-template__content {
   position: relative;
-  padding-top: 10.3rem;
-  padding-bottom: 6rem;
+  padding: 10.3rem 0 6rem 0;
   max-width: 91rem;
 }
 
