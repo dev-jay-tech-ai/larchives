@@ -25,14 +25,14 @@
   margin-bottom: 6rem;
 }
 
-.aboutus_content {
+.aboutus-template__content {
   position: relative;
   padding-top: 10.3rem;
   padding-bottom: 6rem;
   max-width: 80rem;
 }
 
-.aboutus_content > div {
+.aboutus-template__content > div {
   position: absolute;
   left: -10.8rem;
   font-family: Termina;
