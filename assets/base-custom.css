@@ -33,10 +33,15 @@
 }
 
 .aboutus-template__content > div {
+  display: flex;
+}
 
+.aboutus-template__content > div > div {
+  flex: 8;
 }
 
 .aboutus-template__content .first_letter {
+  flex: 1;
   font-family: Termina;
   font-size: 9.6rem;
   line-height: 9.6rem;
