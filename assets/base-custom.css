@@ -40,11 +40,19 @@
   flex: 8;
 }
 
+.aboutus-template__content > div > div > span {
+  display: block;
+}
+
 .aboutus-template__content .first_letter {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
+  .aboutus-template__content > div > div > span {
+    display: none;
+  }
+  
   .aboutus-template__content .first_letter {
     display: block;
     flex: 1;
