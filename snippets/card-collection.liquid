@@ -40,7 +40,7 @@
     style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
   >
     <div class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-      {%- if card_collection.featured_image -%}
+      {% comment %}{%- if card_collection.featured_image -%}
         <div class="card__media">
           <div class="media media--transparent media--hover-effect">
             <img
@@ -65,7 +65,7 @@
             >
           </div>
         </div>
-      {%- endif -%}
+      {%- endif -%}{% endcomment %}
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading">
