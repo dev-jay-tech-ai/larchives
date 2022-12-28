@@ -2,7 +2,9 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width">
-  {% render 'breadcrumb' %}
+  <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+    <a href="/{{ page.title }}"><span>{{ page.title }}</span></a>
+  </nav>
   <h1 class="title title--primary center medium-hide large-up-hide">{{ section.settings.title | escape }}</h1>
   {%- liquid
     case section.settings.sort
