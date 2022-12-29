@@ -547,7 +547,8 @@
                         {% if option.name == 'Colour' %}Colour:
                         {% elsif option.name == 'Size' %}Select a size{% endif %}
                         {% if option.name == 'Colour' %}<span>&nbsp;&nbsp;{{ option.selected_value | capitalize }}</span>{% endif %}
-
+                        </legend>                         
+                      
                         {%- for value in option.values -%}
                           {% if option.name == 'Colour' %}
                           {% render 'color-palette' %}
@@ -580,7 +581,6 @@
                           </label>
                           {% endif %}
                         {%- endfor -%}
-                        </legend>   
                       </fieldset>
                     {%- endfor -%}
                     <script type="application/json">
