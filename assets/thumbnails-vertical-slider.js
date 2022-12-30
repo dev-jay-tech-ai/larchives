@@ -22,6 +22,7 @@ class VSliderComponent extends HTMLElement {
     this.sliderItemOffset = this.sliderItemsToShow[1].offsetTop - this.sliderItemsToShow[0].offsetTop;
     this.slidesPerPage = Math.floor((this.slider.clientHeight - this.sliderItemsToShow[0].offsetTop) / this.sliderItemOffset);
     this.totalPages = this.sliderItemsToShow.length - this.slidesPerPage + 1;
+    (this.sliderItemOffset, this.slidesPerPage, this.totalPages)
     this.update();
   }
 
