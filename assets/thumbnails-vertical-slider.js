@@ -54,8 +54,9 @@ class VSliderComponent extends HTMLElement {
     event.preventDefault();
     const step = event.currentTarget.dataset.step || 1;
     this.slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollTop + (step * this.sliderItemOffset) : this.slider.scrollTop - (step * this.sliderItemOffset);
+    console.log(this.slideScrollPosition)
     this.slider.scrollTo({
-      top: this.slideScrollPosition
+      top: 120
     });
   }
 }
