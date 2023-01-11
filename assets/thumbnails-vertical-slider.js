@@ -53,7 +53,7 @@ class VSliderComponent extends HTMLElement {
   onButtonClick(event) {
     event.preventDefault();
     const step = event.currentTarget.dataset.step || 1;
-    this.slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollTop + (step * 130) : this.slider.scrollTop - (step * 130);
+    this.slideScrollPosition = event.currentTarget.name === 'next' ? 130 + (step * this.sliderItemOffset) : 130 - (step * this.sliderItemOffset);
     
     // this.slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollTop + (step * this.sliderItemOffset) : this.slider.scrollTop - (step * this.sliderItemOffset);
     console.log('슬라이드 이동위치', this.slideScrollPosition)
