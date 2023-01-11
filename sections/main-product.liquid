@@ -543,7 +543,7 @@
                   >
                     {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
-                        <legend class="form__label">
+                        <legend class="form__label color_opt">
                         {% if option.name == 'Colour' %}Colour:
                         {% elsif option.name == 'Size' %}Select a size{% endif %}
                         {% if option.name == 'Colour' %}<span>&nbsp;&nbsp;{{ option.selected_value | capitalize }}</span>{% endif %}
