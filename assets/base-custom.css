@@ -27,6 +27,7 @@
 .cart_icon div {
   display: block;
   top: 0;
+  right: -0.5rem;
   width: 1.828rem;
   height: 1.776rem;
   line-height: 1.776rem;
