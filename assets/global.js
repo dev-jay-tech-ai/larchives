@@ -899,10 +899,13 @@ class VariantRadios extends VariantSelects {
   updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
     const color_opt = this.querySelector('.color_opt > span');
+    const toCamelCase => (str) {
+      return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+    }
     this.options = fieldsets.map((fieldset,idx) => {
       if(idx === 0) {
         // console.log( Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
-        color_opt.innerText = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
+        color_opt.innerText = &nbsp;&nbsp; + toCamelCase(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
       }
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
     });
