@@ -899,7 +899,7 @@ class VariantRadios extends VariantSelects {
   updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
     const color_opt = this.querySelector('.color_opt > span');
-    const toCamelCase => (str) {
+    const toCamelCase = (str) => {
       return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
     }
     this.options = fieldsets.map((fieldset,idx) => {
