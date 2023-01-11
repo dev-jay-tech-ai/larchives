@@ -20,6 +20,17 @@
   }
 }
 
+.cart_icon {
+  position: relative;
+}
+
+.cart_icon div {
+  position: absolute;
+  font-size
+  color: #FFFFFF
+  background: #C20C1E;
+}
+
 .collection-list__item .card__content {
   margin-bottom: 0;
 }
