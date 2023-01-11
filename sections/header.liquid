@@ -555,7 +555,7 @@
             <li>
               <div>
                 <a href="{{ routes.cart_url }}">
-                  {%- if request.page_type == 'index' -%} 1{% render 'icon-cart-empty' %}{%- else -%}2{% render 'icon-cart-empty-black' %}{%- endif -%}
+                  {%- if request.page_type == 'index' -%}{% render 'icon-cart-empty' %}{%- else -%}{% render 'icon-cart-empty-black' %}{%- endif -%}
                 </a>
               </div>
             </li>
