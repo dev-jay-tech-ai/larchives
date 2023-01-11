@@ -553,7 +553,7 @@
             </li>
             <li><div><a href="#swym-wishlist">{%- if request.page_type == 'index' -%}{% render 'icon-like' %}{%- else -%}{% render 'icon-like-black' %}{%- endif -%}</a></div></li>
             <li>
-              <div>
+              <div class='cart_icon'>
                 <a href="{{ routes.cart_url }}">
                   {%- if request.page_type == 'index' -%}{% render 'icon-cart-empty' %}{%- else -%}{{ cart.item_count }}{% render 'icon-cart-empty-black' %}{%- endif -%}
                   <div>{{ cart.item_count }}</div>
