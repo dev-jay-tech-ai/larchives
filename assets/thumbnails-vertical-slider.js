@@ -54,7 +54,8 @@ class VSliderComponent extends HTMLElement {
     event.preventDefault();
     const step = event.currentTarget.dataset.step || 1;
     this.slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollTop + (step * this.sliderItemOffset) : this.slider.scrollTop - (step * this.sliderItemOffset);
-    
+    console.log('스크롤 탑 포지션', this.slider.scrollTop)
+    console.log('단계', step , this.sliderItemOffset)
     // this.slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollTop + (step * this.sliderItemOffset) : this.slider.scrollTop - (step * this.sliderItemOffset);
     console.log('슬라이드 이동위치', this.slideScrollPosition)
     this.slider.scrollTo({
