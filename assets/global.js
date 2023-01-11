@@ -903,7 +903,7 @@ class VariantRadios extends VariantSelects {
     this.options = fieldsets.map((fieldset,idx) => {
       if(idx === 0) {
         // console.log( Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
-        color_opt.innerText = '  ' + Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value.replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase();
+        color_opt.innerText = '  ' + Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value.replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
       }
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
     });
