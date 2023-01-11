@@ -26,7 +26,8 @@
 
 .cart_icon div {
   position: absolute;
-  font-size
+  font-family: Poppins;
+  font-size: .8rem;
   color: #FFFFFF
   background: #C20C1E;
 }
