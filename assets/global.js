@@ -901,7 +901,7 @@ class VariantRadios extends VariantSelects {
     const color_opt = this.querySelector('.color_opt > span');
     this.options = fieldsets.map((fieldset,idx) => {
       if(idx === 0) {
-        console.log( Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
+        // console.log( Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value);
         color_opt.innerText = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
       }
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
