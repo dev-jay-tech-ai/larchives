@@ -93,8 +93,8 @@
 .shopify-payment-button__button {
   /* font-family: inherit; */
   font-family: 'Termina-medium';
-  font-size: 1.2rem;
-  min-height: 4.6rem;
+  padding: 1.6rem 0;
+  font-size: 1.2rem !important;
 }
 
 .shopify-payment-button__button [role="button"].focused,
