@@ -47,8 +47,8 @@
 }
 
 .cart-popup-modal {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .collection-list__item .card__content {
