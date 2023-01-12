@@ -21,8 +21,8 @@
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
-                  <div><h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t | remove: "GBP"}}</h2></div>
-                  <div><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p></div>
+                  <div><h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2></div>
+                  <div><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency | remove: " GBP" }}</p></div>
                 </div>
 
                 <div>
