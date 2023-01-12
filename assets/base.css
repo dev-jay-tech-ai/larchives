@@ -548,6 +548,7 @@ blockquote {
   font-size: 1.4rem;
   line-height: 1.2;
   letter-spacing: normal;
+  color: rgba(4, 11, 9, 0.5);
 }
 
 .caption-with-letter-spacing--medium {
