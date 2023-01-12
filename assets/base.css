@@ -2029,7 +2029,8 @@ input[type='checkbox'] {
 .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
-  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  /* width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2); */
+  width: 3.6rem;
   display: flex;
   border-radius: var(--inputs-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
@@ -3047,9 +3048,4 @@ details-disclosure > details {
   .localization-form__select:focus {
     outline: transparent solid 1px;
   }
-}
-
-.cart_quantity .quantity {
-  width: 3.6rem;
-  height: 1.2rem;
 }
