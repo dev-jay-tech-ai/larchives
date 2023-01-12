@@ -13,7 +13,6 @@ if (!customElements.get('product-form')) {
 
     onSubmitHandler(evt) {
       evt.preventDefault();
-      console.log('clicked!')
       if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
 
       this.handleErrorMessage();
@@ -58,6 +57,7 @@ if (!customElements.get('product-form')) {
 
           this.error = false;
           const quickAddModal = this.closest('quick-add-modal');
+          console.log(quickAddModal)
           if (quickAddModal) {
             document.body.addEventListener('modalClosed', () => {
               setTimeout(() => { this.cart.renderContents(response) });
