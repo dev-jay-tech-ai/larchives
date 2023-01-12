@@ -546,6 +546,9 @@ blockquote {
 .caption-with-letter-spacing {
   font-family: Poppins;
   font-size: 1.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 1.2;
   letter-spacing: normal;
   color: rgba(4, 11, 9, 0.5);
