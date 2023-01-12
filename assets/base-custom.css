@@ -25,6 +25,7 @@
 }
 
 .cart_icon div {
+  text-align: center;
   display: block;
   top: 0;
   right: -0.8rem;
