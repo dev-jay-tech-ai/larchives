@@ -248,6 +248,7 @@ cart-remove-button .icon-remove {
 
   .cart-item__quantity-wrapper {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .cart-item__totals {
