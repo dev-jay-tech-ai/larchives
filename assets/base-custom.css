@@ -88,7 +88,7 @@
   }
 }
 
-.cart-item__quantity .quantity {
+.cart-item__quantity quantity-input.quantity {
   width: 3.6rem;
   height: 1.2rem;
 }
