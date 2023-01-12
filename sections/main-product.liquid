@@ -691,7 +691,7 @@
                       <button
                         type="submit"
                         name="add"
-                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %} button_custom"
+                        class="product-form__submit button button--full-width {% comment %}{% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}{% endcomment %} button_custom"
                         {% if product.selected_or_first_available_variant.available == false %}
                           disabled
                         {% endif %}
