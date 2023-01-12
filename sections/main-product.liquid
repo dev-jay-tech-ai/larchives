@@ -691,7 +691,7 @@
                       <button
                         type="submit"
                         name="add"
-                        class="product-form__submit button button--full-width {% comment %}{% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}{% endcomment %}button_custom"
+                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %} button_custom"
                         {% if product.selected_or_first_available_variant.available == false %}
                           disabled
                         {% endif %}
@@ -715,6 +715,10 @@
                             <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                           </svg>
                         </div>
+                        <modal-opener class="product-popup-modal__opener no-js-hidden quick-add-hidden" data-modal="#PopupCartModal-popup"></modal-opener>
+                        <modal-dialog id="PopupCartModal-popup" class="product-popup-modal" open="">
+                          <div> 에이시블 </div>
+                        </modal-dialog>
                       </button>
                       {%- if block.settings.show_dynamic_checkout -%}
                         {{ form | payment_button }}
