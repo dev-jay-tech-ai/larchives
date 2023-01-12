@@ -47,8 +47,21 @@
 }
 
 .cart-popup-modal {
-  opacity: 1 !important;
-  visibility: visible !important;
+  opacity: 1;
+  visibility: visible;
+  /*
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;*/
+  box-sizing: border-box;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  background: rgba(var(--color-foreground),.8);
+  height: 100%;
 }
 
 .collection-list__item .card__content {
