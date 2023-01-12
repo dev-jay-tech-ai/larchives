@@ -46,6 +46,11 @@
   }
 }
 
+.cart-popup-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 .collection-list__item .card__content {
   margin-bottom: 0;
 }
