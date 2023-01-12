@@ -49,6 +49,7 @@
 }
 
 .cart-item__details > * {
+  font-size: .8rem;
   margin: 0;
   max-width: 30rem;
 }
@@ -75,6 +76,7 @@
 .cart-item__name {
   text-decoration: none;
   display: block;
+  font-family: 1rem;
 }
 
 .cart-item__name:hover {
