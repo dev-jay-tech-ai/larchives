@@ -29,15 +29,15 @@
   display: block;
   top: 0;
   right: -0.8rem;
-  width: 1.828rem;
-  height: 1.776rem;
+  width: 1.83rem;
+  height: 1.78rem;
   line-height: 1.899rem;
   border-radius: 50%;
   position: absolute;
   font-family: Poppins;
   font-size: .8rem;
-  color: #FFF;
-  background: #C20C1E;
+  color: #fff;
+  background-color: #c20c1e;
 }
 
 @media screen and (min-width: 750px) {
