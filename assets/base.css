@@ -3048,3 +3048,12 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+.cart_quantity {
+  color: rgba(var(--color-foreground));
+  position: relative;
+  width: 3.6rem;
+  display: flex;
+  border-radius: var(--inputs-radius);
+  min-height: 1.2rem;
+}
