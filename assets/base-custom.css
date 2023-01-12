@@ -71,7 +71,7 @@
   overflow: auto;
   height: 80%;
   margin: 0 auto;
-  left: 0;
+  left: 100%;
   transform: translate(-50%);
   margin-top: 5rem;
   width: 92%;
