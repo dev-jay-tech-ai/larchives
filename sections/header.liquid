@@ -644,7 +644,7 @@
         </div>  
         <div class='cart_icon'>
           <a href="{{ routes.cart_url }}">
-            {%- if request.page_type == 'index' -%}{% render 'icon-cart-empty-mobile' %}{%- else -%}{% render 'icon-cart-empty-mobile' %}{%- endif -%}
+            {%- if request.page_type == 'index' -%}{% render 'icon-cart-empty-mobile' %}{%- else -%}{% render 'icon-cart-empty-mobile-black' %}{%- endif -%}
             {%- if cart.item_count > 0 -%}<div>{{ cart.item_count }}</div>{%- endif -%}
           </a>
         </div>
