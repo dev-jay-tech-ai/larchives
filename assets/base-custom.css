@@ -90,6 +90,7 @@
 
 .cart-item__quantity .quantity__button, .cart-item__quantity .quantity__input {
   width: 1.2rem;
+  letter-spacing: 0.5px;
 }
 
 .cart-items .price--end {
