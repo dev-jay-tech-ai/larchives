@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  text-transform: uppercase;
 }
 
 .totals > * {
