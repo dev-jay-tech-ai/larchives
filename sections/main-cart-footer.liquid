@@ -20,7 +20,7 @@
               {% render block %}
             {%- when 'subtotal' -%}
             
-              <div class='button_custom revers'> 할인쿠폰
+              <div class='button_custom facets-btn revers'> 할인쿠폰
                 <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                   {%- for discount in cart.cart_level_discount_applications -%}
