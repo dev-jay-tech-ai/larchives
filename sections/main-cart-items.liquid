@@ -49,6 +49,7 @@
         {%- if cart != empty -%}
           <table class="cart-items">
             <caption class="visually-hidden">{{ 'sections.cart.title' | t }}</caption>
+            {% comment %}
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
@@ -57,7 +58,7 @@
                 <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
               </tr>
             </thead>
-
+            {% endcomment %}
             <tbody>
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
