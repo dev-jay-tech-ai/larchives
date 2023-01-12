@@ -67,7 +67,6 @@
 .cart-popup-modal__content {
   letter-spacing: normal;
   background-color: rgb(var(--color-background));
-  overflow: auto;
   height: 100%;
   margin: 0 auto;
   left: 100%;
