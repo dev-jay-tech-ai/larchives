@@ -53,6 +53,7 @@
   opacity: 0;
   visibility: hidden;
   z-index: -1;*/
+  z-index: 2;
   box-sizing: border-box;
   position: fixed;
   margin: 0 auto;
@@ -70,7 +71,7 @@
   overflow: auto;
   height: 80%;
   margin: 0 auto;
-  right: 0;
+  left: 0;
   transform: translate(-50%);
   margin-top: 5rem;
   width: 92%;
