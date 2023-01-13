@@ -3059,6 +3059,7 @@ details-disclosure > details {
   display: flex;
   border-radius: var(--inputs-radius);
   height: 1.2rem;
+  font-size: .8rem;
 }
 
 .cart_quantity__button {
