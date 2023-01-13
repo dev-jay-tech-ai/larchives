@@ -90,3 +90,7 @@ if (!customElements.get('product-form')) {
     }
   });
 }
+
+const cart_popup = document.querySelector('.cart-popup-modal');
+console.log(cart_popup);
+cart-popup.style.visibility = hidden;
