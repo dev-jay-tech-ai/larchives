@@ -63,17 +63,6 @@ if (!customElements.get('product-form')) {
             return;
           }
 
-           Shopify.getCart = function(callback) {
-            jQuery.getJSON('/cart.js', function (cart, textStatus) {
-              if ((typeof callback) === 'function') {
-                callback(cart);
-              }
-              else {
-                Shopify.onCartUpdate(cart);
-              }
-            });
-          };
-
           this.error = false;
           const quickAddModal = this.closest('quick-add-modal');
           if (quickAddModal) {
