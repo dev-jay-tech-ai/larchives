@@ -968,8 +968,11 @@
                           <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
                         </form>
             
-
-            
+                        <script>
+                        const cart_popup = document.querySelector('.cart-popup-modal');
+                        console.log(cart_popup);
+                        cart_popup.style.visibility = hidden;
+                        </script>  
                     </div>
                   </div>                
                 </product-form>
