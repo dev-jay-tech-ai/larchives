@@ -3062,6 +3062,21 @@ details-disclosure > details {
   font-size: .8rem;
 }
 
+.quantity__input {
+    color: currentColor;
+    font-size: .8rem;
+    font-weight: 500;
+    opacity: 0.85;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    padding: 0 0.5rem;
+    width: 1.2rem;
+    flex-grow: 1;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 .cart_quantity__button {
   flex-shrink: 0;
   border: 0;
