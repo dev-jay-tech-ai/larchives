@@ -19,27 +19,6 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-              <!-- 할인코드 -->
-              <div class="cart-promo">
-              <h2>ENTER A PROMO CODE</h2>
-              <input type="text" id="devPromo">
-              <a href="/checkout?discount=none" id="redemDevPromo">Apply Coupon</a>
-            </div>
-            <script>
-              $(document).ready(function(){
-                //listen to the promo button click
-                $('#redemDevPromo').on('click', function(event){
-                  //disable the button event
-                  event.preventDefault();
-                  //write the url format
-                  var theUrl = '/checkout?discount=';
-                  //grab the discount code from the input
-                  var theDiscount = $('#devPromo').val();
-                  console.log(theDiscount);
-                });
-              });
-            </script>
-        
               <div class='discounts__input'> REDEEM DISCOUNT CODE
                 <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
@@ -144,7 +123,3 @@
   ]
 }
 {% endschema %}
-
-<script id="docapp-discount-speedup">
-(() => { if (!document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/discount-on-cart-pro.min.js') || window.discountOnCartProAppLoaded) return; let script = document.createElement('script'); script.src = "https://d9fvwtvqz2fm1.cloudfront.net/shop/js/discount-on-cart-pro.min.js?shop=privaeuk.myshopify.com"; document.getElementById('docapp-discount-speedup').after(script); })();
-</script>
