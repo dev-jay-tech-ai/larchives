@@ -170,8 +170,7 @@ cart-items {
 }
 
 .cart__blocks > * + * {
-  margin-top: 2rem;
-  margin-bottom: 2.95rem;
+  margin-top: 1rem;
 }
 
 .cart__dynamic-checkout-buttons div[role='button'] {
