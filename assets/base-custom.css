@@ -68,10 +68,9 @@
 
 .cart-popup-modal {
   opacity: 1;
-  visibility: visible;
+  visibility: hidden;
   /*
   opacity: 0;
-  visibility: hidden;
   z-index: -1;*/
   z-index: 5;
   box-sizing: border-box;
