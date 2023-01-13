@@ -31,11 +31,6 @@
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'accordian.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'thumbnails-vertical-slider.js' | asset_url }}" defer="defer"></script>
-  <script>
-    const cart-popup = document.querySelector('.cart-popup-modal');
-    console.log(cart-popup);
-    cart-popup.style.visibility = hidden;
-  </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
