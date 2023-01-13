@@ -223,6 +223,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "3821540906276787066": {
+        "type": "shopify:\/\/apps\/disable-right-click-country\/blocks\/app-embed\/692a8b95-ef22-4bf6-825d-0cc7385ef417",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
