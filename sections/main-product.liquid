@@ -725,7 +725,7 @@
                     <div aria-label="Cart Items" aria-modal="true" class="cart-popup-modal__content" tabindex="-1">
                       <div> CLOSE CART & CONTINUE SHOPPING </div>
                        <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
-                        <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
+                        <div class="cart__items" id="main-cart-items" data-id="{{ sequantity__buttonction.id }}">
                           <div class="js-contents">
                             {%- if cart != empty -%}
                               <table class="cart-items">
@@ -864,7 +864,7 @@
                                             {{ 'products.product.quantity.label' | t }}
                                           </label>
                                           <quantity-input class="quantity">
-                                            <button class="quantity__button no-js-hidden" name="minus" type="button">
+                                            <button class="cart_quantity__button no-js-hidden" name="minus" type="button">
                                               <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                                               {% render 'icon-minus' %}
                                             </button>
