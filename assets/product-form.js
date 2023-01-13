@@ -20,8 +20,9 @@ if (!customElements.get('product-form')) {
       this.submitButton.setAttribute('aria-disabled', true);
       this.submitButton.classList.add('loading');
       if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
-      // 막약 웹이라면 
-      if(screen.width > 1024) {
+      
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if(screen.width > 1024 || !isMobile) {
         const cart_popup = document.querySelector('.cart-popup-modal');
         cart_popup.style.visibility = 'visible';
         cart_popup.style.opacity = '1';
