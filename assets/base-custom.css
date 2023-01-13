@@ -37,7 +37,7 @@
   line-height: 1.6;
   letter-spacing: 1px;
   text-align: center;
-  color: #757575;
+  color: #757575 !important;
 }
 
 .cart_icon {
