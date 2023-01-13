@@ -3062,7 +3062,7 @@ details-disclosure > details {
   font-size: .8rem;
 }
 
-.quantity__input {
+.cart_quantity__input {
     color: currentColor;
     font-size: .8rem;
     font-weight: 500;
