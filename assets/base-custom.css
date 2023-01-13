@@ -28,6 +28,18 @@
   background-color: #fff;
 }
 
+.cart_title {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #757575;
+}
+
 .cart_icon {
   position: relative;
 }
