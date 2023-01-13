@@ -19,6 +19,7 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
+              <input id="input-discount" type="input" name="discount" value="MYDISCOUNT" style="margin-right: 10px;">
               <div class='discounts__input'> REDEEM DISCOUNT CODE
                 <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
