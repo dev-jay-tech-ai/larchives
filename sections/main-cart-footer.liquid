@@ -20,7 +20,29 @@
               {% render block %}
             {%- when 'subtotal' -%}
               <!-- 할인코드 -->
-              <input id="input-discount" type="input" name="discount" value="MYDISCOUNT" style="margin-right: 10px;">
+              <div class="cart-promo">
+              <h2>ENTER A PROMO CODE</h2>
+              <input type="text" id="devPromo">
+              <a href="/checkout?discount=none" id="redemDevPromo">Apply Coupon</a>
+            </div>
+            <script>
+              $(document).ready(function(){
+                //listen to the promo button click
+                $('#redemDevPromo').on('click', function(event){
+                  //disable the button event
+                  event.preventDefault();
+                  //write the url format
+                  var theUrl = '/checkout?discount=';
+                  //grab the discount code from the input
+                  var theDiscount = $('#devPromo').val();
+                  //full url to redirect to checkout with promo code
+                  var toRedirect = theUrl+theDiscount;
+                  console.log(toRedirect);
+                  //redirect
+                  window.location.href = toRedirect;
+                });
+              });
+            </script>
         
               <div class='discounts__input'> REDEEM DISCOUNT CODE
                 <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
