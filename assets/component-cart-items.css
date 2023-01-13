@@ -115,9 +115,9 @@
 }
 
 .cart-item cart-remove-button {
-/*   display: flex;
-  margin-left: 1rem; */
-  text-alight: right;
+  display: flex;
+  /* margin-left: 1rem; */
+  justify-content: flex-end; 
 }
 
 @media screen and (min-width: 1024px) and (max-width: 989px) {
