@@ -956,7 +956,3 @@ customElements.define('product-recommendations', ProductRecommendations);
 
 const target_widget = document.querySelector('.card_widget > div:first-of-type');
 target_widget.outerHTML = target_widget.innerHTML;
-
-const cart_popup = document.querySelector('.cart-popup-modal');
-console.log(cart_popup);
-cart_popup.style.visibility = hidden;
