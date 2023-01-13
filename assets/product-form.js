@@ -63,6 +63,10 @@ if (!customElements.get('product-form')) {
             return;
           }
 
+           jQuery.getJSON('/cart.js', function(cart) {
+            alert('There are now ' + cart.item_count + ' items in the cart.');
+          } );
+
           this.error = false;
           const quickAddModal = this.closest('quick-add-modal');
           if (quickAddModal) {
