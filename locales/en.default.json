@@ -28,7 +28,7 @@
         "tiktok": "TikTok"
       }
     },
-    "continue_shopping": "Continue shopping",
+    "continue_shopping": "Close cart & Continue shopping",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
