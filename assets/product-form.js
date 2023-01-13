@@ -23,6 +23,8 @@ if (!customElements.get('product-form')) {
 
       const cart_popup = document.querySelector('.cart-popup-modal');
       cart_popup.style.visibility = 'visible';
+      cart_popup.style.opacity = '1';
+      cart_popup.style.zIndex = '5';
 
       const config = fetchConfig('javascript');
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
