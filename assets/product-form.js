@@ -63,9 +63,23 @@ if (!customElements.get('product-form')) {
             return;
           }
 
-           jQuery.getJSON('/cart.js', function(cart) {
-            alert('There are now ' + cart.item_count + ' items in the cart.');
-          } );
+          $.ajax({
+          type: 'POST',
+          url: '/cart/add.js',
+          data: {
+              quantity: 1,
+              id: $(this).attr("data-variant")
+          },
+          dataType: 'json',
+          success: function () {  
+              $.ajax({
+                url: '/cart.js',
+                success: function(cart){
+                  $('.cart-item-count').html(cart.item_count);
+                }
+              })
+            }
+          });
 
           this.error = false;
           const quickAddModal = this.closest('quick-add-modal');
