@@ -959,4 +959,4 @@ target_widget.outerHTML = target_widget.innerHTML;
 
 const cart_popup = document.querySelector('.cart-popup-modal');
 console.log(cart_popup);
-cart-popup.style.visibility = hidden;
+cart_popup.style.visibility = hidden;
