@@ -41,6 +41,7 @@ if (!customElements.get('product-form')) {
       }
       config.body = formData;
 
+      // 카트에 더하는 함수
       fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
         .then((response) => {
@@ -83,6 +84,13 @@ if (!customElements.get('product-form')) {
           if (!this.error) this.submitButton.removeAttribute('aria-disabled');
           if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');
         });
+
+        // cart count update 함수(updateCart) send fetch request to update cart
+        fetch('/cart/change.js', config)
+        .then((response) => response.json())
+        .catch((e) => {
+          console.error(e);
+        })
     }
 
     handleErrorMessage(errorMessage = false) {
