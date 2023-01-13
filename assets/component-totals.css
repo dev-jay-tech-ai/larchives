@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: flex-end;
   text-transform: uppercase;
+  letter-spacing: normal;
 }
 
 .totals > * {
@@ -34,4 +35,9 @@
   .totals {
     justify-content: flex-end;
   }
+}
+
+.totals_title {
+  font-weight: 500;
+  letter-spacing: normal;
 }
