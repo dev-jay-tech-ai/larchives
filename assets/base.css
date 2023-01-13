@@ -3060,3 +3060,16 @@ details-disclosure > details {
   border-radius: var(--inputs-radius);
   min-height: 1.2rem;
 }
+
+.cart_quantity__button {
+  flex-shrink: 0;
+  font-size: 1.8rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(var(--color-foreground));
+  padding: 0;
+}
