@@ -63,6 +63,31 @@ if (!customElements.get('product-form')) {
             return;
           }
 
+          var cartCount = {{ cart.item_count }};
+          $('.varients-item').on('click', function(){
+              var obj = $(this);
+              $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  data: {
+                      quantity: 1,
+                      id: $(this).attr("data-variant")
+                  },
+                  dataType: 'json',
+                  success: function (data) {
+                      $.ajax({
+                          type: 'GET',
+                          dataType: 'json',
+                          url: '/cart.json',
+                          success: function(cart){
+                              cartCount++;
+                              $('.cart-item-count').html(cartCount);
+                          }
+                      });
+                  }
+              });
+          });
+
           this.error = false;
           const quickAddModal = this.closest('quick-add-modal');
           if (quickAddModal) {
