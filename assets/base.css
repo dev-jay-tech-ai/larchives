@@ -3055,7 +3055,6 @@ details-disclosure > details {
 
 .cart_quantity {
   color: rgba(var(--color-foreground));
-  position: relative;
   width: 3.6rem;
   display: flex;
   border-radius: var(--inputs-radius);
