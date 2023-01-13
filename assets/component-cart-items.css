@@ -118,6 +118,7 @@
   display: flex;
   /* margin-left: 1rem; */
   justify-content: flex-end; 
+  padding-top: 1rem;
 }
 
 .cart-item cart-remove-button svg {
