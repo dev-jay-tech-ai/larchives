@@ -3087,3 +3087,7 @@ details-disclosure > details {
   color: rgb(var(--color-foreground));
   padding: 0;
 }
+
+.cart_quantity__button svg {
+  width: .56rem;
+}
