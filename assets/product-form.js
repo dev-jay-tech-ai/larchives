@@ -21,6 +21,9 @@ if (!customElements.get('product-form')) {
       this.submitButton.classList.add('loading');
       if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
 
+      const cart_popup = document.querySelector('.cart-popup-modal');
+      cart_popup.style.visibility = 'visible';
+
       const config = fetchConfig('javascript');
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
       delete config.headers['Content-Type'];
