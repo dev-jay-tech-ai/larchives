@@ -3067,11 +3067,9 @@ details-disclosure > details {
   color: currentColor;
   font-size: .8rem;
   font-weight: 500;
-  opacity: 0.85;
   text-align: center;
   background-color: transparent;
   border: 0;
-  padding: 0 0.5rem;
   -webkit-appearance: none;
   appearance: none;
 }
