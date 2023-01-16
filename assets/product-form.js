@@ -46,7 +46,7 @@ if (!customElements.get('product-form')) {
         .then((response) => response.json())
         .then((cartData) => {
           console.log(cartData)
-          console.log(cartData.item)
+          console.log(cartData.items[0])
           this.querySelector('.js-contents').innerHtml = cartData.item_count;
         })
         .catch((e) => {
