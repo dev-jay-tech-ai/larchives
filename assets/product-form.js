@@ -92,8 +92,6 @@ if (!customElements.get('product-form')) {
               $('.js-contents').html(data.item_count);
             });
 
-
-
           
           });
     }
