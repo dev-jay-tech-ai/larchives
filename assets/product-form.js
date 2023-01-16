@@ -44,8 +44,9 @@ if (!customElements.get('product-form')) {
       // cart count update 함수(updateCart) send fetch request to update cart
       fetch('/cart/update.js', config)
         .then((response) => response.text())
-        .then((response) => {
-          console.log('updating')
+        .then((cartData) => {
+          console.log(cartData.item_count)
+          this.querySelector('.js-contents').innerHtml = cartData.item_count;
         })
         .catch((e) => {
           console.error(e);
