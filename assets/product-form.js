@@ -89,12 +89,10 @@ if (!customElements.get('product-form')) {
             .then(response => response.json())
             .then(data => { 
               console.log(data); 
+              $('.js-contents').html(cart.item_count);
             });
 
-          fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
-            .then((response) => {
-              return response.text();
-            })
+
 
           
           });
