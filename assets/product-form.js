@@ -45,7 +45,7 @@ if (!customElements.get('product-form')) {
       fetch('/cart/update.js', config)
         .then((response) => response.json())
         .then((cartData) => {
-          console.log(typeof(cartData))
+          console.log(cartData)
           console.log(cartData.item)
           this.querySelector('.js-contents').innerHtml = cartData.item_count;
         })
