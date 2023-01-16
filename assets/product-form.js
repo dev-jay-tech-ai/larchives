@@ -85,12 +85,17 @@ if (!customElements.get('product-form')) {
           if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');
 
           // cart count update 함수(updateCart) send fetch request to update cart
-          fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
-            .then((response) => return response.text())
-            .then(data => console.log(data));
           fetch(window.Shopify.routes.root + 'cart.js')
             .then(response => response.json())
-            .then(data => console.log(data));
+            .then(data => { 
+              console.log(data); 
+            });
+
+          fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
+            .then((response) => {
+              return response.text();
+            })
+
           
           });
     }
