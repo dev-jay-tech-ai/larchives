@@ -45,8 +45,8 @@ if (!customElements.get('product-form')) {
       fetch('/cart/update.js', config)
         .then((response) => response.text())
         .then((cartData) => {
-          console.log(cartData)
-          console.log(cartData["item_coint"])
+          console.log(typeof(cartData))
+          console.log(cartData["item_count"])
           this.querySelector('.js-contents').innerHtml = cartData.itemCount;
         })
         .catch((e) => {
