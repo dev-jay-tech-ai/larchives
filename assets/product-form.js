@@ -88,11 +88,11 @@ if (!customElements.get('product-form')) {
           fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
             .then((response) => return response.text())
             .then(data => console.log(data));
-          
           fetch(window.Shopify.routes.root + 'cart.js')
             .then(response => response.json())
             .then(data => console.log(data));
-     
+          
+          });
     }
 
     handleErrorMessage(errorMessage = false) {
