@@ -86,7 +86,7 @@ if (!customElements.get('product-form')) {
         });
 
         // cart count update 함수(updateCart) send fetch request to update cart
-        fetch('/cart/update.js', {})
+        fetch('/cart/update.js', config)
         .then((response) => response.json())
         .catch((e) => {
           console.error(e);
