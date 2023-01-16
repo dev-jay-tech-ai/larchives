@@ -89,7 +89,7 @@ if (!customElements.get('product-form')) {
             .then(response => response.json())
             .then(data => { 
               console.log(data); 
-              $('.js-contents').html(cart.item_count);
+              $('.js-contents').html(data.item_count);
             });
 
 
