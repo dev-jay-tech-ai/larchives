@@ -166,3 +166,8 @@ if (!customElements.get('cart-note')) {
     }
   });
 };
+
+document.querySelector('.drawer__footer').addEventListener('click', (e) => {
+  document.querySelector('.drawer').style.visibility = 'hidden';
+  
+});
