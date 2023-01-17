@@ -7,6 +7,12 @@
 
 {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
 
+<script>
+  document.querySelector('.drawer__close').addEventListener('click',(e) => {
+  const cart_popup = document.querySelector('.drawer');
+  cart_popup.style.visibility = 'hidden';
+});
+</script>
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 
