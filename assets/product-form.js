@@ -89,7 +89,7 @@ if (!customElements.get('product-form')) {
            .then(response => response.json())
            .then(response => { 
              console.log(response); 
-             this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+             this.updateQuantity(this.dataset.index, this.value, document.activeElement.getAttribute('name'));
           });
         });
 
