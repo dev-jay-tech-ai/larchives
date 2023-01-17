@@ -115,10 +115,10 @@
 }
 
 .cart-item cart-remove-button {
-  display: flex;
-  /* margin-left: 1rem; */
+  /* display: flex;
+  margin-left: 1rem; 
   justify-content: flex-end; 
-  margin-top: 2rem;
+  margin-top: 2rem;*/
 }
 
 .cart-item cart-remove-button svg {
