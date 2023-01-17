@@ -120,7 +120,7 @@ if (!customElements.get('product-form')) {
     ];
   }
 
-  updateQuantity(line, quantity, name) {
+    updateQuantity(line, quantity, name) {
     this.enableLoading(line);
 
     const body = JSON.stringify({
@@ -168,7 +168,7 @@ if (!customElements.get('product-form')) {
       });
   }
 
-  updateLiveRegions(line, itemCount) {
+    updateLiveRegions(line, itemCount) {
     if (this.currentItemCount === itemCount) {
       const lineItemError = document.getElementById(`Line-item-error-${line}`) || document.getElementById(`CartDrawer-LineItemError-${line}`);
       const quantityElement = document.getElementById(`Quantity-${line}`) || document.getElementById(`Drawer-quantity-${line}`);
