@@ -12,7 +12,7 @@
 }
 
 .cart-item__quantity-wrapper {
-  display: flex;
+  /* display: flex; */
 }
 
 .cart-item__totals {
