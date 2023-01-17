@@ -721,11 +721,9 @@
                       {%- endif -%}
                     </div>
                   {%- endform -%}
-                  <div class="cart-popup-modal"> 
-                    <div aria-label="Cart Items" aria-modal="true" class="cart-popup-modal__content" tabindex="-1">       
-                      {% render 'cart-drawer' %}  
-                    </div>
-                  </div>                
+ 
+                  {% render 'cart-drawer' %}  
+           
                 </product-form>
 
                 {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
