@@ -104,6 +104,10 @@
   }
 }
 
+.drawer__header {
+  display: flex;
+}
+
 .cart-item__quantity .quantity__button, .cart-item__quantity .quantity__input {
   width: 1.2rem;
 }
