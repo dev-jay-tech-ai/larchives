@@ -23,10 +23,8 @@ if (!customElements.get('product-form')) {
       
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
       if(screen.width > 1024 || !isMobile) {
-        const cart_popup = document.querySelector('.cart-popup-modal');
+        const cart_popup = document.querySelector('.drawer');
         cart_popup.style.visibility = 'visible';
-        cart_popup.style.opacity = '1';
-        cart_popup.style.zIndex = '5';
       }
 
       const config = fetchConfig('javascript');
