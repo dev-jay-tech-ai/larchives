@@ -46,9 +46,8 @@ if (!customElements.get('product-form')) {
         .then(response => response.json())
         .then(data => { 
           console.log(data); 
-          // $('.js-contents').html(data.item_count);
-  
-
+          this.cart.renderContents(data);
+          // $('.js-contents').html(data.item_count)
       });
       
       // 카트에 더하는 함수
