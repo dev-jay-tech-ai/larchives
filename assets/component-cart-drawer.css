@@ -355,7 +355,7 @@ cart-drawer-items {
 }
 
 .drawer__footer #dynamic-checkout-cart ul > li {
-	flex-basis: calc(50% - 0.5rem) !important;
+  flex-basis: calc(50% - 0.5rem) !important;
   margin: 0 !important;
 }
 
