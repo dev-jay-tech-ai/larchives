@@ -21,13 +21,13 @@ if (!customElements.get('product-form')) {
       this.submitButton.classList.add('loading');
       if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
       
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      if(screen.width > 1024 || !isMobile) {
-        const cart_popup = document.querySelector('.cart-popup-modal');
-        cart_popup.style.visibility = 'visible';
-        cart_popup.style.opacity = '1';
-        cart_popup.style.zIndex = '5';
-      }
+      // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // if(screen.width > 1024 || !isMobile) {
+      //   const cart_popup = document.querySelector('.cart-popup-modal');
+      //   cart_popup.style.visibility = 'visible';
+      //   cart_popup.style.opacity = '1';
+      //   cart_popup.style.zIndex = '5';
+      // }
 
       const config = fetchConfig('javascript');
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
