@@ -275,6 +275,7 @@
         <!-- Subtotals-->
 
         <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
+          <div>TOTALS</div>
           <div class="totals" role="status">
             <p class="totals__subtotal">{{ 'sections.cart.subtotal' | t | upcase }}</p>
             <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
