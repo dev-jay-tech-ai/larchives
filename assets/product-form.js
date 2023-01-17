@@ -51,7 +51,7 @@ if (!customElements.get('product-form')) {
       // });
       
       // 카트에 더하는 함수
-      fetch(`${routes.cart_update_url}`, config)
+      fetch(`${routes.cart_change_url}`, config)
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
