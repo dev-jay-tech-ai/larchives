@@ -96,29 +96,19 @@ if (!customElements.get('product-form')) {
     }
 
       getSectionsToRender() {
-    return [
-      {
-        id: 'main-cart-items',
-        section: document.getElementById('main-cart-items').dataset.id,
-        selector: '.js-contents',
-      },
-      {
-        id: 'cart-icon-bubble',
-        section: 'cart-icon-bubble',
-        selector: '.shopify-section'
-      },
-      {
-        id: 'cart-live-region-text',
-        section: 'cart-live-region-text',
-        selector: '.shopify-section'
-      },
-      {
-        id: 'main-cart-footer',
-        section: document.getElementById('main-cart-footer').dataset.id,
-        selector: '.js-contents',
+        return [
+          {
+            id: 'main-cart-items',
+            section: document.getElementById('main-cart-items').dataset.id,
+            selector: '.js-contents',
+          },
+          {
+            id: 'main-cart-footer',
+            section: document.getElementById('main-cart-footer').dataset.id,
+            selector: '.js-contents',
+          }
+        ];
       }
-    ];
-  }
 
     updateQuantity(line, quantity, name) {
     this.enableLoading(line);
