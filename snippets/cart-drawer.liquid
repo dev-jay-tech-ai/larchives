@@ -51,7 +51,7 @@
       <div class="drawer__header">
         {% comment %}<h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>{% endcomment %}
         <div> CLOSE CART & CONTINUE SHOPPING </div>
-        <button class="drawer__close" type="button" onclick="cartDrawerClose()" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+        <button class="drawer__close" type="button" onclick="cartDrawerClose" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
       </div>
       <cart-drawer-items {% if cart == empty %}class=" is-empty"{% endif %}>
         <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
