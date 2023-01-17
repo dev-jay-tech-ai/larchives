@@ -955,7 +955,7 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 const target_widget = document.querySelector('.card_widget > div:first-of-type');
-target_widget?target_widget.outerHTML = target_widget.innerHTML;
+target_widget&&target_widget.outerHTML = target_widget.innerHTML;
 
 document.querySelector('.drawer__close').addEventListener('click',(e) => {
   const cart_popup = document.querySelector('.drawer');
