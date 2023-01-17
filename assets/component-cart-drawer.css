@@ -334,6 +334,11 @@ cart-drawer-items {
   max-width: none;
 }
 
+.cart__ctas {
+  margin: 0 auto;
+  margin-top: 2.95rem;
+}
+
 .drawer__footer .cart__dynamic-checkout-buttons {
   max-width: 100%;
 }
