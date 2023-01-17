@@ -956,9 +956,3 @@ customElements.define('product-recommendations', ProductRecommendations);
 
 const target_widget = document.querySelector('.card_widget > div:first-of-type');
 target_widget&&target_widget.outerHTML = target_widget.innerHTML;
-
-document.querySelector('.drawer__close').addEventListener('click',(e) => {
-  console.log('Drawer clicked!')
-  const cart_popup = document.querySelector('.drawer');
-  cart_popup.style.visibility = 'hidden';
-});
