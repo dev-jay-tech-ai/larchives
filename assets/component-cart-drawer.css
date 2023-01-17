@@ -19,8 +19,7 @@
   height: 100%;
   width: 55.7rem;
   max-width: calc(100vw - 3rem);
-  padding-left: 9rem;
-  padding: 0;
+  padding: 0 0 0 9rem;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-right: 0;
   background-color: rgb(var(--color-background));
