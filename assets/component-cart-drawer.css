@@ -275,7 +275,7 @@ cart-drawer-items {
   pointer-events: none;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .cart-drawer.cart-drawer .cart-item__price-wrapper > *:only-child {
