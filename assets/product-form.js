@@ -85,7 +85,7 @@ if (!customElements.get('product-form')) {
           if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');
 
           // cart count update 함수(updateCart) send fetch request to update cart
-          fetch(window.Shopify.routes.root + '/cart/change.js')
+          fetch(`${routes.cart_change_url}`, config)
             .then(response => response.json())
             .then(data => { 
               console.log(data); 
