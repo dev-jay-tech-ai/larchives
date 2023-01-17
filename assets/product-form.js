@@ -81,7 +81,7 @@ if (!customElements.get('product-form')) {
             }, { once: true });
             quickAddModal.hide(true);
           } else {
-            this.cart.renderContents(response);
+            // this.cart.renderContents(response);
           }
         })
         .catch((e) => {
