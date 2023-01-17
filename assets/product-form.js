@@ -89,8 +89,7 @@ if (!customElements.get('product-form')) {
            .then(response => response.json())
            .then(response => { 
              console.log(response); 
-             this.cart.renderContents(response);
-             // $('.js-contents').html(data.item_count)
+             this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
           });
         });
 
