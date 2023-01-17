@@ -42,7 +42,7 @@ if (!customElements.get('product-form')) {
       config.body = formData;
       
       // cart count update 함수(updateCart) send fetch request to update cart
-      fetch(`${routes.cart_change_url}`, config)
+      fetch(`${routes.cart_update_url}`, config)
         .then(response => response.json())
         .then(data => { 
           console.log(data); 
@@ -81,7 +81,7 @@ if (!customElements.get('product-form')) {
             }, { once: true });
             quickAddModal.hide(true);
           } else {
-            // this.cart.renderContents(response);
+            this.cart.renderContents(response);
           }
         })
         .catch((e) => {
