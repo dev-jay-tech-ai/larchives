@@ -127,5 +127,6 @@ customElements.define('cart-drawer-items', CartDrawerItems);
 
 document.querySelector('.drawer__close').addEventListener('click',(e) => {
   const cart_popup = document.querySelector('.drawer');
+  console.log(cart_popup)
   cart_popup.style.visibility = 'hidden';
 });
