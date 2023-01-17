@@ -105,3 +105,8 @@ if (!customElements.get('product-form')) {
     }
   });
 }
+
+document.querySelector('.drawer__close').addEventListener('click', (e) => {
+  console.log('clicked')
+  document.querySelector('.drawer').style.visibility = 'hidden';
+});
