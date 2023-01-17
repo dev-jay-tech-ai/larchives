@@ -308,6 +308,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .totals {
+  display: flex;
   justify-content: space-between;
 }
 
