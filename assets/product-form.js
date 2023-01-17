@@ -83,17 +83,16 @@ if (!customElements.get('product-form')) {
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
           if (!this.error) this.submitButton.removeAttribute('aria-disabled');
           if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');
-
+           // cart count update 함수(updateCart) send fetch request to update cart
+           fetch(`${routes.cart_update_url}`, config)
+            .then(response => response.json())
+            .then(response => { 
+              console.log(response); 
+              this.cart.renderContents(response);
+              // $('.js-contents').html(data.item_count)
+           });
           });
 
-         // cart count update 함수(updateCart) send fetch request to update cart
-         fetch(`${routes.cart_update_url}`, config)
-          .then(response => response.json())
-          .then(response => { 
-            console.log(response); 
-            this.cart.renderContents(response);
-            // $('.js-contents').html(data.item_count)
-         });
     }
 
     handleErrorMessage(errorMessage = false) {
