@@ -41,6 +41,16 @@ if (!customElements.get('product-form')) {
       }
       config.body = formData;
       
+      // cart count update 함수(updateCart) send fetch request to update cart
+      fetch(`${routes.cart_change_url}`, config)
+        .then(response => response.json())
+        .then(data => { 
+          console.log(data); 
+          // $('.js-contents').html(data.item_count);
+  
+
+      });
+      
       // 카트에 더하는 함수
       fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
@@ -84,15 +94,6 @@ if (!customElements.get('product-form')) {
           if (!this.error) this.submitButton.removeAttribute('aria-disabled');
           if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');
 
-          // cart count update 함수(updateCart) send fetch request to update cart
-          fetch(`${routes.cart_change_url}`, config)
-            .then(response => response.json())
-            .then(data => { 
-              console.log(data); 
-              // $('.js-contents').html(data.item_count);
-
-
-            });
           });
     }
 
