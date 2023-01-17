@@ -88,7 +88,7 @@ if (!customElements.get('product-form')) {
           fetch(`${routes.cart_update_url}`, config)
            .then(response => response.json())
            .then(response => { 
-             console.log(response.items[0]); 
+             console.log(response.items); 
           });
         });
 
