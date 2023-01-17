@@ -106,6 +106,7 @@
 
 .drawer__header {
   display: flex;
+  justify-content: space-between;
 }
 
 .cart-item__quantity .quantity__button, .cart-item__quantity .quantity__input {
