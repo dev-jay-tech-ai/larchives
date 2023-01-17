@@ -124,9 +124,3 @@ class CartDrawerItems extends CartItems {
 }
 
 customElements.define('cart-drawer-items', CartDrawerItems);
-
-document.querySelector('.drawer__close').addEventListener('click',(e) => {
-  console.log('Drawer clicked!')
-  const cart_popup = document.querySelector('.drawer');
-  cart_popup.style.visibility = 'hidden';
-});
