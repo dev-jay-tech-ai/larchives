@@ -724,7 +724,7 @@
                   <div class="cart-popup-modal"> 
                     <div aria-label="Cart Items" aria-modal="true" class="cart-popup-modal__content" tabindex="-1">
                       <div> CLOSE CART & CONTINUE SHOPPING </div>
-
+                      {% render 'cart-drawer' %}
                     <div class="{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
                       <div>
                         <div class="cart__footer">
