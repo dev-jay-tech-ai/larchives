@@ -335,7 +335,7 @@ cart-drawer-items {
 }
 
 .cart__ctas {
-  margin: 0 auto;
+  text-align: center;
   margin-top: 2.95rem;
 }
 
