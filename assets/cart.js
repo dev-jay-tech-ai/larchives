@@ -166,8 +166,3 @@ if (!customElements.get('cart-note')) {
     }
   });
 };
-
-document.querySelector('.drawer__close').addEventListener('click',(e) => {
-  const cart_popup = document.querySelector('.drawer');
-  cart_popup.style.visibility = 'hidden';
-});
