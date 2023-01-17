@@ -347,10 +347,10 @@
     document.querySelector('#checkout').addEventListener('click', function(event) {
       document.querySelector('#cart').submit();
     });
+    document.querySelector('.drawer__close').addEventListener('click',(e) => {
+      console.log('쳐닫')
+    });
 
-    const cartDrawerClose = () => {
-     console.log('쳐닫')
-    }
   });
 </script>
 
