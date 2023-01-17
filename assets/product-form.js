@@ -42,16 +42,16 @@ if (!customElements.get('product-form')) {
       config.body = formData;
       
       // cart count update 함수(updateCart) send fetch request to update cart
-      fetch(`${routes.cart_update_url}`, config)
-        .then(response => response.json())
-        .then(response => { 
-          console.log(response); 
-          this.cart.renderContents(response);
-          // $('.js-contents').html(data.item_count)
-      });
+      // fetch(`${routes.cart_update_url}`, config)
+      //   .then(response => response.json())
+      //   .then(response => { 
+      //     console.log(response); 
+      //     this.cart.renderContents(response);
+      //     // $('.js-contents').html(data.item_count)
+      // });
       
       // 카트에 더하는 함수
-      fetch(`${routes.cart_add_url}`, config)
+      fetch(`${routes.cart_update_url}`, config)
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
