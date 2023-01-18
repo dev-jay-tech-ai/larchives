@@ -26,8 +26,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* transform: translateX(100%); 
-  transition: transform var(--duration-default) ease; */
+  transform: translateX(100%); 
+  transition: transform var(--duration-default) ease;
 }
 
 .drawer__inner-empty {
