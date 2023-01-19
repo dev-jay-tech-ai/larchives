@@ -1,5 +1,12 @@
 {% layout none %}
 
+<template data-options>
+    {
+      "item_count": {{ cart.item_count | json }},
+      "cart_total": {{ cart.total_price | json }}
+    }
+</template>
+
 <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
   <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
     {%- if cart != empty -%}
