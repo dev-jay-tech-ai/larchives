@@ -89,7 +89,8 @@ if (!customElements.get('product-form')) {
            .then(response => response.text())
            .then(cartData => { 
              console.log(cartData);
-             document.querySelector('cart-drawer-items').innerHtml = cartData; 
+             // document.querySelector('cart-drawer-items').innerHtml = cartData; 
+             document.querySelector('cart-drawer-items').innerHtml = '';
           });
           
           fetch(`${routes.cart_update_url}`, config)
