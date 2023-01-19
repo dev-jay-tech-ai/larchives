@@ -16,6 +16,8 @@
 }
 
 .drawer__inner {
+  position: absolute;
+  right: 0;
   height: 100%;
   width: 55.7rem;
   max-width: calc(100vw - 3rem);
