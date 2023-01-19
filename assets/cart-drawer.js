@@ -4,7 +4,6 @@ class CartDrawer extends HTMLElement {
 
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click',() => {
-      console.log(this.querySelector('.drawer'));
       this.close.bind(this);
       document.querySelector('.drawer').style.visibility = 'hidden';
     });
