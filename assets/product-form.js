@@ -81,9 +81,7 @@ if (!customElements.get('product-form')) {
            // cart count update 함수(updateCart) send fetch request to update cart
           fetch('/?view=cartview')
            .then(response => response.text())
-           .then(cartData => { 
-             this.querySelector('cart-drawer-items').innerHTML = cartData; 
-          });
+           .then(cartData => this.querySelector('cart-drawer-items').innerHTML = cartData );
                 
         })
     } 
