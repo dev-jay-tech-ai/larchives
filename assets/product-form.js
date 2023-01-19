@@ -81,7 +81,10 @@ if (!customElements.get('product-form')) {
            // cart count update 함수(updateCart) send fetch request to update cart
           fetch('/?view=cartview')
            .then(response => response.text())
-           .then(cartData => this.querySelector('cart-drawer').innerHTML = cartData );
+           .then(cartData => {
+             this.querySelector('.drawer__inner').classList.contains('is-empty') && this.querySelector('.drawer__inner').classList.remove('is-empty');
+             this.querySelector('cart-drawer').innerHTML = cartData 
+           });
                 
         })
     } 
