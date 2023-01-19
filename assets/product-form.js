@@ -79,22 +79,23 @@ if (!customElements.get('product-form')) {
         })
         .finally(() => {
            // cart count update 함수(updateCart) send fetch request to update cart
+          /*
           fetch('/?view=cartview')
            .then(response => response.text())
            .then(cartData => { 
              console.log('change')
              this.querySelector('cart-drawer-items').innerHTML = cartData; 
-          });
+          });*/
 
 
-    this.enableLoading(line);
-
-    const body = JSON.stringify({
-      line,
-      quantity,
-      sections: this.getSectionsToRender().map((section) => section.section),
-      sections_url: window.location.pathname
-    });
+        this.enableLoading(line);
+    
+        const body = JSON.stringify({
+          line,
+          quantity,
+          sections: this.getSectionsToRender().map((section) => section.section),
+          sections_url: window.location.pathname
+        });
 
         fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
           .then((response) => {
