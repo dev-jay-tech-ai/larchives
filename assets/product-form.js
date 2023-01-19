@@ -84,6 +84,13 @@ if (!customElements.get('product-form')) {
           if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');
           
           // cart count update 함수(updateCart) send fetch request to update cart
+
+          fetch('/?view=cartview', config)
+           .then(response => response.text())
+           .then(html => { 
+             document.querySelector('#cart-drawer').innerHtml; 
+          });
+          
           fetch(`${routes.cart_update_url}`, config)
            .then(response => response.json())
            .then(response => { 
