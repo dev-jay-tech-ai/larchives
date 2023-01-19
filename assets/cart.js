@@ -167,8 +167,14 @@ if (!customElements.get('cart-note')) {
   });
 };
 
+class CartDrawCloseButton extends HTMLElement {
+  constructor() {
+    super();
+    this.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.querySelector('.drawer').style.visibility = 'hidden';
+    });
+  }
+}
 
-document.querySelector('.drawer__close').addEventListener('click', (e) => {
-  console.log('clicked')
-  document.querySelector('.drawer').style.visibility = 'hidden';
-});
+customElements.define('cart-draw-close-button', CartDrawCloseButton);
