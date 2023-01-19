@@ -956,8 +956,3 @@ customElements.define('product-recommendations', ProductRecommendations);
 
 const target_widget = document.querySelector('.card_widget > div:first-of-type');
 target_widget.outerHTML = target_widget.innerHTML;
-
-document.querySelector('.drawer__close').addEventListener('click', (e) => {
-  console.log('clicked')
-  document.querySelector('.drawer').style.visibility = 'hidden';
-});
