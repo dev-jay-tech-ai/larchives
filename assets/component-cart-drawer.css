@@ -28,7 +28,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transform: translateX(143%); 
   transition: transform var(--duration-default) ease;
 }
 
