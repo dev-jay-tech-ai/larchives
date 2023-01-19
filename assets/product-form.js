@@ -93,7 +93,7 @@ if (!customElements.get('product-form')) {
           })
           .then((state) => {
             console.log(state);
-          }
+          })
                 
         })
     } 
