@@ -88,7 +88,8 @@ if (!customElements.get('product-form')) {
           fetch('/?view=cartview')
            .then(response => response.text())
            .then(cartData => { 
-             document.querySelector('#CartDrawer-Form').innerHtml = cartData; 
+             console.log(cartData);
+             // document.querySelector('#CartDrawer').innerHtml = cartData; 
           });
           
           fetch(`${routes.cart_update_url}`, config)
