@@ -82,7 +82,7 @@ if (!customElements.get('product-form')) {
           fetch('/?view=cartview')
            .then(response => response.text())
            .then(cartData => {
-             this.querySelector('.drawer__inner').classList.contains('is-empty') && this.querySelector('.drawer__inner').classList.remove('is-empty');
+             this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
              this.querySelector('cart-drawer').innerHTML = cartData 
            });
                 
