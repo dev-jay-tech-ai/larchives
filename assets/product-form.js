@@ -86,11 +86,18 @@ if (!customElements.get('product-form')) {
              console.log('change')
              this.querySelector('cart-drawer-items').innerHTML = cartData; 
           });*/
-
-        this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
           
+         fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
+          .then((response) => {
+            return response.text();
+          })
+          .then((state) => {
+            console.log(state);
+          }
+        // this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+        /*  
         updateQuantity(line, quantity, name) {
-          this.enableLoading(line);
+   
       
           const body = JSON.stringify({
             line,
@@ -136,7 +143,7 @@ if (!customElements.get('product-form')) {
               this.disableLoading();
             });
         }
-
+        */
     }
     handleErrorMessage(errorMessage = false) {
       this.errorMessageWrapper = this.errorMessageWrapper || this.querySelector('.product-form__error-message-wrapper');
