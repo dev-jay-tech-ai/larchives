@@ -78,18 +78,17 @@ if (!customElements.get('product-form')) {
           console.error(e);
         })
         .finally(() => {
+           // cart count update 함수(updateCart) send fetch request to update cart
+          fetch('/?view=cartview')
+           .then(response => response.text())
+           .then(cartData => { 
+             this.querySelector('cart-drawer-items').innerHTML = cartData; 
+          });
+          
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
           if (!this.error) this.submitButton.removeAttribute('aria-disabled');
           if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');
-          
-          // cart count update 함수(updateCart) send fetch request to update cart
-          fetch('/?view=cartview')
-           .then(response => response.text())
-           .then(cartData => { 
-             console.log(this);
-             this.querySelector('cart-drawer-items').innerHTML = cartData; 
-          });
         });
 
     }
