@@ -172,6 +172,7 @@ class CartDrawCloseButton extends HTMLElement {
     super();
     this.addEventListener('click', (event) => {
       event.preventDefault();
+      console.log(this);
       this.querySelector('.drawer').style.visibility = 'hidden';
     });
   }
