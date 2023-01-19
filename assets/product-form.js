@@ -87,7 +87,7 @@ if (!customElements.get('product-form')) {
              this.querySelector('cart-drawer-items').innerHTML = cartData; 
           });*/
           
-         fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
+         fetch(`${routes.cart_change_url}`)
           .then((response) => {
             response.text();
           })
