@@ -1,11 +1,7 @@
 {% layout none %}
 
-<template data-options>
-    {
-      "item_count": {{ cart.item_count | json }},
-      "cart_total": {{ cart.total_price | json }}
-    }
-</template>
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 
 <div id="CartDrawer" class="cart-drawer">
   <div id="CartDrawer-Overlay"class="cart-drawer__overlay"></div>
