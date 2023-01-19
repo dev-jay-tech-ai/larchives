@@ -27,6 +27,7 @@
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.vendor | upcase }}</a>
                       <p class="caption-with-letter-spacing light">{{ item.product.title | escape }}</p>
                     {%- endif -%}
+
                     {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
                       <dl>
                         {%- if item.product.has_only_default_variant == false -%}
@@ -69,6 +70,15 @@
                       {%- endfor -%}
                     </ul>
                   </td>
+
+                  <td class="cart-item__totals right" role="cell" headers="CartDrawer-ColumnTotal">
+                    <div class="loading-overlay hidden">
+                      <div class="loading-overlay__spinner">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
 
                     <div class="cart-item__price-wrapper">
                       {%- if item.original_line_price != item.final_line_price -%}
@@ -159,6 +169,8 @@
           </table>
         </div>
       {%- endif -%}
+      <p id="CartDrawer-LiveRegionText" class="visually-hidden" role="status"></p>
+      <p id="CartDrawer-LineItemStatus" class="visually-hidden" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
     </div>
     <div id="CartDrawer-CartErrors" role="alert"></div>
   </form>
