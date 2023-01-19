@@ -83,7 +83,7 @@ if (!customElements.get('product-form')) {
            .then(response => response.text())
            .then(cartData => { 
              console.log('change')
-             this.querySelector('cart-drawer').innerHTML = cartData; 
+             this.querySelector('.drawer__inner').innerHTML = cartData; 
           });
           
           this.submitButton.classList.remove('loading');
