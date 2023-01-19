@@ -6,7 +6,7 @@ class CartDrawer extends HTMLElement {
     this.querySelector('#CartDrawer-Overlay').addEventListener('click',() => {
       console.log(this);
       this.close.bind(this);
-      this.querySelector('.drawer').style.visibility = 'hidden';
+      document.querySelector('.drawer').style.visibility = 'hidden';
     });
     // this.setHeaderCartIconAccessibility();
   }
