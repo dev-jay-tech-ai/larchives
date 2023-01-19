@@ -89,7 +89,7 @@ if (!customElements.get('product-form')) {
           
          fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
           .then((response) => {
-            return response.text();
+            response.text();
           })
           .then((state) => {
             console.log(state);
