@@ -53,7 +53,7 @@ if (!customElements.get('product-form')) {
             this.submitButton.setAttribute('aria-disabled', true);
             if(this.submitButton.querySelector('span')) {
               // this.submitButton.querySelector('span').classList.add('hidden');
-              this.submitButton.querySelector('span').style.opacity = .3;
+              this.submitButton.querySelector('span').style.opacity = .2;
               soldOutMessage.classList.remove('hidden');
             }
             this.error = true;
