@@ -7,7 +7,8 @@
 <link rel="preconnect" href="//swymv3free-01.azureedge.net/code/swym-shopify.js">
 <style>
   .swym-ui-component *, .swym-ui-component .swym-is-button, .swym-ui-component .swym-is-anchor, .swym-ui-component .swym-title, .swym-ui-component .swym-heading, .swym-ui-component .swym-label {
-    font-family: Termina;  
+    font-family: Termina; 
+    color: #040b09;
   }
 
   .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
@@ -25,8 +26,16 @@
   .swym-ui-component .swym-user-login-status {
     display: none;
   }
-
-
+  
+  media only screen and (min-width: 900px) {
+    .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar .swym-wishlist-main-title {
+      text-transform: uppercase;
+      font-family: Termina-Demi;
+      font-size: 4.2rem;
+      text-align: center;
+    }
+  }
+  
 </style>
 <script id="swym-snippet">
   window.swymLandingURL = document.URL;
