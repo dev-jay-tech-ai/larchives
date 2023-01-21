@@ -1,1 +1,54 @@
-<div> wishlist </div>
+<script id="swym-top-widget-js">
+  window.SwymCallbacks = window.SwymCallbacks || [];
+  window.SwymCallbacks.push(function(swat){
+    swat.widgetProductsApi.fetchWrtType({'type': 'top-wishlist', n: 6}, function(products){
+      var renderedHTML = "<div>";
+      products.forEach(function(p){
+        // SwymUtils.renderTemplate - Utility to handle Mustache template rendering
+        renderedHTML += SwymUtils.renderTemplate('swym-widget-product1', p);
+      }, this);
+      renderedHTML += "</div>";
+      document.getElementById("swym-widget-loop").innerHTML = renderedHTML;
+    });
+  });
+</script>
+
+<!-- The snippet below is a sample template for the widget container -->
+<!-- This sample was designed for the "Supply" Shopify theme and might not work with other themes -->
+
+<div class="section-header">
+<p class="h1 section-header--left">Top Wishlisted Products</p>
+</div>
+<style id="swym-top-widget-style">
+  .swym-widget-loading {
+    text-align: center;
+    padding: 20px 0px;
+    color: rgba(999);
+  }
+</style>
+
+<div id="swym-widget-loop" 
+     class="grid grid--uniform grid--view-items">
+  <div class="swym-widget-loading">Loading...</div>
+</div>
+
+{% raw %}
+<script id="swym-widget-product1" type="x-tmpl-mustache">
+  <div class="grid-item large--one-fifth medium--one-third small--one-half">
+      <a class="product-grid-item grid-view-item__link" href="{{ uri }}">
+      <div class="product-grid-image" style="height:123px;">
+      	<div class="product-grid-image--centered">
+        	<img class="grid-view-item__image" src="{{ iu }}" alt="{{ title }}">
+        </div>
+      </div>
+        <p class="grid-view-item__title">{{ title }}</p>
+        <div class="product-item--price">
+            <span class="product-price__price">$ {{ pr }}</span>
+            <div class="swym-wishlist-count-container swym-text-color">
+                <i class="swym-wishlist-icon"></i>
+            </div>
+        </div>
+      </a>
+  </div>
+</script>
+{% endraw %}
