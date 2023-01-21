@@ -1,6 +1,47 @@
+{% comment %}
+<!-- DO NOT EDIT!! - Auto generated file->
+<!-- To add modifications, create a separate file and include in theme.liquid after {% include swymSnippet %}-->
+{% endcomment %}
 <link rel="dns-prefetch" href="https://swymstore-v3free-01.swymrelay.com" crossorigin>
 <link rel="dns-prefetch" href="//swymv3free-01.azureedge.net/code/swym-shopify.js">
 <link rel="preconnect" href="//swymv3free-01.azureedge.net/code/swym-shopify.js">
+<style>
+  .swym-ui-component *, .swym-ui-component .swym-is-button, .swym-ui-component .swym-is-anchor, .swym-ui-component .swym-title, .swym-ui-component .swym-heading, .swym-ui-component .swym-label {
+    font-family: Termina; 
+    color: #040b09;
+  }
+
+  .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
+    height: unset;
+  }
+  
+  .swym-ui-component .swym-wishlist-grid {
+    max-width: unset;
+  }
+
+  .swym-ui-component .swym-wishlist-grid .swym-wishlist-item {
+    border: 0;
+  }
+
+  .swym-ui-component .swym-user-login-status {
+    display: none;
+  }
+
+  .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar .swym-wishlist-main-title {
+    text-transform: uppercase;
+    font-family: Termina-Demi;
+    font-size: 4.2rem;
+    text-align: center;
+    color: #040b09;
+    letter-spacing: normal;
+  }
+
+  .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar {
+    justify-content: center;
+    border-bottom: 0;
+  }
+  
+</style>
 <script id="swym-snippet">
   window.swymLandingURL = document.URL;
   window.swymCart = {{ cart | json }};
@@ -42,8 +83,6 @@
       iu: {% if currentVariant.image %} {{ currentVariant | img_url: '620x620' | json }} {% else %} piu {% endif %}, variants: [{ {{currentVariant.title | json}} : {{currentVariant.id | json}} }],
       stk:{{ currentVariant.inventory_quantity }} {% if currentVariant.compare_at_price %} ,op:{{currentVariant.compare_at_price}}/100 {% endif %}
     };
-
-    console.log(product_data)
     window.SwymPageData = product_data;
     {% elsif collection %}
     var collection = {{ collection | json }};
@@ -58,7 +97,6 @@
         et: 2, dt: {{ collection.title | json}},
         du: "{{shop.url}}/collections/{{collection.handle}}", iu: image
       }
-      console.log(collection_data)
       window.SwymPageData = collection_data;
     }
     {% else %}
@@ -155,3 +193,47 @@ window.SwymCallbacks.push(function(swat) {
 });
 </script>
 {% endif %}
+<style id="safari-flasher-pre"></style>
+<script>
+  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    document.getElementById("safari-flasher-pre").innerHTML = ''
+      + '#swym-plugin,#swym-hosted-plugin{display: none;}'
+      + '.swym-button.swym-add-to-wishlist{display: none;}'
+      + '.swym-button.swym-add-to-watchlist{display: none;}'
+      + '#swym-plugin  #swym-notepad, #swym-hosted-plugin  #swym-notepad{opacity: 0; visibility: hidden;}'
+      + '#swym-plugin  #swym-notepad, #swym-plugin  #swym-overlay, #swym-plugin  #swym-notification,'
+      + '#swym-hosted-plugin  #swym-notepad, #swym-hosted-plugin  #swym-overlay, #swym-hosted-plugin  #swym-notification'
+      + '{-webkit-transition: none; transition: none;}'
+      + '';
+    window.SwymCallbacks = window.SwymCallbacks || [];
+    window.SwymCallbacks.push(function(tracker){
+      tracker.evtLayer.addEventListener(tracker.JSEvents.configLoaded, function(){
+        // flash-preventer
+        var x = function(){
+          SwymUtils.onDOMReady(function() {
+            var d = document.createElement("div");
+            d.innerHTML = "<style id='safari-flasher-post'>"
+              + "#swym-plugin:not(.swym-ready),#swym-hosted-plugin:not(.swym-ready){display: none;}"
+              + ".swym-button.swym-add-to-wishlist:not(.swym-loaded){display: none;}"
+              + ".swym-button.swym-add-to-watchlist:not(.swym-loaded){display: none;}"
+              + "#swym-plugin.swym-ready  #swym-notepad, #swym-plugin.swym-ready  #swym-overlay, #swym-plugin.swym-ready  #swym-notification,"
+              + "#swym-hosted-plugin.swym-ready  #swym-notepad, #swym-hosted-plugin.swym-ready  #swym-overlay, #swym-hosted-plugin.swym-ready  #swym-notification"
+              + "{-webkit-transition: opacity 0.3s, visibility 0.3ms, -webkit-transform 0.3ms !important;-moz-transition: opacity 0.3s, visibility 0.3ms, -moz-transform 0.3ms !important;-ms-transition: opacity 0.3s, visibility 0.3ms, -ms-transform 0.3ms !important;-o-transition: opacity 0.3s, visibility 0.3ms, -o-transform 0.3ms !important;transition: opacity 0.3s, visibility 0.3ms, transform 0.3ms !important;}"
+              + "</style>";
+            document.head.appendChild(d);
+          });
+        };
+        setTimeout(x, 10);
+      });
+    });
+  }
+
+  // Get the money format for the store from shopify
+  window.SwymOverrideMoneyFormat = {{ shop.money_format | json}};
+</script>
+<style id="swym-product-view-defaults">
+  /* Hide when not loaded */
+  .swym-button.swym-add-to-wishlist-view-product:not(.swym-loaded){
+    display: none;
+  }
+</style>
