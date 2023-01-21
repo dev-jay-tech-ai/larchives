@@ -3,6 +3,7 @@
   window.SwymCallbacks.push(function(swat){
     swat.widgetProductsApi.fetchWrtType({'type': 'top-wishlist', n: 6}, function(products){
       var renderedHTML = "<div>";
+      console.log(products);
       products.forEach(function(p){
         // SwymUtils.renderTemplate - Utility to handle Mustache template rendering
         renderedHTML += SwymUtils.renderTemplate('swym-widget-product1', p);
