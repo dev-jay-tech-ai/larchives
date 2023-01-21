@@ -52,6 +52,7 @@
     {%- if product and template.name == 'product' -%}
     var variants = [];
     window.SwymProductInfo.product = {{ product | json }};
+    console.log(window.SwymProductInfo.product)
     window.SwymProductInfo.variants = window.SwymProductInfo.product.variants;
     var piu = {{ product.featured_image | img_url: '620x620' | json }};
     {% if product.selected_or_first_available_variant %}
