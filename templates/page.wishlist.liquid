@@ -98,6 +98,7 @@
         et: 2, dt: {{ collection.title | json}},
         du: "{{shop.url}}/collections/{{collection.handle}}", iu: image
       }
+      console.log(collection_data)
       window.SwymPageData = collection_data;
     }
     {% else %}
