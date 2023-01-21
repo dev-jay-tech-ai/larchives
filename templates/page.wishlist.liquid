@@ -42,6 +42,8 @@
       iu: {% if currentVariant.image %} {{ currentVariant | img_url: '620x620' | json }} {% else %} piu {% endif %}, variants: [{ {{currentVariant.title | json}} : {{currentVariant.id | json}} }],
       stk:{{ currentVariant.inventory_quantity }} {% if currentVariant.compare_at_price %} ,op:{{currentVariant.compare_at_price}}/100 {% endif %}
     };
+
+    console.log(product_data)
     window.SwymPageData = product_data;
     {% elsif collection %}
     var collection = {{ collection | json }};
@@ -56,6 +58,7 @@
         et: 2, dt: {{ collection.title | json}},
         du: "{{shop.url}}/collections/{{collection.handle}}", iu: image
       }
+      console.log(collection_data)
       window.SwymPageData = collection_data;
     }
     {% else %}
