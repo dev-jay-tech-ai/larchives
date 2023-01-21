@@ -3,7 +3,6 @@
   window.SwymCallbacks.push(function(swat){
     swat.widgetProductsApi.fetchWrtType({'type': 'top-wishlist', n: 6}, function(products){
       var renderedHTML = "<div>";
-      console.log(products);
       products.forEach(function(p){
         // SwymUtils.renderTemplate - Utility to handle Mustache template rendering
         renderedHTML += SwymUtils.renderTemplate('swym-widget-product1', p);
@@ -31,25 +30,9 @@
 <div id="swym-widget-loop" 
      class="grid grid--uniform grid--view-items">
   <div class="swym-widget-loading">Loading...</div>
-  
-    <div class="grid-item large--one-fifth medium--one-third small--one-half">
-      <a class="product-grid-item grid-view-item__link" href="{{ uri }}">
-      <div class="product-grid-image" style="height:123px;">
-      	<div class="product-grid-image--centered">
-        	<img class="grid-view-item__image" src="{{ iu }}" alt="{{ title }}">
-        </div>
-      </div>
-        <p class="grid-view-item__title">{{ title }}</p>
-        <div class="product-item--price">
-            <span class="product-price__price">$ {{ pr }}</span>
-            <div class="swym-wishlist-count-container swym-text-color">
-                <i class="swym-wishlist-icon"></i>
-            </div>
-        </div>
-      </a>
-  </div>
 </div>
 
+{% raw %}
 <script id="swym-widget-product1" type="x-tmpl-mustache">
   <div class="grid-item large--one-fifth medium--one-third small--one-half">
       <a class="product-grid-item grid-view-item__link" href="{{ uri }}">
@@ -68,3 +51,4 @@
       </a>
   </div>
 </script>
+{% endraw %}
