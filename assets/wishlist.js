@@ -36,6 +36,7 @@ const fetchProductCardHTML = (handle) => {
     const text = res;
     const parser = new DOMParser();
     const htmlDocument = parser.parseFromString(text, 'text/html');
+    console.log(text)
     const productCard = htmlDocument.documentElement.querySelector(selectors.productCard);
     return productCard.outerHTML;
   })
