@@ -31,6 +31,10 @@
   margin-bottom: 2rem;
 }
 
+.cart_link {
+  margin: 2rem 0;
+}
+
 .cart_title {
   text-transform: uppercase;
   font-size: 10px;
