@@ -4,7 +4,7 @@
   console.log(window.swymCart.items)
   window.swymPageLoad = function(){
     window.SwymProductVariants = window.SwymProductVariants || {};
-    window.SwymHasCartItems = {{cart.item_count|json}} > 0;
+    window.SwymHasCartItems = {{ cart.item_count|json }} > 0;
     window.SwymPageData = {}, window.SwymProductInfo = {};
     {%- if product and template.name == 'product' -%}
         var variants = [];
