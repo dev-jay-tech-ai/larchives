@@ -1,3 +1,15 @@
+<div class='page-width'>
+  <div>{{ page.title }}</div>
+</div>
+
+<div>
+  <div id='wishlist-item-container'></div>
+  <div>1{{ window.swymCart.items[0].product_title }}</div>
+  <div>2{{ iu }}</div>
+  <div>3{{ du }}</div>
+  <div>4{{ pr }}</div>
+</div>
+
 <script id="swym-snippet">
   window.swymLandingURL = document.URL;
   window.swymCart = {{ cart | json }};
@@ -168,17 +180,3 @@ window.SwymCallbacks.push(function(swat) {
 });
 </script>
 {% endif %}
-
-<div class='page-width'>
-  <div>{{ page.title }}</div>
-</div>
-
-<div>
-  <div id='wishlist-item-container'></div>
-  <div>1{{ window.swymCart.items[0].product_title }}</div>
-  <div>2{{ iu }}</div>
-  <div>3{{ du }}</div>
-  <div>4{{ pr }}</div>
-</div>
-
-
