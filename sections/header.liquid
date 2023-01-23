@@ -232,7 +232,7 @@
                     <li><a href="/pages/about-us" class='header_text_style'>ABOUTUS</a></li>
                     <li><a href="#" class='header_text_style'>FOR PARTNERS</a></li>
                     <li><a href="#" class='header_text_style'>DELIVERY</a></li>
-                    <li><a href="/wishlist" class='header_text_style'>{% render 'icon-like-black' %} WISH LIST</a></li> 
+                    <li><a href="/pages/wishlist" class='header_text_style'>{% render 'icon-like-black' %} WISH LIST</a></li> 
                    </ul> 
                 </nav>
       
@@ -551,7 +551,7 @@
                 </details-modal>
               </div>
             </li>
-            <li><div><a href="/wishlist">{%- if request.page_type == 'index' -%}{% render 'icon-like' %}{%- else -%}{% render 'icon-like-black' %}{%- endif -%}</a></div></li>
+            <li><div><a href="/pages/wishlist">{%- if request.page_type == 'index' -%}{% render 'icon-like' %}{%- else -%}{% render 'icon-like-black' %}{%- endif -%}</a></div></li>
             <li>
               <div class='cart_icon'>
                 <a href="{{ routes.cart_url }}">
