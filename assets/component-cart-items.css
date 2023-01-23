@@ -123,7 +123,7 @@
 
 .cart-item cart-remove-button svg {
   width: 1.2rem;
-  color: #000;
+  color: rgb(var(--color-foreground));
 }
 
 @media screen and (min-width: 1024px) and (max-width: 989px) {
@@ -147,6 +147,7 @@ cart-remove-button .button:after  {
 
 cart-remove-button .button:not([disabled]):hover {
   color: rgb(var(--color-foreground));
+  opacity: .8;
 }
 
 @media screen and (min-width: 1024px) {
