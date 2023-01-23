@@ -78,12 +78,12 @@
   display: block;
   font-family: 1rem;
 }
-
+/*
 .cart-item__name:hover {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.2rem;
-}
+}*/
 
 .cart-item__price-wrapper > * {
   display: block;
