@@ -91,7 +91,7 @@
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
                           {%- if settings.show_vendor -%}
                             <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.vendor | upcase }}</a>
-                            <p class="caption-with-letter-spacing light">{{ item.product.title | escape }}</p>
+                            <p class="caption-with-letter-spacing light">{{ item.product.title | upcase }}</p>
                           {%- endif -%}
                           {% comment %}
                           {%- if item.original_price != item.final_price -%}
