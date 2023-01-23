@@ -19,9 +19,10 @@
       
     `
     <div style='width: 25%'>
-      <div> 제목: ${ item.title } </div>
       <img src='${ item.image }' style='width: 25%' alt='${ item.url }'/>
-      <div> 가격: ${ item.price } </div>
+      <h3 class='card__heading'> ${ item.vendor } </h3>
+      <div class='caption-with-letter-spacing custom-vendor'> ${ item.title } </div>
+      <div><span class='price-item price-item--sale price-item--last custom-price-reqular>${ item.price }</span></div>
     </div>  
       
     `
