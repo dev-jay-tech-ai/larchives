@@ -2,8 +2,7 @@
   
   window.swymLandingURL = document.URL;
   window.swymCart = {{ cart | json }};
-  console.log('this is working')
-  console.log(window.swymCart)
+  console.log(window.swymCart.items)
   window.swymPageLoad = function(){
     window.SwymProductVariants = window.SwymProductVariants || {};
     window.SwymHasCartItems = {{cart.item_count|json}} > 0;
