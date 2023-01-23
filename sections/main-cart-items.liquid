@@ -82,9 +82,8 @@
                   <td class="cart-item__details">
                     {%- if settings.show_vendor -%}
                     <p class="cart-item__name h4 break">{{ item.product.vendor | upcase }}</p>
-                    <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.vendor | upcase }}</a>
                     {%- endif -%}
-                    <p class="caption-with-letter-spacing">{{ item.product.title | upcase }}</p>                 
+                    <a class="caption-with-letter-spacing">{{ item.product.title | upcase }}</a>                 
                     {%- if item.original_price != item.final_price -%}
                       <div class="cart-item__discounted-prices">
                         <span class="visually-hidden">
