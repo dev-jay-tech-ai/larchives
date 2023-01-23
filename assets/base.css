@@ -544,6 +544,7 @@ blockquote {
 }
 
 .caption-with-letter-spacing {
+  text-transform: uppercase;
   font-family: Poppins;
   font-size: 1.4rem;
   font-weight: normal;
