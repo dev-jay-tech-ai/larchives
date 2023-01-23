@@ -1,5 +1,5 @@
 {
-  "wrapper": "section#wishlist.wishlist",
+  "wrapper": "section#wishlist",
   "sections": {
     "main": {
       "type": "wishlist-template",
