@@ -18,10 +18,13 @@
   const target = document.querySelector('#wishlist-item-container');
   window.swymCart.items.forEach((item) => {
     target.innerHTML += 
-    `<div> 제목: ${ item.title } </div>
-    <img src='${ item.image }' style='width: 500px' alt='${ item.url }'/>
-    <div> 가격: ${ item.price } </div>
       
+    `
+    <div class='page-width' style='display:flex; justify-content: space-between'>
+      <div> 제목: ${ item.title } </div>
+      <img src='${ item.image }' style='width: 500px' alt='${ item.url }'/>
+      <div> 가격: ${ item.price } </div>
+    </div>  
       
     `
   })
