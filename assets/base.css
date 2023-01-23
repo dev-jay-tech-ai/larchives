@@ -1530,7 +1530,6 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .share-button details {
-  width: fit-content;
   margin: 0 auto;
 }
 
@@ -1538,6 +1537,7 @@ button.shopify-payment-button__button--unbranded {
   font-size: 1.4rem;
   display: flex;
   min-height: 2.4rem;
+  justify-content: center;
   align-items: center;
   color: rgb(var(--color-link));
   margin-left: 0;
