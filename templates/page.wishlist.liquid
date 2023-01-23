@@ -10,7 +10,7 @@
     {%- if product and template.name == 'product' -%}
         var variants = [];
         window.SwymProductInfo.product = {{ product | json }};
-        console.log(window.SwymProductInfo.product)
+        console.log('제품리스트',window.SwymProductInfo.product)
         window.SwymProductInfo.variants = window.SwymProductInfo.product.variants;
         var piu = {{ product.featured_image | img_url: '620x620' | json }};
         
@@ -51,6 +51,7 @@
     {% elsif collection %}
       
         var collection = {{ collection | json }};
+        console.log('콜렉션',collection);
         if (typeof collection === "undefined" || collection == null || collection.toString().trim() == ""){
           var unknown = {et: 0};
           window.SwymPageData = unknown;
@@ -68,7 +69,9 @@
     {% else %}
         var unknown = {et: 0};
         window.SwymPageData = unknown;
+        
     {% endif %}
+      console.log('유알엘',window.swymLandingURL);
       window.SwymPageData.uri = window.swymLandingURL;
     };
 
