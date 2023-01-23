@@ -230,7 +230,6 @@
                                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                                   {% render 'icon-minus' %}
                                 </button>
-                      
                                 <input class="cart_quantity__input"
                                   type="number"
                                   name="quantity"
@@ -245,7 +244,6 @@
                                   {% render 'icon-plus' %}
                                 </button>
                               </quantity-input>
-                 
                             </div>
                             <cart-remove-button id="CartDrawer-Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
                               <button type="button" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
