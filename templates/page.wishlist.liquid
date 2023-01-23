@@ -2,6 +2,9 @@
   window.swymLandingURL = document.URL;
   window.swymCart = {{ cart | json }};
   console.log(window.swymCart.items)
+
+  const target = document.querySelector('#wishlist-item-container');
+  target.innerHTML = `<div>{{ window.swymCart.items[0].title }}</div>`
   
   window.swymPageLoad = function(){
     window.SwymProductVariants = window.SwymProductVariants || {};
