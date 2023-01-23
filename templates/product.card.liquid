@@ -13,16 +13,7 @@
     endif
   -%}
 
-<div class="collection">
-<div class="loading-overlay gradient"></div>
-
-{% comment %} Sample loading element {% endcomment %}
-<p class="wishlist__loader full-width text-center">Loading...</p>
-
-<ul id="product-grid" data-id="{{ section.id }}" data-next-url='{{ paginate.next.url }}' class="grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-  grid--{{ section.settings.columns_desktop }}-col-desktop product-grid-custom products-on-page">
-    <li class="grid__item">
-              
+<li class="grid__item">              
   <div class="card-wrapper product-card-wrapper">
     <div
       class="
@@ -261,4 +252,3 @@
   </div>
 
   </li>
-</ul>
