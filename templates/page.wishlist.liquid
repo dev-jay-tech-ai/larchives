@@ -22,9 +22,8 @@
       <img src='${ item.image }' style='width: 25%' alt='${ item.url }'/>
       <h3 class='card__heading'> ${ item.vendor } </h3>
       <div class='caption-with-letter-spacing custom-vendor'> ${ item.product_title } </div>
-      <div>
-        <span class='price-item price-item--sale price-item--last custom-price-reqular>${ item.price }</span>
-      </div>
+      <div><span class='price-item price-item--sale price-item--last custom-price-reqular> ${ item.price } </span></div>
+      
       <button type="submit" name="add" class="product-form__submit button button--full-width  button_custom" aria-haspopup="dialog">
         <span>Add to Bag</span>
         <div class="loading-overlay__spinner hidden">
