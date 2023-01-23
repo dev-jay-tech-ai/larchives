@@ -138,6 +138,9 @@
           <div class='card_widget'>
             <div>
              <button data-swaction="addToWishlist" data-product-id="{{ card_product.id | json }}" class='wishlist'>
+            {% comment %}
+             <button type="button" aria-label="Add to wishlist" class="" button-wishlist data-product-handle="{{ product.handle }}">
+            {% endcomment %}
               {% render 'icon-heart' %}
              </button>
             </div>
