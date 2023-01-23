@@ -33,10 +33,8 @@ const fetchProductCardHTML = (handle) => {
   return fetch(productTileTemplateUrl)
   .then((res) => res.text())
   .then((res) => {
-    const text = res;
     const parser = new DOMParser();
     const htmlDocument = parser.parseFromString(text, 'text/html');
-    console.log(text)
     const productCard = htmlDocument.documentElement.querySelector(selectors.productCard);
     console.log(productCard)
     return productCard.outerHTML;
