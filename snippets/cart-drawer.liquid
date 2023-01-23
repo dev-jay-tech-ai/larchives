@@ -169,7 +169,7 @@
 
                           <div class="cart-item__price-wrapper">
                             {%- if item.original_line_price != item.final_line_price -%}
-                              <div class="cart-item__discounted-prices">
+                              <div class="cart-item__discounted-prices">1
                                 <span class="visually-hidden">
                                   {{ 'products.product.price.regular_price' | t }}
                                 </span>
@@ -184,7 +184,7 @@
                                 </span>
                               </div>
                             {%- else -%}
-                              <span class="price price--end">
+                              <span class="price price--end">2
                                 {{ item.original_line_price | money }}
                               </span>
                             {%- endif -%}
