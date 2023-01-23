@@ -112,6 +112,7 @@
   font-weight: 500;
   word-break: break-all;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
+  letter-spacing: 0.5px;
 }
 
 .cart-item cart-remove-button {
