@@ -16,8 +16,8 @@
   console.log(window.swymCart.items)
 
   const target = document.querySelector('#wishlist-item-container');
-  window.swymCart.items.forEach((item) => {
-    target.innerHTML = 
+  target.innerHTML = window.swymCart.items.forEach((item) => {
+ 
     `<div> 제목: ${ item.title } </div>
     <div> 이미지 주소: ${ item.featured_image.url } </div>
     <div> 가격: ${ item.price } </div>
