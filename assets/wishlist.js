@@ -6,7 +6,7 @@ const GRID_LOADED_CLASS = 'loaded';
 const selectors = {
   button: '[button-wishlist]',
   grid: '[grid-wishlist]',
-  productCard: '.product-card',
+  productCard: '.product-card-wrapper',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,6 +29,7 @@ document.addEventListener('shopify-wishlist:init-buttons', (event) => {
 
 const fetchProductCardHTML = (handle) => {
   const productTileTemplateUrl = `/products/${handle}?view=card`;
+  console.log(productTileTemplateUrl)
   return fetch(productTileTemplateUrl)
   .then((res) => res.text())
   .then((res) => {
