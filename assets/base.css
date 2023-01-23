@@ -1530,6 +1530,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .share-button details {
+  width: fit-content;
   margin: 0 auto;
 }
 
