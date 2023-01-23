@@ -146,8 +146,7 @@ cart-remove-button .button:after  {
 }
 
 cart-remove-button .button:not([disabled]):hover {
-  color: rgb(var(--color-foreground));
-  opacity: .8;
+  opacity: .6;
 }
 
 @media screen and (min-width: 1024px) {
