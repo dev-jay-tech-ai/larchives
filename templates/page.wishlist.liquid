@@ -16,8 +16,7 @@
   console.log(window.swymCart.items)
 
   const target = document.querySelector('#wishlist-item-container');
-  console.log(target)
-  target.innerHTML = `<div>{{ window.swymCart.items[0].title }}</div>`
+  target.innerHTML = `<div> 제목: {{ window.swymCart.items[0].title }}</div>`
   
   window.swymPageLoad = function(){
     window.SwymProductVariants = window.SwymProductVariants || {};
