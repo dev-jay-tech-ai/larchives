@@ -1542,7 +1542,6 @@ button.shopify-payment-button__button--unbranded {
   align-items: center;
   color: rgb(var(--color-link));
   margin-left: 0;
-  padding-left: 0;
 }
 
 details[open] > .share-button__fallback {
