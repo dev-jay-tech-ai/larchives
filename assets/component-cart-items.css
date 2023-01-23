@@ -134,7 +134,7 @@
 }
 
 cart-remove-button .button {
-  width: inherit;
+  width: 29rem;
   min-width: calc(4.5rem / var(--font-body-scale));
   min-height: 4.5rem;
   padding: 0;
