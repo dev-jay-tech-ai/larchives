@@ -4,6 +4,7 @@
   console.log(window.swymCart.items)
 
   const target = document.querySelector('#wishlist-item-container');
+  console.log(target)
   target.innerHTML = `<div>{{ window.swymCart.items[0].title }}</div>`
   
   window.swymPageLoad = function(){
