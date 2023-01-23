@@ -123,6 +123,7 @@
 
 .cart-item cart-remove-button svg {
   width: 1.2rem;
+  color: #000;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 989px) {
