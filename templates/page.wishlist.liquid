@@ -8,6 +8,11 @@
   </div>
 </div>
 
+{%- comment -%} {%- if paginate.pages > 1 -%}
+
+{%- endif -%}{%- endcomment -%}
+{%- render 'pagination', paginate: paginate -%}
+    
 <script id="swym-snippet">
   window.swymLandingURL = document.URL;
   window.swymCart = {{ cart | json }};
