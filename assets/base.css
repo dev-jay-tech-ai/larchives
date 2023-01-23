@@ -1534,6 +1534,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .share-button__button {
+  width: 100%;
   font-size: 1.4rem;
   display: flex;
   min-height: 2.4rem;
