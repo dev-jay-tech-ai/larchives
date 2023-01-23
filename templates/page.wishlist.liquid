@@ -3,7 +3,9 @@
 </div>
 
 <div>
-  <div id='wishlist-item-container'></div>
+  <div id='wishlist-item-container'>
+    <div class='page-width' style='display:flex; justify-content: space-between'></div>
+  </div>
   <div>1{{ window.swymCart.items[0].product_title }}</div>
   <div>2{{ iu }}</div>
   <div>3{{ du }}</div>
@@ -15,12 +17,12 @@
   window.swymCart = {{ cart | json }};
   console.log(window.swymCart.items)
 
-  const target = document.querySelector('#wishlist-item-container');
+  const target = document.querySelector('#wishlist-item-container > div');
   window.swymCart.items.forEach((item) => {
     target.innerHTML += 
       
     `
-    <div class='page-width' style='display:flex; justify-content: space-between'>
+    <div>
       <div> 제목: ${ item.title } </div>
       <img src='${ item.image }' style='width: 500px' alt='${ item.url }'/>
       <div> 가격: ${ item.price } </div>
