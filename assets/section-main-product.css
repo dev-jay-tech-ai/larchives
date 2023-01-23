@@ -21,6 +21,7 @@
   .product.grid {
     padding: 0;
   }
+  
   .product--thumbnail .product__media-gallery,
   .product--thumbnail_slider .product__media-gallery,
   .product--stacked .product__info-container--sticky,
@@ -209,6 +210,7 @@ fieldset.product-form__input .form__label {
   font-family: 'Termina';
   font-size: 1.2rem;
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), 0.1);
+  background-size: cover;
   background-color: rgb(var(--color-background));
   background-position: center;
   color: rgba(var(--color-foreground));
