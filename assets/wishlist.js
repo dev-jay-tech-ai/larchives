@@ -11,7 +11,7 @@ const selectors = {
 
 document.addEventListener('DOMContentLoaded', () => {
   initButtons();
-  initGrid();
+  // initGrid();
 });
 
 document.addEventListener('shopify-wishlist:updated', (event) => {
