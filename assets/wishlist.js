@@ -117,7 +117,8 @@ const wishlistContains = (handle) => {
 };
 
 const deleteWishlist = () => {
-  return setWishlist([]);
+  console.log('delete button clicked')
+  // return setWishlist([]);
 };
 
 const resetWishlist = () => {
