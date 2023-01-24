@@ -119,12 +119,12 @@ const wishlistContains = (handle) => {
 const deleteWishlist = (el) => {
   // const wishlist = localStorage.getItem(LOCAL_STORAGE_WISHLIST_KEY) || false;
   // if (wishlist) return wishlist.split(LOCAL_STORAGE_DELIMITER);
-  console.log(el)
-  buttons.forEach((button) => {
-    const productHandle = button.dataset.productHandle || false;
-    console.log(productHandle);
-    console.log('delete button clicked')
-  }) 
+  console.log(el.dataset.productHandle)
+  // buttons.forEach((button) => {
+  //   const productHandle = button.dataset.productHandle || false;
+  //   console.log(productHandle);
+  //   console.log('delete button clicked')
+  // }) 
   // return setWishlist([]);
 };
 
