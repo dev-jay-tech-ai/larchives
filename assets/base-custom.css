@@ -53,6 +53,10 @@
   width: 90%;
 }
 
+.wishlist-conatiner .card-information {
+  height: 10rem !important;
+}
+
 .wishlist.active > svg {
   fill: #000;
 }
