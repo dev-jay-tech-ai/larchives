@@ -25,9 +25,9 @@
     endif
   -%}
   {%- paginate collections by paginate_by -%}
-    <ul class="collection-list {% comment %}grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endcomment %}" role="list">
+    <ul class="collection-list" role="list">
       {%- for collection in collections -%}
-        <li class="collection-list__item{% comment %}grid__item{% endcomment %}">
+        <li class="collection-list__item">
           {% render 'card-collection', card_collection: collection, media_aspect_ratio: sectiftitle title--primaryon.settings.image_ratio, columns: 3 %}
         </li>
       {%- endfor -%}
