@@ -15,6 +15,12 @@
   - Add any liquid code before/after the grid element
 {% endcomment %}
 
+<section
+  id="MainProduct-{{ section.id }}"
+  class="page-width section-{{ section.id }}-padding"
+  data-section="{{ section.id }}"
+>
+
 <div class='page-width'>
   <div class='product-grid-container' id='ProductGridContainer'>
       <div class="collection">
@@ -29,6 +35,9 @@
         </ul>
   </div>
 </div>
+
+</section> 
+  
 {% schema %}
   {
     "templates": ["page"]
