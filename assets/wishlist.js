@@ -124,7 +124,7 @@ const deleteWishlist = (e) => {
     const productHandle = button.dataset.productHandle || false;
     console.log(productHandle);
     console.log('delete button clicked')
-  } 
+  }) 
   // return setWishlist([]);
 };
 
