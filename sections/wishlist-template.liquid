@@ -94,9 +94,7 @@
           {%- unless paginate.previous -%}
             <button class="button button--secondary button-load-custom load-more">
              <span load-more-text>LOAD MORE</span>
-             <span class="hide" loader>
-               {% comment %}<img src="{{ 'loader.gif' | asset_url }}"/>{% endcomment %}
-             </span>
+             <span class="hide" loader></span>
             </button>
           {%- endunless -%}        
         </div>
