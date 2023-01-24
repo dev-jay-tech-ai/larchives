@@ -12,7 +12,6 @@ const selectors = {
 
 document.addEventListener('DOMContentLoaded', () => {
   initButtons();
-  initReset();
   initGrid();
 });
 
@@ -87,16 +86,6 @@ const initButtons = () => {
     detail: { wishlist: getWishlist() }
   });
   document.dispatchEvent(event);
-};
-
-const initReset = () => {
-  const reset = document.querySelectorAll(selectors.reset) || [];
-  if (reset.length) {
-   reset.addEventListener('click', () => {
-      resetWishlist()
-    });
-  } else return;
-
 };
 
 const getWishlist = () => {
