@@ -61,7 +61,7 @@
 .wishlist-conatiner .quick-add {
   position: absolute;
   width: 100%;
-  top: 100px;
+  bottom: -4rem;
 }
 
 .wishlist.active > svg {
