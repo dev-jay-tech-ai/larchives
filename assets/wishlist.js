@@ -119,8 +119,8 @@ const wishlistContains = (handle) => {
 const deleteWishlist = (el) => {
   const productHandle = el.dataset.productHandle || false;
   const wishlist = localStorage.getItem(LOCAL_STORAGE_WISHLIST_KEY) || false;
-  console.log(typeof wishlist)
-  if (wishlist) return wishlist.filter((element) => element !== productHandle);
+  if (wishlist) wishlist = wishlist.replace(productHandle,'');
+  return localStorage.setItem(LOCAL_STORAGE_WISHLIST_KEY,wishlist);
 };
 
 const resetWishlist = () => {
