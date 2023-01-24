@@ -29,7 +29,6 @@ document.addEventListener('shopify-wishlist:init-buttons', (event) => {
 
 const fetchProductCardHTML = (handle) => {
   const productTileTemplateUrl = `/products/${handle}?view=card`;
-  console.log(productTileTemplateUrl)
   return fetch(productTileTemplateUrl)
   .then((res) => res.text())
   .then((res) => {
@@ -43,20 +42,20 @@ const fetchProductCardHTML = (handle) => {
   .catch((err) => console.error(`[Shopify Wishlist] Failed to load content for handle: ${handle}`, err));
 };
 
-// const setupGrid = async (grid) => {
-//   const wishlist = getWishlist();
-//   const requests = wishlist.map(fetchProductCardHTML);
-//   const responses = await Promise.all(requests);
-//   const wishlistProductCards = responses.join('');
-//   grid.innerHTML = wishlistProductCards;
-//   grid.classList.add(GRID_LOADED_CLASS);
-//   initButtons();
+const setupGrid = async (grid) => {
+  const wishlist = getWishlist();
+  const requests = wishlist.map(fetchProductCardHTML);
+  const responses = await Promise.all(requests);
+  const wishlistProductCards = responses.join('');
+  grid.innerHTML = wishlistProductCards;
+  grid.classList.add(GRID_LOADED_CLASS);
+  initButtons();
 
-//   const event = new CustomEvent('shopify-wishlist:init-product-grid', {
-//     detail: { wishlist: wishlist }
-//   });
-//   document.dispatchEvent(event);
-// };
+  const event = new CustomEvent('shopify-wishlist:init-product-grid', {
+    detail: { wishlist: wishlist }
+  });
+  document.dispatchEvent(event);
+};
 
 const setupButtons = (buttons) => {
   buttons.forEach((button) => {
@@ -70,10 +69,10 @@ const setupButtons = (buttons) => {
   });
 };
 
-// const initGrid = () => {
-//   const grid = document.querySelector(selectors.grid) || false;
-//   if (grid) setupGrid(grid);
-// };
+const initGrid = () => {
+  const grid = document.querySelector(selectors.grid) || false;
+  if (grid) setupGrid(grid);
+};
 
 const initButtons = () => {
   const buttons = document.querySelectorAll(selectors.button) || [];
