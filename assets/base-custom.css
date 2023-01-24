@@ -21,11 +21,12 @@
 }
 
 .wishlist_sub {
-  height: 4rem;
+  height: 8rem;
   border-bottom: 1px solid #d0cdd8;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
