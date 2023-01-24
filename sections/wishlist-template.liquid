@@ -29,20 +29,20 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   
-<div class='page-width'>
-  <div class='product-grid-container' id='ProductGridContainer'>
-      <div class="collection">
-        <div class="loading-overlay gradient"></div>
-        
-        {% comment %} Sample loading element {% endcomment %}
-        <p class="wishlist__loader full-width text-center">Loading...</p>
-        
-        <ul id="product-grid" data-id="{{ section.id }}" data-next-url='{{ paginate.next.url }}' class="grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-          grid--{{ section.settings.columns_desktop }}-col-desktop product-grid-custom products-on-page" grid-wishlist>
 
-        </ul>
-  </div>
+<div class='product-grid-container' id='ProductGridContainer'>
+    <div class="collection">
+      <div class="loading-overlay gradient"></div>
+      
+      {% comment %} Sample loading element {% endcomment %}
+      <p class="wishlist__loader full-width text-center">Loading...</p>
+      
+      <ul id="product-grid" data-id="{{ section.id }}" data-next-url='{{ paginate.next.url }}' class="grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+        grid--{{ section.settings.columns_desktop }}-col-desktop product-grid-custom products-on-page" grid-wishlist>
+
+      </ul>
 </div>
+
 
 </section> 
   
