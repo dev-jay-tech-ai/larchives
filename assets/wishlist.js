@@ -121,7 +121,7 @@ const deleteWishlist = (el) => {
   let wishlist = localStorage.getItem(LOCAL_STORAGE_WISHLIST_KEY) || false;
   let arr;
   if (wishlist) arr = wishlist.split(',');
-  arr.filter((ele) => return ele !== productHandle );
+  arr = arr.filter((ele) => return ele !== productHandle );
   return localStorage.setItem(LOCAL_STORAGE_WISHLIST_KEY,arr.join());
 };
 
