@@ -121,7 +121,7 @@ const deleteWishlist = (el) => {
   // if (wishlist) return wishlist.split(LOCAL_STORAGE_DELIMITER);
   console.log(el.dataset.productHandle)
   const productHandle = el.dataset.productHandle || false;
-
+  localStorage.removeItem(productHandle) || false;
   // return setWishlist([]);
 };
 
