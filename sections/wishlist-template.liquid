@@ -38,6 +38,23 @@
       class="grid product-grid grid--1-col-tablet-down grid--4-col-desktop product-grid-custom products-on-page" 
       grid-wishlist
     ></ul>
+
+     <div class="product-list-bottom">
+        {%- if paginate.pages > 1 -%}
+        <div>
+          {%- unless paginate.previous -%}
+            <button class="button button--secondary button-load-custom load-more">
+             <span load-more-text>LOAD MORE</span>
+             <span class="hide" loader>
+               {% comment %}<img src="{{ 'loader.gif' | asset_url }}"/>{% endcomment %}
+             </span>
+            </button>
+          {%- endunless -%}        
+        </div>
+        <div>{% render 'pagination', paginate: paginate, anchor: '' %}</div>
+        {%- endif -%}
+      </div>  
+    </div>
   </div>
 </div>
 
