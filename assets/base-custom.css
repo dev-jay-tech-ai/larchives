@@ -60,6 +60,11 @@
   grid-row-start: 1;
 }
 
+.wishlist-conatiner .card__badge svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .wishlist-conatiner .card__badge svg > path {
   stroke: #000;
 }
