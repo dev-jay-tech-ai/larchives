@@ -116,6 +116,10 @@ const wishlistContains = (handle) => {
   return wishlist.includes(handle);
 };
 
+const deleteWishlist = () => {
+  return setWishlist([]);
+};
+
 const resetWishlist = () => {
   return setWishlist([]);
 };
