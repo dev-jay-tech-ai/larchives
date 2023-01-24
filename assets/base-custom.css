@@ -28,17 +28,21 @@
   align-items: center;
   padding-top: 4rem;
   padding-bottom: 2rem;
-}
-
-.wishlist_sub div:nth-of-type(2) {
-  text-decoration: underline;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.8;
   letter-spacing: normal;
   text-align: right;
+}
+
+.wishlist_sub div:nth-of-type(1) {
+  color: rgba(4, 11, 9, 0.5);
+}
+
+.wishlist_sub div:nth-of-type(2) {
   color: #c20c1e;
+  text-decoration: underline;
 }
 
 .wishlist-conatiner {
