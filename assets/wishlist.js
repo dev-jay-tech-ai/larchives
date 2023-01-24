@@ -117,12 +117,10 @@ const wishlistContains = (handle) => {
 };
 
 const deleteWishlist = (el) => {
-  // const wishlist = localStorage.getItem(LOCAL_STORAGE_WISHLIST_KEY) || false;
-  // if (wishlist) return wishlist.split(LOCAL_STORAGE_DELIMITER);
   console.log(el.dataset.productHandle)
   const productHandle = el.dataset.productHandle || false;
-  localStorage.removeItem(productHandle) || false;
-  // return setWishlist([]);
+  const wishlist = localStorage.getItem(LOCAL_STORAGE_WISHLIST_KEY) || false;
+  if (wishlist) return wishlist.filter((element) => element !== productHandle);
 };
 
 const resetWishlist = () => {
