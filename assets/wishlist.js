@@ -7,7 +7,7 @@ const selectors = {
   button: '[button-wishlist]',
   grid: '[grid-wishlist]',
   productCard: '.grid__item',
-  clearButton: '.wishlist_clear'
+  reset: '.wishlist_clear'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,9 +28,8 @@ document.addEventListener('shopify-wishlist:init-buttons', (event) => {
   console.log('[Shopify Wishlist] Wishlist Buttons Loaded ✅', event.detail.wishlist);
 });
 
-clearButton.addEventListener('click', () => {
-  console.log('리셋합니다.')
-  resetWishlist();
+document.addEventListener('shopify-wishlist:init-reset', (event) => {
+  console.log('[Shopify Wishlist] Wishlist Reset Loaded ✅', event.detail.reset);
 });
 
 const fetchProductCardHTML = (handle) => {
@@ -88,6 +87,16 @@ const initButtons = () => {
     detail: { wishlist: getWishlist() }
   });
   document.dispatchEvent(event);
+};
+
+const initReset = () => {
+  const reset = document.querySelectorAll(selectors.reset) || [];
+  if (reset.length) {
+   reset.addEventListener('click', () => {
+      resetWishlist()
+    });
+  } else return;
+
 };
 
 const getWishlist = () => {
