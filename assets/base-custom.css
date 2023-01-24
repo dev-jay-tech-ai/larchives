@@ -43,8 +43,7 @@
   }
 
   .wishlist_sub div:nth-of-type(1) {
-    display: block;
-    color: rgba(4, 11, 9, 0.5);
+    display: none;
   }
 
   .wishlist-conatiner .grid {
@@ -70,7 +69,8 @@
 }
 
 .wishlist_sub div:nth-of-type(1) {
-  display: none;
+  display: block;
+  color: rgba(4, 11, 9, 0.5);
 }
 
 .wishlist_sub div:nth-of-type(2) {
