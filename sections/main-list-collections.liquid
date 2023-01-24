@@ -25,7 +25,7 @@
     endif
   -%}
   {%- paginate collections by paginate_by -%}
-    <ul class="collection-list" role="list">
+    <ul class="collection-list products-on-page" data-next-url='{{ paginate.next.url }}' role="list">
       {%- for collection in collections -%}
         <li class="collection-list__item">
           {% render 'card-collection', card_collection: collection, media_aspect_ratio: sectiftitle title--primaryon.settings.image_ratio, columns: 3 %}
