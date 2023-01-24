@@ -12,6 +12,7 @@ const selectors = {
 
 document.addEventListener('DOMContentLoaded', () => {
   initButtons();
+  initReset();
   initGrid();
 });
 
