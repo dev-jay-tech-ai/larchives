@@ -54,7 +54,7 @@
 }
 
 .wishlist-conatiner .card-information {
-  min-height: 10rem !important;
+  min-height: 12rem !important;
 }
 
 .wishlist.active > svg {
