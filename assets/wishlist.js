@@ -116,10 +116,10 @@ const wishlistContains = (handle) => {
   return wishlist.includes(handle);
 };
 
-const deleteWishlist = (e) => {
+const deleteWishlist = () => {
   // const wishlist = localStorage.getItem(LOCAL_STORAGE_WISHLIST_KEY) || false;
   // if (wishlist) return wishlist.split(LOCAL_STORAGE_DELIMITER);
-  console.log(e.target)
+  console.log(this)
   buttons.forEach((button) => {
     const productHandle = button.dataset.productHandle || false;
     console.log(productHandle);
