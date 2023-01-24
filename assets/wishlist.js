@@ -28,6 +28,11 @@ document.addEventListener('shopify-wishlist:init-buttons', (event) => {
   console.log('[Shopify Wishlist] Wishlist Buttons Loaded ✅', event.detail.wishlist);
 });
 
+clearButton.addEventListener('click', () => {
+  console.log('리셋합니다.')
+  resetWishlist();
+});
+
 const fetchProductCardHTML = (handle) => {
   const productTileTemplateUrl = `/products/${handle}?view=card`;
   return fetch(productTileTemplateUrl)
