@@ -55,6 +55,13 @@
 
 .wishlist-conatiner .card-information {
   min-height: 12rem !important;
+  postion:  relative;
+}
+
+.wishlist-conatiner .quick-add {
+  position: absolute;
+  width: 100%;
+  top: 100px;
 }
 
 .wishlist.active > svg {
