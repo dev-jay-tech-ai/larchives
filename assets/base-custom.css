@@ -30,6 +30,16 @@
   padding-bottom: 2rem;
 }
 
+.wishlist_sub div:nth-of-type(1) {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: right;
+  color: #c20c1e;
+}
+
 .wishlist-conatiner {
   margin-top: 4rem;
 }
