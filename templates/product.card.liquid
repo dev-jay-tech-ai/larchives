@@ -236,7 +236,6 @@
         
         </div>
       
-        {%- if show_quick_add -%}
         <div class="quick-add no-js-hidden">
           {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
           {%- if card_product.variants.size == 1 -%}
@@ -286,7 +285,8 @@
                 </button>
               {%- endform -%}
             </product-form>
-          {%- else -%}
+
+          
             <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
               <button
                 id="{{ product_form_id }}-submit"
@@ -333,7 +333,7 @@
             </quick-add-modal>
           {%- endif -%}
         </div>
-      {%- endif -%}
+
         
         <div class="card__badge {{ settings.badge_position }}">
           {%- if product.available == false -%}
