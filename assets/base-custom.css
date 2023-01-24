@@ -25,6 +25,10 @@
   border-bottom: 1px solid #d0cdd8;
 }
 
+.wishlist-conatiner {
+  margin-top: 6rem;
+}
+
 .discounts__input {
   width: 100%;
   height: 6.6rem;
