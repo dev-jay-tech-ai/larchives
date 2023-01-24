@@ -5,6 +5,7 @@ const pagination = $('.product-list-bottom div');
 
 if(load_more.length>0) {
   load_more[0].addEventListener("click",(e) => {
+  console.log('clicked@!')  
   e.preventDefault(); 
   load_more[0].style.margin = '0 auto';
   pagination[1].style.display = 'none';
