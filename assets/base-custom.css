@@ -38,7 +38,7 @@
 
 @media screen and (min-width:1025px){
   .wishlist_sub {
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .wishlist_sub div:nth-of-type(1) {
