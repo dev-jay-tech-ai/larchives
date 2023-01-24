@@ -7,6 +7,7 @@ const selectors = {
   button: '[button-wishlist]',
   grid: '[grid-wishlist]',
   productCard: '.grid__item',
+  clearButton: '.wishlist_clear'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
