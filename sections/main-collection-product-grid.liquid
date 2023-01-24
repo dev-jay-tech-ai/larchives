@@ -10,7 +10,7 @@
   {{ 'quick-add.js' | asset_url | script_tag }}
   {{ 'product-form.js' | asset_url | script_tag }}
 {%- endif -%}
-{{ 'collection-load-more.js' | asset_url | script_tag }}
+
 {{ 'ajaxinate.min.js' | asset_url | script_tag }}
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
@@ -148,6 +148,8 @@
     </div>
   </div>
 </div>
+
+{{ 'collection-load-more.js' | asset_url | script_tag }}
 
 {% schema %}
 {
