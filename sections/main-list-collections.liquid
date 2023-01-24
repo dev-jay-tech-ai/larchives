@@ -1,8 +1,6 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
-{{ 'collection-load-more.js' | asset_url | script_tag }}
-
 <div class="page-width">
   <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
     <a href="/{{ section.settings.title | downcase }}"><span>{{ section.settings.title | escape }}</span></a>
@@ -52,6 +50,9 @@
     </div>  
   {%- endpaginate -%}
 </div>
+
+{{ 'collection-load-more.js' | asset_url | script_tag }}
+
 {% schema %}
 {
   "name": "t:sections.main-list-collections.name",
