@@ -15,6 +15,7 @@
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
+  {% assign count_pages = section.settings.products_per_page %}
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
