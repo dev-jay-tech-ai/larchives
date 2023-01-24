@@ -15,6 +15,11 @@
   - Add any liquid code before/after the grid element
 {% endcomment %}
 
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
 <section
   id="MainWishlist-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
