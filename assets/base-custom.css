@@ -87,7 +87,7 @@
 
 .wishlist.active > svg {
   fill: #000;
-}
+}f
 
 @media screen and (min-width:1025px){
   .wishlist_sub {
@@ -1156,6 +1156,7 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
   justify-content: space-between;
   margin-top: 7.5rem;
+  min-height: 12.8rem;
 }
 
 @media screen and (max-width: 1024px) {
