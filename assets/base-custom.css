@@ -20,6 +20,11 @@
   }
 }
 
+.wishlist_sub {
+  height: 4rem;
+  border-bottom: 1px solid #d0cdd8;
+}
+
 .discounts__input {
   width: 100%;
   height: 6.6rem;
