@@ -436,12 +436,7 @@
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                         <div class='page-width'>
                           <div>
-                            <div class="mega-menu_list-title">{{ link.title | escape }}</div>
-                            <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} page-width" role="list">
-
                             {% render 'mega-menu-list', link: link %}
-                  
-                            </ul>
                           </div>
                           <div>
                             <h3>COLLECTIONS</h3>
