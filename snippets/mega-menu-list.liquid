@@ -2,6 +2,8 @@
   <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} page-width" role="list">
                    
   {%- for childlink in link.links -%}
+
+    {% if  link.links == 'CLOTHES' %}
     <li>
       <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
         {{ childlink.title | escape | capitalize }}
@@ -17,6 +19,11 @@
           {%- endfor -%}
         </ul>
       {%- endif -%}
+
+
+      
     </li>
+    {%- endif -%}
+    
   {%- endfor -%}
   </ul>
