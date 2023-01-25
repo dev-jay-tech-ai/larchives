@@ -58,13 +58,17 @@
     justify-content: space-between;
   }
 
-  .cart-page .cart_quantity {
+  .cart_page  .cart_quantity {
     display: none;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .cart_link h1 {
+    display: none;
+  }
+
+  .cart_page .cart-item__quantity {
     display: none;
   }
 }
