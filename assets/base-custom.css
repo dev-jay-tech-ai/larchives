@@ -49,7 +49,7 @@
     width: calc(4.5rem / var(--font-body-scale));
   }
 
-  .cart_page .cart-item .cart-remove-button .svg {
+  .cart_page .cart-item cart-remove-button svg {
     width: 3.5rem;
   }
 }
