@@ -1079,8 +1079,8 @@ input[type="range"]::-moz-range-thumb {
   text-align: left;
 }
 
-.mega-menu__content > div > div {
-
+.mega-menu_list-title {
+  padding-bottom: 2rem;
 }
 
 .mega-menu__content > div > div ul {
