@@ -41,7 +41,7 @@
 }
 
 .cart_page .cart-item__quantity .quantity__button, .cart-item__quantity .quantity__input {
-  width: unset;
+  width: calc(4.5rem / var(--font-body-scale));
 }
 
 .wishlist_sub {
