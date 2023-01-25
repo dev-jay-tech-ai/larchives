@@ -1208,6 +1208,12 @@
                 {% else %}
                 {% render "size-clothes-w" %}
                 {% endif %}
+                
+              {% elsif categories contains "pants" %}
+                {% render "size-pants-w" %}
+           
+
+            
               {% elsif categories contains "belt" %}
               {% render "size-belt-w" %}
               {% elsif categories contains "gloves" %}
