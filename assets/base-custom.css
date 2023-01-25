@@ -52,6 +52,10 @@
   .cart_page .cart-item cart-remove-button svg {
     width: 1.5rem;
   }
+
+  .cart_page .cart-item__quantity {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1024px) {
