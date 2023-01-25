@@ -424,7 +424,7 @@
       {%- else -%}
         <nav class="header__inline-menu{% if request.page_type != 'index' %} header__inline-menu-style{% endif %}">
           <ul class="list-menu list-menu--inline" role="list">
-          {% render 'mega-menu-list', link: link %}
+            {% render 'mega-menu-list', link: link %}
             <li>
               <div>
                 <details-modal class="header__search" style='vertical-align: bottom'>
