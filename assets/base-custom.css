@@ -21,7 +21,7 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .cart_page button {
+  .cart_page .underlined-link cart_title {
     display: none;
   }
   
