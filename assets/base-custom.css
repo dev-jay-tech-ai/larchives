@@ -58,6 +58,9 @@
     justify-content: space-between;
   }
 
+  .cart-page .cart_quantity {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
