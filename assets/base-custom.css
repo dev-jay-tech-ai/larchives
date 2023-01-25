@@ -53,7 +53,7 @@
     width: 1.5rem;
   }
 
-  .cart_page .cart-item__quantity-wrapper {
+  .cart_page .cart-item__quantity {
     display: flex;
   }
 }
