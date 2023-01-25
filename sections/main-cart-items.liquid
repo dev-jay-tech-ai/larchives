@@ -12,7 +12,7 @@
     padding: 2rem;
   }
 
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -28,7 +28,7 @@
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link cart_link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link cart_title">{{ 'general.continue_shopping' | t }}</a>
+    {% comment %}<a href="{{ routes.all_products_collection_url }}" class="underlined-link cart_title">{{ 'general.continue_shopping' | t }}</a>{% endcomment %}
   </div>
 
   <div class="cart__warnings">
