@@ -7,11 +7,9 @@
           <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
         </summary>
         <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
-          
-         {%- if link.title != 'DESIGNERS' -%}      {%- endif -%}
-          
           <div class='page-width'>
             <div>
+              {%- if link.title != 'DESIGNERS' -%}      
               <div class="mega-menu_list-title">{{ link.title | escape }}</div>
                 
                 <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} page-width" role="list">  
@@ -37,7 +35,7 @@
                 {%- endfor -%}
                 </ul>
             </div>
-     
+           {%- endif -%}
     
             <div>
               <h3>COLLECTIONS</h3>
