@@ -87,7 +87,7 @@
 
 .wishlist.active > svg {
   fill: #000;
-}f
+}
 
 @media screen and (min-width:1025px){
   .wishlist_sub {
