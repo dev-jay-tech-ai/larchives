@@ -1193,10 +1193,10 @@
               {% elsif categories contains "clothes" %}
                 {% if categories contains "top" %}
                 {% render "size-top-m" %}
-                {% elsif categories contains "pants" %}
-                {% render "size-pants-m" %}
+                {% elsif categories contains "Pants" %}
+                  {% render "size-pants-m" %}
                 {% else %}
-                {% render "size-clothes-m" %}
+                  {% render "size-clothes-m" %}
                 {% endif %}
               {% elsif categories contains "accessories" %}
               {% render "size-belt-m" %}
