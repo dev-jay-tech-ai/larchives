@@ -424,36 +424,7 @@
       {%- else -%}
         <nav class="header__inline-menu{% if request.page_type != 'index' %} header__inline-menu-style{% endif %}">
           <ul class="list-menu list-menu--inline" role="list">
-             {%- for link in section.settings.menu.links -%}
-              <li>
-                {%- if link.links != blank -%}
-                  <header-menu>
-                    <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-                      <summary class="header__menu-item list-menu__item link focus-inset header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}">
-                        <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                        {%- comment -%} {% render 'icon-caret' %} {%- endcomment -%} 
-                      </summary>
-                      <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
-                        <div class='page-width'>
-                          <div>
-                            {% render 'mega-menu-list', link: link %}
-                          </div>
-                          <div>
-                            <h3>COLLECTIONS</h3>
-                            <p>Summer 2022</p>
-                            <button class='button button--secondary button-load-custom'>SEE MORE</button>
-                          </div>
-                        </div>
-                      </div>
-                    </details>
-                  </header-menu>
-                {%- else -%}
-                  <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
-                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                  </a>
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
+          {% render 'mega-menu-list', link: link %}
             <li>
               <div>
                 <details-modal class="header__search" style='vertical-align: bottom'>
