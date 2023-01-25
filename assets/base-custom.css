@@ -51,7 +51,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .cart_page h1 {
+  .cart_link h1 {
     display: none;
   }
 }
