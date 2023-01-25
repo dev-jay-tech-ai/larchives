@@ -67,10 +67,6 @@
   .cart_link h1 {
     display: none;
   }
-
-  .cart_page .cart-item__quantity {
-    display: none;
-  }
 }
 
 .wishlist_sub {
