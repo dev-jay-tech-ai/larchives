@@ -21,6 +21,10 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .cart_page button {
+    display: none;
+  }
+  
   .cart_page .cart-item__name {
     font-size: 1.5rem;
   }
