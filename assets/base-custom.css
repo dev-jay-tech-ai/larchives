@@ -40,6 +40,10 @@
   font-size: 1.4rem;
 }
 
+.cart_page .cart-item__quantity .quantity__button, .cart-item__quantity .quantity__input {
+  width: unset;
+}
+
 .wishlist_sub {
   height: 8rem;
   border-bottom: 1px solid #d0cdd8;
