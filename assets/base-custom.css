@@ -1111,7 +1111,7 @@ input[type="range"]::-moz-range-thumb {
   height: 2.9rem;
 }
 
-.mega-menu__content > div > div:last-child button {
+.mega-menu__content > div > div:last-child a {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
