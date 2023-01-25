@@ -1190,29 +1190,25 @@
             {% if categories contains "(m)" %}
               {% if categories contains "shoes" %}
                 {% render "size-shoes-m" %}
-              {% elsif categories contains "clothes" %}
-                {% if categories contains "top" %}
-                  {% render "size-top-m" %}
-                {% elsif categories contains "pants" %}
-                  {% render "size-pants-m" %}
-                {% endif %}
+           
+              {% elsif categories contains "top" %}
+                {% render "size-top-m" %}
+              {% elsif categories contains "pants" %}
+                {% render "size-pants-m" %}
+            
               {% elsif categories contains "accessories" %}
               {% render "size-belt-m" %}
               {% endif %}
             {% else %}
               {% if categories contains "shoes" %}
                 {% render "size-shoes-w" %}
-              {% elsif categories contains "clothes" %}
-                {% if categories contains "pants" %}
-                {% render "size-pants-w" %}
-                {% else %}
-                {% render "size-clothes-w" %}
-                {% endif %}
                 
-        
-           
-
-            
+              {% elsif categories contains "clothes" %}
+              {% render "size-clothes-w" %}
+                
+              {% elsif categories contains "pants" %}
+                {% render "size-pants-w" %}
+  
               {% elsif categories contains "belt" %}
               {% render "size-belt-w" %}
               {% elsif categories contains "gloves" %}
