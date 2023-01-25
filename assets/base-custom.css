@@ -32,6 +32,10 @@
   font-size: 1.3rem;  
 }
 
+.cart_page .cart-items .price--end {
+  font-size: 1.5rem;
+}
+
 .wishlist_sub {
   height: 8rem;
   border-bottom: 1px solid #d0cdd8;
