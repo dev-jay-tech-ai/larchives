@@ -28,6 +28,10 @@
   font-size: 1.4rem;  
 }
 
+.cart_page .product-option {
+  font-size: 1.3rem;  
+}
+
 .wishlist_sub {
   height: 8rem;
   border-bottom: 1px solid #d0cdd8;
