@@ -21,7 +21,11 @@
 }
 
 .cart_page .cart-item__name {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+
+.cart_page .cart-item__details>*+* {
+  font-size: 1.4rem;  
 }
 
 .wishlist_sub {
