@@ -36,7 +36,7 @@
   font-size: 1.4rem;
 }
 
-.cart_page .totals {
+.cart_page .totals>* {
   font-size: 1.4rem;
 }
 
