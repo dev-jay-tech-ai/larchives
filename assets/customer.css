@@ -293,7 +293,7 @@
     grid-row: 2 / 6;
   }
 
-  .customer td > a {
+  .customer td > * {
     white-space: pre;
   }
 }
