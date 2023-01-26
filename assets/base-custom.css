@@ -240,7 +240,12 @@
   .cart_page quantity-input.cart_quantity  {
     display: none;
   }
-
+  
+  .cart_page cart-remove-button {
+    display: flex;
+    align-items: center;
+  }
+  
   .cart_link h1 {
     display: block;
   }
