@@ -321,6 +321,14 @@ cart-remove-button .icon-remove {
   .cart-item__price-wrapper > *:only-child:not(.cart-item__discounted-prices) {
     margin-top: 1rem;
   }
+
+  @media screen and (max-width: 1024px) {
+  .cart_page cart-item__quantity {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 }
 
 @media screen and (min-width: 990px) {
