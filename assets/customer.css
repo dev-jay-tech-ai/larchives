@@ -455,12 +455,10 @@
     margin-top: 5rem;
   }
 
-  :is(.account, .order) > div:nth-of-type(2) > div:nth-of-type(2) {
+  :is(.account, .order) > div:nth-of-type(2) > div:last-of-type {
     flex: 1;
   }
-}
 
-@media screen and (min-width: 990px) {
   :is(.account, .order) > div:nth-of-type(2) > div:first-of-type {
     flex-grow: 1;
     padding-right: 12.8rem;
