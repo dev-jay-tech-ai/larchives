@@ -57,7 +57,7 @@
     font-size: 1.4rem;
   }
   
-  .cart-item__quantity-wrapper .quantity__button
+  .cart-item__quantity-wrapper .quantity__button {
     width: calc(4.5rem / var(--font-body-scale));
   }
 
