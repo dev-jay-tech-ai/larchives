@@ -251,7 +251,7 @@
 }
 
 /* mobile table overrides */
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1024px) {
   .customer thead,
   .customer th,
   .customer tfoot td:first-of-type {
