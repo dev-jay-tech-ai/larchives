@@ -292,6 +292,10 @@
   .customer td:nth-last-of-type {
     grid-row: 2 / 6;
   }
+
+  .customer td > a {
+    white-space: pre;
+  }
 }
 
 /* Pagination */
