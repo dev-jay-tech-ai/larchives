@@ -63,19 +63,19 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .cart_page quantity-input.cart_quantity {
-    display: block;
-  }
 
-  .cart_page quantity-input.quantity {
-    display: none;
-  }
-  
-  .cart_link h1 {
-    display: none;
-  }
+.cart_page quantity-input.cart_quantity {
+  display: block;
 }
+
+.cart_page quantity-input.quantity {
+  display: none;
+}
+
+.cart_link h1 {
+  display: none;
+}
+
 
 .wishlist_sub {
   height: 8rem;
