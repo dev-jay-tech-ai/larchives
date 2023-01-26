@@ -194,6 +194,12 @@
   display: none;
 }
 
+.cart_page cart-remove-button {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+
 @media screen and (min-width: 1025px) {
   .cart_link .cart_title {
     display: none;
@@ -240,13 +246,7 @@
   .cart_page quantity-input.cart_quantity  {
     display: none;
   }
-  
-  .cart_page cart-remove-button {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 1rem;
-  }
-  
+
   .cart_link h1 {
     display: block;
   }
