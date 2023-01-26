@@ -175,6 +175,7 @@
 
 .customer tbody td:last-of-type {
   padding-bottom: 4rem;
+  color: #c20c1e;
 }
 
 @media screen and (min-width: 750px) {
