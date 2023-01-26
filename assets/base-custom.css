@@ -1831,8 +1831,8 @@ nav {
 }
 
 .header_custom_style > div {
-  flex-direction: row;
-  font-size: 10px;
+  margin-left: 3rem;
+  font-size: 1rem;
   line-height: 12px;
 }
 
