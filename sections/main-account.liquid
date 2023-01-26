@@ -43,6 +43,9 @@
             <tbody role="rowgroup">
               {%- for order in customer.orders -%}
                 <tr role="row">
+                  <td headers="RowOrder ColumnImage" role="cell" data-label="">
+                    <img  src={{ order.image }}/>
+                  </td>
                   <td
                     id="RowOrder"
                     role="cell"
