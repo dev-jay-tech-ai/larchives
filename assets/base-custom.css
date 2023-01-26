@@ -20,8 +20,10 @@
   }
 }
 
-.customer > div:last-of-type {
-  text-align: center;
+@media screen and (max-width:1024px){
+  .customer > div:last-of-type {
+    text-align: center;
+  }
 }
 
 .customer a.button.button_custom {
