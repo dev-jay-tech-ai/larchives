@@ -190,14 +190,14 @@
   display: none;
 }
 
-.cart_link h1 {
-  display: none;
-}
-
 .cart_page cart-remove-button {
   display: flex;
   align-items: flex-end;
   padding-bottom: 1rem;
+}
+
+.cart_link h1 {
+  display: none;
 }
 
 @media screen and (min-width: 1025px) {
