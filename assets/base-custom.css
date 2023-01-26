@@ -21,7 +21,7 @@
 }
 
 .cart_page quantity-input.cart_quantity {
-  display: none;
+  display: block;
 }
 
 .cart_page quantity-input.quantity {
@@ -70,8 +70,12 @@
     justify-content: space-between;
   }
 
+  .cart_page quantity-input.quantity  {
+    display: none;
+  }
+  
   .cart_page quantity-input.cart_quantity  {
-    display: block;
+    display: none;
   }
 
   .cart_link h1 {
