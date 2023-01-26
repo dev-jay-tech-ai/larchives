@@ -415,6 +415,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
   width: 100%;
   object-fit: cover;
   vertical-align: middle;
+  opacity: .2;
 }
 
 @media screen and (min-width: 1025px) {
