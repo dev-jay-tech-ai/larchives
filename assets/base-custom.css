@@ -20,6 +20,12 @@
   }
 }
 
+.customer a .button {
+  width: 90%;
+  color: #fff;
+  background-color: #000;
+}
+
 .wishlist_sub {
   height: 8rem;
   border-bottom: 1px solid #d0cdd8;
