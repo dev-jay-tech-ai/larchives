@@ -37,7 +37,7 @@
         {{ 'customer.addresses.add_new' | t }}
       </button>
       <div id="AddAddress">
-        <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t | upcase }}</h2>
+        <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
@@ -118,7 +118,7 @@
       {%- for address in customer.addresses -%}
         <li data-address>
           {%- if address == customer.default_address -%}
-            <h2>{{ 'customer.addresses.default' | t }}</h2>
+            <h2>{{ 'customer.addresses.default' | t | upcase }}</h2>
           {%- endif -%}
           {{ address | format_address }}
           <button
