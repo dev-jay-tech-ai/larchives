@@ -234,7 +234,7 @@
   }
 
   .cart_page quantity-input.quantity  {
-    display: block;
+    display: flex;
   }
   
   .cart_page quantity-input.cart_quantity  {
