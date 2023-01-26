@@ -252,6 +252,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .cart_page .cart-item__quantity {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .collection-list__item .card__content {
   margin-bottom: 0;
 }
