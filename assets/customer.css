@@ -454,14 +454,14 @@
     display: flex;
     margin-top: 5rem;
   }
-
-  :is(.account, .order) > div:nth-of-type(2) > div:last-of-type {
-    flex: 1;
-  }
-
+  
   :is(.account, .order) > div:nth-of-type(2) > div:first-of-type {
     flex-grow: 1;
     padding-right: 12.8rem;
+  }
+  
+  :is(.account, .order) > div:nth-of-type(2) > div:last-of-type {
+    flex: 1;
   }
 }
 
