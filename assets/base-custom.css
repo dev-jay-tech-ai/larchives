@@ -64,8 +64,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .cart_page  .cart_quantity {
+  .cart_page .cart_quantity {
     display: block;
+  }
+
+  .cart_page .quantity {
+    display: none;
   }
   .cart_link h1 {
     display: none;
