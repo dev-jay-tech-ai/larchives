@@ -273,6 +273,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #040b09;
+    padding-bottom: 1.2rem;
   }
 
   .customer td:first-of-type {
