@@ -264,7 +264,7 @@
     padding-left: 1rem;
   }
 
-/*   .customer td::before {
+  .customer td::before {
     content: attr(data-label);
     font-family: 'Termina-demi';
     font-size: 1rem;
@@ -273,7 +273,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #040b09;
-  } */
+  }
 
   .customer td:first-of-type {
     grid-row: 1 / 6;
