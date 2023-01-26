@@ -266,7 +266,7 @@
   .customer td::before {
     content: attr(data-label);
     font-family: 'Termina-demi';
-    padding-right: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     flex-grow: 1;
     letter-spacing: normal;
