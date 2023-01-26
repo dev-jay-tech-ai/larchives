@@ -1823,10 +1823,9 @@ nav {
 .header_custom_style {
   font-family: 'Termina-regular';
   text-transform: uppercase;
-  /* width: 381px; */
   height: 12px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 0.8rem;
   margin-right: 8rem;
 }
