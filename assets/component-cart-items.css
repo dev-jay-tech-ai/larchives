@@ -322,7 +322,7 @@ cart-remove-button .icon-remove {
     margin-top: 1rem;
   }
 
-  .cart_page cart-item__quantity {
+  .cart_page .cart-item__quantity {
     display: flex;
     justify-content: space-between;
   }
