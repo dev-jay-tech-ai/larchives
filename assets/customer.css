@@ -261,6 +261,7 @@
   .customer td {
     display: flex;
     text-align: right;
+    padding-right: 1rem;
   }
 
 /*   .customer td::before {
