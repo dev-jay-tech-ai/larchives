@@ -61,6 +61,10 @@
   .cart_page quantity-input.cart_quantity  {
     display: none;
   }
+
+  .cart_link h1 {
+    display: block;
+  }
 }
 
 
