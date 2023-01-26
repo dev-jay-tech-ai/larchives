@@ -64,6 +64,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .cart_page  .cart_quantity {
+    display: block;
+  }
   .cart_link h1 {
     display: none;
   }
