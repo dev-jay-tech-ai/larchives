@@ -449,10 +449,14 @@
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
   :is(.account, .order) > div:nth-of-type(2) {
     display: flex;
     margin-top: 5rem;
+  }
+
+  :is(.account, .order) > div:nth-of-type(2) > div:nth-of-type(2) {
+    flex: 1;
   }
 }
 
