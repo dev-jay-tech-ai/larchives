@@ -45,8 +45,7 @@
     font-size: 1.4rem;
   }
   
-  .cart_page .cart-item__quantity .cart_quantity__button, 
-  .cart_page .cart-item__quantity .quantity__input {
+  .cart_page .cart_quantity__button
     width: calc(4.5rem / var(--font-body-scale));
   }
 
