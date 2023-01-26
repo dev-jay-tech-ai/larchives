@@ -280,9 +280,7 @@
   }
 
   .customer tr {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: gird;
     width: 100%;
   }
 }
