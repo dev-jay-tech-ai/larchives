@@ -188,7 +188,7 @@
   /* border-top: 0.01rem solid rgba(var(--color-foreground), 0.08); */
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .customer tbody tr:first-of-type {
     border-top: none;
   }
