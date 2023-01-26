@@ -68,9 +68,10 @@
     display: block;
   }
 
-  .cart_page .quantity {
+  .cart_page quantity-input {
     display: none;
   }
+  
   .cart_link h1 {
     display: none;
   }
