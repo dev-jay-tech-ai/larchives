@@ -184,7 +184,7 @@
 }
 
 .customer tbody tr {
-  border-top: 0.01rem solid rgba(var(--color-foreground), 0.08);
+  /* border-top: 0.01rem solid rgba(var(--color-foreground), 0.08); */
 }
 
 @media screen and (min-width: 750px) {
