@@ -288,6 +288,10 @@
   .customer td:nth-of-type(1) {
     grid-row: 1 / 6;
   }
+
+  .customer td:nth-last-of-type {
+    grid-row: 2 / 6;
+  }
 }
 
 /* Pagination */
