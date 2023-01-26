@@ -20,10 +20,11 @@
   }
 }
 
-.customer a .button {
+.customer a.button.button_custom {
   width: 90%;
   color: #fff;
   background-color: #000;
+  text-align: center;
 }
 
 .wishlist_sub {
