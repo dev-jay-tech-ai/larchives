@@ -68,7 +68,7 @@
     display: block;
   }
 
-  .cart_page quantity-input {
+  .cart_page quantity-input.quantity {
     display: none;
   }
   
