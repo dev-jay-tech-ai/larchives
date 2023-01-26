@@ -280,7 +280,7 @@
   }
 
   .customer tr {
-    display: gird;
+    display: grid;
     grid-template: repeat(2,auto) / repeat(4,1fr);
     width: 100%;
   }
