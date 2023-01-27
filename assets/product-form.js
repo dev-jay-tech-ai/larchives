@@ -84,7 +84,7 @@ if (!customElements.get('product-form')) {
            .then(response => response.text())
            .then(cartData => {
              this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
-             this.querySelector('cart-drawer').innerHTML = cartData 
+             // this.querySelector('cart-drawer').innerHTML = cartData 
            });
           
           this.submitButton.classList.remove('loading');
