@@ -1363,6 +1363,10 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 6rem;
 }
 
+.main-custom-style h1 {
+  text-align: center;
+}
+
 .main-custom-style .section--padding {
   padding-bottom: 10rem;
 }
