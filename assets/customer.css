@@ -458,6 +458,12 @@
   }
 }
 
+@media screen and (max-width: 1360px) {
+  :is(.account, .order) > div:nth-of-type(2) > div:first-of-type {
+    padding-right: 8rem;
+  }
+}
+
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .order > div:nth-of-type(2) > div:last-of-type {
     display: flex;
