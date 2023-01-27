@@ -722,11 +722,14 @@ label[for='AddressProvinceNew'] {
 
 .addresses form > div {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
-.addresses form > div.field {
-  text-align: left;
+@media screen and (max-width: 1024px) {
+  .addresses form > div:nth-of-type(11),
+  .addresses form > div:nth-last-of-type {
+    text-align: center;
+  }
 }
 
 .addresses ul {
