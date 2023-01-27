@@ -263,6 +263,8 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
+                              가격 {{ item.price }}
+                              할인가격 {{ item.compare_at_price | money }}
                               {{ item.original_line_price | money }}
                             </s>
                           </dd>
@@ -270,6 +272,8 @@
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
+                            가격 {{ item.price }}
+                            할인가격 {{ item.compare_at_price | money }}
                             {{ item.final_line_price | money }}
                           </dd>
                         </dl>
