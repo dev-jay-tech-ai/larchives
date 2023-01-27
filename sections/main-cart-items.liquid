@@ -85,6 +85,7 @@
                           {{ 'products.product.price.sale_price' | t }}
                         </span>
                         <strong class="cart-item__final-price product-option">
+                          {{ item.price | money }}
                           {{ item.compare_at_price | money }}
                           {{ item.final_price | money }}
                         </strong>
