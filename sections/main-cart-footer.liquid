@@ -20,17 +20,45 @@
               {% render block %}
             {%- when 'subtotal' -%}
               <div class='discounts__input'> REDEEM DISCOUNT CODE
-                <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
-                  {%- if cart.cart_level_discount_applications.size > 0 -%}
-                  {%- for discount in cart.cart_level_discount_applications -%}
-                    <li class="discounts__discount discounts__discount--position">
-                      {%- render 'icon-discount' -%}
-                      {{ discount.title }}
-                      (-{{ discount.total_allocated_amount | money }})
-                    </li>
-                  {%- endfor -%}
-                  {%- endif -%}
-                </ul>
+
+                <div class="discountcodefield"> 
+                  <label for="discount">Discount Code:</label> 
+                  <input autocomplete="off" type="hidden" name="discount" class="discount_code" />
+                  <input autocomplete="off" type="text" name="discount_code" class="discount_code_field" /> 
+                  <input type="button" name="apply_discount_code" class="btn discount_code_btn" value="Apply"/>
+                </div> 
+                
+                <div class="cart__savings discount_apply_code">
+                </div>
+                
+                <script type="text/javascript">
+                $(document).ready(function() { 
+                  $('.discount_code_btn').click(function(){ 
+                    var discountStored = $('input[name="discount_code"]').val();   
+                    $('input[name="discount"]').val(discountStored); 
+                    $('.discount_apply_code').html('<div>Discount code <strong>'+discountStored+'</strong> applied on checkout page. <a href="javascript:void(0);" class="clear-discount">X</a></div>');
+                    localStorage.setItem('storedDiscount', discountStored); 
+                    $('input[name="discount_code"]').val('');
+                  });
+                  
+                  $(document).on("click", 'a.clear-discount', function(event) { 
+                    var discountStored = '';
+                    $('input[name="discount"]').val(discountStored); 
+                    $('.discount_apply_code').html('');
+                    var deletenum = 'storedDiscount';
+                  localStorage.removeItem(deletenum);
+                  });
+                  
+                  if (localStorage.getItem('storedDiscount')){ 
+                    var discountStored = localStorage.getItem('storedDiscount'); 
+                    if(discountStored != '' && discountStored != 'undefined'){
+                      $('input[name="discount"]').val(localStorage.getItem('storedDiscount')); 
+                      $('.discount_apply_code').html('<div>Discount <strong>'+discountStored+'</strong> applied on checkout page. <a href="javascript:void(0);" class="clear-discount">X</a></div>');
+                    }
+                  }    
+                });
+                </script>
+
               </div>
         
               <div class="js-contents" {{ block.shopify_attributes }}>
