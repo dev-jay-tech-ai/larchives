@@ -88,8 +88,7 @@ if (!customElements.get('product-form')) {
            });
 
           let iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
-          iconUpdate = String(parseInt(iconUpdate)+1); 
-          console.log(iconUpdate, typeof iconUpdate)
+          document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)+1); 
           
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
