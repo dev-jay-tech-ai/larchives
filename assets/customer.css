@@ -725,15 +725,12 @@ label[for='AddressProvinceNew'] {
   text-align: left;
 }
 
-@media screen and (max-width: 1024px) {
-  .addresses form > div:nth-of-type(11) {
-    text-align: center;
-  } 
-  
-  .addresses form > div:nth-of-type(12) {
-    text-align: center;
-  }
-  
+.addresses form > div:nth-of-type(11) {
+  text-align: center;
+} 
+
+.addresses form > div:nth-of-type(12) {
+  text-align: center;
 }
 
 .addresses ul {
