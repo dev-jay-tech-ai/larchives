@@ -730,7 +730,7 @@ label[for='AddressProvinceNew'] {
     text-align: center;
   } 
   
-  .addresses form > div:nth-last-of-type {
+  .addresses form > div:nth-of-type(12) {
     text-align: center;
   }
 }
