@@ -519,7 +519,8 @@
   .account table td:first-of-type img { 
     width: 39%;
   }
-
+}
+  
 .account table td:first-of-type a {
   padding: 1.1rem 1.5rem;
   text-decoration: none;
