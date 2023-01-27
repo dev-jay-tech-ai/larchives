@@ -91,6 +91,7 @@ if (!customElements.get('product-form')) {
           })
 
           let iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
+          console.log(iconUpdate)
           document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)+1); 
           
           this.submitButton.classList.remove('loading');
