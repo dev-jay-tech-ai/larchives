@@ -726,6 +726,10 @@ label[for='AddressProvinceNew'] {
 }
 
 @media screen and (max-width: 1024px) {
+  .addresses h2 {
+    text-align: center;
+  }
+
   .addresses form > div:nth-of-type(11) {
     text-align: center;
   } 
