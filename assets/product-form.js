@@ -84,11 +84,11 @@ if (!customElements.get('product-form')) {
            .then(response => response.text())
            .then(cartData => {
              this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
-             this.querySelector('cart-drawer').innerHTML = cartData 
+             this.querySelector('cart-drawer').innerHTML = cartData;
+             const iconUpdate = document.querySeletor('.cart_icon > a ');
+             console.log(iconUpdate)
            });
 
-          fetch(`${routes.cart_update_url}`);
-          
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
           if (!this.error) this.submitButton.removeAttribute('aria-disabled');
