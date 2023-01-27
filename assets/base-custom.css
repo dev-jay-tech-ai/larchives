@@ -1719,10 +1719,6 @@ input[type="range"]::-moz-range-thumb {
   height: 9.2rem;
 }
 
-.product-grid-container {
-  padding: 2rem;
-}
-
 .custom-price-discountrate {
   font-size: 1.2rem;
   font-stretch: normal;
