@@ -80,16 +80,17 @@ if (!customElements.get('product-form')) {
         })
         .finally(() => {
            // cart count update 함수(updateCart) send fetch request to update cart
-          fetch('/?view=cartview')
-           .then(response => response.text())
-           .then(cartData => {
-             this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
-             this.querySelector('cart-drawer').innerHTML = cartData;
-           })
-          .catch((e) => {
-            console.error(e);
-          })
-
+          if(screen.width > 1024 || !isMobile) {
+            fetch('/?view=cartview')
+             .then(response => response.text())
+             .then(cartData => {
+               this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
+               this.querySelector('cart-drawer').innerHTML = cartData;
+             })
+            .catch((e) => {
+              console.error(e);
+            })
+          }
           document.querySelector('.cart_icon > a > div').innerText;
           document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)+1); 
 
