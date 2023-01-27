@@ -56,7 +56,7 @@
   margin-top: 0;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1025px) {
   .customer .field {
     margin: 4rem 0 0 0;
   }
@@ -106,7 +106,7 @@
   padding: 0;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .customer td {
     padding-right: 2.2rem;
   }
@@ -138,7 +138,7 @@
   padding-top: 4rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .customer th,
   .customer td:first-of-type {
     text-align: left;
@@ -171,7 +171,7 @@
   color: #c20c1e;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .customer tbody td:last-of-type {
     padding-bottom: 0;
   }
@@ -207,7 +207,7 @@
   padding-top: 4rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .customer tfoot tr:first-of-type td,
   .customer tfoot tr:first-of-type th {
     padding-top: 2.4rem;
@@ -218,7 +218,7 @@
   padding-bottom: 4rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .customer tfoot tr:last-of-type td,
   .customer tfoot tr:last-of-type th {
     padding-bottom: 2.4rem;
@@ -420,7 +420,7 @@
   color: rgb(var(--color-link));
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1025px) {
   .activate button[name='decline'] {
     margin-top: inherit;
     margin-left: 1rem;
@@ -435,7 +435,7 @@
   padding-right: 2rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   :is(.account, .order) {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -464,7 +464,7 @@
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 989px) {
+@media screen and (min-width: 1025px) and (max-width: 989px) {
   .order > div:nth-of-type(2) > div:last-of-type {
     display: flex;
   }
@@ -537,7 +537,7 @@
   align-items: initial;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .order thead th:nth-last-child(-n + 3),
   .order td:nth-last-child(-n + 3) {
     text-align: right;
@@ -551,7 +551,7 @@
   padding-bottom: 4rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .order tfoot tr:last-of-type td,
   .order tfoot tr:last-of-type th {
     padding-bottom: 2.4rem;
@@ -613,7 +613,7 @@
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .order td .cart-discount {
     display: none;
   }
@@ -628,7 +628,7 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .order tbody ul {
     text-align: left;
   }
@@ -644,7 +644,7 @@
   align-items: flex-end;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .order tbody tr:first-of-type td:first-of-type > div {
     align-items: flex-start;
   }
@@ -703,7 +703,7 @@
   margin-top: 0rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .addresses li > button:first-of-type {
     margin-top: 3rem;
   }
@@ -758,7 +758,7 @@ li[data-address] > h2 {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1025px) {
   li[data-address] > h2 {
     font-size: calc(var(--font-heading-scale) * 2.2rem);
   }
@@ -773,7 +773,7 @@ li[data-address] > h2 {
   margin-left: 0;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1025px) {
   .addresses form > div:nth-of-type(1) {
     margin-right: 2rem;
   }
