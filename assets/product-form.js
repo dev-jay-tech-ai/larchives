@@ -85,7 +85,7 @@ if (!customElements.get('product-form')) {
            .then(cartData => {
              this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
              this.querySelector('cart-drawer').innerHTML = cartData 
-             fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
+             fetch(`${routes.cart_update_url}`);
              
            });
           
