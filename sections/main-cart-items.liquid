@@ -270,10 +270,7 @@
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            가격 {{ item.price | money }}
-                            할인가 {{ item.compare_at_price | money }}
-                        
-                            최종가 {{ item.final_line_price | money }}
+                            {{ item.final_line_price | money }}
                           </dd>
                         </dl>
                       {%- else -%}
