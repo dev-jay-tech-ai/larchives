@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width:1024px){
-  .customer > div:last-of-type {
+  .customer .customer_content > div:last-of-type {
     text-align: center;
   }
 }
