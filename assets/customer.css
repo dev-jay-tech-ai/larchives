@@ -255,7 +255,7 @@
   .customer td {
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
+    padding-left: 2.4rem;
   }
 
   .customer td::before {
