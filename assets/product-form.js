@@ -86,7 +86,7 @@ if (!customElements.get('product-form')) {
              this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
              this.querySelector('cart-drawer').innerHTML = cartData;
              let iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
-             iconUpdate = String(parseInt(iconUpdate + 1)); 
+             iconUpdate = String(parseInt(iconUpdate)+1); 
              console.log(iconUpdate, typeof iconUpdate)
            });
 
