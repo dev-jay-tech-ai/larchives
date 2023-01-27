@@ -755,6 +755,7 @@ li[data-address] {
 }
 
 .addresses h2 {
+  text-transform: uppecase;
   text-align: center;
 }
 
