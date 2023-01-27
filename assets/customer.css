@@ -10,16 +10,11 @@
   margin-bottom: 6rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
   .customer:not(.account):not(.order) {
     max-width: 63rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .customer > h1,
-  .customer__title {
-    margin-bottom: 17.2rem;
   }
 }
 
