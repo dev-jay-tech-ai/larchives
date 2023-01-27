@@ -3,7 +3,7 @@ const LOCAL_STORAGE_DELIMITER = ',';
 const BUTTON_ACTIVE_CLASS = 'active';
 const GRID_LOADED_CLASS = 'loaded';
 
-const selectors = {
+const wishlist_selectors = {
   button: '[button-wishlist]',
   grid: '[grid-wishlist]',
   productCard: '.grid__item',
@@ -36,7 +36,7 @@ const fetchProductCardHTML = (handle) => {
     const text = res;
     const parser = new DOMParser();
     const htmlDocument = parser.parseFromString(text, 'text/html');
-    const productCard = htmlDocument.documentElement.querySelector(selectors.productCard);
+    const productCard = htmlDocument.documentElement.querySelector(wishlist_selectors.productCard);
     return productCard.outerHTML;
   })
   .catch((err) => console.error(`[Shopify Wishlist] Failed to load content for handle: ${handle}`, err));
@@ -70,12 +70,12 @@ const setupButtons = (buttons) => {
 };
 
 const initGrid = () => {
-  const grid = document.querySelector(selectors.grid) || false;
+  const grid = document.querySelector(wishlist_selectors.grid) || false;
   if (grid) setupGrid(grid);
 };
 
 const initButtons = () => {
-  const buttons = document.querySelectorAll(selectors.button) || [];
+  const buttons = document.querySelectorAll(wishlist_selectors.button) || [];
   if (buttons.length) setupButtons(buttons);
   else return;
   const event = new CustomEvent('shopify-wishlist:init-buttons', {
