@@ -757,6 +757,7 @@ li[data-address] {
 .addresses h2 {
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: normal;
 }
 
 li[data-address] > h2 {
