@@ -91,7 +91,7 @@ if (!customElements.get('product-form')) {
               console.error(e);
             })
           }
-          document.querySelector('.cart_icon > a > div').innerText;
+          const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
           document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)+1); 
 
           this.submitButton.classList.remove('loading');
