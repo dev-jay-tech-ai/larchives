@@ -20,43 +20,28 @@
               {% render block %}
             {%- when 'subtotal' -%}
               <div class='discounts__input'> REDEEM DISCOUNT CODE
-
-                <div class="discountcodefield"> 
-                  <label for="discount">Discount Code:</label> 
-                  <input autocomplete="off" type="hidden" name="discount" class="discount_code" />
-                  <input autocomplete="off" type="text" name="discount_code" class="discount_code_field" /> 
-                  <input type="button" name="apply_discount_code" class="btn discount_code_btn" value="Apply"/>
-                </div> 
-                
-                <div class="cart__savings discount_apply_code">
+                <div class="cart-promo">
+                  <h2>ENTER A PROMO CODE</h2>
+                  <input type="text" id="devPromo">
+                  <a href="/checkout?discount=none" id="redemDevPromo">Apply Coupon</a>
                 </div>
-                
-                <script type="text/javascript">
-                $(document).ready(function() { 
-                  $('.discount_code_btn').click(function(){ 
-                    var discountStored = $('input[name="discount_code"]').val();   
-                    $('input[name="discount"]').val(discountStored); 
-                    $('.discount_apply_code').html('<div>Discount code <strong>'+discountStored+'</strong> applied on checkout page. <a href="javascript:void(0);" class="clear-discount">X</a></div>');
-                    localStorage.setItem('storedDiscount', discountStored); 
-                    $('input[name="discount_code"]').val('');
+                <script>
+                  $(document).ready(function(){
+                    //listen to the promo button click
+                    $('#redemDevPromo').on('click', function(event){
+                      //disable the button event
+                      event.preventDefault();
+                      //write the url format
+                      var theUrl = '/checkout?discount=';
+                      //grab the discount code from the input
+                      var theDiscount = $('#devPromo').val();
+                      //full url to redirect to checkout with promo code
+                      var toRedirect = theUrl+theDiscount;
+                      console.log(toRedirect);
+                      //redirect
+                      window.location.href = toRedirect;
+                    });
                   });
-                  
-                  $(document).on("click", 'a.clear-discount', function(event) { 
-                    var discountStored = '';
-                    $('input[name="discount"]').val(discountStored); 
-                    $('.discount_apply_code').html('');
-                    var deletenum = 'storedDiscount';
-                  localStorage.removeItem(deletenum);
-                  });
-                  
-                  if (localStorage.getItem('storedDiscount')){ 
-                    var discountStored = localStorage.getItem('storedDiscount'); 
-                    if(discountStored != '' && discountStored != 'undefined'){
-                      $('input[name="discount"]').val(localStorage.getItem('storedDiscount')); 
-                      $('.discount_apply_code').html('<div>Discount <strong>'+discountStored+'</strong> applied on checkout page. <a href="javascript:void(0);" class="clear-discount">X</a></div>');
-                    }
-                  }    
-                });
                 </script>
 
               </div>
