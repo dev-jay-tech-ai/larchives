@@ -85,11 +85,12 @@ if (!customElements.get('product-form')) {
            .then(cartData => {
              this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
              this.querySelector('cart-drawer').innerHTML = cartData;
-             let iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
-             iconUpdate = String(parseInt(iconUpdate)+1); 
-             console.log(iconUpdate, typeof iconUpdate)
            });
 
+          let iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
+          iconUpdate = String(parseInt(iconUpdate)+1); 
+          console.log(iconUpdate, typeof iconUpdate)
+          
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
           if (!this.error) this.submitButton.removeAttribute('aria-disabled');
