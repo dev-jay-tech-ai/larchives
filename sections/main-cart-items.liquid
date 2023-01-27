@@ -275,7 +275,7 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          할인가 {{ item.selling_plan_allocation.compare_at_price | money }}
+                          할인가 {{ item.selling_plan_allocation }}
                           최종가 {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
