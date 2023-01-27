@@ -278,8 +278,8 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.price | money }}
-                          {{ item.compare_at_price | money }}
+                          가격 {{ item.price | money }}
+                          할인가 {{ item.compare_at_price | money }}
                           {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
