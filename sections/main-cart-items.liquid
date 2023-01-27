@@ -276,8 +276,8 @@
                       {%- else -%}
                         <span class="price price--end">
                           {{ item.original_line_price | money }}
-                          {{ item.price }}
-                          {{ item.compare_at_price | money }}
+                          가격 {{ item.price }}
+                          할인가격 {{ item.compare_at_price | money }}
                         </span>
                       {%- endif -%}
 
