@@ -53,8 +53,7 @@
           {%- for line_item in order.line_items -%}
             <tr role="row">
               <td>
-                <img src="" alt='' data-product-id="{{ line_item.image }}"/>
-                <div>{{ line_item.product_id }}</div>
+                <img src="{{ line_item.image }}" alt='' />
               </td>
               <td
                 id="Row{{ line_item.key }}"
