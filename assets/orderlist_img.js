@@ -2,7 +2,7 @@ const config = fetchConfig('javascript');
 config.headers['X-Requested-With'] = 'XMLHttpRequest';
 delete config.headers['Content-Type'];
 
-const produc_id = '162050248862';
+const product_id = '162050248862';
 
 
 
