@@ -83,9 +83,7 @@ if (!customElements.get('product-form')) {
 
   
 
-class CartItems extends HTMLElement {
-  constructor() {
-    super();
+
 
     this.lineItemStatusElement = document.getElementById('shopping-cart-line-item-status') || document.getElementById('CartDrawer-LineItemStatus');
 
@@ -222,7 +220,7 @@ class CartItems extends HTMLElement {
     const mainCartItems = document.getElementById('main-cart-items') || document.getElementById('CartDrawer-CartItems');
     mainCartItems.classList.remove('cart__items--disabled');
   }
-}
+
 
 
           
