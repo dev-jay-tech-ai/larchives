@@ -80,11 +80,9 @@ if (!customElements.get('product-form')) {
         })
         .finally(() => {
 
-
-  
-
-
-
+          const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
+          cartItems.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+          
     this.lineItemStatusElement = document.getElementById('shopping-cart-line-item-status') || document.getElementById('CartDrawer-LineItemStatus');
 
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
@@ -222,8 +220,6 @@ if (!customElements.get('product-form')) {
   }
 
 
-
-          
 
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
