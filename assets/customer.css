@@ -8,6 +8,15 @@
 .customer__title {
   margin-top: 0;
   margin-bottom: 6rem;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #757575 !important;
 }
 
 @media screen and (min-width: 1025px) {
