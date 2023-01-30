@@ -80,18 +80,7 @@ if (!customElements.get('product-form')) {
         })
         .finally(() => {
 
-           jQuery.getJSON('/cart.js', function(cart) {
-              let cartData = cart.items;
-              console.log(cartData)
-              document.dispatchEvent(new CustomEvent('cart:build' , {bubbles: true})); 
-              document.dispatchEvent(new CustomEvent('cart:refresh', {
-                  bubbles: true,
-                   detail: cartData
-              })); 
-           });
-
-          const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
-          console.log(cartItems);
+          jQuery.post(window.Shopify.routes.root + 'cart/update.js', { updates: [1] });
 
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
