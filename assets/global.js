@@ -6,12 +6,11 @@ function getFocusableElements(container) {
   );
 }
 
-document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
+document.querySelectorAll('[id^="Details-"] summary').forEach((summary,index) => {
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
-
+  console.log(index)
   if(summary.nextElementSibling.getAttribute('id')) {
-    console.log(summary.nextElementSibling)
     console.log(summary.nextElementSibling.getAttribute('id'))
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
