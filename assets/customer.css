@@ -430,7 +430,6 @@
 
 /* Account/Order */
 :is(.account, .order) {
-  text-transfrom: uppercase;
   margin: 0 auto;
   max-width: var(--page-width);
   padding-left: 2rem;
@@ -480,6 +479,7 @@
 }
 
 :is(.account, .order) h2 {
+  text-transfrom: uppercase;
   margin-top: 4rem;
   margin-bottom: 1rem;
 }
