@@ -10,7 +10,7 @@ fetch(`/admin/api/2023-01/products/${product_id}.json`, config)
   .then((response) => response.json())
   .then((response) => {
     if (response.status) {
-      console.log(response.mages)
+      console.log(response.images)
     } 
 
     this.error = false;
