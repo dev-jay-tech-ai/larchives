@@ -483,7 +483,7 @@
   text-transform: uppercase;
   margin-top: 4rem;
   margin-bottom: 1rem;
-  font-family: 4rem;
+  font-size: 4rem;
 }
 
 @media screen and (min-width: 990px) {
