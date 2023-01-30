@@ -284,7 +284,7 @@
 
   .customer tr {
     display: grid;
-    grid-template: repeat(5,auto) / repeat(2,1fr);
+    grid-template: repeat(5,auto) / repeat(1,1fr);
     width: 100%;
     margin-bottom: 4rem;
   }
