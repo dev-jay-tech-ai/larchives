@@ -7,7 +7,7 @@ const product_id = '162050248862';
 
 
 fetch(`/admin/api/2023-01/products/${product_id}.json`, config)
-  .then((response) => response.json())
+  .then((response) => response.text())
   .then((response) => {
     if (response.status) {
       console.log(response.images)
