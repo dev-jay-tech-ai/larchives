@@ -82,15 +82,16 @@ if (!customElements.get('product-form')) {
 
 
   
+       setTimeout(function() {
          jQuery.getJSON('/cart.js', function(cart) {
               let cartData = cart.items;
-              console.log(cartData)
               document.dispatchEvent(new CustomEvent('cart:build' , {bubbles: true})); 
               document.dispatchEvent(new CustomEvent('cart:refresh', {
                   bubbles: true,
                    detail: cartData
               })); 
          });
+       }, 400); 
     
 
           
