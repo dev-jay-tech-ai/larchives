@@ -10,15 +10,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary,index) =>
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
   
-  var isEmpty = function(value){
-    if( value == "" || value == null || value == undefined || ( value != null && typeof value == "object" && !Object.keys(value).length ) ){
-      return true
-    }else{
-      return false
-    }
-  };
-  
-  if(!isEmpty(summary.nextElementSibling.getAttribute('id'))) {
+  if(index<=20 && summary.nextElementSibling.getAttribute('id')) {
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
   
