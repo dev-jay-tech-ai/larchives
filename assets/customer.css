@@ -649,6 +649,10 @@
   .order tbody tr:first-of-type td:first-of-type > div {
     align-items: flex-start;
   }
+  
+  table.order-details td > img {
+    width: 8rem;
+  }
 }
 
 .order .properties {
@@ -691,10 +695,6 @@
 
 .order .regular-price {
   font-size: 1.3rem;
-}
-
-table.order-details td > img {
-  width: 8rem;
 }
 
 /* Addresses */
