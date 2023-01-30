@@ -9,12 +9,12 @@ function getFocusableElements(container) {
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary,index) => {
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
-  console.log(index)
-  if(summary.nextElementSibling.getAttribute('id')) {
-    console.log(summary.nextElementSibling.getAttribute('id'))
-    summary.setAttribute('aria-controls', summary.nextElementSibling.id);
+  if(index <= 20) {
+    if(summary.nextElementSibling.getAttribute('id')) {
+      console.log(summary.nextElementSibling.getAttribute('id'))
+      summary.setAttribute('aria-controls', summary.nextElementSibling.id);
+    }
   }
-
   summary.addEventListener('click', (event) => {
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
   });
