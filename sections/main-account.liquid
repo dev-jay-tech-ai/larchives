@@ -44,7 +44,7 @@
             <tbody role="rowgroup">
               {%- for order in customer.orders -%}
                 <tr role="row">
-                  <td headers="RowOrder ColumnImage" role="cell" data-label="{{ order.line_items }}">
+                  <td headers="RowOrder ColumnImage" role="cell" data-label="{{ order.line_items[0] }}">
                     <img src="https://cdn.shopify.com/s/files/1/0595/6275/4206/products/GCSHIMBL245_3.png?v=1651670182&width=167" />
                   </td>
                   <td
