@@ -12,6 +12,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 
   if(summary.nextElementSibling.getAttribute('id')) {
     console.log(summary.nextElementSibling)
+    console.log(summary.nextElementSibling.getAttribute('id'))
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
 
