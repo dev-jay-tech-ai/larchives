@@ -43,7 +43,7 @@
           <tr role="row">
             <th id="ColumnProduct" scope="col" role="columnheader"> </th>
             <th id="ColumnProduct" scope="col" role="columnheader">{{ 'customer.order.product' | t }}</th>
-            <th id="ColumnSku" scope="col" role="columnheader">{{ 'customer.order.sku' | t }}</th>
+            {% comment %}<th id="ColumnSku" scope="col" role="columnheader">{{ 'customer.order.sku' | t }}</th>{% endcomment %}
             <th id="ColumnPrice" scope="col" role="columnheader">{{ 'customer.order.price' | t }}</th>
             <th id="ColumnQuantity" scope="col" role="columnheader">{{ 'customer.order.quantity' | t }}</th>
             <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.order.total' | t }}</th>
@@ -130,13 +130,14 @@
                   {%- endif -%}
                 </div>
               </td>
+              {% comment %}
               <td
                 headers="Row{{ line_item.key }} ColumnSku"
                 role="cell"
                 data-label="{{ 'customer.order.sku' | t }}"
               >
                 {{ line_item.sku }}
-              </td>
+              </td>{% endcomment %}
               <td
                 headers="Row{{ line_item.key }} ColumnPrice"
                 role="cell"
