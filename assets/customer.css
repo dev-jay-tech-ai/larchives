@@ -479,6 +479,7 @@
 }
 
 :is(.account, .order) h2 {
+  letter-spacing: normal;
   text-transform: uppercase;
   margin-top: 4rem;
   margin-bottom: 1rem;
