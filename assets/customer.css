@@ -291,11 +291,6 @@
     width: 100%;
     margin-bottom: 4rem;
   }
-
-  table.order-details td > img {
-    width: 8rem;
-  }
-
 }
 
 /* Pagination */
@@ -696,6 +691,10 @@
 
 .order .regular-price {
   font-size: 1.3rem;
+}
+
+table.order-details td > img {
+  width: 8rem;
 }
 
 /* Addresses */
