@@ -839,6 +839,12 @@ a.product__text {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .product-media-modal__content > * {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .product-media-modal__content {
     padding: 2rem 11rem;
