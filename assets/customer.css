@@ -292,6 +292,10 @@
     margin-bottom: 4rem;
   }
 
+  table.order-details td > img {
+    width: 8rem;
+  }
+
 }
 
 /* Pagination */
