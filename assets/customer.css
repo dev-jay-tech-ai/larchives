@@ -261,7 +261,7 @@
     padding-left: 2.4rem;
   }
 
-  .customer td:nth-first-of-type::before {
+  .customer td::before:nth-first-of-type {
     display: none;
   }  
 
