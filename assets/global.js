@@ -12,9 +12,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary,index) =>
 
     if(summary.nextElementSibling.getAttribute('id')) {
       summary.setAttribute('aria-controls', summary.nextElementSibling.id);
-    } else {
-      continue;
-    }  
+    } else return;
   summary.addEventListener('click', (event) => {
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
   });
