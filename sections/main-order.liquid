@@ -52,7 +52,7 @@
           {%- for line_item in order.line_items -%}
             <tr role="row">
               <td>
-                <img src="" alt='' />
+                <img src="" alt='' data-product-id="{{ line_item.product_id }}"/>
                 <div>{{ line_item.product_id }}</div>
               </td>
               <td
