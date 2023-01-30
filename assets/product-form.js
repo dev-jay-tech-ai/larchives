@@ -80,6 +80,12 @@ if (!customElements.get('product-form')) {
         })
         .finally(() => {
 
+          fetch(`${routes.cart_update_url}`, config)
+          .then(response => response.json())
+          .then(response => { 
+            console.log(response); 
+          });
+
           const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
           console.log(cartItems);
 
