@@ -20,10 +20,6 @@
   }
 }
 
-table.order-details td > img {
-  width: 6.7rem;
-}
-
 @media screen and (max-width:1024px){
   .customer .customer_content > div:last-of-type {
     text-align: center;
