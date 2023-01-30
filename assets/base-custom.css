@@ -693,7 +693,6 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .customer div > div > p {
-  color: rgba(4,11,9,0.5);
   border-bottom: 1px solid #d0cdd8;
   padding-bottom: 1.9rem;
 }
