@@ -148,8 +148,8 @@
 
   .customer thead th,
   .customer tbody td {
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
   }
 
   .customer th:first-of-type,
