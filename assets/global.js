@@ -9,11 +9,11 @@ function getFocusableElements(container) {
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary,index) => {
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
-  if(index <= 20) {
+
     if(summary.nextElementSibling.getAttribute('id')) {
       summary.setAttribute('aria-controls', summary.nextElementSibling.id);
-    }
-  }
+    } else return
+
   summary.addEventListener('click', (event) => {
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
   });
