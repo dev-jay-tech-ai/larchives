@@ -89,8 +89,6 @@ if (!customElements.get('product-form')) {
               })); 
          });
 
-          const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
-          console.log(cartItems);
 
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
