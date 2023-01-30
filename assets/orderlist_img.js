@@ -4,7 +4,7 @@ delete config.headers['Content-Type'];
 
 const product_id = 'bicolor-accordion-card-wallet';
 
-const target = document.querySelector('table.order-history td > img');
+const target = document.querySelector('table.order-details td > img');
 
 jQuery.getJSON(window.Shopify.routes.root + 'products/'+ product_id +'.js', function(product) {
   console.log(product.images);
