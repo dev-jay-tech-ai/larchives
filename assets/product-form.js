@@ -79,7 +79,16 @@ if (!customElements.get('product-form')) {
           console.error(e);
         })
         .finally(() => {
-
+          jQuery.getJSON('/cart.js', function(cart) {
+            let cartData = cart.items;
+            console.log(cartData)
+            document.dispatchEvent(new CustomEvent('cart:build' , {bubbles: true})); 
+            document.dispatchEvent(new CustomEvent('cart:refresh', {
+                bubbles: true,
+                 detail: cartData
+            })); 
+          });
+          
           jQuery.post(window.Shopify.routes.root + 'cart/update.js', { updates: [1] });
 
           this.submitButton.classList.remove('loading');
