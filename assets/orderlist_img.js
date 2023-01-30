@@ -19,3 +19,7 @@ fetch(`/products/${product_id}.json`)
   .finally(() => {
 
   })
+
+jQuery.getJSON(window.Shopify.routes.root + 'products/'+ product_id +'.js', function(product) {
+  console.log('The title of this product is ' + product.title);
+} );
