@@ -160,6 +160,10 @@
   .customer tbody td {
     vertical-align: top;
   }
+
+  .customer tbody td:first-of-type {
+    padding-top: 2.4rem;
+  }
 }
 
 .customer tbody td:last-of-type {
