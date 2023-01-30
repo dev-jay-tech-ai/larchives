@@ -46,14 +46,11 @@
                 <tr role="row">
                   {% for line_item in order.line_items %}
                     {% if forloop.index == 1 %}
-                    <td headers="RowOrder ColumnImage" role="cell" data-label="{{ line_item.image }}">
-                      <img src="https://cdn.shopify.com/s/files/1/0595/6275/4206/products/GCSHIMBL245_3.png?v=1651670182&width=167" />
+                    <td headers="RowOrder ColumnImage" role="cell" data-label="{{ line_item.product_id }}">
+                      <img src="{{ line_item.image | image_url: width: 167 }}" />
                     </td>
                     {% endif %}
                   {% endfor %}
-                  <td headers="RowOrder ColumnImage" role="cell" data-label="{{ order.line_items | first }}">
-                    <img src="https://cdn.shopify.com/s/files/1/0595/6275/4206/products/GCSHIMBL245_3.png?v=1651670182&width=167" />
-                  </td>
                   <td
                     id="RowOrder"
                     role="cell"
