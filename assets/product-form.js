@@ -84,7 +84,7 @@ if (!customElements.get('product-form')) {
           cartItems.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
           
           updateQuantity(line, quantity, name) {
-            this.enableLoading(line);
+
             console.log('라인: ',line,'양: ',quantity,'네임: ', name)
             const body = JSON.stringify({
               line,
