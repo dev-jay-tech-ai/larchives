@@ -11,6 +11,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
 
   if(summary.nextElementSibling.getAttribute('id')) {
+    console.log(summary.nextElementSibling)
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
 
