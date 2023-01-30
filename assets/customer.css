@@ -148,8 +148,8 @@
 
   .customer thead th,
   .customer tbody td {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
   }
 
   .customer th:first-of-type,
@@ -159,10 +159,6 @@
 
   .customer tbody td {
     vertical-align: top;
-  }
-
-  .customer tbody td:first-of-type {
-    padding-top: 2.4rem;
   }
 }
 
