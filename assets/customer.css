@@ -492,7 +492,7 @@
 @media screen and (min-width: 1025px) {
   :is(.account, .order) h2 {
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 3.9rem;
   }
 }
 
