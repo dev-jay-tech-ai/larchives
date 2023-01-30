@@ -80,11 +80,14 @@ if (!customElements.get('product-form')) {
         })
         .finally(() => {
 
-          fetch(`${routes.cart_update_url}`, config)
-          .then(response => response.json())
-          .then(response => { 
-            console.log(response); 
-          });
+         jQuery.getJSON('/cart.js', function(cart) {
+              let cartData = cart.items;
+              document.dispatchEvent(new CustomEvent('cart:build' , {bubbles: true})); 
+              document.dispatchEvent(new CustomEvent('cart:refresh', {
+                  bubbles: true,
+                   detail: cartData
+              })); 
+         });
 
           const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
           console.log(cartItems);
