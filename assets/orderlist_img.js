@@ -4,7 +4,7 @@ delete config.headers['Content-Type'];
 
 const product_id = 'bicolor-accordion-card-wallet';
 
-fetch(`/products/${product_id}.json`, config)
+fetch(`/products/${product_id}.json`)
   .then((response) => response.text())
   .then((response) => {
     if (response.status) {
