@@ -2,11 +2,9 @@ const config = fetchConfig('javascript');
 config.headers['X-Requested-With'] = 'XMLHttpRequest';
 delete config.headers['Content-Type'];
 
-const product_id = '7162050248862';
+const product_id = 'bicolor-accordion-card-wallet';
 
-
-
-fetch(`/admin/api/2023-01/products/${product_id}.json`, config)
+fetch(`/products/${product_id}.json`, config)
   .then((response) => response.text())
   .then((response) => {
     if (response.status) {
