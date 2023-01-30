@@ -8,7 +8,7 @@ fetch(`/products/${product_id}.json`)
   .then((response) => response.text())
   .then((response) => {
     if (response.status) {
-      console.log(response.images)
+      console.log(response)
     } 
 
     this.error = false;
