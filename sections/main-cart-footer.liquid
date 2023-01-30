@@ -19,29 +19,10 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-              <div class='discounts__input'> REDEEM DISCOUNT CODE
-<!--                 <div class="cart-promo">
-                  <h2>ENTER A PROMO CODE</h2>
-                  <input type="text" id="devPromo">
-                  <a href="/checkout?discount=none" id="redemDevPromo">Apply Coupon</a>
-                </div>
-                <script>
-                  $(document).ready(function(){
-                    //listen to the promo button click
-                    $('#redemDevPromo').on('click', function(event){
-                      //disable the button event
-                      event.preventDefault();
-                      //write the url format
-                      var theUrl = '/checkout?discount=';
-                      //grab the discount code from the input
-                      var theDiscount = $('#devPromo').val();
-                      //full url to redirect to checkout with promo code
-                      console.log(theDiscount)
-                    });
-                  });
-                </script> -->
-
-              </div>
+            
+              {% include 'plus_cart_discount_code' with settings.plus_display_discount_code %}
+            
+              <div class='discounts__input'> REDEEM DISCOUNT CODE</div>
         
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class='totals_title'>TOTALS</div>
