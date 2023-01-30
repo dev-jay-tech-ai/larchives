@@ -81,22 +81,7 @@ if (!customElements.get('product-form')) {
         .finally(() => {
 
           const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
-          cartItems.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
-          
-          function updateQuantity(line, quantity, name) {
-
-            console.log('라인: ',line,'양: ',quantity,'네임: ', name)
-            const body = JSON.stringify({
-              line,
-              quantity,
-              sections: this.getSectionsToRender().map((section) => section.section),
-              sections_url: window.location.pathname
-            });
-          }  
-
-
-
-
+          console.log(cartItems);
 
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
