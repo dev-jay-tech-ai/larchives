@@ -5,6 +5,10 @@ class CartRemoveButton extends HTMLElement {
       event.preventDefault();
       const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
       cartItems.updateQuantity(this.dataset.index, 0);
+
+      const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
+      console.log(document.querySelector('.cart_icon > a > div'));
+      document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)-1); 
     });
   }
 }
