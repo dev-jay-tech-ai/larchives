@@ -89,7 +89,10 @@ if (!customElements.get('product-form')) {
             })); 
           });
           
-          jQuery.post(window.Shopify.routes.root + 'cart/update.js', { updates: [1] });
+          jQuery.post(window.Shopify.routes.root + 'cart/update.js',{ id: key, quantity })
+          .then((response) => {
+            console.log(response)
+          })
 
           this.submitButton.classList.remove('loading');
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
