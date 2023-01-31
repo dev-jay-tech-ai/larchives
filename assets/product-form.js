@@ -134,8 +134,32 @@ if (!customElements.get('product-form')) {
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
 
-            const getSection = document.querySelector('#main-cart-items');
-            getSection.forEach((section => {
+            getSectionsToRender() {
+              return [
+                {
+                  id: 'main-cart-items',
+                  section: document.getElementById('main-cart-items').dataset.id,
+                  selector: '.js-contents',
+                },
+                {
+                  id: 'cart-icon-bubble',
+                  section: 'cart-icon-bubble',
+                  selector: '.shopify-section'
+                },
+                {
+                  id: 'cart-live-region-text',
+                  section: 'cart-live-region-text',
+                  selector: '.shopify-section'
+                },
+                {
+                  id: 'main-cart-footer',
+                  section: document.getElementById('main-cart-footer').dataset.id,
+                  selector: '.js-contents',
+                }
+              ];
+            }
+            
+            this.getSectionsToRender().forEach((section => {
               console.log('섹션', section);
               const elementToReplace = document.querySelector('.js-contents')
                 console.log('대체될 : ',elementToReplace);
