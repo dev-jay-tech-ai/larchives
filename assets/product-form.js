@@ -137,8 +137,8 @@ if (!customElements.get('product-form')) {
             this.cart.getSectionsToRender().forEach((section => {
               const elementToReplace =
                 document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
-              elementToReplace.innerHTML =
-                this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
+                console.log(elementToReplace)
+                elementToReplace.innerHTML = this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
             }));
             
 
