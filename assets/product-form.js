@@ -82,7 +82,7 @@ if (!customElements.get('product-form')) {
           
          fetch(`${routes.cart_change_url}`, config)
           .then((response) => {
-            return response.text();
+            return response.json();
           })
           .then((response) => {
 
