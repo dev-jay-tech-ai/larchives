@@ -85,6 +85,7 @@ if (!customElements.get('product-form')) {
               .then(cartData => {
                 this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
                 this.querySelector('cart-drawer').innerHTML = cartData;
+                
               })
             .catch((e) => {
               console.error(e);
@@ -92,6 +93,10 @@ if (!customElements.get('product-form')) {
           }
         })
 
+        const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
+        console.log(document.querySelector('.cart_icon > a > div'));
+        document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)+1); 
+      
         this.submitButton.classList.remove('loading');
         if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
         if (!this.error) this.submitButton.removeAttribute('aria-disabled');
