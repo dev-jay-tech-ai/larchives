@@ -123,46 +123,17 @@ if (!customElements.get('product-form')) {
           console.error(e);
         })
         .finally(() => {
-          
-         fetch(`${routes.cart_change_url}`, config)
-          .then((response) => {
-            return response.json();
-          })
-          .then((res) => {
-            
-            const format = this.querySelector('[data-money-format]').getAttribute('data-money-format');
-            const subtotal = this.querySelector('.totals__subtotal-value');
-            subtotal.innerText = formatMoney(res.items_subtotal_price, format);
 
-            const items = [
-              {
-                id: 'CartDrawer-CartItems',
-                section: document.getElementById('CartDrawer-CartItems').dataset.id,
-                selector: '.drawer__cart-items-wrapper',
-              }
-            ];
-
-            items.forEach((section) => {
-              console.log('내가 원하는 섹션', section)
-              const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
-              console.log('대체될 : ', elementToReplace);
-              console.log('API로 전달된 섹션', res.sections)
-              // elementToReplace.innerHTML =  
-            })
-
-            // 카트의 세션들을 가져올 것
-
-            
-          })
-          .catch((e) => {
-            console.error(e);
-          })
-          
-          this.submitButton.classList.remove('loading');
-          if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
-          if (!this.error) this.submitButton.removeAttribute('aria-disabled');
-          if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');   
         })
+        .catch((e) => {
+          console.error(e);
+        })
+        
+        this.submitButton.classList.remove('loading');
+        if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
+        if (!this.error) this.submitButton.removeAttribute('aria-disabled');
+        if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');   
+      })
     } 
     
     handleErrorMessage(errorMessage = false) {
