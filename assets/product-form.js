@@ -145,8 +145,8 @@ if (!customElements.get('product-form')) {
             items.forEach((section) => {
               console.log('내가 원하는 섹션', section)
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
-              console.log('대체될 : ',elementToReplace);
-              console.log('API로 전달된 섹션',res.sections)
+              console.log('대체될 : ', elementToReplace);
+              console.log('API로 전달된 섹션', res.sections)
               elementToReplace.innerHTML =  
             })
 
