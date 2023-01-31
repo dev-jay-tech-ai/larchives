@@ -160,6 +160,7 @@ class CartItems extends HTMLElement {
     if (this.currentItemCount === itemCount) {
       const lineItemError = document.getElementById(`Line-item-error-${line}`) || document.getElementById(`CartDrawer-LineItemError-${line}`);
       const quantityElement = document.getElementById(`Quantity-${line}`) || document.getElementById(`Drawer-quantity-${line}`);
+      console.log(lineItemError);
       lineItemError
         .querySelector('.cart-item__error-text')
         .innerHTML = window.cartStrings.quantityError.replace(
