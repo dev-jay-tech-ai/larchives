@@ -123,6 +123,7 @@ class CartItems extends HTMLElement {
         this.classList.toggle('is-empty', parsedState.item_count === 0);
         const cartDrawerWrapper = document.querySelector('cart-drawer');
         const cartFooter = document.getElementById('main-cart-footer');
+        const format = document.querySelector('[data-money-format]').getAttribute('data-money-format');
 
         if (cartFooter) cartFooter.classList.toggle('is-empty', parsedState.item_count === 0);
         if (cartDrawerWrapper) cartDrawerWrapper.classList.toggle('is-empty', parsedState.item_count === 0);
@@ -136,7 +137,7 @@ class CartItems extends HTMLElement {
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
             console.log(parsedState.items_subtotal_price);
           
-            cartFooter.querySelector('.totals__subtotal-value').innerText = parsedState.items_subtotal_price;
+            cartFooter.querySelector('.totals__subtotal-value').innerText = formatMoney(parsedState.items_subtotal_price, format);
         }));
         
         this.updateLiveRegions(line, parsedState.item_count);
