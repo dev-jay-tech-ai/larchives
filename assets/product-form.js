@@ -134,11 +134,13 @@ if (!customElements.get('product-form')) {
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
 
-            const items = {
-              id: 'CartDrawer-CartItems',
-              section: document.getElementById('CartDrawer-CartItems').dataset.id,
-              selector: '.js-contents',
-            };
+            const items = [
+              {
+                id: 'CartDrawer-CartItems',
+                section: document.getElementById('CartDrawer-CartItems').dataset.id,
+                selector: '.js-contents',
+              }
+            ];
             
             items.forEach((section => {
               console.log('섹션', section)
