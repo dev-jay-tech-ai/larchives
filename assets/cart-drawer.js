@@ -8,11 +8,6 @@ class CartDrawer extends HTMLElement {
       document.querySelector('.drawer').style.visibility = 'hidden';
     });
 
-    document.addEventListener('DOMContentLoaded',() => {
-      const target = document.querySelector('#CartDrawer-CartItems');
-      this.updateQuantity(target.dataset.index, target.value, document.activeElement.getAttribute('name'));
-    });
-
     // this.setHeaderCartIconAccessibility();
   }
 
