@@ -10,6 +10,7 @@ class CartDrawer extends HTMLElement {
 
     document.addEventListener('DOMContentLoaded',() => {
       console.log('로딩')
+      this.renderContents();
     });
 
     // this.setHeaderCartIconAccessibility();
