@@ -144,9 +144,9 @@ if (!customElements.get('product-form')) {
             
             items.forEach((section => {
               console.log('섹션', section)
-              const elementToReplace = document.querySelector('.js-contents')
-                console.log('대체될 : ',elementToReplace);
-                elementToReplace.innerHTML = this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
+              const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
+              console.log('대체될 : ',elementToReplace);
+              elementToReplace.innerHTML = this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
             }));
             
 
