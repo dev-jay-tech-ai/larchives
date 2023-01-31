@@ -1,13 +1,9 @@
 {%- liquid
-  if cart == empty
-     if request.page_type == 'index'
-      render 'icon-cart-empty'
-     else 
-      render 'icon-cart-empty-black'
-     endif
-  else
-    render 'icon-cart'
-  endif
+   if request.page_type == 'index'
+    render 'icon-cart-empty'
+   else 
+    render 'icon-cart-empty-black'
+   endif
 -%}
 <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
 {%- if cart != empty -%}
