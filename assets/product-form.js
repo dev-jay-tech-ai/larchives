@@ -127,10 +127,10 @@ if (!customElements.get('product-form')) {
         if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
         if (!this.error) this.submitButton.removeAttribute('aria-disabled');
         if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');   
-      })
+      }
     } 
     
-    handleErrorMessage(errorMessage = false) {
+  handleErrorMessage(errorMessage = false) {
       this.errorMessageWrapper = this.errorMessageWrapper || this.querySelector('.product-form__error-message-wrapper');
       if (!this.errorMessageWrapper) return;
       this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
@@ -141,5 +141,5 @@ if (!customElements.get('product-form')) {
         this.errorMessage.textContent = errorMessage;
       }
     }
-  });
+
 }
