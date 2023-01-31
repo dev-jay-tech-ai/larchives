@@ -89,25 +89,26 @@ if (!customElements.get('product-form')) {
             })); 
           });
 
-         const line = this.dataset.index; 
-         const quantity = this.value; 
-         const name = document.activeElement.getAttribute('name');
-          
-         const body = JSON.stringify({
-          line,
-          quantity
-         });
+       const line = this.dataset.index; 
+       const quantity = this.value; 
+       const name = document.activeElement.getAttribute('name');
+        
+       const body = JSON.stringify({
+        line,
+        quantity,
+        name
+       });
 
-        fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
-          .then((response) => {
-            return response.text();
-          })
-
-        this.submitButton.classList.remove('loading');
-        if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
-        if (!this.error) this.submitButton.removeAttribute('aria-disabled');
-        if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');   
+       fetch(`${routes.cart_change_url}`, config)
+        .then((response) => {
+          return response.text();
         })
+
+       this.submitButton.classList.remove('loading');
+       if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
+       if (!this.error) this.submitButton.removeAttribute('aria-disabled');
+       if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');   
+       })
     } 
     
     handleErrorMessage(errorMessage = false) {
