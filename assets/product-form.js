@@ -133,11 +133,11 @@ if (!customElements.get('product-form')) {
             const format = this.querySelector('[data-money-format]').getAttribute('data-money-format');
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
-
+            console.log(this.cart)
             this.cart.getSectionsToRender().forEach((section => {
               const elementToReplace =
                 document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
-                console.log(elementToReplace)
+                console.log('대체될 : ',elementToReplace);
                 elementToReplace.innerHTML = this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
             }));
             
