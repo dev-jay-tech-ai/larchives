@@ -89,7 +89,7 @@ if (!customElements.get('product-form')) {
             })); 
           });
           
-          jQuery.post(window.Shopify.routes.root + 'cart/update.js',{ id: key, quantity })
+          fetch(window.Shopify.routes.root + 'cart/update.js', { id: key, quantity })
           .then((response) => {
             console.log(response)
           })
