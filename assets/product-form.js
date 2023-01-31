@@ -142,17 +142,13 @@ if (!customElements.get('product-form')) {
               }
             ];
 
-            const sectionInnerHTML = (html, selector) => {
-              return new DOMParser()
-                .parseFromString(html, 'text/html')
-                .querySelector(selector).innerHTML;
-            }
-
             items.forEach((section => {
               console.log('섹션', section)
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               console.log('대체될 : ',elementToReplace);
-              elementToReplace.innerHTML = sectionInnerHTML(res.sections[section.section], section.selector);
+              elementToReplace.innerHTML =  new DOMParser()
+                .parseFromString(res.sections[section.section], 'text/html')
+                .querySelector(section.selector).innerHTML;
             })
 
             
