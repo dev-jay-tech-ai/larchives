@@ -129,7 +129,8 @@ if (!customElements.get('product-form')) {
             return response.json();
           })
           .then((response) => {
-
+            const format = this.querySelector('[data-money-format]').getAttribute('data-money-format');
+            console.log(format)
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = response.items_subtotal_price;
          
