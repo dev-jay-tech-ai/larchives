@@ -194,7 +194,8 @@
                         </button>
                         <input class="cart_quantity__input"
                           type="number"
-                          name="quantity"
+                          {% comment %}name="quantity"{% endcomment %}
+                          name="updates[]"
                           value="{{ item.quantity }}"
                           min="1"
                           aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
