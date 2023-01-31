@@ -131,7 +131,7 @@ if (!customElements.get('product-form')) {
           .then((res) => {
             const format = this.querySelector('[data-money-format]').getAttribute('data-money-format');
             const subtotal = this.querySelector('.totals__subtotal-value');
-            // subtotal.innerText = formatMoney(res.items_subtotal_price, format);
+            subtotal.innerText = formatMoney(res.items_subtotal_price, format);
          
           })
           .catch((e) => {
