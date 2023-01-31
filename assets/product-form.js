@@ -135,6 +135,7 @@ if (!customElements.get('product-form')) {
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
 
             this.cart.getSectionsToRender().forEach((section => {
+              console.log('섹션', section);
               const elementToReplace = document.querySelector('.js-contents')
                 console.log('대체될 : ',elementToReplace);
                 elementToReplace.innerHTML = this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
