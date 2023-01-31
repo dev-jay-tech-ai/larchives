@@ -138,7 +138,7 @@ if (!customElements.get('product-form')) {
               {
                 id: 'CartDrawer-CartItems',
                 section: document.getElementById('CartDrawer-CartItems').dataset.id,
-                selector: '.js-contents',
+                selector: '.drawer__cart-items-wrapper',
               }
             ];
             
