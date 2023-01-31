@@ -132,7 +132,8 @@ if (!customElements.get('product-form')) {
             const format = this.querySelector('[data-money-format]').getAttribute('data-money-format');
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
-
+            const targetTr = this.querySelector('#CartDrawer-Item-1');
+            
             const htmlFormat = `<tr id="CartDrawer-Item-0" class="cart-item" role="row">
                 <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                     <a href="/products/canvas-small-canvas-bag-339933?variant=41299318767774" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
@@ -207,7 +208,8 @@ if (!customElements.get('product-form')) {
                   </div>
                 </td>
               </tr>`;
-    
+              targetTr.before(htmlFormat);
+            
           })
           .catch((e) => {
             console.error(e);
