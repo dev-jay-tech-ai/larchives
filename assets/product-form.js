@@ -138,7 +138,7 @@ if (!customElements.get('product-form')) {
               const elementToReplace =
                 document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               elementToReplace.innerHTML =
-                this.getSectionInnerHTML(res.sections[section.section], section.selector);
+                this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
             }));
             
 
