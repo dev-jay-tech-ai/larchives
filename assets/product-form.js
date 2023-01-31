@@ -86,8 +86,7 @@ if (!customElements.get('product-form')) {
           })
           .then((response) => {
 
-            console.log(this);
-            const subtotal = document.querySelector('.totals__subtotal-value');
+            const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = response.items_subtotal_price;
          
           })
