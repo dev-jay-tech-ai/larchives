@@ -153,7 +153,7 @@ if (!customElements.get('product-form')) {
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               console.log('대체될 : ',elementToReplace);
               elementToReplace.innerHTML = sectionInnerHTML(res.sections[section.section], section.selector);
-            
+            })
 
             
           })
