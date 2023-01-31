@@ -136,6 +136,7 @@ class CartItems extends HTMLElement {
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
         }));
 
+        console.log(cartFooter.querySelector('.totals__subtotal-value'), state.items_subtotal_price)
         cartFooter.querySelector('.totals__subtotal-value').innerText = state.items_subtotal_price;
         
         this.updateLiveRegions(line, parsedState.item_count);
