@@ -154,8 +154,8 @@ class CartItems extends HTMLElement {
         errors.textContent = window.cartStrings.error;
         this.disableLoading();
       });
-  }
-
+  }  
+  /* 수량 업데이트에 대한 에러사항 표기 */
   updateLiveRegions(line, itemCount) {
     if (this.currentItemCount === itemCount) {
       const lineItemError = document.getElementById(`Line-item-error-${line}`) || document.getElementById(`CartDrawer-LineItemError-${line}`);
