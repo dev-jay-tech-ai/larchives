@@ -28,6 +28,7 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
+    console.log('this is woking')
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
   }
 
