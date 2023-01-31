@@ -146,6 +146,7 @@ if (!customElements.get('product-form')) {
               console.log('섹션', section)
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               console.log('대체될 : ',elementToReplace);
+              console.log(res.sections[section.section])
               elementToReplace.innerHTML =  
                 new DOMParser().parseFromString(res.sections[section.section], 'text/html').querySelector(section.selector).innerHTML;
             })
