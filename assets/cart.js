@@ -135,6 +135,8 @@ class CartItems extends HTMLElement {
             elementToReplace.innerHTML =
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
             console.log(parsedState.items_subtotal_price);
+          
+            cartFooter.querySelector('.totals__subtotal-value').innerText = parsedState.items_subtotal_price;
         }));
         
         this.updateLiveRegions(line, parsedState.item_count);
