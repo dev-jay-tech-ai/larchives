@@ -8,9 +8,9 @@ class CartDrawer extends HTMLElement {
       document.querySelector('.drawer').style.visibility = 'hidden';
     });
 
-    document.addEventListener('DOMContentLoaded',(e) => {
-      console.log('로딩')
-      this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+    document.addEventListener('DOMContentLoaded',() => {
+      const target = document.querySelector('#CartDrawer-CartItems');
+      this.updateQuantity(target.dataset.index, target.value, document.activeElement.getAttribute('name'));
     });
 
     // this.setHeaderCartIconAccessibility();
