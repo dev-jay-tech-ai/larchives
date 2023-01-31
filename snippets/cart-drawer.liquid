@@ -57,7 +57,7 @@
       </div>
       <cart-drawer-items {% if cart == empty %}class=" is-empty"{% endif %}>
         <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
-          <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
+          <div id="CartDrawer-CartItems" class="drawer__contents js-contents" data-id={{ section.id }} >
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
