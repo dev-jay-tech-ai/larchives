@@ -134,10 +134,8 @@ class CartItems extends HTMLElement {
             console.log('대체될 : ',elementToReplace);
             elementToReplace.innerHTML =
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
+            console.log(parsedState.items_subtotal_price);
         }));
-
-        console.log(cartFooter.querySelector('.totals__subtotal-value'), state.items_subtotal_price)
-        cartFooter.querySelector('.totals__subtotal-value').innerText = state.items_subtotal_price;
         
         this.updateLiveRegions(line, parsedState.item_count);
         const lineItem = document.getElementById(`CartItem-${line}`) || document.getElementById(`CartDrawer-Item-${line}`);
