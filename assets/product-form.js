@@ -139,7 +139,7 @@ if (!customElements.get('product-form')) {
                     <img class="cart-item__image" src="//cdn.shopify.com/s/files/1/0595/6275/4206/products/BGCANVLI427_7.png?v=1651574032&amp;width=300" alt="" loading="lazy" width="150" height="200">
                 </td>            
                 <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct"><a href="/products/canvas-small-canvas-bag-339933?variant=41299318767774" class="cart-item__name h4 break">BALENCIAGA</a>
-                    <p class="caption-with-letter-spacing light">canvas tote bag</p><dl><div class="product-option">
+                    <p class="caption-with-letter-spacing light">${ res.items[0].product_title }</p><dl><div class="product-option">
                             <dt>COLOUR: </dt>
                             <dd>IVORY</dd>
                           </div></dl>
@@ -162,9 +162,7 @@ if (!customElements.get('product-form')) {
                         <span class="visually-hidden">
                           Sale price
                         </span>
-                        <span class="price price--end">
-                          £445.00
-                        </span>
+                        <span class="price price--end">${ res.items[0].final_price }</span>
                       </div></div>
                 </td>
                 <td class="cart-item__quantity" role="cell" headers="CartDrawer-ColumnQuantity">
