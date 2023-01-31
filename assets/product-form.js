@@ -142,7 +142,7 @@ if (!customElements.get('product-form')) {
               }
             ];
 
-            items.forEach((section => {
+            items.forEach((section) => {
               console.log('섹션', section)
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               console.log('대체될 : ',elementToReplace);
