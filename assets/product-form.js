@@ -122,12 +122,6 @@ if (!customElements.get('product-form')) {
         .catch((e) => {
           console.error(e);
         })
-        .finally(() => {
-
-        })
-        .catch((e) => {
-          console.error(e);
-        })
         
         this.submitButton.classList.remove('loading');
         if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
