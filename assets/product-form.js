@@ -143,13 +143,14 @@ if (!customElements.get('product-form')) {
             ];
 
             items.forEach((section) => {
-              console.log('섹션', section)
+              console.log('내가 원하는 섹션', section)
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               console.log('대체될 : ',elementToReplace);
-              console.log(res.sections[section.section])
+              console.log('API로 전달된 섹션',res.sections)
               elementToReplace.innerHTML =  
-                new DOMParser().parseFromString(res.sections[section.section], 'text/html').querySelector(section.selector).innerHTML;
             })
+
+            // 카트의 세션들을 가져올 것
 
             
           })
