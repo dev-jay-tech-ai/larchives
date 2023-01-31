@@ -133,7 +133,7 @@ if (!customElements.get('product-form')) {
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
 
-            this.getSectionsToRender().forEach((section => {
+            this.cart.getSectionsToRender().forEach((section => {
               const elementToReplace =
                 document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               elementToReplace.innerHTML =
