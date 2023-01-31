@@ -135,9 +135,6 @@ class CartItems extends HTMLElement {
             console.log('대체될 : ',elementToReplace);
             elementToReplace.innerHTML =
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
-            console.log(parsedState.items_subtotal_price);
-          
-            cartFooter.querySelector('.totals__subtotal-value').innerText = formatMoney(parsedState.items_subtotal_price, format);
         }));
         
         this.updateLiveRegions(line, parsedState.item_count);
