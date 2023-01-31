@@ -1,6 +1,10 @@
 {%- liquid
   if cart == empty
-    render 'icon-cart-empty'
+     if request.page_type == 'index'
+      render 'icon-cart-empty'
+     else 
+      render 'icon-cart-empty-black'
+     endif
   else
     render 'icon-cart'
   endif
