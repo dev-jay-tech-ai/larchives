@@ -134,33 +134,14 @@ if (!customElements.get('product-form')) {
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
 
-            const getSectionsToRender = () => {
-              return [
-                {
-                  id: 'main-cart-items',
-                  section: document.getElementById('main-cart-items').dataset.id,
-                  selector: '.js-contents',
-                },
-                {
-                  id: 'cart-icon-bubble',
-                  section: 'cart-icon-bubble',
-                  selector: '.shopify-section'
-                },
-                {
-                  id: 'cart-live-region-text',
-                  section: 'cart-live-region-text',
-                  selector: '.shopify-section'
-                },
-                {
-                  id: 'main-cart-footer',
-                  section: document.getElementById('main-cart-footer').dataset.id,
-                  selector: '.js-contents',
-                }
-              ];
-            }
+            const items = {
+              id: 'CartDrawer-CartItems',
+              section: document.getElementById('CartDrawer-CartItems').dataset.id,
+              selector: '.js-contents',
+            };
             
-            getSectionsToRender().forEach((section => {
-              console.log('섹션', section);
+            items.forEach((section => {
+              console.log('섹션', section)
               const elementToReplace = document.querySelector('.js-contents')
                 console.log('대체될 : ',elementToReplace);
                 elementToReplace.innerHTML = this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
