@@ -148,8 +148,6 @@ if (!customElements.get('product-form')) {
                 .querySelector(selector).innerHTML;
             }
 
-            parsedState
-            
             items.forEach((section => {
               console.log('섹션', section)
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
