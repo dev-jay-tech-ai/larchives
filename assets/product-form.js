@@ -79,36 +79,25 @@ if (!customElements.get('product-form')) {
           console.error(e);
         })
         .finally(() => {
-          jQuery.getJSON('/cart.js', function(cart) {
-            let cartData = cart.items;
-            console.log(cartData)
-            document.dispatchEvent(new CustomEvent('cart:build' , {bubbles: true})); 
-            document.dispatchEvent(new CustomEvent('cart:refresh', {
-                bubbles: true,
-                 detail: cartData
-            })); 
-          });
-
-       const line = this.dataset.index; 
-       const quantity = this.value; 
-       const name = document.activeElement.getAttribute('name');
-        
-       const body = JSON.stringify({
-        line,
-        quantity,
-        name
-       });
-
-       fetch(`${routes.cart_change_url}`, config)
-        .then((response) => {
-          return response.text();
+          
+         fetch(`${routes.cart_change_url}`, config)
+          .then((response) => {
+            return response.text();
+          })
+          .then((response) => {
+            if (response.status) {
+              
+            }
+          })
+          .catch((e) => {
+            console.error(e);
+          })
+          
+          this.submitButton.classList.remove('loading');
+          if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
+          if (!this.error) this.submitButton.removeAttribute('aria-disabled');
+          if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');   
         })
-
-       this.submitButton.classList.remove('loading');
-       if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
-       if (!this.error) this.submitButton.removeAttribute('aria-disabled');
-       if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.add('hidden');   
-       })
     } 
     
     handleErrorMessage(errorMessage = false) {
