@@ -85,11 +85,11 @@ if (!customElements.get('product-form')) {
             return response.text();
           })
           .then((response) => {
-            if (response.status) {
-              console.log(this);
-              const subtotal = document.querySelector('.totals__subtotal-value');
-              subtotal.innerText = response.items_subtotal_price;
-            }
+
+            console.log(this);
+            const subtotal = document.querySelector('.totals__subtotal-value');
+            subtotal.innerText = response.items_subtotal_price;
+         
           })
           .catch((e) => {
             console.error(e);
