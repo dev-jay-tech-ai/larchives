@@ -505,10 +505,10 @@
             </li>
             <li><div><a href="/pages/wishlist">{%- if request.page_type == 'index' -%}{% render 'icon-like' %}{%- else -%}{% render 'icon-like-black' %}{%- endif -%}</a></div></li>
             <li>
-              <div id='cart-icon-bubble' class='cart_icon'>
+              <div class='cart_icon'>
                 <a href="{{ routes.cart_url }}">
                   {%- if request.page_type == 'index' -%}{% render 'icon-cart-empty' %}{%- else -%}{% render 'icon-cart-empty-black' %}{%- endif -%}
-                  {%- if cart.item_count > 0 -%}<div>{{ cart.item_count }}</div>{%- endif -%}
+                  {%- if cart.item_count > 0 -%}<div id='cart-icon-bubble'>{{ cart.item_count }}</div>{%- endif -%}
                 </a>
               </div>
             </li>
