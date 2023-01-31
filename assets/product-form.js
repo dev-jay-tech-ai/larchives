@@ -134,7 +134,7 @@ if (!customElements.get('product-form')) {
             const subtotal = this.querySelector('.totals__subtotal-value');
             subtotal.innerText = formatMoney(res.items_subtotal_price, format);
 
-            getSectionsToRender() {
+            const getSectionsToRender = () => {
               return [
                 {
                   id: 'main-cart-items',
@@ -159,7 +159,7 @@ if (!customElements.get('product-form')) {
               ];
             }
             
-            this.getSectionsToRender().forEach((section => {
+            getSectionsToRender().forEach((section => {
               console.log('섹션', section);
               const elementToReplace = document.querySelector('.js-contents')
                 console.log('대체될 : ',elementToReplace);
