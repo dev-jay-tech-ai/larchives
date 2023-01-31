@@ -88,6 +88,10 @@ if (!customElements.get('product-form')) {
                  detail: cartData
             })); 
           });
+
+         const line = this.dataset.index; 
+         const quantity = this.value; 
+         const name = document.activeElement.getAttribute('name');
           
          const body = JSON.stringify({
           line,
