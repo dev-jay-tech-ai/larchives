@@ -141,13 +141,20 @@ if (!customElements.get('product-form')) {
                 selector: '.drawer__cart-items-wrapper',
               }
             ];
+
+            const sectionInnerHTML = (html, selector) => {
+              return new DOMParser()
+                .parseFromString(html, 'text/html')
+                .querySelector(selector).innerHTML;
+            }
+
+            parsedState
             
             items.forEach((section => {
               console.log('섹션', section)
               const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
               console.log('대체될 : ',elementToReplace);
-              elementToReplace.innerHTML = this.cart.getSectionInnerHTML(res.sections[section.section], section.selector);
-            }));
+              elementToReplace.innerHTML = sectionInnerHTML(res.sections[section.section], section.selector);
             
 
             
