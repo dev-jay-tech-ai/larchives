@@ -38,7 +38,7 @@ class CartDrawer extends HTMLElement {
       const focusElement = this.querySelector('.drawer__inner') || this.querySelector('.drawer__close');
       trapFocus(containerToTrapFocusOn, focusElement);
     }, { once: true });
-
+    console.log('열렸습니다.')
     document.body.classList.add('overflow-hidden');
   }
 
