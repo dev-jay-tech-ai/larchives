@@ -97,11 +97,11 @@
   }
 }
 
-.price price--end {
+.price.price--end {
   color: #c20c1e;
 }
 
-.price price--end > s {
+.price.price--end > s {
   color: #000;
   font-size: 1.2rem;
 }
