@@ -25,19 +25,6 @@ if (!customElements.get('product-form')) {
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
       delete config.headers['Content-Type'];
 
-      if(screen.width > 1024 || !isMobile) {
-        fetch('/?view=cartview')
-          .then(response => response.text())
-          .then(cartData => {
-            this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
-            this.querySelector('cart-drawer').innerHTML = cartData;
-            
-          })
-        .catch((e) => {
-          console.error(e);
-        })
-      }
-
       const formData = new FormData(this.form);
       if (this.cart) {
         formData.append('sections', this.cart.getSectionsToRender().map((section) => section.id));
@@ -86,7 +73,18 @@ if (!customElements.get('product-form')) {
           console.error(e);
         })
         .finally(() => {
-
+          
+          if(screen.width > 1024 || !isMobile) {
+            fetch('/?view=cartview')
+              .then(response => response.text())
+              .then(cartData => {
+                this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
+                this.querySelector('cart-drawer').innerHTML = cartData;
+              })
+            .catch((e) => {
+              console.error(e);
+            })
+          }
         })
 
         const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
