@@ -8,12 +8,16 @@ class CartDrawer extends HTMLElement {
       document.querySelector('.drawer').style.visibility = 'hidden';
     });
 
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if(screen.width > 1024 || !isMobile) {
+      this.setHeaderCartIconAccessibility();
+    }
     // this.setHeaderCartIconAccessibility();
   }
 
   setHeaderCartIconAccessibility() {
-    const cartLink = document.querySelector('#cart-icon-bubble');
-    cartLink.setAttribute('role', 'button');
+    const cartLink = document.querySelector('.product-form__submit');
+    cartLink.setAttribute('role', 'submit');
     cartLink.setAttribute('aria-haspopup', 'dialog');
     cartLink.addEventListener('click', (event) => {
       event.preventDefault();
