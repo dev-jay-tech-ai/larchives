@@ -354,7 +354,7 @@
         <nav>
           <div class='header_custom_style'>
             <div><a href="/pages/about-us" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>ABOUTUS</a></div>
-            <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>FOR PARTNERS</a></div>
+            {% comment %}<div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>FOR PARTNERS</a></div>{% endcomment %}
             <div><a href="#" class='header_text_style{% if request.page_type == 'index' %} header_text_reverse{% endif -%}'>DELIVERY</a></div>
             <div>
               {%- if shop.customer_accounts_enabled -%}
