@@ -1885,7 +1885,7 @@ nav {
   height: 12px;
   display: flex;
   justify-content: flex-end;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 0.8rem;
   margin-right: 8rem;
 }
