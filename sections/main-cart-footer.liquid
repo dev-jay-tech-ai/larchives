@@ -20,9 +20,6 @@
               {% render block %}
             {%- when 'subtotal' -%}
 
-              <script src="{{ 'discounter.bundled.js' | asset_url }}" type="module"></script>
-              <discounter-form empty-msg></discounter-form>
-              <discounter-summary></discounter-summary>
               {% render 'cart_discount_code' %}
             
               <div class='discounts__input'> REDEEM DISCOUNT CODE</div>
