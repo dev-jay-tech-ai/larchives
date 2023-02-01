@@ -1886,6 +1886,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: .8rem;
 }
 
 .header_custom_style > div {
