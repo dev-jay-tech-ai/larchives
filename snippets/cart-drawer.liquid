@@ -148,17 +148,17 @@
                                   {{ 'products.product.price.sale_price' | t }}
                                 </span>
                                 <span class="price price--end">
-                                {{ item.final_line_price | money }}
+                                {{ item.original_line_price | money }}<br/>
                                 {% if item.variant.compare_at_price > item.variant.price %}
-                                 <div><s>{{ item.variant.compare_at_price | money }}</s></div>
+                                 <s>{{ item.variant.compare_at_price | money }}</s>
                                 {% endif %}
                                 </span>
                               </div>
                             {%- else -%}
                               <span class="price price--end">
-                              {{ item.original_line_price | money }}
+                              {{ item.original_line_price | money }}<br/>
                               {% if item.variant.compare_at_price > item.variant.price %}
-                               <div><s>{{ item.variant.compare_at_price | money }}</s></div>
+                               <s>{{ item.variant.compare_at_price | money }}</s>
                               {% endif %}
                               </span>
                             {%- endif -%}
