@@ -136,7 +136,8 @@
                           </div>
 
                           <div class="cart-item__price-wrapper">
-                             <div class="cart-item__discounted-prices">
+                            {%- if item.original_line_price != item.final_line_price -%}
+                              <div class="cart-item__discounted-prices">
                                 <span class="visually-hidden">
                                   {{ 'products.product.price.regular_price' | t }}
                                 </span>
@@ -150,6 +151,12 @@
                                   {{ item.final_line_price | money }}
                                 </span>
                               </div>
+                            {%- else -%}
+                              <span class="price price--end">
+                                {{ item.original_line_price | money }}
+                              </span>
+                            {%- endif -%}
+                      
                             {%- if item.variant.available and item.unit_price_measurement -%}
                               <div class="unit-price caption">
                                 <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
