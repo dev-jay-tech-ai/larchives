@@ -78,7 +78,7 @@ if (!customElements.get('product-form')) {
         .catch((e) => {
           console.error(e);
         })
-        .finally(() => {
+        .finally(() => {/*
           if(screen.width > 1024 || !isMobile) {
             fetch('/?view=cartview')
               .then(response => response.text())
@@ -90,7 +90,7 @@ if (!customElements.get('product-form')) {
             .catch((e) => {
               console.error(e);
             })
-          }
+          }*/
         })
 
         const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
