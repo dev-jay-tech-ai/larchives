@@ -20,12 +20,6 @@ if (!customElements.get('product-form')) {
       this.submitButton.setAttribute('aria-disabled', true);
       this.submitButton.classList.add('loading');
       if(this.querySelector('.loading-overlay__spinner')) this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
-      
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      if(screen.width > 1024 || !isMobile) {
-        const cart_popup = document.querySelector('.drawer');
-        cart_popup.style.visibility = 'visible';
-      }
 
       const config = fetchConfig('javascript');
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
@@ -91,6 +85,12 @@ if (!customElements.get('product-form')) {
               console.error(e);
             })
           }*/
+
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          if(screen.width > 1024 || !isMobile) {
+            const cart_popup = document.querySelector('.drawer');
+            cart_popup.style.visibility = 'visible';
+          }
         })
 
         const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
