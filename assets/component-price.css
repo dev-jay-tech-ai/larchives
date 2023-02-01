@@ -83,6 +83,15 @@
   color: rgba(var(--color-foreground), 0.7);
 }
 
+.price.price--end {
+  color: #c20c1e;
+}
+
+.price.price--end > s {
+  color: #000;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 1024px) {
   .price {
     margin-bottom: 0;
@@ -95,13 +104,9 @@
   .price--on-sale .price-item--regular {
     font-size: 1.4rem;
   }
+
+  .price.price--end > s {
+    font-size: .8rem;
+  }
 }
 
-.price.price--end {
-  color: #c20c1e;
-}
-
-.price.price--end > s {
-  color: #000;
-  font-size: 1.2rem;
-}
