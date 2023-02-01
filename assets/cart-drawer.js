@@ -7,7 +7,6 @@ class CartDrawer extends HTMLElement {
       this.close.bind(this);
       document.querySelector('.drawer').style.visibility = 'hidden';
     });
-
     // this.setHeaderCartIconAccessibility();
   }
 
