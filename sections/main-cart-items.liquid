@@ -266,9 +266,12 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          할인가1 {{ item.line_level_total_discount }}
-                          할인가2 {{ item.line_price }}
-                          최종가 {{ item.original_line_price | money }}
+                          최종가{{ item.final_price | money }}
+                          {% if item.variant.compare_at_price > item.variant.price %}
+                            <s>{{ item.variant.compare_at_price | money }}</s>
+                          {% endif %}
+                          할인가 {{ item.line_price }}
+                          오리지널가격 {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
 
