@@ -76,7 +76,12 @@ if (!customElements.get('product-form')) {
                 this.querySelector('cart-drawer').innerHTML = cartData;
 
                 const cart_popup = document.querySelector('.drawer');
-                cart_popup.style.visibility = 'visible';   
+                cart_popup.style.visibility = 'visible'; 
+
+                const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
+                console.log(document.querySelector('.cart_icon > a > div'));
+                document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)+1); 
+
               })
               .catch((e) => {
                 console.error(e);
