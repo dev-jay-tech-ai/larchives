@@ -73,6 +73,7 @@ if (!customElements.get('product-form')) {
           console.error(e);
         })
         .finally(() => {
+          
           if(screen.width > 1024 || !isMobile) {
             fetch('/?view=cartview')
               .then(response => response.text())
