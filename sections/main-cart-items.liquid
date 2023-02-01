@@ -296,6 +296,10 @@
 
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+
+    <script src="{{ 'discounter.bundled.js' | asset_url }}" type="module"></script>
+    <discounter-form empty-msg></discounter-form>
+    <discounter-summary></discounter-summary>
   </form>
 </cart-items>
 
