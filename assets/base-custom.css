@@ -870,13 +870,14 @@ object-position: top; #insta-feed {
 }
 
 .multi-accordion details > div {
+  padding-left: 2rem;
   padding-bottom: 3rem;
   font-size: 14px;
   color: rgba(4, 11, 9, 0.7);
 }
 
 .multi-accordion details > div .cont {
-  /* padding-left: 4rem; */
+  padding-left: 4rem;
 }
 
 /* 열림 아이템 */
@@ -1368,13 +1369,13 @@ input[type="range"]::-moz-range-thumb {
 .main-custom-style .section--padding {
   padding-bottom: 10rem;
 }
- 
+/* 
 @media screen and (max-width: 1024px) {
   .main-custom-style {
     padding-right: 2rem;
     padding-left: 2rem;
   }
-}
+}*/
 
 @media screen and (min-width: 1025px) {
   .main-custom-style {
