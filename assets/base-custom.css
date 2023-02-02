@@ -876,7 +876,7 @@ object-position: top; #insta-feed {
 }
 
 .multi-accordion details > div .cont {
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
 }
 
 /* 열림 아이템 */
