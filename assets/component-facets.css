@@ -912,7 +912,7 @@ input.mobile-facets__checkbox {
   position: sticky;
   display: flex;
   z-index: 2;
-  /** margin-top: auto; */
+  margin-top: 2.7rem;
   background-color:rgb(var(--color-background));
   background: var(--gradient-background);
 }
