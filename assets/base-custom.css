@@ -653,6 +653,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
   display: flex;
   border-bottom: 1px solid rgba(var(--color-foreground),.1);
   padding: 2rem;
+  justify-content: space-between;
 }
 
 .menu-drawer_top svg {
