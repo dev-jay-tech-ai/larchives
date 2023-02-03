@@ -2488,10 +2488,6 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 1024px) {
-  .header__icon,
-  .header__icon--cart .icon {
-    padding-top: .5rem;
-  }
   menu-drawer ~ .header__icons .header__icon--account {
     display: none;
   }
