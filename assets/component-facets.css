@@ -688,7 +688,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 }
 
 .mobile-facets__open:hover {
-  color: rgb(var(--color-link));
+  /* color: rgb(var(--color-link)); */
 }
 
 .mobile-facets__open:hover line,
