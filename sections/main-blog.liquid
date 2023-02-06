@@ -26,10 +26,9 @@
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
     <div class='blog-nav'>
      <a href=''>All</a>
-
      {%- for article in blog.articles -%}
-       {% for tag in article.tags -%}
-        {{ tag }}
+      {% for tag in article.tags -%}
+      <a href='#'>{{ tag }}</a>
       {%- endfor %}
     {%- endfor %}
     </div> 
