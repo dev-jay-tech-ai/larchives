@@ -28,8 +28,10 @@
      <a href=''>All</a>
      {%- for article in blog.articles -%}
        {% for tag in article.tags -%}
-         &nbsp;&nbsp;&nbsp;{{ tag }}
-         {% break %}
+         {% if tag.account > 0 %} 
+           &nbsp;&nbsp;&nbsp;{{ tag }}
+           {% break %}
+         {% endif %}
       {%- endfor %}
     {%- endfor %}
     </div> 
