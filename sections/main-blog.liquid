@@ -30,7 +30,7 @@
      {%- for article in blog.articles -%}
        {% for tag in article.tags -%}
         {% assign controllerName = tag | split: '_' | first | split: '' %}
-        
+        -{{ controllerName }}
         {% assign controllers = controllers | uniq | concat: controllerName %}
       {%- endfor %}
     {%- endfor %}
