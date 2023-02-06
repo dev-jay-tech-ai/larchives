@@ -33,8 +33,8 @@
     {%- endfor %}
     </div> 
     <script>
-      const blogNav = document.querySelector('.blog-nav');
-      console.log(blogNav.innerText)
+      const blogNavArr = document.querySelector('.blog-nav').innerText.split(' ');
+      console.log(blogNavArr);
     </script>
     <div {% if  paginate.next.url %}data-next-url={{ paginate.next.url }}{% endif %} class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom articles-on-page">
       {%- for article in blog.articles -%}
