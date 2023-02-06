@@ -68,7 +68,7 @@ if (!customElements.get('product-form')) {
           } else {
             this.cart.renderContents(response);
           }
-          
+          /*
           if(screen.width > 1024 || !isMobile) {
             fetch('/?view=cartview')
               .then(response => response.text())
@@ -87,7 +87,7 @@ if (!customElements.get('product-form')) {
               .catch((e) => {
                 console.error(e);
               })
-            }
+            }*/
           })
         .catch((e) => {
           console.error(e);
