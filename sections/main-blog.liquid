@@ -27,15 +27,9 @@
     <div class='blog-nav'>
      <a href=''>All</a>
 
-      {% assign controllers = '' | split: '' %}
-      {% for operation in menuItems %}
-          {% assign controllerName = operation.Title | split: '_' | first | split: '' %}
-          {% assign controllers = controllers | concat: controllerName %}
-      {% endfor %}
-  
      {%- for article in blog.articles -%}
        {% for tag in article.tags -%}
-        {% assign controllerName = tag %}
+        {% assign controllerName = tag | split: '_' | first | split: '' %}
         {% assign controllers = controllers | uniq | concat: controllerName %}
       {%- endfor %}
     {%- endfor %}
