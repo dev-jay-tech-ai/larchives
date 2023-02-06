@@ -58,7 +58,7 @@ if (!customElements.get('product-form')) {
           }
 
           this.error = false;
-          /*
+         
           const quickAddModal = this.closest('quick-add-modal');
           if (quickAddModal) {
             document.body.addEventListener('modalClosed', () => {
@@ -67,7 +67,8 @@ if (!customElements.get('product-form')) {
             quickAddModal.hide(true);
           } else {
             this.cart.renderContents(response);
-          }*/
+          }
+          
           if(screen.width > 1024 || !isMobile) {
             fetch('/?view=cartview')
               .then(response => response.text())
