@@ -34,7 +34,11 @@
     </div> 
     <script>
       const blogNavArr = document.querySelector('.blog-nav').innerText.split(' ');
-      console.log(blogNavArr);
+      let result = [];
+      for(v of blogNavArr) {
+        if (!result.includes(v)) result.push(v);
+      }
+      console.log(result);
     </script>
     <div {% if  paginate.next.url %}data-next-url={{ paginate.next.url }}{% endif %} class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom articles-on-page">
       {%- for article in blog.articles -%}
