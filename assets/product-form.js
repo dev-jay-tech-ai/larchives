@@ -61,11 +61,13 @@ if (!customElements.get('product-form')) {
          
           const quickAddModal = this.closest('quick-add-modal');
           if (quickAddModal) {
+            console.log('here')
             document.body.addEventListener('modalClosed', () => {
               setTimeout(() => { this.cart.renderContents(response) });
             }, { once: true });
             quickAddModal.hide(true);
           } else {
+            console.log('there')
             this.cart.renderContents(response);
           }
           /*
