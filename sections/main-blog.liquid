@@ -26,14 +26,20 @@
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
     <div class='blog-nav'>
      <a href=''>All</a>
+
+      {% assign controllers = '' | split: '' %}
+      {% for operation in menuItems %}
+          {% assign controllerName = operation.Title | split: '_' | first | split: '' %}
+          {% assign controllers = controllers | concat: controllerName %}
+      {% endfor %}
+  
      {%- for article in blog.articles -%}
        {% for tag in article.tags -%}
-         {% if tag.account > 0 %} 
-           &nbsp;&nbsp;&nbsp;{{ tag }}
-           {% break %}
-         {% endif %}
+        {% assign controllerName = tag | split: '_' | first | split: '' %}
+        {% assign controllers = controllers | concat: controllerName %}
       {%- endfor %}
     {%- endfor %}
+    {{ controllers }}
     </div> 
     <div {% if  paginate.next.url %}data-next-url={{ paginate.next.url }}{% endif %} class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom articles-on-page">
       {%- for article in blog.articles -%}
