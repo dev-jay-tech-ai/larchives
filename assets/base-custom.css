@@ -20,6 +20,10 @@
   }
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
 .collection {
   padding: 0 2rem;
 }
