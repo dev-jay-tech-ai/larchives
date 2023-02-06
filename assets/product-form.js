@@ -74,13 +74,8 @@ if (!customElements.get('product-form')) {
               .then(cartData => {
                 this.querySelector('cart-drawer').classList.contains('is-empty') && this.querySelector('cart-drawer').classList.remove('is-empty');
                 this.querySelector('cart-drawer').innerHTML = cartData;
-
                 const cart_popup = document.querySelector('.drawer');
                 cart_popup.style.visibility = 'visible'; 
-
-                const iconUpdate = document.querySelector('.cart_icon > a > div').innerText;
-                console.log(document.querySelector('.cart_icon > a > div'));
-                document.querySelector('.cart_icon > a > div').innerText = String(parseInt(iconUpdate)+1); 
                 this.cart.renderContents(response);
               })
               .catch((e) => {
