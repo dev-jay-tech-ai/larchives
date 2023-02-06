@@ -24,21 +24,14 @@
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <div>{% render 'breadcrumb' %}</div>
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
-    {% assign array = 'c|c|b|b|a|a' | split: '|' %}
-    {% assign result = array[1] %}
-    
-    {% for item in array %}
-        {% unless result contains item %}
-            {% capture result %}{{ result }}|{{ item }}{% endcapture %}
-        {% endunless %}
-    {% endfor %}
-    
-    {{ result | split: '|' | sort | join: ', ' }}
-    
     <div class='blog-nav'>
      <a href=''>All</a>
-     {%- for article in blog.articles -%}{% for tag in article.tags -%}&nbsp;&nbsp;&nbsp;{{ tag }}{%- endfor %}{%- endfor %}
+     {%- for article in blog.articles -%}
+       {% for tag in article.tags -%}
+         &nbsp;&nbsp;&nbsp;{{ tag }}
+         {% break %}
+      {%- endfor %}
+    {%- endfor %}
     </div> 
     <div {% if  paginate.next.url %}data-next-url={{ paginate.next.url }}{% endif %} class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %} blog-articles-custom articles-on-page">
       {%- for article in blog.articles -%}
