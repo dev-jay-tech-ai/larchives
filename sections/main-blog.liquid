@@ -29,8 +29,8 @@
 
      {%- for article in blog.articles -%}
        {% for tag in article.tags -%}
-        
-        {% assign controllers = controllers | uniq | concat: tag %}
+        {% assign controllerName = tag | split: '_' | first | split: '' %}
+        {% assign controllers = controllers | uniq | concat: controllerName %}
       {%- endfor %}
     {%- endfor %}
     {{ controllers }}
