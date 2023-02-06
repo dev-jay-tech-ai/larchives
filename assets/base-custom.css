@@ -471,7 +471,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -50%);
 }
 
 .newbanner-conent div,
