@@ -471,6 +471,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 @media screen and (max-width: 1024px) {
   .brand-banner-container {
     columns: 2;
+    column-gap: 0;
   }
 
   .brand-banner-container > div {
