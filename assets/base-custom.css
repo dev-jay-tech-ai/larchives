@@ -470,7 +470,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 
 @media screen and (max-width: 1024px) {
   .brand-banner-container {
-    colums: 2;
+    columns: 2;
   }
 }
 
