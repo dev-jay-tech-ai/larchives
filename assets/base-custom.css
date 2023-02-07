@@ -455,8 +455,8 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .brand-banner-container > div {
-  border-bottom: 1px solid rgba(4,11,9,.1);
-  width: 50%;
+  /* border-bottom: 1px solid rgba(4,11,9,.1);
+  width: 50%; */
   text-align: center;
   padding: 1.85rem 4.25rem;
 }
@@ -477,8 +477,8 @@ vertical-slider .slider-button[disabled='disabled'] path {
     flex-wrap: nowrap;
   }
   .brand-banner-container > div {
-    width: 25%;
-    padding: 4rem 8.9rem;
+    /* width: 25%;
+    padding: 4rem 8.9rem; */
   }
   .brand-banner-container > div:nth-child(2) {
     border-right: 1px solid rgba(4,11,9,.1);
