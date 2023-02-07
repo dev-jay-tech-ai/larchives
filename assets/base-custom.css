@@ -50,11 +50,8 @@
 }
 
 .slide {
-  width: 25%;
+  width: 250px;
 }  
-
-
-
 
 .collection {
   padding: 0 2rem;
@@ -466,6 +463,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .brand-banner-container > div > img  {
+  width: 100%;
   object-fit: cover;
   vertical-align: middle;
   opacity: .2;
