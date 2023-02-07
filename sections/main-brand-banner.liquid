@@ -61,12 +61,21 @@
   width: auto;
 }
 
+@keyframes scroll  {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7))
+  }
+}  
+
 .slider-track {
   animation: scroll 40s linear infinite;
 } 
 
 .slide {
-  
+  width: 250px;
 }  
   
 {% endstyle %}
