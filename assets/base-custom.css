@@ -1238,7 +1238,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 3rem 6.5rem;
 }
 
-.maga-menu-banner h3 {
+.maga-menu-banner > h3 {
   font-size: 2.4rem;
   color: #fff;
   font-weight: normal;
@@ -1251,14 +1251,14 @@ input[type="range"]::-moz-range-thumb {
   height: 2.9rem;
 }
 
-.maga-menu-banner a {
+.maga-menu-banner > a {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
   margin: 0 auto;
 }
 
-.maga-menu-banner p {
+.maga-menu-banner > p {
   font-family: Poppins;
   font-size: 1.6rem;
   font-weight: normal;
