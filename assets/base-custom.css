@@ -449,9 +449,9 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .brand-banner-container {
-  display: flex;
-  /* flex-wrap: wrap; */
-  border-top: 1px solid rgba(4,11,9,.1);
+  /* display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(4,11,9,.1); */
 }
 
 .brand-banner-container > div {
