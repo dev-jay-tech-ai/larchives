@@ -1182,7 +1182,7 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
 }
 
-.mega-menu__content > div {
+.mega-menu__content .page-width > div {
   display: flex;
   justify-content: space-between;
   letter-spacing: normal;
