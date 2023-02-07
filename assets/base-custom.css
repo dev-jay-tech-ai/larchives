@@ -447,8 +447,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 
 .brand-banner-container {
   /* display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid rgba(4,11,9,.1); */
+  flex-wrap: wrap;*/
 }
 
 .brand-banner-container > div {
@@ -467,6 +466,12 @@ vertical-slider .slider-button[disabled='disabled'] path {
   object-fit: cover;
   vertical-align: middle;
   opacity: .2;
+}
+
+@media screen and (max-width: 1024px) {
+  .brand-banner-container {
+    colums: 2;
+  }
 }
 
 @media screen and (min-width: 1025px) {
