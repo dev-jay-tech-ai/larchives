@@ -10,57 +10,59 @@
           <div class='page-width'>
             <div>   
               <div class="mega-menu_list-title">{{ link.title | escape }}</div>
-                <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} page-width" {% if link.title == 'DESIGNERS' %}style="columns: 4"{% endif %} role="list">  
-                {%- for childlink in link.links -%}
-                <li>
-                  <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link  {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.links != blank -%}upper{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                    {{ childlink.title | escape | capitalize }}
-                  </a>
-                  {%- if childlink.links != blank -%}
-                  <ul class="list-unstyled" role="list">
-                  {%- for grandchildlink in childlink.links -%}
-                    <li>
-                      <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                        {{ grandchildlink.title | escape }}
-                      </a>
-                    </li>
-                  {%- endfor -%}
-                  </ul>
-                </li>
-                {%- endif -%}
+              <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} page-width" {% if link.title == 'DESIGNERS' %}style="columns: 4"{% endif %} role="list">  
+              {%- for childlink in link.links -%}
+              <li>
+                <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link  {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.links != blank -%}upper{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                  {{ childlink.title | escape | capitalize }}
+                </a>
+                {%- if childlink.links != blank -%}
+                <ul class="list-unstyled" role="list">
+                {%- for grandchildlink in childlink.links -%}
+                  <li>
+                    <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      {{ grandchildlink.title | escape }}
+                    </a>
+                  </li>
                 {%- endfor -%}
                 </ul>
+              </li>
+              {%- endif -%}
+              {%- endfor -%}
+              </ul>
               
-                {% if link.title != 'DESIGNERS' %} 
-                <div class="mega-menu_list-title">DESIGNERS</div>
-                <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
-                {% if link.title == 'CLOTHES' %}
-                  <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
-                  <li><a href="/collections/valentino" class="mega-menu__link mega-menu__link--level-2 link">Valentino</a></li>
-                  <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
-                  <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
-                  <li><a href="/collections/alexander-mcqueen" class="mega-menu__link mega-menu__link--level-2 link">Alexander mcqueen</a></li>
-                  <li><a href="/collections/thom-browne" class="mega-menu__link mega-menu__link--level-2 link">Thom browne</a></li>
-                {% elsif link.title == 'BAG' %}
-                  <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
-                  <li><a href="/collections/dior" class="mega-menu__link mega-menu__link--level-2 link">Dior</a></li>
-                  <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
-                  <li><a href="/collections/yves-saint-laurent" class="mega-menu__link mega-menu__link--level-2 link">Yves saint laurent</a></li>
-                  <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
-                {% elsif link.title == 'SHOES' %}
-                  <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Chanel</a></li>
-                  <li><a href="/collections/manolo-blahnik" class="mega-menu__link mega-menu__link--level-2 link">Manolo blahnik</a></li>
-                  <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
-                  <li><a href="/collections/roger-vivier" class="mega-menu__link mega-menu__link--level-2 link">Roger vivier</a></li>
-                  <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
-                {% elsif link.title == 'ACCESSORIES' %}
-                  <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Chanel</a></li>
-                  <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
-                  <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
-                  <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
-                  <li><a href="/collections/dior" class="mega-menu__link mega-menu__link--level-2 link">Dior</a></li>
-                {% endif %}
-                </ul>
+              {% if link.title != 'DESIGNERS' %} 
+              <div class="mega-menu_list-title">DESIGNERS</div>
+              <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
+              {% if link.title == 'CLOTHES' %}
+                <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
+                <li><a href="/collections/valentino" class="mega-menu__link mega-menu__link--level-2 link">Valentino</a></li>
+                <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
+                <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
+                <li><a href="/collections/alexander-mcqueen" class="mega-menu__link mega-menu__link--level-2 link">Alexander mcqueen</a></li>
+                <li><a href="/collections/thom-browne" class="mega-menu__link mega-menu__link--level-2 link">Thom browne</a></li>
+              {% elsif link.title == 'BAG' %}
+                <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
+                <li><a href="/collections/dior" class="mega-menu__link mega-menu__link--level-2 link">Dior</a></li>
+                <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
+                <li><a href="/collections/yves-saint-laurent" class="mega-menu__link mega-menu__link--level-2 link">Yves saint laurent</a></li>
+                <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
+              {% elsif link.title == 'SHOES' %}
+                <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Chanel</a></li>
+                <li><a href="/collections/manolo-blahnik" class="mega-menu__link mega-menu__link--level-2 link">Manolo blahnik</a></li>
+                <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
+                <li><a href="/collections/roger-vivier" class="mega-menu__link mega-menu__link--level-2 link">Roger vivier</a></li>
+                <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
+              {% else %}
+                <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Chanel</a></li>
+                <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
+                <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
+                <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
+                <li><a href="/collections/dior" class="mega-menu__link mega-menu__link--level-2 link">Dior</a></li>
+                
+              {% endif %}
+              </ul>
+            </div>
             {% endif %}  
             <div>
               <h3>COLLECTIONS</h3>
