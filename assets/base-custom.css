@@ -1193,7 +1193,7 @@ input[type="range"]::-moz-range-thumb {
   padding-bottom: 2rem;
 }
 
-.mega-menu__content > div > div ul {
+.mega-menu__content .page-width  > div > div ul {
   padding-top: 0;
   padding-left: 0;
 }
