@@ -35,8 +35,8 @@
             {% if link.title != 'DESIGNERS' %}
             <div>   
             <div class="mega-menu_list-title">DESIGNERS</div>
-              {% if link.title == 'CLOTHES' %}
               <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
+              {% if link.title == 'CLOTHES' %}
               <li>
                 <a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">
                   Gucci
@@ -63,17 +63,16 @@
                   Thom browne
                 </a>
               </li>
-              </ul>
+    
               {% else %}
-                
-              <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
               <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
               <li><a href="/collections/dior" class="mega-menu__link mega-menu__link--level-2 link">Dior</a></li>
               <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
               <li><a href="/collections/yves-saint-laurent" class="mega-menu__link mega-menu__link--level-2 link">Yves saint laurent</a></li>
               <li><a href="/collections/fendi" class="mega-menu__link mega-menu__link--level-2 link">Fendi</a></li>
+
+              {% endif %}
               </ul>
-              {% endif %}  
             </div>
             {% endif %}  
             <div>
