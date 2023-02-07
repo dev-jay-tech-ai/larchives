@@ -1221,13 +1221,6 @@ input[type="range"]::-moz-range-thumb {
   height: 2.9rem;
 }
 
-.maga-menu-banner a {
-  background-color: transparent;
-  border-color: #fff;
-  color: #fff;
-  margin: 0 auto;
-}
-
 .mega-menu__content > div > div:last-child p {
   font-family: Poppins;
   font-size: 1.6rem;
@@ -1240,6 +1233,13 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 1.2rem;
   margin-bottom: 6.5rem;
   height: 1.9rem;
+}
+
+.maga-menu-banner a {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  margin: 0 auto;
 }
 
 .button-load-custom {
