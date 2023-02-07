@@ -28,8 +28,7 @@
 
 
 .slide-container {
-  width: 100%;
-  position: relative;
+  display: flex;
   overflow: hidden;
 }
 
