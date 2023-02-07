@@ -1747,6 +1747,15 @@
         "image_29": {
           "label": "First image"
         },
+        "image_30": {
+          "label": "Thirth image"
+        },
+        "image_31": {
+          "label": "Thirth one image"
+        },
+        "image_32": {
+          "label": "Thirth two image"
+        },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
         },
