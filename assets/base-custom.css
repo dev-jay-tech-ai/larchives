@@ -58,6 +58,10 @@
 }
 
 @media screen and (max-width:1024px){
+  .slide-container {
+    border-bottom: 0;
+  }
+  
   .customer .customer_content > div:last-of-type {
     text-align: center;
   }
