@@ -1178,6 +1178,10 @@ input[type="range"]::-moz-range-thumb {
   height: 24px;
 }
 
+.mega-menu__content .maga-menu {
+  display: flex;
+}
+
 .mega-menu__content .page-width > div:first-child {
   display: flex;
 }
