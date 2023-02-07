@@ -450,7 +450,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 
 .brand-banner-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   border-top: 1px solid rgba(4,11,9,.1);
 }
 
@@ -474,7 +474,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 
 @media screen and (min-width: 1025px) {
   .brand-banner-container {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
   }
   .brand-banner-container > div {
     /* width: 25%;
