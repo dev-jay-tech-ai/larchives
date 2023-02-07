@@ -1198,7 +1198,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .mega-menu__content > div > div ul {
-  padding: 0;
+  padding-top: 0;
+  padding-left: 0;
 }
 
 .mega-menu__content .maga-menu-banner {
