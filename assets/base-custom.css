@@ -1182,7 +1182,7 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
 }
 
-.mega-menu__content .page-width > div {
+.mega-menu__content > div {
   display: flex;
   justify-content: space-between;
   letter-spacing: normal;
@@ -1193,12 +1193,12 @@ input[type="range"]::-moz-range-thumb {
   padding-bottom: 2rem;
 }
 
-.mega-menu__content .page-width  > div > div ul {
+.mega-menu__content > div > div ul {
   padding-top: 0;
   padding-left: 0;
 }
 
-.mega-menu__content .page-width > div > div:last-child {
+.mega-menu__content > div > div:last-child {
   width: 35rem;
   height: 35rem;
   background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Nav_banner.jpg?v=1667406210');
@@ -1208,7 +1208,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 3rem 6.5rem;
 }
 
-.mega-menu__content .page-width > div > div:last-child h3 {
+.mega-menu__content > div > div:last-child h3 {
   font-size: 2.4rem;
   color: #fff;
   font-weight: normal;
