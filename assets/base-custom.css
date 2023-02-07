@@ -36,7 +36,24 @@
 .slider-track {
   display: flex;
   align-items: center;
+  animation: slideshow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 } 
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 .slide {
   width: 25%;
