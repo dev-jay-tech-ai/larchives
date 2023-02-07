@@ -28,17 +28,18 @@
 
 
 .slide-container {
-}
-
-.slider-track {
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  align-items: center;
 } 
 
 .slide {
-  display: flex;
-  align-items: center;
+
 }  
 
 
