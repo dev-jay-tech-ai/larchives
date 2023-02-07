@@ -56,7 +56,6 @@
 
 
 
-
 .collection {
   padding: 0 2rem;
 }
@@ -1209,6 +1208,10 @@ input[type="range"]::-moz-range-thumb {
   height: 24px;
 }
 
+.maga-menu {
+  display: flex;
+}
+  
 .mega-menu__content > div {
   display: flex;
   justify-content: space-between;
