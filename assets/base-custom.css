@@ -472,16 +472,13 @@ vertical-slider .slider-button[disabled='disabled'] path {
   .brand-banner-container {
     columns: 2;
   }
+
+  .brand-banner-container > div {
+    border-bottom: 1px solid rgba(4,11,9,.1);
+  }
 }
 
 @media screen and (min-width: 1025px) {
-  .brand-banner-container {
-    /* flex-wrap: nowrap; */
-  }
-  .brand-banner-container > div {
-    /* width: 25%;
-    padding: 4rem 8.9rem; */
-  }
   .brand-banner-container > div:nth-child(2) {
     border-right: 1px solid rgba(4,11,9,.1);
   }
