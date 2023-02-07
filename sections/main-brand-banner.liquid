@@ -66,9 +66,38 @@
 .highway-section .container {
   transition:all .3s ease;
 }
+
+
+.highway-slider {
+  display:flex;
+  justify-content:center;
+  width:100%;
+  height:120px;
+}
+
+	
+.highway-barrier {
+  overflow:hidden;
+  position:relative;
+}
+
+.highway-lane {
+  display:flex;
+  height:100%;
+}  
   
+.highway-car {
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+  
+@keyframes translatestf {
+	0% { transform:translateX(100%);  }
+	100% { transform:translateX(-500%);  }
+}  
  
-  
 {% endstyle %}
 
 {% schema %}
