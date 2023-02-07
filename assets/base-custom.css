@@ -1228,7 +1228,7 @@ input[type="range"]::-moz-range-thumb {
   padding-left: 0;
 }
 
-.mega-menu__content > div > div:last-child {
+.maga-menu-banner {
   width: 35rem;
   height: 35rem;
   background-image: url('https://cdn.shopify.com/s/files/1/0595/6275/4206/files/Nav_banner.jpg?v=1667406210');
@@ -1238,7 +1238,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 3rem 6.5rem;
 }
 
-.mega-menu__content > div > div:last-child h3 {
+.maga-menu-banner h3 {
   font-size: 2.4rem;
   color: #fff;
   font-weight: normal;
@@ -1251,14 +1251,14 @@ input[type="range"]::-moz-range-thumb {
   height: 2.9rem;
 }
 
-.mega-menu__content > div > div:last-child a {
+.maga-menu-banner a {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
   margin: 0 auto;
 }
 
-.mega-menu__content > div > div:last-child p {
+.maga-menu-banner p {
   font-family: Poppins;
   font-size: 1.6rem;
   font-weight: normal;
