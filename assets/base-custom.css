@@ -35,7 +35,7 @@
 .slider-track {
   display: flex;
   align-items: center;
-  animation: slideshow 20s linear infinite;
+  animation: slideshow 30s linear infinite;
   border-top: 1px solid rgba(4,11,9,.1);
   border-bottom: 1px solid rgba(4,11,9,.1);
 } 
