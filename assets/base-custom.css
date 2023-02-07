@@ -466,7 +466,6 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .brand-banner-container > div > img  {
-  width: 100%;
   object-fit: cover;
   vertical-align: middle;
   opacity: .2;
