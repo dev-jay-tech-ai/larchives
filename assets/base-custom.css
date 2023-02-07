@@ -920,10 +920,6 @@ object-position: top; #insta-feed {
   color: rgba(4, 11, 9, 0.7);
 }
 
-.multi-accordion details > div .cont {
-  padding-left: 4rem;
-}
-
 /* 열림 아이템 */
 .multi-accordion details[open] summary {
   border-bottom: 0;
