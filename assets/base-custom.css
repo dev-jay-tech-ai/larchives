@@ -1178,6 +1178,10 @@ input[type="range"]::-moz-range-thumb {
   height: 24px;
 }
 
+.mega-menu__content .page-width > div {
+  display: flex;
+}
+
 .mega-menu__content > div {
   display: flex;
   justify-content: space-between;
