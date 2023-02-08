@@ -70,7 +70,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       nb.style.display = 'none';
     }
     let totalPageCount = Math.ceil(pageCount/maxPageNum);
-    let pageArr = [...numbetBtn];
+    let pageArr = [...numberBtn];
     let start = num*maxPageNum;
     let end = start+maxPageNum;
     let pageListArr = pageArr.slice(start, end);
