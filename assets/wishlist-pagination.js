@@ -6,5 +6,5 @@ const rowsCount = rows.length;
 
 setTimeout(() => {
   console.log(rowsCount)
-}, 100)
+}, 500)
 
