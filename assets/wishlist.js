@@ -79,6 +79,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     }
 
     if(pageActiveIdx === 0 || pageActiveIdx === totalPageCount-1) {
+      console.log(prevPageBtn)
       prevPageBtn.style.display = 'none';
     } else {
       prevPageBtn.style.display = 'block';
