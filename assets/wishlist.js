@@ -40,7 +40,6 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
         nb.classList.remove('pagination__item--current');
       }
       e.target.classList.add('pagination__item--current');
-      // 테이블 출력 함수
       displayRow(idx);
     })
   });
