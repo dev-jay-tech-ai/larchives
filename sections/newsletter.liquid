@@ -52,7 +52,7 @@
                     required
                   >
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                    {% render 'icon-union' %}{% comment %}{{ 'newsletter.label' | t }}{% endcomment %}
+                    {% render 'icon-union' %}{% if request.page_type != 'password' %}{{ 'newsletter.label' | t }}{% endif %}
                   </label>
                   <button type="button" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                     {% render 'icon-arrow' %}
