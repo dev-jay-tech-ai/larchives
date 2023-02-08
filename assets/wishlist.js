@@ -91,7 +91,12 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     }
     
   }
+  
   displayPage(0);
+  nextPageBtn.addEventListener('click',() => {
+    ++pageActiveIdx;
+    displayPage();
+  })
   
 });
 
