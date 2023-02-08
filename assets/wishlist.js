@@ -93,6 +93,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   
   displayPage(0);
+  
   nextPageBtn.addEventListener('click',() => {
     let nextPageNum = pageActiveIdx*maxPageNum+maxPageNum;
     displayRow(nextPageNum);
@@ -100,6 +101,12 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     displayPage(pageActiveIdx);
   })
   
+  prevPageBtn.addEventListener('click',() => {
+    let nextPageNum = pageActiveIdx*maxPageNum-maxPageNum;
+    displayRow(nextPageNum);
+    --pageActiveIdx;
+    displayPage(pageActiveIdx);
+  })
 });
 
 document.addEventListener('shopify-wishlist:init-buttons', (event) => {
