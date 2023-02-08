@@ -61,6 +61,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     for(let nb of numberBtn) {
       nb.classList.remove('pagination__item--current');
     }
+    console.log(numberBtn[idx]);
     numberBtn[idx].classList.add('pagination__item--current');
   }
   displayRow(0);
