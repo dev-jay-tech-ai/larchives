@@ -26,15 +26,16 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   const rows = document.querySelectorAll('#product-grid .grid__item');
   const rowsCount = rows.length;
   const pageCount = Math.ceil(rowsCount/rowsPerPage);
-  const numbers = document.querySelector('#numbers');
   const prevPageBtn = document.querySelector('a[aria-label="Previous page"]');
   const nextPageBtn = document.querySelector('a[aria-label="Next page"]'); 
   let pageActiveIdx = 0;
   let currentPageNum = 0;
   let maxPageNum = 3;
+  let source = '';
   for (let i=1; i<=pageCount; i++) {  
-    numbers.innerHTML += `<li><a role="link" aria-disabled="true" class="pagination__item light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
+    source += `<li><a role="link" aria-disabled="true" class="pagination__item light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
   }
+  prevPageBtn.after(source);
   const numberBtn = numbers.querySelectorAll('a[role="link"]');
   for(let nb of numberBtn) {
     nb.style.display = 'none';
