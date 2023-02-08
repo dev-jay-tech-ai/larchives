@@ -97,14 +97,14 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   nextPageBtn.addEventListener('click',() => {
     let nextPageNum = pageActiveIdx*maxPageNum+maxPageNum;
     displayRow(nextPageNum);
-    ++pageActiveIdx;
+    // ++pageActiveIdx;
     // displayPage(pageActiveIdx);
   })
   
   prevPageBtn.addEventListener('click',() => {
     let nextPageNum = pageActiveIdx*maxPageNum-maxPageNum;
     displayRow(nextPageNum);
-    --pageActiveIdx;
+    // --pageActiveIdx;
     //  displayPage(pageActiveIdx);
   })
 });
