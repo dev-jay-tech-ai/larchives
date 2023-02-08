@@ -37,7 +37,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     source += `<li><a role="link" aria-disabled="true" class="pagination__item light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
   }
   const insertTarget = document.querySelector('#numbers > li');
-  prevPageBtn.after(source);
+  insertTarget.after(source);
   const numberBtn = numbers.querySelectorAll('a[role="link"]');
   for(let nb of numberBtn) {
     nb.style.display = 'none';
