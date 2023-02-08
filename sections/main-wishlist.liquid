@@ -1,12 +1,117 @@
+{% comment %}
+  Shopify Wishlist
+  Usage:
+    - Create a new page in the Shopify admin
+      - Admin > Online store > Pages > Add page
+    - Set the new page's template to: 'page.wishlist'
+    - Do NOT remove the `grid-wishlist` attribute
+  
+  Notes:
+  - The grid will be populated with product cards using Javascript
+  - Any content inside of the `[grid-wishlist]` element will be completely replaced by the product cards
+  
+  Tip:
+  - Place a loading element inside the `[grid-wishlist]` element and it will automatically be removed once the product cards have loaded
+  - Add any liquid code before/after the grid element
+{% endcomment %}
+
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{%- if section.settings.enable_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  {{ 'quick-add.js' | asset_url | script_tag }}
+  {{ 'product-form.js' | asset_url | script_tag }}
+{%- endif -%}
+{{ 'collection-load-more.js' | asset_url | script_tag }}
+{{ 'ajaxinate.min.js' | asset_url | script_tag }}
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  @media screen and (min-width: 1025px) {
+    .section-{{ section.id }}-padding {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+{%- endstyle -%}
+
+<section
+  id="Wishlist-{{ section.id }}"
+  class="page-width section-{{ section.id }}-padding"
+  data-section="{{ section.id }}"
+>
+
+<h1 class="title--primary center">MY WISHLIST</h1> 
+
+<div class='wishlist_sub'>
+  <div>My wishlist</div>
+  <div onclick='resetWishlist()'>CREAR</div>
+</div>
+  
+<div class='wishlist-conatiner product-grid-container' id='ProductGridContainer'>
+  <div class="collection">
+    <div class="loading-overlay gradient">
+     <p class="wishlist__loader full-width text-center">Loading...</p>
+    </div>
+    <ul 
+      id="product-grid" 
+      data-id="{{ section.id }}" 
+      data-next-url='{{ paginate.next.url }}' 
+      class="grid product-grid grid--1-col-tablet-down grid--4-col-desktop product-grid-custom products-on-page" 
+      grid-wishlist
+    ></ul>
+
+   <div class="product-list-bottom">
+      {%- if paginate.pages > 1 -%}
+      <div>
+        {%- unless paginate.previous -%}
+          <button class="button button--secondary button-load-custom load-more">
+           <span load-more-text>LOAD MORE</span>
+           <span class="hide" loader></span>
+          </button>
+        {%- endunless -%}        
+      </div>
+      <div>{% render 'pagination', paginate: paginate, anchor: '' %}</div>
+      {%- endif -%}
+    </div> 
+    
+    </div>
+  </div>
+</div>
+
+{%- comment -%}
+{%- assign count_pages = 8 -%}  
+{%- paginate products by count_pages -%}
+  {%- if products.size == 0 -%}
+    <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+      <div class="loading-overlay gradient"></div>
+      <div class="title-wrapper center">
+        <h2 class="title title--primary">
+          {{ 'sections.collection_template.empty' | t }}<br>
+          {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+        </h2>
+      </div>
+    </div>
+  {%- else -%}
+{%- endif -%}
+{%- endpaginate -%}{%- endcomment -%}
+  
+</section> 
+  
 {% schema %}
   {
-    "name": "Section name",
+    "name": "main-wishlist",
     "settings": []
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
