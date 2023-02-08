@@ -92,7 +92,7 @@
 
 
 {%- assign count_pages = 8 -%}  
-{%- paginate collections['wishlist'].products by count_pages -%}
+{%- paginate products by count_pages -%}
   {%- if products.size == 0 -%}
     <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
       <div class="loading-overlay gradient"></div>
