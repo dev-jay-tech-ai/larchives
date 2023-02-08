@@ -78,13 +78,17 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       item.style.display = 'inline-flex';
     }
 
-    if(pageActiveIdx === 0 || pageActiveIdx === totalPageCount-1) {
-      console.log(prevPageBtn)
+    if (pageActiveIdx === 0) {
       prevPageBtn.style.display = 'none';
     } else {
       prevPageBtn.style.display = 'block';
     }
 
+    if (pageActiveIdx === totalPageCount-1) {
+      nextPageBtn.style.display = 'none';
+    } else {
+      nextPageBtn.style.display = 'block';
+    }
     
   }
   displayPage(0);
