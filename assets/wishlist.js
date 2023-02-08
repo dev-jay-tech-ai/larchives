@@ -94,18 +94,20 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   
   // displayPage(0);
-  
+      
   nextPageBtn.addEventListener('click',(e) => {
     e.preventDefault();
-    let nextPageNum = pageActiveIdx*maxPageNum+maxPageNum;
+    let nextPageNum = pageActiveIdx;
+    // let nextPageNum = pageActiveIdx*maxPageNum+maxPageNum;
     displayRow(nextPageNum);
     // ++pageActiveIdx;
     // displayPage(pageActiveIdx);
   })
   
   prevPageBtn.addEventListener('click',(e) => {
+    let nextPageNum = pageActiveIdx;
     e.preventDefault();
-    let nextPageNum = pageActiveIdx*maxPageNum-maxPageNum;
+    // let nextPageNum = pageActiveIdx*maxPageNum-maxPageNum;
     displayRow(nextPageNum);
     // --pageActiveIdx;
     //  displayPage(pageActiveIdx);
