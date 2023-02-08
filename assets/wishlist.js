@@ -29,9 +29,10 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   const numbers = document.querySelector('#numbers');
   // pagination 생성
   for(let i=1; i<=pageCount.length; i++) {
+    console.log('인덱스',i)
     numbers.innerHTML += `<li><a href=''>${i}</a></li>`;
   }
-  console.log(numbers);
+  console.log(numbers.innerHTML);
   
 });
 
