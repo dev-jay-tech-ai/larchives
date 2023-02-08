@@ -44,7 +44,6 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       displayRow(idx);
     })
   });
-
   const displayRow = (idx) => {
     let start = idx*rowsPerPage;
     let end = start+rowsPerPage;
@@ -61,8 +60,12 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     }
     numberBtn[idx].classList.add('pagination__item--current');
   }
-
   displayRow(0);
+
+  for(let nb of numberBtn) {
+    nb.style.display = 'none'
+  }
+  
 });
 
 document.addEventListener('shopify-wishlist:init-buttons', (event) => {
