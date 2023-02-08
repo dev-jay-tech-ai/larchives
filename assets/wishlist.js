@@ -32,11 +32,9 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   let pageActiveIdx = 0;
   let currentPageNum = 0;
   let maxPageNum = 3;
-  numbers.innerHTML += `<li><a href="#" class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce" aria-label="Previous page"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31 24H17" stroke="#040B09" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 31L17 24L24 17" stroke="#040B09" stroke-linecap="round" stroke-linejoin="round"></path><rect x="47.5" y="47.5" width="47" height="47" transform="rotate(-180 47.5 47.5)" stroke="#040B09" stroke-opacity="0.1"></rect></svg></a></li>`;
   for (let i=1; i<=pageCount; i++) {  
     numbers.innerHTML += `<li><a role="link" aria-disabled="true" class="pagination__item light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
   }
-  numbers.innerHTML += `<li><a href="#" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce" aria-label="Next page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19" stroke="#040B09" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 5L19 12L12 19" stroke="#040B09" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>`
   const numberBtn = numbers.querySelectorAll('a[role="link"]');
   for(let nb of numberBtn) {
     nb.style.display = 'none';
