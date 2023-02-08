@@ -27,7 +27,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   const rowsCount = rows.length;
   const pageCount = Math.ceil(rowsCount/rowsPerPage);
   const numbers = document.querySelector('#numbers');
-  const prevPageBtn = document.querySelector('a.pagination__item-arrow');
+  const prevPageBtn = document.querySelector('a[aria-label="Previous page"]');
   const nextPageBtn = document.querySelector('a[aria-label="Next page"]'); 
   let pageActiveIdx = 0;
   let currentPageNum = 0;
@@ -87,7 +87,6 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
 
     
   }
-  
   displayPage(0);
   
 });
