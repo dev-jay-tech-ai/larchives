@@ -54,7 +54,7 @@
 >
 
 <h1 class="title--primary center">MY WISHLIST</h1> 
-<wishlist-pagination>
+
 <div class='wishlist_sub'>
   <div>My wishlist</div>
   <div onclick='resetWishlist()'>CREAR</div>
@@ -73,18 +73,8 @@
     ></ul>
 
    <div class="product-list-bottom">
-      {%- if paginate.pages > 1 -%}
-      <div>
-        {%- unless paginate.previous -%}
-          <button class="button button--secondary button-load-custom load-more">
-           <span load-more-text>LOAD MORE</span>
-           <span class="hide" loader></span>
-          </button>
-        {%- endunless -%}        
-      </div>
-      <div>{% render 'pagination', paginate: paginate, anchor: '' %}</div>
-      {%- endif -%}
-    </div> 
+    <div id='numbers'>&nbsp</div>
+   </div> 
     
     </div>
   </div>
@@ -106,7 +96,7 @@
   {%- else -%}
 {%- endif -%}
 {%- endpaginate -%}{%- endcomment -%}
-</wishlist-pagination>  
+
 </section> 
 
 {% schema %}
