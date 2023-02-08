@@ -54,7 +54,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     }
     let newRows = rowsArray.slice(start, end);
     for(let nr of newRows) {
-      nr.style.display= 'block';
+      nr.style.display = 'block';
     }
   }
 });
