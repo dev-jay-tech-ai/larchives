@@ -77,6 +77,12 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     for(let item of pageListArr) {
       item.style.display = 'block';
     }
+
+    if(pageActiveIdx === 0) {
+      prevPageBtn.style.display = 'none';
+    } else {
+      prevPageBtn.style.display = 'block';
+    }
   }
   
   displayPage(0);
