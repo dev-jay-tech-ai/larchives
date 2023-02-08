@@ -63,7 +63,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   displayRow(0);
 
   for(let nb of numberBtn) {
-    nb.style.display = 'none'
+    nb.style.display = 'none';
   }
   
 });
