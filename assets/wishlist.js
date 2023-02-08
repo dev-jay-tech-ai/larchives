@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('shopify-wishlist:updated', (event) => {
   console.log('[Shopify Wishlist] Wishlist Updated ✅', event.detail.wishlist);
   initGrid();
-  const rowsPerPage = 12;
-  const rows = this.querySelectorAll('#product-grid .grid__item');
-  const rowsCount = rows.length;
-  console.log(rowsCount)
 });
 
 document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   console.log('[Shopify Wishlist] Wishlist Product List Loaded ✅', event.detail.wishlist);
+  const rowsPerPage = 12;
+  const rows = this.querySelectorAll('#product-grid .grid__item');
+  const rowsCount = rows.length;
+  console.log(rowsCount)
 });
 
 document.addEventListener('shopify-wishlist:init-buttons', (event) => {
