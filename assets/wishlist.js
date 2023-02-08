@@ -21,11 +21,18 @@ document.addEventListener('shopify-wishlist:updated', (event) => {
 });
 
 document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
-  console.log('[Shopify Wishlist] Wishlist Product List Loaded ✅', event.detail.wishlist);
+  // console.log('[Shopify Wishlist] Wishlist Product List Loaded ✅', event.detail.wishlist);
   const rowsPerPage = 12;
   const rows = document.querySelectorAll('#product-grid .grid__item');
   const rowsCount = rows.length;
-  console.log(rowsCount)
+  const pageCount = Math.ceil(rowsCount/rowsPerPage);
+  const numbers = document.querySelector('#numbers');
+  // pagination 생성
+  for(let i=0; i<=pageCount.length; i++) {
+    numbers.innerHTML += `<li><a href=''>${i}</a></li>`;
+  }
+
+  
 });
 
 document.addEventListener('shopify-wishlist:init-buttons', (event) => {
