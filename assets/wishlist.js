@@ -78,7 +78,8 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       item.style.display = 'block';
     }
   }
-
+  
+  displayPage(0);
   
 });
 
