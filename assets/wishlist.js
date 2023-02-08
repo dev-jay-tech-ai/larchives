@@ -31,7 +31,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   const nextPageBtn = document.querySelector('a[aria-label="Next page"]'); 
   let pageActiveIdx = 0;
   let currentPageNum = 0;
-  let maxPageNum = 3;
+  let maxPageNum = 4;
   const insertTarget = document.querySelector('#numbers li:nth-of-type(2)');
   for (let i=1; i<=pageCount; i++) {  
     insertTarget.innerHTML += `<li><a role="link" aria-disabled="true" class="pagination__item light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
