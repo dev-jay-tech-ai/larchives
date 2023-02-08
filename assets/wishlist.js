@@ -57,6 +57,8 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       nr.style.display = '';
     }
   }
+
+  displayRow(0);
 });
 
 document.addEventListener('shopify-wishlist:init-buttons', (event) => {
