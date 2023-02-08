@@ -65,6 +65,19 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   displayRow(0);
 
+  const displayPage = (num) => {
+    for(let nb of numberBtn) {
+      nb.style.display = 'none';
+    }
+    let totalPageCount = Math.ceil(pageCount/maxPageNum);
+    let pageArr = [...numbetBtn];
+    let start = idx*rowsPerPage;
+    let end = start+rowsPerPage;
+    let pageListArr = pageArr.slice(start, end);
+    for(let item of pageListArr) {
+      item.style.display = 'block';
+    }
+  }
 
   
 });
