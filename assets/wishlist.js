@@ -35,6 +35,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   const numberBtn = numbers.querySelectorAll('a');
   numberBtn.forEach((btn,idx) => {
     btn.addEventListener('click',(e) => {
+      e.preventDefault();
       e.target.classList.add('pagination__item--current');
     })
   });
