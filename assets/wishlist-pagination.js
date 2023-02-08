@@ -1,1 +1,3 @@
-console.log('위시리스트')
+const rowsPerPage = 12;
+const rows = document.querySelectorAll('.grid__item');
+
