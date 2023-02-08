@@ -75,7 +75,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     let end = start+maxPageNum;
     let pageListArr = pageArr.slice(start, end);
     for(let item of pageListArr) {
-      item.style.display = 'block';
+      item.style.display = 'inline-flex';
     }
 
     if(pageActiveIdx === 0 || pageActiveIdx === totalPageCount-1) {
