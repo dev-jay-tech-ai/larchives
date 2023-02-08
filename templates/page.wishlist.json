@@ -2,7 +2,7 @@
   "wrapper": "section#wishlist",
   "sections": {
     "main": {
-      "type": "wishlist-template",
+      "type": "main-wishlist",
       "settings": {
       }
     }
