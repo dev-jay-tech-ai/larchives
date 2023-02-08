@@ -94,6 +94,17 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   
   // displayPage(0);
+  if (pageActiveIdx === 0) {
+    prevPageBtn.style.display = 'none';
+  } else {
+    prevPageBtn.style.display = 'inline-flex';
+  }
+
+  if (pageActiveIdx === totalPageCount-1) {
+    nextPageBtn.style.display = 'none';
+  } else {
+    nextPageBtn.style.display = 'inline-flex';
+  }
       
   nextPageBtn.addEventListener('click',(e) => {
     e.preventDefault();
