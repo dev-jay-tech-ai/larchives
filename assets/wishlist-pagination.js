@@ -5,7 +5,7 @@ class WishlistPagination extends HTMLElement {
     const rowsPerPage = 12;
     const rows = this.querySelectorAll('#product-grid .grid__item');
     const rowsCount = rows.length;
-    console.log(rows)
+    setTimeout(() => { console.log(rowsCount)}, 1000)
     
   }
 }
