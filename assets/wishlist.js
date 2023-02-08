@@ -23,7 +23,7 @@ document.addEventListener('shopify-wishlist:updated', (event) => {
 document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   console.log('[Shopify Wishlist] Wishlist Product List Loaded ✅', event.detail.wishlist);
   const rowsPerPage = 12;
-  const rows = this.querySelectorAll('#product-grid .grid__item');
+  const rows = document.querySelectorAll('#product-grid .grid__item');
   const rowsCount = rows.length;
   console.log(rowsCount)
 });
