@@ -29,6 +29,7 @@
 {%- endif -%}
 {{ 'collection-load-more.js' | asset_url | script_tag }}
 {{ 'ajaxinate.min.js' | asset_url | script_tag }}
+{{ 'wishlist-pagination.js' | asset_url | script_tag }}
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -53,12 +54,11 @@
 >
 
 <h1 class="title--primary center">MY WISHLIST</h1> 
-
+<wishlist-pagination>
 <div class='wishlist_sub'>
   <div>My wishlist</div>
   <div onclick='resetWishlist()'>CREAR</div>
 </div>
-  
 <div class='wishlist-conatiner product-grid-container' id='ProductGridContainer'>
   <div class="collection">
     <div class="loading-overlay gradient">
@@ -106,10 +106,8 @@
   {%- else -%}
 {%- endif -%}
 {%- endpaginate -%}{%- endcomment -%}
-  
+</wishlist-pagination>  
 </section> 
-
-{{ 'wishlist-pagination.js' | asset_url | script_tag }}
 
 {% schema %}
   {
