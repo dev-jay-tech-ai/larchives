@@ -1,43 +1,13 @@
 {
+  "wrapper": "section#wishlist",
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
+    "main": {
+      "type": "main-wishlist",
       "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
-    "product-grid": {
-      "type": "main-collection-product-grid",
-      "settings": {
-        "products_per_page": 12,
-        "columns_desktop": 3,
-        "image_ratio": "portrait",
-        "show_secondary_image": false,
-        "show_vendor": true,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "enable_filtering": true,
-        "filter_type": "vertical",
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 0,
-        "padding_bottom": 80
-      }
-    },
-    "b439d48c-9276-4a6c-88eb-f4f310404910": {
-      "type": "instafeed",
-      "settings": {
-        "heading_size": 20,
-        "feed_width": 100,
-        "html_area": ""
       }
     }
   },
   "order": [
-    "banner",
-    "product-grid",
-    "b439d48c-9276-4a6c-88eb-f4f310404910"
+    "main"
   ]
 }
