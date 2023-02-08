@@ -31,7 +31,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   console.log(pageCount)
   for (let i=1; i<=pageCount; i++) {
     console.log('인덱스',i)
-    numbers.innerHTML += `<li><a role="link" aria-disabled="true" class="pagination__item pagination__item--current light" aria-current="page" aria-label="Page ${i}">i</a></li>`;
+    numbers.innerHTML += `<li><a role="link" aria-disabled="true" class="pagination__item pagination__item--current light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
 
   }
 
