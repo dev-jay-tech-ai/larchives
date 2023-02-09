@@ -68,6 +68,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       let newBtnArr = numBtnArr.slice(3, pageCount-1);
       for(let nba of newBtnArr) {
         nba.parentNode.removeChild(nba);
+        nba.parentNode.innerHTML = `<span class="pagination__item">…</span>`;
       }
       
     }
