@@ -25,7 +25,9 @@
   text-transform: uppercase;
 }
 
-
+.stroke {
+  stroke: rgba(4,11,9,.1);
+}
 
 .slide-container {
   display: flex;
