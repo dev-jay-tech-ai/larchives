@@ -1711,7 +1711,6 @@ input[type="range"]::-moz-range-thumb {
     font-size: 1.6rem;
     line-height: 1.2;
     letter-spacing: normal;
-    margin-top: 1.2rem;
   }
 }
 
