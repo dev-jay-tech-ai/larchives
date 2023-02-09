@@ -93,16 +93,13 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     
   }
   const displayPage = (num) => {
-    let totalPageCount = Math.ceil(pageCount/maxPageNum);
-    console.log(pageCount, totalPageCount)
-    
     if (pageActiveIdx === 0) {
       prevPageBtn.style.display = 'none';
     } else {
       prevPageBtn.style.display = 'inline-flex';
     }
   
-    if (pageActiveIdx === totalPageCount-1) {
+    if (pageActiveIdx === pageCount-1) {
       nextPageBtn.style.display = 'none';
     } else {
       nextPageBtn.style.display = 'inline-flex';
