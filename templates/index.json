@@ -89,9 +89,13 @@
       "type": "main-image-banner",
       "settings": {
         "image_1": "shopify:\/\/shop_images\/cover_0.jpg",
+        "text_1": "Bottega Veneta",
         "image_2": "shopify:\/\/shop_images\/cover_1.jpg",
+        "text_2": "Bottega Veneta",
         "image_3": "shopify:\/\/shop_images\/cover_2.jpg",
-        "image_4": "shopify:\/\/shop_images\/cover_3.jpg"
+        "text_3": "Bottega Veneta",
+        "image_4": "shopify:\/\/shop_images\/cover_3.jpg",
+        "text_4": "Bottega Veneta"
       }
     },
     "558e85aa-afcf-4cfa-9ca5-8a98f5645a92": {
