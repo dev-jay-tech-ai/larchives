@@ -94,6 +94,8 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   const displayPage = (num) => {
     let totalPageCount = Math.ceil(pageCount/maxPageNum);
+    console.log(pageCount, totalPageCount)
+    
     if (pageActiveIdx === 0) {
       prevPageBtn.style.display = 'none';
     } else {
