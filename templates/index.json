@@ -91,15 +91,19 @@
         "image_1": "shopify:\/\/shop_images\/cover_0.jpg",
         "brand_1": "Bottega Veneta",
         "category_1": "READY TO WEAR",
+        "link_1": "bottega_venetta-ready_to_wear",
         "image_2": "shopify:\/\/shop_images\/cover_1.jpg",
         "brand_2": "Bottega Veneta",
         "category_2": "BAGS",
+        "link_2": "",
         "image_3": "shopify:\/\/shop_images\/cover_2.jpg",
         "brand_3": "Bottega Veneta",
         "category_3": "SMALL LEATHER GOODS",
+        "link_3": "",
         "image_4": "shopify:\/\/shop_images\/cover_3.jpg",
         "brand_4": "Bottega Veneta",
-        "category_4": "SHOES"
+        "category_4": "SHOES",
+        "link_4": ""
       }
     },
     "558e85aa-afcf-4cfa-9ca5-8a98f5645a92": {
