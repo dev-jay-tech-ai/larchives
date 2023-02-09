@@ -1917,6 +1917,9 @@
         "category_1": {
           "label": "First category"
         },
+        "link_1": {
+          "label": "First link"
+        },
         "image_2": {
           "label": "Second image"
         },
@@ -1925,6 +1928,9 @@
         },
         "category_2": {
           "label": "Second category"
+        },
+        "link_2": {
+          "label": "Second link"
         },
         "image_3": {
           "label": "Third image"
@@ -1935,6 +1941,9 @@
         "category_3": {
           "label": "Third category"
         },
+        "link_3": {
+          "label": "Third link"
+        },
         "image_4": {
           "label": "Forth image"
         },
@@ -1943,6 +1952,9 @@
         },
         "category_4": {
           "label": "Forth category"
+        },
+        "link_4": {
+          "label": "Forth link"
         },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
