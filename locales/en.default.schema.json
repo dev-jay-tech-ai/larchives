@@ -1911,14 +1911,26 @@
         "image_1": {
           "label": "First image"
         },
+        "text_1": {
+          "label": "First text"
+        },
         "image_2": {
           "label": "Second image"
+        },
+        "text_2": {
+          "label": "Second text"
         },
         "image_3": {
           "label": "Third image"
         },
+        "text_3": {
+          "label": "Third text"
+        },
         "image_4": {
           "label": "Forth image"
+        },
+        "text_4": {
+          "label": "Forth text"
         },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
