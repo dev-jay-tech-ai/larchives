@@ -111,21 +111,21 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     nb.style.display = 'none';
     }
   } else {
-    // displayRow(0);
+    displayRow(0);
     displayPage(0);
   }
 
   nextPageBtn.addEventListener('click',(e) => {
     e.preventDefault();
     ++pageActiveIdx;
-    // displayRow(pageActiveIdx);
+    displayRow(pageActiveIdx);
     displayPage(pageActiveIdx);
   })
   
   prevPageBtn.addEventListener('click',(e) => {
     --pageActiveIdx;
     e.preventDefault();
-    // displayRow(pageActiveIdx);
+    displayRow(pageActiveIdx);
     displayPage(pageActiveIdx);
   })
 });
