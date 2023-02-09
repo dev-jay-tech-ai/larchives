@@ -92,6 +92,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     
   }
   const displayPage = (num) => {
+    console.log(pageCoun);
     if(pageCount <= 1) {
       prevPageBtn.style.display = 'none';
       nextPageBtn.style.display = 'none';
@@ -109,7 +110,9 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       nextPageBtn.style.display = 'inline-flex';
     }
   }  
-  displayPage(0); 
+  
+  displayPage(0);
+  
   nextPageBtn.addEventListener('click',(e) => {
     e.preventDefault();
     let nextPageNum = ++pageActiveIdx;
