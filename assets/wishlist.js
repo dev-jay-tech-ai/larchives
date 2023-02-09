@@ -64,7 +64,9 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
 
   const displayNums = () => {
     if(pageCount > 4) {
-      console.log(numberBtn);
+      let numBtnArr = [...numberBtn];
+      let newBtnArr = numBtnArr.slice(2,pageCount-1);
+      console.log(newBtnArr);
       
     }
   }
