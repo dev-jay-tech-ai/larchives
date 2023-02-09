@@ -47,6 +47,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   const displayRow = (idx) => {
     let start = idx*rowsPerPage;
     let end = start+rowsPerPage;
+    console.log(start, end)
     let rowsArray = [...rows];
     for(let ra of rowsArray) {
       ra.style.display = 'none';
