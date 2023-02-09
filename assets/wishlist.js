@@ -49,25 +49,25 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   });
   const displayRow = (idx) => {
     console.log(pageCount);
-    if(pageCount <= 1) {
+    if(pageCount <= 1) {  
       prevPageBtn.style.display = 'none';
       nextPageBtn.style.display = 'none';
+    } else {
+      let start = idx*rowsPerPage;
+      let end = start+rowsPerPage;
+      let rowsArray = [...rows];
+      for(let ra of rowsArray) {
+        ra.style.display = 'none';
+      }
+      let newRows = rowsArray.slice(start, end);
+      for(let nr of newRows) {
+        nr.style.display = '';
+      }
+      for(let nb of numberBtn) {
+        nb.classList.remove('pagination__item--current');
+      }
+      numberBtn[idx].classList.add('pagination__item--current');
     }
-    
-    let start = idx*rowsPerPage;
-    let end = start+rowsPerPage;
-    let rowsArray = [...rows];
-    for(let ra of rowsArray) {
-      ra.style.display = 'none';
-    }
-    let newRows = rowsArray.slice(start, end);
-    for(let nr of newRows) {
-      nr.style.display = '';
-    }
-    for(let nb of numberBtn) {
-      nb.classList.remove('pagination__item--current');
-    }
-    numberBtn[idx].classList.add('pagination__item--current');
   }
   displayRow(0);
 
