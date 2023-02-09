@@ -75,7 +75,3 @@
 .newsletter-form__button .icon {
   width: 1.5rem;
 }
-
-.password-main .newsletter > div.newsletter__wrapper .newsletter-form__button > svg > path {
-  stroke: #fff;
-}
