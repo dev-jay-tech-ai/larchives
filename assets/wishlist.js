@@ -48,7 +48,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     })
   });
   const displayRow = (idx) => {
-    console.log(pageCoun);
+    console.log(pageCount);
     if(pageCount <= 1) {
       prevPageBtn.style.display = 'none';
       nextPageBtn.style.display = 'none';
