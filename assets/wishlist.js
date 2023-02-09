@@ -37,7 +37,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     insertTarget.innerHTML += `<li><a role="link" aria-disabled="true" class="pagination__item light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
   }
   insertTarget.outerHTML = insertTarget.innerHTML;
-  const numberBtn = numbers.querySelectorAll('a[role="link"]');
+  const numberBtn = numbers.querySelectorAll('a[role="link"]'); // 숫자판 버튼
   numberBtn.forEach((btn,idx) => {
     btn.addEventListener('click',(e) => {
       e.preventDefault();
@@ -63,7 +63,10 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
 
   const displayNums = () => {
-    console.log(pageCount);
+    if(pageCount > 4) {
+      console.log(numberBtn);
+      
+    }
   }
   displayNums();
   const displayPageEx = (num) => {
