@@ -3,7 +3,7 @@
     <div class='banner__dim'></div>
     <div class='banner-caption'>
       <div>COATS</div>
-      <div>{{ section.settings.text_1 | t }}</div>
+      <div>{{ section.settings.text_1 }}</div>
     </div>
     <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
     {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
@@ -22,7 +22,7 @@
         <div class='banner__dim'></div>
         <div class='banner-caption'>
           <div>BAGS</div>
-          <div>{{ section.settings.text_2 | t }}</div>
+          <div>{{ section.settings.text_2 }}</div>
         </div>
         <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
         {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
@@ -39,7 +39,7 @@
         <div class='banner__dim'></div>
         <div class='banner-caption'>
           <div>SNEAKERS</div>
-          <div>Off-White</div>
+          <div>{{ section.settings.text_3 }}</div>
         </div>
         <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
         {{ section.settings.image_3 | image_url: width: 1500 | image_tag:
@@ -57,7 +57,7 @@
       <div class='banner__dim'>&nbsp;</div>
       <div class='banner-caption'>
         <div>BOOTS</div>
-        <div>Jimmy Choo</div>
+        <div>{{ section.settings.text_4 }}</div>
       </div>
       <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
       {{ section.settings.image_4 | image_url: width: 1500 | image_tag:
