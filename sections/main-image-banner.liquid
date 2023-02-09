@@ -3,7 +3,7 @@
     <div class='banner__dim'></div>
     <div class='banner-caption'>
       <div>COATS</div>
-      <div>Trussardi</div>
+      <div>{{ section.settings.text_1 | t }}</div>
     </div>
     <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
     {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
@@ -22,7 +22,7 @@
         <div class='banner__dim'></div>
         <div class='banner-caption'>
           <div>BAGS</div>
-          <div>Givenchy</div>
+          <div>{{ section.settings.text_2 | t }}</div>
         </div>
         <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
         {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
