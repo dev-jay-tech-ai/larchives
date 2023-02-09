@@ -32,8 +32,6 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   let pageActiveIdx = 0;
   let currentPageNum = 0;
   let maxPageNum = 4;
-  let totalPageCount = Math.ceil(pageCount/maxPageNum);
-  
   const insertTarget = document.querySelector('#numbers li:nth-of-type(2)');
   for (let i=1; i<=pageCount; i++) {  
     insertTarget.innerHTML += `<li><a role="link" aria-disabled="true" class="pagination__item light" aria-current="page" aria-label="Page ${i}">${i}</a></li>`;
@@ -65,14 +63,14 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
 
   const displayNums = () => {
-    console.log(totalPageCount)
+    console.log(pageCount);
   }
   displayNums();
-  
   const displayPageEx = (num) => {
     for(let nb of numberBtn) {
       nb.style.display = 'none';
     }
+    let totalPageCount = Math.ceil(pageCount/maxPageNum);
     let pageArr = [...numberBtn];
     let start = num*maxPageNum;
     let end = start+maxPageNum;
