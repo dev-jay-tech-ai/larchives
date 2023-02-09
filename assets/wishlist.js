@@ -38,9 +38,9 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   insertTarget.outerHTML = insertTarget.innerHTML;
   const numberBtn = numbers.querySelectorAll('a[role="link"]');
-  // for(let nb of numberBtn) {
-  //   nb.style.display = 'none';
-  // }
+  for(let nb of numberBtn) {
+    nb.style.display = 'none';
+  }
   numberBtn.forEach((btn,idx) => {
     btn.addEventListener('click',(e) => {
       e.preventDefault();
