@@ -48,28 +48,22 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     })
   });
   const displayRow = (idx) => {
-    console.log(pageCount);
-    if(pageCount <= 1) {  
-      prevPageBtn.style.display = 'none';
-      nextPageBtn.style.display = 'none';
-    } else {
-      let start = idx*rowsPerPage;
-      let end = start+rowsPerPage;
-      let rowsArray = [...rows];
-      for(let ra of rowsArray) {
-        ra.style.display = 'none';
-      }
-      let newRows = rowsArray.slice(start, end);
-      for(let nr of newRows) {
-        nr.style.display = '';
-      }
-      for(let nb of numberBtn) {
-        nb.classList.remove('pagination__item--current');
-      }
-      numberBtn[idx].classList.add('pagination__item--current');
+    let start = idx*rowsPerPage;
+    let end = start+rowsPerPage;
+    let rowsArray = [...rows];
+    for(let ra of rowsArray) {
+      ra.style.display = 'none';
     }
+    let newRows = rowsArray.slice(start, end);
+    for(let nr of newRows) {
+      nr.style.display = '';
+    }
+    for(let nb of numberBtn) {
+      nb.classList.remove('pagination__item--current');
+    }
+    numberBtn[idx].classList.add('pagination__item--current');
   }
-  displayRow(0);
+
 
   const displayPageEx = (num) => {
     for(let nb of numberBtn) {
@@ -110,9 +104,15 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       nextPageBtn.style.display = 'inline-flex';
     }
   }  
-  
-  displayPage(0);
-  
+
+  if(pageCount <= 1) {  
+    prevPageBtn.style.display = 'none';
+    nextPageBtn.style.display = 'none';
+  } else {
+    displayRow(0);
+    displayPage(0);
+  }
+
   nextPageBtn.addEventListener('click',(e) => {
     e.preventDefault();
     let nextPageNum = ++pageActiveIdx;
