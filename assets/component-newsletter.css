@@ -30,7 +30,7 @@
 }
 
 .newsletter-form__field-wrapper > .field__input:focus ~, .newsletter-form__field-wrapper >  .field__label {
-  visibility: none;
+  opacity: 0;
 }
 
 .newsletter-form__message {
