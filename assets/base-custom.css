@@ -37,7 +37,7 @@
 .slider-track {
   display: flex;
   align-items: center;
-  animation: slideshow 70s linear infinite;
+  animation: slideshow 100s linear infinite;
 } 
 
 @keyframes slideshow {
