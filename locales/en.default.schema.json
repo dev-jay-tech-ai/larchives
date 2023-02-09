@@ -1911,26 +1911,38 @@
         "image_1": {
           "label": "First image"
         },
-        "text_1": {
-          "label": "First text"
+        "brand_1": {
+          "label": "First brand"
+        },
+        "category_1": {
+          "label": "First category"
         },
         "image_2": {
           "label": "Second image"
         },
-        "text_2": {
-          "label": "Second text"
+        "brand_2": {
+          "label": "Second brand"
+        },
+        "category_2": {
+          "label": "Second category"
         },
         "image_3": {
           "label": "Third image"
         },
-        "text_3": {
-          "label": "Third text"
+        "brand_3": {
+          "label": "Third brand"
+        },
+        "category_3": {
+          "label": "Third category"
         },
         "image_4": {
           "label": "Forth image"
         },
-        "text_4": {
-          "label": "Forth text"
+        "brand_4": {
+          "label": "Forth brand"
+        },
+        "category_4": {
+          "label": "Forth category"
         },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
