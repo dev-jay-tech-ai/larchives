@@ -66,7 +66,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   displayRow(0);
 
-  const displayPage = (num) => {
+  const displayPageEx = (num) => {
     for(let nb of numberBtn) {
       nb.style.display = 'none';
     }
@@ -92,28 +92,27 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     }
     
   }
+  const displayPage = (num) => {
+    let totalPageCount = Math.ceil(pageCount/maxPageNum);
+    if (pageActiveIdx === 0) {
+      prevPageBtn.style.display = 'none';
+    } else {
+      prevPageBtn.style.display = 'inline-flex';
+    }
   
-  // displayPage(0);
-  let totalPageCount = Math.ceil(pageCount/maxPageNum);
-  if (pageActiveIdx === 0) {
-    prevPageBtn.style.display = 'none';
-  } else {
-    prevPageBtn.style.display = 'inline-flex';
-  }
-
-  if (pageActiveIdx === totalPageCount-1) {
-    nextPageBtn.style.display = 'none';
-  } else {
-    nextPageBtn.style.display = 'inline-flex';
-  }
-      
+    if (pageActiveIdx === totalPageCount-1) {
+      nextPageBtn.style.display = 'none';
+    } else {
+      nextPageBtn.style.display = 'inline-flex';
+    }
+  }  
+  displayPage(0); 
   nextPageBtn.addEventListener('click',(e) => {
     e.preventDefault();
     let nextPageNum = ++pageActiveIdx;
     // let nextPageNum = pageActiveIdx*maxPageNum+maxPageNum;
     displayRow(nextPageNum);
-    // ++pageActiveIdx;
-    // displayPage(pageActiveIdx);
+    displayPage(pageActiveIdx);
   })
   
   prevPageBtn.addEventListener('click',(e) => {
@@ -121,8 +120,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     e.preventDefault();
     // let nextPageNum = pageActiveIdx*maxPageNum-maxPageNum;
     displayRow(nextPageNum);
-    // --pageActiveIdx;
-    //  displayPage(pageActiveIdx);
+    displayPage(pageActiveIdx);
   })
 });
 
