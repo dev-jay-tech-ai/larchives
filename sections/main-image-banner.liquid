@@ -5,7 +5,7 @@
       <div>{{ section.settings.category_1 | upcase }}</div>
       <div>{{ section.settings.brand_1 }}</div>
     </div>
-    <div class='banner_hover'>{% render 'icon-banner-hover-arrow' %}</div>
+    <div class='banner_hover'><a href='/collections/coats_bottega_venetta'>{% render 'icon-banner-hover-arrow' %}</a></div>
     {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
       loading: 'lazy',
       width: section.settings.image.width,
