@@ -51,7 +51,7 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
     for(let ra of rowsArray) {
       ra.style.display = 'none';
     }
-    let newRows = rowsArray.slice(start, end);
+    let newRows = rowsArray.slice(start, end-1);
     for(let nr of newRows) {
       nr.style.display = '';
     }
