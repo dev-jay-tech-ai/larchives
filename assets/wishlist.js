@@ -38,9 +38,6 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   }
   insertTarget.outerHTML = insertTarget.innerHTML;
   const numberBtn = numbers.querySelectorAll('a[role="link"]');
-  for(let nb of numberBtn) {
-    nb.style.display = 'none';
-  }
   numberBtn.forEach((btn,idx) => {
     btn.addEventListener('click',(e) => {
       e.preventDefault();
@@ -108,6 +105,9 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
   if(pageCount <= 1) {  
     prevPageBtn.style.display = 'none';
     nextPageBtn.style.display = 'none';
+    for(let nb of numberBtn) {
+    nb.style.display = 'none';
+    }
   } else {
     displayRow(0);
     displayPage(0);
