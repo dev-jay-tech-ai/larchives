@@ -116,17 +116,15 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
 
   nextPageBtn.addEventListener('click',(e) => {
     e.preventDefault();
-    let nextPageNum = ++pageActiveIdx;
-    // let nextPageNum = pageActiveIdx*maxPageNum+maxPageNum;
-    displayRow(nextPageNum);
+    ++pageActiveIdx;
+    displayRow(pageActiveIdx);
     displayPage(pageActiveIdx);
   })
   
   prevPageBtn.addEventListener('click',(e) => {
-    let nextPageNum = --pageActiveIdx;
+    --pageActiveIdx;
     e.preventDefault();
-    // let nextPageNum = pageActiveIdx*maxPageNum-maxPageNum;
-    displayRow(nextPageNum);
+    displayRow(pageActiveIdx);
     displayPage(pageActiveIdx);
   })
 });
