@@ -19,6 +19,12 @@ cart-items.is-empty .title-wrapper-with-link,
   display: none;
   text-align: center;
   padding: 3rem 0 1rem;
+  font-family: Termina;
+  font-size: 4rem;
+}
+
+.cart__warnings p {
+  font-family: Termina-medium;
 }
 
 .cart__empty-text {
