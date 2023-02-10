@@ -1,3 +1,5 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+
 <style type="text/css">
   .template-404 .title + * {
     margin-top: 1rem;
@@ -10,7 +12,7 @@
   }
 </style>
 
-<div class="template-404 page-width page-margin center">
+<div class="template-404 page-width page-margin center cart__warnings">
   <p>
     {{ 'templates.404.subtext' | t }} Page Not Found
   </p>
