@@ -73,12 +73,12 @@
         dropdown.find('.option');  
         dropdown.find('.focus').removeClass('focus');
         dropdown.find('.selected').addClass('focus');
-          $acs(".mldarrow").removeClass("fa-angle-down");
-    $acs(".mldarrow").addClass("fa-angle-up");
+          $acs(".mldarrow").removeClass("fa-angle-left");
+    $acs(".mldarrow").addClass("fa-angle-right");
       } else {
         dropdown.focus();
-          $acs(".mldarrow").removeClass("fa-angle-up");
-    $acs(".mldarrow").addClass("fa-angle-down");
+          $acs(".mldarrow").removeClass("fa-angle-right");
+    $acs(".mldarrow").addClass("fa-angle-left");
       }
     });
     
@@ -86,8 +86,8 @@
     $acs(document).on('click.nice_select', function(event) {
       if ($acs(event.target).closest('.nice-select').length === 0) {
         $acs('.nice-select').removeClass('open').find('.option'); 
-          $acs(".mldarrow").removeClass("fa-angle-up");
-    $acs(".mldarrow").addClass("fa-angle-down");
+          $acs(".mldarrow").removeClass("fa-angle-right");
+    $acs(".mldarrow").addClass("fa-angle-left");
       }
     });
     
