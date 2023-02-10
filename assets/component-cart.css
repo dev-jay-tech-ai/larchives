@@ -61,6 +61,7 @@ cart-items.is-empty .title-wrapper-with-link,
 
   .cart__warnings div {
     max-width: 81.2rem;
+    font-size: 4rem;
   }
 
   .cart__empty-text {
