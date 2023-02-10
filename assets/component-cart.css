@@ -25,6 +25,8 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__warnings div {
   font-family: Termina-medium;
+  margin: 0 auto;
+  max-width: 81.2rem;
 }
 
 .cart__empty-text {
