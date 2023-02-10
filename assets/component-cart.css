@@ -27,6 +27,8 @@ cart-items.is-empty .title-wrapper-with-link,
   font-family: Termina-medium;
   margin: 0 auto;
   max-width: 81.2rem;
+  line-height: 4.5rem;
+  letter-spacing: normal;
 }
 
 .cart__empty-text {
