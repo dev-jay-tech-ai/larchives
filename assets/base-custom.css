@@ -1277,10 +1277,10 @@ input[type="range"]::-moz-range-thumb {
 
 .button-load-custom {
   height: 5rem;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   gap: 10px;
   padding: 18px 48px;
   border: solid 1px #040b09;
