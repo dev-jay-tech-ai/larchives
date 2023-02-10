@@ -420,7 +420,7 @@
 }
 
 .banner__buttons.button_custom > a {
-  width: 18rem;
+  width: 19.7rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -431,6 +431,10 @@
   .banner--content-align-mobile-center .banner__buttons--multiple > * {
     flex-grow: 1;
     min-width: 22rem;
+  }
+
+  .banner__buttons.button_custom > a {
+    width: 18rem;
   }
 }
 
