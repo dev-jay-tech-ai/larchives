@@ -1237,10 +1237,11 @@ input[type="range"]::-moz-range-thumb {
   background-repeat: no-repeat;
   background-color: rgba(4, 11, 9, 0.2);
   text-align: center;
-  padding: 3rem 6.5rem;
+  padding: 3rem 0;
 }
 
 .maga-menu-banner > h3 {
+  font-family: Termina;
   font-size: 2.4rem;
   color: #fff;
   font-weight: normal;
