@@ -316,16 +316,6 @@
   }
 }
 
-.cart__warnings {
-  font-family: Termina-medium;
-  font-size: 4rem;
-}
-
-.cart__warnings h1 {
-  font-family: Termina;
-}
-
-
 .collection-list__item .card__content {
   margin-bottom: 0;
 }
