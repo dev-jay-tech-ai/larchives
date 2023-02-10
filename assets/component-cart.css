@@ -29,6 +29,7 @@ cart-items.is-empty .title-wrapper-with-link,
   line-height: 4.5rem;
   letter-spacing: normal;
   font-size: 3rem;
+  max-width: unset;
 }
 
 .cart__empty-text {
