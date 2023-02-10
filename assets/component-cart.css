@@ -54,9 +54,9 @@ cart-items.is-empty .title-wrapper-with-link,
   text-decoration: underline;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
   .cart__warnings {
-    padding: 7rem 0 1rem;
+    padding: 7rem 0;
   }
 
   .cart__empty-text {
