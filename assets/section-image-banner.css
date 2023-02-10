@@ -419,6 +419,10 @@
   padding-top: 4rem;
 }
 
+.banner__buttons.button_custom > a {
+  width: 18rem;
+}
+
 @media screen and (max-width: 1024px) {
   .banner--content-align-mobile-right .banner__buttons--multiple {
     justify-content: flex-end;
