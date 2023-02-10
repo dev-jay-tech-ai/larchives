@@ -27,41 +27,40 @@ select#currencies,select#currencies1 {
    padding-bottom:0px;
    padding-right: 15px;
    border: 0;
--webkit-appearance:none;
+   -webkit-appearance:none;
    -moz-appearance:none;
    appearance:none;
- background-color:transparent;
- background-position:right center;
+   background-color:transparent;
+   background-position:right center;
 }
 select#currencies option{
-color:#000;
-   background-color:#fff;
+  color:#000;
+  background-color:#fff;
 }
 select#currencies:focus,select#currencies:hover{
-outline:none;border: 0;
+  outline:none;border: 0;
 }
 
 {% if settings.mlvedaACS_position == "inline" %}
 .pick_currency {
-    display: inline-block;
+  display: inline-block;
   margin-right:0px;
 }
  .nice-select {
-    width: 63px;
-    font-weight: bold !important;
-    color: #000;
-    font-size: 12px !important;
+  width: 63px;
+  font-weight: bold !important;
+  color: #000;
+  font-size: 12px !important;
 }
-
-
+  
 .pick_currency label{ display:none !important; }
 
 @media only screen and (max-width:768px) {
 }
 @media only screen and (max-width: 380px) {
 /*  .pick_currency {
-    display: inline-block;
-    margin-right: 1px;
+  display: inline-block;
+  margin-right: 1px;
 }
 */
 }
