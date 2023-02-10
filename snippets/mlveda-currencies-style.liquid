@@ -200,7 +200,8 @@
          background-color: {{ settings.mlvedaACS_hoverBackgroundColor }} !important;
       }
 
-  {% endif %}
+  {% endif %}.nice-select .option:hover {
+  /* background-color: #f8f8f8; */ }
 /* End switcher color code */
   
   
@@ -215,7 +216,7 @@
   }
 {% if settings.mlvedaACS_isCustomized == true %}
   .mlvedaCartNote
-  {
+  {f.nice-select .option:hover
     color: {{ settings.mlvedaACS_messageColor }} !important;
     background-color: {{ settings.mlvedaACS_messageBackgroundColor }} !important;
 /*     display:block !important; */
@@ -240,7 +241,11 @@
       right: 0;
       left: unset;
     } 
-   }  
+
+    .nice-select .option:hover {
+      color: #000;
+    }
+  }  
   {% else%}
 
   
