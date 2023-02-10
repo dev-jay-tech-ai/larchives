@@ -1895,6 +1895,8 @@ input[type="range"]::-moz-range-thumb {
 .button_custom {
   font-family: 'Termina-medium';
   font-size: 1.2rem;
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
 }
 
 .button.reverse {
