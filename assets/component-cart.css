@@ -23,7 +23,7 @@ cart-items.is-empty .title-wrapper-with-link,
   font-size: 4rem;
 }
 
-.cart__warnings p {
+.cart__warnings div {
   font-family: Termina-medium;
 }
 
