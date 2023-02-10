@@ -42,7 +42,7 @@
     {%- if shop.customer_accounts_enabled and customer == nil -%}
       {% comment %}<h2 class="cart__login-title">{{ 'sections.cart.login.title' | t }}</h2>{% endcomment %}
       <p class="cart__login-paragraph">
-        {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
+        {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url | upcase }}
       </p>
     {%- endif -%}
   </div>
