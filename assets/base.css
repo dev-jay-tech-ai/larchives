@@ -1349,7 +1349,7 @@ button.shopify-payment-button__button--unbranded {
   justify-content: center;
   align-items: center;
   border: 0;
-  padding: 1.6rem 0;
+  padding: 1.6rem 4.8rem;
   cursor: pointer;
   font-family: 'Termina-regular';
   /** font: inherit;
