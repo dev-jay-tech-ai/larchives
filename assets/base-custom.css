@@ -1214,7 +1214,6 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
 }
 
-
 .mega-menu__content > div {
   display: flex;
   justify-content: space-between;
@@ -1274,6 +1273,10 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 1.2rem;
   margin-bottom: 6.5rem;
   height: 1.9rem;
+}
+
+.maga-menu-category {
+  max-width: 80rem;
 }
 
 .button-load-custom {
