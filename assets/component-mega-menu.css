@@ -105,6 +105,6 @@
   font-weight: normal;
 }
 
-.mega-menu__content div:first-of-type {
+.mega-menu__content > div:first-of-type {
   max-width: 84rem;
 }
