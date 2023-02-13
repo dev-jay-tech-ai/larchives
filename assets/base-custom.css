@@ -1280,7 +1280,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .mega-menu-layout {
-  display: flex;
   justify-content: space-between;
   width: 100%;
 }
