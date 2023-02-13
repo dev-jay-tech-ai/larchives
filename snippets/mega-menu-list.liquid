@@ -36,6 +36,8 @@
                 
               {% if link.title != 'DESIGNERS' %} 
                 {% if link.title != 'SPECIAL' %} 
+
+                {% else %}
                 <div class="mega-menu_list-title">DESIGNERS</div>
                 <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
                 {% if link.title == 'CLOTHES' %}
@@ -68,12 +70,13 @@
             </div>  
             {% endif %}        
             {% endif %}  
-            </div>  
             <div class='maga-menu-banner'>
               <h3>COLLECTIONS</h3>
               <p>Summer 2023</p>
               <a href='/collections' class='button button--secondary button-load-custom'>SEE MORE</a>
             </div>
+            </div>  
+ 
           </div>
         </div>
       </details>
