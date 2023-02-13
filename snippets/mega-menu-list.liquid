@@ -34,7 +34,8 @@
               </div>
               <div>
                 
-              {% if link.title != 'DESIGNERS' or link.title != 'SPECIAL' %} 
+              {% if link.title != 'DESIGNERS' %} 
+                {% if link.title != 'SPECIAL' %} 
                 <div class="mega-menu_list-title">DESIGNERS</div>
                 <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
                 {% if link.title == 'CLOTHES' %}
@@ -65,6 +66,7 @@
               {% endif %}
               </ul>
             </div>  
+            {% endif %}        
             {% endif %}  
             </div>  
             <div class='maga-menu-banner'>
