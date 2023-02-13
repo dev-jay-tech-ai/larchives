@@ -104,3 +104,7 @@
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
 }
+
+.mega-menu__content div:first-child {
+  max-width: 84rem;
+}
