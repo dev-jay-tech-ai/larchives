@@ -1213,6 +1213,10 @@ input[type="range"]::-moz-range-thumb {
 .maga-menu {
   display: flex;
 }
+
+.mega-menu > div:first-child {
+  max-width: 84rem;
+}
   
 .mega-menu__content > div {
   display: flex;
