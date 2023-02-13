@@ -1279,6 +1279,11 @@ input[type="range"]::-moz-range-thumb {
   max-width: 75rem;
 }
 
+.mega-menu-layout {
+  justify-content: space-between;
+  width: 100%;
+}
+
 .button-load-custom {
   height: 5rem;
   /* display: flex;
