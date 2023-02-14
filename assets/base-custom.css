@@ -1285,7 +1285,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .mega-menu__list.mega-menu__list-custom {
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
 }
 
 .mega-menu__list-custom .list-custom {
