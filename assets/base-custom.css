@@ -1288,6 +1288,11 @@ input[type="range"]::-moz-range-thumb {
   padding-left: 1.5rem;
 }
 
+.list-custom {
+  display: flex;
+  flex-direction: row;
+}
+
 .button-load-custom {
   height: 5rem;
   /* display: flex;
