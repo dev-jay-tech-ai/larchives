@@ -11,7 +11,11 @@
             <div class='maga-menu {% if link.title == 'SPECIAL' %}mega-menu-layout{% endif %}'>  
               <div class='maga-menu-category'>
                 <div class="mega-menu_list-title">{{ link.title | escape }}</div>
-                <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} page-width" {% if link.title == 'DESIGNERS' %}style="columns: 4"{% endif %} role="list">  
+                <ul class="mega-menu__list 
+                {% if link.title == 'SPECIAL' %}mega-menu__list-custom{% endif %}
+                {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} 
+                page-width" {% if link.title == 'DESIGNERS' %}style="columns: 4"{% endif %} 
+                role="list">  
                 {%- for childlink in link.links -%}
                 <li>
                   <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link  {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.links != blank -%}upper{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
