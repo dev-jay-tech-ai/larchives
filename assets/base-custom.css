@@ -1284,6 +1284,10 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
 }
 
+.mega-menu__link--level-3 {
+  padding-left: 1rem;
+}
+
 .button-load-custom {
   height: 5rem;
   /* display: flex;
