@@ -319,10 +319,11 @@
         id="ProductInfo-{{ section.id }}"
         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
       >
+        {%- if product.selected_or_first_available_variant.available -%}
         <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
           {{ 'products.product.on_sale' | t }}
         </span>
-        {%- if product.selected_or_first_available_variant.available -%}
+        {% else %}
         {{ 'products.product.add_to_cart' | t }}
         <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
           {{ 'products.product.sold_out' | t }}
