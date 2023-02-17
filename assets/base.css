@@ -1524,7 +1524,7 @@ button.shopify-payment-button__button--unbranded {
   min-height: 2.4rem;
   justify-content: center;
   align-items: center;
-  color: rgb(var(--color-link));
+  /* color: rgb(var(--color-link)); */
   margin-left: 0;
 }
 
