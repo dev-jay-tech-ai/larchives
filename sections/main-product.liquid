@@ -322,9 +322,12 @@
         <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
           {{ 'products.product.on_sale' | t }}
         </span>
+        {%- if product.selected_or_first_available_variant.available -%}
+        {{ 'products.product.add_to_cart' | t }}
         <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
           {{ 'products.product.sold_out' | t }}
         </span>
+        {%- endif -%}
         <div class="product__id"> Product ID: <span>{{ product.variants[0].barcode }}</span></div>
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
         {%- for block in section.blocks -%}
