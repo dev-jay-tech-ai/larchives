@@ -56,13 +56,14 @@
         </div>
       {%- endfor -%}
     </div>
+    {%- if paginate.pages > 1 -%}
     <button class="button button--secondary button-load-custom load-more" style="margin: 0 auto">
      <span load-more-text="">LOAD MORE</span>
      <span class="hide" loader="">
        <img src="//cdn.shopify.com/s/files/1/0595/6275/4206/t/14/assets/loader.gif?22921">
      </span>
     </button>
-
+    {%- endif -%}
     {%- comment -%} {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}{%- endcomment -%}
