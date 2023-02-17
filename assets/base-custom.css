@@ -478,6 +478,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
   .brand-banner-container {
     columns: 2;
     column-gap: 0;
+    width: 100%;
   }
 
   .brand-banner-container > div {
