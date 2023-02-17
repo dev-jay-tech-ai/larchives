@@ -838,6 +838,15 @@ object-position: top; #insta-feed {
   object-position: top;  
 }
 
+.blog_content > p:first-child::first-letter {
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
+  color: #000;
+  margin-right: .21em;
+  font-family: 'Termina-demi';
+  font-size: 9.6rem;
+}
+
 .article-template {
   font-family: Poppins;
   font-size: 16px;
