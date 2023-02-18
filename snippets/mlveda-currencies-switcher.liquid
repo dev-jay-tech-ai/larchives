@@ -223,27 +223,6 @@ var mlvedasw = '<div class = "pick_currency "  style="display: none !important; 
 '</div>';
 </script>
   
-<script>
-  /*
-if(typeof(Currency) == 'undefined' || !Currency.hasOwnProperty("rates")){
-    var script = document.createElement('script');
-    script.type = "text/javascript";
-	script.async = true;
-    script.src = "//cdn.shopify.com/s/javascripts/currencies.js";
-    document.getElementsByTagName('head')[0].appendChild(script);
-  
-}
-  
-  var some_interval = setInterval(function(){
-			//console.log("hellooooooo");
-            		if(typeof(Currency) != 'undefined' || Currency.hasOwnProperty("rates")){
-			   			clearInterval(some_interval);
-                          var ACSCurrency = Currency;
-			}
-		},100);
- */
-</script>
-
 {% if settings.mlvedaACS_position == "inline" %}
  <script>
   $acs('body').append(mlvedasw);   
