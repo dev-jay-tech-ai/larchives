@@ -375,6 +375,9 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    {% include 'mlveda-currencies-switcher' %}{% include 'mlveda-currencies' %}{% include 'mlveda-flag' %}{% include 'mlveda-currencies-style' %}
+    {% comment %}
+    {% include 'mlveda-currencies-switcher' %}
+    {% endcomment %}
+    {% include 'mlveda-currencies-style' %}{% include 'mlveda-currencies' %}{% include 'mlveda-flag' %}
   </body>
 </html>
