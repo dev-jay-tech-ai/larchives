@@ -268,6 +268,7 @@ if(typeof(Currency) == 'undefined' || !Currency.hasOwnProperty("rates")){
   </script>
 {% else %}
   <script>
+    debugger;
     $acs('.mldDesk').append(mlvedasw);
     if(screen.width > 1023) setTimeout(() => $('.pick_currency:first-of-type').remove(), 2500);
   </script>
