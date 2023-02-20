@@ -20,8 +20,6 @@
   }
 }
 
-
-
 @media screen and (max-width:1025px){
   .blog_content {
     font-size: 1.4rem;
@@ -866,6 +864,12 @@ object-position: top; #insta-feed {
   line-height: 1.8;
   letter-spacing: normal;
   color: rgba(4, 11, 9, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+  .article-template header > span {
+    font-size: 1.2rem;
+  }
 }
 
 .article-control {
