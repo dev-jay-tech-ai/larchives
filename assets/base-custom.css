@@ -847,7 +847,7 @@ object-position: top; #insta-feed {
 }
 
 .blog_content > p:first-child::first-letter {
-  -webkit-initial-letter: 3;
+  -webkit-initial-letter: 2;
   initial-letter: 3;
   color: #000;
   margin-right: .21em;
