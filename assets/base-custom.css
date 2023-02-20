@@ -851,8 +851,10 @@ object-position: top; #insta-feed {
   initial-letter: 3;
   color: #000;
   margin-right: .21em;
+  float: left;
   font-family: 'Termina-demi';
   font-size: 9.6rem;
+  line-height: 9.6rem;
 }
 
 
