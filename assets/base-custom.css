@@ -1222,6 +1222,7 @@ input[type="range"]::-moz-range-thumb {
 
 .maga-menu {
   display: flex;
+  width: 100%;
 }
 
 .mega-menu__content > div {
