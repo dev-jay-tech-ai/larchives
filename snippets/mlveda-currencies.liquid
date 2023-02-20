@@ -7,7 +7,8 @@ var loadScript = (src) => {
   return new Promise((resolve, reject) => {
     const el = document.createElement('script');
     el.src = src;
-    //el.onload = resolve;
+    el.onload = resolve;
+    debugger;
     el.onerror = reject;
 
     document.head.appendChild(el);
