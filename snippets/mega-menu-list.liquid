@@ -8,7 +8,7 @@
         </summary>
         <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
           <div class='page-width'>
-            <div class='maga-menu {% if link.title == 'SPECIAL' %}mega-menu-layout{% endif %}'>  
+            <div class='maga-menu {% if link.title == 'SPECIAL-V' %}mega-menu-layout{% endif %}'>  
               <div class='maga-menu-category'>
                 <div class="mega-menu_list-title">{{ link.title | escape }}</div>
                 <ul class="mega-menu__list 
@@ -22,13 +22,13 @@
                     {{ childlink.title | escape | capitalize }}
                   </a>
                   {%- if childlink.links != blank -%}
-                  <ul class="list-unstyled {% if link.title == 'SPECIAL' %}list-custom{% endif %}" role="list">
+                  <ul class="list-unstyled {% if link.title == 'SPECIAL-V' %}list-custom{% endif %}" role="list">
                   {%- for grandchildlink in childlink.links -%}
                     <li>
                       <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                         {{ grandchildlink.title | escape }}
                       </a>
-                     {% if link.title == 'SPECIAL' %} 
+                     {% if link.title == 'SPECIAL-V' %} 
                       <ul class="list-unstyled" role="list">
                        {% if grandchildlink.title == 'Clothes' %}
                           <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-3 link">Top</a></li>
