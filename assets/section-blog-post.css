@@ -72,6 +72,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .article-template header > span {
+    font-size: 1.2rem;
+  }
+}
+
 .article-template__title {
   margin: 0;
   text-transform: uppercase;
