@@ -40,12 +40,12 @@ performAjax();
 {% endform %}
 <script>
 window.shopify_supported_currencies = "";
-  {% for currency in shop.enabled_currencies %}
-    shopify_supported_currencies = shopify_supported_currencies + "{{ currency.iso_code }} ";
+{% for currency in shop.enabled_currencies %}
+  shopify_supported_currencies = shopify_supported_currencies + "{{ currency.iso_code }} ";
 {% endfor %}
   
   
-    //var ACSCurrency = Currency;
+//var ACSCurrency = Currency;
 function mlvedaCreateCookie(name, value, days) {
     if (days) {
         var date = new Date();
