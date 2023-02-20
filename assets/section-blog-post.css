@@ -16,7 +16,7 @@
 
 @media screen and (max-width:1025px){
   .article-template__hero-container {
-    margin: 0;
+    margin: 6rem;
   }
 }
 
