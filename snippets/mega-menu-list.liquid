@@ -25,7 +25,7 @@
                   <ul class="list-unstyled {% if link.title == 'SPECIAL-V' %}list-custom{% endif %}" role="list">
                   {%- for grandchildlink in childlink.links -%}
                     <li>
-                      <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}{% if link.title == 'SPECIAL-V' %}upper{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                         {{ grandchildlink.title | escape }}
                       </a>
                      {% if link.title == 'SPECIAL-V' %} 
