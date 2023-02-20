@@ -855,11 +855,11 @@ object-position: top; #insta-feed {
   font-size: 9.6rem;
 }
 
-@media screen and (max-width: 1024px) {
+
   .blog_content > div > div {
     width: 100%;
   }
-}
+
 .article-template {
   font-family: Poppins;
   font-size: 16px;
