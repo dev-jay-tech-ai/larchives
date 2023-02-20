@@ -855,9 +855,13 @@ object-position: top; #insta-feed {
   font-size: 9.6rem;
 }
 
+  .blog_content > div {
+    display: flex;
+    column-gap: 3rem;
+  }
 
   .blog_content > div > div {
-    width: 100% !important;
+    width: 50%;
   }
 
 .article-template {
