@@ -12,7 +12,7 @@
               <div class='maga-menu-category'>
                 <div class="mega-menu_list-title">{{ link.title | escape }}</div>
                 <ul class="mega-menu__list 
-                {% if link.title == 'SPECIAL' %}mega-menu__list-custom{% endif %}
+                {% if link.title == '' %}mega-menu__list-custom{% endif %}
                 {% if link.levels == 1 %} mega-menu__list--condensed{% endif %} 
                 page-width" {% if link.title == 'DESIGNERS' %}style="columns: 4"{% endif %} 
                 role="list">  
@@ -78,7 +78,7 @@
               </div>
               <div>
               {% if link.title != 'DESIGNERS' %} 
-                {% if link.title != 'SPECIAL-V' %} 
+                {% if link.title != '' %} 
                 <div class="mega-menu_list-title">DESIGNERS</div>
                 <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
                 {% if link.title == 'CLOTHES' %}
