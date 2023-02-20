@@ -703,6 +703,12 @@ vertical-slider .slider-button[disabled='disabled'] path {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 749px) {
+ .menu-drawer_top {
+   justify-content: flex-start;
+ }
+}
+
 .menu-drawer_top svg {
   width: 2rem;
   height: 2rem;
