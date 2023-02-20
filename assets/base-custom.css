@@ -854,13 +854,14 @@ object-position: top; #insta-feed {
   float: left;
   font-family: 'Termina-demi';
   font-size: 7.4rem;
-  line-height: 8.6rem;
+  line-height: 6.6rem;
 }
 
 
 @media screen and (min-width: 1025px) {
   .blog_content > p:first-child::first-letter {
     font-size: 9.6rem;
+    line-height: 8.6rem;
   }
   
   .blog_content > div {
