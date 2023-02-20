@@ -855,14 +855,16 @@ object-position: top; #insta-feed {
   font-size: 9.6rem;
 }
 
+@media screen and (min-width: 1025px) {
   .blog_content > div {
     display: flex;
     column-gap: 3rem;
   }
-
+  
   .blog_content > div > div {
     width: 50%;
   }
+}
 
 .article-template {
   font-family: Poppins;
