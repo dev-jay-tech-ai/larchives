@@ -857,7 +857,7 @@ object-position: top; #insta-feed {
 
 
   .blog_content > div > div {
-    width: 100%;
+    width: 100% !important;
   }
 
 .article-template {
