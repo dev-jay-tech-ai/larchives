@@ -122,7 +122,15 @@
   padding: 2.7rem 0;
 }
 
+.article-template__title > span {
+  font-size: 1.4rem;
+}
+
 @media screen and (min-width: 1025px) {
+  .article-template__title > span {
+    font-size: 1.6rem;
+  }
+  
   .article-template__title:not(:only-child) {
     padding: 0;
   }
