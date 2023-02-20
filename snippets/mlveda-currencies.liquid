@@ -199,11 +199,12 @@ if(onetimecallflag) {
     mlvedaload();
   });
   
-  $acs('input[name^=id]:checked, select[name^=id], input[name=id], hidden[name^=id] , form[action*="/cart/add"]').on("change",function() {
-       setTimeout(function(){ 
-               mlvedaload();
-               }, 300);
-    });
+  // $acs('input[name^=id]:checked, select[name^=id], input[name=id], hidden[name^=id] , form[action*="/cart/add"]').on("change",function() {
+  //      setTimeout(function(){ 
+  //              mlvedaload();
+  //              }, 300);
+  //   });
+  
   /*if( typeof $ !== "undefined" ) {
 $acs(document).ajaxComplete(function(event, xhr, settings) {
           if(settings.url.indexOf("cart.js")!=-1 || settings.url.indexOf("add.js")!=-1 || settings.url.indexOf("change.js")!=-1) {
