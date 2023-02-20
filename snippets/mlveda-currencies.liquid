@@ -200,10 +200,10 @@ if(onetimecallflag) {
   });
   
   $acs('input[name^=id]:checked, select[name^=id], input[name=id], hidden[name^=id] , form[action*="/cart/add"]').on("change",function() {
-       setTimeout(function(){ 
-               mlvedaload();
-               }, 300);
-    });
+     setTimeout(function(){ 
+             mlvedaload();
+             }, 300);
+  });
   
   /*if( typeof $ !== "undefined" ) {
 $acs(document).ajaxComplete(function(event, xhr, settings) {
