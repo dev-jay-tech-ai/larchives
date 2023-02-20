@@ -23,7 +23,7 @@
 <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>f
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
@@ -153,12 +153,11 @@
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
                 <div class='menu-drawer_top'>
-                  <div class='meun-drawer_close'>{% render 'icon-close' %}</div>
                   {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
                   <div class="mldDesk"></div>
                   {%- endif -%} 
+                  <div class='meun-drawer_close'>{% render 'icon-close' %}</div>
                 </div>
-                
                 <div class='menu-drawer_login'>
                   {%- if shop.customer_accounts_enabled -%}
                     <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
