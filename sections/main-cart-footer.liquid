@@ -19,11 +19,10 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-
+              {% comment %}
               {% render 'cart_discount_code' %}
-            
               <div class='discounts__input'> REDEEM DISCOUNT CODE</div>
-        
+              {% endcomment %}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class='totals_title'>TOTALS</div>
                 <div class="totals">
