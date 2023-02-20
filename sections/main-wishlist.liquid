@@ -72,7 +72,7 @@
       class="grid product-grid grid--1-col-tablet-down grid--4-col-desktop product-grid-custom products-on-page" 
       grid-wishlist
     ></ul>
-
+  {%- comment -%}
    <div class="product-list-bottom">
      <div class="pagination-wrapper">
       <nav class="pagination" role="navigation" aria-label="Pagination">
@@ -89,7 +89,6 @@
   </div>
 </div>
 
-{%- comment -%}
 {%- assign count_pages = 8 -%}  
 {%- paginate products by count_pages -%}
   {%- if products.size == 0 -%}
