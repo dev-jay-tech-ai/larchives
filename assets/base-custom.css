@@ -23,7 +23,7 @@
 
 
 @media screen and (max-width:1025px){
-  .blog_content > p > div {
+  .blog_content > p > span {
     color: red;
   }
 }
