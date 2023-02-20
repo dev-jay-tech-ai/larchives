@@ -41,7 +41,12 @@
                 {% if link.title != 'SPECIAL-V' %} 
                 <div class="mega-menu_list-title">DESIGNERS</div>
                 <ul class="mega-menu__list mega-menu__list--condensed page-width" role="list">  
-                {% if link.title == 'CLOTHES' %}
+                {% if link.title == 'NEW ARRIVALS' %}
+                  <li><a href="/collections/gucci" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
+                  <li><a href="/collections/prada" class="mega-menu__link mega-menu__link--level-2 link">Prada</a></li>
+                  <li><a href="/collections/bottega-veneta" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
+                  <li><a href="/collections/burberry" class="mega-menu__link mega-menu__link--level-2 link">Burberry</a></li>
+                {% elsif link.title == 'CLOTHES' %}
                   <li><a href="/collections/gucci-clothes" class="mega-menu__link mega-menu__link--level-2 link">Gucci</a></li>
                   <li><a href="/collections/valnetino-clothes" class="mega-menu__link mega-menu__link--level-2 link">Valentino</a></li>
                   <li><a href="/collections/bottega-veneta-clothes" class="mega-menu__link mega-menu__link--level-2 link">Bottega veneta</a></li>
