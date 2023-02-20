@@ -855,6 +855,7 @@ object-position: top; #insta-feed {
   font-size: 9.6rem;
 }
 
+
 @media screen and (min-width: 1025px) {
   .blog_content > div {
     display: flex;
@@ -863,6 +864,10 @@ object-position: top; #insta-feed {
   
   .blog_content > div > div {
     width: 50%;
+  }
+
+  .blog_content > div:nth-of-type(2n) {
+    flex-direction: row-reverse;
   }
 }
 
