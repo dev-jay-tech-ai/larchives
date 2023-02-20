@@ -255,7 +255,7 @@
 
         <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
 
-
+          {% comment %}
           <!--  할인코드 처리 부분  -->
           <div class='discounts__input'> REDEEM DISCOUNT CODE
             <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -270,7 +270,7 @@
               {%- endif -%}
             </ul>
           </div>
-          
+          {% endcomment %}
           <div>TOTALS</div>
           <div class="totals" role="status">
             <p class="totals__subtotal">{{ 'sections.cart.subtotal' | t | upcase }}</p>
