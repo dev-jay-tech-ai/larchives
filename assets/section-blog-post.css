@@ -73,7 +73,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .article-template header > span {
+  .article-template header span {
     font-size: 1.2rem;
   }
 }
