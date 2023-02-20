@@ -1305,7 +1305,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .list-custom .mega-menu__link--level-3 {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .button-load-custom {
