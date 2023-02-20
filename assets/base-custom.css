@@ -1304,6 +1304,10 @@ input[type="range"]::-moz-range-thumb {
   gap: 2rem;
 }
 
+.list-custom .mega-menu__link--level-3 {
+  padding-left: 2rem;
+}
+
 .button-load-custom {
   height: 5rem;
   /* display: flex;
