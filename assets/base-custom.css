@@ -1437,10 +1437,6 @@ input[type="range"]::-moz-range-thumb {
   width: 16rem;
 }
 
-@media screen and (min-width: 1025px) {
-  width: 10rem; 
-}
-
 .text-body.font-style {
   color: rgba(4, 11, 9, 0.5);
 }
