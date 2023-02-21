@@ -222,7 +222,7 @@ class PriceRange extends HTMLElement {
       let priceGap = 10;
       
       priceInput.forEach(input => {
-        input.addEventListener("input", e =>{
+        input.addEventListener("input", e => {
           let minPrice = parseInt(priceInput[0].value),
           maxPrice = parseInt(priceInput[1].value);    
           if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
@@ -249,7 +249,6 @@ class PriceRange extends HTMLElement {
             rangeInput[1].value = minVal + priceGap;
           }
         } else {
-          console.log('**** 1 ***** 7')
           priceInput[0].value = minVal;
           priceInput[1].value = maxVal;
           range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
