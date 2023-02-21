@@ -179,12 +179,8 @@
 <div class="card__information">
 <div class="blog-rectangle">&nbsp;</div>  
 <div class="article-card__info caption-with-letter-spacing blog-caption-custom">
-
 <span class="blog-cate-custom" style="letter-spacing: 1.4px">{% for tag in article.tags -%}{{ tag }}{%- endfor %} &bull; </span>
 <span class="circle-divider" style="color: rgba(4, 11, 9, 0.5)">{{ article.published_at | date: "%b %d" }}, {{ article.published_at | date: "%Y" }}</span>     
-
-<span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
-<span itemprop="name">{{ article.author }}</span>
 </span>
 
 </div>
