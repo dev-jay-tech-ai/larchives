@@ -583,6 +583,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 }
 
 .mobile-facets__clear-wrapper  .button_custom {
+  width: 100%;
   padding: 0;
 }
 
