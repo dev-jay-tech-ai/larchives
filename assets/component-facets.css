@@ -899,8 +899,11 @@ input.mobile-facets__checkbox {
 .mobile-facets__summary .icon-caret {
   margin-left: auto;
   display: block;
+}
+
+.mobile-facets__arrow > svg {
   width: 2rem;
-  height: 1rem;
+  height: 2rem;  
 }
 
 .mobile-facets__label--disabled {
