@@ -768,7 +768,7 @@ details.menu-opening .mobile-facets__close svg {
 }
 
 .mobile-facets__main {
-  padding: 2.7rem 2rem 0;
+  padding: 2.7rem 0 2rem;
   position: relative;
   z-index: 1;
   flex-grow: 1;
