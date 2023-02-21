@@ -1823,7 +1823,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .grid--3-col-desktop .card-information {
-  height: 9.2rem;
+  padding: 0 1rem;
 }
 
 .custom-price-discountrate {
@@ -1859,14 +1859,6 @@ input[type="range"]::-moz-range-thumb {
     padding: 0;
   }
     
-/*   .product-grid-custom .card__inner {
-    height: 45.7rem;
-  }  */
-
-/*   .grid--4-col-desktop .card__inner {
-    height: 45.7rem;
-  } */
-  
   .mldDesk {
     display: block;
     width: 6.3rem;
