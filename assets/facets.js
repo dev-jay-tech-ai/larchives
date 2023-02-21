@@ -226,15 +226,15 @@ class PriceRange extends HTMLElement {
           let minPrice = parseInt(priceInput[0].value),
           maxPrice = parseInt(priceInput[1].value);    
           if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
-              if(e.target.className === "range-min"){
-                  rangeInput[0].value = minPrice;
-                  range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
-                  rangeNum.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
-              }else{
-                  rangeInput[1].value = maxPrice;
-                  range.style.right = (100 - (maxPrice / rangeInput[1].max) * 100) + "%";
-                  rangeNum.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-              }
+            if(e.target.className === "range-min"){
+                rangeInput[0].value = minPrice;
+                range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                rangeNum.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+            } else{
+                rangeInput[1].value = maxPrice;
+                range.style.right = (100 - (maxPrice / rangeInput[1].max) * 100) + "%";
+                rangeNum.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+            }
           }
         });
       });
@@ -242,7 +242,6 @@ class PriceRange extends HTMLElement {
       rangeInput.forEach(input => {
         let minVal = parseInt(rangeInput[0].value),
         maxVal = parseInt(rangeInput[1].value); 
-        /* 값을 입력 후 새로고침, 일처리 */
         if((maxVal - minVal) < priceGap){
           if(input.className === "range-min"){
             rangeInput[0].value = maxVal - priceGap
