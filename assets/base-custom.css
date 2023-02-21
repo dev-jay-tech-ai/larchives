@@ -24,6 +24,10 @@
   padding-top: 6rem;
 }
 
+#relatedblogs h2  {
+  margin: 8rem 0;
+}
+
 @media screen and (max-width:1025px){
   .blog_content {
     font-size: 1.4rem;
