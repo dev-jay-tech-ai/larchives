@@ -897,8 +897,6 @@ object-position: top; #insta-feed {
 }
 
 .article-control {
-  display: flex;
-  justify-content: center;
   font-family: Termina-demi;
   font-size: 12px;
   font-weight: 500;
@@ -908,6 +906,11 @@ object-position: top; #insta-feed {
   letter-spacing: normal;
   color: #040b09;
   text-transform: uppercase;
+}
+
+.article-controller {
+  display: flex;
+  justify-content: center;
 }
 
 .share-button {
