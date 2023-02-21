@@ -1434,7 +1434,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .select__select.caption-large.font-style {
-  width: 10rem;
+  width: 16rem;
+}
+
+@media screen and (min-width: 1025px) {
+  width: 10rem; 
 }
 
 .text-body.font-style {
