@@ -1,15 +1,15 @@
-        {%- assign timestamp = 'now' | date : "%s" -%}
-        {%- assign ex_ids = ""-%}
-  {%- assign ex_frmpool_id = article.id | append: '"' | prepend: '"' -%}
+{%- assign timestamp = 'now' | date : "%s" -%}
+{%- assign ex_ids = ""-%}
+{%- assign ex_frmpool_id = article.id | append: '"' | prepend: '"' -%}
 
 {%- assign ex_tags = "" | split: "," -%}
 {%- assign no_post_display = 3 -%}
 
 {%- assign b_id = blog.id  -%}
 
-  {%- assign blog_ids = "85172977822"  -%}
+{%- assign blog_ids = "85172977822"  -%}
 
-      {%- assign blog_handle_arr = "all" | split: "," -%}
+{%- assign blog_handle_arr = "all" | split: "," -%}
   
 {%- assign blog_flag = "false" -%}
 
