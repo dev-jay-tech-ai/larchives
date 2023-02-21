@@ -945,8 +945,8 @@ object-position: top; #insta-feed {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .sharing-custom {
     margin-left: 2rem;
