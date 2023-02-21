@@ -909,6 +909,7 @@ object-position: top; #insta-feed {
 }
 
 .article-controller {
+  max-width: 8.76rem;
   display: flex;
   justify-content: center;
 }
