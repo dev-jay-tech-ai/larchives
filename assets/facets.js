@@ -184,14 +184,12 @@ class FacetFiltersForm extends HTMLElement {
 
       sortFilterForms.forEach((form) => {
         if (!isMobile) {
-          console.log('모바일 아님')
           if (form.id === 'FacetSortForm' || form.id === 'FacetFiltersForm' || form.id === 'FacetSortDrawerForm') {
             const noJsElements = document.querySelectorAll('.no-js-list');
             noJsElements.forEach((el) => el.remove());
             forms.unshift(this.createSearchParams(form));
           }
         } else if (form.id === 'FacetFiltersFormMobile') {
-          console.log('모바일')
           forms.push(this.createSearchParams(form));
         }
       });
