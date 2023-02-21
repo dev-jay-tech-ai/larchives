@@ -281,8 +281,8 @@
 }
 
 .card--standard > .card__content .card__information {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .card--card.card--media .card__inner .card__information,
