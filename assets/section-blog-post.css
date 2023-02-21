@@ -92,6 +92,11 @@
   transform: rotate(180deg);  
 }
 
+.article-template__link > svg {
+  width: 16;
+  height: 16;
+}
+
 .article-template__content {
   margin-top: 3rem;
   margin-bottom: 3rem;
