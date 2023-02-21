@@ -1822,10 +1822,6 @@ input[type="range"]::-moz-range-thumb {
   opacity: .6;
 }
 
-.grid--3-col-desktop .card-information {
-  padding: 0 1rem;
-}
-
 .custom-price-discountrate {
   font-size: 1.2rem;
   font-stretch: normal;
