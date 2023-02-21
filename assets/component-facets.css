@@ -1008,15 +1008,16 @@ input.mobile-facets__checkbox {
 
 .facets-btn {
   width: 100%; 
-  margin-top: 3rem;
+  margin-top: 3re
 }
 
 @media screen and (min-width: 1250px) {
    .facets-vertical .facets__summary {
-      padding-top: 2rem;
+    padding-top: 2rem;
    }
    .facets-btn {
-      margin-top: 4rem;
+    margin-top: 4rem;
+    padding: 0; 
    }
 }
 
