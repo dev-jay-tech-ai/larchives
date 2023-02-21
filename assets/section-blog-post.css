@@ -91,6 +91,7 @@
 .article-template__link .icon-wrap.prev {
   transform: rotate(180deg);
   margin-right: 1rem;
+  margin-left: 0;
 }
 
 .article-template__link .icon-wrap > svg {
