@@ -126,8 +126,11 @@
 
 {%- assign article_ids = articleids | uniq -%}
 
-<h2 class='center'>YOU MIGHT LIKE</h2>    
-<ul>    
+<h2 class='center'>YOU MIGHT LIKE</h2>
+<slider-component class="slider-mobile-gutter">
+<ul 
+  class="blog__posts articles-wrapper contains-card contains-card--article contains-card--standard grid grid--peek grid--2-col-tablet grid--3-col-desktop slider slider--tablet"
+  role="list">    
 {%- assign count = 0 -%}
 {%- for aid in article_ids -%}
 {%- assign rflag = "false" -%}
