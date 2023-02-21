@@ -187,13 +187,13 @@ class FacetFiltersForm extends HTMLElement {
           if (form.id === 'FacetSortForm' || form.id === 'FacetFiltersForm' || form.id === 'FacetSortDrawerForm') {
             const noJsElements = document.querySelectorAll('.no-js-list');
             noJsElements.forEach((el) => el.remove());
-            forms.push(this.createSearchParams(form));
+            forms.unshift(this.createSearchParams(form));
           }
         } else if (form.id === 'FacetFiltersFormMobile') {
           forms.push(this.createSearchParams(form));
         }
       });
-      this.onSubmitForm(forms.reverse().join('&'), event)
+      this.onSubmitForm(forms.join('&'), event)
     }
   }
 
