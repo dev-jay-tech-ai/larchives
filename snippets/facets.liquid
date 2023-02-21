@@ -622,7 +622,7 @@
                       <summary class="mobile-facets__summary focus-inset">
                         <div>
                           <span>{{ filter.label | escape }}</span>
-                          <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
+                          <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-chevron-right' %}</span>
                           <noscript>{% render 'icon-chevron-down' %}</noscript>
                         </div>
                       </summary>
@@ -668,13 +668,12 @@
                       <summary class="mobile-facets__summary focus-inset">
                         <div>
                           <span>{{ filter.label | escape }}</span>
-                          <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
+                          <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-chevron-right' %}</span>
                           <noscript>{% render 'icon-chevron-down' %}</noscript>
                         </div>
                       </summary>
                       <div id="FacetMobile-{{ forloop.index }}-{{ section.id }}" class="mobile-facets__submenu gradient">
                         <button class="mobile-facets__close-button link link--text focus-inset" aria-expanded="true" type="button">
-                          {% render 'icon-arrow' %}
                           {{ filter.label | escape }}
                         </button>
 
