@@ -582,6 +582,10 @@ a.active-facets__button.focused .active-facets__button-inner,
   justify-content: center;
 }
 
+.mobile-facets__clear-wrapper  .button_custom {
+  padding: auto 4.8rem;
+}
+
 .mobile-facets {
   position: fixed;
   top: 0;
