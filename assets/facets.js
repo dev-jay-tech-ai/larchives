@@ -193,7 +193,7 @@ class FacetFiltersForm extends HTMLElement {
           forms.push(this.createSearchParams(form));
         }
       });
-      this.onSubmitForm(forms.join('&'), event)
+      this.onSubmitForm(forms.reverse().join('&'), event)
     }
   }
 
