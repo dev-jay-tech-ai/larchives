@@ -941,6 +941,13 @@ object-position: top; #insta-feed {
 }
 
 @media screen and (max-width: 1024px) {
+  .article-controller {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .sharing-custom {
     margin-left: 2rem;
     margin-right: 2rem;
