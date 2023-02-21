@@ -899,6 +899,8 @@ input.mobile-facets__checkbox {
 .mobile-facets__summary .icon-caret {
   margin-left: auto;
   display: block;
+  width: 2rem;
+  height: 1rem;
 }
 
 .mobile-facets__label--disabled {
