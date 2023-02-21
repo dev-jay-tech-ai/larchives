@@ -152,25 +152,28 @@
 
 {%- if ex_frmpool_main_flag == "true" -%}
 <li class="blog__post grid__item article slider__slide slider__slide--full-width">
-    {%- if article.image -%}
-<div class="rb_image_wrap">
+<div class="card article-card card--standard card--media" style="--ratio-percent: 100%;">
+{%- if article.image -%}
+ <div class="article-card__image-wrapper card__media">
+  <div class="article-card__image media media--hover-effect">
   <a href="{{ article.url }}"><img src="{{ article.image.src | img_url: 'large' }}" alt="{{ article.title }}" class="rb_image" /></a>
+  </div>
 </div>
 {%- else -%}
 <div class="rb_image_wrap">
   <div class="rb_no_image"></div>
 </div>
 {%- endif -%}
-  <div class="rb_contents">
+<div class="rb_contents">
 <h5 class="rb_title"><a href='{{ article.url }}'>{{ article.title }}</a></h5>
-
-        {%- if article.content != "" -%}
-  <p>{{ article.content | strip_html | strip | truncate: 120 }}</p>
-  {%- endif -%}
-
+{%- if article.content != "" -%}
+<p>{{ article.content | strip_html | strip | truncate: 120 }}</p>
+{%- endif -%}
 </div>
-
-</li>    {%- endif -%}
+  
+</div>
+</li>    
+{%- endif -%}
 
 {%- assign rflag = "true" -%}
 {%- assign count = count | plus:1 -%}
