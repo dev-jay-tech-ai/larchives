@@ -627,10 +627,7 @@
                         </div>
                       </summary>
                       <div id="FacetMobile-{{ forloop.index }}-{{ section.id }}" class="mobile-facets__submenu gradient">
-                        <button class="mobile-facets__close-button link link--text focus-inset" aria-expanded="true" type="button">
-                          {% render 'icon-arrow' %}
-                          {{ filter.label | escape }}
-                        </button>
+                        <button class="mobile-facets__close-button link link--text focus-inset" aria-expanded="true" type="button">{{ filter.label | escape }}</button>
                         <ul class="mobile-facets__list list-unstyled" role="list">
                           {%- for value in filter.values -%}
                             <li class="mobile-facets__item list-menu__item">
