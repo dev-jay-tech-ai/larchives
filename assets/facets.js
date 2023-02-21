@@ -181,6 +181,7 @@ class FacetFiltersForm extends HTMLElement {
     } else {
       const forms = [];
       const isMobile = event.target.closest('form').id === 'FacetFiltersFormMobile';
+      console.log(isMobile);
 
       sortFilterForms.forEach((form) => {
         if (!isMobile) {
