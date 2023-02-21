@@ -205,11 +205,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   text-align: left;
 }
 
-.menu-drawer__close-button > svg {
-  width: 2rem;
-  height: 2rem;
-}
-
 .no-js .menu-drawer__close-button {
   display: none;
 }
