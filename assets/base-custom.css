@@ -897,6 +897,8 @@ object-position: top; #insta-feed {
 }
 
 .article-control {
+  max-width: 84.6rem;
+  display: flex;
   font-family: Termina-demi;
   font-size: 12px;
   font-weight: 500;
