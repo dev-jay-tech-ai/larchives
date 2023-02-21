@@ -162,8 +162,9 @@
 
 {%- if ex_frmpool_main_flag == "true" -%}
 <li class="blog__post grid__item article slider__slide slider__slide--full-width">
+<div class="article-card-wrapper card-wrapper underline-links-hover">
 <div class="card article-card card--standard card--media" style="--ratio-percent: 100%;">
-  
+<div class="card__inner  color-accent-2 gradient ratio blog-image-custom" style="--ratio-percent: 100%;">  
 {%- if article.image -%}
  <div class="article-card__image-wrapper card__media">
   <div class="article-card__image media media--hover-effect">
@@ -173,7 +174,7 @@
   </div>
 </div>
 {%- endif -%}
-  
+</div> 
 <div class="card__content">
 <div class="card__information">
   
@@ -186,6 +187,7 @@
 </div>
 </div>
   
+</div>  
 </div>
 </li>    
 {%- endif -%}
