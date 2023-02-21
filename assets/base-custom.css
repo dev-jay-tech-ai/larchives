@@ -913,7 +913,11 @@ object-position: top; #insta-feed {
 .article-controller {
   width: 84.6rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.article-controller.controller-style {
+  justify-content: space-between; 
 }
 
 .share-button {
@@ -943,8 +947,6 @@ object-position: top; #insta-feed {
 @media screen and (max-width: 1024px) {
   .article-controller {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
