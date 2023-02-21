@@ -1,3 +1,5 @@
+{{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
+
 {%- assign timestamp = 'now' | date : "%s" -%}
 {%- assign ex_ids = ""-%}
 {%- assign ex_frmpool_id = article.id | append: '"' | prepend: '"' -%}
