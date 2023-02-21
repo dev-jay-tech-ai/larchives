@@ -92,11 +92,11 @@
   transform: rotate(180deg);  
 }
 
-.article-template__link > svg {
-  width: 16;
-  height: 16;
+.article-template__link .icon-wrap > svg {
+  width: 1.6rem;
+  height: 1.6rem;
 }
-
+ 
 .article-template__content {
   margin-top: 3rem;
   margin-bottom: 3rem;
