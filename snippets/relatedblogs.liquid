@@ -126,7 +126,9 @@
 
 {%- assign article_ids = articleids | uniq -%}
 
-<h2 class='center'>YOU MIGHT LIKE</h2>    <ul>    {%- assign count = 0 -%}
+<h2 class='center'>YOU MIGHT LIKE</h2>    
+<ul>    
+{%- assign count = 0 -%}
 {%- for aid in article_ids -%}
 {%- assign rflag = "false" -%}
 {%- for blog in blog_handle_arr -%}
