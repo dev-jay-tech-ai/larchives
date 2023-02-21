@@ -166,12 +166,23 @@
   <div class="rb_no_image"></div>
 </div>
 {%- endif -%}
-<div class="rb_contents">
-<h5 class="rb_title"><a href='{{ article.url }}'>{{ article.title }}</a></h5>
-{%- if article.content != "" -%}
-<p>{{ article.content | strip_html | strip | truncate: 120 }}</p>
-{%- endif -%}
+<div class="card__content">
+<div class="card__information">
+<h3 class="card__heading h2">
+<a href='{{ article.url }}'  class="full-unstyled-link">{{ article.title }}</a>
+</h3>
+
+<div class="article-card__info caption-with-letter-spacing h5">
+<span class="circle-divider"><time datetime="2023-02-17T14:52:03Z">February 17, 2023</time></span>
 </div>
+{%- if article.content != "" -%}
+<p class="article-card__excerpt rte-width">{{ article.content | strip_html | strip | truncate: 120 }}</p>
+{%- endif -%}
+<div class="article-card__footer"></div>
+</div>
+</div>
+</div>
+</div>  
   
 </div>
 </li>    
