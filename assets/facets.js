@@ -300,8 +300,8 @@ class PriceRange extends HTMLElement {
     const inputs = this.querySelectorAll('input');
     const minInput = inputs[0];
     const maxInput = inputs[1];
-    if (maxInput.value) minInput.setAttribute('max', maxInput.value.replace('rem',''));
-    if (minInput.value) maxInput.setAttribute('min', minInput.value.replace('rem',''));
+    if (maxInput.value) minInput.setAttribute('max', maxInput.value);
+    if (minInput.value) maxInput.setAttribute('min', minInput.value);
     if (minInput.value === '') maxInput.setAttribute('min', 0);
     if (maxInput.value === '') minInput.setAttribute('max', maxInput.getAttribute('max'));
   }
