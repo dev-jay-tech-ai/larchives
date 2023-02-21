@@ -41,7 +41,7 @@
       "type": "apps",
       "blocks": {
         "73781890-dbfa-489c-96fe-64180c78b1ba": {
-          "type": "shopify:\/\/apps\/related-blog-posts\/blocks\/app-block\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
+          "type": "shopify:\/\/apps\/related-blog-posts-pro\/blocks\/app-block\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
           "settings": {
           }
         }
@@ -52,10 +52,19 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "b6e27def-e2fb-4078-b0a4-b24a678f98df": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
     }
   },
   "order": [
     "main",
-    "1668790341c42e291a"
+    "1668790341c42e291a",
+    "b6e27def-e2fb-4078-b0a4-b24a678f98df"
   ]
 }
