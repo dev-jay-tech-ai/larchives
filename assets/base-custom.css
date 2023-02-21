@@ -940,6 +940,13 @@ object-position: top; #insta-feed {
   border-bottom: 1px solid rgba(4, 11, 9, 0.1);
 }
 
+@media screen and (man-width: 1024px) {
+  .sharing-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }  
+}
+
 .sharing-custom > div {
   width: 4.8rem;
   height: 4.8rem;
