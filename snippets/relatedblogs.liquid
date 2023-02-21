@@ -163,6 +163,7 @@
 {%- if ex_frmpool_main_flag == "true" -%}
 <li class="blog__post grid__item article slider__slide slider__slide--full-width">
 <div class="card article-card card--standard card--media" style="--ratio-percent: 100%;">
+  
 {%- if article.image -%}
  <div class="article-card__image-wrapper card__media">
   <div class="article-card__image media media--hover-effect">
@@ -171,28 +172,19 @@
     </a>
   </div>
 </div>
-{%- else -%}
-<div class="rb_image_wrap">
-  <div class="rb_no_image"></div>
-</div>
 {%- endif -%}
+  
 <div class="card__content">
 <div class="card__information">
-<h3 class="card__heading h2">
-<a href='{{ article.url }}'  class="full-unstyled-link">{{ article.title }}</a>
-</h3>
-
-<div class="article-card__info caption-with-letter-spacing h5">
-<span class="circle-divider"><time datetime="2023-02-17T14:52:03Z">February 17, 2023</time></span>
-</div>
+  
+<h3 class="card__heading h2"><a href='{{ article.url }}'  class="full-unstyled-link">{{ article.title }}</a></h3>
+<div class="article-card__info caption-with-letter-spacing h5"><span class="circle-divider"><time datetime="2023-02-17T14:52:03Z">February 17, 2023</time></span></div>
 {%- if article.content != "" -%}
 <p class="article-card__excerpt rte-width">{{ article.content | strip_html | strip | truncate: 120 }}</p>
 {%- endif -%}
 <div class="article-card__footer"></div>
 </div>
 </div>
-</div>
-</div>  
   
 </div>
 </li>    
