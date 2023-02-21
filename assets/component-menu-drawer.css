@@ -206,8 +206,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__close-button > svg {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .no-js .menu-drawer__close-button {
