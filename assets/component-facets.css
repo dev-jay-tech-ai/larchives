@@ -781,6 +781,10 @@ details.menu-opening .mobile-facets__close svg {
   overflow-y: auto;
 }
 
+.mobile-facets__main > details {
+  padding-left: 2rem;
+}
+
 .mobile-facets__details[open] .icon-caret {
   transform: rotate(180deg);
 }
