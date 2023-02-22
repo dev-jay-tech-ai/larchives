@@ -1,7 +1,7 @@
 {{ block.settings.page.content }}
 {% for collection in product.collections %}
 {% assign categories = collection.title | downcase %}
-{% comment %} {{ categories }} {% endcomment %}
+{{ categories }}
  
 {% if categories contains "(m)" %}
   {% if categories contains "shoes" %}
