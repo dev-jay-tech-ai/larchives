@@ -2,6 +2,7 @@ const target_level = document.querySelectorAll('.mega-menu__list--condensed .meg
 target_level.forEach((el) => {
   el.addEventListener('click',(e) => {
     e.preventDefault();
+    el.querySelector(svg).style.transform = 'rotate(180deg)';
     if(el.nextSibling.style.display !== 'block') {
       target_level.forEach((ele) => {
         if(ele.nextSibling) ele.nextSibling.style.display = 'none';
