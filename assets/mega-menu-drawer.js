@@ -3,7 +3,7 @@ target_level.forEach((el) => {
   el.addEventListener('click',(e) => {
     e.preventDefault();
     target_level.forEach((ele) => {
-      console.log(ele.nextSibling)
+      if(ele.nextSibling) console.log(ele.nextSibling)
     })
     el.nextSibling.style.display = 'block';
     console.log('it clicked!')
