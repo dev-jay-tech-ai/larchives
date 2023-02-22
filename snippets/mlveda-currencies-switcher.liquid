@@ -224,32 +224,32 @@ var mlvedasw = '<div class = "pick_currency "  style="display: none !important; 
 </script>
   
 {% if settings.mlvedaACS_position == "inline" %}
- <script>
-  $acs('body').append(mlvedasw);   
-  $acs('document').ready(function(){
-     $acs("body").addClass("mlvedaMobileFilter");
-     lastScroll = 0;
-  $acs(window).on('scroll',function() {    
-     var scroll = $acs(window).scrollTop();
-  // console.log(scroll);
-     if(lastScroll - scroll > 0) {
-         $acs("body").addClass("mlvedaMobileFilter");
-     console.log("add"); 
-     } else {
-       //console.log("remove");
-       if($acs( "body" ).hasClass( "mlvedaMobileFilter" )){
-        $acs("body").removeClass("mlvedaMobileFilter");    
-       }
+<script>
+$acs('body').append(mlvedasw);   
+$acs('document').ready(function(){
+   $acs("body").addClass("mlvedaMobileFilter");
+   lastScroll = 0;
+$acs(window).on('scroll',function() {    
+   var scroll = $acs(window).scrollTop();
+// console.log(scroll);
+   if(lastScroll - scroll > 0) {
+       $acs("body").addClass("mlvedaMobileFilter");
+   console.log("add"); 
+   } else {
+     //console.log("remove");
+     if($acs( "body" ).hasClass( "mlvedaMobileFilter" )){
+      $acs("body").removeClass("mlvedaMobileFilter");    
      }
-     lastScroll = scroll;
-  });
-  });
-  </script>
+   }
+   lastScroll = scroll;
+});
+});
+</script>
 {% else %}
-  <script>
-    $acs('.mldDesk').append(mlvedasw);
-    if(screen.width > 1023) setTimeout(() => $('.pick_currency:first-of-type').remove(), 2500);
-  </script>
+<script>
+  $acs('.mldDesk').append(mlvedasw);
+  /* if(screen.width > 1023) setTimeout(() => $('.pick_currency:first-of-type').remove(), 2500); */
+</script>
 {% endif %}
   
 <script>
