@@ -45,7 +45,7 @@
               {% case filter.type %}       
               {% when 'boolean' or 'list' %}
                 {%-  if filter.label == 'Availability' -%}
-                {%- if forloop.index != forloop.rindex -%}  
+                {%- if forloop.index != forloop.length -%}  
                 <details id="Details-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter" data-index="{{ forloop.index }}"{% comment %}{% if filter_type == 'vertical' and forloop.index == 1 %} open{% endif %}{% endcomment %}>
                   <summary class="facets__summary focus-offset" aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})">
                     <div>
