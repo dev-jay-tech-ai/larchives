@@ -1,5 +1,4 @@
 const target_level = document.querySelectorAll('.mega-menu__list--condensed .mega-menu__link--level-2');
-const target_svg = document.querySelectorAll('.mega-menu__link--level-2 > svg');
 
 target_level.forEach((el) => {
   el.addEventListener('click',(e) => {
@@ -8,6 +7,7 @@ target_level.forEach((el) => {
     if(el.nextSibling.style.display !== 'block') {
       target_level.forEach((ele) => {
         if(ele.nextSibling) ele.nextSibling.style.display = 'none';
+        console.log(el.querySelector('svg'));
       })
       el.nextSibling.style.display = 'block';
     } else {
