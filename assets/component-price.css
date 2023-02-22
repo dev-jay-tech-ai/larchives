@@ -71,6 +71,7 @@
   text-decoration: line-through;
   color: rgba(var(--color-foreground), .5);
   font-size: 1.2rem;
+  letter-spacing: normal;
 }
 
 .unit-price {
