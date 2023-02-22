@@ -235,18 +235,18 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
    window.fetch = function(){
      var e = arguments;
      return fetch.apply(this, Array.prototype.slice.call(arguments)).then(function(t) {
-         if (!t.ok)
-             return t;
-         try {
-            if(t.url.indexOf("cart.js")!=-1 || t.url.indexOf("?page=")!=-1 || t.url.indexOf("search?")!=-1 || t.url.indexOf("view=")!=-1 || t.url.indexOf("type=")!=-1 || t.url.indexOf("change.js")!=-1 || t.url.indexOf("add.js")!=-1 || t.url.indexOf("recently-viewed")!=-1 || t.url.indexOf("recentlyviewed")!=-1 || t.url.indexOf("/recommendation")!=-1 ) {  
-              setTimeout(function(){
-             mlvedaload();
-             }, 300);
-            }
-         } catch (e) {
-             console && console.warn && console.warn("[shop_events_listener] Error in handleFetchRequest:  " + e.message);
-         }
-         return t
+       if (!t.ok)
+           return t;
+       try {
+          if(t.url.indexOf("cart.js")!=-1 || t.url.indexOf("?page=")!=-1 || t.url.indexOf("search?")!=-1 || t.url.indexOf("view=")!=-1 || t.url.indexOf("type=")!=-1 || t.url.indexOf("change.js")!=-1 || t.url.indexOf("add.js")!=-1 || t.url.indexOf("recently-viewed")!=-1 || t.url.indexOf("recentlyviewed")!=-1 || t.url.indexOf("/recommendation")!=-1 ) {  
+            setTimeout(function(){
+           mlvedaload();
+           }, 300);
+          }
+       } catch (e) {
+           console && console.warn && console.warn("[shop_events_listener] Error in handleFetchRequest:  " + e.message);
+       }
+       return t
      })
    }
 })();
