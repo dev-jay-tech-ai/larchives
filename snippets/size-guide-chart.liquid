@@ -2,7 +2,6 @@
 {% for collection in product.collections %}
 {% assign categories = collection.title | downcase %}
 {{ categories }}
- 
 {% if categories contains "(m)" %}
   {% if categories contains "shoes" %}
     {% render "size-shoes-m" %}
