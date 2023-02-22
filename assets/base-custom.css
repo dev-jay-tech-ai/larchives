@@ -1297,6 +1297,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .mega-menu__content > div > div ul {
+  display: none;
   padding-top: 0;
   padding-left: 0;
 }
