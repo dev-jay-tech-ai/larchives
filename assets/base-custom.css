@@ -583,7 +583,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .size-product-sub {
-  color: rgba(4,11,9,.5);
+  color: rgba(4,11,9,.05);
 }
 
 .size-product-detail {
