@@ -594,10 +594,6 @@ vertical-slider .slider-button[disabled='disabled'] path {
   padding-top: 2rem;
 }
 
-.size-chart tbody {
-  border-right: 0.1rem solid rgba(var(--color-foreground),.1);
-}
-
 .size-chart table th, .size-chart table td {
   border: 0.1rem solid rgba(var(--color-foreground),.1);
   min-width: 12rem;
@@ -608,7 +604,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
   font-weight: 500;
 }
 
-.size-chart table td {
+.size-chart table td:not(:last-child) {
   border-right-color: #fff;  
 }
 
