@@ -6,7 +6,7 @@ target_level.forEach((el) => {
       if(ele.nextSibling) ele.nextSibling.style.display = 'none';
     })
     console.log('결과',el.nextSibling.style.display);
-    if(el.nextSibling.style.display !== 'block') el.nextSibling.style.display = 'block';
+    if(el.nextSibling.style.display != 'block') el.nextSibling.style.display = 'block';
     else el.nextSibling.style.display = 'none';
   })
 })  
