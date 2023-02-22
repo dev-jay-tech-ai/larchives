@@ -6,7 +6,7 @@ target_level.forEach((el) => {
     if(el.nextSibling.style.display !== 'block') {
       target_level.forEach((ele) => {
         if(ele.nextSibling) ele.nextSibling.style.display = 'none';
-        el.querySelector('svg').style.transform = 'rotate(180deg)';
+        ele.querySelector('svg').style.transform = 'rotate(180deg)';
       })
       el.nextSibling.style.display = 'block';
     } else {
