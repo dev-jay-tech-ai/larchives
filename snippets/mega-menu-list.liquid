@@ -17,7 +17,7 @@
                 {%- for childlink in link.links -%}
                 <li>
                   <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link  {% if childlink.current %} mega-menu__link--active {% endif %}{%- if childlink.links != blank -%}upper{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                    {{ childlink.title | escape | capitalize }}
+                    {{ childlink.title | escape | capitalize }} {% if link.levels == 1 %} > {% endif %} 
                   </a>
                   {%- if childlink.links != blank -%}
                   <ul class="list-unstyled {% if link.title == 'SPECIAL-V' %}list-custom{% endif %}" role="list">
