@@ -25,9 +25,6 @@
   border-bottom: 1px solid rgba(4,11,9,.1);
 }
 
-.menu-drawer__inner-submenu .menu-drawer__menu {
-  padding-top: 0 !important;
-}
 
 .menu-drawer__menu {
   padding-top: 3rem !important;
