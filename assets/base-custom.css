@@ -26,7 +26,7 @@
 }
 
 .menu-drawer__inner-submenu .menu-drawer__menu {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .menu-drawer__menu {
