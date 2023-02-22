@@ -2,8 +2,8 @@ const target_level = document.querySelectorAll('.mega-menu__list--condensed .meg
 target_level.forEach((el) => {
   el.addEventListener('click',(e) => {
     e.preventDefault();
-    target_level.forEach((el) => {
-      el.nextSibling.style.display = 'none';
+    target_level.forEach((ele) => {
+      ele.nextSibling.style.display = 'none';
     })
     el.nextSibling.style.display = 'block';
     console.log('it clicked!')
