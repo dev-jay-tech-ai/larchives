@@ -1301,7 +1301,7 @@ input[type="range"]::-moz-range-thumb {
   padding-top: .2rem;
   padding-bottom: 2rem;
   padding-left: 0;
-  color: rgba(4, 11, 9, 0.7);
+  color: rgba(4, 11, 9, 0.5);
 }
 
 .maga-menu-banner {
