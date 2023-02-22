@@ -20,6 +20,10 @@
   }
 }
 
+.sec_depth_style {
+  font-family: 'Termina-demi';
+}
+
 #relatedblogs {
   margin: 6rem auto;
 }
