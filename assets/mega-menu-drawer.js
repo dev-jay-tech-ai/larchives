@@ -7,6 +7,6 @@ target_level.forEach((el) => {
         if(ele.nextSibling) ele.nextSibling.style.display = 'none';
       })
       el.nextSibling.style.display = 'block';
-    }
+    } else el.nextSibling.style.display = 'none';
   })
 })  
