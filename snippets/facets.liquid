@@ -45,7 +45,6 @@
               {% case filter.type %}       
               {% when 'boolean' or 'list' %}
                 {%-  if filter.label == 'Availability' -%}
-          
                 <details id="Details-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter" data-index="{{ forloop.index }}"{% comment %}{% if filter_type == 'vertical' and forloop.index == 1 %} open{% endif %}{% endcomment %}>
                   <summary class="facets__summary focus-offset" aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})">
                     <div>
@@ -175,7 +174,6 @@
                       <legend class="visually-hidden">{{ filter.label | escape }}</legend>
                       <ul class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden" role="list">
 
-                
                         {%- for value in filter.values -%}
                           <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                             <label for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
@@ -281,18 +279,6 @@
                   </summary>
                   <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="{% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}">
                     <div>
-                    {% comment %}
-                    <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
-                      {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
-                      <span class="facets__selected">{{ "products.facets.max_price" | t: price: max_price_amount }}</span>
-                      {%- if filter_type != 'vertical' -%}
-                        <facet-remove>
-                          <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
-                            {{ 'products.facets.reset' | t }}
-                          </a>
-                        </facet-remove>
-                      {%- endif -%}
-                    </div>{% endcomment %}
                     <price-range class="facets__price">
                       <div class='field-container'>
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
