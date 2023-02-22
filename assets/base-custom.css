@@ -26,7 +26,7 @@
 }
 
 .menu-drawer__menu {
-  padding-top: 3rem;
+  padding-top: 3rem !important;
 }
 
 #relatedblogs {
