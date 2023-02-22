@@ -105,6 +105,11 @@
   font-weight: normal;
 }
 
+.mega-menu__link--level-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .mega-menu__link--level-2 > svg {
   width: 1.8rem;
   height: 1.8rem;
