@@ -24,7 +24,7 @@
   font-family: 'Termina-demi' !important;
 }
 
-.menu-drawer__submenu > button {
+.menu-drawer__submenu button {
   border-bottom: 1px solid rgba(4,11,9,.1);
 }
 
