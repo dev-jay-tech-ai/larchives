@@ -21,7 +21,7 @@
 }
 
 .sec_depth_style {
-  font-family: 'Termina-demi';
+  font-family: 'Termina-demi' !important;
 }
 
 #relatedblogs {
