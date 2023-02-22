@@ -16,22 +16,21 @@ var loadScript = (src) => {
 
 var performAjax = async () => {
   try {
-      await loadScript(
-          '//mlveda-shopifyapps.s3.amazonaws.com/multiCurrencyPricing/js/currencies.js?rnd=' +
-          Math.floor(Math.random() * 10000000000 + 1),
-      );
-      window.ACSCurrency = Currency;
-      await loadScript(
-          '/apps/MultiCurrency/New/js/jquery.currencies.min.js?rnd=' +
-          Math.floor(Math.random() * 10000000000 + 1),
-      );
+    await loadScript(
+        '//mlveda-shopifyapps.s3.amazonaws.com/multiCurrencyPricing/js/currencies.js?rnd=' +
+        Math.floor(Math.random() * 10000000000 + 1),
+    );
+    window.ACSCurrency = Currency;
+    await loadScript(
+        '/apps/MultiCurrency/New/js/jquery.currencies.min.js?rnd=' +
+        Math.floor(Math.random() * 10000000000 + 1),
+    );
   } catch (error) {
-      console.log(error);
+    console.log(error);
   }
 };
 
 performAjax();
-
 
 </script>
 {% form 'currency', class: "currency-selector small--hide" %}
