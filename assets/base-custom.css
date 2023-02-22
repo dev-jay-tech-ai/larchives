@@ -594,6 +594,10 @@ vertical-slider .slider-button[disabled='disabled'] path {
   padding-top: 2rem;
 }
 
+.size-chart table th, .size-chart table td {
+  border: 0.1rem solid rgba(var(--color-foreground),.1);
+} 
+
 .size-chart table th {
   background-color: rgba(28,62,53,.05);
   font-weight: 500;
