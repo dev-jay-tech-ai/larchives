@@ -1,14 +1,14 @@
 {% comment %}
-    Renders facets (filtering and sorting)
+Renders facets (filtering and sorting)
 
-    Accepts:
-    - results: {Object} Collection or Search object
-    - enable_filtering: {Boolean} Show filtering when true
-    - enable_sorting: {Boolean} Show sorting when true
-    - filter_type: {String} Type of filter
+Accepts:
+- results: {Object} Collection or Search object
+- enable_filtering: {Boolean} Show filtering when true
+- enable_sorting: {Boolean} Show sorting when true
+- filter_type: {String} Type of filter
 
-    Usage:
-    {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, filter_type: 'vertical' %}
+Usage:
+{% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, filter_type: 'vertical' %}
 {% endcomment %}
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
