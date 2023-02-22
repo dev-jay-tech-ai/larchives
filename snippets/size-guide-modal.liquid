@@ -1,1 +1,45 @@
-<div>sandksndakldjlASjdlkaj</div>
+{{ block.settings.page.content }}
+{% for collection in product.collections %}
+{% assign categories = collection.title | downcase %}
+{% comment %} {{ categories }} {% endcomment %}
+ 
+{% if categories contains "(m)" %}
+  {% if categories contains "shoes" %}
+    {% render "size-shoes-m" %}
+
+  {% elsif categories contains "clothes" %}
+    {% render "size-top-m" %}
+    {% render "size-pants-m" %}
+    
+  {% elsif categories contains "pants" %}
+    {% render "size-pants-m" %}
+
+  {% elsif categories contains "accessories" %}
+  {% render "size-belt-m" %}
+  {% endif %}
+{% else %}
+  {% if categories contains "shoes" %}
+    {% render "size-shoes-w" %}
+    
+  {% elsif categories contains "clothes" %}
+  {% render "size-clothes-w" %}
+    
+  {% elsif categories contains "pants" %}
+    {% render "size-pants-w" %}
+
+  {% elsif categories contains "top" %}
+  {% render "size-top-w" %}
+
+  {% elsif categories contains "belt" %}
+  {% render "size-belt-w" %}
+  {% elsif categories contains "gloves" %}
+      {% render "size-gloves" %}
+  {% elsif categories contains "hat" %}
+      {% render "size-hat" %}
+  {% elsif categories contains "ring" %}
+      {% render "size-ring" %}            
+  {% elsif categories contains "bracelet" %}
+      {% render "size-bracelet" %}
+  {% endif %}
+{% endif %}
+{% endfor %} 
