@@ -20,7 +20,7 @@
   }
 }
 
-.sec_depth_style {
+.sec_depth_style > button {
   font-family: 'Termina-demi' !important;
   border-bottom: 1px solid rgba(4,11,9,.1);
 }
