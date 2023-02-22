@@ -4,7 +4,7 @@ target_level.forEach((el) => {
     e.preventDefault();
     ele.prentNodes.querySelectorAll('.list-unstyled').forEach((ele) => {
       console.log(ele)
-    }
+    })
     el.nextSibling.style.display = 'block';
     console.log('it clicked!')
   })
