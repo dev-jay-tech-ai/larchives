@@ -604,9 +604,12 @@ vertical-slider .slider-button[disabled='disabled'] path {
   font-weight: 500;
 }
 
-.size-chart table th:not(:last-child),
 .size-chart table th:not(:first-child) {
   border-right-color: transparent;  
+}
+
+.size-chart table th:not(:last-child) {
+  border-right-color: transparent; 
 }
 
 .size-chart table td:not(:last-child) {
