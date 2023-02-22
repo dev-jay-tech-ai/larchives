@@ -86,7 +86,6 @@ ACSCurrency.format = '{{ settings.mlvedaACS_currencyFormat }}';
 
 var shopCurrency = '{{ cart.currency.iso_code }}';
 
-
 /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
 ACSCurrency.moneyFormats[shopCurrency].money_with_currency_format = {{ shop.money_with_currency_format | strip_html | json }};
 ACSCurrency.moneyFormats[shopCurrency].money_format = {{ shop.money_format | strip_html | json }};
