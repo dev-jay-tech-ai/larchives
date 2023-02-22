@@ -1298,7 +1298,8 @@ input[type="range"]::-moz-range-thumb {
 
 .mega-menu__content > div > div ul {
   display: none;
-  padding-top: 0;
+  padding-top: .2rem;
+  padding-bottom: 2rem;
   padding-left: 0;
 }
 
