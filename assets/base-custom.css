@@ -583,7 +583,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .size-product-sub {
-  color: rgba(4,11,9,.05);
+  color: rgba(4,11,9,.5);
 }
 
 .size-product-detail {
@@ -595,7 +595,7 @@ vertical-slider .slider-button[disabled='disabled'] path {
 }
 
 .size-chart table th {
-  background-color: rgba(28,62,53,.5);
+  background-color: rgba(28,62,53,.05);
 }
 
 @media screen and (max-width: 1024px) {
