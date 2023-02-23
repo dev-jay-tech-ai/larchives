@@ -1,4 +1,7 @@
 {{ block.settings.page.content }}
+
+{{ product.product_type }}
+
 {% for collection in product.collections %}
 {% assign categories = collection.title | downcase %}
 {{ categories }}
