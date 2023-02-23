@@ -1,5 +1,8 @@
 {{ block.settings.page.content }}
 
+{% assign collecions = product.collections %}
+{%- for collection in collections -%}{{ collection }}{% endfor %}
+
 {{ product.type }}
 {% assign product_type = product.type | downcase %}
 {% if product_type contains "(m)" %}
