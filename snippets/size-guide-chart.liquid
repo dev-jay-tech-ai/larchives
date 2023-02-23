@@ -8,7 +8,7 @@
 {{ collectionList }}
 {{ product.type }}
 {% assign product_type = product.type | downcase %}
-{% if product_type contains "(m)" %}
+{% if collectionList contains "(m)" %}
   {% if product_type contains "shoes" or
     product_type contains "boots" or 
     product_type contains "platche" or 
