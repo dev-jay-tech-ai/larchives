@@ -1,6 +1,6 @@
 {{ block.settings.page.content }}
 
-{%- for collection in product.collections -%}{{ collection }}{% endfor %}
+{%- for collection in product.collections -%}{{ collection.title }}{% endfor %}
 
 {{ product.type }}
 {% assign product_type = product.type | downcase %}
