@@ -1,8 +1,9 @@
 {{ block.settings.page.content }}
 
-{% for tag in product.tags %}
-{{ tag }}
-{% endfor %}
+
+{% for tag in product.tags %}{% endfor %}
+{{ product.type }}
+
 
 {% for collection in product.collections %}
 {% assign categories = collection.title | downcase %}
