@@ -1,7 +1,11 @@
 {{ block.settings.page.content }}
 
-{%- for collection in product.collections -%}{{ collection.title }}{% endfor %}
-
+{% assign collectionList = '' | split: '' %}
+{%- for collection in product.collections -%}
+    {% assign collectionName = collection.title | split: '_' | first | split: '' %}
+    {% assign collectionList = collectionList | concat: collectionName %}
+{% endfor %}
+{{ collectionList }}
 {{ product.type }}
 {% assign product_type = product.type | downcase %}
 {% if product_type contains "(m)" %}
