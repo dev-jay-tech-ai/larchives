@@ -20,8 +20,8 @@
     {% render "size-shoes-w" %}
     
   {% elsif product_type contains "clothes" %}
-    <div>{% render "size-clothes-w" %}</div>
-    <div>{% render "size-pants-w" %}</div>
+    {% render "size-clothes-w" %}<br>
+    {% render "size-pants-w" %}
   {% elsif product_type == "pants" %}
     {% render "size-pants-w" %}
 
