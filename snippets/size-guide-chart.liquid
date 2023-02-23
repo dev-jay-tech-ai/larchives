@@ -13,7 +13,7 @@
     {% render "size-pants-m" %}
 
   {% elsif product_type contains "accessories" %}
-  {% render "size-belt-m" %}
+    {% render "size-belt-m" %}
   {% endif %}
 {% else %}
   {% if product_type contains "shoes" %}
@@ -25,18 +25,18 @@
   {% elsif product_type contains "pants" %}
     {% render "size-pants-w" %}
 
-  {% elsif product_type contains "top" %}
+  {% elsif product_type == "top" %}
   {% render "size-top-w" %}
 
-  {% elsif product_type contains "belt" %}
+  {% elsif product_type == "belt" %}
   {% render "size-belt-w" %}
-  {% elsif product_type contains "gloves" %}
+  {% elsif product_type == "gloves" %}
       {% render "size-gloves" %}
-  {% elsif product_type contains "hat" %}
+  {% elsif product_type == "hat" %}
       {% render "size-hat" %}
-  {% elsif product_type contains "ring" %}
+  {% elsif product_type == "ring" %}
       {% render "size-ring" %}            
-  {% elsif product_type contains "bracelet" %}
+  {% elsif product_type == "bracelet" %}
       {% render "size-bracelet" %}
   {% endif %}
 {% endif %}
