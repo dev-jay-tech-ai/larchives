@@ -25,12 +25,12 @@
     {% render "size-top-m" %}<br>
     {% render "size-pants-m" %}
     
-  {% elsif product_type == "top(m)" or product_type == "outer(m)" or product_type == "dress(m)" %}
+  {% elsif product_type contains "top" or product_type contains "outer" or product_type contains "dress" %}
     {% render "size-top-m" %}
-  {% elsif product_contains == "pants(m)" %}
+  {% elsif product_contains contains "pants" %}
     {% render "size-pants-m" %}
 
-  {% elsif product_type == "belt(m)" %}
+  {% elsif product_type contains "belt" %}
     {% render "size-belt-m" %}
   {% endif %}
 {% else %}
