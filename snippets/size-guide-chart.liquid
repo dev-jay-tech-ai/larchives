@@ -16,8 +16,10 @@
     {% render "size-shoes-m" %}
 
   {% elsif product_type contains "clothes" %}
+    {% render "size-top-m" %}<br>
+    {% render "size-pants-m" %}
+  {% elsif product_type == "top" or product_type == "outer" or product_type == "dress" %}
     {% render "size-top-m" %}
-    
   {% elsif product_type contains "pants" %}
     {% render "size-pants-m" %}
 
@@ -40,7 +42,7 @@
     {% render "size-shoes-w" %}
     
   {% elsif product_type contains "clothes" %}
-    {% render "size-clothes-w" %}<br><br>
+    {% render "size-clothes-w" %}<br>
     {% render "size-pants-w" %}
   {% elsif product_type == "pants" %}
     {% render "size-pants-w" %}
