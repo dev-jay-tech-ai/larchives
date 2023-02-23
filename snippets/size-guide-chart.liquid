@@ -16,7 +16,17 @@
     {% render "size-belt-m" %}
   {% endif %}
 {% else %}
-  {% if product_type contains "shoes" %}
+  {% if product_type contains "hill" or 
+    product_type contains "pumps" or 
+    product_type contains "boots" or 
+    product_type contains "platche" or 
+    product_type contains "roper" or 
+    product_type contains "boots" or 
+    product_type contains "sandals" or 
+    product_type contains "slippers" or 
+    product_type contains "mules" or 
+    product_type contains "sneakers" 
+  %}
     {% render "size-shoes-w" %}
     
   {% elsif product_type contains "clothes" %}
