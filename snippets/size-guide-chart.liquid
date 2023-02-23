@@ -1,47 +1,42 @@
 {{ block.settings.page.content }}
 
 {{ product.type }}
-
-
-{% for collection in product.collections %}
-{% assign categories = collection.title | downcase %}
-{% if categories contains "(m)" %}
-  {% if categories contains "shoes" %}
+{% assign product_type = product.type | downcase %}
+{% if product_type contains "(m)" %}
+  {% if product_type contains "shoes" %}
     {% render "size-shoes-m" %}
 
-  {% elsif categories contains "clothes" %}
+  {% elsif product_type contains "clothes" %}
     {% render "size-top-m" %}
-    {% render "size-pants-m" %}
     
-  {% elsif categories contains "pants" %}
+  {% elsif product_type contains "pants" %}
     {% render "size-pants-m" %}
 
-  {% elsif categories contains "accessories" %}
+  {% elsif product_type contains "accessories" %}
   {% render "size-belt-m" %}
   {% endif %}
 {% else %}
-  {% if categories contains "shoes" %}
+  {% if product_type contains "shoes" %}
     {% render "size-shoes-w" %}
     
-  {% elsif categories contains "clothes" %}
+  {% elsif product_type contains "clothes" %}
   {% render "size-clothes-w" %}
     
-  {% elsif categories contains "pants" %}
+  {% elsif product_type contains "pants" %}
     {% render "size-pants-w" %}
 
-  {% elsif categories contains "top" %}
+  {% elsif product_type contains "top" %}
   {% render "size-top-w" %}
 
-  {% elsif categories contains "belt" %}
+  {% elsif product_type contains "belt" %}
   {% render "size-belt-w" %}
-  {% elsif categories contains "gloves" %}
+  {% elsif product_type contains "gloves" %}
       {% render "size-gloves" %}
-  {% elsif categories contains "hat" %}
+  {% elsif product_type contains "hat" %}
       {% render "size-hat" %}
-  {% elsif categories contains "ring" %}
+  {% elsif product_type contains "ring" %}
       {% render "size-ring" %}            
-  {% elsif categories contains "bracelet" %}
+  {% elsif product_type contains "bracelet" %}
       {% render "size-bracelet" %}
   {% endif %}
 {% endif %}
-{% endfor %} 
