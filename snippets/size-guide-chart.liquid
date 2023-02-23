@@ -25,7 +25,7 @@
   {% elsif product_type contains "pants" %}
     {% render "size-pants-w" %}
 
-  {% elsif product_type == "top" %}
+  {% elsif product_type == "top" or product_type == "outer" or product_type == "dress" %}
   {% render "size-top-w" %}
 
   {% elsif product_type == "belt" %}
