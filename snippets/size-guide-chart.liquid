@@ -5,7 +5,6 @@
     {% assign collectionName = collection.title | split: '_' | first | split: '' %}
     {% assign collectionList = collectionList | concat: collectionName | join: '' %}
 {% endfor %}
-{{ collectionList }} {{ product.type | downcase }}
 {% comment %}{{ collectionList }} {{ product.type }}{% endcomment %}
 {% assign product_type = product.type | downcase %}
 {% if collectionList contains "(m)" %}
