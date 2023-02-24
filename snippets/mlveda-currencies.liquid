@@ -210,11 +210,11 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
    });
 }*/
 
-/*(function () {
+(function () {
    const send = XMLHttpRequest.prototype.send;
    XMLHttpRequest.prototype.send = function() {
        this.addEventListener('load', function() {
-           console.log('global handler', this)
+         //  console.log('global handler', this)
            if(this._url.indexOf("cart.js")!=-1 || this._url.indexOf("?page=")!=-1 || this._url.indexOf("search?")!=-1 || this._url.indexOf("view=")!=-1 || this._url.indexOf("type=")!=-1 || this._url.indexOf("change.js")!=-1 || this._url.indexOf("add.js")!=-1 || this._url.indexOf("recently-viewed")!=-1 || this._url.indexOf("recentlyviewed")!=-1 || this._url.indexOf("/recommendation")!=-1 ) {
              setTimeout(function(){
                  mlvedaload();
@@ -245,7 +245,7 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
        return t
      })
    }
-  })();*/
+  })();
   
   $acs("#currencies").niceSelect();
   $acs("#currencies1").niceSelect();
