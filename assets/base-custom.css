@@ -896,7 +896,7 @@ object-position: top; #insta-feed {
 @media screen and (min-width: 1025px) {
   .blog_content > p:first-child::first-letter {
     font-size: 9.6rem;
-    line-height: 8.6rem;
+    line-height: 8rem;
   }
   
   .blog_content > div {
