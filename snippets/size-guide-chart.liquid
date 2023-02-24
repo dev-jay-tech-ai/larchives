@@ -20,16 +20,14 @@
     product_type contains "sneakers" 
   %}
     {% render "size-shoes-m" %}
-
   {% elsif product_type contains "clothes" %}
     {% render "size-clothing-m" %}
-    
   {% elsif product_type == "top" or product_type == "outer" or  product_contains == "pants" %}
     {% render "size-clothing-m" %}
-
   {% elsif product_type contains "belt" %}
     {% render "size-belt-m" %}
   {% endif %}
+  
 {% else %}
   {% if product_type contains "shoes" or
     product_type contains "hill" or 
