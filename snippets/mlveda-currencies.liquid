@@ -210,7 +210,7 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
    });
 }*/
 
-(function () {
+/*(function () {
    const send = XMLHttpRequest.prototype.send;
    XMLHttpRequest.prototype.send = function() {
        this.addEventListener('load', function() {
@@ -245,7 +245,7 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
        return t
      })
    }
-  })();
+  })();*/
   
   $acs("#currencies").niceSelect();
   $acs("#currencies1").niceSelect();
