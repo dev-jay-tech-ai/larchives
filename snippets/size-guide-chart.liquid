@@ -50,9 +50,8 @@
   {% elsif product_type contains "clothes" %}
     {% render "size-clothes-w" %}<br>
     {% render "size-pants-w" %}
-  {% elsif product_type == "pants" %}
+  {% elsif product_type == "pants" or  product_type == "skirt" %}
     {% render "size-pants-w" %}
-
   {% elsif product_type == "top" or product_type == "outer" or product_type == "dress" %}
   {% render "size-top-w" %}
 
