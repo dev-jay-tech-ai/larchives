@@ -22,7 +22,7 @@
     {% render "size-shoes-m" %}
   {% elsif product_type contains "clothes" %}
     {% render "size-clothing-m" %}
-  {% elsif product_type == "top" or product_type == "outer" or  product_contains == "pants" %}
+  {% elsif product_type == "top" or product_type == "outer" or  product_type == "pants" %}
     {% render "size-clothing-m" %}
   {% elsif product_type contains "belt" %}
     {% render "size-belt-m" %}
