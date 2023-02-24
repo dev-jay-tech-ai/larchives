@@ -42,13 +42,10 @@
     product_type contains "sneakers" 
   %}
     {% render "size-shoes-w" %}
-    
   {% elsif product_type contains "clothes" %}
     {% render "size-clothing-w" %}
-    
   {% elsif product_type == "top" or product_type == "outer" or product_type == "dress" or product_type == "pants" or  product_type == "skirt" %}
     {% render "size-clothing-w" %}
-
   {% elsif product_type == "belt" %}
     {% render "size-belt-w" %}
   {% elsif product_type == "gloves" %}
