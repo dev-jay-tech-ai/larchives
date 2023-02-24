@@ -319,6 +319,11 @@
 {% render "rafp-render" %} <!-- roartheme: FontPicker app -->
 
 <script src="{{ 'wishlist.js' | asset_url }}" defer="defer"></script>
+    <script>
+window.mlvedaShopCurrency = "{{ shop.currency }}";
+window.shopCurrency = "{{ shop.currency }}";
+window.supported_currencies = "{{ settings.mlvedaACS_supportedCurrencies }}";
+</script>
 </head>
 
   <body class="gradient">
