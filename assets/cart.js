@@ -131,6 +131,7 @@ class CartItems extends HTMLElement {
             console.log('대체될 : ',elementToReplace);
             elementToReplace.innerHTML =
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
+          typeof ACSCurrency !== "undefined" && typeof ACSCurrency.moneyFormats !== "undefined" && mlvedaload();
         }));
         
         this.updateLiveRegions(line, parsedState.item_count);
