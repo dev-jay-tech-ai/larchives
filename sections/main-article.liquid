@@ -66,14 +66,10 @@
             </div>
             <div>
               <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
-                   {% render 'icon-facebook' %}
-                </button>
-                <details id="Details-{{ block.id }}-{{ section.id }}">
-                  <summary class="share-button__button">
-                    {% render 'icon-facebook' %}
-                  </summary>
-                </details>
+                <a class="share-button__button"
+                href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;">
+                 {% render 'icon-facebook' %}
+                </a>
               </share-button>
             </div>
             <div>
