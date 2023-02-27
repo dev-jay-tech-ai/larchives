@@ -210,42 +210,7 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
    });
 }*/
 
-(function () {
-   const send = XMLHttpRequest.prototype.send;
-   XMLHttpRequest.prototype.send = function() {
-       this.addEventListener('load', function() {
-         //  console.log('global handler', this)
-           if(this._url.indexOf("cart.js")!=-1 || this._url.indexOf("?page=")!=-1 || this._url.indexOf("search?")!=-1 || this._url.indexOf("view=")!=-1 || this._url.indexOf("type=")!=-1 || this._url.indexOf("change.js")!=-1 || this._url.indexOf("add.js")!=-1 || this._url.indexOf("recently-viewed")!=-1 || this._url.indexOf("recentlyviewed")!=-1 || this._url.indexOf("/recommendation")!=-1 ) {
-             setTimeout(function(){
-                 mlvedaload();
-             }, 300);
-    }
-           // add your global handler here
-       })
-       return send.apply(this, arguments)
-   }
 
- 
-
-   const fetch = window.fetch;
-   window.fetch = function(){
-     var e = arguments;
-     return fetch.apply(this, Array.prototype.slice.call(arguments)).then(function(t) {
-       if (!t.ok)
-           return t;
-       try {
-          if(t.url.indexOf("cart.js")!=-1 || t.url.indexOf("?page=")!=-1 || t.url.indexOf("search?")!=-1 || t.url.indexOf("view=")!=-1 || t.url.indexOf("type=")!=-1 || t.url.indexOf("change.js")!=-1 || t.url.indexOf("add.js")!=-1 || t.url.indexOf("recently-viewed")!=-1 || t.url.indexOf("recentlyviewed")!=-1 || t.url.indexOf("/recommendation")!=-1 ) {  
-            setTimeout(function(){
-           mlvedaload();
-           }, 300);
-          }
-       } catch (e) {
-           console && console.warn && console.warn("[shop_events_listener] Error in handleFetchRequest:  " + e.message);
-       }
-       return t
-     })
-   }
-  })();
   
   $acs("#currencies").niceSelect();
   $acs("#currencies1").niceSelect();
