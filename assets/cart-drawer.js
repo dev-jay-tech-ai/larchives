@@ -70,6 +70,7 @@ class CartDrawer extends HTMLElement {
       console.log('섹션', section)
       const sectionElement = section.selector ? document.querySelector(section.selector) : document.getElementById(section.id);
       sectionElement.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.id], section.selector);
+      typeof ACSCurrency !== "undefined" && typeof ACSCurrency.moneyFormats !== "undefined" && mlvedaload();
     }));
 
     setTimeout(() => {
