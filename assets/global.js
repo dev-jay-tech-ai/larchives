@@ -849,7 +849,7 @@ class VariantSelects extends HTMLElement {
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
         if (source && destination) destination.innerHTML = source.innerHTML;
-
+typeof ACSCurrency !== "undefined" && typeof ACSCurrency.moneyFormats !== "undefined" && mlvedaload();
         const price = document.getElementById(`price-${this.dataset.section}`);
 
         if (price) price.classList.remove('visibility-hidden');
