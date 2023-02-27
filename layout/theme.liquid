@@ -381,7 +381,6 @@ window.supported_currencies = "{{ settings.mlvedaACS_supportedCurrencies }}";
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> window.start.init({Palette:"palette4",Mode:"banner top",Theme:"wire",Time:"5",})</script>
     {%- comment -%}{%- endcomment -%}{% include 'mlveda-currencies-switcher' %}{% include 'mlveda-currencies-style' %}{% include 'mlveda-currencies' %}{% include 'mlveda-flag' %}
   </body>
 </html>
