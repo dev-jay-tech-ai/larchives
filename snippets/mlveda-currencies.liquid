@@ -3,80 +3,83 @@
 //document.write('<scr'+'ipt src=\"//mlveda-shopifyapps.s3.amazonaws.com/multiCurrencyPricing/js/currencies.js?rnd='+Math.floor((Math.random() * 10000000000) + 1)+'\" type=\"text/javascript\"></scr'+'ipt>');
 //document.write('<scr'+'ipt src=\"/apps/MultiCurrency/New/js/jquery.currencies.min.js?rnd='+Math.floor((Math.random() * 10000000000) + 1)+'\" type=\"text/javascript\"></scr'+'ipt>');
 
-var loadScript = (src) => {
-  return new Promise((resolve, reject) => {
-    const el = document.createElement('script');
-    el.src = src;
-    el.onload = resolve;
-    el.onerror = reject;
 
-    document.head.appendChild(el);
-  });
-};
+ var loadScript = (src) => {
+        return new Promise((resolve, reject) => {
+            const el = document.createElement('script');
+            el.src = src;
+            el.onload = resolve;
+            el.onerror = reject;
 
-var performAjax = async () => {
-  try {
-    await loadScript(
-        '//mlveda-shopifyapps.s3.amazonaws.com/multiCurrencyPricing/js/currencies.js?rnd=' +
-        Math.floor(Math.random() * 10000000000 + 1),
-    );
-    window.ACSCurrency = Currency;
-    await loadScript(
-        '/apps/MultiCurrency/New/js/jquery.currencies.min.js?rnd=' +
-        Math.floor(Math.random() * 10000000000 + 1),
-    );
-  } catch (error) {
-    console.log(error);
-  }
-};
+            document.head.appendChild(el);
+        });
+    };
 
-performAjax();
+    var performAjax = async () => {
+        try {
+            await loadScript(
+                '//mlveda-shopifyapps.s3.amazonaws.com/multiCurrencyPricing/js/currencies.js?rnd=' +
+                Math.floor(Math.random() * 10000000000 + 1),
+            );
+            window.ACSCurrency = Currency;
 
+            await loadScript(
+                '/apps/MultiCurrency/New/js/jquery.currencies.min.js?rnd=' +
+                Math.floor(Math.random() * 10000000000 + 1),
+            );
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    performAjax();
 </script>
 {% form 'currency', class: "currency-selector small--hide" %}
 <input type="hidden" name="currency" value="{{ cart.currency }}">
 {% endform %}
 <script>
 window.shopify_supported_currencies = "";
-{% for currency in shop.enabled_currencies %}
-  shopify_supported_currencies = shopify_supported_currencies + "{{ currency.iso_code }} ";
+  {% for currency in shop.enabled_currencies %}
+    shopify_supported_currencies = shopify_supported_currencies + "{{ currency.iso_code }} ";
 {% endfor %}
-
-//var ACSCurrency = Currency;
   
+  
+   // var ACSCurrency = Currency;
 function mlvedaCreateCookie(name, value, days) {
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    var expires = "; expires=" + date.toGMTString();
-  }
-  else
-    var expires = "";
-  document.cookie = name + "=" + value + expires + "; path=/";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+    }
+    else
+        var expires = "";
+    document.cookie = name + "=" + value + expires + "; path=/";
 }
 
 function mlvedaReadCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ')
-          c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) == 0)
-          return c.substring(nameEQ.length, c.length);
-  }
-  return null;
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ')
+            c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0)
+            return c.substring(nameEQ.length, c.length);
+    }
+    return null;
 }
 
 function mlvedaEraseCookie(name) {
-  createCookie(name, "", -1);
+    createCookie(name, "", -1);
 }
+
 
 var onetimecallflag = true;
 
 $acs('span.money span.money').each(function() {
   $acs(this).parents('span.money').removeClass('money');
 });
+
 
 function mlvedaload(){
 
@@ -85,6 +88,7 @@ ACSCurrency.format = '{{ settings.mlvedaACS_currencyFormat }}';
 {% endif %}
 
 var shopCurrency = '{{ cart.currency.iso_code }}';
+
 
 /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
 ACSCurrency.moneyFormats[shopCurrency].money_with_currency_format = {{ shop.money_with_currency_format | strip_html | json }};
@@ -117,15 +121,11 @@ if(!$acs(this).attr('data-currency-{{ cart.currency.iso_code }}'))
 
 // If there's no cookie.
 if (cookieCurrency == null) {
-  if (shopCurrency == "{{ shop.currency }}" && shopCurrency !== defaultCurrency) {
+  if (shopCurrency !== defaultCurrency) {
     ACSCurrency.convertAll(shopCurrency, defaultCurrency);
   }
   else {
-    if(shopCurrency == "{{ shop.currency }}") {
-      ACSCurrency.currentCurrency = defaultCurrency;
-    } else {
-      ACSCurrency.currentCurrency = shopCurrency;
-    }
+    ACSCurrency.currentCurrency = defaultCurrency;
   }
 }
 // If the cookie value does not correspond to any value in the currency dropdown.
@@ -193,28 +193,25 @@ if(onetimecallflag) {
   $acs('.single-option-radio').change(function() {
     mlvedaload();
   });
-  
-  $acs('input[name^=id]:checked, select[name^=id], input[name=id], hidden[name^=id] , form[action*="/cart/add"]').on("change",function() {
+$acs('input[name^=id]:checked, select[name^=id], input[name=id], hidden[name^=id] , form[action*="/cart/add"]').on("change",function() {
      setTimeout(function(){ 
              mlvedaload();
              }, 300);
   });
-  
-  /*if( typeof $ !== "undefined" ) {
-$acs(document).ajaxComplete(function(event, xhr, settings) {
+  if( typeof $ !== "undefined" ) {
+$(document).ajaxComplete(function(event, xhr, settings) {
           if(settings.url.indexOf("cart.js")!=-1 || settings.url.indexOf("add.js")!=-1 || settings.url.indexOf("change.js")!=-1) {
        setTimeout(function() {
          mlvedaload();
        }, 1000);
      }
    });
-}*/
-
+}
 (function () {
    const send = XMLHttpRequest.prototype.send;
    XMLHttpRequest.prototype.send = function() {
        this.addEventListener('load', function() {
-         //  console.log('global handler', this)
+           console.log('global handler', this)
            if(this._url.indexOf("cart.js")!=-1 || this._url.indexOf("?page=")!=-1 || this._url.indexOf("search?")!=-1 || this._url.indexOf("view=")!=-1 || this._url.indexOf("type=")!=-1 || this._url.indexOf("change.js")!=-1 || this._url.indexOf("add.js")!=-1 || this._url.indexOf("recently-viewed")!=-1 || this._url.indexOf("recentlyviewed")!=-1 || this._url.indexOf("/recommendation")!=-1 ) {
              setTimeout(function(){
                  mlvedaload();
@@ -231,25 +228,24 @@ $acs(document).ajaxComplete(function(event, xhr, settings) {
    window.fetch = function(){
      var e = arguments;
      return fetch.apply(this, Array.prototype.slice.call(arguments)).then(function(t) {
-       if (!t.ok)
-           return t;
-       try {
-          if(t.url.indexOf("cart.js")!=-1 || t.url.indexOf("?page=")!=-1 || t.url.indexOf("search?")!=-1 || t.url.indexOf("view=")!=-1 || t.url.indexOf("type=")!=-1 || t.url.indexOf("change.js")!=-1 || t.url.indexOf("add.js")!=-1 || t.url.indexOf("recently-viewed")!=-1 || t.url.indexOf("recentlyviewed")!=-1 || t.url.indexOf("/recommendation")!=-1 ) {  
-            setTimeout(function(){
-           mlvedaload();
-           }, 300);
-          }
-       } catch (e) {
-           console && console.warn && console.warn("[shop_events_listener] Error in handleFetchRequest:  " + e.message);
-       }
-       return t
+         if (!t.ok)
+             return t;
+         try {
+            if(t.url.indexOf("cart.js")!=-1 || t.url.indexOf("?page=")!=-1 || t.url.indexOf("search?")!=-1 || t.url.indexOf("view=")!=-1 || t.url.indexOf("type=")!=-1 || t.url.indexOf("change.js")!=-1 || t.url.indexOf("add.js")!=-1 || t.url.indexOf("recently-viewed")!=-1 || t.url.indexOf("recentlyviewed")!=-1 || t.url.indexOf("/recommendation")!=-1 ) {  
+              setTimeout(function(){
+             mlvedaload();
+             }, 300);
+            }
+         } catch (e) {
+             console && console.warn && console.warn("[shop_events_listener] Error in handleFetchRequest:  " + e.message);
+         }
+         return t
      })
    }
-  })();
-  
+})();
   $acs("#currencies").niceSelect();
   $acs("#currencies1").niceSelect();
-  $acs("#currencies2").niceSelect();  
+$acs("#currencies2").niceSelect();  
   onetimecallflag = false;
   }
 }
