@@ -58,15 +58,18 @@
           <div class="article-template__social-sharing page-width page-width--narrow sharing-custom" {{ block.shopify_attributes }}>
             <div>
               <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
+                <button class="share-button__button">
                   {% render 'icon-instagram' %}
                 </button>
-                <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;"><img src="https://storage.googleapis.com/storage.chris-chris.ai/images/facebook.gif" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 32px;"></a> 
+                <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;">
+                <img src="https://storage.googleapis.com/storage.chris-chris.ai/images/facebook.gif" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 32px;">
+                </a> 
+                {% comment %}
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary class="share-button__button">
                     {% render 'icon-instagram' %}
                   </summary>
-                </details>
+                </details>{% endcomment %}
               </share-button>
             </div>
             <div>
