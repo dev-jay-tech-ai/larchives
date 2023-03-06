@@ -103,12 +103,13 @@
   padding: 0;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-top: 6rem;
 }
 
 @media screen and (min-width: 1025px) {
   .footer__column--info {
+    margin-top: 0;
     flex-direction: row;
-    margin-top: 6rem;
     padding: 0;
     /* padding-left: 0;
     padding-right: 0; */
