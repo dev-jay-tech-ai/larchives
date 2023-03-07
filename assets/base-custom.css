@@ -1338,6 +1338,7 @@ input[type="range"]::-moz-range-thumb {
   background-repeat: no-repeat;
   background-color: rgba(4, 11, 9, 0.2);
   background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 3rem 0;
 }
