@@ -224,7 +224,7 @@
     "b439d48c-9276-4a6c-88eb-f4f310404910": {
       "type": "instafeed",
       "custom_css": [
-        "#insta-feed {width: 50%;}"
+
       ],
       "settings": {
         "heading_size": 20,
