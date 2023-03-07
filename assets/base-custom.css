@@ -1333,6 +1333,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .maga-menu-banner {
+  position: relative;
   width: 35rem;
   height: 35rem;
   background-repeat: no-repeat;
