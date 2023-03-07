@@ -1350,10 +1350,8 @@ input[type="range"]::-moz-range-thumb {
   right: 0;
   bottom: 0;
   left: 0;
-  /* 빈 값으로 넣어야 가상의 요소 생성; */
   content: '';
-  background: rgba(0, 0, 0, 0.2);
-  
+  background: rgba(0,0,0,.1);
 }
 
 .maga-menu-banner > h3 {
