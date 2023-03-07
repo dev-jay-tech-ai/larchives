@@ -1343,7 +1343,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 3rem 0;
 }
 
-.maga-menu-banner:after {
+.maga-menu-banner::after {
   position: absolute;
   top: 0;
   right: 0;
