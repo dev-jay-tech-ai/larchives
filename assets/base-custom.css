@@ -1333,7 +1333,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .maga-menu-banner {
-  position: relative;
   width: 35rem;
   height: 35rem;
   background-repeat: no-repeat;
@@ -1342,16 +1341,6 @@ input[type="range"]::-moz-range-thumb {
   background-position: center;
   text-align: center;
   padding: 3rem 0;
-}
-
-.maga-menu-banner::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: '';
-  background: rgba(0,0,0,.1);
 }
 
 .maga-menu-banner > h3 {
