@@ -20,9 +20,10 @@
   }
 }
 
-
-.instafeed-container {
-  width: 33.3% !important;
+@media screen and (max-width: 1024px) {
+  .instafeed-container {
+    width: 33.3% !important;
+  }
 }
 
 .sec_depth_style > button {
