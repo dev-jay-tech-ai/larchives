@@ -2,8 +2,6 @@
     font-family: Termina;
     display: flex;
     flex-direction: column;
-    width:300px;
-    margin: 20px auto;
   }
   .cart-sidebar-discount input {
     font-size: 1.2rem;
