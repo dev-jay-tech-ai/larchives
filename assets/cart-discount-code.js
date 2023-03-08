@@ -48,7 +48,7 @@ function applyDiscount(code) {
     })
     .then(function(response) { return response.json() })
     .then(function(data) {
-      // console.log(data.checkout);
+      console.log(data.checkout);
       if(data.checkout && data.checkout.applied_discounts.length > 0){
         discountCodeError.innerHTML = "";
         discountCodeInput.value = data.checkout.applied_discounts[0].title; 
