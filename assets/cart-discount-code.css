@@ -6,7 +6,6 @@
   }
   .cart-sidebar-discount input {
     margin-top:20px;
-    background: #eee;
     border: 1px solid #eee;
     height:50px;
     outline: none;
@@ -70,7 +69,7 @@
   .applied-discount-code-value:empty+button {
     display: none;
   }
-  @keyframes spin {
+.cart-sidebar-discount input.cart-sidebar-discount input  @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
