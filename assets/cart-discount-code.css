@@ -24,6 +24,14 @@
     color: #dadada;
   }
 
+  .cart-sidebar-discount ::-webkit-input-placeholder { /* Edge */
+    color: #dadada;
+  }
+
+  .cart-sidebar-discount :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #dadada;
+  }
+
   span.applied-discount-code-value >  small {
     background: #eee;
     padding: 0px 10px;
