@@ -19,13 +19,6 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-              {% comment %}
-              {% render 'cart_discount_code' %}
-              <div class='discounts__input'> REDEEM DISCOUNT CODE</div>
-              {% endcomment %}
-
-              {% render 'snippet-gf-discount-code-updated' %}
-        
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class='totals_title'>TOTALS</div>
                 <div class="totals">
@@ -47,6 +40,8 @@
                   </div>
                 </div>
               </div>
+              
+              {% render 'snippet-gf-discount-code-updated' %}
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
