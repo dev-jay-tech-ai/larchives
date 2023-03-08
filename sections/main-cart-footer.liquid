@@ -15,6 +15,8 @@
         </cart-note>
       {%- endif -%}
 
+      {% render 'snippet-gf-discount-code-updated' %}
+      
       <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
@@ -42,8 +44,6 @@
                   </div>
                 </div>
               </div>
-              
-              {% render 'snippet-gf-discount-code-updated' %}
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
