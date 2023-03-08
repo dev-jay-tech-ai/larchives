@@ -13,16 +13,14 @@
           <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
           <textarea class="text-area field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
         </cart-note>
-      {%- endif -%}
-
-      {% render 'snippet-gf-discount-code-updated' %}
-      
+      {%- endif -%}      
       <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
+              {% render 'cart-discount-code' %}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class='totals_title'>TOTALS</div>
                 <div class="totals">
