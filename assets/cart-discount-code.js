@@ -1,7 +1,5 @@
 let clearBtn = document.querySelector("#clear-discount-btn");
 let discountCodeError = document.querySelector("#discount-code-error");
-let discountCodeWrapper = document.querySelector("#applied-discount-code .applied-discount-code-wrapper");
-let discountCodeValue = document.querySelector("#applied-discount-code .applied-discount-code-value");
 let discountCodeInput = document.querySelector("#discount-code-input");
 let totalCartSelector = document.querySelector(".totals__subtotal-value span.money"); // Total Cart Selector to update the total amount. 
 let authorization_token;
@@ -18,13 +16,11 @@ clearBtn.addEventListener("click", function(e){
   clearDiscount();
 });
 function clearDiscount() {
-  discountCodeValue.innerHTML = "";
   discountCodeError.innerHTML = "";
   clearLocalStorage();
   fetch("/discount/CLEAR");
 }
 function clearLocalStorage() {
-  discountCodeWrapper.style.display = "none";
   totalCartSelector.innerHTML = JSON.parse(localStorage.discountCode).totalCart;
   localStorage.removeItem("discountCode");
 }
@@ -54,9 +50,8 @@ function applyDiscount(code) {
     .then(function(data) {
       console.log(data.checkout);
       if(data.checkout && data.checkout.applied_discounts.length > 0){
-        discountCodeWrapper.style.display = "inline";
         discountCodeError.innerHTML = "";
-        discountCodeValue.innerHTML = data.checkout.applied_discounts[0].title + " (" + data.checkout.applied_discounts[0].amount*100 + ")";
+        discountCodeInput.value = data.checkout.applied_discounts[0].title + " (" + data.checkout.applied_discounts[0].amount*100 + ")";
         let localStorageValue = {
           'code': code.trim(),
           'totalCart': data.checkout.total_line_items_price
@@ -70,6 +65,7 @@ function applyDiscount(code) {
         discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
       }
     }).finally(function(params) {
+      
     });
   });
 });
