@@ -14,25 +14,12 @@
     color: #dadada;
     margin-top:20px;
     border: 1px solid #eee;
-    height:50px;
+    height: 6.6rem;
     outline: none;
     letter-spacing: .75px;
     text-align: center;
   }
-  #apply-discount-btn {
-    background-color: #000;
-    color:#fff;
-    border: 0;
-    height: 60px;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: .75px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-  }
+
   span.applied-discount-code-value>small {
     background: #eee;
     padding: 0px 10px;
