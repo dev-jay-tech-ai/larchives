@@ -20,6 +20,10 @@
   }
 }
 
+.instafeed-container {
+  width: 33.33% !important;
+}
+
 .sec_depth_style > button {
   font-family: 'Termina-demi' !important;
 }
