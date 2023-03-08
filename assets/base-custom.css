@@ -20,6 +20,16 @@
   }
 }
 
+.instafeed-container {
+  width: 33.3%;
+}
+/* 인스타 피드 css 수정 */
+@media screen and (min-width: 1025px) {
+  .instafeed-container {
+    width: 16.666667%;
+  }
+}  
+
 .sec_depth_style > button {
   font-family: 'Termina-demi' !important;
 }
