@@ -11,10 +11,10 @@ discountCodeInput.addEventListener("change", function(e){
   e.preventDefault()
   applyDiscount(discountCodeInput.value);
 });
-clearBtn.addEventListener("click", function(e){
-  e.preventDefault()
-  clearDiscount();
-});
+// clearBtn.addEventListener("click", function(e){
+//   e.preventDefault()
+//   clearDiscount();
+// });
 function clearDiscount() {
   discountCodeError.innerHTML = "";
   clearLocalStorage();
