@@ -236,20 +236,7 @@
       {%- endif -%}
 
       <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
-        <div class='discounts__input'> REDEEM DISCOUNT CODE
-          <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
-            {%- if cart.cart_level_discount_applications.size > 0 -%}
-            {%- for discount in cart.cart_level_discount_applications -%}
-              <li class="discounts__discount discounts__discount--position">
-                {%- render 'icon-discount' -%}
-                {{ discount.title }}
-                (-{{ discount.total_allocated_amount | money }})
-              </li>
-            {%- endfor -%}
-            {%- endif -%}
-          </ul>
-        </div>
-        
+      {% render 'cart-discount-code' %}     
         <div class='totals_title'>TOTALS</div>
         <div class="totals" role="status">
           <p class="totals__subtotal">{{ 'sections.cart.subtotal' | t | upcase }}</p>
