@@ -1,5 +1,4 @@
 let clearBtn = document.querySelector("#clear-discount-btn");
-let applyBtn = document.querySelector("#apply-discount-btn");
 let discountCodeError = document.querySelector("#discount-code-error");
 let discountCodeWrapper = document.querySelector("#applied-discount-code .applied-discount-code-wrapper");
 let discountCodeValue = document.querySelector("#applied-discount-code .applied-discount-code-value");
@@ -11,11 +10,6 @@ let checkoutContainer = document.createElement('div');
 document.body.appendChild(checkoutContainer);
 if (localStorage.discountCode) applyDiscount( JSON.parse(localStorage.discountCode).code);
 discountCodeInput.addEventListener("change", function(e){
-  e.preventDefault()
-  applyDiscount(discountCodeInput.value);
-});
-
-applyBtn.addEventListener("click", function(e){
   e.preventDefault()
   applyDiscount(discountCodeInput.value);
 });
@@ -35,8 +29,6 @@ function clearLocalStorage() {
   localStorage.removeItem("discountCode");
 }
 function applyDiscount(code) {
-  applyBtn.innerHTML = "APPLYING <div class='loader'></div>";
-  applyBtn.style.pointerEvents = "none";
   let discountApplyUrl = "/discount/"+code+"?v="+Date.now()+"&redirect=/checkout/";
   fetch(discountApplyUrl, {}).then(function(response) { return response.text(); })
   .then(function(data) {
@@ -78,8 +70,6 @@ function applyDiscount(code) {
         discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
       }
     }).finally(function(params) {
-      applyBtn.innerHTML = "APPLY";
-      applyBtn.style.pointerEvents = "all";
     });
   });
 });
