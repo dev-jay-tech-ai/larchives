@@ -5,11 +5,19 @@
     margin: 20px auto;
   }
   .cart-sidebar-discount input {
+    font-family: Termina;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #dadada;
     margin-top:20px;
     border: 1px solid #eee;
     height:50px;
     outline: none;
-    font-size: 18px;
     letter-spacing: .75px;
     text-align: center;
   }
