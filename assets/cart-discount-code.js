@@ -10,6 +10,11 @@ let authorization_token;
 let checkoutContainer = document.createElement('div');
 document.body.appendChild(checkoutContainer);
 if (localStorage.discountCode) applyDiscount( JSON.parse(localStorage.discountCode).code);
+discountCodeInput.addEventListener("change", function(e){
+  e.preventDefault()
+  applyDiscount(discountCodeInput.value);
+});
+
 applyBtn.addEventListener("click", function(e){
   e.preventDefault()
   applyDiscount(discountCodeInput.value);
