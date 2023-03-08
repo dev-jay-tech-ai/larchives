@@ -20,8 +20,8 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-              {% render 'cart-discount-code' %}
               <div class="js-contents" {{ block.shopify_attributes }}>
+                {% render 'cart-discount-code' %}
                 <div class='totals_title'>TOTALS</div>
                 <div class="totals">
                   <div><p class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</p></div>
