@@ -1,11 +1,11 @@
   .cart-sidebar-discount {
+    font-family: Termina;
     display: flex;
     flex-direction: column;
     width:300px;
     margin: 20px auto;
   }
   .cart-sidebar-discount input {
-    font-family: Termina;
     font-size: 1.2rem;
     font-weight: 500;
     font-stretch: normal;
@@ -27,8 +27,6 @@
     border: 0;
     height: 60px;
     width: 100%;
-    font-size: 18px;
-    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .75px;
     cursor: pointer;
