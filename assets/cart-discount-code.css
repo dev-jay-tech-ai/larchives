@@ -20,7 +20,11 @@
     text-align: center;
   }
 
-  span.applied-discount-code-value>small {
+  .cart-sidebar-discount input::placeholder {
+    color: #dadada;
+  }
+
+  span.applied-discount-code-value >  small {
     background: #eee;
     padding: 0px 10px;
     color: #000;
