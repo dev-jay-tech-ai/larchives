@@ -22,6 +22,7 @@
   }
 {%- endstyle -%}
 
+  <script src="{{ 'cart-discount-code.js' | asset_url }}" defer="defer"></script>
 {%- unless settings.cart_type == 'drawer' -%}
   <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
