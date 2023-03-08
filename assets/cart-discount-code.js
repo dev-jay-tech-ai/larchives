@@ -57,7 +57,7 @@ function applyDiscount(code) {
           'totalCart': data.checkout.total_line_items_price
         };
         localStorage.setItem("discountCode", JSON.stringify(localStorageValue));
-        totalCartSelector.innerHTML = "<s>" + data.checkout.total_line_items_price + "</s>" + " " +  data.checkout.total_price;
+        totalCartSelector.innerHTML = "<s>" + data.checkout.currency_format.symbol + data.checkout.total_line_items_price + "</s>" + " " + data.checkout.currency_format.symbol + data.checkout.total_price;
       }else{
         clearLocalStorage();
         discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
