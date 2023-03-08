@@ -52,13 +52,12 @@ function applyDiscount(code) {
       if(data.checkout && data.checkout.applied_discounts.length > 0){
         discountCodeError.innerHTML = "";
         discountCodeInput.value = data.checkout.applied_discounts[0].title; 
-        //  + " (" + data.checkout.applied_discounts[0].amount*100 + ")";
         let localStorageValue = {
           'code': code.trim(),
           'totalCart': data.checkout.total_line_items_price
         };
         localStorage.setItem("discountCode", JSON.stringify(localStorageValue));
-        totalCartSelector.innerHTML = "<s>" + data.checkout.total_line_items_price + "</s>" + data.checkout.total_price;
+        totalCartSelector.innerHTML = "<s>" + data.checkout.total_line_items_price + "</s>" + " " +  data.checkout.total_price;
       }else{
         discountCodeValue.innerHTML = "";
         clearLocalStorage();
