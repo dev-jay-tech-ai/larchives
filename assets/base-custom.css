@@ -26,7 +26,7 @@
 /* 인스타 피드 css 수정 */
 @media screen and (min-width: 1025px) {
   .instafeed-container {
-    width: 16.666667%;
+    width: 16.666667% !important;
   }
 }  
 
