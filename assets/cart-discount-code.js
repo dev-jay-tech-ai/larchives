@@ -57,7 +57,6 @@ function applyDiscount(code) {
           'totalCart': data.checkout.total_line_items_price
         };
         localStorage.setItem("discountCode", JSON.stringify(localStorageValue));
-        console.log(totalCartSelector)
         totalCartSelector.innerHTML = "<s>" + data.checkout.total_line_items_price + "</s>" + data.checkout.total_price;
       }else{
         discountCodeValue.innerHTML = "";
