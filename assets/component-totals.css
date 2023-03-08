@@ -31,10 +31,6 @@
   margin-top: 2rem;
 }
 
-.totals > div {
-  margin-top: .95rem;
-}
-
 @media all and (min-width: 1024px) {
   .totals {
     /* justify-content: flex-end; */
