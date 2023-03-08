@@ -1,13 +1,14 @@
 {{ 'cart-discount-code.css' | asset_url | stylesheet_tag }}
 
 <div class="cart-sidebar-discount">
+  {% comment %}
   <span id="applied-discount-code">
     Discount Code:
     <span class="applied-discount-code-wrapper">
       <span class="applied-discount-code-value"></span>
       <button id="clear-discount-btn">X</button>
     </span>
-  </span>
+  </span>{% endcomment %}
   <small id="discount-code-error"></small>
   <input type="text" id="discount-code-input" autocomplete="on" value="" placeholder='REDEEM DISCOUNT CODE'>
 </div>
