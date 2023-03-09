@@ -48,11 +48,9 @@
     animation: spin .5s linear infinite;
   }
   #discount-code-error {
-    background: #ff00004f;
     color: #e22120;
     padding: 5px;
-    border-radius: 4px;
-    font-size: 13px;
+    font-size: 1.2rem;
     line-height: 1;
   }
   .applied-discount-code-wrapper {
