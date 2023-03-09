@@ -254,7 +254,10 @@
         <!-- Subtotals-->
 
         <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
-          {% render 'cart-discount-code' %}
+          <div class="cart-sidebar-discount">
+            <small id="discount-code-error"></small>
+            <input type="text" id="discount-code-input" autocomplete="on" value="" placeholder='REDEEM DISCOUNT CODE'>
+          </div>
           <div>TOTALS</div>
           <div class="totals" role="status">
             <p class="totals__subtotal">{{ 'sections.cart.subtotal' | t | upcase }}</p>
