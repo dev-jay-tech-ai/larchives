@@ -15,6 +15,9 @@ discountCodeInput.addEventListener("change", function(e){
 //   e.preventDefault()
 //   clearDiscount();
 // });
+
+console.log('this is working')
+
 function clearDiscount() {
   discountCodeError.innerHTML = "";
   clearLocalStorage();
