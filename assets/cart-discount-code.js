@@ -20,10 +20,12 @@ function clearDiscount() {
   clearLocalStorage();
   fetch("/discount/CLEAR");
 }
+
 function clearLocalStorage() {
   totalCartSelector.innerHTML = JSON.parse(localStorage.discountCode).totalCart;
   localStorage.removeItem("discountCode");
 }
+
 function applyDiscount(code) {
   let discountApplyUrl = "/discount/"+code+"?v="+Date.now()+"&redirect=/checkout/";
   fetch(discountApplyUrl, {}).then(function(response) { return response.text(); })
