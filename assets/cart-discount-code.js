@@ -22,7 +22,6 @@ function clearDiscount() {
 }
 
 function clearLocalStorage() {
-  console.log('me?')
   totalCartSelector.innerHTML = JSON.parse(localStorage.discountCode).totalCart;
   localStorage.removeItem("discountCode");
 }
@@ -64,7 +63,7 @@ function applyDiscount(code) {
         totalCartSelector.innerHTML = "<s>" + data.checkout.currency_format.symbol + data.checkout.total_line_items_price + "</s>" + " " + data.checkout.currency_format.symbol + data.checkout.total_price;
       } else {
         console.log('case2')
-        clearLocalStorage();
+        if(localStorage.getItem("discountCode") !== null) clearLocalStorage();
         discountCodeError.innerHTML = errors.applied_discount.code[0].message;
         // discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
       }
