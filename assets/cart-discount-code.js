@@ -63,8 +63,9 @@ function applyDiscount(code) {
         totalCartSelector.innerHTML = "<s>" + data.checkout.currency_format.symbol + data.checkout.total_line_items_price + "</s>" + " " + data.checkout.currency_format.symbol + data.checkout.total_price;
       } else {
         console.log('case2')
+        
         if(localStorage.getItem("discountCode") !== null) clearLocalStorage();
-        if(data.errors.applied_discount !== undefined) discountCodeError.innerHTML = data.errors.applied_discount.code[0].message;
+        if(data.errors !== undefined) discountCodeError.innerHTML = data.errors.applied_discount.code[0].message;
         else discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
       }
     })
