@@ -52,7 +52,6 @@ function applyDiscount(code) {
     .then(function(data) {
       console.log(data);
       if(data.checkout && data.checkout.applied_discounts.length > 0){
-        console.log('case1')
         discountCodeError.innerHTML = "";
         discountCodeInput.value = data.checkout.applied_discounts[0].title; 
         let localStorageValue = {
@@ -62,8 +61,6 @@ function applyDiscount(code) {
         localStorage.setItem("discountCode", JSON.stringify(localStorageValue));
         totalCartSelector.innerHTML = "<s>" + data.checkout.currency_format.symbol + data.checkout.total_line_items_price + "</s>" + " " + data.checkout.currency_format.symbol + data.checkout.total_price;
       } else {
-        console.log('case2')
-        
         if(localStorage.getItem("discountCode") !== null) clearLocalStorage();
         if(data.errors !== undefined) discountCodeError.innerHTML = data.errors.applied_discount.code[0].message;
         else discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
