@@ -62,11 +62,11 @@ function applyDiscount(code) {
       } else {
         console.log('case2')
         clearLocalStorage();
-        discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
+        discountCodeError.innerHTML = errors.applied_discount.code[0].message;
+        // discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
       }
     })
    .catch((err) => {
-      discountCodeError.innerHTML = err.applied_discount;
       console.error(err);
     })
    .finally(function(params) { });
