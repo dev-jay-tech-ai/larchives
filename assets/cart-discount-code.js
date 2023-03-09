@@ -66,7 +66,7 @@ function applyDiscount(code) {
       }
     })
    .catch((err) => {
-      discountCodeError.innerHTML = err.applied_discount.code[0].message;
+      discountCodeError.innerHTML = err.applied_discount;
       console.error(err);
     })
    .finally(function(params) { });
