@@ -1,4 +1,5 @@
 {% layout none %}
+{{ 'cart-discount-code.js' | asset_url | script_tag }}
 
 <div id="CartDrawer" class="cart-drawer">
   <div id="CartDrawer-Overlay"class="cart-drawer__overlay"></div>
@@ -287,5 +288,3 @@
     </div>
   </div>
 </div>
-
-{{ 'cart-discount-code.js' | asset_url | script_tag }}
