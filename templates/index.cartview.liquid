@@ -1,5 +1,5 @@
 {% layout none %}
-<script src="{{ 'cart-discount-code.js' | asset_url }}" defer="defer"></script>
+{{ 'cart-discount-code.js' | asset_url | script_tag }}
 
 <div id="CartDrawer" class="cart-drawer">
   <div id="CartDrawer-Overlay"class="cart-drawer__overlay"></div>
