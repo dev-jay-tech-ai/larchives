@@ -6,10 +6,10 @@
 {% endcomment %}
 
 {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
-{{ 'cart-discount-code.js' | asset_url | script_tag }}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+{{ 'cart-discount-code.js' | asset_url | script_tag }}
 <style>
   .drawer {
     visibility: hidden;
