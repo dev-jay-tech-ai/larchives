@@ -22,6 +22,7 @@ function clearDiscount() {
 }
 
 function clearLocalStorage() {
+  console.log('me?')
   totalCartSelector.innerHTML = JSON.parse(localStorage.discountCode).totalCart;
   localStorage.removeItem("discountCode");
 }
