@@ -64,7 +64,7 @@ function applyDiscount(code) {
       } else {
         console.log('case2')
         if(localStorage.getItem("discountCode") !== null) clearLocalStorage();
-        discountCodeError.innerHTML = errors.applied_discount.code[0].message;
+        discountCodeError.innerHTML = data.errors.applied_discount.code[0].message;
         // discountCodeError.innerHTML = "Please Enter Valid Coupon Code."
       }
     })
