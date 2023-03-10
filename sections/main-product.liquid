@@ -236,7 +236,7 @@
             </ul>
             <button
               type="button"
-              class="slider-button slider-button--next small-hide{% if media_count < 6 %} medium-hide large-up-hide{% endif %}"
+              class="slider-button slider-button--next small-hide{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
               name="next"
               aria-label="{{ 'general.slider.next_slide' | t }}"
               aria-controls="GalleryThumbnails-{{ section.id }}"
