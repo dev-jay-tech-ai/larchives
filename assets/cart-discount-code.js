@@ -3,7 +3,9 @@ let discountCodeError = document.querySelector("#discount-code-error");
 let discountCodeInput = document.querySelector("#discount-code-input");
 let totalCartSelector = document.querySelector(".totals__subtotal-value span.money"); // Total Cart Selector to update the total amount. 
 let authorization_token;
-  
+
+console.log(discountCodeInput, totalCartSelector)
+
 let checkoutContainer = document.createElement('div');
 document.body.appendChild(checkoutContainer);
 if (localStorage.discountCode) applyDiscount( JSON.parse(localStorage.discountCode).code);
