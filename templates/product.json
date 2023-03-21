@@ -87,6 +87,9 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "custom_css": [
+        "h3 {margin-top: 2rem;}"
+      ],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h1",
