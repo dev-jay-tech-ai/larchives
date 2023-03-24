@@ -36,7 +36,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Background-image_37962d6a-a19f-4879-aebe-dfd5fbe0c5c6.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/Background-image-mobile.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Background-image_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
