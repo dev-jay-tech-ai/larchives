@@ -382,5 +382,7 @@ window.supported_currencies = "{{ settings.mlvedaACS_supportedCurrencies }}";
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     {%- comment -%}{%- endcomment -%}{% include 'mlveda-currencies-switcher' %}{% include 'mlveda-currencies-style' %}{% include 'mlveda-currencies' %}{% include 'mlveda-flag' %}
-  </body>
+  {% include "scm-currency-switcher" %}
+{% include "scm-currency" %}
+</body>
 </html>

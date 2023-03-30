@@ -1,0 +1,45 @@
+<script src="{{ 'classie.js' | asset_url }}" defer></script>
+                {{ "cs-skin-elastic.css" | asset_url | stylesheet_tag }}                <script src="{{ 'selectFx.js' | asset_url }}" defer></script>
+                    <style>
+    .cs-placeholder {
+        background-position: 10px 50% !important;
+        background-repeat: no-repeat !important;
+        background-size: 2em auto !important;
+        padding: 9px 0 8px 43px !important;
+        font-size: 12px !important;
+        line-height: 18px;
+    }
+</style>
+    <style>
+        {% for currencyIndex in (0..currencySize) %}
+        {% assign currencyCode = currencyCodes[currencyIndex] %}
+        .cs-skin-elastic .cs-options li.flag-{{ currencyCode }} span {
+                                                                     background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ currencyCode | downcase }}.png);
+                                                                 }
+        .cs-skin-elastic span.flag-{{ currencyCode }} {
+            background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ currencyCode | downcase }}.png);
+        }
+        {% endfor %}
+        .cs-skin-elastic .cs-options li.flag-{{ defaultCurrencyCode }} span {
+                                                                     background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ defaultCurrencyCode | downcase }}.png);
+                                                                 }
+        .cs-skin-elastic span.flag-{{ defaultCurrencyCode }} {
+            background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ defaultCurrencyCode | downcase }}.png);
+        }
+    </style>
+
+    <div class="sca-body-currency">
+                <div class="sca-currency-style">
+            <select id="currencies" name="currencies" class="cs-select cs-skin-elastic" style="display: none;">
+                <option value="{{ defaultCurrencyCode }}" data-class="flag-{{ defaultCurrencyCode }}" data-symbol="{{defaultCurrencySymbol}}" selected="selected">{{ defaultCurrencyCode }}</option>
+                {% for currencyIndex in (0..currencySize) %}
+                {% assign currencyCode = currencyCodes[currencyIndex] %}
+                {% assign currencySymbol = currencySymbols[currencyIndex] %}
+                {% if currencyCode != defaultCurrencyCode %}
+                <option value="{{ currencyCode }}" data-class="flag-{{ currencyCode }}" data-symbol="{{currencySymbol}}">{{ currencyCode }}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <div class="clear-both"></div>
+    </div>
