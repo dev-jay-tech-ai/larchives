@@ -56,13 +56,15 @@ function customSwticher(jQuery){
     jQuery('.cs-placeholder').addClass(`hover-${hover_box_shadow}`);
     jQuery('.cs-placeholder').css({"font-weight": fontWeight});
 
+            jQuery('.cs-placeholder').css({"background-image": "none"});
     
-            jQuery('.cs-placeholder').text("");
-        jQuery('.cs-placeholder').css({"height": "40px"});
     
             
+            jQuery('.cs-skin-elastic').addClass("hidden-after");
     
     
+            jQuery('.cs-placeholder').addClass('layout-only-label');
+        jQuery('.cs-placeholder').css({'width': '50px'});
     
     
     }
@@ -79,7 +81,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_2121',
+                name: 'scm_currency_7643',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
