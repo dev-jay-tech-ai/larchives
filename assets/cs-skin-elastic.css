@@ -198,6 +198,7 @@ div.cs-skin-elastic {
     padding-left: 0px;
 }
 .cs-skin-elastic.cs-active .cs-options ul li {
+  padding-right: .9rem;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
