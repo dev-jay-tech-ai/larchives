@@ -79,7 +79,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_2776',
+                name: 'scm_currency_6096',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
