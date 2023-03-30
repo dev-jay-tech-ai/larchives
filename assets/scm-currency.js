@@ -47,8 +47,6 @@ function customSwticher(jQuery){
         jQuery('.cs-options').css({'color': color_text});
     }
     
-    
-    
     jQuery('.sca-body-currency').addClass(`border-type__${border}`);
     jQuery('.sca-body-currency').addClass(`border-witdh__${option_border_width}`);
     jQuery('.cs-options').addClass(`border-type__${border}`);
@@ -59,18 +57,10 @@ function customSwticher(jQuery){
     jQuery('.cs-placeholder').addClass(`shadow-${box_shadow}`);
     jQuery('.cs-placeholder').addClass(`hover-${hover_box_shadow}`);
     jQuery('.cs-placeholder').css({"font-weight": fontWeight});
-
-            jQuery('.cs-placeholder').css({"background-image": "none"});
-    
-    
-            
-            jQuery('.cs-skin-elastic').addClass("hidden-after");
-    
-    
-            jQuery('.cs-placeholder').addClass('layout-only-label');
-        jQuery('.cs-placeholder').css({'width': '50px'});
-    
-    
+    jQuery('.cs-placeholder').css({"background-image": "none"});
+    jQuery('.cs-skin-elastic').addClass("hidden-after");
+    jQuery('.cs-placeholder').addClass('layout-only-label');
+    jQuery('.cs-placeholder').css({'width': '50px'});
     }
 
                                             var startCurrencySwitcher = function(jQuery) {
