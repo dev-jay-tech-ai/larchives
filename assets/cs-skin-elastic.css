@@ -95,7 +95,7 @@ div.cs-active {
 .cs-select .cs-options {
     position: absolute;
     overflow: hidden;
-    width: 150%;
+    width: 200%;
     background: #fff;
     visibility: hidden;
 }
