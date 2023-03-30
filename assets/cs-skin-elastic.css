@@ -18,8 +18,11 @@
     /* border: 1px solid #eee; */
     padding: 6px 10px !important;
 }
-.cs-placeholder:after {
+.cs-placeholder::after {
   content: ">";
+  floatL right;
+  color: #fff;
+  margin: -17px;
   left: 0;
   top: 0;
 }
