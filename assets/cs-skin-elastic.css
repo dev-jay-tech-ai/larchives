@@ -232,12 +232,11 @@ div.cs-skin-elastic {
 /* with more items, more delays declarations are needed */
 
 .cs-skin-elastic .cs-options span {
-/*     background-position: 10px 50%;
+    background-position: 10px 50%;
     background-repeat: no-repeat;
     background-size: 2em auto;
     padding: 9px 0 8px 43px;
-    background-color: #fff; */
-    background: none;
+    background-color: #fff;
 }
 .cs-skin-elastic .cs-options span:hover,
 .cs-skin-elastic .cs-options li.cs-focus span,
