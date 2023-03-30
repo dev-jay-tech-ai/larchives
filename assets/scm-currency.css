@@ -134,15 +134,6 @@
     margin-bottom: -5px!important;
 }
 
-.cs-placeholder::after {
-  content: ">";
-  floatL right;
-  color: #fff;
-  margin: -17px;
-  left: 0;
-  top: 0;
-}
-
 .layout-only-flag {
     padding: 1.7em!important;
     padding-left: 10px!important;
