@@ -65,10 +65,6 @@
 }
 
 .header_text_reverse .sca-body-currency svg > path {
-  stroke: #000;
-}
-
-.sca-body-currency svg > path {
   stroke: #fff;
 }
 
