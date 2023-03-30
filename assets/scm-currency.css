@@ -64,10 +64,6 @@
   margin-top: .5rem;
 }
 
-.header_text_reverse .sca-body-currency svg > path {
-  stroke: #fff;
-}
-
 .shadow-smallShadow {
     box-shadow: 0 0 13px rgba(3, 0, 0, 0.4) !important;
 }
