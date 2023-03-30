@@ -30,7 +30,7 @@ function customSwticher(jQuery){
     const fontWeight = "";
     const color_background = "transparent";
     const color_border = "transparent";
-    const color_text = "#000";
+    const color_text = "";
     const color_arrow = "";
             
     const color_background_hover = "";
@@ -42,11 +42,7 @@ function customSwticher(jQuery){
     {
         jQuery('.cs-placeholder').css({'background-color': color_background});
     }
-        {
-        jQuery('.cs-placeholder').css({'color': color_text});
-        jQuery('.cs-options').css({'color': color_text});
-    }
-    
+        
     
     
     jQuery('.sca-body-currency').addClass(`border-type__${border}`);
@@ -85,7 +81,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_9207',
+                name: 'scm_currency_9957',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
