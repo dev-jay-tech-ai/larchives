@@ -41,10 +41,7 @@ function customSwticher(jQuery){
     
         
     
-                        jQuery('.sca-body-currency').addClass('sca-currency-bottom-left');
-            jQuery('.sca-body-currency').css({"margin-bottom": marginBottom});
-            jQuery('.sca-body-currency').css({"margin-left": marginLeft});
-            
+    
     jQuery('.sca-body-currency').addClass(`border-type__${border}`);
     jQuery('.sca-body-currency').addClass(`border-witdh__${option_border_width}`);
     jQuery('.cs-options').addClass(`border-type__${border}`);
@@ -81,7 +78,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_7643',
+                name: 'scm_currency_1636',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
