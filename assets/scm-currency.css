@@ -50,6 +50,7 @@
 
 .cs-placeholder:after {
   content: '';
+  position: absolute;
 }
 
 /* Fix display on theme Jumpstart */
