@@ -18,6 +18,12 @@
     /* border: 1px solid #eee; */
     padding: 6px 10px !important;
 }
+.cs-placeholder:after {
+  content: ">";
+  left: 0;
+  top: 0;
+}
+
 .cs-active .cs-options {
     /* border: 1px solid #eee;
     border-top: none; */
