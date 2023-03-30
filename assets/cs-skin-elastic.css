@@ -355,10 +355,8 @@ div.cs-skin-elastic {
     list-style: none !important;
 }
 .sca-currency-style ul li {
-    list-style: none !important;
-    margin-bottom: 0px !important;
-    margin-left: 0px !important;
-    line-height: 24px !important;
+  list-style: none !important;
+  float: left;
 }
 
 .sca-body-currency {
