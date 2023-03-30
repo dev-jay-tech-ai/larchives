@@ -42,7 +42,7 @@ function customSwticher(jQuery){
     {
         jQuery('.cs-placeholder').css({'background-color': color_background});
     }
-        {
+    {
         jQuery('.cs-placeholder').css({'color': color_text});
         jQuery('.cs-options').css({'color': color_text});
     }
