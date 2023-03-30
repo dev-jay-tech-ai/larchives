@@ -244,7 +244,7 @@ div.cs-skin-elastic {
 .cs-skin-elastic .cs-options span:hover,
 .cs-skin-elastic .cs-options li.cs-focus span,
 .cs-skin-elastic .cs-options .cs-selected span {
-    color: #1e4c4a;
+  opacity: .5;
 }
 
 .cs-skin-elastic .cs-options .cs-selected span::after {
