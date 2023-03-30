@@ -60,6 +60,9 @@
 .sca-body-currency .sca-currency-style .jumpstart-selector .arrow{
     border-left : none !important;
 }
+.sca-body-currency svg > path {
+  stroke: #fff;
+}
 
 .shadow-smallShadow {
     box-shadow: 0 0 13px rgba(3, 0, 0, 0.4) !important;
