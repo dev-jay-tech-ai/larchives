@@ -360,11 +360,7 @@ div.cs-skin-elastic {
     margin-left: 0px !important;
     line-height: 24px !important;
 }
-.sca-currency-style ul li {
-    float: none !important;
-    text-align: left !important;
-    margin-left: 0px !important;
-}
+
 .sca-body-currency {
     display: inline-flex;
     display: -webkit-inline-flex;
