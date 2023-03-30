@@ -201,13 +201,13 @@ div.cs-skin-elastic {
 }
 .cs-skin-elastic.cs-active .cs-options ul li {
   padding-right: .9rem;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-    -webkit-transition: none;
-    transition: none;
-    -webkit-animation: bounce 0.6s ease-out;
-    animation: bounce 0.6s ease-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: .5;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-animation: bounce 0.6s ease-out;
+  animation: bounce 0.6s ease-out;
 }
 
 /* Optional delays (problematic in IE 11/Win) */
