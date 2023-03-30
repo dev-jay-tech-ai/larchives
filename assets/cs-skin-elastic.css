@@ -234,7 +234,7 @@ div.cs-skin-elastic {
 .cs-skin-elastic .cs-options span {
     background-position: 10px 50%;
     background-repeat: no-repeat;
-    background-size: 2em auto;
+    background-size: 0;
     padding: 9px 0 8px 43px;
     background-color: transparent;
 }
