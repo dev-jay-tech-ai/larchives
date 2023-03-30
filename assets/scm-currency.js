@@ -79,7 +79,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_4951',
+                name: 'scm_currency_2121',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
@@ -247,9 +247,17 @@ function customSwticher(jQuery){
                                                     money_format : '<span class=money>£{{amount}}</span>',
                             money_with_currency_format : '<span class=money>£{{amount}} GBP</span>'
                                                 },
+                                            USD : {
+                                                    money_format : '${{amount}}',
+                            money_with_currency_format : '${{amount}} USD'
+                                                },
+                                            EUR : {
+                                                    money_format : '&euro;{{amount}}',
+                            money_with_currency_format : '&euro;{{amount}} EUR'
+                                                },
                                                   };
 
-                                                                                                    
+                                                                                                                                                                            
             /* Default currency */
             var defaultCurrency = 'GBP' || shopCurrency;
 
