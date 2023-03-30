@@ -48,24 +48,12 @@
     width: 100% !important;
 }
 
-.cs-placeholder:after {
-  content: '';
-  position: absolute;
-}
-
 /* Fix display on theme Jumpstart */
 .sca-body-currency .sca-currency-style .jumpstart-selector{
     display : block !important;
 }
 .sca-body-currency .sca-currency-style .jumpstart-selector .arrow{
     border-left : none !important;
-}
-.sca-body-currency svg {
-  margin-top: .5rem;
-}
-
-.header_text_reverse .sca-body-currency svg > path {
-  stroke: #fff;
 }
 
 .shadow-smallShadow {
@@ -132,8 +120,7 @@
 
 .layout-only-label{
     padding: 1em !important;
-    padding-top: 0!important;
-    padding-bottom: 0!important;
+    padding-left: 10px!important;
     text-overflow: clip!important;
 }
 

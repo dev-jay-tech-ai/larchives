@@ -30,7 +30,7 @@ function customSwticher(jQuery){
     const fontWeight = "";
     const color_background = "transparent";
     const color_border = "transparent";
-    const color_text = "#ffffff";
+    const color_text = "#000";
     const color_arrow = "";
             
     const color_background_hover = "";
@@ -42,10 +42,12 @@ function customSwticher(jQuery){
     {
         jQuery('.cs-placeholder').css({'background-color': color_background});
     }
-    {
+        {
         jQuery('.cs-placeholder').css({'color': color_text});
         jQuery('.cs-options').css({'color': color_text});
     }
+    
+    
     
     jQuery('.sca-body-currency').addClass(`border-type__${border}`);
     jQuery('.sca-body-currency').addClass(`border-witdh__${option_border_width}`);
@@ -57,10 +59,18 @@ function customSwticher(jQuery){
     jQuery('.cs-placeholder').addClass(`shadow-${box_shadow}`);
     jQuery('.cs-placeholder').addClass(`hover-${hover_box_shadow}`);
     jQuery('.cs-placeholder').css({"font-weight": fontWeight});
-    jQuery('.cs-placeholder').css({"background-image": "none"});
-    jQuery('.cs-skin-elastic').addClass("hidden-after");
-    jQuery('.cs-placeholder').addClass('layout-only-label');
-    jQuery('.cs-placeholder').css({'width': '50px'});
+
+            jQuery('.cs-placeholder').css({"background-image": "none"});
+    
+    
+            
+            jQuery('.cs-skin-elastic').addClass("hidden-after");
+    
+    
+            jQuery('.cs-placeholder').addClass('layout-only-label');
+        jQuery('.cs-placeholder').css({'width': '50px'});
+    
+    
     }
 
                                             var startCurrencySwitcher = function(jQuery) {
@@ -75,7 +85,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_7902',
+                name: 'scm_currency_9207',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
