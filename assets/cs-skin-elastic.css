@@ -19,8 +19,8 @@
     padding: 6px 10px !important;
 }
 .cs-active .cs-options {
-    border: 1px solid #eee;
-    /* border-top: none; */
+    /* border: 1px solid #eee;
+    border-top: none; */
 }
 .select-currency {
     float: left;
