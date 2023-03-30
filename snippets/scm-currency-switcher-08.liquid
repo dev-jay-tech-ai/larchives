@@ -11,7 +11,7 @@
   line-height: 18px;
 }
 </style>
-<div class="sca-body-currency">
+<div class="sca-body-currency {% if request.page_type == 'index' %} header_text_reverse{% endif %}">
   <div class="sca-currency-style">
     <select id="currencies" name="currencies" class="cs-select cs-skin-elastic" style="display: none;">
         <option value="{{ defaultCurrencyCode }}" data-class="flag-{{ defaultCurrencyCode }}" data-symbol="{{defaultCurrencySymbol}}" selected="selected">{{ defaultCurrencyCode }}</option>
