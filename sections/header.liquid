@@ -318,7 +318,7 @@
     {%- endif -%}
 
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
-    <div class='header_left_nav{% if request.page_type == 'index' %} header_text_reverse{% endif %}'>             
+    <div class='header_left_nav'>             
     {% render "scm-currency-switcher" %}
     </div>
     {%- endif -%}
