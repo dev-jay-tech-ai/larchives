@@ -15,7 +15,7 @@
     color: #555;
 }
 .cs-placeholder {
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
     padding: 6px 10px !important;
 }
 .cs-active .cs-options {
