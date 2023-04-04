@@ -486,25 +486,14 @@ if (cookieCurrency == null) {
                             "SH":"GBP",
                     };
         if (window.location.protocol === "https:") {
-            
-                
-                    
-                    
-                        
-                        
-                    
-                        
-                    
-                
-            
-                jQuery.getJSON('//geoip.secomtech.com/?json', function(location) {
-                    if(location.country_code){
-                        var myCurrency = countryCurrencyMap[location.country_code];
-                        if(myCurrency){
-                            Currency.convertAll(shopCurrency, myCurrency);
-                                jQuery('[name=currencies]').val(myCurrency);
-    jQuery('[name=currencies]').change();
-            jQuery('.cs-placeholder').text(jQuery('.cs-options li.flag-' + Currency.currentCurrency + ' span').first().text());
+        jQuery.getJSON('//geoip.secomtech.com/?json', function(location) {
+            if(location.country_code){
+                var myCurrency = countryCurrencyMap[location.country_code];
+                if(myCurrency){
+                    Currency.convertAll(shopCurrency, myCurrency);
+                        jQuery('[name=currencies]').val(myCurrency);
+        jQuery('[name=currencies]').change();
+        jQuery('.cs-placeholder').text(jQuery('.cs-options li.flag-' + Currency.currentCurrency + ' span').first().text());
         jQuery('.cs-placeholder').removeClass("flag-" + Currency.shopCurrency).addClass("flag-" + Currency.currentCurrency);
     
     if (Currency.currentCurrency !== defaultCurrency) {
