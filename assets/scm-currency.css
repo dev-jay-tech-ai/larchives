@@ -120,6 +120,7 @@
 
 .layout-only-label{
     padding: 1em !important;
+    padding-top: .5rem;
     padding-left: 10px!important;
     text-overflow: clip!important;
 }
