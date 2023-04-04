@@ -85,7 +85,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_3283',
+                name: 'scm_currency_4506',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
@@ -253,17 +253,9 @@ function customSwticher(jQuery){
                                                     money_format : '<span class=money>£{{amount}}</span>',
                             money_with_currency_format : '<span class=money>£{{amount}} GBP</span>'
                                                 },
-                                            USD : {
-                                                    money_format : '${{amount}}',
-                            money_with_currency_format : '${{amount}} USD'
-                                                },
-                                            EUR : {
-                                                    money_format : '&euro;{{amount}}',
-                            money_with_currency_format : '&euro;{{amount}} EUR'
-                                                },
                                                   };
 
-                                                                                                                                                                            
+                                                                                                    
             /* Default currency */
             var defaultCurrency = 'GBP' || shopCurrency;
 
@@ -445,13 +437,73 @@ function customSwticher(jQuery){
             // *********************************************************//
                                             // If there's no cookie.
 if (cookieCurrency == null) {
-            if (shopCurrency !== defaultCurrency) {
-            Currency.convertAll(shopCurrency, defaultCurrency);
-            jQuery('.scm-currency-cart').show();
-            jQuery('.selected-currency').text(Currency.currentCurrency);
+            var countryCurrencyMap = {
+                            "GS":"GBP",
+                            "GB":"GBP",
+                            "JE":"GBP",
+                            "IM":"GBP",
+                            "SH":"GBP",
+                    };
+        if (window.location.protocol === "https:") {
+            
+                
+                    
+                    
+                        
+                        
+                    
+                        
+                    
+                
+            
+                jQuery.getJSON('//geoip.secomtech.com/?json', function(location) {
+                    if(location.country_code){
+                        var myCurrency = countryCurrencyMap[location.country_code];
+                        if(myCurrency){
+                            Currency.convertAll(shopCurrency, myCurrency);
+                                jQuery('[name=currencies]').val(myCurrency);
+    jQuery('[name=currencies]').change();
+            jQuery('.cs-placeholder').text(jQuery('.cs-options li.flag-' + Currency.currentCurrency + ' span').first().text());
+        jQuery('.cs-placeholder').removeClass("flag-" + Currency.shopCurrency).addClass("flag-" + Currency.currentCurrency);
+    
+    if (Currency.currentCurrency !== defaultCurrency) {
+        jQuery('.scm-currency-cart').show();
+        jQuery('.selected-currency').text(Currency.currentCurrency);
+        jQuery('body').attr('data-current',Currency.currentCurrency);
+    } else {
+        jQuery('.scm-currency-cart').hide();
+        jQuery('body').attr('data-current',Currency.currentCurrency);
+    }
+                        } else {
+                            Currency.cookie.write(shopCurrency);
+                        }
+                    }
+                });
+            
         } else {
-            jQuery('.scm-currency-cart').hide();
-            Currency.currentCurrency = defaultCurrency;
+            jQuery.getJSON('http://ipinfo.io', function(location) {
+                if(location.country){
+                    var myCurrency = countryCurrencyMap[location.country];
+                    if(myCurrency){
+                        Currency.convertAll(shopCurrency, myCurrency);
+                            jQuery('[name=currencies]').val(myCurrency);
+    jQuery('[name=currencies]').change();
+            jQuery('.cs-placeholder').text(jQuery('.cs-options li.flag-' + Currency.currentCurrency + ' span').first().text());
+        jQuery('.cs-placeholder').removeClass("flag-" + Currency.shopCurrency).addClass("flag-" + Currency.currentCurrency);
+    
+    if (Currency.currentCurrency !== defaultCurrency) {
+        jQuery('.scm-currency-cart').show();
+        jQuery('.selected-currency').text(Currency.currentCurrency);
+        jQuery('body').attr('data-current',Currency.currentCurrency);
+    } else {
+        jQuery('.scm-currency-cart').hide();
+        jQuery('body').attr('data-current',Currency.currentCurrency);
+    }
+                    } else {
+                        Currency.cookie.write(shopCurrency);
+                    }
+                }
+            });
         }
     } else if (!cookieCurrency || (jQuery('[name=currencies]').length && jQuery('[name=currencies] option[value=' + cookieCurrency + ']').length === 0)) {
     // If the cookie value does not correspond to any value in the currency dropdown.
