@@ -85,7 +85,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_1933',
+                name: 'scm_currency_6447',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
@@ -253,9 +253,17 @@ function customSwticher(jQuery){
                                                     money_format : '<span class=money>£{{amount}}</span>',
                             money_with_currency_format : '<span class=money>£{{amount}} GBP</span>'
                                                 },
+                                            USD : {
+                                                    money_format : '${{amount}}',
+                            money_with_currency_format : '${{amount}} USD'
+                                                },
+                                            EUR : {
+                                                    money_format : '&euro;{{amount}}',
+                            money_with_currency_format : '&euro;{{amount}} EUR'
+                                                },
                                                   };
 
-                                                                                                    
+                                                                                                                                                                            
             /* Default currency */
             var defaultCurrency = 'GBP' || shopCurrency;
 
@@ -438,6 +446,47 @@ function customSwticher(jQuery){
                                             // If there's no cookie.
 if (cookieCurrency == null) {
             var countryCurrencyMap = {
+                            "IO":"USD",
+                            "GU":"USD",
+                            "MH":"USD",
+                            "FM":"USD",
+                            "MP":"USD",
+                            "PW":"USD",
+                            "PR":"USD",
+                            "TC":"USD",
+                            "US":"USD",
+                            "UM":"USD",
+                            "VG":"USD",
+                            "VI":"USD",
+                            "AS":"EUR",
+                            "AD":"EUR",
+                            "AT":"EUR",
+                            "BE":"EUR",
+                            "FI":"EUR",
+                            "FR":"EUR",
+                            "GF":"EUR",
+                            "TF":"EUR",
+                            "DE":"EUR",
+                            "GR":"EUR",
+                            "GP":"EUR",
+                            "IE":"EUR",
+                            "IT":"EUR",
+                            "LU":"EUR",
+                            "MQ":"EUR",
+                            "YT":"EUR",
+                            "MC":"EUR",
+                            "NL":"EUR",
+                            "PT":"EUR",
+                            "RE":"EUR",
+                            "WS":"EUR",
+                            "SM":"EUR",
+                            "SI":"EUR",
+                            "ES":"EUR",
+                            "VA":"EUR",
+                            "AX":"EUR",
+                            "ME":"EUR",
+                            "BL":"EUR",
+                            "PM":"EUR",
                             "GS":"GBP",
                             "GB":"GBP",
                             "JE":"GBP",
