@@ -15,7 +15,7 @@
     color: #555;
 }
 .cs-placeholder {
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
     padding: 6px 10px !important;
 }
 .cs-active .cs-options {
@@ -234,7 +234,7 @@ div.cs-skin-elastic {
 .cs-skin-elastic .cs-options span {
     background-position: 10px 50%;
     background-repeat: no-repeat;
-    background-size: 2em auto;
+    background-size: 0 auto;
     padding: 9px 0 8px 43px;
     background-color: #fff;
 }
