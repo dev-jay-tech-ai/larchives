@@ -618,7 +618,7 @@ if (cookieCurrency == null) {
         jQuery('.scm-currency-cart').hide();
         jQuery('body').attr('data-current',Currency.currentCurrency);
     }
-                                        // *********************************************************//
+    // *********************************************************//
 
             SECOMAPP.cs.loadedApp = true;
         };
