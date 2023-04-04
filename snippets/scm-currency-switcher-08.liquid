@@ -14,14 +14,14 @@
 <div class="sca-body-currency">
     <div class="sca-currency-style">
       <select id="currencies" name="currencies" class="cs-select cs-skin-elastic" style="display: none;">
-          <option value="{{ defaultCurrencyCode }}" data-class="flag-{{ defaultCurrencyCode }}" data-symbol="{{defaultCurrencySymbol}}" selected="selected">{{ defaultCurrencyCode }}</option>
-          {% for currencyIndex in (0..currencySize) %}
-          {% assign currencyCode = currencyCodes[currencyIndex] %}
-          {% assign currencySymbol = currencySymbols[currencyIndex] %}
-          {% if currencyCode != defaultCurrencyCode %}
-          <option value="{{ currencyCode }}" data-class="flag-{{ currencyCode }}" data-symbol="{{currencySymbol}}">{{ currencyCode }}</option>
-          {% endif %}
-          {% endfor %}
+        <option value="{{ defaultCurrencyCode }}" data-class="flag-{{ defaultCurrencyCode }}" data-symbol="{{defaultCurrencySymbol}}" selected="selected">{{ defaultCurrencyCode }}</option>
+        {% for currencyIndex in (0..currencySize) %}
+        {% assign currencyCode = currencyCodes[currencyIndex] %}
+        {% assign currencySymbol = currencySymbols[currencyIndex] %}
+        {% if currencyCode != defaultCurrencyCode %}
+        <option value="{{ currencyCode }}" data-class="flag-{{ currencyCode }}" data-symbol="{{currencySymbol}}">{{ currencyCode }}</option>
+        {% endif %}
+        {% endfor %}
       </select>
   </div>
   <div class="clear-both"></div>
