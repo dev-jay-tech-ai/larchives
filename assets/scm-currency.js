@@ -491,7 +491,7 @@ if (cookieCurrency == null) {
                 var myCurrency = countryCurrencyMap[location.country_code];
                 if(myCurrency){
                     Currency.convertAll(shopCurrency, myCurrency);
-                        jQuery('[name=currencies]').val(myCurrency);
+                    jQuery('[name=currencies]').val(myCurrency);
         jQuery('[name=currencies]').change();
         jQuery('.cs-placeholder').text(jQuery('.cs-options li.flag-' + Currency.currentCurrency + ' span').first().text());
         jQuery('.cs-placeholder').removeClass("flag-" + Currency.shopCurrency).addClass("flag-" + Currency.currentCurrency);
