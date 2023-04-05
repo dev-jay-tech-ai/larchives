@@ -154,7 +154,7 @@ div.cs-skin-elastic {
 .cs-skin-elastic .cs-options {
     overflow: visible;
     background: transparent;
-    opacity: .5;
+    opacity: 1;
     visibility: visible;
     padding-bottom: 0px;
     pointer-events: none;
@@ -235,6 +235,7 @@ div.cs-skin-elastic {
 /* with more items, more delays declarations are needed */
 
 .cs-skin-elastic .cs-options span {
+    opacity: .5;
     background-position: 10px 50%;
     background-repeat: no-repeat;
     background-size: 0 auto;
