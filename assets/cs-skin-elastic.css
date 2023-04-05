@@ -139,7 +139,7 @@ div.cs-skin-elastic {
 }
 
 .cs-skin-elastic > span {
-    background-color: #fff;
+    background-color: transparent;
     z-index: 100;
 }
 
