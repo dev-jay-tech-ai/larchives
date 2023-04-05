@@ -47,8 +47,6 @@ function customSwticher(jQuery){
         jQuery('.cs-options').css({'color': color_text});
     }
     
-    
-    
     jQuery('.sca-body-currency').addClass(`border-type__${border}`);
     jQuery('.sca-body-currency').addClass(`border-witdh__${option_border_width}`);
     jQuery('.cs-options').addClass(`border-type__${border}`);
