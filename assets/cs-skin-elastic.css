@@ -142,6 +142,10 @@ div.cs-skin-elastic {
       width: 5rem;
     }
 
+    .cs-select .cs-options {
+      left: -8rem;
+    }
+  
 }
 
 .cs-skin-elastic > span {
