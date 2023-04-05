@@ -32,7 +32,7 @@
     height: 0px;
 }
 div.cs-select {
-    display: inline-block;
+    display: inline;
     vertical-align: middle;
     position: relative;
     text-align: left;
