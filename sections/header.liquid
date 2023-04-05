@@ -153,10 +153,9 @@
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
                 <div class='menu-drawer_top'>
-                  {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
-                  <div class="mldDesk"></div>
-                  {%- endif -%} 
+                  {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}{%- endif -%} 
                   <div class='meun-drawer_close'>{% render 'icon-close' %}</div>
+                  <div>{% render "scm-currency-switcher" %}</div>  
                 </div>
                 <div class='menu-drawer_login'>
                   {%- if shop.customer_accounts_enabled -%}
