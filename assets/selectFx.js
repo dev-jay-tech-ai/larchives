@@ -139,7 +139,7 @@
 		this.selEl = document.createElement( 'div' );
 		this.selEl.className = this.el.className;
 		this.selEl.tabIndex = this.el.tabIndex;
-		this.selEl.innerHTML = '<span class="cs-placeholder">' + this.selectedOpt.textContent + `</span><span class='indicator' style='padding-left: 0; padding-right: 0'><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+		this.selEl.innerHTML = '<span class="cs-placeholder">' + this.selectedOpt.textContent + `</span><span class='indicator' style='padding-left: 0; padding-right: 0'><svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 12L16 20L24 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg></span>` + opts_el;
 		this.el.parentNode.appendChild( this.selEl );
