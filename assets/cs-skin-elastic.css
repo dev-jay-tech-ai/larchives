@@ -135,8 +135,14 @@ div.cs-skin-elastic {
 
 @media screen and (max-width: 30em) {
     div.cs-skin-elastic {
-        font-size: 1.4em;
+     font-size: 1.4em;
     }
+
+    .sca-currency-style {
+      width: 5rem;
+    }
+
+  
 }
 
 .cs-skin-elastic > span {
