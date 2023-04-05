@@ -1,6 +1,9 @@
 <script src="{{ 'classie.js' | asset_url }}" defer></script>
 {{ "cs-skin-elastic.css" | asset_url | stylesheet_tag }}                
 <script src="{{ 'selectFx.js' | asset_url }}" defer></script>
+<style>
+              .cs_currencies .cs-options {  color: #fff; }
+</style>
 <div class="sca-body-currency">
     <div class="sca-currency-style">
       <select id="currencies" name="currencies" class="cs-select cs-skin-elastic {%- if request.page_type == 'index' -%} cs_currencies{%- endif -%}" style="display: none;">
