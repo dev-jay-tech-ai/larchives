@@ -34,7 +34,7 @@
 div.cs-select {
     display: inline-block;
     vertical-align: middle;
-    position: relative;
+    /* position: relative; */
     text-align: left;
     background: #fff;
     z-index: 100;
