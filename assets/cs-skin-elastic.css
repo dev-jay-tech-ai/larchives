@@ -80,6 +80,11 @@ div.cs-select:focus {
     content: "\25BE";
     right: 1em;
 }
+
+.cs-placeholder > span::after {
+    content: 'ㅎ';
+}
+
 .cs-select .cs-selected span::after {
     content: "\2713";
     margin-left: 1em;
