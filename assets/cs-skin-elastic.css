@@ -145,6 +145,7 @@ div.cs-skin-elastic {
     .cs-select .cs-options {
       width: 20rem;
       left: -20rem;
+      top: -3.1rem;
     }
   
     .cs-placeholder {
