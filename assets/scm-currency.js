@@ -62,7 +62,7 @@ function customSwticher(jQuery){
     jQuery('.cs-placeholder').css({"background-image": "none"});
     jQuery('.cs-skin-elastic').addClass("hidden-after");
     jQuery('.cs-placeholder').addClass('layout-only-label');
-    jQuery('.cs-placeholder').css({'width': '50px'});
+    jQuery('.cs-placeholder').css({'width': '60px'});
     }
 
 var startCurrencySwitcher = function(jQuery) {
