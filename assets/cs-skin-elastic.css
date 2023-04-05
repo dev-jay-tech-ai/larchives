@@ -54,7 +54,7 @@ div.cs-select:focus {
     display: none;
 }
 .cs-select span {
-    display: inline-block;
+    display: inline;
     position: relative;
     cursor: pointer;
     padding: 1em;
