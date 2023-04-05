@@ -647,5 +647,4 @@ if (cookieCurrency == null) {
             });
             jQuery.ajaxSetup({async:true});
         });
-    }
-    
+    }    
