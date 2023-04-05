@@ -147,6 +147,10 @@ div.cs-skin-elastic {
       left: -18rem;
     }
   
+    .cs-placeholder {
+      width: 60px !important;
+    }
+  
 }
 
 .cs-skin-elastic > span {
