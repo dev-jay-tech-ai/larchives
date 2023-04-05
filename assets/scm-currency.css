@@ -146,3 +146,5 @@
 .cs_currencies .cs-options {  color: #fff !important; }
 
 .cs_currencies .cs-placeholder {  color: #fff !important; }
+
+.cs_currencies .indicator { padding-left: 0; padding-right: 0; }
