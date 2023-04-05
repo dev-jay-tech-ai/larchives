@@ -3,7 +3,7 @@
 <script src="{{ 'selectFx.js' | asset_url }}" defer></script>
 <div class="sca-body-currency">
     <div class="sca-currency-style">
-      <select id="currencies" name="currencies" class="cs-select cs-skin-elastic {% if request.page_type == 'index' %} cs_currencies{% endif %}" style="display: none;">
+      <select id="currencies" name="currencies" class="cs-select cs-skin-elastic" style="display: none;">
         <option value="{{ defaultCurrencyCode }}" data-class="flag-{{ defaultCurrencyCode }}" data-symbol="{{defaultCurrencySymbol}}" selected="selected">{{ defaultCurrencyCode }}</option>
         {% for currencyIndex in (0..currencySize) %}
         {% assign currencyCode = currencyCodes[currencyIndex] %}
