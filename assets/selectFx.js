@@ -139,7 +139,7 @@
 		this.selEl = document.createElement( 'div' );
 		this.selEl.className = this.el.className;
 		this.selEl.tabIndex = this.el.tabIndex;
-		this.selEl.innerHTML = '<span class="cs-placeholder">' + this.selectedOpt.textContent + "</span><span> > </span>" + opts_el;
+		this.selEl.innerHTML = '<span class="cs-placeholder">' + this.selectedOpt.textContent + "</span><span class='indicator'> > </span>" + opts_el;
 		this.el.parentNode.appendChild( this.selEl );
 		this.selEl.appendChild( this.el );
 	}
