@@ -147,7 +147,7 @@
 
 .cs_currencies .cs-placeholder {  color: #fff !important; }
 
-span.cs-placeholder:after {
+.cs-select > .cs-placeholder::after {
   content: '>';
   position: absolute;
   left: 0;
