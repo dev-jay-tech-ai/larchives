@@ -372,3 +372,5 @@ div.cs-skin-elastic {
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
 }
+
+.cs_currencies .indicator { padding-left: 0; padding-right: 0; }
