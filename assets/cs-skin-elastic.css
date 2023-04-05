@@ -81,7 +81,7 @@ div.cs-select:focus {
     right: 1em;
 }
 
-.cs-placeholder > span::after {
+span.cs-placeholder::after {
     content: 'ㅎ';
 }
 
