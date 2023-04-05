@@ -133,7 +133,7 @@ div.cs-skin-elastic {
     color: #000;
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 1024px) {
     div.cs-skin-elastic {
      font-size: 1.4em;
     }
