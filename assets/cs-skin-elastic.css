@@ -37,7 +37,7 @@ div.cs-select {
     position: relative;
     text-align: left;
     background: #fff;
-    z-index: 100;
+    /* z-index: 100; */
     width: 100%;
     max-width: 100px;
     -webkit-touch-callout: none;
