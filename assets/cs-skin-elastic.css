@@ -143,7 +143,9 @@ div.cs-skin-elastic {
     }
 
     .cs-select .cs-options {
-      left: -8rem;
+      width: 350%;
+      left: -12rem;
+      background: #fff;
     }
   
 }
