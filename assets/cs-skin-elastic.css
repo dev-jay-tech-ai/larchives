@@ -167,7 +167,7 @@ div.cs-skin-elastic {
 }
 
 .cs-skin-elastic .cs-options {
-    overflow: visible;
+    overflow: hidden;
     background: transparent;
     opacity: 1;
     visibility: visible;
