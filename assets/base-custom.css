@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 1024px){
  .sca-currency-style {
-   width: 6rem;
+   width: 6rem !important;
  }
   
  .cs-placeholder {
