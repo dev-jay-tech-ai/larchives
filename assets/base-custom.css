@@ -30,6 +30,10 @@
   left: 70px !important;
 }
 
+.sca-currency-style ul li {
+  padding-right: 19px;
+}
+
 .cs_currencies .cs-options {  color: #fff !important; }
 
 .cs_currencies .cs-placeholder {  color: #fff !important; }
