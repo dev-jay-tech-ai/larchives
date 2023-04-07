@@ -138,7 +138,7 @@ div.cs-skin-elastic {
 
 .cs-skin-elastic > span {
     background-color: #fff;
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .cs-skin-elastic > span::after {
