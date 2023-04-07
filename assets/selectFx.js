@@ -141,8 +141,8 @@
 		this.selEl.tabIndex = this.el.tabIndex;
 		this.selEl.innerHTML = '<span class="cs-placeholder">' + this.selectedOpt.textContent + '</span>' + opts_el;
 		this.el.parentNode.appendChild( this.selEl );
-        debugger;
 		this.selEl.appendChild( this.el );
+        debugger;
 	}
 
 	/**
