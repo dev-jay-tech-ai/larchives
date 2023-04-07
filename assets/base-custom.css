@@ -25,6 +25,8 @@
 
 .cs_currencies .cs-placeholder {  color: #fff !important; }
 
+.cs-placeholder { border: 0 !important; }
+
 .sec_depth_style > button {
   font-family: 'Termina-demi' !important;
 }
