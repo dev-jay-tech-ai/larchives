@@ -71,6 +71,12 @@
   border: 0 !important;
 }
 
+@media screen and (max-width: 1024px){
+ .cs-placeholder {
+   font-size: 1.4rem;
+ }
+}
+
 .sec_depth_style > button {
   font-family: 'Termina-demi' !important;
 }
