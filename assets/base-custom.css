@@ -27,6 +27,14 @@
 
 .cs-placeholder { border: 0 !important; }
 
+.cs-skin-elastic .cs-options span {
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 0 auto;
+    padding: 0 !important;
+    background-color: transparent;
+}
+
 .sec_depth_style > button {
   font-family: 'Termina-demi' !important;
 }
