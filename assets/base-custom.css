@@ -20,6 +20,11 @@
   }
 }
 
+.cs-skin-elastic > span {
+  background-color: transparent !important;
+  z-index: 0 !importnant:
+}
+
 .cs-skin-elastic .cs-options>ul:before {
   background: transparent !important;
 }
