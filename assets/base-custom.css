@@ -75,6 +75,10 @@
  .cs-placeholder {
    font-size: 1.4rem;
  }
+
+ .cs-select > span  {
+   padding-top: 0 !important;
+ }
 }
 
 .sec_depth_style > button {
