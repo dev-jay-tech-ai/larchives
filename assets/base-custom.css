@@ -20,6 +20,11 @@
   }
 }
 
+.cs-placeholder { 
+  border: 0 !important; 
+  padding-top: 3px !important;
+}
+
 .cs-skin-elastic > span {
   background-color: transparent !important;
   z-index: 0 !importnant:
@@ -85,11 +90,6 @@
    top: 0px !important;
    left: -140px !important;
  }
-}
-
-.cs-placeholder { 
-  border: 0 !important; 
-  padding-top: 3px !important;
 }
 
 .sec_depth_style > button {
