@@ -21,6 +21,10 @@
 }
 
 
+.cs-skin-elastic .cs-options>ul:before {
+  background: transparent !important;
+}
+
 .cs_currencies .cs-options {  color: #fff !important; }
 
 .cs_currencies .cs-placeholder {  color: #fff !important; }
