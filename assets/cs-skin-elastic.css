@@ -15,12 +15,12 @@
     color: #555;
 }
 .cs-placeholder {
-    /* border: 1px solid #eee; */
-    padding: 0 10px !important;
+    border: 1px solid #eee;
+    padding: 6px 10px !important;
 }
 .cs-active .cs-options {
-    /* border: 1px solid #eee;
-    border-top: none; */
+    border: 1px solid #eee;
+    /* border-top: none; */
 }
 .select-currency {
     float: left;
@@ -32,12 +32,12 @@
     height: 0px;
 }
 div.cs-select {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
     position: relative;
     text-align: left;
     background: #fff;
-    /* z-index: 100; */
+    z-index: 100;
     width: 100%;
     max-width: 100px;
     -webkit-touch-callout: none;
@@ -60,7 +60,7 @@ div.cs-select:focus {
     padding: 1em;
     white-space: nowrap;
     overflow: hidden;
-    /* text-overflow: ellipsis; */
+    text-overflow: ellipsis;
 }
 /* Placeholder and selected option */
 .cs-select > span {
@@ -80,7 +80,6 @@ div.cs-select:focus {
     content: "\25BE";
     right: 1em;
 }
-
 .cs-select .cs-selected span::after {
     content: "\2713";
     margin-left: 1em;
@@ -96,10 +95,8 @@ div.cs-active {
 .cs-select .cs-options {
     position: absolute;
     overflow: hidden;
-    width: 250%;
-    top: -1.3rem;
-    left: 8rem;
-    background: transparent;
+    width: 100%;
+    background: #fff;
     visibility: hidden;
 }
 .cs-select.cs-active .cs-options {
@@ -109,7 +106,7 @@ div.cs-active {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 250%;
+    width: 100%;
 }
 .cs-select ul span {
     padding: 1em;
@@ -130,33 +127,18 @@ div.cs-skin-elastic {
     background: transparent;
     font-size: 12px;
     font-weight: 700;
-    color: #000;
+    color: #5b8583;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 30em) {
     div.cs-skin-elastic {
-     font-size: 1.4em;
+        font-size: 1em;
     }
-
-    .sca-currency-style {
-      width: 7rem;
-    }
-
-    .cs-select .cs-options {
-      width: 20rem;
-      left: -20rem;
-      top: -3.1rem;
-    }
-  
-    .cs-placeholder {
-      width: 60px !important;
-    }
-  
 }
 
 .cs-skin-elastic > span {
-    background-color: transparent;
-    /* z-index: 100; */
+    background-color: #fff;
+    z-index: 100;
 }
 
 .cs-skin-elastic > span::after {
@@ -167,7 +149,7 @@ div.cs-skin-elastic {
 }
 
 .cs-skin-elastic .cs-options {
-    overflow: hidden;
+    overflow: visible;
     background: transparent;
     opacity: 1;
     visibility: visible;
@@ -188,7 +170,7 @@ div.cs-skin-elastic {
     top: 0;
     -webkit-transform: scale3d(1, 0, 1);
     transform: scale3d(1, 0, 1);
-    background: transparent;
+    background: #fff;
     -webkit-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
     -webkit-transition: -webkit-transform 0.3s;
@@ -250,18 +232,16 @@ div.cs-skin-elastic {
 /* with more items, more delays declarations are needed */
 
 .cs-skin-elastic .cs-options span {
-    opacity: .5;
     background-position: 10px 50%;
     background-repeat: no-repeat;
-    background-size: 0 auto;
-    /* padding: 9px 0 8px 43px; */
-    background-color: transparent;
+    background-size: 2em auto;
+    padding: 9px 0 8px 43px;
+    background-color: #fff;
 }
 .cs-skin-elastic .cs-options span:hover,
 .cs-skin-elastic .cs-options li.cs-focus span,
 .cs-skin-elastic .cs-options .cs-selected span {
-    /* color: #1e4c4a; */
-    opacity: 1;
+    color: #1e4c4a;
 }
 
 .cs-skin-elastic .cs-options .cs-selected span::after {
@@ -369,13 +349,8 @@ div.cs-skin-elastic {
 .sca-currency-style {
     float: left;
     max-width: 100%;
+    width: 100px;
 }
-@media screen and (min-width: 1025px) {
-  .sca-currency-style {
-      width: 100px;
-  }
-}
-
 .sca-currency-style ul {
     list-style: none !important;
 }
@@ -386,7 +361,7 @@ div.cs-skin-elastic {
     line-height: 24px !important;
 }
 .sca-currency-style ul li {
-    float: left !important;
+    float: none !important;
     text-align: left !important;
     margin-left: 0px !important;
 }
