@@ -127,7 +127,7 @@ div.cs-skin-elastic {
     background: transparent;
     font-size: 12px;
     font-weight: 700;
-    color: #5b8583;
+    /* color: #5b8583; */
 }
 
 @media screen and (max-width: 30em) {
