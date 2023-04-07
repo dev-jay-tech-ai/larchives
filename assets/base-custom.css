@@ -55,11 +55,6 @@
   color: #fff !important; 
 }
 
-.cs-placeholder { 
-  border: 0 !important; 
-  padding-top: 3px !important;
-}
-
 .cs-skin-elastic .cs-options span {
   background-image: none !important;
   background-position: 0 !important;
@@ -90,6 +85,11 @@
    top: 0px !important;
    left: -140px !important;
  }
+}
+
+.cs-placeholder { 
+  border: 0 !important; 
+  padding-top: 3px !important;
 }
 
 .sec_depth_style > button {
