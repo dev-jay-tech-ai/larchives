@@ -32,7 +32,7 @@
 
 .sca-currency-style ul li {
   padding-right: 9px;
-  opacity: .5;
+  opacity: .5 !important;
 }
 
 .cs_currencies .cs-options {  color: #fff !important; }
