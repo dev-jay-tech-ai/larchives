@@ -26,7 +26,8 @@
 
 .cs-select .cs-options {
   width: 200px !important;
-  top: 8px !important;
+  top: 7px !important;
+  left: 70px !important;
 }
 
 .cs_currencies .cs-options {  color: #fff !important; }
