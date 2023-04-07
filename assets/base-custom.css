@@ -36,7 +36,7 @@
     background-repeat: no-repeat !important;
     background-size: 0 auto !important;
     padding: 0 !important;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .sec_depth_style > button {
