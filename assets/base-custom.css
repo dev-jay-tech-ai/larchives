@@ -49,7 +49,7 @@
   opacity: .5;  
 }
 
-.cs-skin-elastic .cs-options span:hover, .cs-skin-elastic .cs-options li.cs-focus span, .cs-skin-elastic .cs-options .cs-selected span {
+.cs_currencies .cs-skin-elastic .cs-options span:hover,.cs_currencies .cs-skin-elastic .cs-options li.cs-focus span,.cs_currencies .cs-skin-elastic .cs-options .cs-selected span {
   opacity: 1;
   color: #fff !important;
 }
