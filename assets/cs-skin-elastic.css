@@ -63,8 +63,8 @@ div.cs-select:focus {
     text-overflow: ellipsis;
 }
 /* Placeholder and selected option */
-.cs-select > span {
-    padding-right: 3em;
+.cs-select > span { 
+    /* padding-right: 3em; */
 }
 .cs-select > span::after,
 .cs-select .cs-selected span::after {
