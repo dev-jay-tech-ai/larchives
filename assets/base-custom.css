@@ -72,6 +72,10 @@
 }
 
 @media screen and (max-width: 1024px){
+ .sca-currency-style {
+   width: 6rem;
+ }
+  
  .cs-placeholder {
    font-size: 1.4rem;
  }
