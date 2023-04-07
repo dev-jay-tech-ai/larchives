@@ -60,11 +60,11 @@ div.cs-select:focus {
     padding: 1em;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+   /*  text-overflow: ellipsis; */
 }
 /* Placeholder and selected option */
 .cs-select > span { 
-    /* padding-right: 3em; */
+    padding-right: 3em;
 }
 .cs-select > span::after,
 .cs-select .cs-selected span::after {
