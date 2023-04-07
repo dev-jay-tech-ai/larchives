@@ -361,7 +361,7 @@ div.cs-skin-elastic {
     line-height: 24px !important;
 }
 .sca-currency-style ul li {
-    float: none !important;
+    float: left !important;
     text-align: left !important;
     margin-left: 0px !important;
 }
