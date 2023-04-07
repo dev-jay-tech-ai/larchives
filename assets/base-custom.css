@@ -83,6 +83,11 @@
  .cs-select > span  {
    padding-top: 0 !important;
  }
+
+ .cs-select .cs-options {
+   top: 0px !important;
+   left: -140px !important;
+ }
 }
 
 .sec_depth_style > button {
