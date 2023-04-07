@@ -33,6 +33,7 @@
   width: 200px !important;
   top: 3px !important;
   left: 70px !important;
+  overflow: hidden !important;
 }
 
 .sca-currency-style ul li {
