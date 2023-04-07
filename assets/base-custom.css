@@ -40,6 +40,10 @@
   background-color: transparent !important;
 }
 
+.cs-active .cs-options {
+  border: 0 !important;
+}
+
 .sec_depth_style > button {
   font-family: 'Termina-demi' !important;
 }
