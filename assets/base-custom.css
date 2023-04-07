@@ -20,12 +20,12 @@
   }
 }
 
-.sca-currency-style ul li {
-  float: left !important;
-}
-
 .cs-skin-elastic .cs-options>ul:before {
   background: transparent !important;
+}
+
+.cs-select .cs-options {
+  width: 200px !important;
 }
 
 .cs_currencies .cs-options {  color: #fff !important; }
