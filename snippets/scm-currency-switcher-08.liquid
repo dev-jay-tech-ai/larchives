@@ -11,33 +11,35 @@
     }
 </style>
     <style>
-        {% for currency in shop.enabled_currencies %}
-        .cs-skin-elastic .cs-options li.flag-{{ currency.iso_code }} span {
-                                                                          background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ currency.iso_code | downcase }}.png);
-                                                                      }
-        .cs-skin-elastic span.flag-{{ currency.iso_code }} {
-            background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ currency.iso_code | downcase }}.png);
+        {% for currencyIndex in (0..currencySize) %}
+        {% assign currencyCode = currencyCodes[currencyIndex] %}
+        .cs-skin-elastic .cs-options li.flag-{{ currencyCode }} span {
+                                                                     background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ currencyCode | downcase }}.png);
+                                                                 }
+        .cs-skin-elastic span.flag-{{ currencyCode }} {
+            background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ currencyCode | downcase }}.png);
         }
         {% endfor %}
-
-        .cs-skin-elastic .cs-options li.flag-{{ cart.currency.iso_code }}{
-            display: none;
+        .cs-skin-elastic .cs-options li.flag-{{ defaultCurrencyCode }} span {
+                                                                     background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ defaultCurrencyCode | downcase }}.png);
+                                                                 }
+        .cs-skin-elastic span.flag-{{ defaultCurrencyCode }} {
+            background-image: url(https://d3f0kqa8h3si01.cloudfront.net/assets/img/flags/{{ defaultCurrencyCode | downcase }}.png);
         }
     </style>
 
-    <div class="sca-body-currency" {% if template.name == 'page' %}data-type='redirect-form'{% endif %}>
-        <div class="sca-currency-style">
-        {% form 'currency', class: "currency-selector scm-form-language" %}
-        <input type='hidden' name='currency' value='{{ cart.currency.iso_code }}' />
-        <select id="currencies" name="currencies" class="cs-select cs-skin-elastic" style="display: none;">
-            <option value="{{ cart.currency.iso_code }}" data-class="flag-{{ cart.currency.iso_code }}" selected="selected">{{ cart.currency.iso_code }}</option>
-            {% for currency in shop.enabled_currencies %}
-            {% if currency != cart.currency %}
-            <option value="{{ currency.iso_code  }}" data-class="flag-{{ currency.iso_code  }}" data-symbol="{{currencySymbol}}">{{ currency.iso_code  }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
-        {% endform %}
-    </div>
-    <div class="clear-both"></div>
+    <div class="sca-body-currency">
+                <div class="sca-currency-style">
+            <select id="currencies" name="currencies" class="cs-select cs-skin-elastic" style="display: none;">
+                <option value="{{ defaultCurrencyCode }}" data-class="flag-{{ defaultCurrencyCode }}" data-symbol="{{defaultCurrencySymbol}}" selected="selected">{{ defaultCurrencyCode }}</option>
+                {% for currencyIndex in (0..currencySize) %}
+                {% assign currencyCode = currencyCodes[currencyIndex] %}
+                {% assign currencySymbol = currencySymbols[currencyIndex] %}
+                {% if currencyCode != defaultCurrencyCode %}
+                <option value="{{ currencyCode }}" data-class="flag-{{ currencyCode }}" data-symbol="{{currencySymbol}}">{{ currencyCode }}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <div class="clear-both"></div>
     </div>
