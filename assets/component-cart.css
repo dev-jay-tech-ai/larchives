@@ -235,7 +235,6 @@ cart-items {
   }
 
   [data-shopify-buttoncontainer] {
-    flex-direction: row !important;
     justify-content: flex-end;
   }
 
