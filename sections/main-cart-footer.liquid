@@ -90,7 +90,10 @@
   });
 </script>
 <script>
- document.querySelector("ul[data-shopify-buttoncontainer='true']").style.flexDirection = "column";
+ setTimeOut(() => {
+    document.querySelector("ul[data-shopify-buttoncontainer='true']").style.flexDirection = "column";
+ },1000)
+
   
 </script>
 
