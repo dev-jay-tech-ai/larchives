@@ -1,3 +1,7 @@
+.shopify-cleanslate ul {
+  flex-direction: column !important;
+}
+
 .cart {
   position: relative;
   display: block;
