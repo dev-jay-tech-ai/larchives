@@ -16,7 +16,7 @@
 }
 .cs-placeholder {
     border: 1px solid #eee;
-    /* padding: 6px 10px !important; */
+    padding: 6px 10px !important;
 }
 .cs-active .cs-options {
     border: 1px solid #eee;
@@ -37,7 +37,7 @@ div.cs-select {
     position: relative;
     text-align: left;
     background: #fff;
-    /* z-index: 100; */
+    z-index: 100;
     width: 100%;
     max-width: 100px;
     -webkit-touch-callout: none;
@@ -60,10 +60,10 @@ div.cs-select:focus {
     padding: 1em;
     white-space: nowrap;
     overflow: hidden;
-   /*  text-overflow: ellipsis; */
+    text-overflow: ellipsis;
 }
 /* Placeholder and selected option */
-.cs-select > span { 
+.cs-select > span {
     padding-right: 3em;
 }
 .cs-select > span::after,
@@ -89,7 +89,7 @@ div.cs-select:focus {
     transform: translateY(-50%) rotate(180deg);
 }
 div.cs-active {
-    /* z-index: 200; */
+    z-index: 200;
 }
 /* Options */
 .cs-select .cs-options {
@@ -127,7 +127,7 @@ div.cs-skin-elastic {
     background: transparent;
     font-size: 12px;
     font-weight: 700;
-    /* color: #5b8583; */
+    color: #5b8583;
 }
 
 @media screen and (max-width: 30em) {
@@ -138,7 +138,7 @@ div.cs-skin-elastic {
 
 .cs-skin-elastic > span {
     background-color: #fff;
-    /* z-index: 100; */
+    z-index: 100;
 }
 
 .cs-skin-elastic > span::after {
@@ -361,7 +361,7 @@ div.cs-skin-elastic {
     line-height: 24px !important;
 }
 .sca-currency-style ul li {
-    float: left !important;
+    float: none !important;
     text-align: left !important;
     margin-left: 0px !important;
 }
