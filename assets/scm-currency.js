@@ -85,7 +85,7 @@ function customSwticher(jQuery){
                     path: '/',
                     domain: window.location.hostname
                 },
-                name: 'scm_currency_2412',
+                name: 'scm_currency_3881',
                 write: function(currency) {
                     SECOMAPP.cookie(this.name, currency, this.configuration);
                 },
@@ -261,14 +261,6 @@ function customSwticher(jQuery){
                                                     money_format : '&euro;{{amount}}',
                             money_with_currency_format : '&euro;{{amount}} EUR'
                                                 },
-                                            GEL : {
-                                                    money_format : '{{amount}} GEL',
-                            money_with_currency_format : '{{amount}} GEL'
-                                                },
-                                            WST : {
-                                                    money_format : 'WS$ {{amount}}',
-                            money_with_currency_format : 'WS$ {{amount}} WST'
-                                                },
                                             CNY : {
                                                     money_format : '&#165;{{amount}}',
                             money_with_currency_format : '&#165;{{amount}} CNY'
@@ -279,7 +271,7 @@ function customSwticher(jQuery){
                                                 },
                                                   };
 
-                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                    
             /* Default currency */
             var defaultCurrency = 'GBP' || shopCurrency;
 
