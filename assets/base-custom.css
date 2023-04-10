@@ -20,11 +20,6 @@
   }
 }
 
-
-[data-shopify-buttoncontainer] {
-  flex-direction: column !important;
-}  
-
 .cs-placeholder { 
   border: 0 !important; 
   padding-top: 3px !important;
