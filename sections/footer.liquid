@@ -108,7 +108,7 @@
 
   <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
-
+    {% comment %}
      <div class="footer__column footer__localization isolate">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript>
@@ -198,7 +198,7 @@
             {%- endform -%}
           </localization-form>
         {%- endif -%}
-      </div>    {% comment %}{% endcomment %}
+      </div>{% endcomment %}
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
