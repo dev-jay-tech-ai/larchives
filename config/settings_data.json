@@ -176,7 +176,7 @@
           "newsletter_enable": false,
           "newsletter_heading": "",
           "show_social": true,
-          "enable_country_selector": true,
+          "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": false,
           "margin_top": 0,
