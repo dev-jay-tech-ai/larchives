@@ -88,22 +88,22 @@
     "main-image-banner": {
       "type": "main-image-banner",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/Background.jpg",
-        "brand_1": "Jil Sander",
-        "category_1": "Bags",
-        "link_1": "jil-sander",
-        "image_2": "shopify:\/\/shop_images\/Background_2.jpg",
-        "brand_2": "Burberry",
-        "category_2": "Coats",
-        "link_2": "burberry",
-        "image_3": "shopify:\/\/shop_images\/Background_1.jpg",
-        "brand_3": "Bottega Veneta",
+        "image_1": "shopify:\/\/shop_images\/WK_01_A.jpg",
+        "brand_1": "Gucci",
+        "category_1": "Coats",
+        "link_1": "gucci-clothes",
+        "image_2": "shopify:\/\/shop_images\/WK_01_B.jpg",
+        "brand_2": "Gucci",
+        "category_2": "Bags",
+        "link_2": "gucci-bag",
+        "image_3": "shopify:\/\/shop_images\/WK_01_C.jpg",
+        "brand_3": "Gucci",
         "category_3": "Ready-to-wear",
-        "link_3": "bottega-veneta-clothes",
-        "image_4": "shopify:\/\/shop_images\/Background_3_f07780af-0d75-44ee-b693-8d9311b4cb02.jpg",
-        "brand_4": "Dior",
+        "link_3": "Dress",
+        "image_4": "shopify:\/\/shop_images\/WK_01_D.jpg",
+        "brand_4": "Valentino",
         "category_4": "SHOES",
-        "link_4": "dior"
+        "link_4": "valentino"
       }
     },
     "558e85aa-afcf-4cfa-9ca5-8a98f5645a92": {
