@@ -220,14 +220,14 @@
 
     ],
     "blocks": {
-      "13080609507722906876": {
-        "type": "shopify:\/\/apps\/related-blog-posts\/blocks\/app-embed\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
+      "3821540906276787066": {
+        "type": "shopify:\/\/apps\/disable-right-click-country\/blocks\/app-embed\/692a8b95-ef22-4bf6-825d-0cc7385ef417",
         "disabled": false,
         "settings": {
         }
       },
-      "3821540906276787066": {
-        "type": "shopify:\/\/apps\/disable-right-click-country\/blocks\/app-embed\/692a8b95-ef22-4bf6-825d-0cc7385ef417",
+      "13080609507722906876": {
+        "type": "shopify:\/\/apps\/related-blog-posts-pro\/blocks\/app-embed\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
         "disabled": false,
         "settings": {
         }

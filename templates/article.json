@@ -42,6 +42,7 @@
       "blocks": {
         "73781890-dbfa-489c-96fe-64180c78b1ba": {
           "type": "shopify:\/\/apps\/related-blog-posts-pro\/blocks\/app-block\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
+          "disabled": true,
           "settings": {
           }
         }
