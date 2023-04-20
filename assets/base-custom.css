@@ -1967,7 +1967,7 @@ input[type="range"]::-moz-range-thumb {
   z-index: 4;
 }
 
-.banner_phrases {
+.banner-phrases {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
 }
