@@ -1978,7 +1978,13 @@ input[type="range"]::-moz-range-thumb {
   font-size: 1.4rem;
   letter-spacing: normal;
   bottom: 2rem;
-  left: 4rem;
+  left: 2rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .banner-phrases {
+    left: 4rem;
+  }
 }
 
 .product-card-wrapper:hover {
