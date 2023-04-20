@@ -5,7 +5,7 @@
       <div>{{ section.settings.category_1 | upcase }}</div>
       <div>{{ section.settings.brand_1 }}</div>
     </div>
-    <div class='banner-phrases'>Timeless trenches to add your collection</div>
+    <div class='banner-phrases'>{{ section.settings.phrases_1 }}</div>
     <div class='banner_hover'><a href='/collections/{{ section.settings.link_1 | downcase }}'>{% render 'icon-banner-hover-arrow' %}</a></div>
     {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
       loading: 'lazy',
@@ -25,7 +25,7 @@
           <div>{{ section.settings.category_2 | upcase }}</div>
           <div>{{ section.settings.brand_2 }}</div>
         </div>
-        <div class='banner-phrases'>Shop new shoulder bags, totes & clutches</div>
+        <div class='banner-phrases'>{{ section.settings.phrases_2 }}</div>
         <div class='banner_hover'><a href='/collections/{{ section.settings.link_2 | downcase }}'>{% render 'icon-banner-hover-arrow' %}</a></div>
         {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
           loading: 'lazy',
@@ -43,7 +43,7 @@
           <div>{{ section.settings.category_3 | upcase }}</div>
           <div>{{ section.settings.brand_3 }}</div>
         </div>
-        <div class='banner-phrases'>Luxurious clothing to update your wardrobe.</div>
+        <div class='banner-phrases'>{{ section.settings.phrases_3 }}</div>
         <div class='banner_hover'><a href='/collections/{{ section.settings.link_3 | downcase }}'>{% render 'icon-banner-hover-arrow' %}</a></div>
         {{ section.settings.image_3 | image_url: width: 1500 | image_tag:
           loading: 'lazy',
@@ -62,7 +62,7 @@
         <div>{{ section.settings.category_4 | upcase }}</div>
         <div>{{ section.settings.brand_4 }}</div>
       </div>
-      <div class='banner-phrases'>Discover heels, sandals & more designer footwear</div>
+      <div class='banner-phrases'>{{ section.settings.phrases_4 }}</div>
       <div class='banner_hover'><a href='/collections/{{ section.settings.link_4 | downcase }}'>{% render 'icon-banner-hover-arrow' %}</a></div>
       {{ section.settings.image_4 | image_url: width: 1500 | image_tag:
         loading: 'lazy',
