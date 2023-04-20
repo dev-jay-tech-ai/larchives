@@ -1975,16 +1975,17 @@ input[type="range"]::-moz-range-thumb {
 .banner-phrases {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.2rem;
   letter-spacing: normal;
   bottom: 2rem;
-  left: 2rem;
+  left: 4rem;
+  font-size: 1.4rem;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .banner-phrases {
-    left: 4rem;
-    font-size: 1.4rem;
+    left: 2rem;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
