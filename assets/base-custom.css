@@ -1979,6 +1979,7 @@ input[type="range"]::-moz-range-thumb {
   bottom: 2rem;
   left: 4rem;
   font-size: 1.4rem;
+  opacity: .8;
 }
 
 @media screen and (max-width: 1024px) {
