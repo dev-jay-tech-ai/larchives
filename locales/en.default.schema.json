@@ -1920,6 +1920,9 @@
         "link_1": {
           "label": "First link"
         },
+        "phrases_1": {
+          "label": "First phrases"
+        },
         "image_2": {
           "label": "Second image"
         },
@@ -1931,6 +1934,9 @@
         },
         "link_2": {
           "label": "Second link"
+        },
+        "phrases_2": {
+          "label": "Second phrases"
         },
         "image_3": {
           "label": "Third image"
@@ -1944,6 +1950,9 @@
         "link_3": {
           "label": "Third link"
         },
+        "phrases_3": {
+          "label": "Third phrases"
+        },
         "image_4": {
           "label": "Forth image"
         },
@@ -1955,6 +1964,9 @@
         },
         "link_4": {
           "label": "Forth link"
+        },
+        "phrases_4": {
+          "label": "Forth phrases"
         },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
