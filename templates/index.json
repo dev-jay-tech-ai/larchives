@@ -92,18 +92,22 @@
         "brand_1": "Burberry",
         "category_1": "Coats",
         "link_1": "burberry",
+        "phrases_1": "Timeless trenches to add your collection",
         "image_2": "shopify:\/\/shop_images\/WK_02_B.jpg",
         "brand_2": "Bottega Veneta",
         "category_2": "Bags",
         "link_2": "bottega-veneta-bag",
+        "phrases_2": "Shop new shoulder bags, totes & clutches",
         "image_3": "shopify:\/\/shop_images\/WK_02_C.jpg",
         "brand_3": "Bottega Veneta",
         "category_3": "Ready-to-wear",
         "link_3": "bottega-veneta-clothes",
+        "phrases_3": "",
         "image_4": "shopify:\/\/shop_images\/WK_02_D.jpg",
         "brand_4": "Dior",
         "category_4": "SHOES",
-        "link_4": "dior"
+        "link_4": "dior",
+        "phrases_4": ""
       }
     },
     "558e85aa-afcf-4cfa-9ca5-8a98f5645a92": {
