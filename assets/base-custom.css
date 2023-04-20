@@ -1970,6 +1970,8 @@ input[type="range"]::-moz-range-thumb {
 .banner-phrases {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
+  top: 80px;
+  left: 20px;
 }
 
 .product-card-wrapper:hover {
