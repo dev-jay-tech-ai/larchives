@@ -1984,9 +1984,9 @@ input[type="range"]::-moz-range-thumb {
 @media screen and (max-width: 1024px) {
   .banner-phrases {
     left: 2rem;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     font-size: 1.1rem;
-    opacity: .9;
+    opacity: .7;
   }
 }
 
