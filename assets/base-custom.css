@@ -1972,8 +1972,8 @@ input[type="range"]::-moz-range-thumb {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
   letter-spacing: normal;
-  bottom: 20px;
-  left: 20px;
+  bottom: 2rem;
+  left: 4rem;
 }
 
 .product-card-wrapper:hover {
