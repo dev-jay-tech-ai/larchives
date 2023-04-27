@@ -116,7 +116,7 @@
       {%- case block.type -%}
         {%- when 'heading' -%}
           <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-            <span>{{ block.settings.heading | escape }}<br>{{ block.settings.heading_line2 | escape }}</span>
+            <span>{{ block.settings.heading | escape }}<br>{{ block.settings.heading_nextline | escape }}</span>
           </h2>
         {%- when 'text' -%}
           <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -346,9 +346,9 @@
         },
         {
           "type": "text",
-          "id": "heading_lin2",
-          "default": "Image banner",
-          "label": "t:sections.image-banner.blocks.heading.settings.heading_lin2.label"
+          "id": "heading_nextline",
+          "default": "Image banner nextline",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading_nextline.label"
         },
         {
           "type": "select",
