@@ -449,50 +449,49 @@
               </div>
           
             {%- when 'quantity_selector' -%} 
-            <div style='display: flex; justify-content: space-between;'>
-              <div
-                class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
-                {{ block.shopify_attributes }}
-              >
-                <label class="form__label" for="Quantity-{{ section.id }}">
-                  {% comment %}{ 'products.product.quantity.label' | t }}{% endcomment %}
-                </label>
+            <div
+              class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              <label class="form__label" for="Quantity-{{ section.id }}">
+                {% comment %}{ 'products.product.quantity.label' | t }}{% endcomment %}
+              </label>
 
-                <quantity-input class="quantity">
-                  <button class="quantity__button no-js-hidden" name="minus" type="button">
-                    <span class="visually-hidden">
-                      {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
-                    </span>
-                    {% render 'icon-minus' %}
-                  </button>
-                  <input
-                    class="quantity__input"
-                    type="number"
-                    name="quantity"
-                    id="Quantity-{{ section.id }}"
-                    min="1"
-                    value="1"
-                    form="{{ product_form_id }}"
-                  >
-                  <button class="quantity__button no-js-hidden" name="plus" type="button">
-                    <span class="visually-hidden">
-                      {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
-                    </span>
-                    {% render 'icon-plus' %}
-                  </button>
-                </quantity-input>
-              </div>
-              <div>
-                <button 
-                  data-swaction="addToWishlist" 
-                  data-product-id="{{ product.id | json }}" 
-                  class='wishlist'
-                  button-wishlist 
-                  data-product-handle="{{ product.handle }}"
-                  aria-label="Add to wishlist"
-                >{% render 'icon-heart' %}</button>
-              </div>
+              <quantity-input class="quantity">
+                <button class="quantity__button no-js-hidden" name="minus" type="button">
+                  <span class="visually-hidden">
+                    {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                  </span>
+                  {% render 'icon-minus' %}
+                </button>
+                <input
+                  class="quantity__input"
+                  type="number"
+                  name="quantity"
+                  id="Quantity-{{ section.id }}"
+                  min="1"
+                  value="1"
+                  form="{{ product_form_id }}"
+                >
+                <button class="quantity__button no-js-hidden" name="plus" type="button">
+                  <span class="visually-hidden">
+                    {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                  </span>
+                  {% render 'icon-plus' %}
+                </button>
+              </quantity-input>
             </div>
+            <div>
+              <button 
+                data-swaction="addToWishlist" 
+                data-product-id="{{ product.id | json }}" 
+                class='wishlist'
+                button-wishlist 
+                data-product-handle="{{ product.handle }}"
+                aria-label="Add to wishlist"
+              >{% render 'icon-heart' %}</button>
+            </div>
+  =
 
             {%- when 'popup' -%}
               <modal-opener
