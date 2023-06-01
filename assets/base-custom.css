@@ -142,6 +142,10 @@
   text-align: center;
 }
 
+.live .product__id {
+  float: none;
+}
+
 .menu-drawer__menu {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
