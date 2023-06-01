@@ -117,6 +117,7 @@
 }
 
 .live .collection-hero__title { 
+  text-transform: uppercase;
   font-family: 'Termina';
   margin: 2rem 0; 
 }
