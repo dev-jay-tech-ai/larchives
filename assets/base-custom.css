@@ -110,6 +110,11 @@
   border-bottom: 1px solid rgba(4,11,9,.1);
 }
 
+.live .collection-hero__text-wrapper { padding: 6rem 0; }    
+
+.live .breadcrumb {
+  
+}
 
 .live .collection-hero__inner {
   margin-bottom: 3rem;
