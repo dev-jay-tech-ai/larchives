@@ -169,6 +169,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding: 0 5px;
 }
 
 .menu-drawer__menu {
