@@ -727,6 +727,19 @@
                           </svg>
                         </div>
                       </button>
+
+
+                      <div>
+                        <button 
+                          data-swaction="addToWishlist" 
+                          data-product-id="{{ product.id | json }}" 
+                          class='wishlist button_custom'
+                          button-wishlist 
+                          data-product-handle="{{ product.handle }}"
+                          aria-label="Add to wishlist"
+                        >ADD TO WISHLIST {% render 'icon-heart' %}</button>
+                      </div>
+                    
                       {%- if block.settings.show_dynamic_checkout -%}
                         {{ form | payment_button }}
                       {%- endif -%}
@@ -761,19 +774,8 @@
                     </pickup-availability-preview>
                   </template>
                 </pickup-availability>
-              </div>
+              </div>            
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-              <div>
-                <button 
-                  data-swaction="addToWishlist" 
-                  data-product-id="{{ product.id | json }}" 
-                  class='wishlist button_custom'
-                  button-wishlist 
-                  data-product-handle="{{ product.handle }}"
-                  aria-label="Add to wishlist"
-                >ADD TO WISHLIST {% render 'icon-heart' %}</button>
-              </div>
-            
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
