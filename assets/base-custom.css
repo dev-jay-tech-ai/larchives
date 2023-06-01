@@ -157,6 +157,7 @@
 
 .live .wishlist {
   border-radius: 0;
+  border-color: rgba(4, 11, 9, 0.5);
   width: 100%;
 }
 
