@@ -125,6 +125,12 @@
 
 .live .collection-hero__intro {
   text-transform: uppercase;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
   color: rgba(4, 11, 9, 0.5);
 }
 
