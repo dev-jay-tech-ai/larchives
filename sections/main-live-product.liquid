@@ -384,7 +384,7 @@
                   <div>{{ product.description }}</div>
                 </details>
                 <details>
-                  <summary><div><div>Shipping/Returns </div><div>{% render 'icon-chevron-down' %}</div></div></summary>
+                  <summary><div><div>Size Guide </div><div>{% render 'icon-chevron-down' %}</div></div></summary>
                   <div>
                     <b><a href="#tab3" class="btn">Shipping &amp; Delivery</a></b>
                     <div id="tab3" class="cont">
@@ -426,7 +426,28 @@
                 </div>
               {%- endif -%}
               <script src="{{ 'collapsible.js' | asset_url }}" defer="defer"></script>
-            
+
+            {%- when 'popup' -%}
+              <modal-opener
+                class="product-popup-modal__opener no-js-hidden quick-add-hidden"
+                data-modal="#PopupModal-{{ block.id }}"
+                {{ block.shopify_attributes }}
+              > {% render 'icon-ruler-square' %}
+                <button
+                  id="ProductPopup-{{ block.id }}"
+                  class="product-popup-modal__button link"
+                  type="button"
+                  aria-haspopup="dialog"
+                >
+                {{ block.settings.text | default: block.settings.page.title }}
+                </button>
+              </modal-opener>
+              <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">
+                {{- block.settings.text -}}
+              </a>
+
+
+              
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
@@ -482,24 +503,6 @@
               </quantity-input>
             </div>
 
-            {%- when 'popup' -%}
-              <modal-opener
-                class="product-popup-modal__opener no-js-hidden quick-add-hidden"
-                data-modal="#PopupModal-{{ block.id }}"
-                {{ block.shopify_attributes }}
-              > {% render 'icon-ruler-square' %}
-                <button
-                  id="ProductPopup-{{ block.id }}"
-                  class="product-popup-modal__button link"
-                  type="button"
-                  aria-haspopup="dialog"
-                >
-                {{ block.settings.text | default: block.settings.page.title }}
-                </button>
-              </modal-opener>
-              <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">
-                {{- block.settings.text -}}
-              </a>
             {%- when 'share' -%}
               <share-button
                 id="Share-{{ section.id }}"
