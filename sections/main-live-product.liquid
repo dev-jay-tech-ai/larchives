@@ -486,8 +486,7 @@
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
                 data-modal="#PopupModal-{{ block.id }}">
-                {% render 'icon-ruler-square' %}
-                {{ block.shopify_attributes }}
+                {{ block.shopify_attributes }}{% render 'icon-ruler-square' %}
                 <button
                   id="ProductPopup-{{ block.id }}"
                   class="product-popup-modal__button link"
