@@ -111,19 +111,19 @@
 }
 
 
-.live .collection-hero__text-wrapper { padding: 6.5rem 0; }    
+.product_live .collection-hero__text-wrapper { padding: 6.5rem 0; }    
 
-.live .breadcrumb {
+.product_live .breadcrumb {
   margin: 0;
 }
 
-.live .collection-hero__title { 
+.product_live .collection-hero__title { 
   text-transform: uppercase;
   font-family: 'Termina';
   margin: 2rem 0; 
 }
 
-.live .collection-hero__intro {
+.product_live .collection-hero__intro {
   text-transform: uppercase;
   font-weight: 300;
   font-stretch: normal;
@@ -134,23 +134,23 @@
   color: rgba(4, 11, 9, 0.5);
 }
 
-.live .collection-hero__inner {
+.product_live .collection-hero__inner {
   margin-bottom: 3rem;
 }
 
-.live .product__info-container {
+.product_live .product__info-container {
   text-align: center;
 }
 
-.live .product__id {
+.product_live .product__id {
   float: none;
 }
 
-.live .price--on-sale .price__sale {
+.product_live .price--on-sale .price__sale {
   justify-content: center;
 }
 
-.live .product-form__input {
+.product_live .product-form__input {
   margin: 0 auto;
   margin-bottom: 2.6rem;
 }
