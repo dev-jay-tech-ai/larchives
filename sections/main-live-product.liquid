@@ -481,16 +481,6 @@
                 </button>
               </quantity-input>
             </div>
-            <div>
-              <button 
-                data-swaction="addToWishlist" 
-                data-product-id="{{ product.id | json }}" 
-                class='wishlist button_custom'
-                button-wishlist 
-                data-product-handle="{{ product.handle }}"
-                aria-label="Add to wishlist"
-              >ADD TO WISHLIST {% render 'icon-heart' %}</button>
-            </div>
 
             {%- when 'popup' -%}
               <modal-opener
@@ -681,6 +671,7 @@
                   </div>
                 </div>
               </noscript>
+                    
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
@@ -772,6 +763,17 @@
                 </pickup-availability>
               </div>
 
+              <div>
+                <button 
+                  data-swaction="addToWishlist" 
+                  data-product-id="{{ product.id | json }}" 
+                  class='wishlist button_custom'
+                  button-wishlist 
+                  data-product-handle="{{ product.handle }}"
+                  aria-label="Add to wishlist"
+                >ADD TO WISHLIST {% render 'icon-heart' %}</button>
+              </div>
+            
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
