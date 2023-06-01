@@ -155,6 +155,11 @@
   margin-bottom: 2.6rem;
 }
 
+.live .wishlist {
+  border-radius: 0;
+  width: 100%;
+}
+
 .menu-drawer__menu {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
