@@ -2,9 +2,6 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .collection-hero__inner {
-    margin-bottom: 3rem;
-  }
   @media screen and (max-width: 1023px) {
     .collection-hero--with-image .collection-hero__inner {
       padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
