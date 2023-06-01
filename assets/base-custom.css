@@ -122,6 +122,11 @@
   margin: 2rem 0; 
 }
 
+.live .collection-hero__intro {
+  text-transform: uppercase;
+  color: rgba(4, 11, 9, 0.5);
+}
+
 .live .collection-hero__inner {
   margin-bottom: 3rem;
 }
