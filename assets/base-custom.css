@@ -172,6 +172,13 @@
   padding: 0 5px;
 }
 
+.live .product-popup-modal__button {
+  color: #040b09;
+  font-size: 1.8rem;
+  padding: 0rem;
+  text-decoration: none;
+}
+
 .menu-drawer__menu {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
