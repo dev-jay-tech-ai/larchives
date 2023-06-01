@@ -165,6 +165,12 @@
   margin: 0 auto;
 }
 
+.live .product-popup-modal__opener {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .menu-drawer__menu {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
