@@ -30,7 +30,6 @@ data-section="{{ section.id }}"
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'accordian.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'thumbnails-vertical-slider.js' | asset_url }}" defer="defer"></script>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
