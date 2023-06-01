@@ -116,6 +116,8 @@
   margin: 0;
 }
 
+.live .collection-hero__title { margin: 2rem 0; }
+
 .live .collection-hero__inner {
   margin-bottom: 3rem;
 }
