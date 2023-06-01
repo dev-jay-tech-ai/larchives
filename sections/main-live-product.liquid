@@ -329,7 +329,7 @@
           {{ 'products.product.sold_out' | t }}
         </span>
         {%- endif -%}
-        <div class="product__id"> Product ID: <span>{{ product.variants[0].barcode }}</span></div>
+
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -351,6 +351,9 @@
                   </h2>
                 </a>
               </div>
+
+            <div class="product__id"> Product ID: <span>{{ product.variants[0].barcode }}</span></div>
+        
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
