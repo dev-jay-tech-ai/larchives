@@ -106,6 +106,7 @@
             {{ 'products.product.xr_button' | t }}
           </button>
         {%- endif -%}
+        {% comment %}
         {%- if media_count > 1 and section.settings.gallery_layout contains 'thumbnail' or section.settings.mobile_thumbnails == 'show' -%}
           <vertical-slider
             id="GalleryThumbnails-{{ section.id }}"
@@ -245,7 +246,7 @@
             {% render 'icon-chevron-down' %}
             </button>
             </vertical-slider>
-        {%- endif -%}
+        {%- endif -%}{% endcomment %}
 
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
