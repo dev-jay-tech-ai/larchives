@@ -428,7 +428,8 @@
   "shopify": {
     "checkout": {
       "order_summary": {
-        "estimated_taxes_finalization_tooltip_content": "The final tax and total will be confirmed by email or text after you place your order. If you are a customer located in the UK, you will be subject to paying a VAT(20%)."
+        "estimated_taxes_finalization_tooltip_content": "The final tax and total will be confirmed by email or text after you place your order. If you are a customer located in the UK, you will be subject to paying a VAT(20%).",
+        "vat_label_html": "Including {{ amount }} in VAT(UK)"
       }
     }
   }
